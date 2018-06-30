@@ -1,4 +1,4 @@
-# Welcome to My Personal Blog
+# Welcome to My Personal GitHub Page
 
 ## Contact Me
 - [GitHub](https://github.com/zawzaww)
