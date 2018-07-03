@@ -1,15 +1,15 @@
-# Welcome to My Personal GitHub Page
+# Welcome to My Personal Blog
 
 ### ABOUT ME
-I love working for Android platform, Embedded Android System/Software development and Android App development.
+I love working for Android platform: Embedded Android System/Software development and Android App development.
 
 ### PROJECT
 - [Project PureZAndroid](https://github.com/purezandroid)
-- [Medium Publication](https://medium.com/purezandroid)
+- [PureZAndroid Medium Publication](https://medium.com/purezandroid)
 
 ### WORKS
-- [Guides/Articles](https://github.com/zawzaww/android-tutorials)
-- [PureZ Kernel/Themes](https://medium.com/purezandroid/purezandroid-development-projects-75c6e977d7c1)
+- Helpful: [Android Guides and Articles](https://github.com/zawzaww/android-tutorials)
+- Project Maintainer at [PureZAndroid](https://github.com/purezandroid)
 
 ### INTERESTS
 Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing
