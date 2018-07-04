@@ -1,5 +1,4 @@
-## ABOUT ME
-I love working for Android platform: Embedded Android System/Software development and Android App development.
+## [ABOUT ME](https://github.com/zawzaww/zawzaww.github.io/blob/master/submd/about-me.md)
 
 ## PROJECT
 - [Project PureZAndroid](https://github.com/purezandroid)
