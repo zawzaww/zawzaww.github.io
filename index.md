@@ -10,7 +10,9 @@ I love working for Android platform: Embedded Android System/Software developmen
 - Project Maintainer at [PureZAndroid](https://github.com/purezandroid)
 
 ## INTERESTS
-Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing
+Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing.
+
+---
 
 ## CONTACT
 - [XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
