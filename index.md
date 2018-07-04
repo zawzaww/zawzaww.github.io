@@ -1,12 +1,30 @@
 # ARTICLES
 
 ## [Building Custom Android OS for Android Devices](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-AOSP-ROM.md)
-ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ AOSP SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Custom Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ....
 
 ----
 
 ## [Building Android Kernel for Android Devices](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-Android-Kernel.md)
-အရင္ဆုံး Intro အေနနဲ႔ Kernel ဆုိတာ ဘာလဲ ဘာအတြြြြက္လဲဆုိတာ ႐ွင္းျပ ေပးပါမယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး၊ Android ရဲ႕ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မွာသုံံံံံးထား Linux Kernel branch ေတြက Long Term Support(LTS) branch ေတြ ျဖစ္ပါတယ္....
+
+----
+
+## [Building LineageOS for Android Devices](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-LineageOS.md)
+
+----
+
+## [Building TWRP Recovery for Android Devices](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-TWRP-Recovery.md)
+
+----
+
+## [Updating Linux Kernel Patches for Android Kernel](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Linux-Kernel.md)
+
+----
+
+## [Updating Android Security Patches for Android Kernel](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Updating-Security-Patches.md)
+
+----
+
+## [About the Android OEMs(Android Phone Manufacturers)](https://github.com/zawzaww/android-tutorials/blob/android/Articles/Gin-Android-OEMs.md)
 
 ----
 
