@@ -1,5 +1,7 @@
 # My Personal GitHub Page
 
+----
+
 ## [Building Custom Android OS for Android Devices](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-AOSP-ROM.md)
 ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ AOSP SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ....
 
@@ -48,6 +50,8 @@ I love working for Android platform: Embedded Android System/Software developmen
 
 ### INTERESTS
 Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing.
+
+----
 
 ### CONTACT
 - [XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
