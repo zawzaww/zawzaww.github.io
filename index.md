@@ -62,16 +62,17 @@
   Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing.
 </p>
 
+
 ----
 
 
-### CONTACT
-- [XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
-- [GitHub](https://github.com/zawzaww)
-- [AndroidFileHost](https://androidfilehost.com/?w=profile&uid=529152257862700649)
-- [Medium](https://medium.com/@zawzaww)
-- [Facebook](https://www.facebook.com/zawzaw.me)
-- [Twitter](https://twitter.com/zawzawwme)
-- [Google+](https://plus.google.com/+ZawZawMM)
-- [Telegram](https://t.me/zawzaww)
-- [Instagram](https://www.instagram.com/zawzaw.me)
+<p align="center"> 
+  <img src="https://s20.postimg.cc/rsj1fo7gd/contacts.png" width="28%" height="28%" /> 
+</p>
+<p align="center"> <b>CONTACT</b> </p>
+
+<p align="center">
+  <b>
+    <a href="https://medium.com/@zawzaww">Medium</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://androidfilehost.com/?w=profile&uid=529152257862700649">AndroidFileHost</a> | <a href="https://www.facebook.com/zawzaw.me">Facebook</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://plus.google.com/+ZawZawMM">Google+</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a> | <a href="https://t.me/zawzaww">Telegram</a>
+  </b>
+</p>
