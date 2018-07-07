@@ -28,19 +28,32 @@
 </p>
 <p align="center"> <b>PROJECT</b> </p>
 <p align="center">
-  PureZAndroid Projets: Android Kernels and Theme/Apps
+  PureZAndroid Project: Android Kernels and Theme/Apps
 </p>
 <p align="center">
   <b>
-    <a href="https://github.com/purezandroid">GitHub/PureZAndroid</a> | 
-    <a href="https://medium.com/purezandroid">Medium/PureZAndroid</a>
+    <a href="https://github.com/purezandroid">PureZAndroid : GitHub</a> | 
+    <a href="https://medium.com/purezandroid">Medium</a>
   </b>
 </p>
 
 ----
 
-### WORKS
-- Project Maintainer at [PureZAndroid](https://github.com/purezandroid)
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="28%" height="28%" /> 
+</p>
+<p align="center"> <b>WORKS</b> </p>
+<p align="center">
+  PureZAndroid is my personal work and project.
+</p>
+<p align="center">
+  <b>
+    <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
+  </b>
+</p>
+
+----
+
 
 ### INTERESTS
 Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing.
