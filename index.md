@@ -1,9 +1,8 @@
-<p align="center">
-  <img src="https://s20.postimg.cc/g9j3jkr8t/if_Account_1891016.png" />
-  <br>
-   <b>ABOUT ME</b>
-  </br>
+<p align="center"> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/if_Account_1891016.png" width="25%" height="25%"; /> 
 </p>
+<p align="center"> <b>ABOUT ME</b> </p>
+
 <p align="center">
   I love working for Android platform: Embedded Android System/Software development and App development.
 </p>
