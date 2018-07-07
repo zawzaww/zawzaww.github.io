@@ -24,7 +24,7 @@
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/bhdvmcjj1/android-project.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="28%" height="28%" /> 
 </p>
 <p align="center"> <b>PROJECT</b> </p>
 <p align="center">
@@ -55,7 +55,7 @@
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/dagsajmod/interests.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="28%" height="28%" /> 
 </p>
 <p align="center"> <b>INTERESTS</b> </p>
 <p align="center">
