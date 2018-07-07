@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://s20.postimg.cc/g9j3jkr8t/if_Account_1891016.png" width="150" height="150"; />
+  <img src="https://s20.postimg.cc/g9j3jkr8t/if_Account_1891016.png" />
 </p>
 
 <p align="center">
