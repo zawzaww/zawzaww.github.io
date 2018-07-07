@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="https://s20.postimg.cc/g9j3jkr8t/if_Account_1891016.png" />
+  <img src="https://s20.postimg.cc/g9j3jkr8t/if_Account_1891016.png" width="20%" height="20%" />
+</p>
+<p align="center">
+  <b>ABOUT ME</b>
 </p>
 
 <p align="center">
