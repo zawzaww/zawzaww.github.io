@@ -23,9 +23,21 @@
 
 ----
 
-### PROJECT
-- [Project PureZAndroid](https://github.com/purezandroid)
-- [PureZAndroid Medium Publication](https://medium.com/purezandroid)
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bhdvmcjj1/android-project.png" width="28%" height="28%" /> 
+</p>
+<p align="center"> <b>PROJECT</b> </p>
+<p align="center">
+  PureZAndroid Projets: Android Kernels and Theme/Apps
+</p>
+<p align="center">
+  <b>
+    <a href="https://github.com/purezandroid">GitHub/PureZAndroid</a> | 
+    <a href="https://medium.com/purezandroid">Medium/PureZAndroid</a>
+  </b>
+</p>
+
+----
 
 ### WORKS
 - Project Maintainer at [PureZAndroid](https://github.com/purezandroid)
