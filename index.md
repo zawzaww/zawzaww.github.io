@@ -1,11 +1,27 @@
 <p align="center"> 
-  <img src="https://s20.postimg.cc/g9j3jkr8t/if_Account_1891016.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="28%" height="28%" /> 
 </p>
 <p align="center"> <b>ABOUT ME</b> </p>
-
 <p align="center">
   I love working for Android platform: Embedded Android System/Software development and App development.
 </p>
+
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="28%" height="28%" /> 
+</p>
+<p align="center"> <b>PERSONAL BLOG</b> </p>
+<p align="center">
+  Medium as a Personal Blog. I use Medium for my Personal Blog and writing tech articles. You can read tech and android articles on my Medium Blog.
+</p>
+<p align="center">
+  <b>
+    <a href="https://medium.com/@zawzaww">Medium: Personal Blog</a>
+  </b>
+</p>
+
+----
 
 ### PROJECT
 - [Project PureZAndroid](https://github.com/purezandroid)
