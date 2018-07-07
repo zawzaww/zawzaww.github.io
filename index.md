@@ -54,11 +54,16 @@
 
 ----
 
-
-### INTERESTS
-Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing.
+<p align="center"> 
+  <img src="https://s20.postimg.cc/dagsajmod/interests.png" width="28%" height="28%" /> 
+</p>
+<p align="center"> <b>INTERESTS</b> </p>
+<p align="center">
+  Android OS, Linux, Embedded Android System/Software and App Development, Writing Tech articles, Music and Game Playing.
+</p>
 
 ----
+
 
 ### CONTACT
 - [XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
