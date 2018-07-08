@@ -17,7 +17,7 @@
 </p>
 <p align="center">
   <b>
-    <a href="https://medium.com/@zawzaww">Medium: Personal Blog</a>
+    <a href="https://medium.com/zawzaww">ZawZaw: Personal Blog</a>
   </b>
 </p>
 
@@ -32,8 +32,8 @@
 </p>
 <p align="center">
   <b>
-    <a href="https://github.com/purezandroid">PureZAndroid : GitHub</a> | 
-    <a href="https://medium.com/purezandroid">Medium</a>
+    <a href="https://medium.com/purezandroid">Official PureZAndroid Blog</a> | 
+    <a href="https://github.com/purezandroid">GitHub</a>
   </b>
 </p>
 
@@ -75,7 +75,7 @@
 </p>
 <p align="center">
   <b>
-    <a href="https://github.com/zawzaww">GitHub:zawzaww</a>
+    <a href="https://github.com/zawzaww">GitHub/ZawZaw</a>
   </b>
 </p>
 
