@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="26%" height="26%" /> 
 </p>
 <p align="center"> <b>ABOUT ME</b> </p>
 <p align="center">
@@ -9,7 +9,7 @@
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="26%" height="26%" /> 
 </p>
 <p align="center"> <b>PERSONAL BLOG</b> </p>
 <p align="center">
@@ -24,7 +24,7 @@
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="26%" height="26%" /> 
 </p>
 <p align="center"> <b>PROJECT</b> </p>
 <p align="center">
@@ -40,7 +40,7 @@
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="26%" height="26%" /> 
 </p>
 <p align="center"> <b>WORKS</b> </p>
 <p align="center">
@@ -55,7 +55,7 @@
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="26%" height="26%" /> 
 </p>
 <p align="center"> <b>INTERESTS</b> </p>
 <p align="center">
@@ -67,7 +67,7 @@
 
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="26%" height="26%" /> 
 </p>
 <p align="center"> <b>GitHub</b> </p>
 <p align="center">
@@ -84,7 +84,7 @@
 
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/rsj1fo7gd/contacts.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/rsj1fo7gd/contacts.png" width="26%" height="26%" /> 
 </p>
 <p align="center"> <b>CONTACT</b> </p>
 
