@@ -1,12 +1,20 @@
 <p align="center"> 
-  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="26%" height="26%" /> 
+  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="26%" height="26%" /> 
 </p>
-<p align="center"> <b>ABOUT ME</b> </p>
+<p align="center"> <b>PROJECT</b> </p>
 <p align="center">
-  I love working for Android platform: Embedded Android System/Software development and App development.
+  PureZAndroid Project: Android Kernels and Theme/Apps
+</p>
+<p align="center">
+  <b>
+    <a href="https://medium.com/purezandroid">Official PureZAndroid Blog</a> | 
+    <a href="https://github.com/purezandroid">GitHub</a>
+  </b>
 </p>
 
+
 ----
+
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="26%" height="26%" /> 
@@ -21,23 +29,9 @@
   </b>
 </p>
 
-----
-
-<p align="center"> 
-  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="26%" height="26%" /> 
-</p>
-<p align="center"> <b>PROJECT</b> </p>
-<p align="center">
-  PureZAndroid Project: Android Kernels and Theme/Apps
-</p>
-<p align="center">
-  <b>
-    <a href="https://medium.com/purezandroid">Official PureZAndroid Blog</a> | 
-    <a href="https://github.com/purezandroid">GitHub</a>
-  </b>
-</p>
 
 ----
+
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="26%" height="26%" /> 
@@ -77,6 +71,18 @@
   <b>
     <a href="https://github.com/zawzaww">GitHub/ZawZaw</a>
   </b>
+</p>
+
+
+----
+
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="26%" height="26%" /> 
+</p>
+<p align="center"> <b>ABOUT ME</b> </p>
+<p align="center">
+  I love working for Android platform: Embedded Android System/Software development and App development.
 </p>
 
 
