@@ -90,7 +90,7 @@
 
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/rsj1fo7gd/contacts.png" width="24%" height="24%" /> 
+  <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="24%" height="24%" /> 
 </p>
 <p align="center"> <b>CONTACT</b> </p>
 <p align="center">
