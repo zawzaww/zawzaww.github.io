@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <b>
-    <a href="https://medium.com/purezandroid">PureZAndroid Official Blog</a> | 
+    <a href="https://medium.com/purezandroid">The Official PureZAndroid Blog</a> | 
     <a href="https://github.com/purezandroid">GitHub</a>
   </b>
 </p>
@@ -25,7 +25,7 @@
 </p>
 <p align="center">
   <b>
-    <a href="https://medium.com/zawzaww">ZawZaw : Personal Blog</a>
+    <a href="https://medium.com/zawzaww">Zaw Zaw : Personal Blog</a>
   </b>
 </p>
 
