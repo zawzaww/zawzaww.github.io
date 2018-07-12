@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <b>
-    <a href="https://medium.com/purezandroid">The Official PureZAndroid Blog</a> | 
+    <a href="https://medium.com/purezandroid">PureZAndroid Blog</a> | 
     <a href="https://github.com/purezandroid">GitHub</a>
   </b>
 </p>
@@ -21,7 +21,7 @@
 </p>
 <p align="center"> <b>PERSONAL BLOG</b> </p>
 <p align="center">
-  I use Medium as a Personal Blog for writing Tech articles, Android and others. You can read articles on my Medium Blog.
+  I use Medium as a Personal Blog for writing Tech articles, Android and others. You can read articles on my Personal blog.
 </p>
 <p align="center">
   <b>
