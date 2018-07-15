@@ -18,3 +18,8 @@ title: Personal Blog
 
 ----
 
+## [How To Build LineageOS](blog/building-lineageos.md)
+ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ LineageOS SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ LineageOS CustomROM တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာ [..]
+
+----
+
