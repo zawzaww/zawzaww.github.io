@@ -1,3 +1,3 @@
-# My Personal GitHub Page
+# My Personal Blog
 
 ## https://zawzaww.github.io
