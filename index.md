@@ -26,7 +26,7 @@ title: Personal Blog
 
 ----
 
-## [How To Build TWRP Recovery]
+## [How To Build TWRP Recovery](blog/building-twrp-recovery.md)
 #### Building TWRP Recovery (Custom Bootable Recovery) for Android Devices
 ဒီတခါ ကြၽန္ေတာ္ေျပာျပမယ့္ အေၾကာင္းအရာကေတာ့ SourceCode ကေန Android Devices ေတြအတြက္ Custom Recovery တခု Build နည္းကုိ ေျပာျပေပးမွာျဖစ္ပါတယ္။ ဒီေနရာမွာ [...]
 
