@@ -1,5 +1,7 @@
 ---
 layout: default
+name: about-me
+title: About Me
 ---
 
 <p align="center"> 
