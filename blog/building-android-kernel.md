@@ -1,5 +1,7 @@
 ---
 layout: default
+name: building-android-kernel
+title: Building Kernel for Android Devices
 ---
 
 <center>
