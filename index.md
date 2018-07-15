@@ -28,3 +28,8 @@ title: Personal Blog
 
 ----
 
+## [How To Merge Upstream Linux Kernel Patches](blog/linux-kernel-patches.md)
+ဒီတခါက Guide က ဘာအေၾကာင္းအရာလဲ ဆိုေတာ့ ကိုယ့္ရဲ့ Android Device အတြက္ Build လိုက္တဲ့ Android Kernel မွာ Linux Kernel version ေတြကို ဘယ္လို Update လုပ္မလဲ ဆိုတဲ့ အေၾကာင္းအရာပါ။ Linux Kernel release တဲ့ ပိုင္းမွာ [...]
+
+----
+
