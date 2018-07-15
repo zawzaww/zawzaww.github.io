@@ -5,14 +5,14 @@ title: Personal Blog
 ---
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="19% height="19%" /> 
-</p>
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="19%" height="19%" /> 
+</p>                                                                                
 <p align="center">Zaw Zaw, PureZAndroid.</p>
-<p align="center">
-  <b>
-    <a href="blog/about-me.md">About Me</a>
-  </b>
-</p>
+
+# [About Me](blog/about-me.md)
+
+
+## Aricles and Blog posts
 
 ----
 
