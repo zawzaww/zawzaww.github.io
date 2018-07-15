@@ -4,15 +4,7 @@ name: index
 title: Personal Blog
 ---
 
-<p align="center"> 
-  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="19%" height="19%" /> 
-</p>                                                                                
-<p align="center">Zaw Zaw, PureZAndroid.</p>
-
 # [About Me](blog/about-me.md)
-
-
-## Aricles and Blog posts
 
 ----
 
@@ -49,3 +41,16 @@ title: Personal Blog
 ## [How To Build Android Kernel](blog/building-android-kernel.md)
 အရင္ဆုံး Intro အေနနဲ႔ Kernel ဆုိတာ ဘာလဲ ဘာအတြြြြက္လဲဆုိတာ ႐ွင္းျပ ေပးပါမယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး၊ Android ရဲ႕ Kernel က Modified ထားတဲ့ [...]
 
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="21%" height="21%" /> 
+</p>                                                                                
+<p align="center">Zaw Zaw, PureZAndroid.</p>
+
+<p align="center"> <b>Contact</b> </p>
+<p align="center">
+  <b>
+    <a href="mailto:zawzawit.459@gmail.com">Email</a> | <a href="https://medium.com/@zawzaww">Medium</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://androidfilehost.com/?w=profile&uid=529152257862700649">AndroidFileHost</a> | <a href="https://www.facebook.com/zawzaw.me">Facebook</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://plus.google.com/+ZawZawMM">Google+</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a> | <a href="https://t.me/zawzaww">Telegram</a>
+  </b>
+</p>
