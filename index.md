@@ -33,3 +33,6 @@ title: Personal Blog
 
 ----
 
+## [How To Merge Android Kernel Monthly Security Patches](blog/kernel-security-patches.md)
+ဒီတခါေရးမယ့္ အေၾကာင္းအရာကေတာ့ Google ရဲ႕ Android Device ေတြျဖစ္တဲ့ Nexus နဲ႔ Pixel Device မ်ားအတြက္ လစဥ္ Google ကေပးတဲ့ Android Kernel Security Patch ေတြကုိ ဘယ္လုိ Update လုပ္မလဲဆုိတဲ့ အေၾကာင္းအရာပါ၊ Kernel အပုိင္းအတြက္ျဖစ္ပါတယ္။ အဲဒီ လစဥ္ေပးတဲ့အထဲမွာ [...]
+
