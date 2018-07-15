@@ -1,3 +1,6 @@
+
+[You can read Tech articles on my Personal Blog](./second-page.md)
+
 <p align="center"> 
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
 </p>
