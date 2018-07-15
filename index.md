@@ -44,10 +44,8 @@ title: Personal Blog
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="21%" height="21%" /> 
+  <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="19%" height="19%" /> 
 </p>                                                                                
-<p align="center">Zaw Zaw, PureZAndroid.</p>
-
 <p align="center"> <b>Contact</b> </p>
 <p align="center">
   <b>
