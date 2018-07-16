@@ -4,7 +4,7 @@ name: index
 title: Personal Blog
 ---
 
-# [About Me](blog/about-me.md)
+## [About Me](blog/about-me.md)
 
 ----
 
