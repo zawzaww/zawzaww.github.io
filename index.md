@@ -8,7 +8,7 @@ title: Personal Blog
 
 ----
 
-## [About the Gin Android OEMs](blog/gin-android-oems.md)
+## [Gin Android OEMs](blog/gin-android-oems.md)
 ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ ႏုိင္ငံျခား Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ [...]
 
 ----
@@ -45,8 +45,7 @@ title: Personal Blog
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="19%" height="19%" /> 
-</p>                                                                                
-<p align="center"> <b>Contact</b> </p>
+</p> <p align="center"> <b>Contact</b> </p>
 <p align="center">
   <b>
     <a href="mailto:zawzawit.459@gmail.com">Email</a> | <a href="https://medium.com/@zawzaww">Medium</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://androidfilehost.com/?w=profile&uid=529152257862700649">AndroidFileHost</a> | <a href="https://www.facebook.com/zawzaw.me">Facebook</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://plus.google.com/+ZawZawMM">Google+</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a> | <a href="https://t.me/zawzaww">Telegram</a>
