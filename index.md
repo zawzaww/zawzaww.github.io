@@ -7,12 +7,7 @@ title: Personal Blog
 ## [About Me](blog/about-me.md)
 
 ----
-
-<p align="center">
-  <b>Articles and Blog Posts</b>
-</p>
-
-----
+****
 
 # [Gin Android OEMs](blog/gin-android-oems.md)
 ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ ႏုိင္ငံျခား Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ [...]
