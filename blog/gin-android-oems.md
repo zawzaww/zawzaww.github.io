@@ -12,7 +12,7 @@ title: About the Gin Android OEMs
 
 ဘယ္လုိလိမ္ခဲ့တာလဲဆုိရင္ သင္ဆုိင္ရာ Android Security Patches တကယ္တမ္း Merge/Install လုပ္ခဲ့မဟုတ္ပဲ အလြယ္နားလည္ေအာင္ေျပာရရင္ Settings>About Phone ထဲ Android Security Patch Level ဆုိတဲ့ေနရာက Date ေလးပဲ Change လုိက္တဲ့ သေဘာပါ။
 
-Users ေတြကုိ ဘယ္လုိ လိမ္လု႔ိရလဲဆုိရင္ Technically ေသခ်ာေျပာရရင္ Android OS ရဲ႕ SourceCode Repositories ေတြအကုန္႐ွိတဲ့ေနရာ AOSP Google Git (https://android.googlesource.com) ေအာက္က platform/build ဆုိတဲ့ Git Repository တခု႐ွိပါတယ္။ အတိအက် ေပးရရင္ https://android.googlesource.com/platform/build ျဖစ္ပါတယ္။ သေဘာတရား အၾကမ္းေျပာျပရရင္ အဲဒီ Repository က ဘာအတြက္လဲဆုိရင္ Android Build System အတြက္ပါ။ ဆုိလုိတာက Android OS ႀကီး တခုလုံးရဲ႕ သက္ဆုိင္ရာ လုိအပ္တဲ့ SourceCode Repositories ေတြကေန “System.img” ထြက္လာထိ Compile လုပ္ဖု႔ိ Build လုပ္ဖု႔ိ အတြက္ အဓိကရည္ရြယ္ထားတဲ့ make command ေတြနဲ႔ Build automation လုပ္ႏုိင္ဖု႔ိအတြက္ Makefile နဲ႔ ေရးထားတာတဲ့ Repositoryတခုျဖစ္ပါတယ္။
+Users ေတြကုိ ဘယ္လုိ လိမ္လု႔ိရလဲဆုိရင္ Technically ေသခ်ာေျပာရရင္ Android OS ရဲ႕ SourceCode Repositories ေတြအကုန္႐ွိတဲ့ေနရာ [AOSP Google Git](https://android.googlesource.com) ေအာက္က platform/build ဆုိတဲ့ Git Repository တခု႐ွိပါတယ္။ အတိအက် ေပးရရင္ [https://android.googlesource.com/platform/build](https://android.googlesource.com/platform/build) ျဖစ္ပါတယ္။ သေဘာတရား အၾကမ္းေျပာျပရရင္ အဲဒီ Repository က ဘာအတြက္လဲဆုိရင္ Android Build System အတြက္ပါ။ ဆုိလုိတာက Android OS ႀကီး တခုလုံးရဲ႕ သက္ဆုိင္ရာ လုိအပ္တဲ့ SourceCode Repositories ေတြကေန “System.img” ထြက္လာထိ Compile လုပ္ဖု႔ိ Build လုပ္ဖု႔ိ အတြက္ အဓိကရည္ရြယ္ထားတဲ့ make command ေတြနဲ႔ Build automation လုပ္ႏုိင္ဖု႔ိအတြက္ Makefile နဲ႔ ေရးထားတာတဲ့ Repositoryတခုျဖစ္ပါတယ္။
 
 About the “Make” and “Makefile”
 
@@ -29,7 +29,7 @@ containing a set of directives used by a make build automation tool
 to generate a target/goal.
 ```
 
-အဲဒီ (https://android.googlesource.com/platform/build.git) Repository ထဲက core/ေအာက္က version_defaults.mk ဆုိတဲ့ file ေလးကုိ ဖြင့္ၾကည့္လုိက္ရင္
+အဲဒီ [Platform Build Repository](https://android.googlesource.com/platform/build.git) ထဲက core/ေအာက္က version_defaults.mk ဆုိတဲ့ file ေလးကုိ ဖြင့္ၾကည့္လုိက္ရင္
 
 ```bash
 #
@@ -69,17 +69,16 @@ endif
 ပုံမွန္လုပ္ရမွာက AOSP က Android platform fixes ေတြ Upstream Linux Kernel fixes ေတြ Hardware Manufacturer ဘက္က System-On-Chip (SOC) နဲ႔ သက္ဆုိင္တဲ့ SOC fixes ေတြကုိ Merge လုပ္ၿပီးမွ Android Build System က Date ကုိ သြားခ်ိန္းေပးရမွာ ျဖစ္ပါတယ္။ ၿပီးမွ Android System / OS တခုလုံးကုိ "system.img" ထြက္လာတဲ့အထိ Compile ျပန္လုပ္ေပးရမွာ ျဖစ္ပါတယ္။ Android Security Updates ပုိင္း အေသးစိတ္ကုိ ဒီမွာ ေလ့လာႏုိင္ပါတယ္။
 
 Links:
-- https://source.android.com/security
-- https://source.android.com/security/bulletin
+- [https://source.android.com/security](https://source.android.com/security)
+- [https://source.android.com/security/bulletin](https://source.android.com/security/bulletin)
 
 ဒီကိစၥက တကယ္ျဖစ္ခဲ့တာပါ ေအာက္က Ref link ကုိႏွိတ္ၿပီးလည္း ဖက္ၾကည့္ႏုိင္ပါတယ္။ ဒါေၾကာင့္လည္း Android ဟာ ဒီလုိ ဖုန္းထုတ္တဲ့ ဂ်င္း Company ေတြေၾကာင့္ Security ပုိင္းမွာ လုံးဝ အားနည္းခ်က္ေတြ ျပည့္ေနတာ စိတ္မခ်ရတာ မဆန္းပါဘူး။ ဒါ စီးပြားေရးလုပ္ေနတဲ့ Company ႀကီးေတြ အေနနဲ႔ လုံးဝ မလုပ္သင့္တဲ့ ကိစၥပါ၊ ကေလးကစားစရာ အလုပ္မဟုတ္ပါဘူး။ အမွန္တုိင္းေျပာရရင္ တကမၻာလုံးမွာ Google ရဲ့ ကုိယ္ပုိင္ Android device ေတြျဖစ္တဲ့ "Nexus/Pixel" သုံးတဲ့သူက ဘယ္ေလာက္မွ မ႐ွိပါဘူး။ Popular ျဖစ္တဲ့ တျခား Android OEMs ေတြက Phone ေတြ သုံးတဲ့သူ ပုိမ်ားပါတယ္။ အဲဒီ Company ေတြကလည္း ဂ်င္းထည့္ခ်င္ေတာ့ Security updates ေတြက သိပ္ၿပီး ယုံခ်င္စရာ မေကာင္းပါဘူး။ Android နဲ႔ iOS နဲ႔ကြာသြားတာ အဲဒီေနရာမွာပဲလု႔ိထင္တယ္ Android မွာ ထိန္းမႏုိင္သိမ္းမႏုိင္ Android ဖုန္း ထုတ္လုပ္သူေတြမ်ားျပီး၊ အဲဒီ OEM ေတြရဲ႕ဖုန္းေတြရဲ႕ Android Operating System က Customization ေတြ အေသလုပ္ၿပီး Bugs fix and Security Updates/Software Updates လည္း လစဥ္ပုံမွန္ အခ်ိန္မွီ မေပးႏုိင္တဲ့ အျဖစ္ေတြပါ။ ဒီၾကားထဲမွာ အခုလုိမ်ဳိး လုပ္ရပ္ေတြလုပ္ၿပီး မသိနားမလည္တဲ့ Users ေတြကုိ ဂ်င္းထည့္ခ်င္ေနေတာ့ ေတာ္ေတာ္ကုိလြန္ပါတယ္။ ႐ွက္ဖု႔ိလည္း ေကာင္းပါတယ္။ ဒီလုိမ်ဳိး လုပ္ရပ္မ်ဳိးက ေတာ္႐ုံတန္႐ုံ User ကလည္း သိမွာ မဟုတ္ဘူး Software update ေပးေနၿပီဟ ဆုိၿပီး Install လုပ္လုိက္မွာပဲ က်န္တာေတြ စဥ္းစားမွာ မဟုတ္ပါဘူး Researcher ေတြလုိ လုိက္ၿပီး အတြင္းက်က် လိုက္‌ေလ့လာေနမွာ မဟုတ္ပါဘူး လိမ္ရင္ ခံရမယ့္ ကိစၥမ်ဳိးပါ။ ပုိက္ဆံသာ လုိခ်င္ၿပီး ေစတနာ မပါတဲ့ ဂ်င္း Android OEM မ်ားလု႔ိ ေခၚလု႔ိရၿပီ သတ္မွတ္လု႔ိရၿပီ။
 
-Ref: https://www.xda-developers.com/android-oem-lying-security-patches
+Ref: [https://www.xda-developers.com/android-oem-lying-security-patches](https://www.xda-developers.com/android-oem-lying-security-patches)
 
 If you are experienced in some programming language, you can learn here:
-- https://android.googlesource.com/platform/build
-- https://github.com/zawzaww/android-build
-
+- [https://android.googlesource.com/platform/build](https://android.googlesource.com/platform/build)
+- [https://github.com/zawzaww/platform-build](https://github.com/zawzaww/platform-build)
 
 Regards,
 
