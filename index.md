@@ -38,7 +38,7 @@ title: Personal GitHub Page
 <p align="center"> 
   <img src="https://s20.postimg.cc/udbc4xjkd/website.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>Android Articles and Guides</b> </p>
+<p align="center"> <b>ARTICLES</b> </p>
 <p align="center">
   <b>
     <a href="https://github.com/zawzaww/android-tutorials/blob/android/README.md">Andorid : Articles and Guides</a> 
