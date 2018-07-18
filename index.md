@@ -40,7 +40,7 @@ title: Personal GitHub Page
 </p>
 <p align="center"> <b>MEDIUM</b> </p>
 <p align="center">
-  I use Medium as a Secondary Blog for writing Tech articles, Android and others. You can read articles on my Medium Profile.
+  I use Medium as a Personal Blog for writing Tech articles, Android and others. You can read articles on Medium.
 </p>
 <p align="center">
   <b>
@@ -99,7 +99,7 @@ title: Personal GitHub Page
 
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="19%" height="19%" /> 
+  <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="24%" height="24%" /> 
 </p> <p align="center"> <b>Contact</b> </p>
 <p align="center">
   <b>
