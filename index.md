@@ -4,10 +4,9 @@ name: index
 title: Personal GitHub Page
 ---
 
-[Got to ArticlesFeed](./feed.md) | [GitHub Profile](https://github.com/zawzaww)
+### Got to [ArticlesFeed](./feed.md) | [Personal Blog](https://medium.com/zawzaww) | [GitHub Profile](https://github.com/zawzaww)
 
-----
-****
+---
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
