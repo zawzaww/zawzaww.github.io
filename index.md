@@ -1,7 +1,7 @@
 ---
 layout: default
 name: index
-title: Personal GitHub Page
+title: Personal Website
 ---
 
 [Go to ArticlesFeed](./feed.md) | [Personal Blog](https://medium.com/zawzaww) | [GitHub](https://github.com/zawzaww)
@@ -29,18 +29,6 @@ title: Personal GitHub Page
   <b>
     <a href="https://medium.com/purezandroid">PureZAndroid Blog</a> | 
     <a href="https://github.com/purezandroid">GitHub</a>
-  </b>
-</p>
-
-----
-
-<p align="center"> 
-  <img src="https://s20.postimg.cc/udbc4xjkd/website.png" width="24%" height="24%" /> 
-</p>
-<p align="center"> <b>FEED: ARTICLES</b> </p>
-<p align="center">
-  <b>
-    <a href="https://github.com/zawzaww/android-tutorials/blob/android/README.md">Andorid Articles and Guides</a> 
   </b>
 </p>
 
