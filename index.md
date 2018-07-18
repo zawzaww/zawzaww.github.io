@@ -1,48 +1,102 @@
 ---
 layout: default
 name: index
-title: Personal Blog
+title: Personal GitHub Page
 ---
 
-## [About Me](blog/about-me.md)
 
-----
-****
+<p align="center"> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
+</p>
+<p align="center"> <b>BIO</b> </p>
+<p align="center">
+  I love working for Android platform : Embedded Android System/Software and App development.
+</p>
 
-# [Gin Android OEMs](blog/gin-android-oems.md)
-ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ ႏုိင္ငံျခား Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ [...]
-
-----
-
-# [How To Merge Android Kernel Monthly Security Patches](blog/kernel-security-patches.md)
-ဒီတခါေရးမယ့္ အေၾကာင္းအရာကေတာ့ Google ရဲ႕ Android Device ေတြျဖစ္တဲ့ Nexus နဲ႔ Pixel Device မ်ားအတြက္ လစဥ္ Google ကေပးတဲ့ Android Kernel Security Patch ေတြကုိ ဘယ္လုိ Update လုပ္မလဲဆုိတဲ့ အေၾကာင္းအရာပါ၊ Kernel အပုိင္းအတြက္ျဖစ္ပါတယ္။ အဲဒီ လစဥ္ေပးတဲ့အထဲမွာ [...]
 
 ----
 
-# [How To Merge Upstream Linux Kernel Patches](blog/linux-kernel-patches.md)
-ဒီတခါက Guide က ဘာအေၾကာင္းအရာလဲ ဆိုေတာ့ ကိုယ့္ရဲ့ Android Device အတြက္ Build လိုက္တဲ့ Android Kernel မွာ Linux Kernel version ေတြကို ဘယ္လို Update လုပ္မလဲ ဆိုတဲ့ အေၾကာင္းအရာပါ။ Linux Kernel release တဲ့ ပိုင္းမွာ [...]
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
+</p>
+<p align="center"> <b>PROJECT</b> </p>
+<p align="center">
+  Project PureZAndroid: Android Kernels and Theme/Apps
+</p>
+<p align="center">
+  <b>
+    <a href="https://purezandroid.github.io">PureZAndroid Blog</a> | 
+    <a href="https://github.com/purezandroid">GitHub</a>
+  </b>
+</p>
+
 
 ----
 
-# [How To Build TWRP Recovery](blog/building-twrp-recovery.md)
-ဒီတခါ ကြၽန္ေတာ္ေျပာျပမယ့္ အေၾကာင္းအရာကေတာ့ SourceCode ကေန Android Devices ေတြအတြက္ Custom Recovery တခု Build နည္းကုိ ေျပာျပေပးမွာျဖစ္ပါတယ္။ ဒီေနရာမွာ [...]
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="24%" height="24%" /> 
+</p>
+<p align="center"> <b>MEDIUM</b> </p>
+<p align="center">
+  I use Medium as a Secondary Blog for writing Tech articles, Android and others. You can read articles on my Medium Profile.
+</p>
+<p align="center">
+  <b>
+    <a href="https://medium.com/@zawzaww">Zaw Zaw @Medium</a>
+  </b>
+</p>
+
 
 ----
 
-# [How To Build LineageOS](blog/building-lineageos.md)
-ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ LineageOS SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ LineageOS CustomROM တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာ [...]
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
+</p>
+<p align="center"> <b>WORKS</b> </p>
+<p align="center">
+  PureZAndroid is my personal project and work.
+</p>
+<p align="center">
+  <b>
+    <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
+  </b>
+</p>
+
 
 ----
 
-# [How To Build Custom Android OS](blog/building-aosp-rom.md)
-ဒီတခါေတာ့ ကြၽန္ေတာ္ေျပာျပမယ့္အေၾကာင္းအရာကေတာ့ AOSP SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာ [...]
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
+</p>
+<p align="center"> <b>INTERESTS</b> </p>
+<p align="center">
+  Android OS/Kernel, Linux, Embedded Android System/Software and App Development, Writing Tech Articles, Music and Game Playing.
+</p>
+
 
 ----
 
-# [How To Build Android Kernel](blog/building-android-kernel.md)
-အရင္ဆုံး Intro အေနနဲ႔ Kernel ဆုိတာ ဘာလဲ ဘာအတြြြြက္လဲဆုိတာ ႐ွင္းျပ ေပးပါမယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး၊ Android ရဲ႕ Kernel က Modified ထားတဲ့ [...]
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="24%" height="24%" /> 
+</p>
+<p align="center"> <b>GitHub</b> </p>
+<p align="center">
+ My GiHub Profile for Open Source Projects.
+</p>
+<p align="center">
+  <b>
+    <a href="https://github.com/zawzaww">ZawZaw @GitHub</a>
+  </b>
+</p>
+
 
 ----
+
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="19%" height="19%" /> 
