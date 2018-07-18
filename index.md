@@ -4,18 +4,15 @@ name: index
 title: Personal GitHub Page
 ---
 
-
 <p align="center"> 
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>BIO</b> </p>
+<p align="center"> <b>ABOUT ME</b> </p>
 <p align="center">
   I love working for Android platform : Embedded Android System/Software and App development.
 </p>
 
-
 ----
-
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
@@ -26,22 +23,20 @@ title: Personal GitHub Page
 </p>
 <p align="center">
   <b>
-    <a href="https://purezandroid.github.io">PureZAndroid Blog</a> | 
+    <a href="https://medium.com/purezandroid">PureZAndroid Blog</a> | 
     <a href="https://github.com/purezandroid">GitHub</a>
   </b>
 </p>
 
-
 ----
-
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/udbc4xjkd/website.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>ARTICLES</b> </p>
+<p align="center"> <b>FEED: ARTICLES</b> </p>
 <p align="center">
   <b>
-    <a href="https://github.com/zawzaww/android-tutorials/blob/android/README.md">Andorid : Articles and Guides</a> 
+    <a href="https://github.com/zawzaww/android-tutorials/blob/android/README.md">Andorid Articles and Guides</a> 
   </b>
 </p>
 
@@ -57,7 +52,7 @@ title: Personal GitHub Page
 </p>
 <p align="center">
   <b>
-    <a href="https://medium.com/@zawzaww">Zaw Zaw : Personal Blog</a>
+    <a href="https://medium.com/zawzaww">Zaw Zaw : Personal Blog</a>
   </b>
 </p>
 
@@ -70,7 +65,7 @@ title: Personal GitHub Page
 </p>
 <p align="center"> <b>WORKS</b> </p>
 <p align="center">
-  PureZAndroid is my personal project and work.
+  PureZAndroid is my Personal project and Work.
 </p>
 <p align="center">
   <b>
