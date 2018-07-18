@@ -20,7 +20,7 @@ title: Personal GitHub Page
 <p align="center"> 
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>PROJECT</b> </p>
+<p align="center"> <b>Project</b> </p>
 <p align="center">
   Project PureZAndroid: Android Kernels and Theme/Apps
 </p>
@@ -36,15 +36,31 @@ title: Personal GitHub Page
 
 
 <p align="center"> 
+  <img src="https://s20.postimg.cc/udbc4xjkd/website.png" width="24%" height="24%" /> 
+</p>
+<p align="center"> <b>Android Articles and Guides</b> </p>
+<p align="center">
+  You can read Android Articles and Guides on this OpenSource Repo.
+</p>
+<p align="center">
+  <b>
+    <a href="https://github.com/zawzaww/android-tutorials/blob/android/README.md">Andorid : Articles and Guides</a> 
+  </b>
+</p>
+
+----
+
+
+<p align="center"> 
   <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>MEDIUM</b> </p>
+<p align="center"> <b>Personal Blog</b> </p>
 <p align="center">
   I use Medium as a Personal Blog for writing Tech articles, Android and others. You can read articles on Medium.
 </p>
 <p align="center">
   <b>
-    <a href="https://medium.com/@zawzaww">Zaw Zaw @Medium</a>
+    <a href="https://medium.com/@zawzaww">Zaw Zaw : Personal Blog</a>
   </b>
 </p>
 
@@ -55,7 +71,7 @@ title: Personal GitHub Page
 <p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>WORKS</b> </p>
+<p align="center"> <b>Works</b> </p>
 <p align="center">
   PureZAndroid is my personal project and work.
 </p>
@@ -72,7 +88,7 @@ title: Personal GitHub Page
 <p align="center"> 
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>INTERESTS</b> </p>
+<p align="center"> <b>Interests</b> </p>
 <p align="center">
   Android OS/Kernel, Linux, Embedded Android System/Software and App Development, Writing Tech Articles, Music and Game Playing.
 </p>
