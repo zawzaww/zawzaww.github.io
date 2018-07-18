@@ -4,7 +4,7 @@ name: index
 title: Personal GitHub Page
 ---
 
-### Got to [ArticlesFeed](./feed.md) | [Personal Blog](https://medium.com/zawzaww) | [GitHub Profile](https://github.com/zawzaww)
+Got to [ArticlesFeed](./feed.md) | [Personal Blog](https://medium.com/zawzaww) | [GitHub Profile](https://github.com/zawzaww)
 
 ---
 
