@@ -4,7 +4,7 @@ name: index
 title: Personal Website
 ---
 
-[Go to ArticlesFeed](./feed.md) | [Personal Blog](https://medium.com/zawzaww) | [GitHub](https://github.com/zawzaww)
+[Go to Guides](https://github.com/zawzaww/android-tutorials/blob/android/README.md) | [Personal Blog](https://medium.com/zawzaww)
 
 ---
 
