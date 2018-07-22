@@ -4,7 +4,7 @@ name: index
 title: Personal Website
 ---
 
-[Go to Guides](https://github.com/zawzaww/android-tutorials/blob/android/README.md) | [Development](./development.md) | [Personal Blog](https://medium.com/zawzaww)
+[Go to Personal Blog](https://medium.com/zawzaww) | [Guides](https://github.com/zawzaww/android-tutorials/blob/android/README.md) | [Projects and Works](./development.md)
 
 ---
 
