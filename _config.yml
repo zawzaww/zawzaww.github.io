@@ -1,3 +1,11 @@
+# Applied Jekyll Theme
 theme: jekyll-theme-minimal
+
+# Name
 title: Zaw Zaw
+
+# Decription
 description: Personal Website
+
+# URL of Avatar Picture
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
