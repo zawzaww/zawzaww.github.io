@@ -1,7 +1,7 @@
 ---
 layout: default
 name: xda-threads-collection
-title: My Projects and Works on XDA-Developers
+title: My Projects on XDA-Developers
 ---
 
 # Projects on XDA-Developers Forums
