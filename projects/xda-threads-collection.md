@@ -6,6 +6,8 @@ title: My Projects on XDA-Developers
 
 # Projects on XDA-Developers Forums
 
+----
+
 ## Guides and Tutorials
 - [How To Create Xperia Theme](https://forum.xda-developers.com/crossdevice-dev/sony-themes-apps/guie-how-to-create-xperia-theme-sony-t3570259)
 

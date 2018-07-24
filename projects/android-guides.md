@@ -5,8 +5,10 @@ title: Android Guides and Tutorials
 ---
 
 # Android Guides and Tutorials
+
 ## Building Custom Android OS, Kernel, Bootable Recovery and More
 
+----
 
 ## Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-tutorials/blob/android/Guides/Building-AOSP-ROM.md)
@@ -25,6 +27,6 @@ Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=758161
 ----
 
 ## License
-This android guides are licensed under MIT License. See the [LICENSE] file(https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
+This android guides are licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) file for details.
 
 Copyright (C) 2017-2018, Zaw Zaw.
