@@ -7,7 +7,6 @@ title: Personal Website
 [Go to Personal Blog](https://medium.com/zawzaww) | [GitHub](https://github.com/zawzaww) | [Projects](./projects.md)
 
 ----
-----
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
