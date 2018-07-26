@@ -6,6 +6,11 @@ title: Personal Website
 
 [Go to Personal Blog](https://medium.com/zawzaww) | [GitHub](https://github.com/zawzaww) | [Projects](./projects.md)
 
+<a href="https://github.com/zawzaww/android-articles/blob/android/README.md" class="page-link-to-github" target="_blank" title="Read articles on GitHub">
+        <i class="github-icon"></i>
+        <span class="text">Read Articles</span>
+</a>
+
 ---
 
 <p align="center"> 
