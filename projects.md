@@ -14,8 +14,8 @@ It's about the Android projects, Android Custom Firmwares/ROMs, Kernels, Guides 
 
 ----
 
-# [Android Guides and Articles](projects/android-articles.md)
-Android Guides for android enthusiasts. Included Guides: Building Custom Android OS, Kernel, Bootable custom recovery and more. You can learn about the Android OS, Git and Linux Kernel on my GitHub repository and guides [...]
+# [Android Articles and Guides](projects/android-articles.md)
+Android articles and guides for android enthusiasts. Included Guides: Building Custom Android OS, Kernel, Bootable custom recovery and more. You can learn about the Android OS, Git and Linux Kernel on my GitHub repository and guides [...]
 
 ----
 
