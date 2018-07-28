@@ -20,13 +20,13 @@ title: Android Articles and Guides
 
 ----
 
-## Help
-Found some issues (or) typo errors? Please, help me and open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
+## Contributing
+Found some issues or typo errors? Please, open [new issue](https://github.com/zawzaww/android-articles/issues/new) and pull requests.
 
 ----
 
 ## Author
-Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@Personal Website](https://zawzaww.github.io), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Personal Blog](https://medium.com/zawzaww)
+Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Personal Blog](https://medium.com/zawzaww)
 
 ----
 
