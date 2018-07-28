@@ -31,7 +31,7 @@ Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=758161
 ----
 
 ## License
-This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
+This android articles and guides are licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
 
 ```bash
 MIT License
