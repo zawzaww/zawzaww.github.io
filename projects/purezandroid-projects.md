@@ -16,4 +16,3 @@ It’s about the Project PureZAndroid, XDA support threads, links, open source G
 - [PureZ Kernel for Huawei Nexus 6P](https://forum.xda-developers.com/nexus-6p/development/kernel-purez-kernel-v2-0-purezandroid-t3636909)
 - [PureZ Kernel for Google Pixel](https://forum.xda-developers.com/pixel/development/kernel-purez-kernel-google-pixel-pixel-t3742890)
 - [PureZ Kernel for Google Pixel XL](https://forum.xda-developers.com/pixel-xl/development/kernel-purez-kernel-google-pixel-pixel-t3742489)
-
