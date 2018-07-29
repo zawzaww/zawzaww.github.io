@@ -23,7 +23,7 @@ title: Personal Website
 </p>
 <p align="center"> <b>PROJECT</b> </p>
 <p align="center">
-  Project PureZAndroid: Android Kernels and Theme/Apps
+  The PureZAndroid OpenSource Project
 </p>
 <p align="center">
   <b>
@@ -40,7 +40,7 @@ title: Personal Website
 </p>
 <p align="center"> <b>PERSONAL BLOG</b> </p>
 <p align="center">
-  I use Medium as a Personal Blog for writing Tech articles, Android and others. You can read articles on Medium.
+  My Personal Blog for sharing my Knowledge and Writing articles.
 </p>
 <p align="center">
   <b>
