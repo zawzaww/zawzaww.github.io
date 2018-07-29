@@ -19,3 +19,8 @@ Android articles and guides for android enthusiasts. Included Guides: Building C
 
 ----
 
+# [PureZAndroid OpenSource Projects](projects/purezandroid-projects.md)
+Project PureZAndroid : Android Kernels and Theme/Apps. It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more [...]
+
+----
+
