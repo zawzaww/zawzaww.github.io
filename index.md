@@ -86,7 +86,7 @@ title: Personal Website
 </p>
 <p align="center"> <b>GITHUB</b> </p>
 <p align="center">
- My GiHub Profile for Open Source Projects.
+ My GitHub Profile for Open Source Projects.
 </p>
 <p align="center">
   <b>
