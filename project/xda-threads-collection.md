@@ -9,7 +9,7 @@ title: My Projects on XDA-Developers
 </p>
 <p align="center">Credit: Photo by xda-developers.com</p>
 
-# Projects on XDA-Developers Forums
+# Projects on XDA
 
 ----
 
