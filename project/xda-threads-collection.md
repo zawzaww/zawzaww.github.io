@@ -4,6 +4,11 @@ name: xda-threads-collection
 title: My Projects on XDA-Developers
 ---
 
+<p align="center"> 
+  <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" /> 
+</p>
+<p align="center">Credit: Photo by xda-developers.com</p>
+
 # Projects on XDA-Developers Forums
 
 ----

@@ -4,6 +4,10 @@ name: purez-kernel
 title: PureZ Kernel Features and Support Devices
 ---
 
+<p align="center"> 
+  <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /> 
+</p>
+
 # PureZ Kernel Features and Support Devices
 ## PureZ Kernel Features, Installation, Supported Android Devices, and Kernel Sources
 
