@@ -8,7 +8,7 @@ title: PureZAndroid OpenSource Projects
   <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /> 
 </p>
 
-# PureZAndroid OpenSource Projects
+# Project PureZAndroid
 
 It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more.
 

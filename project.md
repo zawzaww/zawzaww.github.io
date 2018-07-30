@@ -9,23 +9,23 @@ title: Development Projects and Works
 ----
 ----
 
-# [PureZ Kernel Features and Support Devices](project/purez-kernel.md)
-PureZ Kernel Features, Installation, Download links, Supported Android Devices, and Kernel Sources [...]
+# [PureZ Kernel Projects](project/purez-kernel.md)
+PureZ Kernel Features, Installation, Download links, Supported Android Devices, OpenSource GitHub Repositories and Kernel Sources [[...]](project/purez-kernel.md)
 
 ----
 
-# [PureZAndroid OpenSource Projects](project/purezandroid-projects.md)
-Project PureZAndroid : Android Kernels and Theme/Apps. It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more [...]
+# [Project PureZAndroid](project/purezandroid-projects.md)
+OpenSource Projects: PureZ Android Kernels and App/Themes. It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more [[...]](project/purezandroid-projects.md)
 
 ----
 
 # [Android Articles and Guides](project/android-articles.md)
-Android articles and guides for android enthusiasts. Included Guides: Building Custom Android OS, Kernel, Bootable custom recovery and more. You can learn about the Android OS, Git and Linux Kernel on my GitHub repository and guides [...]
+Android articles and guides. Included Guides: Building Custom Android OS, Kernel, Bootable Custom recovery and more. You can learn about the Android OS, Git and Linux Kernel and more on my GitHub repository and guides [[...]](project/android-articles.md)
 
 ----
 
 # [Projects on XDA-Developers](project/xda-threads-collection.md)
-It's about the Android projects, Android Custom Firmwares/ROMs, Kernels, Guides and Themes on XDA Forums. In my free time, I create android projects and sharing my knowledge for members on XDA [...]
+It's about the Android projects, Android Custom Firmwares/ROMs, Kernels, Guides and Themes on XDA Forums. In my free time, I create android projects and sharing my knowledge for members on XDA [[...]](project/xda-threads-collection.md)
 
 ----
 

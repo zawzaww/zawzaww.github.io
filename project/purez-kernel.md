@@ -8,8 +8,9 @@ title: PureZ Kernel Features and Support Devices
   <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /> 
 </p>
 
-# PureZ Kernel Features and Support Devices
-## PureZ Kernel Features, Installation, Supported Android Devices, and Kernel Sources
+# PureZ Kernel Projects
+
+## PureZ Kernel Features, Installation, Supported Android Devices, OpenSoruce GitHub Repositories and Kernel Sources
 
 ----
 
