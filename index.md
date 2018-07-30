@@ -4,7 +4,7 @@ name: index
 title: Personal Website
 ---
 
-[GO TO PERSONAL BLOG](https://medium.com/zawzaww) | [PROJECTS](./project.md)
+[GO TO BLOG](https://medium.com/zawzaww) | [PROJECTS & WORKS](./project.md)
 
 ----
 
