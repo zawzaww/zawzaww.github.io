@@ -23,11 +23,11 @@ title: Personal Website
 </p>
 <p align="center"> <b>PROJECT</b> </p>
 <p align="center">
-  The PureZAndroid OpenSource Project
+  The Project PureZAndroid : Personal Project
 </p>
 <p align="center">
   <b>
-    <a href="https://medium.com/purezandroid">PureZAndroid Blog</a> | 
+    <a href="https://zawzaww.github.io/project">Project Docs</a> | 
     <a href="https://github.com/purezandroid">GitHub</a>
   </b>
 </p>
@@ -74,7 +74,7 @@ title: Personal Website
 </p>
 <p align="center"> <b>INTERESTS</b> </p>
 <p align="center">
-  Android OS/Kernel, Linux, Embedded Android System/Software and App Development, Writing Tech Articles, Music and Game Playing.
+  Android OS/Kernel, Linux, Embedded Android System/Software and App Development, Reading, Writing Articles and Sharing, Music and Game Playing.
 </p>
 
 
