@@ -8,7 +8,7 @@ title: PureZAndroid OpenSource Projects
   <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /> 
 </p>
 
-# Project PureZAndroid
+# PureZAndroid
 
 It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more.
 
@@ -24,7 +24,6 @@ It’s about the Project PureZAndroid, XDA support threads, links, open source G
 ----
 
 ## Custom Firmware/ROM Projects
-**NOTE:** *Old Projects (Discontinued Projects)*
 - [PureZ ROM for LG Nexus 5X](https://forum.xda-developers.com/nexus-5x/development/rom-pure-z-rom-stock-lg-nexus-5x-t3535719)
 - [PureZ ROM for Motorola Nexus 6](https://forum.xda-developers.com/nexus-6/development/rom-purez-rom-purez-project-pixel-t3580752)
 - [PureZ ROM for Huawei Nexus 6P](https://forum.xda-developers.com/nexus-6p/development/rom-purez-rom-simple-stability-pixel-t3576852)
@@ -32,18 +31,20 @@ It’s about the Project PureZAndroid, XDA support threads, links, open source G
 ----
 
 ## Theme/Apps Projects
-### Substratum/OMS Themes for all android 7.0+ devices:
+Substratum Themes:
 - [PureZ NavBars Collection](https://forum.xda-developers.com/android/themes/theme-purez-navbars-collection-t3539092)
 - [PureZ MaterialRed Theme](https://forum.xda-developers.com/android/themes/theme-purez-material-dark-theme-t3549024)
 - [PureZ MaterialBlue Theme](https://forum.xda-developers.com/android/themes/theme-purez-materialblue-v1-0-t3649926)
 
-### Themes for Sony Xperia android 5.0+ devices:
+Sony Xperia Themes:
 - [Sony Xperia Theme Collection](https://forum.xda-developers.com/crossdevice-dev/sony-themes-apps/list-xperia-theme-collection-lollipop-t3512183)
 
 ----
 
 ## SourceCode
-PureZAndroid OpenSource Project Repositories: [https://github.com/purezandroid](https://github.com/purezandroid)
+PureZAndroid OpenSource Project Repositories: 
+
+### [https://github.com/purezandroid](https://github.com/purezandroid)
 
 
 Regards,
