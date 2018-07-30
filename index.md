@@ -27,7 +27,7 @@ title: Personal Website
 </p>
 <p align="center">
   <b>
-    <a href="https://zawzaww.github.io/project">Project Docs</a> | 
+    <a href="https://zawzaww.github.io/project">Project Documentations</a> | 
     <a href="https://github.com/purezandroid">GitHub</a>
   </b>
 </p>
@@ -57,9 +57,6 @@ title: Personal Website
 </p>
 <p align="center"> <b>WORKS</b> </p>
 <p align="center">
-  PureZAndroid is my Personal project and Work.
-</p>
-<p align="center">
   <b>
     <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
   </b>
@@ -74,7 +71,7 @@ title: Personal Website
 </p>
 <p align="center"> <b>INTERESTS</b> </p>
 <p align="center">
-  Android OS/Kernel, Linux, Embedded Android System/Software and App Development, Reading, Writing Articles and Sharing, Music and Game Playing.
+  Android OS, Linux, Embedded Android System/Software and App Development, Music, Reading and Writing Articles.
 </p>
 
 
