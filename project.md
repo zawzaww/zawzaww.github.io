@@ -9,6 +9,11 @@ title: Development Projects and Works
 ----
 ----
 
+# [PureZ Kernel Features and Support Devices](project/purez-kernel.md)
+PureZ Kernel Features, Installation, Download links, Supported Android Devices, and Kernel Sources [...]
+
+----
+
 # [PureZAndroid OpenSource Projects](project/purezandroid-projects.md)
 Project PureZAndroid : Android Kernels and Theme/Apps. It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more [...]
 
