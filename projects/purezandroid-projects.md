@@ -39,9 +39,7 @@ It’s about the Project PureZAndroid, XDA support threads, links, open source G
 ----
 
 ## SourceCode
-PureZAndroid OpenSource Project Repositories
-
-https://github.com/purezandroid
+PureZAndroid OpenSource Project Repositories: [https://github.com/purezandroid](https://github.com/purezandroid)
 
 
 Regards,
