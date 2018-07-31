@@ -5,21 +5,29 @@ title: Development Projects and Works
 ---
 
 # [PureZ Kernel Projects](project/purez-kernel.md)
-PureZ Kernel Features, Installation, Download links, Supported Android Devices, OpenSource GitHub Repositories and Kernel Sources [[...]](project/purez-kernel.html)
+PureZ Kernel Features, Installation, Download links, Supported Devices and Kernel Sources.
+
+<img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" />
 
 ----
 
 # [PureZAndroid](project/purezandroid-projects.md)
-PureZAndroid OpenSource Projects: Android Kernels and App/Themes. It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more [[...]](project/purezandroid-projects.html)
+The Project PureZAndroid. Open Source Projects : Android Kernels and App/Themes.
+
+<img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" />
 
 ----
 
 # [Android Articles and Guides](project/android-articles.md)
-Android articles and guides. Included Guides: Building Custom Android OS, Kernel, Bootable Custom recovery and more. You can learn about the Android OS, Git and Linux Kernel and more on my GitHub repository and guides [[...]](project/android-articles.html)
+Android Articles and Guides : Android OS Based Artilces, How-To Artilces, Guides and More Articles.
+
+<img src="https://s20.postimg.cc/9xg18kirx/android-logo.jpg" />
 
 ----
 
 # [Projects on XDA](project/xda-threads-collection.md)
 Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums. In my free time, I create Android projects and sharing my knowledge for members on XDA.
+
 <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" />
 
+----
