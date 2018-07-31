@@ -4,6 +4,11 @@ name: projects
 title: Development Projects and Works
 ---
 
+# PROJECTS & WORKS
+
+----
+----
+
 # [PureZ Kernel Projects](project/purez-kernel.md)
 PureZ Kernel Features, Installation, Download links, Supported Devices and Kernel Sources.
 
@@ -11,7 +16,7 @@ PureZ Kernel Features, Installation, Download links, Supported Devices and Kerne
 
 ----
 
-# [PureZAndroid](project/purezandroid-projects.md)
+# [PureZAndroid](project/purezandroid.md)
 The Project PureZAndroid. Open Source Projects : Android Kernels and App/Themes.
 
 <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" />

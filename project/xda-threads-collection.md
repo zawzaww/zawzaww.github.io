@@ -10,6 +10,7 @@ title: My Projects on XDA-Developers
 <p align="center">Credit: Photo by xda-developers.com</p>
 
 # Projects on XDA
+# Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums.
 
 ----
 

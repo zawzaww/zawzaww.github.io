@@ -9,6 +9,7 @@ title: PureZAndroid OpenSource Projects
 </p>
 
 # PureZAndroid
+## The Project PureZAndroid. Open Source Projects : Android Kernels and App/Themes.
 
 It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more.
 
