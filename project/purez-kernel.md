@@ -1,14 +1,14 @@
 ---
 layout: default
 name: purez-kernel
-title: PureZ Kernel Features and Support Devices
+title: PureZ Kernel Projects
 ---
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /> 
 </p>
 
-# PureZ Kernel Projects
+# PureZ Kernel
 
 ## PureZ Kernel Features, Installation, Supported Android Devices, OpenSoruce GitHub Repositories and Kernel Sources
 
@@ -87,4 +87,3 @@ title: PureZ Kernel Features and Support Devices
 Regards,
 
 [Zaw Zaw](https://github.com/zawzaww)
-

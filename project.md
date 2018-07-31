@@ -9,7 +9,7 @@ title: Development Projects and Works
 ----
 ----
 
-# [PureZ Kernel Projects](project/purez-kernel.md)
+# [PureZ Kernel](project/purez-kernel.md)
 PureZ Kernel Features, Installation, Download links, Supported Devices and Kernel Sources.
 
 <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" />
