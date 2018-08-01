@@ -16,7 +16,7 @@ PureZ Kernel Features, Installation, Download links, Supported Devices and Kerne
 
 ----
 
-# [The Project PureZAndroid](project/purezandroid.md)
+# [Project PureZAndroid](project/purezandroid.md)
 The Project PureZAndroid, Open Source Projects : Android Kernels and App/Themes.
 
 <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" />
