@@ -4,8 +4,11 @@ name: android-articles
 title: Android Articles and Guides
 ---
 
-# Android Articles and Guides
+<p align="center"> 
+  <img src="https://s20.postimg.cc/9xg18kirx/android-logo.jpg" /> 
+</p>
 
+# Android Articles and Guides
 ## Android OS Based Articles, How-To Articles, Guides and More Articles
 
 ----

@@ -24,7 +24,7 @@ The Project PureZAndroid. Open Source Projects : Android Kernels and App/Themes.
 ----
 
 # [Android Articles and Guides](project/android-articles.md)
-Android Articles and Guides : Android OS Based Artilces, How-To Artilces, Guides and More Articles.
+Android Articles and Guides : Android OS Based Articles, How-To Articles, Guides and More Articles.
 
 <img src="https://s20.postimg.cc/9xg18kirx/android-logo.jpg" />
 

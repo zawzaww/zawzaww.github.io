@@ -1,7 +1,7 @@
 ---
 layout: default
 name: index
-title: Personal Website
+title: Project Maintainer, PureZAndroid
 ---
 
 [GO TO BLOG](https://medium.com/zawzaww) | [PROJECTS & WORKS](./project.md)
@@ -13,7 +13,7 @@ title: Personal Website
 </p>
 <p align="center"> <b>ABOUT ME</b> </p>
 <p align="center">
-  I love working for Android platform : Embedded Android System/Software and App development.
+  I love working for Android Platform : Embedded Android System/Software and App development.
 </p>
 
 ----
@@ -34,7 +34,6 @@ title: Personal Website
 
 ----
 
-
 <p align="center"> 
   <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="24%" height="24%" /> 
 </p>
@@ -48,9 +47,7 @@ title: Personal Website
   </b>
 </p>
 
-
 ----
-
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
@@ -62,38 +59,29 @@ title: Personal Website
   </b>
 </p>
 
-
 ----
-
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
 </p>
 <p align="center"> <b>INTERESTS</b> </p>
 <p align="center">
-  Android OS, Linux, Embedded Android System/Software and App Development, Music, Reading and Writing Articles.
+  Android OS, Linux, Embedded Android System/Software and App Development, Music, Game Playing, Reading and Writing Articles.
 </p>
 
-
 ----
-
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>GITHUB</b> </p>
-<p align="center">
- My GitHub Profile for Open Source Projects.
-</p>
+<p align="center"> <b>GitHub</b> </p>
 <p align="center">
   <b>
-    <a href="https://github.com/zawzaww">ZawZaw @GitHub</a>
+    <a href="https://github.com/zawzaww">My GitHub Profile : Zaw Zaw</a>
   </b>
 </p>
 
-
 ----
-
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="24%" height="24%" /> 
