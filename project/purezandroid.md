@@ -8,8 +8,9 @@ title: PureZAndroid OpenSource Projects
   <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /> 
 </p>
 
-# PureZAndroid
-## The Project PureZAndroid. Open Source Projects : Android Kernels and App/Themes.
+# The Project PureZAndroid
+
+## The Project PureZAndroid, Open Source Projects : Android Kernels and App/Themes.
 
 It’s about the Project PureZAndroid, XDA support threads, links, open source GitHub repositories and more.
 
