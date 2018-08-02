@@ -1,7 +1,7 @@
 ---
 layout: default
 name: index
-title: Project Maintainer, PureZAndroid
+title: Personal website
 ---
 
 [GO TO BLOG](https://medium.com/zawzaww) | [PROJECTS & WORKS](./project.md)
