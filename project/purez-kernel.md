@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 name: purez-kernel
 title: PureZ Kernel Projects
 ---
