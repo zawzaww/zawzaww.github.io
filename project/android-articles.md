@@ -25,8 +25,9 @@ title: Android Articles and Guides
 
 ----
 
-## Contributing
-Found some issues or typo errors? Please, open [new issue](https://github.com/zawzaww/android-articles/issues/new) and [pull requests.](https://github.com/zawzaww/android-articles/pulls)
+## Issue
+Found issues or typo errors? 
+Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
 
 ----
 
