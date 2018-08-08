@@ -1,7 +1,7 @@
 ---
 layout: default
 name: index
-title: Personal website
+title: Personal Website
 ---
 
 [Go to Blog](https://medium.com/zawzaww) | [GitHub](https://github.com/zawzaww) | [Projects & Works](./project.md)
