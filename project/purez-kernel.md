@@ -1,7 +1,7 @@
 ---
 layout: default
 name: purez-kernel
-title: PureZ Kernel Projects
+title: PureZ Kernel
 ---
 
 <p align="center"> 
@@ -10,7 +10,7 @@ title: PureZ Kernel Projects
 
 # PureZ Kernel
 
-## PureZ Kernel Features, Installation, Supported Android Devices, OpenSoruce GitHub Repositories and Kernel Sources
+## PureZ Kernel Features, Installation, Supported Devices, OpenSoruce GitHub Repositories and Kernel Sources
 
 ----
 
@@ -69,7 +69,7 @@ title: PureZ Kernel Projects
 
 ----
 
-# Kernel Sources
+# SourceCode
 *PureZ Kernel sources for all support android devices.*
 - [Motorola Nexus 6](https://github.com/purezandroid/kernel-moto-shamu)
 - [LG Nexus 5X](https://github.com/purezandroid/kernel-lge-bullhead)
