@@ -4,6 +4,10 @@ name: index
 title: Personal Website
 ---
 
+<p align="center">
+  <b> <a href="https://medium.com/zawzaww">Go to Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="./project.md">Projects & Works</a> </b>
+</p>
+
 [Go to Blog](https://medium.com/zawzaww) | [GitHub](https://github.com/zawzaww) | [Projects & Works](./project.md)
 
 ----
