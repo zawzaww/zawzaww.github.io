@@ -5,7 +5,7 @@ title: Personal Website
 ---
 
 <p align="center">
-  <b> <a href="https://medium.com/zawzaww">Go to Personal Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="./project.html">Projects & Works</a> </b>
+  <b> <a href="https://medium.com/zawzaww">Go to Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="./project.html">Projects & Works</a> </b>
 </p>
 
 ----
