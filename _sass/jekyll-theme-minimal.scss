@@ -4,13 +4,13 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 18px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#424242;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#212121;
+  color:#159957;
   margin:0 0 20px;
 }
 
@@ -23,24 +23,24 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:41px;
+  font-size:39px;
 }
 
 h2 {
-  color:#212121;
+  color:#159957;
 }
 
 h3, h4, h5, h6 {
-  color:#212121;
+  color:#159957;
 }
 
 a {
-  color:#00897B;
+  color:#1e6bb8;
   text-decoration:none;
 }
 
 a:hover, a:focus {
-  color:#e1643a;
+  color:#159957;
   font-weight: bold;
 }
 

@@ -31,21 +31,6 @@ title: Personal Website
 ----
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="24%" height="24%" /> 
-</p>
-<p align="center"> <b>PERSONAL BLOG</b> </p>
-<p align="center">
-  My Personal Blog for sharing my Knowledge and Writing articles.
-</p>
-<p align="center">
-  <b>
-    <a href="https://medium.com/zawzaww">Zaw Zaw : Personal Blog</a>
-  </b>
-</p>
-
-----
-
-<p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
 </p>
 <p align="center"> <b>WORKS</b> </p>
