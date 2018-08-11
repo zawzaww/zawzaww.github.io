@@ -4,10 +4,6 @@ name: index
 title: Personal Website
 ---
 
-[GO TO BLOG](https://medium.com/zawzaww) | [PROJECTS & WORKS](./project.md)
-
-----
-
 <p align="center"> 
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
 </p>
