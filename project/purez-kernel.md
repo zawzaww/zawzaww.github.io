@@ -10,11 +10,11 @@ title: PureZ Kernel
 
 # PureZ Kernel
 
-## PureZ Kernel Features, Installation, Supported Devices, OpenSoruce GitHub Repositories and Kernel Sources
+## PureZ Kernel Features, Installation, Supported Android Devices, OpenSoruce GitHub Repositories and Kernel Sources
 
 ----
 
-# Features
+## Features
 **Note:** *It’s overview features of PureZ Kernel*
 - Latest Android Security Patch on the Latest Android Version
 - Easy Installation with TWRP FlashableZip
@@ -40,7 +40,7 @@ title: PureZ Kernel
 
 ----
 
-# Supported Devices
+## Supported Devices
 *It’s current support devices of PureZ Kernel.*
 - Motorola Nexus 6
 - LG Nexus 5X
@@ -50,7 +50,7 @@ title: PureZ Kernel
 
 ----
 
-# Installation
+## Installation
 *How to Install PureZ Kernel for support android devices.*
 - Download PureZ Kernel FlashableZip
 - Reboot to Recovery (e.g TWRP)
@@ -60,7 +60,7 @@ title: PureZ Kernel
 
 ----
 
-# Downloads
+## Downloads
 *PureZ Kernel FlashableZips for all support devices.*
 - [Motorola Nexus 6](https://androidfilehost.com/?w=files&flid=199334)
 - [LG Nexus 5X](https://androidfilehost.com/?w=files&flid=156304)
@@ -69,7 +69,7 @@ title: PureZ Kernel
 
 ----
 
-# SourceCode
+## Kernel Sources
 *PureZ Kernel sources for all support android devices.*
 - [Motorola Nexus 6](https://github.com/purezandroid/kernel-moto-shamu)
 - [LG Nexus 5X](https://github.com/purezandroid/kernel-lge-bullhead)
@@ -79,9 +79,9 @@ title: PureZ Kernel
 
 ----
 
-# GitHub Organization
+## GitHub Organization
 
-## [https://github.com/purezandroid](https://github.com/purezandroid)
+### [https://github.com/purezandroid](https://github.com/purezandroid)
 
 
 Regards,

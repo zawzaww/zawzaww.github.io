@@ -4,7 +4,7 @@ name: index
 title: Personal Website
 ---
 
-[Go to Blog](https://medium.com/zawzaww) | [GitHub](https://github.com/zawzaww) | [Projects & Works](./project.md)
+[GO TO BLOG](https://medium.com/zawzaww) | [PROJECTS & WORKS](./project.md)
 
 ----
 
@@ -46,15 +46,6 @@ title: Personal Website
     <a href="https://medium.com/zawzaww">Zaw Zaw : Personal Blog</a>
   </b>
 </p>
-
-----
-
-<p align="center"> 
-  <img src="http://www.forsythunitedway.org/wp-content/uploads/2015/08/education-icon.png" width="24%" height="24%" /> 
-</p>
-<p align="center"> <b>EDUCATION</b> </p>
-<p align="center">Pyay Technological University, IT - DropOut (2012-2016)</p>
-<p align="center">High School, Sinmizwe - Eco (2010-2011)</p>
 
 ----
 

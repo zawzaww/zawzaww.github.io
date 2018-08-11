@@ -34,4 +34,3 @@ Android Articles and Guides : Android OS Based Articles, How-To Articles, Guides
 Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums. In my free time, I create Android projects and sharing my knowledge for members on XDA.
 
 <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" />
-
