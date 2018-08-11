@@ -13,15 +13,13 @@
   <body>
     <div class="wrapper">
       <header>
-        <p align="center">
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        </p>
+        <h1 align="center"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p align="center"><b><a href="https://medium.com/zawzaww">Go to Blog</a> | <a href="https://zawzaww.github.io/project.html">Projects and Works</a></b></p>
+        <p align="center"><b><a href="https://zawzaww.github.io/">HOME</a> | <a href="https://medium.com/zawzaww">Personal Blog</a> | <a href="https://zawzaww.github.io/project.html">PROJECTS</a></b></p>
       </header>
       <section>
 
