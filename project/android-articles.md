@@ -13,7 +13,7 @@ title: Android Articles and Guides
 
 ----
 
-## Content
+# Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Android-Kernel.md)
 - [How To Create Kernel FlashableZip](https://github.com/zawzaww/android-articles/blob/android/articles/Creating-FlashableZip.md)
@@ -26,18 +26,18 @@ title: Android Articles and Guides
 
 ----
 
-## Issue
+# Issue
 Found issues or typo errors? 
 Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new)
 
 ----
 
-## Author
+# Author
 Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Personal Blog](https://medium.com/zawzaww)
 
 ----
 
-## License
+# License
 This android articles and guides are licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/android-tutorials/blob/android/LICENSE) for details.
 
 ```bash
