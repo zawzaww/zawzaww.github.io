@@ -4,11 +4,6 @@ name: projects
 title: Development Projects and Works
 ---
 
-# PROJECTS & WORKS
-
-----
-----
-
 # [PureZ Kernel](project/purez-kernel.md)
 PureZ Kernel Features, Installation, Download links, Supported Devices and Kernel Sources.
 

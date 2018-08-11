@@ -79,7 +79,7 @@ title: PureZ Kernel
 
 ----
 
-#GitHub Organization
+# GitHub Organization
 
 ## [https://github.com/purezandroid](https://github.com/purezandroid)
 
