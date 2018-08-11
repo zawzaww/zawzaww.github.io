@@ -16,7 +16,7 @@ It’s about the Project PureZAndroid, XDA support threads, links, open source G
 
 ----
 
-# Kernel Projects
+# Kernels
 - [PureZ Kernel for LG Nexus 5X](https://forum.xda-developers.com/nexus-5x/development/kernel-purez-kernel-v2-0-purez-myanmar-t3627288)
 - [PureZ Kernel for Motorola Nexus 6](https://forum.xda-developers.com/nexus-6/development/kernel-purez-kernel-n6-v2-0-purezandroid-t3637808)
 - [PureZ Kernel for Huawei Nexus 6P](https://forum.xda-developers.com/nexus-6p/development/kernel-purez-kernel-v2-0-purezandroid-t3636909)
@@ -25,14 +25,14 @@ It’s about the Project PureZAndroid, XDA support threads, links, open source G
 
 ----
 
-# Custom Firmware/ROM Projects
+# CustomROMs
 - [PureZ ROM for LG Nexus 5X](https://forum.xda-developers.com/nexus-5x/development/rom-pure-z-rom-stock-lg-nexus-5x-t3535719)
 - [PureZ ROM for Motorola Nexus 6](https://forum.xda-developers.com/nexus-6/development/rom-purez-rom-purez-project-pixel-t3580752)
 - [PureZ ROM for Huawei Nexus 6P](https://forum.xda-developers.com/nexus-6p/development/rom-purez-rom-simple-stability-pixel-t3576852)
 
 ----
 
-# Theme/Apps Projects
+# App/Themes
 Substratum Themes:
 - [PureZ NavBars Collection](https://forum.xda-developers.com/android/themes/theme-purez-navbars-collection-t3539092)
 - [PureZ MaterialRed Theme](https://forum.xda-developers.com/android/themes/theme-purez-material-dark-theme-t3549024)
@@ -46,7 +46,7 @@ Sony Xperia Themes:
 # SourceCode
 PureZAndroid OpenSource Project Repositories: 
 
-## [https://github.com/purezandroid](https://github.com/purezandroid)
+### [https://github.com/purezandroid](https://github.com/purezandroid)
 
 
 Regards,

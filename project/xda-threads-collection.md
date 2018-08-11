@@ -29,12 +29,12 @@ title: My Projects on XDA-Developers
 
 ----
 
-# Font FlashableZips
+# Fonts Flashable
 - [Font Flashable Zips for all Android 5.0+ Devices](https://forum.xda-developers.com/crossdevice-dev/sony-themes-apps/fonts-font-style-flashable-devices-t3532561)
 
 ----
 
-# Custom Firmware/ROMs
+# CustomROMs
 - [PureZ ROM for Motorola Nexus 6](https://forum.xda-developers.com/nexus-6/development/rom-purez-rom-purez-project-pixel-t3580752/post71631160#post71631160)
 
 - [PureZ ROM for LG Nexus 5X](https://forum.xda-developers.com/nexus-5x/development/rom-pure-z-rom-stock-lg-nexus-5x-t3535719/post70490830#post70490830)
