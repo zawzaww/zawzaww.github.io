@@ -3,10 +3,6 @@ layout: project
 name: project
 title: Development Projects and Works
 ---
-
-<h1 align="center"><b>PROJECTS</b></h1>
-
-----
 ----
 
 # [PureZ Kernel](project/purez-kernel.md)
