@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 name: xda-threads-collection
 title: My Projects on XDA-Developers
 ---

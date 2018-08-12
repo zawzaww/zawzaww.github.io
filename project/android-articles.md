@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 name: android-articles
 title: Android Articles and Guides
 ---
