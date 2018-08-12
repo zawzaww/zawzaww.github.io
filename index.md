@@ -7,7 +7,7 @@ title: Personal Website
 <p align="center"> 
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>ABOUT ME</b> </p>
+<h2 align="center"><b>ABOUT ME</b></h2>
 <p align="center">
   I love working for Android Platform : Embedded Android System/Software and App development.
 </p>
@@ -17,7 +17,7 @@ title: Personal Website
 <p align="center"> 
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>PROJECT</b> </p>
+<h2 align="center"><b>PROJECT</b></h2>
 <p align="center">
   The Project PureZAndroid : Personal Project
 </p>
@@ -33,7 +33,7 @@ title: Personal Website
 <p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>WORKS</b> </p>
+<h2 align="center"><b>WORKS</b></h2>
 <p align="center">
   <b>
     <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
@@ -45,7 +45,7 @@ title: Personal Website
 <p align="center"> 
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>INTERESTS</b> </p>
+<h2 align="center"><b>INTERESTS</b></h2>
 <p align="center">
   Android OS, Linux, Embedded Android System/Software and App Development, Music, Game Playing, Reading and Writing Articles.
 </p>
@@ -55,7 +55,7 @@ title: Personal Website
 <p align="center"> 
   <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="24%" height="24%" /> 
 </p>
-<p align="center"> <b>GitHub</b> </p>
+<h2 align="center"><b>GitHub</b></h2>
 <p align="center">
   <b>
     <a href="https://github.com/zawzaww">My GitHub Profile : Zaw Zaw</a>
@@ -66,7 +66,8 @@ title: Personal Website
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="24%" height="24%" /> 
-</p> <p align="center"> <b>CONTACT</b> </p>
+</p> 
+<h2 align="center"><b>CONTACT</b></h2>
 <p align="center">
   <b>
     <a href="mailto:zawzawit.459@gmail.com">Email</a> | <a href="https://medium.com/@zawzaww">Medium</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://androidfilehost.com/?w=profile&uid=529152257862700649">AndroidFileHost</a> | <a href="https://www.facebook.com/zawzaw.me">Facebook</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://plus.google.com/+ZawZawMM">Google+</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a> | <a href="https://t.me/zawzaww">Telegram</a>
