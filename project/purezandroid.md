@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 name: purezandroid-projects
 title: PureZAndroid OpenSource Projects
 ---

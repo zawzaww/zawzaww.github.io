@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 name: xda-threads-collection
 title: My Projects on XDA-Developers
 ---

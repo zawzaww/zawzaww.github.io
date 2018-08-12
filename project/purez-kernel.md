@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 name: purez-kernel
 title: PureZ Kernel
 ---
