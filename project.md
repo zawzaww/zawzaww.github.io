@@ -4,8 +4,9 @@ name: project
 title: Development Projects and Works
 ---
 
-<h1 align="center"><b><a href="https://zawzaww.github.io/project.html">PROJECTS &amp; WORKS</a></b></h1>
+<h2 align="center"><a href="https://zawzaww.github.io/project.html">PROJECTS &amp; WORKS</a></h2>
 
+----
 ----
 
 # [PureZ Kernel](project/purez-kernel.md)
