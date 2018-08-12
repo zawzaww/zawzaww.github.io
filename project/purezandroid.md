@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 name: purezandroid-projects
 title: PureZAndroid OpenSource Projects
 ---

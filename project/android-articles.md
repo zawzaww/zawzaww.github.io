@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 name: android-articles
 title: Android Articles and Guides
 ---
