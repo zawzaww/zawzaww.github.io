@@ -4,7 +4,7 @@ name: project
 title: Development Projects and Works
 ---
 
-<p align="center"><b><a href="https://zawzaww.github.io/project.html">PROJECTS &amp; WORKS</a></b></p>
+<h1 align="center"><b><a href="https://zawzaww.github.io/project.html">PROJECTS &amp; WORKS</a></b></h1>
 
 ----
 
