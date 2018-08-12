@@ -4,7 +4,7 @@ name: project
 title: Development Projects and Works
 ---
 
-<h1 align="center"><b>PROJECTS</b></p>
+<h1 align="center"><b>PROJECTS</b></h1>
 
 ----
 ----
