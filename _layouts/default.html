@@ -13,25 +13,21 @@
   <body>
     <header role="banner">
         <h1 align="center"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
-        {% if site.logo %}
-        <p align="center"> <img src="{{site.logo | relative_url}}" alt="Logo" /> </p>
-        {% endif %}
 
         <p align="center"><b><a href="https://zawzaww.github.io/">HOME</a> | <a href="https://medium.com/zawzaww">BLOG</a> | <a href="https://github.com/zawzaww">GITHUB</a> | <a href="https://zawzaww.github.io/project.html">PROJECTS</a></b></p>
     </header>
 
-    <section>
+    <main id="content" class="main-content" role="main">
       {{ content }}
-    </section>
 
-    <footer>
+     <footer class="site-footer">
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p align="center"><small><b><a href="mailto:zawzawit.459@gmail.com">Email</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a></b></small></p>
         <p align="center"><small>Hosted on <a href="https://pages.github.com/">GitHub Pages</a> &mdash; Powered by <a href="https://jekyllrb.com">Jekyll.</a></small></p>
-    </footer>
+     </footer>
+   </main>
 
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
