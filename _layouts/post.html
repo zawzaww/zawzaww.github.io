@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#1976D2">
+    <meta name="theme-color" content="#212121">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
-  <body>
-    <div class="wrapper">
-        <header>
-            <p align="center"><b><a href="https://zawzaww.github.io/">HOME</a> | <a href="https://medium.com/zawzaww">BLOG</a> | <a href="https://github.com/zawzaww">GITHUB</a> | <a href="https://zawzaww.github.io/project.html">PROJECTS</a></b></p>
-        </header>
-          
-      <section>
 
+  <body>
+    <header class="page-header" role="banner">
+        <p align="center"><b><a href="https://zawzaww.github.io/">HOME</a> | <a href="https://medium.com/zawzaww">BLOG</a> | <a href="https://github.com/zawzaww">GITHUB</a> | <a href="https://zawzaww.github.io/project.html">PROJECTS</a></b></p>
+    </header>
+
+    <main id="content" class="main-content" role="main">
       {{ content }}
 
-      </section>
-      <footer>
+     <footer class="site-footer">
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p align="center"><small><b><a href="mailto:zawzawit.459@gmail.com">Email</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a></b></small></p>
         <p align="center"><small>Hosted on <a href="https://pages.github.com/">GitHub Pages</a> &mdash; Powered by <a href="https://jekyllrb.com">Jekyll.</a></small></p>
-      </footer>
-    </div>
+     </footer>
+   </main>
+
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
@@ -41,4 +39,5 @@
     </script>
     {% endif %}
   </body>
+
 </html>
