@@ -55,10 +55,11 @@ body {
 a {
   color: $body-link-color;
   text-decoration: none;
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
+a:hover, a:focus {
+  color:#F57C00;
+  font-weight: bold;
 }
 
 .btn {
