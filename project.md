@@ -1,6 +1,6 @@
 ---
-layout: default
-name: projects
+layout: project
+name: project
 title: Development Projects and Works
 ---
 
