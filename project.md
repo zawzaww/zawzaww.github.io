@@ -4,11 +4,6 @@ name: project
 title: Development Projects and Works
 ---
 
-<h2 align="center"><a href="https://zawzaww.github.io/project.html">PROJECTS &amp; WORKS</a></h2>
-
-----
-----
-
 # [PureZ Kernel](project/purez-kernel.md)
 PureZ Kernel Features, Installation, Download links, Supported Devices and Kernel Sources.
 
