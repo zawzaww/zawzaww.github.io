@@ -3,14 +3,3 @@ description: Personal Blog
 
 baseurl: "/blog"
 url: "https://zawzaww.github.io"
-
-cayman-blog:
-  date_format: "%b %-d, %Y"
-
-remote_theme: jekyll-theme-cayman-blog
-
-# social
-author: "Zaw Zaw"
-image: /profile.jpg
-twitter:
-  username: zawzawwme
