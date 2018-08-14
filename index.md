@@ -1,17 +1,75 @@
 ---
-#
-# Here you can change the text shown in the Home page before the Latest Posts section.
-#
-# Edit cayman-blog's home layout in _layouts instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
+layout: default
+name: index
+title: Personal Website
 ---
 
-Cayman Blog Theme is a clean, responsive blogging theme for Jekyll, with social features. It is inspired by the Cayman Theme for Github Pages, which can be greatly used for single projects but not as blogging platform.
+<p align="center"> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>ABOUT ME</b></h2>
+<p align="center">
+  I love working for Android Platform : Embedded Android System/Software and App development.
+</p>
 
-This theme has instead all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
+----
 
-Have a look at the Github page for more information.
+<p align="center"> 
+  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>PROJECT</b></h2>
+<p align="center">
+  The Project PureZAndroid : Personal Project
+</p>
+<p align="center">
+  <b>
+    <a href="https://zawzaww.github.io/project">Project Documentations</a> | 
+    <a href="https://github.com/purezandroid">GitHub</a>
+  </b>
+</p>
 
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>WORKS</b></h2>
+<p align="center">
+  <b>
+    <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
+  </b>
+</p>
+
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>INTERESTS</b></h2>
+<p align="center">
+  Android OS, Linux, Embedded Android System/Software and App Development, Music, Game Playing, Reading and Writing Articles.
+</p>
+
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>GitHub</b></h2>
+<p align="center">
+  <b>
+    <a href="https://github.com/zawzaww">My GitHub Profile : Zaw Zaw</a>
+  </b>
+</p>
+
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="24%" height="24%" /> 
+</p> 
+<h2 align="center"><b>CONTACT</b></h2>
+<p align="center">
+  <b>
+    <a href="mailto:zawzawit.459@gmail.com">Email</a> | <a href="https://medium.com/@zawzaww">Medium</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://androidfilehost.com/?w=profile&uid=529152257862700649">AndroidFileHost</a> | <a href="https://www.facebook.com/zawzaw.me">Facebook</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://plus.google.com/+ZawZawMM">Google+</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a> | <a href="https://t.me/zawzaww">Telegram</a>
+  </b>
+</p>

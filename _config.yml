@@ -1,5 +1,6 @@
-title: Zaw Zaw
-description: Personal Blog
+# Jekyll Theme
+theme: jekyll-theme-minimal
 
-baseurl: "/blog"
-url: "https://zawzaww.github.io"
+# Name
+title: Zaw Zaw
+
