@@ -7,7 +7,6 @@ url: "https://zawzaww.github.io"
 cayman-blog:
   date_format: "%b %-d, %Y"
 
-theme: jekyll-theme-cayman-blog
 remote_theme: jekyll-theme-cayman-blog
 
 # social
