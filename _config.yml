@@ -4,6 +4,5 @@ theme: jekyll-theme-minimal
 # Name
 title: Zaw Zaw
 
-baseurl: "/blog" 
-url: "https://zawzaww.github.io" 
+description: Personal Blog
 
