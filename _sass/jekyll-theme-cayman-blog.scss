@@ -56,7 +56,7 @@ a:hover, a:focus {
 
 /* Add some padding inside the card container */
 .container {
-  padding: 4px 16px;
+  padding: 8px 32px;
 }
 
 .btn {
@@ -124,6 +124,8 @@ a:hover, a:focus {
 
 .project-name {
   margin-top: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 39px;
   margin-bottom: 0.1rem;
 
   @include large {
