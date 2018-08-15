@@ -1,17 +1,11 @@
 ---
 layout: post
 title: "Building Kernel for Android"
-tagline: "How To Build Kernel for Android Devices"
 categories: blog
 image: /profile.png
 author: "Zaw Zaw"
 meta: "Springfield"
 ---
-
-
-<p align="center"> 
- <img src="https://s20.postimg.cc/u66uv28od/android-kernel.jpg" /> 
-</p>
 
 # How To Build Kernel for Android Devices
 
