@@ -1,19 +1,22 @@
 ---
 layout: post
-title: "Building Kernel for Android"
+title: "How To Build Kernel for Android Devices"
 categories: blog
 image: /profile.png
 author: "Zaw Zaw"
 meta: "Springfield"
 ---
 
-# How To Build Kernel for Android Devices
+<p align="center"> 
+ <img src="https://s20.postimg.cc/u66uv28od/android-kernel.jpg" /> 
+</p>
 
 # Introduction
 Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ္လို Build မလဲဆိုတဲ့ အေၾကာင္းအရာကို ဒီ How-To article မွာ အဓိက ေျပာသြားမွာျဖစ္ပါတယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး Android ရဲ႕ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မွာသုံံံံံးထား Linux Kernel branch ေတြက Long Term Support(LTS) branch ေတြ ျဖစ္ပါတယ္။ https://www.kernel.org မွာ Long term branch ေတြၾကည့္ႏုိင္ပါတယ္။ ဥပမာ Nexus 5X, 6, 6P မွာဆုိရင္ “linux-3.10-y” ဆုိတဲ့ branch ကုိ သုံးပါတယ္ Google Pixel/Pixel XL မွာဆုိရင္ “linux-3.18-y” ဆုိတဲ့ LTS branch ေတြ သုံးၾကပါတယ္။ Android OS က Linux Kernel ေပၚမွာ အေျခခံၿပီး တည္ေဆာက္ထားတာ ျဖစ္ၿပီး Kernel ဆုိတာ OS တခုရဲ႕ အေရးႀကီးတဲ့ အစိတ္အပိုင္းတခုပါ။ CPU, Memory, Disaply စတဲ့ Hardware အစိတ္အပုိင္းေတြ နဲ႔ Software နဲ႔ၾကား ခ်ိတ္ဆက္ၿပီး အလုပ္လုပ္တဲ့ ေနရာမွာ Kernel က အေရႀကီးတဲ့ အပုိင္းမွာ ပါဝင္ပါတယ္။ Android OS Architecture ရဲ႕ Linux Kernel အပုိင္းမွာ Display Driver, Camera Driver, USB Driver, Bluetooth Driver, Audio Driver, Power Management အစ႐ွိသျဖင့္ပါဝင္ပါတယ္။ နမူနာေျပာျပရရင္ ကြၽန္ေတာ့္္ရဲ႕ Nexus 5X မွာ ပုံမွန္ built-in ပါတဲ့ Stock Kernel မွာ Double Tap to Wake/Sleep / Disaply နဲ႔ ပတ္သက္တဲ့ KCAL - Advanced Color Control / Audio driver နဲ႔ ပတ္သက္တဲ့ Sound Control with High Performance Audio စသျဖင့္ မပါ၀င္ၾကပါဘူး။ ကုိယ့္မွာ C Programming Skill ႐ွိရင္ Kernel source တခုုု ကေန အဲဒီ Kernel features ေတြ ေရးၿပီး ျပန္ Recompile လုပ္ႏုိင္ပါတယ္။ ဒီေနရာမွာ Google ရဲ့ Nexus/Pixel လုိမ်ဳိး Stock Pure Android ဖုန္းေတြ မဟုတ္တဲ့ တျခား Android OEMs ေတြျဖစ္တဲ့ (Samsung, HTC, Sony and etc…) စတဲ့ Company ေတြရဲ့ဖုန္းေတြမွာ ေတာ္ေတာ္မ်ားမွာ အဲဒီ Features အနည္းနဲ႔အမ်ား ပါဝင္ၾကပါတယ္။ ဘာလု႔ိ အဆင္သင့္ပါလဲဆုိေတာ့ သူတုိ႔ရဲ႕ Company က သက္ဆုိင္ရာ Android Engineer ေတြက Source ကေန Modified လုပ္ထားၿပီးသားျဖစ္ေနလု႔ိပါပဲ။ အဲဒီ Features ေတြ Device drivers - Audio, Display, Camera, USB and etc… / Memory / Power Management ပုိင္းေတြက Low-level ထိဆင္းၿပီး C Programming နဲ႔ေရးၾကပါတယ္။ Custom Android Kernel တခု Build ရတဲ့အေၾကာင္းက Kernel source ယူၿပီး Features ေတြ ထပ္ေပါင္းထည့္ဖို႔အတြက္ ျဖစ္ပါတယ္။
   
 <center><img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" height="54%" width="54%;"/></center>  
 
+----
 
 # Requirements
 - Linux Computer
@@ -22,6 +25,7 @@ Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ�
 - Kernel compile ဖုိ႔အတြက္ လုိအပ္တဲ့ Toolchins (တနည္းအားျဖင့္ ARM/ARM64 GCC Compiler)
 - Git သုံးတတ္ရပါမယ္
 
+----
 
 # Kernel Sources
 Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ မူတည္ၿပီး download ရမယ့္ site ေတြက ကြဲျပားသြားပါလိမ့္မယ္၊ လုိအပ္တဲ့ Link ေတြ ေအာက္မွေပးထားပါမယ္။
@@ -37,11 +41,14 @@ Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ �
 - ေနာက္တခုက အမ်ဳိးမ်ဳိးေသာ Android Device ေတြရဲ႕ Kernel source ေတြ တေနရာတည္းမွာ ရႏုိင္တဲ့ ေနရကေတာ့ LineageOS ROM Community ႀကီးပဲျဖစ္ပါတယ္။ (ဒါေပမယ့္ တခုေတာ့႐ွိတယ္ အဲဒီ LineageOS Source ကေန Build လုုိုိုိက္တဲ့ Kernel တခုဟာ သူ႔ရဲ႕ ROM နဲ႔ AOSP based ROM ေတြမွာပဲ အလုပ္လုပ္ပါလိိမ့္မယ္၊ ဥပမာ Xiaomi Device ေတြ အေနနဲေျပာရရင္ သူ႔ရဲ႕ StockROM (MIUI) မွာ LineageOS source ကေန build ထားတဲ့ Kernel ကုိ သုံးလုိ႔ရမွာ မဟုတ္ပါဘူး အလုပ္လုပ္မွာ မဟုတ္ပါဘူး၊ ဖုန္းက LineageOS တင္ ထားဖုိ႔လုိပါယ္။
 - https://github.com/LineageOS
 
+----
+
 # Toolchains
 Kernel Source ကေန compile ဖုိ႔အတြက္ဆုိရင္ Toolchains တခုလုိအပ္ပါတယ္၊ Toolchains မွာ ကုိယ့္ဖုန္ ရဲ႕ CPU arch ေပၚ မူတည္ၿပီ ARM နဲ႔ ARM64 ဆုိၿပီး ၂မ်ဳိး ႐ွိပါတယ္။ လုိအပ္တဲ့ Link ေတြ ေအာက္မွာ ေပးထားပါတယ္။
 - arm : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
 - arm64 : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
 
+----
 
 # Downloading
 ဒီ TUT ကုုိ ကြၽန္ေတာ္မွာ႐ွိတဲ့ Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာသြားမွာပါ။ က်န္တဲ့ဖုန္းေတြ အတြက္ကလည္း သေဘာတရာက တူတူပါပဲ၊ Kernel Source download တဲ့ ေနရာပဲ ကြာသြားမွွွွွာပါ။
@@ -65,6 +72,7 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 ```
 - အဲဒါေတြအကုန္ၿပီးသြာၿပီ ဆုိရင္ Kernel build ဆုိ အဆင္သင့္ ျဖစ္ပါၿပီ။
 
+----
 
 # How To Build Kernel
 - အရင္ဆုံး Kernel source နဲ႔ toochains ကုိ ပထမက ေဆာက္ထားတဲ့ KernelName (PuerZ-Kernel-N5X) ဆုိတဲ့ Dir ထဲမွာ ႏွစ္ခုလုံး အဆင္သင့္ ႐ွိေနရပါမယ္။
