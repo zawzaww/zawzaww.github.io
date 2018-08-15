@@ -8,7 +8,8 @@ title: Zaw Zaw
 description: Personal Blog
 
 # Date Format
-date_format: "%b %-d, %Y"
+cayman-blog:
+  date_format: "%b %-d, %Y"
 
 # Social
 author: "Zaw Zaw"
