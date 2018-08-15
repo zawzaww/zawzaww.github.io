@@ -10,25 +10,24 @@ layout: default
 
   <div>&nbsp;</div>
 
-  <div class="card">
-   <div class="container">
     <ul class="post-list">
-     {% for post in site.posts %}
-      <li>
+      <div class="card">
+        <div class="container">
 
-        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        {% for post in site.posts %}
+         <li>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-        </h2>
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+          <h2><a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a></h2>
 
-      </li>
-     {% endfor %}
+          <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+
+         </li>
+        {% endfor %}
+       </div>
+     </div>  
     </ul>
-   </div>
-  </div>
 
 </div>
