@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: ABOUT
 permalink: /about.html
 ---
 
@@ -12,7 +12,7 @@ permalink: /about.html
   I love working for Android Platform : Embedded Android System/Software and App development.
 </p>
 
-----
+
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
@@ -28,7 +28,7 @@ permalink: /about.html
   </b>
 </p>
 
-----
+
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
@@ -40,7 +40,7 @@ permalink: /about.html
   </b>
 </p>
 
-----
+
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
@@ -50,7 +50,7 @@ permalink: /about.html
   Android OS, Linux, Embedded Android System/Software and App Development, Music, Game Playing, Reading and Writing Articles.
 </p>
 
-----
+
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="24%" height="24%" /> 
@@ -61,4 +61,3 @@ permalink: /about.html
     <a href="https://github.com/zawzaww">My GitHub Profile : Zaw Zaw</a>
   </b>
 </p>
-
