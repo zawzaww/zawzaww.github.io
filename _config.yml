@@ -4,5 +4,14 @@ theme: jekyll-theme-minimal
 # Name
 title: Zaw Zaw
 
+# Site Description
 description: Personal Blog
 
+# Date Format
+date_format: "%b %-d, %Y"
+
+# Social
+author: "Zaw Zaw"
+image: /profile.png
+twitter:
+  username: zawzawwme
