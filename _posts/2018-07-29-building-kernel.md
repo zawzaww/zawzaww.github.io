@@ -2,6 +2,7 @@
 layout: post
 title: "How To Build Kernel for Android Devices"
 categories: blog
+excerpt: Buiding-Android-Kernel
 image: /profile.png
 author: "Zaw Zaw"
 meta: "Springfield"
