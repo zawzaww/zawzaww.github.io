@@ -55,7 +55,7 @@
 
     <section class="page-header">
       <h1 class="project-name">{{ page-title }}</h1>
-      <h1 class="project-tagline">{{ page-tagline }}</h1>
+      <h2 class="project-tagline">{{ page-tagline }}</h2>
       {% if page.layout == 'home' and site.github.is_project_page %}
           <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
         {% if site.show_downloads %}
@@ -65,7 +65,7 @@
       {% endif %}
       <!-- Post tagline -->
       {% if page.layout == 'post' %}
-        <h1 class="project-date">
+        <h2 class="project-date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
           {{ page.date | date: date_format }}
@@ -74,7 +74,7 @@
         {% if page_author %}
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page_author }}</span></span>
         {% endif %}
-        </h1>
+        </h2>
       {% endif %}
       <!-- End: Post tagline -->
     </section>
