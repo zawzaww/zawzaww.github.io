@@ -9,7 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#FFFFFF">
 
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% if page.title %}
+      {% assign page-title = page.title | escape %}
+    {% else %}
+      {% assign page-title = site.title | escape %}
+    {% endif %}
+
+    {% if page.layout = 'home' %}
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% endif %}
 
     <title>{{ page-title }}</title>
 
