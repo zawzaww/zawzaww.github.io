@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Building Kernel for Android
-tagline: How To Build Kernel for Android Devices
-categories: blog
-author: Zaw Zaw
-date: 2018-07-29
+title: "Building Kernel for Android"
+tagline: "How To Build Kernel for Android Devices"
+categories: junk
+image: /profile.png
+author: "Zaw Zaw"
 meta: "Springfield"
 ---
 
