@@ -16,7 +16,6 @@ Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ�
   
 <center><img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" height="54%" width="54%;"/></center>  
 
-----
 
 # Requirements
 - Linux Computer
@@ -25,7 +24,6 @@ Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ�
 - Kernel compile ဖုိ႔အတြက္ လုိအပ္တဲ့ Toolchins (တနည္းအားျဖင့္ ARM/ARM64 GCC Compiler)
 - Git သုံးတတ္ရပါမယ္
 
-----
 
 # Kernel Sources
 Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ မူတည္ၿပီး download ရမယ့္ site ေတြက ကြဲျပားသြားပါလိမ့္မယ္၊ လုိအပ္တဲ့ Link ေတြ ေအာက္မွေပးထားပါမယ္။
@@ -41,14 +39,12 @@ Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ �
 - ေနာက္တခုက အမ်ဳိးမ်ဳိးေသာ Android Device ေတြရဲ႕ Kernel source ေတြ တေနရာတည္းမွာ ရႏုိင္တဲ့ ေနရကေတာ့ LineageOS ROM Community ႀကီးပဲျဖစ္ပါတယ္။ (ဒါေပမယ့္ တခုေတာ့႐ွိတယ္ အဲဒီ LineageOS Source ကေန Build လုုိုိုိက္တဲ့ Kernel တခုဟာ သူ႔ရဲ႕ ROM နဲ႔ AOSP based ROM ေတြမွာပဲ အလုပ္လုပ္ပါလိိမ့္မယ္၊ ဥပမာ Xiaomi Device ေတြ အေနနဲေျပာရရင္ သူ႔ရဲ႕ StockROM (MIUI) မွာ LineageOS source ကေန build ထားတဲ့ Kernel ကုိ သုံးလုိ႔ရမွာ မဟုတ္ပါဘူး အလုပ္လုပ္မွာ မဟုတ္ပါဘူး၊ ဖုန္းက LineageOS တင္ ထားဖုိ႔လုိပါယ္။
 - https://github.com/LineageOS
 
-----
 
 # Toolchains
 Kernel Source ကေန compile ဖုိ႔အတြက္ဆုိရင္ Toolchains တခုလုိအပ္ပါတယ္၊ Toolchains မွာ ကုိယ့္ဖုန္ ရဲ႕ CPU arch ေပၚ မူတည္ၿပီ ARM နဲ႔ ARM64 ဆုိၿပီး ၂မ်ဳိး ႐ွိပါတယ္။ လုိအပ္တဲ့ Link ေတြ ေအာက္မွာ ေပးထားပါတယ္။
 - arm : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
 - arm64 : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
 
-----
 
 # Downloading
 ဒီ TUT ကုုိ ကြၽန္ေတာ္မွာ႐ွိတဲ့ Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာသြားမွာပါ။ က်န္တဲ့ဖုန္းေတြ အတြက္ကလည္း သေဘာတရာက တူတူပါပဲ၊ Kernel Source download တဲ့ ေနရာပဲ ကြာသြားမွွွွွာပါ။
@@ -72,7 +68,6 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 ```
 - အဲဒါေတြအကုန္ၿပီးသြာၿပီ ဆုိရင္ Kernel build ဆုိ အဆင္သင့္ ျဖစ္ပါၿပီ။
 
-----
 
 # How To Build Kernel
 - အရင္ဆုံး Kernel source နဲ႔ toochains ကုိ ပထမက ေဆာက္ထားတဲ့ KernelName (PuerZ-Kernel-N5X) ဆုိတဲ့ Dir ထဲမွာ ႏွစ္ခုလုံး အဆင္သင့္ ႐ွိေနရပါမယ္။
