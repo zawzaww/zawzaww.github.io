@@ -15,10 +15,6 @@
       {% assign page-title = site.title | escape %}
     {% endif %}
 
-    {% if page.layout = 'home' %}
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% endif %}
-
     <title>{{ page-title }}</title>
 
     {% if site.gems contains "jekyll-seo-tag" %}
