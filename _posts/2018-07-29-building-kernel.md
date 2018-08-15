@@ -2,7 +2,7 @@
 layout: post
 title: "Building Kernel for Android"
 tagline: "How To Build Kernel for Android Devices"
-categories: junk
+categories: blog
 image: /profile.png
 author: "Zaw Zaw"
 meta: "Springfield"
