@@ -6,6 +6,7 @@ categories: blog
 author: Zaw Zaw
 date: 2018-07-29
 permalink: /2018-07-29-building-kernel.html
+meta: "Springfield"
 ---
 
 
