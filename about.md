@@ -1,13 +1,64 @@
 ---
 layout: page
-title: About
-tagline: A few more words about this theme
+title: About Me
 permalink: /about.html
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
+<p align="center"> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>ABOUT ME</b></h2>
+<p align="center">
+  I love working for Android Platform : Embedded Android System/Software and App development.
+</p>
 
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
+----
 
+<p align="center"> 
+  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>PROJECT</b></h2>
+<p align="center">
+  The Project PureZAndroid : Personal Project
+</p>
+<p align="center">
+  <b>
+    <a href="https://zawzaww.github.io/project">Project Documentations</a> | 
+    <a href="https://github.com/purezandroid">GitHub</a>
+  </b>
+</p>
 
-[Go to the Home Page]({{ site.url }}{{ site.baseurl }})
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>WORKS</b></h2>
+<p align="center">
+  <b>
+    <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
+  </b>
+</p>
+
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>INTERESTS</b></h2>
+<p align="center">
+  Android OS, Linux, Embedded Android System/Software and App Development, Music, Game Playing, Reading and Writing Articles.
+</p>
+
+----
+
+<p align="center"> 
+  <img src="https://s20.postimg.cc/79o5ap8zh/githubdark.png" width="24%" height="24%" /> 
+</p>
+<h2 align="center"><b>GitHub</b></h2>
+<p align="center">
+  <b>
+    <a href="https://github.com/zawzaww">My GitHub Profile : Zaw Zaw</a>
+  </b>
+</p>
+

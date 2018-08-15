@@ -1,14 +1,15 @@
 ---
 layout: page
 title: Contact
-tagline: Create a contact form and you are good to go
+permalink: /contact.html
 ---
 
-Jekyll is a great tool to create static sites but with static site, there's no backend to send your data to: that is why it's hard to put a form on a Jekyll site.
-
-Here listed some resources which provide  a saas service as a backend for forms (contact forms, hiring forms, etc.) to designers and developers like you:
-1. [Formspree (also open source, free)](https://formspree.io/)
-2. [FormKeep](https://formkeep.com/guides/contact-form-jekyll)
-3. [Simple Form](https://getsimpleform.com/)
-
-[Go to the Home Page]({{ site.url }}{{ site.baseurl }})
+<p align="center"> 
+  <img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="24%" height="24%" /> 
+</p> 
+<h2 align="center"><b>CONTACT</b></h2>
+<p align="center">
+  <b>
+    <a href="mailto:zawzawit.459@gmail.com">Email</a> | <a href="https://medium.com/@zawzaww">Medium</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://androidfilehost.com/?w=profile&uid=529152257862700649">AndroidFileHost</a> | <a href="https://www.facebook.com/zawzaw.me">Facebook</a> | <a href="https://twitter.com/zawzawwme">Twitter</a> | <a href="https://plus.google.com/+ZawZawMM">Google+</a> | <a href="https://www.instagram.com/zawzaw.me">Instagram</a> | <a href="https://t.me/zawzaww">Telegram</a>
+  </b>
+</p>
