@@ -115,7 +115,12 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit * 1.1;
+    margin-bottom: $spacing-unit * 1.5;
+  }
+
+  > li > h2 {
+    margin-top: 0rem;
+    margin-bottom: 0.4rem;
   }
 }
 
@@ -133,5 +138,5 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  font-size: 35px;
 }
