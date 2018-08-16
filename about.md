@@ -1,15 +1,15 @@
 ---
 layout: page
-title: ABOUT
+title: ABOUT ME
 permalink: /about.html
 ---
 
 <p align="center"> 
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
 </p>
-<h2 align="center">ABOUT ME</h2>
+<h2 align="center">BIO</h2>
 <p align="center">
-  I love working for Android Platform : Embedded Android System/Software and App development.
+  I love working for Android OS Platform and I Love building Android CustomROMs/Kernels, Themes and Apps. 
 </p>
 
 ---
@@ -18,14 +18,10 @@ permalink: /about.html
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">PROJECT</h2>
+<p align="center">The PureZAndroid™</p>
+<p align="center">PureZAndroid is an Android Theme development Based on Simple and Material Dark for Substratum Theme Engine for Android.</p>
 <p align="center">
-  The Project PureZAndroid : Personal Project
-</p>
-<p align="center">
-  <b>
-    <a href="https://zawzaww.github.io/project">Project Documentations</a> | 
-    <a href="https://github.com/purezandroid">GitHub</a>
-  </b>
+  <b><a href="https://zawzaww.github.io/works">Project Documentations</a> | <a href="https://github.com/purezandroid">GitHub</a></b>
 </p>
 
 ---
@@ -56,6 +52,6 @@ permalink: /about.html
 </p>
 <h2 align="center">INTERESTS</h2>
 <p align="center">
-  Android OS, Linux, Embedded Android System/Software and App Development, Music, Game Playing, Reading and Writing Articles.
+  Android OS, Linux, Android Theming and App Development, Photography, Music, Game Playing, Reading and Writing Articles.
 </p>
 
