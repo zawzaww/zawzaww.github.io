@@ -9,7 +9,7 @@ permalink: /about.html
 </p>
 <h2 align="center">BIO</h2>
 <p align="center">
-  I love working for Android OS Platform and I Love building Android CustomROMs/Kernels, Themes and Apps. 
+  I Love working for Android OS Platform : Building Android CustomROMs/Kernels and Apps.
 </p>
 
 ---
@@ -18,9 +18,10 @@ permalink: /about.html
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">PROJECT</h2>
-<p align="center">The PureZAndroid™ : PureZAndroid is an Android Theme development Based on Simple and Material Dark for Substratum Theme Engine for Android.</p>
+<p align="center">The PureZAndroid™ : My Personal Project</p>
+<p align="center"> PureZAndroid is an Android Custom Kernel development Based on Upstream Linux-Kernel Stable for Android Devices.</p>
 <p align="center">
- <a href="https://zawzaww.github.io/works">Project Documentations</a> | <a href="https://github.com/purezandroid">GitHub</a>
+ <a href="https://purezandroid.github.io/">PureZAndroid Blog</a> | <a href="https://github.com/purezandroid">SourceCode</a>
 </p>
 
 ---
@@ -48,7 +49,5 @@ permalink: /about.html
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">INTERESTS</h2>
-<p align="center">
-  Android OS, Linux, Android Theming and App Development, Photography, Music, Game Playing, Reading and Writing Articles.
-</p>
+<p align="center">Android, Linux, Android OS/Kernel and App Development, Mobile Photography, Music, Game Playing, Sharing and Writing Articles.</p>
 
