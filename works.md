@@ -1,6 +1,6 @@
 ---
 layout: work
-title: WORKS
+title: PROJECT
 permalink: /works.html
 ---
 
