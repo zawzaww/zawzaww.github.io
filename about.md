@@ -18,10 +18,9 @@ permalink: /about.html
   <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">PROJECT</h2>
-<p align="center">The PureZAndroid™</p>
-<p align="center">PureZAndroid is an Android Theme development Based on Simple and Material Dark for Substratum Theme Engine for Android.</p>
+<p align="center">The PureZAndroid™ : PureZAndroid is an Android Theme development Based on Simple and Material Dark for Substratum Theme Engine for Android.</p>
 <p align="center">
-  <b><a href="https://zawzaww.github.io/works">Project Documentations</a> | <a href="https://github.com/purezandroid">GitHub</a></b>
+ <a href="https://zawzaww.github.io/works">Project Documentations</a> | <a href="https://github.com/purezandroid">GitHub</a>
 </p>
 
 ---
@@ -40,9 +39,7 @@ permalink: /about.html
 </p>
 <h2 align="center">WORKS</h2>
 <p align="center">
-  <b>
-    <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
-  </b>
+  <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
 </p>
 
 ---
