@@ -2,9 +2,8 @@
 layout: post
 title: "How To Create Android Kernel FlashableZip"
 categories: blog
-image: /profile.png
 author: "Zaw Zaw"
-meta: "Springfield"
+date: 2018-07-30
 ---
 
 <p align="center">

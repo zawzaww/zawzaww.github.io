@@ -2,9 +2,8 @@
 layout: post
 title: "How To Build Kernel for Android Devices"
 categories: blog
-image: /profile.png
 author: "Zaw Zaw"
-meta: "Springfield"
+date: 2018-07-29
 ---
 
 <p align="center">

@@ -15,11 +15,10 @@ permalink: /about.html
 ---
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/ifn1owg3x/android.png" width="24%" height="24%" /> 
+  <img src="https://s20.postimg.cc/lie7on02l/purez.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">PROJECT</h2>
-<p align="center">The PureZAndroid™ : My Personal Project</p>
-<p align="center"> PureZAndroid is an Android Custom Kernel development Based on Upstream Linux-Kernel Stable for Android Devices.</p>
+<p align="center">The PureZAndroid™ : PureZAndroid is a free and Open-source Andoid Custom Kernel development Based on Upstream Linux Kernel for Android Devices.</p>
 <p align="center">
  <a href="https://purezandroid.github.io/">PureZAndroid Blog</a> | <a href="https://github.com/purezandroid">SourceCode</a>
 </p>
@@ -49,5 +48,5 @@ permalink: /about.html
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">INTERESTS</h2>
-<p align="center">Android, Linux, Android OS/Kernel and App Development, Mobile Photography, Music, Game Playing, Sharing and Writing Articles.</p>
+<p align="center">Android OS/Kernel, Linux, Embeddedd/Android OS and App Development, Photography, Music, Game Playing, Sharing and Writing Articles.</p>
 
