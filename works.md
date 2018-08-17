@@ -4,6 +4,15 @@ title: MY WORKS
 permalink: /works.html
 ---
 
+----
+
+# [Projects on XDA-Developers](https://zawzaww.github.io/work/2018/08/14/xda-threads.html)
+My Development android projects : Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums.
+
+<img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" />
+
+----
+
 # [PureZAndroid](https://purezandroid.github.io/blog/2018/08/17/purezandroid.html)
 PureZAndroid : Overviews of PureZ Kernel. PureZAndroid is a free and Open-source Andoid Custom Kernel development Based on Upstream Linux Kernel for Android Devices.
 
