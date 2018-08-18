@@ -9,7 +9,7 @@ permalink: /about.html
 </p>
 <h2 align="center">BIO</h2>
 <p align="center">
-  I Love working for Android OS Platform : Building Android CustomROMs/Kernels and Apps.
+  I Love working for Android OS Platform : Building Android Custom Firmwares/ROMs, Kernels and Apps.
 </p>
 
 ---
@@ -18,9 +18,9 @@ permalink: /about.html
   <img src="https://s20.postimg.cc/lie7on02l/purez.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">PROJECT</h2>
-<p align="center">The PureZAndroid™ : PureZAndroid is a free and Open-source Andoid Custom Kernel development Based on Upstream Linux Kernel for Android Devices.</p>
+<p align="center">PureZ Kernel : PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform with Upstream Linux Kernel for Android Devices.</p>
 <p align="center">
- <a href="https://purezandroid.github.io/">PureZAndroid Blog</a> | <a href="https://github.com/purezandroid">SourceCode</a>
+ <a href="https://purez-kernel.github.io">PureZ Kernel Blog</a> | <a href="https://github.com/purez-kernel">SourceCode</a>
 </p>
 
 ---
@@ -39,7 +39,7 @@ permalink: /about.html
 </p>
 <h2 align="center">WORKS</h2>
 <p align="center">
-  <a href="https://github.com/purezandroid">Project Maintainer @PureZAndroid</a>
+  <a href="https://github.com/purez-kernel">Project Maintianer @PureZ Kernel</a>
 </p>
 
 ---
