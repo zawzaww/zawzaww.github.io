@@ -48,5 +48,5 @@ permalink: /about.html
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
 </p>
 <h2 align="center">INTERESTS</h2>
-<p align="center">Android OS/Kernel, Linux, Embeddedd/Android OS and App Development, Photography, Music, Game Playing, Sharing and Writing Articles.</p>
+<p align="center">Android OS/Kernel, Linux, Embedded/Android OS and App Development, Photography, Music, Game Playing, Sharing and Writing Articles.</p>
 
