@@ -6,7 +6,7 @@ permalink: /works.html
 
 ----
 
-# [Projects on XDA-Developers](/_pages/xda-threads.md)
+# [Projects on XDA-Developers](/pages/xda-threads.html)
 My Development android projects : Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums.
 
 <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" />
