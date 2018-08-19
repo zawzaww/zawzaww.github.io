@@ -11,8 +11,17 @@ description: Personal Blog
 cayman-blog:
   date_format: "%b %-d, %Y"
 
+# MAIN URL
+url: https://zawzaww.github.io/
+
+# Base URL
+# Default: empty url
+baseurl: ""
+
+# Permalink for posts and pages
+# permalink: /placeholders/:title/
+
 # Social
 author: "Zaw Zaw"
-image: /profile.png
 twitter:
   username: zawzawwme

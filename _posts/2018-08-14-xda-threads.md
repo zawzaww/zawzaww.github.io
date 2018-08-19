@@ -3,7 +3,7 @@ layout: post
 title: "Projects on XDA-Developers"
 categories: work
 author: "Zaw Zaw"
-date: 2018-08-14
+permalink: /work/xda-threads.html
 ---
 
 <p align="center"> 
