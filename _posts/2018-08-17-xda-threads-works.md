@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: post
 title: "Projects on XDA-Developers"
-categories: pages
+categories: work
 author: "Zaw Zaw"
-permalink: /pages/xda-threads.html
+permalink: /work/xda-threads-works.html
 ---
 
 <p align="center"> 
