@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Projects on XDA-Developers"
 categories: work
 author: "Zaw Zaw"
