@@ -6,13 +6,6 @@ permalink: /works.html
 
 ----
 
-# [Android Articles and Guides](https://zawzaww.github.io/work/android-articles.html)
-Android OS Based Articles, How-To Articles, Guides and More Articles.
-
-<img src="https://s20.postimg.cc/9xg18kirx/android-logo.jpg" /> 
-
-----
-
 # [Projects on XDA-Developers](https://zawzaww.github.io/work/xda-threads-works.html)
 My Development android projects : Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums.
 
@@ -27,7 +20,7 @@ PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform w
 
 ----
 
-# [Android Articles and Guides](https://github.com/zawzaww/android-articles)
+# [Android Articles and Guides](https://zawzaww.github.io/work/android-articles.html)
 Android Articles and Guides : Android OS Based Articles, How-To Articles, Guides and More Articles.
 
 <img src="https://s20.postimg.cc/9xg18kirx/android-logo.jpg" />
