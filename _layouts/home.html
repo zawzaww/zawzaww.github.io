@@ -13,15 +13,17 @@ layout: default
     <ul class="post-list">
       {% for post in site.posts %}
         <li>
-            <hr/>
-            
-            {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          <div class="card">
+           <div class="container">
             <span class="post-meta">{{ post.date | date: date_format }}</span>
   
             <h2><a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a></h2>
   
             <span>{{ post.excerpt | markdownify | truncatewords: 0 }}</span>
-            
+           </div>
+          </div>
+          
         </li>
       {% endfor %}
     </ul>
