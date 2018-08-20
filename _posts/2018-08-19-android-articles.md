@@ -6,8 +6,7 @@ author: "Zaw Zaw"
 permalink: /work/android-articles
 ---
 
-## Android OS Based Articles, How-To Articles, Guides and More Articles
-
+Android OS Based Articles, How-To Articles, Guides and More Articles
 
 # Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
@@ -23,7 +22,7 @@ permalink: /work/android-articles
 ----
 
 # Main Repository
-https://github.com/zawzaww/android-articles
+[https://github.com/zawzaww/android-articles](https://github.com/zawzaww/android-articles)
 
 ----
 
