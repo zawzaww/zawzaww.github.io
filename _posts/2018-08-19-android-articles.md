@@ -6,7 +6,11 @@ author: "Zaw Zaw"
 permalink: /work/android-articles
 ---
 
-Android OS Based Articles, How-To Articles, Guides and More Articles
+<p align="center">
+ <img src="https://images.wallpaperscraft.com/image/android_os_gray_robot_33642_1920x1080.jpg" />  
+</p>
+
+## Android OS Based Articles, How-To Articles, Guides and More Articles
 
 # Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
@@ -33,7 +37,7 @@ Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new
 ----
 
 # Author
-Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Personal Blog](https://medium.com/zawzaww)
+Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww)
 
 ----
 
