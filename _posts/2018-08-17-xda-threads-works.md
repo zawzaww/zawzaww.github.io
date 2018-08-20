@@ -3,14 +3,9 @@ layout: post
 title: "Projects on XDA-Developers"
 categories: work
 author: "Zaw Zaw"
-permalink: /work/xda-threads-works.html
+permalink: /work/xda-threads-works
 ---
 
-<p align="center"> 
-  <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" /> 
-</p>
-
-# Projects on XDA
 My development android projects : Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums.
 
 

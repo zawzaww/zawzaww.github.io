@@ -3,17 +3,11 @@ layout: post
 title: "Android Articles and Guides"
 categories: work
 author: "Zaw Zaw"
-permalink: /work/android-articles.html
+permalink: /work/android-articles
 ---
 
-<p align="center"> 
-  <img src="https://s20.postimg.cc/9xg18kirx/android-logo.jpg" /> 
-</p>
-
-# Android Articles and Guides
 ## Android OS Based Articles, How-To Articles, Guides and More Articles
 
-----
 
 # Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
@@ -25,6 +19,11 @@ permalink: /work/android-articles.html
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/android-articles/blob/android/articles/Merging-Kernel-Security-Patches.md)
 - [Gin Android OEMs (Android Phone Manufacturers)](https://github.com/zawzaww/android-articles/blob/android/articles/Gin-Android-OEMs.md)
 - [About the "aosp-android" Repository](https://github.com/zawzaww/android-articles/blob/android/articles/AOSP-Android-GitHub-Repo.md)
+
+----
+
+# Main Repository
+https://github.com/zawzaww/android-articles
 
 ----
 
