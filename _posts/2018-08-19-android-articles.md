@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Android Articles and Guides"
-categories: work
-author: "Zaw Zaw"
-permalink: /work/android-articles
+tagline: "Android OS Based Articles, How-To Articles, Guides and More Articles"
+categories: project
+permalink: /project/android-articles
 ---
 
 <p align="center">
