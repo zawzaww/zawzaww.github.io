@@ -1,14 +1,16 @@
 ---
 layout: post
 title: "Android Articles and Guides"
-tagline: "Android OS Based Articles, How-To Articles, Guides and More Articles"
-categories: project
-permalink: /project/android-articles
+categories: android
+permalink: /android/android-articles
 ---
 
 <p align="center">
  <img src="https://images.wallpaperscraft.com/image/android_os_gray_robot_33642_1920x1080.jpg" />  
 </p>
+
+# Android Articles and Guides
+## Android OS Based Articles, How-To Articles, Guides and More 
 
 # Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/android-articles/blob/android/articles/Building-Custom-Android-OS.md)
