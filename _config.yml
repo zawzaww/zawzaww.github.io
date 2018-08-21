@@ -5,11 +5,7 @@ theme: jekyll-theme-minimal
 title: Zaw Zaw
 
 # Site Description
-description: Personal Blog
-
-# Date Format
-cayman-blog:
-  date_format: "%b %-d, %Y"
+description: Project Maintainer, PureZ Kernel
 
 # MAIN URL
 url: https://zawzaww.github.io/
