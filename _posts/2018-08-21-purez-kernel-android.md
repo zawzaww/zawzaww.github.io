@@ -39,11 +39,11 @@ PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform w
 
 
 # SourceCode
-### [https://github.com/purez-kernel](https://github.com/purez-kernel)
+## [https://github.com/purez-kernel](https://github.com/purez-kernel)
 
 
 # More Information
-Read more on PureZ Kernel Website: https://purez-kernel.github.io
+Read more on PureZ Kernel Website: [https://purez-kernel.github.io](https://purez-kernel.github.io)
 
 
 Regards,
