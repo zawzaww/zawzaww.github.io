@@ -142,7 +142,7 @@ img-circle {
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
-  font-size: 35px;
+  opacity: 0.5;
 
   @include large {
     font-size: 1.25rem;

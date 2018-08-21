@@ -1,8 +1,11 @@
+# Site Title Name
+title: Zaw Zaw
+
+# Site Description
+description: Personal Website
+
 # Jekyll Theme
 theme: jekyll-theme-minimal
-
-# Name
-title: < Zaw Zaw />
 
 # MAIN URL
 url: https://zawzaww.github.io/
