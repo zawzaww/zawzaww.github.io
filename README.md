@@ -1,3 +1,3 @@
-# Zaw Zaw : Personal Blog
+# My Personal Website
 
 ## https://zawzaww.github.io
