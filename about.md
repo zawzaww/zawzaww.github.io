@@ -9,7 +9,7 @@ permalink: /about.html
 </p>
 <h2 align="center">BIO</h2>
 <p align="center">
-  I Love working for Android OS Platform : Building Android Custom Firmwares/ROMs, Kernels and Apps.
+  I love working for Android OS Platform : Building Android Custom Firmwares/ROMs, Kernels and Apps.
 </p>
 
 ---
@@ -20,7 +20,7 @@ permalink: /about.html
 <h2 align="center">PROJECT</h2>
 <p align="center">PureZ Kernel : PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform with Upstream Linux Kernel for Android Devices.</p>
 <p align="center">
- <a href="https://purez-kernel.github.io">PureZ Kernel Blog</a> | <a href="https://github.com/purez-kernel">SourceCode</a>
+ <a href="https://purez-kernel.github.io">PureZ Kernel Website</a> | <a href="https://github.com/purez-kernel">SourceCode</a>
 </p>
 
 ---
