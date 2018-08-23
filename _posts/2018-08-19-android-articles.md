@@ -37,7 +37,7 @@ Please, open [new issue.](https://github.com/zawzaww/android-articles/issues/new
 ----
 
 # Author
-Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww)
+Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Telegram](https://t.me/zawzaww)
 
 ----
 
