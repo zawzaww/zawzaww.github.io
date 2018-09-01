@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "PureZ Kernel for Android"
-categories: android
-permalink: /android/purez-kernel-android
+categories: work
+permalink: /work/purez-kernel-android
 ---
 
 <p align="center"> 

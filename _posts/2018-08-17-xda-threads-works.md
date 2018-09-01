@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Projects on XDA-Developers"
-categories: android
-permalink: /android/xda-threads-works
+categories: work
+permalink: /work/xda-threads-works
 ---
 
 <p align="center"> 
