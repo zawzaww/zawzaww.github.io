@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CONTACT
-permalink: /contact.html
+permalink: /contact
 ---
 
 <p align="center"> 
