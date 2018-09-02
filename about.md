@@ -8,9 +8,7 @@ permalink: /about
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="24%" height="24%" /> 
 </p>
 <h1 align="center">BIO</h1>
-<p align="center">
-  I love working for Android OS Platform : Building Android Custom Firmwares/ROMs, Kernels and Apps.
-</p>
+<p align="center">I am very interested in Android OS and experienced in Embedded Android/System and Software/App development. I love working for Android OS Platform : Building Android Custom Firmwares/ROMs, Kernels and Apps.</p>
 
 ---
 
@@ -26,9 +24,8 @@ permalink: /about
 <p align="center"> 
   <img src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dev-512.png" width="24%" height="24%" />
 </p>
-<h1 align="center">SKILLS</h1>
-<h2 align="center">Programming Languages & Tools</h2>
-<p align="center">C, Java, Kolin, Shell Script, HTML, CSS, Git, GNU/Linux, Linux Kernel, Embedded Android, Android Studio, Android Development, Atom and VS Code.</p>
+<h1 align="center">SKILLS & TOOLS</h1>
+<p align="center">C, Java, Kolin, Shell Script, HTML, CSS, Git, Linux Kernel, Embedded Android/System, Android Studio, Android Software Development, Atom, IntelliJ IDEA, CLion and VS Code. </p>
 
 ---
 
@@ -46,5 +43,5 @@ permalink: /about
   <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="24%" height="24%" /> 
 </p>
 <h1 align="center">INTERESTS</h1>
-<p align="center">Android OS/Kernel, Linux, Embedded Android and App Development, Photography, Music, Game Playing, Sharing and Writing Articles.</p>
+<p align="center">Android OS/Kernel, Linux, Embedded Android/System and App Development, Photography, Music, Game Playing and Writing Articles.</p>
 
