@@ -5,7 +5,7 @@ permalink: /about
 ---
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="26%" height="26%" /> 
+  <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="28%" height="28%" /> 
 </p>
 <h1 align="center">BIO</h1>
 <p align="center">I am very interested in Android OS and experienced in Embedded Android/System and Software/App development. I love working for Android OS Platform : Building Android Custom Firmwares/ROMs, Kernels and Apps.</p>
@@ -13,7 +13,7 @@ permalink: /about
 ---
 
 <p align="center"> 
-  <img src="http://www.forsythunitedway.org/wp-content/uploads/2015/08/education-icon.png" width="26%" height="26%" /> 
+  <img src="http://www.forsythunitedway.org/wp-content/uploads/2015/08/education-icon.png" width="28%" height="28%" /> 
 </p>
 <h1 align="center">EDUCATION</h1>
 <p align="center">Pyay Technological University, IT - DropOut (2012-2016)</p>
@@ -22,7 +22,7 @@ permalink: /about
 ---
 
 <p align="center"> 
-  <img src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dev-512.png" width="26%" height="26%" />
+  <img src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dev-512.png" width="28%" height="28%" />
 </p>
 <h1 align="center">SKILLS & TOOLS</h1>
 <p align="center">C, Java, Kolin, Shell Script, HTML, CSS, Git, Linux Kernel, Embedded Android/System, Android Studio, Android Software Development, Atom, IntelliJ IDEA, CLion and VS Code.</p>
@@ -30,9 +30,9 @@ permalink: /about
 ---
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="26%" height="26%" /> 
+  <img src="https://s20.postimg.cc/bintf8y25/works.png" width="28%" height="28%" /> 
 </p>
-<h1 align="center">WORKS</h1>
+<h1 align="center">WORK</h1>
 <p align="center">
   <a href="https://github.com/purez-kernel">Project Maintianer @PureZ Kernel</a>
 </p>
@@ -40,7 +40,7 @@ permalink: /about
 ---
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="26%" height="26%" /> 
+  <img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="28%" height="28%" /> 
 </p>
 <h1 align="center">INTERESTS</h1>
 <p align="center">Android OS/Kernel, Linux, Embedded Android/System and App Development, Photography, Music, Game Playing and Writing Articles.</p>

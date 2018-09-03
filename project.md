@@ -5,7 +5,7 @@ permalink: /project
 ---
 
 <p align="center"> 
-  <img src="https://s20.postimg.cc/lie7on02l/purez.png" width="26%" height="26%" /> 
+  <img src="https://s20.postimg.cc/lie7on02l/purez.png" width="28%" height="28%" /> 
 </p>
 <h1 align="center">PureZ Kernel</h1>
 <p align="center">PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform with Upstream Linux Kernel for Android Devices.</p>
