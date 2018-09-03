@@ -1,6 +1,7 @@
 ---
 layout: page
 title: PROJECTS
+tagline: PROJECTS & WORKS
 permalink: /projects
 ---
 
