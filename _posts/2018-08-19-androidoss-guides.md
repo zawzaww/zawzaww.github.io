@@ -11,7 +11,7 @@ permalink: /work/androidoss-guides
 
 # Android OSS Guides
 
-## Android OS Based Guides, How-Tos, Embedded and Android Internals Guides
+## Android OS/Kernel Based Guides, Android Internals Guides and How-To Articles
 
 # Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Custom-Android-OS.md)
