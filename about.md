@@ -32,7 +32,7 @@ permalink: /about
 <p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="28%" height="28%" /> 
 </p>
-<h1 align="center">WORK</h1>
+<h1 align="center">WORKS</h1>
 <p align="center">
   <a href="https://github.com/purez-kernel">Project Maintianer @PureZ Kernel</a>
 </p>

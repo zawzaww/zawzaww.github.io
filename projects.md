@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Project
-permalink: /project
+title: Projects
+permalink: /projects
 ---
 
 <p align="center"> 
