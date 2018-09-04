@@ -9,43 +9,8 @@ permalink: /work/purez-kernel-android
   <img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /> 
 </p>
 
-# PureZ Kernel
-PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform with Upstream Linux Kernel for Android Devices.
+<h1 align="center">PureZ Kernel</h1>
+<p align="center">PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform with Upstream Linux Kernel for Android Devices.</p>
 
+<h3 align="center">You can read more on: <a href="https://purez-kernel.github.io">PureZ Kernel Website</a> | <a href="https://github.com/purez-kernel">SourceCode</></h3>
 
-# Features
-**Note:** *It’s overview features of PureZ Kernel*
-- Latest Android Security Patch on the Latest Android Version
-- Easy Installation with TWRP FlashableZip
-- Built FlashableZip with AnyKernel2
-- Support Android 8.1.0 / LineageOS 15.1
-- Update to Date Android Security Patch
-- Update to Date Linux Kernel Version
-- Screen Off Volume Control
-- KCAL Advanced Color Control
-- MultiROM Support
-- Thermal Core Control
-- Wake Gestures : DoubleTap2Wake/Sleep. Sweep2Wake/Sleep.
-- F2FS Filesystem Support
-- SafetyNet Pass
-- Disable Forced Encryption and dm-verity
-- Backlight Dimmer Option
-- Faux Sound Control with High Performance Audio
-- GPU Governors : userspace, powersave, performance, simple_ondemand, msm-adreno-tz, cpufreq.
-- CPU Governors : interactive, ondemand, userspace, powersave, conservative, performance
-- CPU Governors : zzmoove, elementalx, chill, intelliactive
-- I/O Scheduler : noop, deadline, row, cfq, test-iosched.
-- and More Features.
-
-
-# SourceCode
-## [https://github.com/purez-kernel](https://github.com/purez-kernel)
-
-
-# More Information
-Read more on PureZ Kernel Website: [https://purez-kernel.github.io](https://purez-kernel.github.io)
-
-
-Regards,
-
-[Zaw Zaw](https://github.com/zawzaww)
