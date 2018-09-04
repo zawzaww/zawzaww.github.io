@@ -28,6 +28,7 @@
               {% if my_page.title contains "404" %}
               {% else %}
                 <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="page-link" href="https://github.com">Github</a>
               {% endif %}
             {% endif %}
           {% endfor %}
