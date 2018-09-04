@@ -1,5 +1,7 @@
 ---
-title: BLOG
-external_url: https://medium.com/zawzaww
+site-header:
+    - name: GitHub
+      title: GitHub
+      url: https://github.com
 ---
 
