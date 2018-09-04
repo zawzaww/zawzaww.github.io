@@ -16,10 +16,6 @@ theme: jekyll-theme-minimal
 # Permalink for posts and pages
 # permalink: /placeholders/:title/
 
-header_pages:
-    - name: GitHub
-      url: https://github.com
-
 # Social
 author: "Zaw Zaw"
 twitter:
