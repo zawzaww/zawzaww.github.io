@@ -1,5 +1,4 @@
 ---
 title: BLOG
+permalink: https://medium.com/zawzaww
 ---
-
-[BLOG](https://medium.com/zawzaww)
