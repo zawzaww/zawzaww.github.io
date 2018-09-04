@@ -1,6 +1,5 @@
 ---
-Navigation:
-- title: BLOG
-url: https://medium.com/zawzaww
+title: BLOG
+external_url: https://medium.com/zawzaww
 ---
 
