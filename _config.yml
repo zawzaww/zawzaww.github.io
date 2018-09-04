@@ -8,10 +8,9 @@ description: Project Maintainer of PureZ Kernel
 theme: jekyll-theme-minimal
 
 # MAIN URL
-# url: https://zawzaww.github.io/
+url: https://zawzaww.github.io
 
 # Base URL
-# Default: empty url
 # baseurl: ""
 
 # Permalink for posts and pages
