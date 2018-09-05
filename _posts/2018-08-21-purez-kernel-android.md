@@ -12,5 +12,5 @@ permalink: /work/purez-kernel-android
 <h1 align="center">PureZ Kernel</h1>
 <p align="center">PureZ Kernel is a free and Open-source Custom Kernel Based on Android Platform with Upstream Linux Kernel for Android Devices.</p>
 
-<h3 align="center">You can read more on: <a href="https://purez-kernel.github.io">PureZ Kernel Website</a> | <a href="https://github.com/purez-kernel">SourceCode</></h3>
+<h3 align="center">You can read more on: <a href="https://purez-kernel.github.io">PureZ Kernel Website</a> | <a href="https://github.com/purez-kernel">SourceCode</a></h3>
 
