@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 <p align="center"><img src="https://s20.postimg.cc/arzyqvd31/Zaw_Zaw-_Round.png" width="49%" height="49%"/></p>
