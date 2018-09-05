@@ -23,9 +23,9 @@ permalink: /works
 
 ----
 
-<h1><a href="https://zawzaww.github.io/work/xda-threads-works">Projects on XDA-Forums</a></h1>
+<h1><a href="https://zawzaww.github.io/work/xda-threads-works">Projects on XDA</a></h1>
 <p>Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums</p>
-<p><a href="https://zawzaww.github.io/work/xda-threads-works">Website</a> | <a href="https://github.com/zawzaww">SourceCode</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA Profile</a> </p>
+<p><a href="https://zawzaww.github.io/work/xda-threads-works">Website</a> | <a href="https://github.com/zawzaww?tab=repositories">SourceCode</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA Profile</a> </p>
 <p align="center"> 
   <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" /> 
 </p>
