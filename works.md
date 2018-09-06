@@ -1,11 +1,10 @@
 ---
 layout: page
 title: WORKS
-tagline: DEVELOPMENT PROJECTS & WORKS
 permalink: /works
 ---
 
-<h1 align="center">MY WORKS</h1>
+<h1 align="center">PROJECTS & WORKS</h1>
 
 ---
 
