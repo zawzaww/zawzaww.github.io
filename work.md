@@ -1,10 +1,10 @@
 ---
 layout: page
-title: WORKS
-permalink: /works
+title: MY WORK
+permalink: /work
 ---
 
-<h1 align="center">PROJECTS & WORKS</h1>
+<h2 align="center">WORKS & PROJECTS</h2>
 
 ---
 

@@ -8,7 +8,7 @@ permalink: /about
   <img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="28%" height="28%" /> 
 </p>
 <h1 align="center">BIO</h1>
-<p align="center">I am very interested in Android OS and experienced in Embedded Android/System and Software/App development. I love working for Android OS Platform : Building Android Custom Firmwares/ROMs, Kernels and Apps.</p>
+<p align="center">I am very interested in Android OS and experienced in Embedded Android, System and Android software development. I love working on Android Platform: Building Android Kernels, Custom ROMs and Apps.</p>
 
 ---
 
@@ -32,10 +32,8 @@ permalink: /about
 <p align="center"> 
   <img src="https://s20.postimg.cc/bintf8y25/works.png" width="28%" height="28%" /> 
 </p>
-<h1 align="center">WORKS</h1>
-<p align="center">
-  <a href="https://github.com/purez-kernel">Project Maintianer @PureZ Kernel</a>
-</p>
+<h1 align="center">WORK</h1>
+<p align="center">Project Maintianer/Contributor <a href="https://github.com/purez-kernel">@PureZ Kernel</a></p>
 
 ---
 
