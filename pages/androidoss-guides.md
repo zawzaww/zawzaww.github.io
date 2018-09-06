@@ -1,14 +1,17 @@
 ---
 layout: post
 title: "Android OSS Guides"
-tagline: "Android OS/Kernel Based Guides, Android Internals Guides and How-To Articles"
 categories: work
 permalink: /work/androidoss-guides
 ---
 
 <p align="center">
- <img src="https://images.wallpaperscraft.com/image/android_os_gray_robot_33642_1920x1080.jpg" />  
+ <img src="https://images.wallpaperscraft.com/image/android_os_gray_robot_33642_1920x1080.jpg" />
 </p>
+
+# Android OSS Guides
+## Android OS/Kernel Based Guides, Android Internals Guides and How-To Articles
+
 
 # Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Custom-Android-OS.md)

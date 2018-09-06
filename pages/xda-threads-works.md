@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Projects on XDA-Forums"
-tagline: "Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums"
 categories: work
 permalink: /work/xda-threads-works
 ---
@@ -9,6 +8,10 @@ permalink: /work/xda-threads-works
 <p align="center"> 
   <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" /> 
 </p>
+
+# Projects on XDA-Forums
+## Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums
+
 
 # Guides and Tutorials
 Here is my android guides and tutorials on xda-develoeprs forums.
