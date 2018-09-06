@@ -13,7 +13,7 @@ permalink: /about
 ---
 
 <p align="center"> 
-  <img src="http://www.forsythunitedway.org/wp-content/uploads/2015/08/education-icon.png" width="28%" height="28%" /> 
+  <img src="https://s20.postimg.cc/yw1asrp4t/education-icon.png" width="28%" height="28%" />
 </p>
 <h1 align="center">EDUCATION</h1>
 <p align="center">Pyay Technological University, IT - DropOut (2012-2016)</p>
@@ -22,7 +22,7 @@ permalink: /about
 ---
 
 <p align="center"> 
-  <img src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dev-512.png" width="28%" height="28%" />
+  <img src="https://s20.postimg.cc/il16wgzsd/skill-code.png" width="28%" height="28%" />
 </p>
 <h1 align="center">SKILLS</h1>
 <h2 align="center">Programming Languages and Tools</h2>
