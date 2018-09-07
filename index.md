@@ -10,24 +10,29 @@ layout: home
 ---
 
 <h1 align="center"><a href="https://zawzaww.github.io/about">ABOUT ME</a></h1>
+<p align="center">Bio, Education, Skills, Career & Work and Interests.</p>
 <p align="center"><a href="https://zawzaww.github.io/about"><img src="https://s20.postimg.cc/vbse5qvn1/about.png" width="32%" height="32%"/></a></p>
 
 ---
 
 <h1 align="center"><a href="https://medium.com/zawzaww">BLOG</a></h1>
+<p align="center">My Personal Blog about Android, Tech, How-To Articles and More.</p>
 <p align="center"><a href="https://medium.com/zawzaww"><img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="32%" height="32%"/></a></p>
 
 ---
 
 <h1 align="center"><a href="https://zawzaww.github.io/photography">PHOTOGRAPHY</a></h1>
+<p align="center">Mobile Photography: I love to take Photograph and Love to share my Photos.</p>
 <p align="center"><a href="https://zawzaww.github.io/photography"><img src="https://s20.postimg.cc/bh6cjmo59/photography.png" width="32%" height="32%"/></a></p>
 
 ---
 
 <h1 align="center"><a href="https://zawzaww.github.io/work">MY WORK</a></h1>
+<p align="center">Portfolio, Android Development Projects, Free and Open Source Projects.</p>
 <p align="center"><a href="https://zawzaww.github.io/work"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="32%" height="32%"/></a></p>
 
 ---
 
 <h1 align="center"><a href="https://zawzaww.github.io/contact">CONTACT</a></h1>
+<p align="center">You can contact me via Email, Social network, Forum and  Messaging Platforms.</p>
 <p align="center"><a href="https://zawzaww.github.io/contact"><img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="32%" height="32%"/></a></p>
