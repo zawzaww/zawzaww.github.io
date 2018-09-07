@@ -28,7 +28,7 @@ layout: home
 ---
 <br>
 
-<h1 align="center"><a href="https://zawzaww.github.io/photography">MY WORK</a></h1>
+<h1 align="center"><a href="https://zawzaww.github.io/work">MY WORK</a></h1>
 <p align="center"><a href="https://zawzaww.github.io/work"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="35%" height="35%"/></a></p><br>
 
 ---
