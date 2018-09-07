@@ -10,30 +10,30 @@ layout: home
 ---
 <br>
 
-<h1 align="center"><a href="https://zawzaww.github.io/about">ABOUT ME</a></h1>
-<p align="center"><a href="https://zawzaww.github.io/about"><img src="https://s20.postimg.cc/vbse5qvn1/about.png" width="35%" height="35%"/></a></p><br>
+<h2 align="center"><a href="https://zawzaww.github.io/about">ABOUT ME</a></h2>
+<p align="center"><a href="https://zawzaww.github.io/about"><img src="https://s20.postimg.cc/vbse5qvn1/about.png" width="32%" height="32%"/></a></p><br>
 
 ---
 <br>
 
-<h1 align="center"><a href="https://medium.com/zawzaww">PERSONAL BLOG</a></h1>
-<p align="center"><a href="https://medium.com/zawzaww"><img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="35%" height="35%"/></a></p><br>
+<h2 align="center"><a href="https://medium.com/zawzaww">PERSONAL BLOG</a></h2>
+<p align="center"><a href="https://medium.com/zawzaww"><img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="32%" height="32%"/></a></p><br>
 
 ---
 <br>
 
-<h1 align="center"><a href="https://zawzaww.github.io/photography">PHOTOGRAPHY</a></h1>
-<p align="center"><a href="https://zawzaww.github.io/photography"><img src="https://s20.postimg.cc/bh6cjmo59/photography.png" width="35%" height="35%"/></a></p><br>
+<h2 align="center"><a href="https://zawzaww.github.io/photography">PHOTOGRAPHY</a></h2>
+<p align="center"><a href="https://zawzaww.github.io/photography"><img src="https://s20.postimg.cc/bh6cjmo59/photography.png" width="32%" height="32%"/></a></p><br>
 
 ---
 <br>
 
-<h1 align="center"><a href="https://zawzaww.github.io/work">MY WORK</a></h1>
-<p align="center"><a href="https://zawzaww.github.io/work"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="35%" height="35%"/></a></p><br>
+<h2 align="center"><a href="https://zawzaww.github.io/work">MY WORK</a></h2>
+<p align="center"><a href="https://zawzaww.github.io/work"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="32%" height="32%"/></a></p><br>
 
 ---
 <br>
 
-<h1 align="center"><a href="https://zawzaww.github.io/contact">CONTACT</a></h1>
-<p align="center"><a href="https://zawzaww.github.io/contact"><img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="35%" height="35%"/></a></p>
+<h2 align="center"><a href="https://zawzaww.github.io/contact">CONTACT</a></h2>
+<p align="center"><a href="https://zawzaww.github.io/contact"><img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="32%" height="32%"/></a></p>
 

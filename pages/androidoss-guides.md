@@ -10,7 +10,7 @@ permalink: /work/androidoss-guides
 </p>
 
 # Android OSS Guides
-## Android OS/Kernel Based Guides, Android Internals Guides and How-To Articles
+## Android OS Based Guides, How-Tos, OS/Kernel and Android Internals Guides
 
 
 # Content
