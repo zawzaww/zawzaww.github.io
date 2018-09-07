@@ -6,7 +6,7 @@ permalink: /work/androidoss-guides
 ---
 
 <p align="center">
- <img src="https://images.wallpaperscraft.com/image/android_os_gray_robot_33642_1920x1080.jpg" />
+ <img src="https://s20.postimg.cc/70n6ckm5p/android-os-logo-grey.jpg" />
 </p>
 
 # Android OSS Guides
