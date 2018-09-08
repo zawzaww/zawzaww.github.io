@@ -1,7 +1,7 @@
 # Personal Website
 ## https://zawzaww.github.io
 
-My Personal Website about me, mobile photography, portfolio, android developement, free and opensource projects.
+My Personal Website about Me, Mobile Photography, Portfolio, Android Development, Free and OpenSource Projects.
 
 ## License
 This Repository is licensed under Apache-2.0 License. See the [LICENSE](https://github.com/zawzaww/zawzaww.github.io/blob/master/LICENSE) for details.
