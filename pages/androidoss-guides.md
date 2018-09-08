@@ -44,8 +44,6 @@ Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=758161
 This guides are licensed under GPL-3.0 License. See the [LICENSE](https://github.com/zawzaww/android-articles/blob/android/LICENSE) for details.
 
 ```bash
-GNU General Public License Version 3.0
-
 Copyright(C) 2017-2018, Zaw Zaw
 
 This guides are free and you can distribute it and/or modify
