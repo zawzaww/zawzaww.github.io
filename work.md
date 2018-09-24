@@ -8,7 +8,7 @@ permalink: /work
 
 ---
 
-<h1><a href="https://purez-kernel.github.io">PureZ Kernel</a></h1>
+<h1><a href="https://zawzaww.github.io/work/purez-kernel">PureZ Kernel</a></h1>
 <p>PureZ Kernel is an Open source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices</p>
 <p><a href="https://zawzaww.github.io/work/purez-kernel">Website</a> | <a href="https://github.com/purez-kernel">SourceCode</a></p>
 <p align="center"><img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /></p>
@@ -30,4 +30,3 @@ permalink: /work
 <p align="center">
   <img src="https://s20.postimg.cc/4qq51vcl9/xda-developers.png" /> 
 </p>
-
