@@ -2,15 +2,15 @@
 layout: home
 ---
 
-<p align="center"><img src="https://s20.postimg.cc/yxt5lu0zx/Round_Photo-_Zaw_Zaw.png" width="51%" height="51%"/></p>
+<p align="center"><img src="https://i.postimg.cc/xC0Z5m25/Round-Photo-Zaw.png" width="51%" height="51%"/></p>
 <p align="center"><a href="https://medium.com/zawzaww">Personal Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA</a> | <a href="https://t.me/zawzaww">Telegram</a></p>
-<p align="center">Hello, I am Zaw Zaw. I am very interested in Android OS and experienced in Android software development, Kernel and Embedded Android OS, and also interested in Mobile photography. Working Project Maintainer and Core Contributor at PureZ Kernel.</p>
+<p align="center">Hello, I am Zaw Zaw aka Zaw Zaw Thein. I am experienced in Android development and very interested in Android Software development, Embedded software, System programming and Embedded Android/OS development and also interested in Mobile photography.</p>
 <br>
 
 ---
 
 <h1 align="center"><a href="https://zawzaww.github.io/about">ABOUT ME</a></h1>
-<p align="center">Bio, Education, Skills, Career & Work and Interests.</p>
+<p align="center">Bio, Education, Skills, Career and Interests.</p>
 <p align="center"><a href="https://zawzaww.github.io/about"><img src="https://s20.postimg.cc/vbse5qvn1/about.png" width="32%" height="32%"/></a></p>
 <br>
 

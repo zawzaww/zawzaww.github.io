@@ -7,7 +7,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="32%" height="32%" /></p>
 <h1 align="center">BIO</h1>
-<p align="center">I love working on Android Platform: Building Custom Android OS, Kernels and Apps.</p>
+<p align="center">[Health vs Me : I believe I can fight]</p>
 <br>
 
 ---
@@ -25,7 +25,7 @@ permalink: /about
 <p align="center"><img src="https://s20.postimg.cc/il16wgzsd/skill-code.png" width="32%" height="32%" /></p>
 <h1 align="center">SKILLS</h1>
 <h2 align="center">Programming Languages & Tools</h2>
-<p align="center">C, Java, Kolin, Shell Script, HTML, CSS, Git, Linux Kernel, Android System Programming and Android Software/App Development, Android Studio and VS Code.</p>
+<p align="center">C, C++, Java, Kolin, Shell Script, HTML, CSS, Git, Linux Kernel, Embedded Android development and Android Software/App Development, Android Studio and VS Code.</p>
 <br>
 
 ---
@@ -33,7 +33,8 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bintf8y25/works.png" width="32%" height="32%" /></p>
 <h1 align="center">WORK</h1>
-<p align="center">Project Maintainer / Core Contributor <a href="https://github.com/purez-kernel">@PureZ Kernel</a></p>
+<p align="center">Junior Android Engineer <a href="https://www.linkedin.com/company/rebook-creative">@Rebook Creative</a></p>
+<p align="center">Project Maintainer <a href="https://github.com/purez-android">@PureZ Android</a></p>
 <br>
 
 ---
@@ -41,7 +42,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/krv1mjifh/github.png" width="32%" height="32%" /></p>
 <h1 align="center">GitHub</h1>
-<p align="center">PureZ Kernel: <a href="https://github.com/purez-kernel">github/purez-kernel</a></p>
+<p align="center">PureZ Android: <a href="https://github.com/purez-android">github/purez-android</a></p>
 <p align="center">Zaw Zaw: <a href="https://github.com/zawzaww">github/zawzaww</a></p>
 <br>
 
@@ -50,4 +51,4 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="32%" height="32%" /></p>
 <h1 align="center">INTERESTS</h1>
-<p align="center">Android OS/Kernel, Linux, Android Software Development, Android System Programming, Music, Mobile Photography, Game Playing, Sharing and Writing.</p>
+<p align="center">Android OS, Linux, Android Software Development, Embedded software, System Programming, Embedded Android development, Music, Mobile Photography, Game Playing, Sharing and Writing.</p>
