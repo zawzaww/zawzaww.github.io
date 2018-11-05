@@ -8,7 +8,7 @@ permalink: /work/purez-kernel
 <p align="center"><img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /></p>
 
 # PureZ Kernel
-PureZ Kernel is an Open source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices.
+PureZ Kernel is a free and Open source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices.
 
 
 # Features
@@ -68,9 +68,4 @@ PureZ Kernel is an Open source Android Custom Kernel Based on Upstream Linux Ker
 - [LG Nexus 5X](https://github.com/purez-kernel/kernel-lge-bullhead)
 - [Huawei Nexus 6P](https://github.com/purez-kernel/kernel-huawei-angler)
 - [Google Pixel / Pixel XL](https://github.com/purez-kernel/kernel-google-marlin)
-
-
-# GitHub Organization
-
-### [https://github.com/purez-kernel](https://github.com/purez-kernel)
 
