@@ -4,13 +4,13 @@ title: MY WORK
 permalink: /work
 ---
 
-<h2 align="center">MY PROJECTS</h2>
+<h2 align="center">OPEN-SOURCE PROJECTS</h2>
 
 ---
 
 <h1><a href="https://zawzaww.github.io/work/purez-kernel">PureZ Kernel</a></h1>
 <p>PureZ Kernel is an Open source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices</p>
-<p><a href="https://zawzaww.github.io/work/purez-kernel">Website</a> | <a href="https://github.com/purez-android">SourceCode</a></p>
+<p><a href="https://zawzaww.github.io/work/purez-kernel">Website</a> | <a href="https://github.com/zawzaww">SourceCode</a></p>
 <p align="center"><img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /></p>
 <br>
 

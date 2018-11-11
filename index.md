@@ -4,7 +4,7 @@ layout: home
 
 <p align="center"><img src="https://i.postimg.cc/xC0Z5m25/Round-Photo-Zaw.png" width="51%" height="51%"/></p>
 <p align="center"><a href="https://medium.com/zawzaww">Personal Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA</a> | <a href="https://t.me/zawzaww">Telegram</a></p>
-<p align="center">Hello, I am Zaw Zaw aka Zaw Zaw Thein. I am experienced in Android and very interested in Android Software development, System programming and Embedded Android/OS development and also interested in Mobile photography.</p>
+<p align="center">Hello, I am Zaw Zaw aka Zaw Zaw Thein. I am experienced in Android and very interested in Embedded System programming, Android Software development and Embedded Android/OS development and also interested in Mobile photography.</p>
 <br>
 
 ---
@@ -31,7 +31,7 @@ layout: home
 ---
 
 <h1 align="center"><a href="https://zawzaww.github.io/work">MY WORK</a></h1>
-<p align="center">Android+embedded projects, free and Android Open-source projects.</p>
+<p align="center">Android projects, free and Open-source projects.</p>
 <p align="center"><a href="https://zawzaww.github.io/work"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="32%" height="32%"/></a></p>
 <br>
 
