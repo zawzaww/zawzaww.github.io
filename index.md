@@ -37,6 +37,13 @@ layout: home
 
 ---
 
+<h1 align="center"><a href="https://forum.xda-developers.com">XDA FORUMS</a></h1>
+<p align="center">Recognized Developer / Contributor at <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers Forums</a></p>
+<p align="center"><a href="://forum.xda-developers.com"><img src="https://i.postimg.cc/3xyrL0SD/xda-icon.png" width="32%" height="32%"/></a></p>
+<br>
+
+---
+
 <h1 align="center"><a href="https://zawzaww.github.io/contact">CONTACT</a></h1>
 <p align="center">You can contact me via Email, Forum and  Messaging Platforms.</p>
 <p align="center"><a href="https://zawzaww.github.io/contact"><img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="32%" height="32%"/></a></p>

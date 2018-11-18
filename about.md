@@ -22,7 +22,7 @@ permalink: /about
 ---
 <br>
 
-<p align="center"><img src="https://s20.postimg.cc/il16wgzsd/skill-code.png" width="32%" height="32%" /></p>
+<p align="center"><img src="https://i.postimg.cc/KcJZxDCM/skills-code.png" width="32%" height="32%" /></p>
 <h1 align="center">SKILLS</h1>
 <h2 align="center">Programming Languages & Tools</h2>
 <p align="center">C, C++, Java, Kolin, Shell Script, HTML, CSS, Git, Linux Kernel arch, Embedded Android/OS, Android Software Development, Android Studio, Atom and VS Code.</p>
