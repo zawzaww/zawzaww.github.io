@@ -39,7 +39,7 @@ layout: home
 
 <h1 align="center"><a href="https://forum.xda-developers.com">XDA FORUMS</a></h1>
 <p align="center">Recognized Developer / Contributor at <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers Forums</a></p>
-<p align="center"><a href="://forum.xda-developers.com"><img src="https://i.postimg.cc/3xyrL0SD/xda-icon.png" width="32%" height="32%"/></a></p>
+<p align="center"><a href="https://forum.xda-developers.com"><img src="https://i.postimg.cc/3xyrL0SD/xda-icon.png" width="32%" height="32%"/></a></p>
 <br>
 
 ---
