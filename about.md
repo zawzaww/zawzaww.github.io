@@ -25,7 +25,7 @@ permalink: /about
 <p align="center"><img src="https://i.postimg.cc/KcJZxDCM/skills-code.png" width="32%" height="32%" /></p>
 <h1 align="center">SKILLS</h1>
 <h2 align="center">Programming Languages & Tools</h2>
-<p align="center">C, C++, Java, Kolin, Shell Script, HTML, CSS, Git, Linux Kernel arch, Embedded Android/OS, Android Software Development, Android Studio, Atom and VS Code.</p>
+<p align="center">C/C++, Java, Kolin, Shell Script, HTML, CSS, Git, Android Studio, Atom, VS Code, Operating Systems, Embedded Systems/Software, Android OS, Linux Kernel, Android Development, Embedded Android software/firmware Development.</p>
 <br>
 
 ---
@@ -50,4 +50,4 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="32%" height="32%" /></p>
 <h1 align="center">INTERESTS</h1>
-<p align="center">Android OS, Linux Kernel, Android Software development, Embedded System programming, Embedded Android/OS, Music, Mobile Photography, Game Playing, Sharing and Wri </p>
+<p align="center">Android OS, Linux Kernel, Embedded Systems/Software, Android Development, System programming, Embedded Android Software/Firmware Development, Music, Mobile Photography, Game Playing, Sharing and Writing.</p>
