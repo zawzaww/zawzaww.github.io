@@ -25,7 +25,7 @@ permalink: /about
 <p align="center"><img src="https://i.postimg.cc/KcJZxDCM/skills-code.png" width="32%" height="32%" /></p>
 <h1 align="center">SKILLS</h1>
 <h2 align="center">Programming Languages & Tools</h2>
-<p align="center">C/C++, Java, Kolin, Shell Script, HTML, CSS, Git, Android Studio, Atom, VS Code, Operating Systems, Embedded Systems/Software, Android OS, Linux Kernel, Android Development, Embedded Android software/firmware Development.</p>
+<p align="center">C, C++, Java, Kolin, Shell Script, HTML, CSS, Android SDK, Android Software Development, Embedded Systems, Linux Kernel, Embedded Android OS/Kernel Development, Git, IntelliJ IDEA, Android Studio, CLion and VS Code.</p>
 <br>
 
 ---
@@ -33,8 +33,8 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bintf8y25/works.png" width="32%" height="32%" /></p>
 <h1 align="center">WORK</h1>
-<p align="center">Junior Android Engineer at Rebook Creative</p>
-<p align="center">Project Maintainer at PureZ Kernel</p>
+<p align="center">Junior Android Engineer at <a href="https://www.linkedin.com/company/rebook-creative">Rebook Creative</a></p>
+<p align="center">Project Maintainer at <a href="https://github.com/purez-kernel">PureZ Kernel</a></p>
 <br>
 
 ---
@@ -42,7 +42,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/krv1mjifh/github.png" width="32%" height="32%" /></p>
 <h1 align="center">GitHub</h1>
-<p align="center">Zaw Zaw: <a href="https://github.com/zawzaww">github/zawzaww</a></p>
+<p align="center">Zaw Zaw: <a href="https://github.com/zawzaww">github.com/zawzaww</a></p>
 <br>
 
 ---
@@ -50,4 +50,4 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="32%" height="32%" /></p>
 <h1 align="center">INTERESTS</h1>
-<p align="center">Android OS, Linux Kernel, Embedded Systems/Software, Android Development, System programming, Embedded Android Software/Firmware Development, Music, Mobile Photography, Game Playing, Sharing and Writing.</p>
+<p align="center">Android OS, Android Software Development, Embedded Systems, Linux Kernel Development, System Programming, Embedded Android OS/Kernel Development, Music, Mobile Photography, Game Playing, Sharing and Writing.</p>
