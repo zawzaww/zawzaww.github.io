@@ -1,7 +1,7 @@
 ---
 layout: page
-title: MY WORK
-permalink: /work
+title: MY PROJECTS
+permalink: /projects
 ---
 
 <h2 align="center">OPEN-SOURCE PROJECTS</h2>
