@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Android OSS Guides"
-categories: work
-permalink: /work/androidoss-guides
+categories: projects
+permalink: /projects/androidoss-guides
 ---
 
 <p align="center">
