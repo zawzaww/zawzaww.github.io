@@ -7,7 +7,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="32%" height="32%" /></p>
 <h1 align="center">BIO</h1>
-<p align="center">[Health vs Me : I believe I can fight]</p>
+<p align="center">[Health vs Me] : I believe I can fight.</p>
 <br>
 
 ---
@@ -33,8 +33,9 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bintf8y25/works.png" width="32%" height="32%" /></p>
 <h1 align="center">WORK</h1>
-<p align="center">Junior Android Engineer at <a href="https://www.linkedin.com/company/rebook-creative">Rebook Creative</a></p>
-<p align="center">Project Maintainer at <a href="https://github.com/purez-kernel">PureZ Kernel</a></p>
+<p align="center">Associate System Engineer, Kernel at <a href="https://www.linkedin.com/company/frontiir">Frontiir</a></p>
+<p align="center">Recognized Developer at <a href="https://www.linkedin.com/company/xda-developers">XDA-Developers</a></p>
+<p align="center">Former Android Engineer at <a href="https://www.linkedin.com/company/rebook-creative">Rebook Creative</a></p>
 <br>
 
 ---
