@@ -33,9 +33,8 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bintf8y25/works.png" width="32%" height="32%" /></p>
 <h1 align="center">WORK</h1>
-<p align="center">Associate System Engineer, Kernel at <a href="https://www.linkedin.com/company/frontiir">Frontiir</a></p>
+<p align="center">Associate Software Engineer, Kernel Team at <a href="https://www.linkedin.com/company/frontiir">Frontiir</a></p>
 <p align="center">Recognized Developer at <a href="https://www.linkedin.com/company/xda-developers">XDA-Developers</a></p>
-<p align="center">Former Android Engineer at <a href="https://www.linkedin.com/company/rebook-creative">Rebook Creative</a></p>
 <br>
 
 ---
