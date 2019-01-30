@@ -43,6 +43,7 @@ permalink: /about
 <p align="center"><img src="https://s20.postimg.cc/krv1mjifh/github.png" width="32%" height="32%" /></p>
 <h1 align="center">GitHub</h1>
 <p align="center">Zaw Zaw: <a href="https://github.com/zawzaww">github.com/zawzaww</a></p>
+<p align="center">PureZ Kernel: <a href="https://github.com/purez-kernel">github.com/purez-kernel</a></p>
 <br>
 
 ---
