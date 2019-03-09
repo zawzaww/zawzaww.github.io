@@ -7,7 +7,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="32%" height="32%" /></p>
 <h1 align="center">BIO</h1>
-<p align="center">[Health vs Me] : I believe I can fight.</p>
+<p align="center">Linux Kernel/Android+Embedded, A Kernel Newbie/Contirbutor.</p>
 <br>
 
 ---
@@ -33,8 +33,8 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bintf8y25/works.png" width="32%" height="32%" /></p>
 <h1 align="center">WORK</h1>
-<p align="center">Associate Software Engineer, Kernel Team at <a href="https://www.linkedin.com/company/frontiir">Frontiir</a></p>
-<p align="center">Recognized Developer at <a href="https://www.linkedin.com/company/xda-developers">XDA-Developers</a></p>
+<p align="center">Associate System Engineer, Kernel Team at <a href="https://www.linkedin.com/company/frontiir">Frontiir</a></p>
+<p align="center">Recognized Developer / Contributor at <a href="https://www.linkedin.com/company/xda-developers">XDA-Forums</a></p>
 <br>
 
 ---
@@ -51,4 +51,4 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bp6kfwg7x/interest.png" width="32%" height="32%" /></p>
 <h1 align="center">INTERESTS</h1>
-<p align="center">Android OS, Android Software Development, Embedded Systems, Linux Kernel Development, System Programming, Embedded Android OS/Kernel Development, Music, Mobile Photography, Game Playing, Sharing and Writing.</p>
+<p align="center">Android OS, Linux Kernel Development, System Programming, Operating System Kernel, Embedded Android OS Development, Music, Mobile Photography, Game Playing, Sharing and Writing.</p>
