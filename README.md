@@ -6,7 +6,7 @@ My Personal website: https://zawzaww.github.io
 This Repository is licensed under Apache-2.0 License. See the [LICENSE](https://github.com/zawzaww/zawzaww.github.io/blob/master/LICENSE) for details.
 
 ```bash
-Copyright(C) 2018, Zaw Zaw
+Copyright(C) 2018-2019, Zaw Zaw
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
