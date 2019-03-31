@@ -7,7 +7,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="32%" height="32%" /></p>
 <h1 align="center">BIO</h1>
-<p align="center">Linux Kernel/Android+Embedded, A Kernel Newbie/Contirbutor.</p>
+<p align="center">Linux kernel/Android+Embedded, Love Nature Photography.</p>
 <br>
 
 ---
@@ -33,7 +33,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/bintf8y25/works.png" width="32%" height="32%" /></p>
 <h1 align="center">WORK</h1>
-<p align="center">Associate System Engineer, Kernel Team at <a href="https://www.linkedin.com/company/frontiir">Frontiir</a></p>
+<p align="center">Associate Software Engineer, RnD/Kernel Team at <a href="https://www.linkedin.com/company/frontiir">Frontiir</a></p>
 <p align="center">Recognized Developer / Contributor at <a href="https://www.linkedin.com/company/xda-developers">XDA-Forums</a></p>
 <br>
 
@@ -43,7 +43,6 @@ permalink: /about
 <p align="center"><img src="https://s20.postimg.cc/krv1mjifh/github.png" width="32%" height="32%" /></p>
 <h1 align="center">GitHub</h1>
 <p align="center">Zaw Zaw: <a href="https://github.com/zawzaww">github.com/zawzaww</a></p>
-<p align="center">PureZ Kernel: <a href="https://github.com/purez-kernel">github.com/purez-kernel</a></p>
 <br>
 
 ---
