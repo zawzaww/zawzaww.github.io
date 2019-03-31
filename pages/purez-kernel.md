@@ -38,7 +38,7 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 
 
 # Supported Devices
-*It’s current support devices of PureZ Kernel.*
+*It’s current supported devices of PureZ Kernel.*
 - Motorola Nexus 6
 - LG Nexus 5X
 - Huawei Nexus 6P
@@ -47,7 +47,7 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 
 
 # Installation
-*How to Install PureZ Kernel for support android devices.*
+*How to Install PureZ Kernel for supported android devices.*
 - Download PureZ Kernel FlashableZip
 - Reboot to Recovery (e.g TWRP)
 - Flash PureZ Kernel Zip
@@ -56,7 +56,7 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 
 
 # Downloads
-*PureZ Kernel FlashableZips for all support devices.*
+*PureZ Kernel FlashableZips for all supported android devices.*
 - [Motorola Nexus 6](https://androidfilehost.com/?w=files&flid=199338)
 - [LG Nexus 5X](https://androidfilehost.com/?w=files&flid=156304)
 - [Huawei Nexus 6P](https://androidfilehost.com/?w=files&flid=198764)
@@ -65,10 +65,11 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 
 # Kernel Sources
 *PureZ Kernel sources for all support android devices.*
-- [Motorola Nexus 6](https://github.com/purez-kernel/kernel-moto-shamu)
-- [LG Nexus 5X](https://github.com/purez-kernel/kernel-lge-bullhead)
-- [Huawei Nexus 6P](https://github.com/purez-kernel/kernel-huawei-angler)
-- [Google Pixel / Pixel XL](https://github.com/purez-kernel/kernel-google-marlin)
+- [Motorola Nexus 6](https://github.com/zawzaww/shamu)
+- [LG Nexus 5X](https://github.com/zawzaww/bullhead)
+- [Huawei Nexus 6P](https://github.com/zawzaww/angler)
+- [Google Pixel / Pixel XL](https://github.com/zawzaww/marlin)
+
 
 Regards,
 
