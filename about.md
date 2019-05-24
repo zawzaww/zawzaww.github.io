@@ -7,7 +7,7 @@ permalink: /about
 
 <p align="center"><img src="https://s20.postimg.cc/g9j3jkr8t/about-me.png" width="32%" height="32%" /></p>
 <h1 align="center">BIO</h1>
-<p align="center">A software engineer who love Linux kernel and embedded Android development.</p>
+<p align="center">I'm Passionate about Android and Linux Kernel.</p>
 <br>
 
 ---

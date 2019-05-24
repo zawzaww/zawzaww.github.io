@@ -4,7 +4,7 @@ layout: home
 
 <p align="center"><img src="https://i.postimg.cc/xC0Z5m25/Round-Photo-Zaw.png" width="51%" height="51%"/></p>
 <p align="center"><a href="https://medium.com/zawzaww">My Personal Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA Forums</a> | <a href="https://t.me/zawzaww">Telegram</a></p>
-<p align="center">Hello, I am Zaw Zaw also known as Zaw Zaw Thein. I am experienced in Linux kernel and Android Software Development and very interested in System programming, Linux Kernel development, Embedded Systems and Android OS/Kernel development. And also interested in Mobile Photography.</p>
+<p align="center">Hello, I am Zaw Zaw also known as Zaw Zaw Thein. I am experienced in Android Software Development and Linux kernel, and very interested in System programming, Linux Kernel Development, Embedded Systems and Android OS/Kernel Development. And also interested in Mobile Photography.</p>
 <br>
 
 ---
