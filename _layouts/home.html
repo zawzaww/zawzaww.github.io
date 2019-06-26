@@ -8,21 +8,4 @@ layout: default
   
     <div>&nbsp;</div>
   
-    <ul class="post-list">
-      {% for post in site.posts %}
-
-        <li>
-
-          <hr/>
-          
-          <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-          </h2>
-  
-          <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
-        </li>
-
-      {% endfor %}
-    </ul>
-  
-  </div>
+</div>
