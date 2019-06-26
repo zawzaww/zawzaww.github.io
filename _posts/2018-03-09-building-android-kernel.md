@@ -3,7 +3,7 @@ layout: post
 title: "How To Build Kernel for Android Devices"
 categories: blog
 author: "Zaw Zaw"
-permalink: blog/2018-03-09-building-android-kernel
+permalink: blog/building-android-kernel
 ---
 
 <center>
