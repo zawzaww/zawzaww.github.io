@@ -17,7 +17,7 @@ layout: home
 ---
 
 <h1 align="center"><a href="https://medium.com/@zawzaww">BLOG</a></h1>
-<p align="center">My Personal Blog about Android, Tech, How-To Articles and More.</p>
+<p align="center">My Personal Blog about Android, Linux kernel, How-To articles and Personal feelings.</p>
 <p align="center"><a href="https://medium.com/@zawzaww"><img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="32%" height="32%"/></a></p>
 <br>
 

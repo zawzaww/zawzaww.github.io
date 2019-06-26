@@ -2,7 +2,7 @@
 title: Zaw Zaw
 
 # Site Description
-description: Passionate Linux kernel/Android Engineer
+description: Passionate about Android and Linux Kernel
 
 # Jekyll Theme
 theme: jekyll-theme-minimal
@@ -12,9 +12,6 @@ url: https://zawzaww.github.io
 
 # Base URL
 baseurl: ""
-
-# Permalink for posts and pages
-# permalink: /placeholders/:title/
 
 # Social
 author: "Zaw Zaw"
