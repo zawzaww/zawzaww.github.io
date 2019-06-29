@@ -1,7 +1,7 @@
 ---
 layout: page
-title: PHOTOGRAPHY
-tagline: MOBILE PHOTOGRAPHY
+title: Photography
+tagline: Mobile Photography
 permalink: /photography
 ---
 

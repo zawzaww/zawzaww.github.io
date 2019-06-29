@@ -18,7 +18,7 @@ layout: home
 
 <h1 align="center"><a href="https://zawzaww.github.io/blog">BLOG</a></h1>
 <p align="center">My Personal Blog about Android, Linux kernel, How-To articles and Personal feelings.</p>
-<p align="center"><a href="https://zawzaww.github.io/blog"><img src="https://s20.postimg.cc/jmvxjyhwd/medium-blog.png" width="32%" height="32%"/></a></p>
+<p align="center"><a href="https://zawzaww.github.io/blog"><img src="https://i.postimg.cc/FHJBJWNY/personal-blog.png" width="32%" height="32%"/></a></p>
 <br>
 
 ---
