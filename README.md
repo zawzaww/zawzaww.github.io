@@ -1,6 +1,7 @@
 # My Personal Blog and Website
 
 Personal website: https://zawzaww.github.io
+
 Personal blog: https://zawzaww.github.io/blog
 
 ## License
