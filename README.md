@@ -1,6 +1,7 @@
-# Personal Website
+# My Personal Blog and Website
 
-My Personal website: https://zawzaww.github.io
+Personal website: https://zawzaww.github.io
+Personal blog: https://zawzaww.github.io/blog
 
 ## License
 This Repository is licensed under Apache-2.0 License. See the [LICENSE](https://github.com/zawzaww/zawzaww.github.io/blob/master/LICENSE) for details.
