@@ -24,7 +24,7 @@ A Makefile is a file (by default named “Makefile”) containing a set of direc
 
 အဲဒီ (https://android.googlesource.com/platform/build.git) Repository ထဲက core/ေအာက္က version_defaults.mk ဆုိတဲ့ file ေလးကုိ ဖြင့္ၾကည့္လုိက္ရင္
 
-<script src="https://gist.github.com/zawzaww/3fc7723ebc6b87f0fe043693e67d1463.js"></script>
+{% gist 3fc7723ebc6b87f0fe043693e67d1463 %}
 
 ```mk
 PLATFORM_VERSION
