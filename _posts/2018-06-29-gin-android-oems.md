@@ -24,73 +24,9 @@ A Makefile is a file (by default named “Makefile”) containing a set of direc
 
 အဲဒီ (https://android.googlesource.com/platform/build.git) Repository ထဲက core/ေအာက္က version_defaults.mk ဆုိတဲ့ file ေလးကုိ ဖြင့္ၾကည့္လုိက္ရင္
 
-```
-#
-# Handle various build version information.
-#
-# Guarantees that the following are defined:
-#     PLATFORM_VERSION
-#     PLATFORM_SDK_VERSION
-#     PLATFORM_VERSION_CODENAME
-#     DEFAULT_APP_TARGET_SDK
-#     BUILD_ID
-#     BUILD_NUMBER
-#     BUILD_DATETIME
-#     PLATFORM_SECURITY_PATCH
-#
+<script src="https://gist.github.com/zawzaww/3fc7723ebc6b87f0fe043693e67d1463.js"></script>
 
-# Look for an optional file containing overrides of the defaults,
-# but don't cry if we don't find it.  We could just use -include, but
-# the build.prop target also wants INTERNAL_BUILD_ID_MAKEFILE to be set
-# if the file exists.
-#
-INTERNAL_BUILD_ID_MAKEFILE := $(wildcard $(BUILD_SYSTEM)/build_id.mk)
-ifdef INTERNAL_BUILD_ID_MAKEFILE
-  include $(INTERNAL_BUILD_ID_MAKEFILE)
-endif
-
-DEFAULT_PLATFORM_VERSION := OPM1
-MIN_PLATFORM_VERSION := OPM1
-MAX_PLATFORM_VERSION := OPM1
-
-ALLOWED_VERSIONS := $(call allowed-platform-versions,\
-  $(MIN_PLATFORM_VERSION),\
-  $(MAX_PLATFORM_VERSION),\
-  $(DEFAULT_PLATFORM_VERSION))
-
-ifndef TARGET_PLATFORM_VERSION
-  TARGET_PLATFORM_VERSION := $(DEFAULT_PLATFORM_VERSION)
-endif
-
-ifeq (,$(filter $(ALLOWED_VERSIONS), $(TARGET_PLATFORM_VERSION)))
-  $(warning Invalid TARGET_PLATFORM_VERSION '$(TARGET_PLATFORM_VERSION)', must be one of)
-  $(error $(ALLOWED_VERSIONS))
-endif
-
-# Default versions for each TARGET_PLATFORM_VERSION
-# TODO: PLATFORM_VERSION, PLATFORM_SDK_VERSION, etc. should be conditional
-# on this
-
-# This is the canonical definition of the platform version,
-# which is the version that we reveal to the end user.
-# Update this value when the platform version changes (rather
-# than overriding it somewhere else).  Can be an arbitrary string.
-
-# When you add a new PLATFORM_VERSION which will result in a new
-# PLATFORM_SDK_VERSION please ensure you add a corresponding isAtLeast*
-# method in the following java file:
-# frameworks/support/compat/gingerbread/android/support/v4/os/BuildCompat.java
-
-# When you change PLATFORM_VERSION for a given PLATFORM_SDK_VERSION
-# please add that PLATFORM_VERSION as well as clean up obsolete PLATFORM_VERSION's
-# in the following text file:
-# cts/tests/tests/os/assets/platform_versions.txt
-PLATFORM_VERSION.OPM1 := 8.1.0
-
-# etc....
-```
-
-```
+```mk
 PLATFORM_VERSION
 PLATFORM_SDK_VERSION
 PLATFORM_VERSION_CODENAME
@@ -109,7 +45,7 @@ PLATFORM_SECURITY_PATCH
 
 Code example:
 
-```
+```mk
 ifndef PLATFORM_SECURITY_PATCH
 # Comment lines
 PLATFORM_SECURITY_PATCH := 2018–05–05
