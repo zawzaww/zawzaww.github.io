@@ -10,9 +10,10 @@ layout: default
 
   <div>&nbsp;</div>
 
-  <hr>
-
   <ul class="post-list">
+
+    <hr>
+
     {% for post in site.posts %}
       <li>
 
@@ -23,7 +24,7 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
         </h2>
 
-        <span>{{ post.excerpt | markdownify | truncatewords: 45 }}</span>
+        <span>{{ post.excerpt | markdownify | truncatewords: 36 }}</span>
 
       </li>
 
