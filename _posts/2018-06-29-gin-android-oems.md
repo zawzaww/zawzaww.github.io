@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Gin Android OEMs"
-tagline: "Security Researchers Catch Android OEMs Lying about Android Security Patches"
+tagline: "Android OEMs Lying about Android Security Patches"
 categories: news
 author: "Zaw Zaw"
 permalink: blog/news/gin-android-oems
 ---
 
-ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ ႏုိင္ငံျခား Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ တကယ္ေတာ္တဲ့ Security Researcher ေတြ ႐ွာေတြ႔ခဲလု႔ိ Report တင္ခဲ့တဲ့အတြက္ေၾကာင့္ပါ။
+ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ တကယ္ေတာ္တဲ့ Security Researcher ေတြ ႐ွာေတြ႔ခဲလု႔ိ Report တင္ခဲ့တဲ့အတြက္ေၾကာင့္ပါ။
 
 ဘယ္လုိလိမ္ခဲ့တာလဲဆုိရင္ သင္ဆုိင္ရာ Android Security Patches တကယ္တမ္း Merge/Install လုပ္ခဲ့မဟုတ္ပဲ အလြယ္နားလည္ေအာင္ေျပာရရင္ Settings>About Phone ထဲ Android Security Patch Level ဆုိတဲ့ေနရာက Date ေလးပဲ Change လုိက္တဲ့ သေဘာပါ။
 
@@ -18,11 +18,17 @@ About the “Make” and “Makefile”
 Source: Wikipedia
 
 ```
-In software development, Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program.
-A Makefile is a file (by default named “Makefile”) containing a set of directives used by a make build automation tool to generate a target/goal.
+In software development, Make is a build automation tool 
+that automatically builds executable programs and libraries 
+from source code by reading files called Makefiles 
+which specify how to derive the target program.
+
+A Makefile is a file (by default named “Makefile”) containing 
+a set of directives used by a make 
+build automation tool to generate a target/goal.
 ```
 
-အဲဒီ (https://android.googlesource.com/platform/build.git) Repository ထဲက core/ေအာက္က version_defaults.mk ဆုိတဲ့ file ေလးကုိ ဖြင့္ၾကည့္လုိက္ရင္
+Android Make build system: https://android.googlesource.com/platform/build.git Repository ထဲက core/ေအာက္က version_defaults.mk ဆုိတဲ့ file ေလးကုိ ဖြင့္ၾကည့္လုိက္ရင္
 
 <script src="https://gist.github.com/zawzaww/3fc7723ebc6b87f0fe043693e67d1463.js"></script>
 
