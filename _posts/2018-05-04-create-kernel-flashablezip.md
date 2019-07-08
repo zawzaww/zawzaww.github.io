@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "How To Create Android Kernel FlashableZip"
-categories: kernel
+title: "Creating Android Kernel FlashableZip"
+categories: how-to
 author: "Zaw Zaw"
-permalink: blog/kernel/create-kernel-flashablezip
+permalink: blog/how-to/create-kernel-flashablezip
 ---
 
 အခု Guide က ပထမက ေရးခဲ့တဲ့ How To Build Android Kernel Guide ရဲ႕ အဆက္ျဖစ္ပါတယ္။ အဲဒီ ပထမပိုင္းကို ဖက္ၿပီးမွ ပိုအဆင္ေျပပါလိမ့္မယ္။ Kernel Source ကေန Compile ၿပီးလို႔ kernel img ေတြ ထြက္လာၿပီဆိုရင္ ကိုယ့္ရဲ႕ Android ဖုန္းအတြက္ Custom Recovery (TWRP) ကေန Kernel ကို Install လုပ္ဖို႔အတြက္ Kernel FlashableZip တခုလိုအပ္ပါတယ္။ အဲဒီအတြက္ FlashableZip Create နည္းကို ေျပာျပေပးမွာ ျဖစ္ပါတယ္။ XDA Recognized Developer တေယာက္ျဖစ္တဲ့ osm0sis ရဲ႕ AnyKernel2 - Android Kernel FlashableZip Template တခု ရွိပါတယ္။ အဲဒီ Template ကေန ကိုယ့္ဖုန္းအတြက္ ဘာေတြ ျပင္ဆင္ဖို႔ လိုအပ္လည္းဆိုတာ ဆက္ေျပာပါမယ္။
