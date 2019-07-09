@@ -5,7 +5,7 @@ title: Zaw Zaw
 description: Passionate about Android and Linux Kernel
 
 # Jekyll Theme
-theme: jekyll-theme-minimal
+theme: # Set empty theme.
 
 # MAIN URL
 url: https://zawzaww.github.io
