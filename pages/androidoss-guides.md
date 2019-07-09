@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Android OSS Guides"
 categories: projects
 permalink: /projects/androidoss-guides

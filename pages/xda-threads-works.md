@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Projects on XDA-Forums"
 categories: projects
 permalink: /projects/xda-threads-works
