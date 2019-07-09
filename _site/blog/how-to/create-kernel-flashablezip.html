@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Non social metatags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#FFFFFF">
+
+    
+
+    <title>Creating Android Kernel FlashableZip</title>
+
+    
+      <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+<html itemscope itemtype="http://schema.org/Article">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Place this data between the <head> tags of your website -->
+
+  <meta name="author" content="Zaw Zaw">
+
+<meta name="description" content="အခု Guide က ပထမက ေရးခဲ့တဲ့ How To Build Android Kernel Guide ရဲ႕ အဆက္ျဖစ္ပါတယ္။ အဲဒီ ပထမပိုင္းကို ဖက္ၿပီးမွ ပိုအဆင္ေျပပါလိမ့္မယ္။ Kernel Source ကေန C..." />
+
+
+
+
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Creating Android Kernel FlashableZip">
+<meta itemprop="description" content="အခု Guide က ပထမက ေရးခဲ့တဲ့ How To Build Android Kernel Guide ရဲ႕ အဆက္ျဖစ္ပါတယ္။ အဲဒီ ပထမပိုင္းကို ဖက္ၿပီးမွ ပိုအဆင္ေျပပါလိမ့္မယ္။ Kernel Source ကေန C...">
+
+  <meta itemprop="image" content="http://localhost:4000">
+
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+
+
+
+<meta name="twitter:title" content="Creating Android Kernel FlashableZip">
+<meta name="twitter:description" content="အခု Guide က ပထမက ေရးခဲ့တဲ့ How To Build Android Kernel Guide ရဲ႕ အဆက္ျဖစ္ပါတယ္။ အဲဒီ ပထမပိုင္းကို ဖက္ၿပီးမွ ပိုအဆင္ေျပပါလိမ့္မယ္။ Kernel Source ကေန C...">
+
+
+
+<!-- Twitter summary card with large image must be at least 280x150px -->
+
+  <meta name="twitter:image:src" content="http://localhost:4000">
+  <meta property="twitter:image" content="http://localhost:4000">
+
+<meta property="twitter:url" content="http://localhost:4000/blog/how-to/create-kernel-flashablezip">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Creating Android Kernel FlashableZip" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:4000/blog/how-to/create-kernel-flashablezip" />
+
+  <meta property="og:image" content="http://localhost:4000" />
+
+<meta property="og:description" content="အခု Guide က ပထမက ေရးခဲ့တဲ့ How To Build Android Kernel Guide ရဲ႕ အဆက္ျဖစ္ပါတယ္။ အဲဒီ ပထမပိုင္းကို ဖက္ၿပီးမွ ပိုအဆင္ေျပပါလိမ့္မယ္။ Kernel Source ကေန C..." />
+<meta property="og:site_name" content="Zaw Zaw" />
+
+  <meta property="article:published_time" content="2018-05-04T00:00:00+06:30" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <meta property="article:tag" content="how-to">
+  
+
+
+
+
+    
+
+    <link rel="canonical" href="http://localhost:4000/blog/how-to/create-kernel-flashablezip">
+
+    
+
+    <link rel="icon" type="image/png" href="https://s20.postimg.cc/lie7on02l/purez.png">
+    <meta name="robots" content="noarchive">
+
+    <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+    <link rel="alternate" media="handheld" href=""> -->
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+  </head>
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+
+    
+      <a class="site-title" href="/">Zaw Zaw</a>
+    
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="https://zawzaww.github.io/about">ABOUT ME</a>
+          <a class="page-link" href="https://zawzaww.github.io/blog">BLOG</a>
+          <a class="page-link" href="https://zawzaww.github.io/photography">PHOTOGRAPHY</a>
+          <a class="page-link" href="https://zawzaww.github.io/projects">PROJECTS</a>
+          <a class="page-link" href="https://zawzaww.github.io/contact">CONTACT</a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    
+    
+    
+
+    <section class="page-header">
+      <h1 class="project-name">Creating Android Kernel FlashableZip</h1>
+      <h2 class="project-tagline"></h2>
+      
+      <!-- Post tagline -->
+      
+        <h2 class="project-date">
+        <time datetime="2018-05-04T00:00:00+06:30" itemprop="datePublished">
+          
+          May 4, 2018
+        </time>
+        
+        
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Zaw Zaw</span></span>
+        
+        </h2>
+      
+      <!-- End: Post tagline -->
+    </section>
+
+    <section class="main-content">
+
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div itemprop="articleBody">
+    <p>အခု Guide က ပထမက ေရးခဲ့တဲ့ How To Build Android Kernel Guide ရဲ႕ အဆက္ျဖစ္ပါတယ္။ အဲဒီ ပထမပိုင္းကို ဖက္ၿပီးမွ ပိုအဆင္ေျပပါလိမ့္မယ္။ Kernel Source ကေန Compile ၿပီးလို႔ kernel img ေတြ ထြက္လာၿပီဆိုရင္ ကိုယ့္ရဲ႕ Android ဖုန္းအတြက္ Custom Recovery (TWRP) ကေန Kernel ကို Install လုပ္ဖို႔အတြက္ Kernel FlashableZip တခုလိုအပ္ပါတယ္။ အဲဒီအတြက္ FlashableZip Create နည္းကို ေျပာျပေပးမွာ ျဖစ္ပါတယ္။ XDA Recognized Developer တေယာက္ျဖစ္တဲ့ osm0sis ရဲ႕ AnyKernel2 - Android Kernel FlashableZip Template တခု ရွိပါတယ္။ အဲဒီ Template ကေန ကိုယ့္ဖုန္းအတြက္ ဘာေတြ ျပင္ဆင္ဖို႔ လိုအပ္လည္းဆိုတာ ဆက္ေျပာပါမယ္။</p>
+
+<h1 id="how-to-create-kernel-flashablezip">How To Create Kernel FlashableZip</h1>
+<ul>
+  <li>အရင္ဆုံး AnyKernel2 Documentation နည္းနည္းဖက္ၾကည့္လုိက္ပါ လြယ္ပါတယ္။ 
+https://github.com/osm0sis/AnyKernel2/blob/master/README.md</li>
+  <li>အရင္ဆုံး AnyKernel2 ကုိ download လုိက္ပါ။</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/osm0sis/AnyKernel2
+</code></pre></div></div>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*Mtv_oPxSpkJTmqM0reuQjA.png" /></p>
+
+<ul>
+  <li>ဘာေတြလုိအပ္လည္း ဆုိရင္ Kernel name ျပင္ ေပးလုိ႔ရမယ္၊ device name သိရပါမယ္ (eg: LG Nexus 5X ဆုိ device name - bullhead)၊ ကုိယ့္ဖုန္းရဲ႕ boot partition location သိရမယ္၊ ramdisk ထဲမွာဆုိရင္ ကုိယ့္ဖုန္းရဲ႕ fstab.devicename (eg- fstab.bullhead) လုိပါတယ္၊ fstab ဆုိတာ file systems table ကုိေျပာတာပါ။</li>
+  <li>ပထမဦးဆုံး အေနနဲ႔ Compile လုိ႔ရလာတဲ့ Image.gz-dtb <code class="highlighter-rouge">/kernelsource/arch/arm64/boot/Image-gz-dtb</code> ကုိ Copy ကူးၿပီး ခုနက AnyKernel2 Folder ထဲ Paste လုိက္ပါ။</li>
+  <li>ျပင္ရမယ့္ ေကာင္ေတြကုိ စေျပာပါမယ္။</li>
+</ul>
+
+<h2 id="kernel-name">Kernel Name:</h2>
+<ul>
+  <li>AnyKernel2 ထဲက anykernel2.sh file ေလးကုိ Code Editor (Atom, VS Code and etc..) တခုခုနဲ႔ ဖြင္လုိက္ၿပီး <code class="highlighter-rouge">kernel.string= kernel name</code> ေရးလုိက္ပါ။</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kernel.string<span class="o">=</span>PureZ Kernel by ZawZaw @XDA-Developers
+</code></pre></div></div>
+
+<h2 id="device-name">Device Name:</h2>
+<ul>
+  <li>anykernel2.sh ကုိဖြင့္ၿပီး device.name1 နဲ႔ device.name2 ေနရာမွာ ကုိယ္႔ဖုန္းရဲ႕ device name ကုိ ေရးလုိက္ပါ။ (ဖုန္း အမ်ဳိးအစာေပၚ မူတည္ၿပီး device name ကြာသြားပါလိမ့္မယ္)</li>
+  <li>Example: LG Nexus 5X - bullhead</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>device.name1<span class="o">=</span>bullhead
+device.name2<span class="o">=</span>Bullhead
+</code></pre></div></div>
+
+<h2 id="boot-partition">Boot partition:</h2>
+<ul>
+  <li>ဒါက အေရးႀကီးပါတယ္ ကုိယ့္ဖုန္းအတြက္ boot partition location ကုိ အတိအက် သိရပါမယ္။ Nexus 5X ရဲ႕ boot partition သည္ <code class="highlighter-rouge">/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot</code> ျဖစ္ပါတယ္။ anykernel2.sh ထဲက <code class="highlighter-rouge">block=/dev/block/platform/…</code> ဆုိတဲ့ line မွာ ျပင္ေပးရမွာ ျဖစ္ပါတယ္။
+(Warning: အဲဒါ အရမ္းအေရးႀကီးပါတယ္ ကုိယ့္ရဲ႕ဖုန္းေပၚမႈတည္ၿပီး ကြဲျပားသြားပါလိမ့္မယ္ သတိထားရမယ့္ တခ်က္တခုပါ)</li>
+  <li>Example: For Nexus 5X</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">block</span><span class="o">=</span>/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot<span class="p">;</span>
+</code></pre></div></div>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*Q6PUEF1pMX8yrFjEVcjv7Q.png" /></p>
+
+<h2 id="file-systems-table-fstab">File Systems Table: fstab</h2>
+<p>Note: (ဒီအဆင့္က တကယ္ေတာ့ မထည့္လည္း ရပါတယ္။ ေက်ာ္သြားလုိ႔ရပါတယ္။ သိေအာင္ တမင္တကာ ထည့္ေရးလုိက္တာ။ Kernel Install လုပ္ဖု႔ိအတြက္ Kernel FlashableZip ျဖစ္႐ုံသက္သက္အတြက္ဆုိ ဒါေတြ မလုိအပ္ပါဘူး။ ဘာအတြက္ လုိအပ္တာလဲ ဆုိေတာ့ filesystem support (e.g - f2fs support) အပုိင္းေတြနဲ႔ Disable forced encryption and dm-verity လုပ္ဖု႔ိအတြက္ လုိအပ္ပါတယ္။ တနည္းအားျဖင့္ Android File System အေၾကာင္း ေကာင္းေကာင္းနားလည္မွ ဒါေတြ လုပ္ႏုိင္ပါလိမ့္မယ္။ <a href="http://techx.com.mm/features/249-things-to-know-about-android-file-system">Android File System</a> အေၾကာင္းကုိ TechX Myanmar မွာ အရင္ဆုံး နားလည္ေအာင္ ဖက္ထားသင့္ပါတယ္။ ၿပီးရင္ Android partitions and file systems အေၾကာင္းကို AOSP မွာ အေသးစိတ္ေလ့လာလို႔ရပါတယ္ https://source.android.com/devices/bootloader/partitions-images
+)</p>
+<ul>
+  <li>AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab (file systems table) file ေလး ကုိ သြားထည့္ရမွာပါ။ အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့ <code class="highlighter-rouge">&lt;mount_point&gt;</code> partition ေတြ ပါဝင္ပါတယ္။ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပါ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android file systems table ျဖစ္ပါတယ္။</li>
+  <li>သူရဲ႕ format ေလးကုိ နည္းနည္းေရးျပပါမယ္။ (Android 4.3 နဲ႔ ေနာက္ပုိင္း version ေတြရဲ႕ ပုံစံပါ)</li>
+  <li>ဒီထက္မက Details ေလ့လာခ်င္ရင္ AOSP မွာ အျပည့္အစုံဖက္ႏုိင္ပါတယ္ https://source.android.com/devices/storage/config</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;src&gt; &lt;mount_point&gt; &lt;<span class="nb">type</span><span class="o">&gt;</span> &lt;mount_flags&gt; &lt;fs_mgr_flags&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>Example: for Nexus 5X ( /system )</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/dev/block/platform/soc.0/f9824900.sdhci/by-name/system       /system         ext4    ro,barrier<span class="o">=</span>1,inode_readahead_blks<span class="o">=</span>8                             <span class="nb">wait</span>,verify<span class="o">=</span>/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor       /vendor         ext4    ro,barrier<span class="o">=</span>1,inode_readahead_blks<span class="o">=</span>8                             <span class="nb">wait</span>,verify<span class="o">=</span>/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier<span class="o">=</span>1,data<span class="o">=</span>ordered,nomblk_io_submit,noauto_da_alloc,errors<span class="o">=</span>panic,inode_readahead_blks<span class="o">=</span>8 <span class="nb">wait</span>,check,forcefdeorfbe<span class="o">=</span>/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier<span class="o">=</span>1,data<span class="o">=</span>ordered,nomblk_io_submit,noauto_da_alloc,errors<span class="o">=</span>panic <span class="nb">wait</span>,check
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/persist      /persist        ext4    noatime,nosuid,nodev,barrier<span class="o">=</span>1,data<span class="o">=</span>ordered,nodelalloc,nomblk_io_submit,errors<span class="o">=</span>panic <span class="nb">wait</span>,notrim
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/modem        /firmware       vfat    ro,shortname<span class="o">=</span>lower,uid<span class="o">=</span>1000,gid<span class="o">=</span>1000,dmask<span class="o">=</span>227,fmask<span class="o">=</span>337,context<span class="o">=</span>u:object_r:firmware_file:s0        <span class="nb">wait</span>
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot         /boot           emmc    defaults                                                        defaults
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/recovery     /recovery       emmc    defaults                                                        defaults
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/misc         /misc           emmc    defaults                                                        defaults
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/modem        /radio          emmc    defaults               
+</code></pre></div></div>
+
+<ul>
+  <li>For Nexus 5X : <a href="https://android.googlesource.com/device/lge/bullhead/+/oreo-r6-release/fstab.bullhead">fstab.bullhead</a></li>
+</ul>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*8d91QeQy0FkwzDb81utVWg.png" /></p>
+
+<ul>
+  <li>အဲဒီ fstab file ကုိ AnyKernel2 ရဲ႕ ramdisk dir ေအာက္မွာ ထည့္ေပးရမွာ ျဖစ္ပါတယ္။</li>
+</ul>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*HS3KrXSTkWsBI-j1jUFnQQ.png" /></p>
+
+<ul>
+  <li>အဲဒါေတြ ေအာင္ျမင္ၿပီ ဆုုိုိုိုိရင္ FlashableZip တခု Create ပါမယ္။</li>
+  <li>AnyKernel2 folder ထဲမွာ Right Click ေထာက္ၿပီး Terminal ကုိဖြင့္လုိက္ပါ။</li>
+  <li>ဒီ command ေလးကုိ ႐ုိက္ေပးလုိက္ပါ။</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zip <span class="nt">-r9</span> Your-Kernel-Name.zip <span class="k">*</span> <span class="nt">-x</span> README Your-Kernel-Name.zip
+</code></pre></div></div>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*o_Sz0SNsQvZIo0UB8oCrSA.png" /></p>
+
+<ul>
+  <li>ၿပီးသြာရင္ AnyKernel2 folder ထဲမွာ Kernel Flashable Zip တခုထြက္လာပါၿပီ။</li>
+</ul>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*9pYZldzILwgx7FvJJbGD-A.png" /></p>
+
+<ul>
+  <li>ကုိယ့္ရဲ႕ Android ဖုန္းအတြက္ Kernel FlashableZip ကုိ TWRP Recovery ကေန Install ဖု႔ိ အဆင္သင့္ျဖစ္ပါၿပီ။</li>
+  <li>DONE</li>
+</ul>
+
+<p>Regards,</p>
+
+<p>ZawZaw <a href="https://forum.xda-developers.com/member.php?u=7581611">@XDA-Developers</a></p>
+
+  </div>
+
+  <div class="disqus">
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-zawzaww-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+  </div>
+
+  
+  
+</article>
+
+
+      <footer class="site-footer">
+        <!-- SVG icons from https://iconmonstr.com -->
+
+        <!-- Github icon -->
+       <p align="center">
+        <span class="my-span-icon">
+          <a href="" aria-label="'s GitHub" title="'s GitHub">
+            <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </span>
+        <!-- Twitter icon -->
+        <span class="my-span-icon">
+          <a href="https://twitter.com/zawzawwme" aria-label="'s Twitter" title="'s Twitter">
+            <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+          </a>
+        </span>
+        <!-- RSS icon -->
+        
+        <!-- Contact icon -->
+        
+        
+          <span class="my-span-icon">
+            <a href="/contact" aria-label="Contact" title="Contact ">
+              <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+            </a>
+          </span>
+        
+       </p>
+
+       <p align="center"><small>Copyright (C) 2018-2019, Zaw Zaw.</small></p>
+
+       <p align="center"><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> &mdash; Powered by <a href="https://jekyllrb.com">Jekyll.</a></small></p>
+
+      </footer>
+    </section>
+
+    
+  </body>
+  
+</html>
