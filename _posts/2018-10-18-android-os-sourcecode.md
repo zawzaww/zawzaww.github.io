@@ -25,14 +25,16 @@ AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 ```/device``` : Android Custom Firmware/ROM တခု Build တဲ့အခါ ကိုယ္ Build ခ်င္တဲ့ Device အတြက္ Device tree လို႔ေခၚတဲ့ hardware and device-specific configuration ေတြကို define လုပ္ေပးတဲ့ ေနရာ ျဖစ္ပါတယ္။
 
 ```/kernel``` : ဒါက ကို Build မယ့္ Device အတြက္ Kernel source ေတြ ရွိတဲ့ ေနရာ ျဖစ္ပါတယ္။
-/platform : platform ေအာက္မွာေတာ့ repository အခြဲေတြ အမ်ားႀကီး ရွိပါတယ္။ /bootable/recovery, /build, /bionic, /dalvik, /art, /docs, /external, /frameworks, /hardware, /manifest, /packages, /prebuilts, /system, /sdk, /ndk, /tools စသျဖင့္ အမ်ားႀကီး ရွိပါတယ္။ ေအာက္မွာ အေသးစိတ္ ဆက္ေရးသြားပါမယ္။
+
+```/platform``` : platform ေအာက္မွာေတာ့ repository အခြဲေတြ အမ်ားႀကီး ရွိပါတယ္။ `/bootable/recovery`, `/build`, `/bionic`, `/dalvik`, `/art`, `/docs`, `/external`, `/frameworks`, `/hardware`, `/manifest`, `/packages`, `/prebuilts`, `/system`, `/sdk`, `/ndk`, `/tools` စသျဖင့္ အမ်ားႀကီး ရွိပါတယ္။ ေအာက္မွာ အေသးစိတ္ ဆက္ေရးသြားပါမယ္။
 
 ```platform/bootable``` : Bootloader and Android bootable recovery SourceCode ေတြ ပါဝင္ပါတယ္။ Android မွာ အဲဒီ AOSP bootable recovery SourceCode ေတြကေန Custom Recovery တခု ျပန္ Build ႏိုင္ပါတယ္။
 
 ```/platform/dalvik``` : Dalvik Virtual Machine နဲ႔ Core libraries ေတြ ရွိတဲ့ ေနရာ ျဖစ္ပါတယ္။ Android အတြက္ သီသန္႔ Google ကေန Design ျပန္လုပ္ထားတဲ့ VM တမ်ိဳး ျဖစ္ပါတယ္။ Android 4.4 နဲ႔ အေစာပိုင္းမွာ သုံးပါတယ္။
 
 ```/platform/art``` : ART က Dalvik VM ေနရာမွာ Replace လုပ္လိုက္တဲ့ Runtime environment တခု ျဖစ္ပါတယ္။ Android 5.0 မွာ စၿပီး Google ကေန Introduce လုပ္ခဲ့ပါတယ္။
-platform/bionic : Google ကေန Android OS အတြက္ သီသန္႔ Develop လုပ္ထားတဲ့ Standard C library တခုျဖစ္ပါတယ္။
+
+```platform/bionic``` : Google ကေန Android OS အတြက္ သီသန္႔ Develop လုပ္ထားတဲ့ Standard C library တခုျဖစ္ပါတယ္။
 
 ```platform/build``` : Makefile နဲ႔ ေရးထားတဲ့ Android Build System တခုပါ။ သေဘာက AOSP SourceCode ကေန Android Custom Firmware/ROM ေတြ make command ေတြနဲ႔ Port / Build လုပ္ဖို႔ ေရးထားတဲ့ Android Build System တခုပါပဲ။
 
