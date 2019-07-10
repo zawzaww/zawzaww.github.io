@@ -3,18 +3,42 @@ layout: default
 title: PERSONAL BLOG
 ---
 
-<!-- This loops through the paginated posts -->
+<!-- Post list. -->
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
+<div>
+
+    {{ content }}
+  
+    <h2 align="center">Latest Blog Posts</h2>
+  
+    <div>&nbsp;</div>
+  
+    <ul class="post-list">
+  
+      {% for post in site.posts %}
+  
+      <hr>
+  
+        <li>
+  
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+  
+          <h1>
+            <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          </h1>
+  
+          <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+  
+        </li>
+  
+      {% endfor %}
+    </ul>
+  
   </div>
 {% endfor %}
 
-<!-- Pagination links -->
+<!-- Pagination links. -->
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
