@@ -2,8 +2,9 @@
 layout: home
 ---
 
-<p align="center"><img src="https://i.postimg.cc/xC0Z5m25/Round-Photo-Zaw.png" width="51%" height="51%"/></p>
-<p align="center"><a href="https://zawzaww.github.io/blog">My Personal Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA Forums</a> | <a href="https://t.me/zawzaww">Telegram</a></p>
+<p align="center"><img src="https://i.postimg.cc/xC0Z5m25/Round-Photo-Zaw.png" width="47%" height="47%"/></p>
+
+<p align="center"><a href="https://zawzaww.github.io/blog">Blog</a> | <a href="https://github.com/zawzaww">GitHub</a> | <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA</a> | <a href="https://t.me/zawzaww">Telegram</a></p>
 <p align="center">Hello, I am Zaw Zaw also known as Zaw Zaw Thein. I am experienced in Android Software Development and Linux kernel, and very interested in System programming, Linux Kernel Development, Embedded Systems and Android OS/Kernel Development. And also interested in Mobile Photography.</p>
 <br>
 
@@ -47,4 +48,3 @@ layout: home
 <h1 align="center"><a href="https://zawzaww.github.io/contact">CONTACT</a></h1>
 <p align="center">You can contact me via Email, Forums and  Messaging Platforms.</p>
 <p align="center"><a href="https://zawzaww.github.io/contact"><img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="32%" height="32%"/></a></p>
-
