@@ -4,18 +4,14 @@ title: PERSONAL BLOG
 ---
 
 <!-- Post list. -->
-{% for post in paginator.posts %}
 <div>
-
-    {{ content }}
-  
     <h2 align="center">Latest Blog Posts</h2>
   
     <div>&nbsp;</div>
   
     <ul class="post-list">
   
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
   
       <hr>
   
@@ -34,9 +30,7 @@ title: PERSONAL BLOG
   
       {% endfor %}
     </ul>
-  
   </div>
-{% endfor %}
 
 <!-- Pagination links. -->
 {% if paginator.total_pages > 1 %}
