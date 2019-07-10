@@ -6,6 +6,8 @@ title: PERSONAL BLOG
 <!-- Post list. -->
 <div>
     <h2 align="center">Blog Posts and Articles</h2>
+
+    <hr>
   
     <div>&nbsp;</div>
   
@@ -22,7 +24,7 @@ title: PERSONAL BLOG
             <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
           </h1>
   
-          <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+          <span>{{ post.excerpt | markdownify | truncatewords: 32 }}</span>
   
         </li>
 
@@ -40,16 +42,6 @@ title: PERSONAL BLOG
   {% else %}
     <span>&laquo; Prev</span>
   {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
 
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>

@@ -4,10 +4,12 @@ title: Zaw Zaw
 # Site Description
 description: Passionate about Android and Linux Kernel
 
+# Jekyll plugins
 plugins:
   - jekyll-paginate
 
-paginate: 5
+# Paginate number and path
+paginate: 6
 paginate_path: /blog/page:num/
 
 # Jekyll Theme
