@@ -5,15 +5,13 @@ title: PERSONAL BLOG
 
 <!-- Post list. -->
 <div>
-    <h2 align="center">Latest Blog Posts</h2>
+    <h2 align="center">Blog Posts</h2>
   
     <div>&nbsp;</div>
   
     <ul class="post-list">
   
       {% for post in paginator.posts %}
-  
-      <hr>
   
         <li>
   
@@ -27,6 +25,8 @@ title: PERSONAL BLOG
           <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
   
         </li>
+
+      <hr>
   
       {% endfor %}
     </ul>
@@ -36,23 +36,23 @@ title: PERSONAL BLOG
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
     <span>&laquo; Prev</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <span class="webjeda">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+      <a href="/">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
   {% else %}
     <span>Next &raquo;</span>
   {% endif %}
