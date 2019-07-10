@@ -7,7 +7,7 @@ description: Passionate about Android and Linux Kernel
 plugins:
   - jekyll-paginate
 
-paginate: 6
+paginate: 5
 paginate_path: /blog/page:num/
 
 # Jekyll Theme
