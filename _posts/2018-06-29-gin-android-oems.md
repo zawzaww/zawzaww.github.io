@@ -7,9 +7,7 @@ author: "Zaw Zaw"
 permalink: blog/news/gin-android-oems
 ---
 
-ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ တကယ္ေတာ္တဲ့ Security Researcher ေတြ ႐ွာေတြ႔ခဲလု႔ိ Report တင္ခဲ့တဲ့အတြက္ေၾကာင့္ပါ။
-
-ဘယ္လုိလိမ္ခဲ့တာလဲဆုိရင္ သင္ဆုိင္ရာ Android Security Patches တကယ္တမ္း Merge/Install လုပ္ခဲ့မဟုတ္ပဲ အလြယ္နားလည္ေအာင္ေျပာရရင္ Settings>About Phone ထဲ Android Security Patch Level ဆုိတဲ့ေနရာက Date ေလးပဲ Change လုိက္တဲ့ သေဘာပါ။
+ျပီးခဲ့တဲ့ 2018 April လ ေလာက္မွာ Tech site ေတာ္ေတာ္မ်ားမ်ားမွာ သတင္းတခုထြက္ခဲ့တယ္။ သတင္းက Android ဖုန္း ထုတ္လုပ္သူ Company တခ်ဳ႔ိ Android Security Patch Level ကုိ Users ေတြကုိ လိမ္ခဲ့တယ္ ဆုိတဲ့ကိစၥပါ။ ဘယ္လုိသိခဲ့တာလဲဆုိရင္ တကယ္ေတာ္တဲ့ Security Researcher ေတြ ႐ွာေတြ႔ခဲလု႔ိ Report တင္ခဲ့တဲ့အတြက္ေၾကာင့္ပါ။ ဘယ္လုိလိမ္ခဲ့တာလဲဆုိရင္ သင္ဆုိင္ရာ Android Security Patches တကယ္တမ္း Merge/Install လုပ္ခဲ့မဟုတ္ပဲ အလြယ္နားလည္ေအာင္ေျပာရရင္ Settings>About Phone ထဲ Android Security Patch Level ဆုိတဲ့ေနရာက Date ေလးပဲ Change လုိက္တဲ့ သေဘာပါ။
 
 Users ေတြကုိ ဘယ္လုိ လိမ္လု႔ိရလဲဆုိရင္ Technically ေသခ်ာေျပာရရင္ Android OS ရဲ႕ SourceCode Repositories ေတြအကုန္႐ွိတဲ့ေနရာ AOSP Google Git (https://android.googlesource.com) ေအာက္က platform/build ဆုိတဲ့ Git Repository တခု႐ွိပါတယ္။ အတိအက် ေပးရရင္ https://android.googlesource.com/platform/build ျဖစ္ပါတယ္။ သေဘာတရား အၾကမ္းေျပာျပရရင္ အဲဒီ Repository က ဘာအတြက္လဲဆုိရင္ Android Build System အတြက္ပါ။ ဆုိလုိတာက Android OS ႀကီး တခုလုံးရဲ႕ သက္ဆုိင္ရာ လုိအပ္တဲ့ SourceCode Repositories ေတြကေန “System.img” ထြက္လာထိ Compile လုပ္ဖု႔ိ Build လုပ္ဖု႔ိ အတြက္ အဓိကရည္ရြယ္ထားတဲ့ make command ေတြနဲ႔ Build automation လုပ္ႏုိင္ဖု႔ိအတြက္ Makefile နဲ႔ ေရးထားတာတဲ့ Repositoryတခုျဖစ္ပါတယ္။
 
