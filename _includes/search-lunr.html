@@ -62,12 +62,7 @@ function lunr_search(term) {
 
 
 <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <div class="search">
-        <p align="center">
-            <input type="text" name="search" class="round" />
-            <input type="submit" class="corner" value="" />
-        </p>
-    </div>
+    <p align="center"><input type="text" class="corner" id="lunrsearch" name="q" maxlength="455" value="" placeholder="Search.." /></p>
 </form>
 <div id="lunrsearchresults">
     <ul></ul>
