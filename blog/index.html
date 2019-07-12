@@ -6,18 +6,16 @@ title: PERSONAL BLOG
 <!-- Post list. -->
 <div>
 
-    <div style="width: 100%; height: 20px; border-bottom: 1px solid grey; text-align: center">
-        <span style="font-size: 25px; background-color: #FFFFFF; padding: 0 10px;">
-          Blog Posts and Articles
-        </span>
-    </div>
-
+    <h2 align="center">Blog Posts and Articles</h2>
+    
     <div>&nbsp;</div>
   
     <ul class="post-list">
   
       {% for post in paginator.posts %}
   
+      <hr>
+      
         <li>
   
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
@@ -30,8 +28,6 @@ title: PERSONAL BLOG
           <span>{{ post.excerpt | markdownify | truncatewords: 25 }}</span>
   
         </li>
-
-      <hr>
 
       {% endfor %}
     </ul>
