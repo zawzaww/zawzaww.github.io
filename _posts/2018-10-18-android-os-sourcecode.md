@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android OS SourceCode and Description"
+title: "Android OS SourceCode"
 categories: knowledge
 author: "Zaw Zaw"
 permalink: blog/knowledge/android-os-sourcecode
