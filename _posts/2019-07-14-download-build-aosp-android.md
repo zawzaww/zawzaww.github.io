@@ -3,9 +3,10 @@ layout: post
 title: "Downloading AOSP SourceCode and Compiling"
 categories: how-to
 author: "Zaw Zaw"
-featured-image: /assets/images/aosp-android-github.png
+header: /assets/images/aosp-android-github.png
 permalink: blog/how-to/download-build-aosp-android
 ---
+
 ဒီ Article မွာ Pure AOSP ဆိုတာဘာလဲ ဆိုတဲ့ အေၾကာင္းအရာနဲ႔ ကြၽန္ေတာ့္ရဲ႕ GitHub က [aosp-android](https://github.com/zawzaww/aosp-android) repository ကို သုံးၿပီး Filesize သက္သာစြာျဖင့္ Pure Android SourceCode ေတြကို ဘယ္လို Download လုပ္ၿပီး GNU/Linux based Computer ေပၚမွာ SourceCode ကေန ဘယ္လို Compile လုပ္မလဲဆိုတာကို ေရးမွာျဖစ္ပါတယ္။ ပထမဆုံး အေနနဲ႔ GitHub repository က [README](https://github.com/zawzaww/aosp-android/blob/android-9.0.0/README.md) ကို ဖက္ၾကည့္ရင္လည္း ရပါတယ္။
 
 # What is Pure AOSP?
