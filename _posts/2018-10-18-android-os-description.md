@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Android OS SourceCode"
+title: "Android OS SourceCode Description"
 categories: knowledge
 author: "Zaw Zaw"
-permalink: blog/knowledge/android-os-sourcecode
+permalink: blog/knowledge/android-os-description
 ---
 
 Android က free and Open-source Project တခု ျဖစ္ၿပီး Android OS SourceCode ေတြကို AOSP (Android Open Source Project) ကေန ရယူႏိုင္ပါတယ္။ Android OS SourceCode ထဲမွာ သက္ဆိုင္ရာ dir ေတြ အမ်ားႀကီး ရွိပါတယ္ တနည္းအားျဖင့္ အဲဒါေတြက git repostories ျဖစ္ပါတယ္။ အဲဒီ SourceCode အတြင္းပိုင္း directories ေတြမွာ ဘယ္ dir က ဘာအတြက္ ဆိုတာ ဒီ Article မွာ ရွင္းျပသြားမွာ ျဖစ္ပါတယ္။
