@@ -4,7 +4,6 @@ title: "Downloading AOSP SourceCode and Compiling"
 categories: how-to
 author: "Zaw Zaw"
 featured-image: /assets/images/aosp-android-github.png
-featured-image-alt: " "
 permalink: blog/how-to/download-build-aosp-android
 ---
 
