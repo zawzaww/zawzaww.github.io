@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Downloading PureAOSP SourceCode and Compiling"
+title: "Downloading AOSP SourceCode and Compiling"
 categories: how-to
 author: "Zaw Zaw"
 permalink: blog/how-to/download-build-aosp-android
