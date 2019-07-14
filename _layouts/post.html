@@ -4,7 +4,7 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
   {% for post in site.posts %}
-  <img src="{{ site.baseurl }}/{{ post.img }}">
+  <img src="{{ post.img }}">
   {% endfor %}
 
   <div itemprop="articleBody">
