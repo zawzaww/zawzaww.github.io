@@ -3,7 +3,7 @@ layout: post
 title: "Downloading AOSP SourceCode and Compiling"
 categories: how-to
 author: "Zaw Zaw"
-header: /assets/images/aosp-android-github.png
+img: /assets/images/aosp-android-github.png
 permalink: blog/how-to/download-build-aosp-android
 ---
 

@@ -3,9 +3,9 @@ layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
-  {% if site.post %}
-  <img src="{{ post.header }}">
-  {% endif %}
+  {% for post in site.post %}
+  <img src="{{ post.img }}">
+  {% endfor %}
 
   <div itemprop="articleBody">
     {{ content }}
