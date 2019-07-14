@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "Downloading AOSP SourceCode and Compiling"
+title: "Downloading PureAOSP SourceCode and Compiling"
 categories: how-to
 author: "Zaw Zaw"
 permalink: blog/how-to/download-build-aosp-android
 ---
 
-ဒီ Article မွာ AOSP ဆိုတာဘာလဲ ဆိုတဲ့ အေၾကာင္းအရာနဲ႔ ကြၽန္ေတာ့္ရဲ႕ GitHub က [aosp-android](https://github.com/zawzaww/aosp-android) repository ကို သုံးၿပီး Filesize သက္သာစြာျဖင့္ Pure Android SourceCode ေတြကို ဘယ္လို Download လုပ္ၿပီး GNU/Linux based Computer ေပၚမွာ SourceCode ကေန ဘယ္လို Compile လုပ္မလဲဆိုတာကို ေရးမွာျဖစ္ပါတယ္။ ပထမဆုံး အေနနဲ႔ GitHub repository က [README](https://github.com/zawzaww/aosp-android/blob/android-9.0.0/README.md) ကို ဖက္ၾကည့္ရင္လည္း ရပါတယ္။
+ဒီ Article မွာ Pure AOSP ဆိုတာဘာလဲ ဆိုတဲ့ အေၾကာင္းအရာနဲ႔ ကြၽန္ေတာ့္ရဲ႕ GitHub က [aosp-android](https://github.com/zawzaww/aosp-android) repository ကို သုံးၿပီး Filesize သက္သာစြာျဖင့္ Pure Android SourceCode ေတြကို ဘယ္လို Download လုပ္ၿပီး GNU/Linux based Computer ေပၚမွာ SourceCode ကေန ဘယ္လို Compile လုပ္မလဲဆိုတာကို ေရးမွာျဖစ္ပါတယ္။ ပထမဆုံး အေနနဲ႔ GitHub repository က [README](https://github.com/zawzaww/aosp-android/blob/android-9.0.0/README.md) ကို ဖက္ၾကည့္ရင္လည္း ရပါတယ္။
 
-# What is AOSP?
-AOSP ဆိုတာ Android Open Source Project ရဲ႕ အတိုေကာက္ စကားလုံး ျဖစ္ပါတယ္။ AOSP မွာ ႏွစ္ပိုင္းခြဲၾကည့္လို႔ရမယ္ ပထမတခုက Android OS ပိုင္းနဲ႔ ပတ္သက္ၿပီး Documentation ေတြ ဖက္လို႔ရမယ့္ (https://source.android.com) နဲ႔ Android OS တခုလုံးအတြက္ SourceCode Git Repositories ေတြရွိတဲ့ AOSP Google Git (https://android.googlesource.com) တို႔ ျဖစ္တယ္။ အဲဒီ AOSP Google Git မွာ Android OS ပတ္သက္တဲ့ “system package apps / framework base / framwork support / framework native / bionic / bootable recovery / art and dalvik VM, kernel sources, device trees, android build system and etc.. စတဲ့ Git Repositories ေတြ အားလုံး Open Source အေနနဲ႔ ရယူႏိုင္ပါတယ္။ ကိုယ့္ရဲ႕ Android ဖုန္းအတြက္ Custom Pure Android OS တခု build မယ္ဆိုရင္ Android OS SourceCode ေတြကို AOSP Google Git က ကရယူရမွာ ျဖစ္ပါတယ္။ ဒီေနရာမွာ တခုသိရမွာက Google ရဲ႕ ကိုယ္ပိုင္ Android apps ေတြေတာ့ AOSP ထဲမွာ မပါဝင္ဘူး (e.g : Google PlayStore, Gmail, Maps, PlayMusic, Drive and etc..) သူတို႔ေတြက တကယ္က Open Source မဟုတ္ပါဘူး။ ဒါေၾကာင့္ AOSP ထဲမွာ အဲဒီ apps project repositories ေတြကို ေတြ႕ရမွာ မဟုတ္ပါဘူး။  Google က သီသန႔္ပိုင္ဆိုင္တဲ့ Apps ေတြ ျဖစ္ပါတယ္။ ဒါေၾကာင့္ သတိထားမိပါလိမ့္မယ္ Pure Android firmware (or) AOSP Based Android Custom firmware ေတြမွာ Google’s apps ေတြ မပါတာ ေတြ႕ရပါမယ္ Firmware Install လုပ္ၿပီးတိုင္း အျပင္ Team ေတြက လုပ္ထားတဲ့ Gapps package တခု သြင္းေပးဖို႔လိုပါတယ္။
+# W့hat is Pure AOSP?
+AOSP ဆိုတာ Android Open Source Project ရဲ႕ အတိုေကာက္ စကားလုံး ျဖစ္ပါတယ္။ ဒီေနရာမွာ Pure AOSP (or) Pure Android သုံးတာက မူရင္း AOSP Git မွာအတိုင္း ဘာမွ မျပဳျပင္ပဲ ဒီအတိုင္း Pure Android OS build တာကို ဆိုလိုျခင္းျဖစ္ပါတယ္။ (Simple named: unmodifed Android OS)
+AOSP ကို ႏွစ္ပိုင္းခြဲၾကည့္လို႔ရမယ္ ပထမတခုက Android OS ပိုင္းနဲ႔ ပတ္သက္ၿပီး Documentation ေတြ ဖက္လို႔ရမယ့္ (https://source.android.com) နဲ႔ Android OS တခုလုံးအတြက္ SourceCode Git Repositories ေတြရွိတဲ့ AOSP Google Git (https://android.googlesource.com) တို႔ ျဖစ္တယ္။ အဲဒီ AOSP Google Git မွာ Android OS ပတ္သက္တဲ့ “system package apps / framework base / framwork support / framework native / bionic / bootable recovery / art and dalvik VM, kernel sources, device trees, android build system and etc.. စတဲ့ Git Repositories ေတြ အားလုံး Open Source အေနနဲ႔ ရယူႏိုင္ပါတယ္။ ကိုယ့္ရဲ႕ Android ဖုန္းအတြက္ Custom Pure Android OS တခု build မယ္ဆိုရင္ Android OS SourceCode ေတြကို AOSP Google Git က ကရယူရမွာ ျဖစ္ပါတယ္။ ဒီေနရာမွာ တခုသိရမွာက Google ရဲ႕ ကိုယ္ပိုင္ Android apps ေတြေတာ့ AOSP ထဲမွာ မပါဝင္ဘူး (e.g : Google PlayStore, Gmail, Maps, PlayMusic, Drive and etc..) သူတို႔ေတြက တကယ္က Open Source မဟုတ္ပါဘူး။ ဒါေၾကာင့္ AOSP ထဲမွာ အဲဒီ apps project repositories ေတြကို ေတြ႕ရမွာ မဟုတ္ပါဘူး။  Google က သီသန႔္ပိုင္ဆိုင္တဲ့ Apps ေတြ ျဖစ္ပါတယ္။ ဒါေၾကာင့္ သတိထားမိပါလိမ့္မယ္ Pure Android firmware (or) AOSP Based Android Custom firmware ေတြမွာ Google’s apps ေတြ မပါတာ ေတြ႕ရပါမယ္ Firmware Install လုပ္ၿပီးတိုင္း အျပင္ Team ေတြက လုပ္ထားတဲ့ Gapps package တခု သြင္းေပးဖို႔လိုပါတယ္။
 
 # GitHub Repository
 https://github.com/zawzaww/aosp-android
