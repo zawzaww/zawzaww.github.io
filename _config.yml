@@ -12,9 +12,6 @@ plugins:
 paginate: 6
 paginate_path: /blog/page:num/
 
-header:
-  overlay_image: /assets/images/aosp-android-github.png
-
 # Jekyll Theme
 theme: # Set empty theme.
 
