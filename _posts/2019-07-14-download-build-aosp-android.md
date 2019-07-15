@@ -54,15 +54,18 @@ AOSP Android SourceCode ေတြ အားလုံး Download လုပ္ၿ
 
 ```
 cd <source-dir>
+
 . build/envsetup.sh
+
 lunch <device_name>
+
 make -j4 (OR) make -j$(nproc --all)
 ```
 
 အေပၚက commands ေတြက ဘယ္အတြက္သုံးတာ ဆိုတာ ဆက္ေျပာျပေပးသြားပါမယ္။
 
 `cd <source-dir>` : 
-ကိုယ့္ Download လုပ္ထားတဲ့ AOSP SourceCode ရွိတဲ့ ေနရာကို ၀င္တာျဖစ္ပါတယ္။
+ကိုယ့္ Download လုပ္ထားတဲ့ AOSP SourceCode ရွိတဲ့ directory ရွိတဲ့ ေနရာကို ဝင္တာျဖစ္ပါတယ္ တနည္းအားျဖင့္ Change directory လုပ္တာျဖစ္ပါတယ္။
 
 `. build/envsetup.sh` : 
 ကိုယ့္ Build မယ့္ Device အတြက္ Compilation မလုပ္ခင္ build system/ envsetup.sh ကို run ေပးဖို႔လိုပါတယ္။
@@ -73,4 +76,5 @@ make -j4 (OR) make -j$(nproc --all)
 `make -j$(nproc --all)` : 
 make ဆိုတဲ့ command က Android OS SourceCode ကေန system.img ထြက္လာတဲ့ အထိ Compilation process ကို စတင္လုပ္ပါတယ္။
 
+ဒီ article မွာ Pure AOSP နဲ႔ GitHub repository အေၾကာင္းကိုပဲ အဓိက ေျပာတာျဖစ္ၿပီး Building လုပ္တဲ့အပိုင္းမွာေတာ့ အၾကမ္းသေဘာေလာက္ပဲ ျဖစ္ပါတယ္။ 
 ကိုယ့္ရဲ႕ Android Device အတြက္ Custom Pure Android version တခု ဘယ္လို Build မလဲဆိုတဲ့ အေသးစိတ္ကို [Building Custom Pure Android OS](https://zawzaww.github.io/blog/how-to/building-pure-android) How-To Article မွာ ဆက္လက္ ဖက္ႏိုင္ပါတယ္။

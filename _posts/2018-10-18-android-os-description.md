@@ -62,7 +62,8 @@ AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 ```platform/ndk``` : Android Native Development Kit (NDK) ပါ Android app developer ေတြ Native code ေတြနဲ႔ C/C++ နဲ႔ Android Apps ေတြ ေရးႏိုင္ပါတယ္။
 
 ```/platform/packages/apps``` : Built-in Android System apps ေတြ ပါ၀င္ပါတယ္။ E.g — Calculator, Camera2, Calendar, Dialer, FMRadio, Gallery2, Launcher3, Music, Settings and etc..
-platform/prebuilts : Linux, Mac လိုမ်ိဳး Host Computer OS ေတြမွာ Android SourceCode ကေန သက္ဆိုင္ရာ Android Devices ေတြ အတြက္ Kernel နဲ႔ Android Custom Firmware/ROM ေတြ Compile လုပ္ဖို႔ Toochains/Compilers ေတြ ပါဝင္ပါတယ္။ E.g — GCC, LLVM/Clang
+
+```platform/prebuilts``` : Linux, Mac လိုမ်ိဳး Host Computer OS ေတြမွာ Android SourceCode ကေန သက္ဆိုင္ရာ Android Devices ေတြ အတြက္ Kernel နဲ႔ Android Custom Firmware/ROM ေတြ Compile လုပ္ဖို႔ Toochains/Compilers ေတြ ပါဝင္ပါတယ္။ E.g — GCC, LLVM/Clang
 
 ```platform/sdk``` : Android Software Development Kit (SDK) ကေတာ့ ေတာ္ေတာ္မ်ားမ်ား သိၾကပါတယ္ Android app ေတြ ေရးဖို႔ မရွိမျဖစ္ပါပဲ။
 
