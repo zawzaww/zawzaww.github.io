@@ -31,9 +31,9 @@ layout: home
 
 ---
 
-<h1 align="center"><a href="https://zawzaww.github.io/projects">MY PROJECTS</a></h1>
+<h1 align="center"><a href="https://zawzaww.github.io/project">MY PROJECTS</a></h1>
 <p align="center">Android, Linux Kernel, free and Open-source projects.</p>
-<p align="center"><a href="https://zawzaww.github.io/projects"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="32%" height="32%"/></a></p>
+<p align="center"><a href="https://zawzaww.github.io/project"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="32%" height="32%"/></a></p>
 <br>
 
 ---
