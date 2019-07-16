@@ -10,8 +10,7 @@ permalink: /projects/xda-threads-works
 </p>
 
 # Projects on XDA-Forums
-## Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA Forums
-
+Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA-Developers Forums.
 
 # Guides and Tutorials
 Here is my android guides and tutorials on xda-develoeprs forums.
@@ -86,7 +85,3 @@ Android Themes for Sony Xperia Devices and Substratum Theme Engine supported and
 
 - [PureZ MaterialRed Theme for Substratum](https://forum.xda-developers.com/android/themes/theme-purez-material-dark-theme-t3549024)
 
-
-Regards,
-
-ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)

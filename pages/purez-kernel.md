@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "PureZ Kernel"
-categories: projects
-permalink: /projects/purez-kernel
+categories: project
+permalink: /project/purez-kernel
 ---
 
 <p align="center"><img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /></p>
@@ -70,7 +70,3 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 - [Huawei Nexus 6P](https://github.com/zawzaww/angler)
 - [Google Pixel / Pixel XL](https://github.com/zawzaww/marlin)
 
-
-Regards,
-
-ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)

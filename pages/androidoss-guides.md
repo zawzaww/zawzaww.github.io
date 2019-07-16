@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Android OSS Guides"
-categories: projects
-permalink: /projects/androidoss-guides
+categories: project
+permalink: /project/androidoss-guides
 ---
 
 <p align="center">
@@ -10,7 +10,7 @@ permalink: /projects/androidoss-guides
 </p>
 
 # Android OSS Guides
-## Android OS/Kernel-Based Guides, How-Tos and Android Internals Guides
+Android OS/Kernel-Based Guides, How-To Articles and Android Internals Guides.
 
 ## Content
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Custom-Android-OS.md)
@@ -53,7 +53,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>
 ```
-
-Regards,
-
-ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
