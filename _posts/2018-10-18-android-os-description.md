@@ -9,8 +9,6 @@ permalink: blog/knowledge/android-os-description
 
 Android က free and Open-source Project တခု ျဖစ္ၿပီး Android OS SourceCode ေတြကို AOSP (Android Open Source Project) ကေန ရယူႏိုင္ပါတယ္။ Android OS SourceCode ထဲမွာ သက္ဆိုင္ရာ dir ေတြ အမ်ားႀကီး ရွိပါတယ္ တနည္းအားျဖင့္ အဲဒါေတြက git repostories ျဖစ္ပါတယ္။ အဲဒီ SourceCode အတြင္းပိုင္း directories ေတြမွာ ဘယ္ dir က ဘာအတြက္ ဆိုတာ ဒီ Article မွာ ရွင္းျပသြားမွာ ျဖစ္ပါတယ္။
 
-<img src="https://cdn-images-1.medium.com/max/800/1*oyskryzt6antdshhCbMs3Q.png" height="100%" width="100%;" />
-
 ပထမဆုံးအေနနဲ႔ ကြၽန္ေတာ္တို႔ AOSP Git repositories: https://android.googlesource.com ကို ၀င္ၾကည့္လိုက္ရင္ repositories ေတြ အမ်ားရွိတာ ေတြ႕ရမ်ာ ျဖစ္ပါတယ္။ အရွင္းဆုံးအေနနဲ႔ ကြၽန္ေတာ္ Local computer ထဲမွာ Download လုပ္ထားတဲ့ SourceCode and dirs ကို အေပၚဆုံးက Screenshot မွာ အရွင္းဆုံးၾကည့္ႏိုင္ပါတယ္။ အဲဒီ dirs ေတြက ဘယ္ေကာင္က ဘာအတြက္ဆိုတာ ေျပာျပေပးမွာ ျဖစ္ပါတယ္။ ဒီေနရာမွာ အေရးႀကီးတဲ့ အသုံးမ်ားတဲ့ အပိုင္းေတြပဲ ေျပာသြားမွာ ျဖစ္ပါတယ္။
 
 <img src="https://cdn-images-1.medium.com/max/800/1*z-gCsPmfT5n_8eTsIIviuQ.png" height="100%" width="100%;" />

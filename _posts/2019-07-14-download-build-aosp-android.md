@@ -16,7 +16,7 @@ AOSP ကို ႏွစ္ပိုင္းခြဲၾကည့္လို�
 # GitHub Repository
 https://github.com/zawzaww/aosp-android
 
-![aosp-android](/assets/images/aosp-android-github.png)
+![aosp-android](/assets/images/download-build-aosp-android.png)
 
 # About GitHub Repository
 ဒီ GitHub က Personal [aosp-android](https://github.com/zawzaww/aosp-android) Repository က Android Devices ေတြအတြက္ Custom Pure Android OS build ဖို႔ရန္ SourceCode ေတြ Size နည္းနည္းနဲ႔ download ဆြဲလို႔ရေအာင္ Setup လုပ္ထားတာ ျဖစ္ပါတယ္။ Personal ဆိုေပမယ့္ တျခားလိုအပ္သူေတြလည္း သုံးႏိုင္ပါတယ္။
