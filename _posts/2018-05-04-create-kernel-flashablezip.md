@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating Android Kernel FlashableZip"
+title: "Creating Kernel FlashableZip for Android"
 categories: how-to
 author: "Zaw Zaw"
 permalink: blog/how-to/create-kernel-flashablezip

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android OS Sources and Description"
+title: "Description of Android OS Sources"
 categories: knowledge
 author: "Zaw Zaw"
 permalink: blog/knowledge/android-os-description
