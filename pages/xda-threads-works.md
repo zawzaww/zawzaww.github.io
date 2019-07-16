@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Projects on XDA-Forums"
-categories: projects
-permalink: /projects/xda-threads-works
+categories: project
+permalink: /project/xda-threads-works
 ---
 
 <p align="center"> 
