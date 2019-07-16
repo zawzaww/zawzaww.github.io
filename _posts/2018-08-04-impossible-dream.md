@@ -2,9 +2,10 @@
 layout: post
 title: "The Impossible Dream"
 tagline: "That's impossible dream in my Country."
-categories: life-goal
+categories: life
 author: "Zaw Zaw"
-permalink: blog/life-goal/impossible-dream
+featured-image: /assets/images/impossible-dream.jpg
+permalink: blog/life/impossible-dream
 ---
 
 ဒီအေၾကာင္းအရာေတြက ကြၽန္ေတာ္တု႔ိႏိုင္ငံမွာ မျဖစ္ႏုိင္မွန္းေတာ့သိတယ္ ဒါေပမယ့္ အရမ္းစိတ္ဝင္စားၿပီး လုပ္ခ်င္စိတ္ျပင္းျပေနတဲ့ အလုပ္တခု။ ျဖစ္ႏုိင္မယ္ဆိုရင္ ကိုယ္ပိုင္ Android Devices ေတြ ထုတ္လုပ္မယ့္ ျမန္မာႏုိင္ငံသားေတြ တည္ေထာင္တဲ့ Android—Mobile OEM Company‌ ေလး တခုေလာက္ေတာ့ ဒီဘဝ အသက္ရွင္ခ်ိန္မွာ ကြၽန္ေတာ္တု႔ိႏုိင္ငံမွာ ရွိရင္ သိေကာင္းမွာပဲလု႔ိ ေတြးမိတယ္။ အဲဒီလိုမ်ိဳး Android OEM Company တခု မွာ Android OS build Team/System ပိုင္းဘက္မွာ အလုပ္လုပ္ခ်င္တယ္။ ဒါေပမယ့္ လြယ္ေတာ့ ေတာ္ေတာ္ မလြယ္တဲ့ကိစၥပါ App/Web ေရးေနတာထက္ကို အဆေပါင္းမ်ားစြာ အရမ္းခက္ခဲမယ့္ အလုပ္တခု ျဖစ္လိမ့္မယ္။ Hardware နဲ Software ေပါင္းစပ္ၿပီးလုပ္ရမွာျဖစ္ၿပီး တျခားႏုိင္ငံက အေတြ႕အႀကဳံရွိတဲ့ ပညာရွင္ေတြလည္း အမ်ားႀကီး လိုအပ္မယ္ ထင္တယ္။

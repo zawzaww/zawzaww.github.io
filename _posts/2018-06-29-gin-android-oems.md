@@ -4,6 +4,7 @@ title: "Gin Android OEMs"
 tagline: "Android OEMs Lying about Android Security Patches"
 categories: news
 author: "Zaw Zaw"
+featured-image: /assets/images/gin-android-oems.jpeg
 permalink: blog/news/gin-android-oems
 ---
 

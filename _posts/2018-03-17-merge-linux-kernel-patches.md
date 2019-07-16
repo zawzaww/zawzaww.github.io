@@ -3,6 +3,7 @@ layout: post
 title: "Merging Upstream Linux Kernel patches"
 categories: how-to
 author: "Zaw Zaw"
+featured-image: /assets/images/merge-linux-kernel-patches.jpeg
 permalink: blog/how-to/merge-linux-kernel-patches
 ---
 
