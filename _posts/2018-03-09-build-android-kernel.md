@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building Kernel for Android"
+title: "Building Kernel for Android Devices"
 categories: how-to
 author: "Zaw Zaw"
 featured-image: /assets/images/build-android-kernel.jpeg

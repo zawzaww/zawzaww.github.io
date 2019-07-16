@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Description of Android OS Sources"
+title: "Description of Android OS SourceCode"
 categories: knowledge
 author: "Zaw Zaw"
 featured-image: /assets/images/android-os-description.png
