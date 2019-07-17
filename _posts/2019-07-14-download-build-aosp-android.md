@@ -77,4 +77,4 @@ make -j4 (OR) make -j$(nproc --all)
 make ဆိုတဲ့ command က Android OS SourceCode ကေန system.img ထြက္လာတဲ့ အထိ Compilation process ကို စတင္လုပ္ပါတယ္။
 
 ဒီ article မွာ Pure AOSP နဲ႔ GitHub repository အေၾကာင္းကိုပဲ အဓိက ေျပာတာျဖစ္ၿပီး Building လုပ္တဲ့အပိုင္းမွာေတာ့ အၾကမ္းသေဘာေလာက္ပဲ ျဖစ္ပါတယ္။ 
-ကိုယ့္ရဲ႕ Android Device အတြက္ Custom Pure Android version တခု ဘယ္လို Build မလဲဆိုတဲ့ အေသးစိတ္ကို [Building Custom Pure Android OS](https://zawzaww.github.io/blog/how-to/building-pure-android) How-To Article မွာ ဆက္လက္ ဖက္ႏိုင္ပါတယ္။
+ကိုယ့္ရဲ႕ Android Device အတြက္ Custom Pure Android version တခု ဘယ္လို Build မလဲဆိုတဲ့ အေသးစိတ္ကို [Building Custom Pure Android OS](https://zawzaww.github.io/blog/how-to/build-pure-android) How-To Article မွာ ဆက္လက္ ဖက္ႏိုင္ပါတယ္။
