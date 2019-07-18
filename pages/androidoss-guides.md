@@ -5,9 +5,7 @@ categories: project
 permalink: /project/androidoss-guides
 ---
 
-<p align="center">
- <img src="https://s20.postimg.cc/70n6ckm5p/android-os-logo-grey.jpg" />
-</p>
+<p><img src="https://s20.postimg.cc/70n6ckm5p/android-os-logo-grey.jpg" height="100%" width="100%;"/></p>
 
 # Android OSS Guides
 Android OS/Kernel-Based Guides, How-To Articles and Android Internals Guides.
@@ -21,35 +19,48 @@ Android OS/Kernel-Based Guides, How-To Articles and Android Internals Guides.
 - [How To Merge Upstream Linux Kernel Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Upstream-Linux-Kernel-Patches.md)
 - [How To Merge Android Kernel Security Patches](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Merging-Kernel-Security-Patches.md)
 
-## Blog Posts
-You can also read guides on my [Personal Blog.](https://medium.com/zawzaww/tagged/how-to)
 
-## Main Repository
+## Blog Posts
+You can also read How-To articles and Guides on my [Personal Blog.](https://zawzaww.github.io/blog)
+
+
+## GitHub Repository
 [https://github.com/zawzaww/androidoss-guides](https://github.com/zawzaww/androidoss-guides)
 
+
 ## Issue
-Found issues (or) typo errors? 
+Found issues (or) typo errors?
+
 Please, open [new issue.](https://github.com/zawzaww/androidoss-guides/issues/new)
+
 
 ## Author
 Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Telegram](https://t.me/zawzaww)
 
+
 ## License
-This guides are licensed under GPL-3.0 License. See the [LICENSE](https://github.com/zawzaww/android-articles/blob/android/LICENSE) for details.
+This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/androidoss-guides/blob/android/LICENSE) for details.
 
-```bash
-Copyright(C) 2017-2018, Zaw Zaw
+```md
+MIT License
 
-This guides are free and you can distribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or 
-any later version.
+Copyright (C) 2017-2018, Zaw Zaw.
 
-This guides are distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
