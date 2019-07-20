@@ -9,7 +9,7 @@ plugins:
   - jekyll-paginate
 
 # Paginate number and path
-paginate: 6
+paginate: 7
 paginate_path: /blog/page:num/
 
 # Jekyll Theme
