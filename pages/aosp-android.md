@@ -10,28 +10,31 @@ permalink: /project/aosp-android
 
 [AOSP - Android Open Source Project](https://source.android.com)
 - [PureAOSP](https://android.googlesource.com) is a free and Open-source unmodified Android OS also known as Pure Android with Upstream Linux Kernel.
-- This repository is aimed for reducing AOSP Source Code's filesize for my personal PureAOSP project.
+- This [project repository](https://github.com/zawzaww/aosp-android) is aimed for reducing AOSP Source Code's filesize for my personal PureAOSP project.
 - Remove unused Android Git repositories. Example: device trees, kernel trees, prebuilts, system packages and etc..
-- You can use this PureAOSP manifest repository if you need AOSP Android Platform Sources.
+- You can use this [PureAOSP manifest repository](https://github.com/zawzaww/aosp-android) if you need AOSP Android Platform Sources.
 
 ## How To Build Pure Android from Source Code
 To get started with PureAOSP sources to build Android system image, you'll need to get
 familiar with [Git and Repo](https://source.android.com/setup/build/downloading#installing-repo).
 
 To initialize your local repository using the PureAOSP trees to build Android system image:
-```bash
+
+```
    repo init -u https://github.com/zawzaww/aosp-android.git -b android-9.0.0
 ```
 
 (OR)
 
 To initialize a shallow clone, which will save even more space, use a command like this:
-```bash
+
+```
    repo init --depth=1 -u https://github.com/zawzaww/aosp-android.git -b android-9.0.0
 ```
 
 Then to downloading the sources:
-```bash
+
+```
    repo sync
 ```
 
@@ -39,16 +42,20 @@ Then to downloading the sources:
 
 Additionally, you can define the number of parallel download repo should do:
 - N - the number of parallel downlods
-```bash
+
+```
    repo sync -jN -f --force-sync --no-clone-bundle --no-tags
 ```
+
 You can type this:
-```bash
+
+```
    repo sync  -f --force-sync --no-clone-bundle --no-tags -j$(nproc --all)
 ```
 
 After syncing is done, use these commands to build:
-```bash
+
+```
 cd <source-dir>
 
 . build/envsetup.sh
