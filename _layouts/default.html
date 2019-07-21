@@ -14,7 +14,7 @@
       {% assign page-title = site.title | escape %}
     {% endif %}
 
-    <title>{{ page-title }}</title>
+    <title>{{ page-title | site.title }}</title>
 
     {% if site.gems contains "jekyll-seo-tag" %}
       <!-- jekyll-seo-tag -->
