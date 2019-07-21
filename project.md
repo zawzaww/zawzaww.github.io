@@ -1,10 +1,10 @@
 ---
 layout: page
-title: My Projects
+title: MY PROJECTS
 permalink: /project
 ---
 
-<h2 align="center">Free & Open-source Projects</h2>
+<h2 align="center">OpenSource Projects</h2>
 
 ---
 
