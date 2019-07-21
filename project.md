@@ -16,7 +16,7 @@ permalink: /project
 
 ---
 
-<h1><a href="https://zawzaww.github.io/project/aosp-android"><b>PureAOSP Android</b></a></h1>
+<h1><a href="https://zawzaww.github.io/project/aosp-android"><b>PureAOSP</b></a></h1>
 
 <p><a href="https://zawzaww.github.io/project/aosp-android">Website</a> | <a href="https://github.com/zawzaww/aosp-android">GitHub</a></p>
 <p>Android Platform Manifest for Building and Compiling Pure Android System image.</p>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "PureAOSP Android"
+title: "PureAOSP"
 categories: project
 permalink: /project/aosp-android
 ---
@@ -14,7 +14,7 @@ permalink: /project/aosp-android
 - Remove unused Android Git repositories. Example: device trees, kernel trees, prebuilts, system packages and etc..
 - You can use this [PureAOSP manifest repository](https://github.com/zawzaww/aosp-android) if you need AOSP Android Platform Sources.
 
-## How To Build Pure Android from Source Code
+## How To Build Pure Android
 To get started with PureAOSP sources to build Android system image, you'll need to get
 familiar with [Git and Repo](https://source.android.com/setup/build/downloading#installing-repo).
 
