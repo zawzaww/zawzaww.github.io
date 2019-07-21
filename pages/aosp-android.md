@@ -5,6 +5,8 @@ categories: project
 permalink: /project/aosp-android
 ---
 
+<img src="https://i.postimg.cc/7YK2FYCZ/Android-Open-Source-Project-710x277.jpg" height="100%" width="100%;"/>
+
 # PureAOSP
 Android Platform Manifest for Building and Compiling Pure Android System image.
 
