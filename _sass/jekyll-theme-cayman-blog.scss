@@ -30,7 +30,6 @@ body {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
   line-height: 1.9;
   color: $body-text-color;
 }
@@ -123,8 +122,8 @@ img-circle {
 .project-name {
   margin-top: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:  48px;
-  font-weight: 600;
+  font-size:  45px;
+  font-weight: 500;
   margin-bottom: 0.1rem;
 
   @include large {	
