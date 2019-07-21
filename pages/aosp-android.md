@@ -6,7 +6,7 @@ permalink: /project/aosp-android
 ---
 
 # PureAOSP
-## Android Platform Manifest for Building Pure Android
+Android Platform Manifest for Building and Compiling Pure Android System image.
 
 [AOSP - Android Open Source Project](https://source.android.com)
 - [PureAOSP](https://android.googlesource.com) is a free and Open-source unmodified Android OS also known as Pure Android with Upstream Linux Kernel.
