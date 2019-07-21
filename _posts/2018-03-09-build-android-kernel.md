@@ -13,11 +13,9 @@ Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ�
 
 
 # Requirements
-- Linux Computer
-- Linux command ေတြ သုံးတတ္ရပါမယ္
-- ကုိယ္ရဲ႕ ဖုန္းအတြက္ လုိအပ္တဲ့ Kernel Source
-- Kernel compile ဖုိ႔အတြက္ လုိအပ္တဲ့ Toolchins (တနည္းအားျဖင့္ ARM/ARM64 GCC Compiler)
-- Git သုံးတတ္ရပါမယ္
+- GNU/Linux based Operating System
+- Device's Kernel Source
+- GCC Toolchins (ARM/ARM64)
 
 
 # Kernel Sources
@@ -43,21 +41,21 @@ Kernel Source ကေန compile ဖုိ႔အတြက္ဆုိရင္ To
 # Downloading
 ဒီ TUT ကုုိ ကြၽန္ေတာ္မွာ႐ွိတဲ့ Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာသြားမွာပါ။ က်န္တဲ့ဖုန္းေတြ အတြက္ကလည္း သေဘာတရာက တူတူပါပဲ၊ Kernel Source download တဲ့ ေနရာပဲ ကြာသြားမွွွွွာပါ။
 - အရင္ဆုံး Terminal ကုိဖြင့္ၿပီး ဒီ command ေလး႐ုိက္လုိက္ပါ။ (Dir တခုေဆာက္ပါမယ္)
-```bash
+```
 mkdir KernelName
 ```
-```bash
+```
 cd KernelName
 ```
 
 - Nexus 5X အတြက္ Kernel source download ဖုိ႔ အတြက္ ဒီ command ေလး ႐ုိက္လုိက္ပါ။
 - အရင္ဆုံး ကုိယ့္ Computer ထဲမွာ git install ထားဖုိ႔ လုိပါတယ္။
-```bash
+```
 git clone -b android-msm-bullhead-3.10-oreo-r4 --depth=1 https://android.googlesource.com/kernel/msm
 ```
 
 - ၿပီးရင္ Kernel compile ဖုိ႔အတြက္ Toolchains download ရပါမယ္။ (ဒီေနရာမွာ တခု သတိထားဖုိ႔လုိပါတယ္ ကုိယ္ရဲ႕ဖုန္း CPU arch က arm64 ဆုိ arm64 toolchains ကုိ download ပါ၊ မဟုတ္ဘူး arm ဆုိရင္ arm toolchains ကုိ download ပါ)
-```bash
+```
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 ```
 - အဲဒါေတြအကုန္ၿပီးသြာၿပီ ဆုိရင္ Kernel build ဆုိ အဆင္သင့္ ျဖစ္ပါၿပီ။
@@ -67,11 +65,11 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 - အရင္ဆုံး Kernel source နဲ႔ toochains ကုိ ပထမက ေဆာက္ထားတဲ့ KernelName (PuerZ-Kernel-N5X) ဆုိတဲ့ Dir ထဲမွာ ႏွစ္ခုလုံး အဆင္သင့္ ႐ွိေနရပါမယ္။
 - Toolchain Name ကုိ AOSP-Toolchains လုိ႔ အမည္ေပးလုိက္ၿပီး၊ Nexus 5X Kernel Source Name ကုိ bullhead လုိ႔ အမည္ ေပးလုိက္ပါမယ္။ (အဆင္ေျပသလုိ Rename လုိက္ပါ ျပႆ နာ မ႐ွိပါဘူး၊ တခုပဲ Toolchains Location ျပန္ ေပးတဲ့ ေနရာမွာ အဲဒီ Name ေတြအတုိင္း အတိအက်သိ ဖုိ႔ လုိပါတယ္)
 - e.g : Toolchains location
-```bush
+```
 /home/zawzaw/PureZ-Kernel-N5X/AOSP-Toolchains
 ```
 - e.g : Kernel Source location
-```bush
+```
 /home/zawzaw/PureZ-Kernel-N5X/bullhead
 ```
 <img src="https://s20.postimg.cc/c06g0zj8t/Screenshot_from_2017-10-16_11-42-11.png" />
@@ -80,19 +78,19 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 - Right Click ေထာက္ၿပီး Terminal ေလးကုိ ဖြင့္လုိက္ပါ။
 - ပထမဦးဆုံး လုပ္ရမွာ Kernel source ကေန compile ဖုိိိိ႔အတြက္ export ဆုိတဲ့ command ကုိ သုံးၿပီး toolchains ကုိ Set new environment variable သြားလုပ္ရပါမယ္။ (export - Set a New Environmetn Variable)
 - Type this command (အဲဒီမွာ bin/ေနာက္ကေကာင္ကုိ toochains prefix လုိ႔ေခၚပါတယ္ အခု Google က ေပးထားတဲ့ Toochain ေတြ ရဲ႕ prefix ေတြကုိ ေျပာျပပါမယ္၊ ARM အတြက္ဆုိရင္ "arm-eabi-" ၊ ARM64 အတြက္ဆုိရင္ "aarch64-linux-android-" ျဖစ္ပါတယ္)
-```bush
+```
 export CROSS_COMPILE=${HOME}/PureZ-Kernel-N5X/AOSP-Toolchains/bin/aarch64-linux-android-
 ```
 
 - ကုိယ့္ဖုန္းရဲ႕ CPU arch က arm လား arm64 လား သိထားဖုိ႔ အရင္လုိပါတယ္
 - အရင္ဆုံး ကုိယ့္ဖုန္းရဲ႕ arch ကုိ ေျပာေပးဖုိိိ့ လုိပါတယ္။
 - Nexus 5X က arm64 ျဖစ္တဲ့အတြက္ ဒီ command ေလး ဆက္႐ုိက္လုိက္ပါ။ (တကယ္လုိ႔ ကုိယ့္ဖုန္းက arm ဆုိရင္ arm64 ေနရာမွာ armလုိ႔ ေျပာင္း ႐ုိက္လုိက္ပါ။
-```bush
+```
 export ARCH=arm64 && export SUBARCH=arm64
 ```
 
 - ေနာက္တခုက Kernel source ထဲမွာ Compile ထား output file ေတြ ႐ွိရင္ ႐ွင္း ေပးဖုိ႔ လုိပါတယ္။
-```bush
+```
 make clean && make mrproper
 ```
 <img src="https://s20.postimg.cc/ljg4uhorh/Screenshot_from_2017-10-16_10-55-41.png" />
@@ -103,13 +101,13 @@ make clean && make mrproper
 - Nexus 5X အတြက္ဆုိရင္ bullhead/arch/arm64/configs/bullhead_defconfig (bullhead_defconfig ဆိုတာ Nexus 5X အတြက္ build မယ့္ kernel configuration အပုိင္းပါပဲ)
 - ကုိယ့္ဖုန္းအတြက္ kernel defconfig ကုိ သိခ်င္ရင္ KernelSource/build.config file ေလးကုိ ဖြင့္ၾကည္ႏုိင္ပါတယ္။
 - အရင္ဆုံး Kernel compile မလုပ္ခင္ build configuration လုပ္ေပးဖုိ႔ လုိပါတယ္။
-```bush
+```
 make bullhead_defconfig
 ```
 <img src="https://s20.postimg.cc//708zt6b31/Screenshot_from_2017-10-16_11-27-13.png" />
 
 - ၿပီးရင္ Kernel compile ပါေတာ့မယ္၊ compile ဖုိ႔အတြက္ ေအာက္က command ေလး႐ုိက္လုိက္ပါ။
-```bush
+```
 make -j$(nproc --all)
 ```
 <img src="https://s20.postimg.cc/6aq7gqi8d/Screenshot_from_2017-10-16_10-56-47.png" />
@@ -120,13 +118,7 @@ make -j$(nproc --all)
 
 
 - Build လုိက္တဲ့ Kernel zImage ေတြက ARM ဆုိရင္ - kernelsource/arch/arm/boot/ေအာက္မွာ ထြက္ပါတယ္၊ ARM64 ဆုိရင္ - kernelsource/arch/arm64/boot/ေအာက္မွာ ထြက္သြားလိမ့္မယ္။
-
 <img src="https://s20.postimg.cc/963ank47x/Screenshot_from_2017-10-16_11-42-53.png" />
 
 - အဲဒါ ေတြ ေအာင္ျမင္သြာၿပီး ဆုိရင္ ကုိယ္ဖုန္းအတြက္ Kernel Install ဖု႔ိ FlashableZip ဘယ္လုိလုပ္မလဲ ဆုိိိတာ ဆက္ေရးပါမယ္။
 - DONE
-
-
-Regards,
-
-ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)

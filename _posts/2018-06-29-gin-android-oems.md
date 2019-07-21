@@ -61,8 +61,3 @@ Ref: https://www.xda-developers.com/android-oem-lying-security-patches
 If you are experienced in some programming language, you can learn here:
 
 https://android.googlesource.com/platform/build
-
-
-Regards,
-
-ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
