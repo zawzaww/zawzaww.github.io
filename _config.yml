@@ -1,8 +1,9 @@
 # Site Title Name
 title: Zaw Zaw
-
 # Site Description
 description: Passionate about Android and Linux Kernel
+# Author Name
+author: Zaw Zaw
 
 # Jekyll plugins
 plugins:
