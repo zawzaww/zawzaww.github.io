@@ -13,9 +13,11 @@ permalink: blog/how-to/create-kernel-flashablezip
 - အရင္ဆုံး AnyKernel2 Documentation နည္းနည္းဖက္ၾကည့္လုိက္ပါ လြယ္ပါတယ္။ 
 https://github.com/osm0sis/AnyKernel2/blob/master/README.md
 - အရင္ဆုံး AnyKernel2 ကုိ download လုိက္ပါ။
+
 ```
 git clone https://github.com/osm0sis/AnyKernel2
 ```
+
 <img src="https://cdn-images-1.medium.com/max/800/1*Mtv_oPxSpkJTmqM0reuQjA.png" />
 
 - ဘာေတြလုိအပ္လည္း ဆုိရင္ Kernel name ျပင္ ေပးလုိ႔ရမယ္၊ device name သိရပါမယ္ (eg: LG Nexus 5X ဆုိ device name - bullhead)၊ ကုိယ့္ဖုန္းရဲ႕ boot partition location သိရမယ္၊ ramdisk ထဲမွာဆုိရင္ ကုိယ့္ဖုန္းရဲ႕ fstab.devicename (eg- fstab.bullhead) လုိပါတယ္၊ fstab ဆုိတာ file systems table ကုိေျပာတာပါ။
@@ -24,6 +26,7 @@ git clone https://github.com/osm0sis/AnyKernel2
 
 ## Kernel Name:
 - AnyKernel2 ထဲက anykernel2.sh file ေလးကုိ Code Editor (Atom, VS Code and etc..) တခုခုနဲ႔ ဖြင္လုိက္ၿပီး `kernel.string= kernel name` ေရးလုိက္ပါ။
+
 ```
 kernel.string=PureZ Kernel by ZawZaw @XDA-Developers
 ```
@@ -31,6 +34,7 @@ kernel.string=PureZ Kernel by ZawZaw @XDA-Developers
 ## Device Name:
 - anykernel2.sh ကုိဖြင့္ၿပီး device.name1 နဲ႔ device.name2 ေနရာမွာ ကုိယ္႔ဖုန္းရဲ႕ device name ကုိ ေရးလုိက္ပါ။ (ဖုန္း အမ်ဳိးအစာေပၚ မူတည္ၿပီး device name ကြာသြားပါလိမ့္မယ္)
 - Example: LG Nexus 5X - bullhead
+
 ```
 device.name1=bullhead
 device.name2=Bullhead
@@ -40,9 +44,11 @@ device.name2=Bullhead
 - ဒါက အေရးႀကီးပါတယ္ ကုိယ့္ဖုန္းအတြက္ boot partition location ကုိ အတိအက် သိရပါမယ္။ Nexus 5X ရဲ႕ boot partition သည္ `/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot` ျဖစ္ပါတယ္။ anykernel2.sh ထဲက `block=/dev/block/platform/…` ဆုိတဲ့ line မွာ ျပင္ေပးရမွာ ျဖစ္ပါတယ္။
 (Warning: အဲဒါ အရမ္းအေရးႀကီးပါတယ္ ကုိယ့္ရဲ႕ဖုန္းေပၚမႈတည္ၿပီး ကြဲျပားသြားပါလိမ့္မယ္ သတိထားရမယ့္ တခ်က္တခုပါ)
 - Example: For Nexus 5X
+
 ```
 block=/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot;
 ```
+
 <img src= "https://cdn-images-1.medium.com/max/800/1*Q6PUEF1pMX8yrFjEVcjv7Q.png" />
 
 ## File Systems Table: fstab
@@ -51,11 +57,13 @@ Note: (ဒီအဆင့္က တကယ္ေတာ့ မထည့္လည�
 - AnyKernel2 ထဲမွာ ramdisk ဆုိတဲ့ folder ေလး႐ွိပါတယ္၊ အဲဒီ အထဲကုိ အေပၚမွာေျပာခဲ့တဲ့အတုိင္း Nexus 5X အတြက္ fstab (file systems table) file ေလး ကုိ သြားထည့္ရမွာပါ။ အဲဒီ fstab file ေလးထဲမွာ ဘာေတြ အဓိကပါလဲဆုိေတာ့ ကုိယ့္ဖုန္း ရဲ႕ /system, /data, /cache, /firmware, /boot, /recovery, /persist အစ႐ွိတဲ့ `<mount_point>` partition ေတြ ပါဝင္ပါတယ္။ ဒီ mount_point ေတြဆုိတာ filesystem path ေတြြြပါ တနည္းအားျဖင့္္ ဒီ file ေလးက ကုိယ့္ဖုန္းရဲ႕ android file systems table ျဖစ္ပါတယ္။
 - သူရဲ႕ format ေလးကုိ နည္းနည္းေရးျပပါမယ္။ (Android 4.3 နဲ႔ ေနာက္ပုိင္း version ေတြရဲ႕ ပုံစံပါ)
 - ဒီထက္မက Details ေလ့လာခ်င္ရင္ AOSP မွာ အျပည့္အစုံဖက္ႏုိင္ပါတယ္ https://source.android.com/devices/storage/config
+
 ```
 <src> <mount_point> <type> <mount_flags> <fs_mgr_flags>
 ```
 
 - Example: for Nexus 5X ( /system )
+
 ```
 /dev/block/platform/soc.0/f9824900.sdhci/by-name/system       /system         ext4    ro,barrier=1,inode_readahead_blks=8                             wait,verify=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
 /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor       /vendor         ext4    ro,barrier=1,inode_readahead_blks=8                             wait,verify=/dev/block/platform/soc.0/f9824900.sdhci/by-name/metadata
@@ -70,20 +78,25 @@ Note: (ဒီအဆင့္က တကယ္ေတာ့ မထည့္လည�
 ```
 
 - For Nexus 5X : [fstab.bullhead](https://android.googlesource.com/device/lge/bullhead/+/oreo-r6-release/fstab.bullhead)
+
 <img src="https://cdn-images-1.medium.com/max/800/1*8d91QeQy0FkwzDb81utVWg.png" />
 
 - အဲဒီ fstab file ကုိ AnyKernel2 ရဲ႕ ramdisk dir ေအာက္မွာ ထည့္ေပးရမွာ ျဖစ္ပါတယ္။
+
 <img src="https://cdn-images-1.medium.com/max/800/1*HS3KrXSTkWsBI-j1jUFnQQ.png" />
 
 - အဲဒါေတြ ေအာင္ျမင္ၿပီ ဆုုိုိုိုိရင္ FlashableZip တခု Create ပါမယ္။
 - AnyKernel2 folder ထဲမွာ Right Click ေထာက္ၿပီး Terminal ကုိဖြင့္လုိက္ပါ။
 - ဒီ command ေလးကုိ ႐ုိက္ေပးလုိက္ပါ။
+
 ```
 zip -r9 Your-Kernel-Name.zip * -x README Your-Kernel-Name.zip
 ```
+
 <img src="https://cdn-images-1.medium.com/max/800/1*o_Sz0SNsQvZIo0UB8oCrSA.png" />
 
 - ၿပီးသြာရင္ AnyKernel2 folder ထဲမွာ Kernel Flashable Zip တခုထြက္လာပါၿပီ။
+
 <img src="https://cdn-images-1.medium.com/max/800/1*9pYZldzILwgx7FvJJbGD-A.png" />
 
 - ကုိယ့္ရဲ႕ Android ဖုန္းအတြက္ Kernel FlashableZip ကုိ TWRP Recovery ကေန Install ဖု႔ိ အဆင္သင့္ျဖစ္ပါၿပီ။
