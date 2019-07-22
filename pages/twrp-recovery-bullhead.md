@@ -15,6 +15,7 @@ This project is my TWRP android custom recovery build for Google Nexus 5X, inclu
 
 # What is TWRP
 [TWRP - Team Win Recovery Project](https://twrp.me)
+
 TWRP is a free and open-source Android custom recovery project. TWRP development is done by roughly 4 people at this point. Team Win was originally formed to work on porting WiMAX to CM7 for the HTC EVO 4G. Today, TWRP is the leading custom recovery for Android phones.
 An android custom recovery is used for installing custom software on your android device. This custom software can include smaller modifications like rooting your device or even replacing the firmware of the device with a completely custom "ROM" like OmniROM.
 You can find the source code for TWRP recovery at [https://github.com/omnirom/android_bootable_recovery.git](https://github.com/omnirom/android_bootable_recovery)
@@ -58,7 +59,7 @@ by Me
 - Then, Reboot to Recovery
 - Done
 
-*Note: twrp.img is your twrp .img filename.*
+*Note: "twrp.img" is your twrp .img filename.*
 
 
 # How to Convert to F2FS on TWRP
