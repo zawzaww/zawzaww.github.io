@@ -4,7 +4,7 @@ title: MY PROJECTS
 permalink: /projects
 ---
 
-<h2 align="center">Open-Source Projects</h2>
+<h3 align="center">Open-Source Projects</h3>
 
 ---
 
