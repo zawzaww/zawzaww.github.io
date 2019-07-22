@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Android OSS Guides"
-categories: project
-permalink: /project/androidoss-guides
+categories: projects
+permalink: /projects/androidoss-guides
 ---
 
 <p><img src="https://s20.postimg.cc/70n6ckm5p/android-os-logo-grey.jpg" height="100%" width="100%;"/></p>

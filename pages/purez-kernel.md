@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "PureZ Kernel"
-categories: project
-permalink: /project/purez-kernel
+categories: projects
+permalink: /projects/purez-kernel
 ---
 
 <p align="center"><img src="https://s20.postimg.cc/vpbav0vq5/Pure_Z-_Logo.png" /></p>

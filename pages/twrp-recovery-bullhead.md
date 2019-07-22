@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "TWRP Recovery"
-categories: project
-permalink: /project/twrp-recovery-bullhead
+categories: projects
+permalink: /projects/twrp-recovery-bullhead
 ---
 
 <img src="https://i.postimg.cc/02QNmkZx/teamwin-recovery-project-twrp-logo.jpg" height="100%" width="100%;"/>

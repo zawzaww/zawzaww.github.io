@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "PureAOSP"
-categories: project
-permalink: /project/aosp-android
+categories: projects
+permalink: /projects/aosp-android
 ---
 
 <img src="https://i.postimg.cc/7YK2FYCZ/Android-Open-Source-Project-710x277.jpg" height="100%" width="100%;"/>
