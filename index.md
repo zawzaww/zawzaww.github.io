@@ -10,41 +10,41 @@ layout: home
 
 ---
 
-<h1 align="center"><a href="https://zawzaww.github.io/about">ABOUT ME</a></h1>
+<h1 align="center"><a href="https://zawzaww.github.io/about"><b>ABOUT ME</b></a></h1>
 <p align="center">Bio, Education, Skills, Career and Interests.</p>
 <p align="center"><a href="https://zawzaww.github.io/about"><img src="https://s20.postimg.cc/vbse5qvn1/about.png" width="30%" height="30%"/></a></p>
 <br>
 
 ---
 
-<h1 align="center"><a href="https://zawzaww.github.io/blog">BLOG</a></h1>
+<h1 align="center"><a href="https://zawzaww.github.io/blog"><b>BLOG</b></a></h1>
 <p align="center">My Personal Blog about Android, Linux kernel, How-To articles and Personal feelings.</p>
 <p align="center"><a href="https://zawzaww.github.io/blog"><img src="https://i.postimg.cc/FHJBJWNY/personal-blog.png" width="30%" height="30%"/></a></p>
 <br>
 
 ---
 
-<h1 align="center"><a href="https://zawzaww.github.io/photography">PHOTOGRAPHY</a></h1>
+<h1 align="center"><a href="https://zawzaww.github.io/photography"><b>PHOTOGRAPHY</b></a></h1>
 <p align="center">Mobile Photography: I love to take Photograph and Love to share my Photos.</p>
 <p align="center"><a href="https://zawzaww.github.io/photography"><img src="https://s20.postimg.cc/bh6cjmo59/photography.png" width="30%" height="30%"/></a></p>
 <br>
 
 ---
 
-<h1 align="center"><a href="https://zawzaww.github.io/projects">MY PROJECTS</a></h1>
+<h1 align="center"><a href="https://zawzaww.github.io/projects"><b>MY PROJECTS</b></a></h1>
 <p align="center">Android, Linux Kernel, free and Open-source projects.</p>
 <p align="center"><a href="https://zawzaww.github.io/projects"><img src="https://s20.postimg.cc/ifn1owg3x/work-android.png" width="30%" height="30%"/></a></p>
 <br>
 
 ---
 
-<h1 align="center"><a href="https://forum.xda-developers.com">XDA FORUMS</a></h1>
+<h1 align="center"><a href="https://forum.xda-developers.com"><b>XDA FORUMS</b></a></h1>
 <p align="center">I am a Recognized Developer / Contributor at <a href="https://forum.xda-developers.com/member.php?u=7581611">XDA-Developers Forums</a></p>
 <p align="center"><a href="https://forum.xda-developers.com/member.php?u=7581611"><img src="https://i.postimg.cc/3xyrL0SD/xda-icon.png" width="30%" height="30%"/></a></p>
 <br>
 
 ---
 
-<h1 align="center"><a href="https://zawzaww.github.io/contact">CONTACT</a></h1>
+<h1 align="center"><a href="https://zawzaww.github.io/contact"><b>CONTACT</b></a></h1>
 <p align="center">You can contact me via Email, Forums and  Messaging Platforms.</p>
 <p align="center"><a href="https://zawzaww.github.io/contact"><img src="https://s20.postimg.cc/ib2l1eq25/contact.png" width="30%" height="30%"/></a></p>
