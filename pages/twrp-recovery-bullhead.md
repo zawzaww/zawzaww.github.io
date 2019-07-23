@@ -10,10 +10,12 @@ permalink: /projects/twrp-recovery-bullhead
 # TWRP Nexus 5X
 TWRP Recovery 3.2.0 with F2FS File System Support for Google Nexus 5X.
 
-# Indroduction
+
+## Indroduction
 This project is my TWRP android custom recovery build for Google Nexus 5X, included the abaility to convert your /data and /cache partitions to F2FS Filesystem. Supported F2FS File System by TWRP's inline Kernel, PureZ Kernel and TWRP 3.2.0 with added any features.
 
-# What is TWRP
+
+## What is TWRP
 [TWRP - Team Win Recovery Project](https://twrp.me)
 
 TWRP is a free and open-source Android custom recovery project. TWRP development is done by roughly 4 people at this point. Team Win was originally formed to work on porting WiMAX to CM7 for the HTC EVO 4G. Today, TWRP is the leading custom recovery for Android phones.
@@ -21,7 +23,7 @@ An android custom recovery is used for installing custom software on your androi
 You can find the source code for TWRP recovery at [https://github.com/omnirom/android_bootable_recovery.git](https://github.com/omnirom/android_bootable_recovery)
 
 
-# Features
+## Features
 TWRP 3.2.0-0 Features:
 by Dees_Troy
 - Allow restoring adb backups in the TWRP GUI (bigbiff)
@@ -48,7 +50,7 @@ by Me
 - and More.
 
 
-# Installation
+## Installation
 - Download twrp.img
 - Copy twrp file to your PC's fastboot Folder
 - Reboot your Phone to fastboot Mode
@@ -62,7 +64,7 @@ by Me
 *Note: "twrp.img" is your twrp .img filename.*
 
 
-# How to Convert to F2FS on TWRP
+## How to Convert to F2FS on TWRP
 *Warning: Changing FileSystem is wipe your Data and InternalSD*
 
 - Backup your Data ( You Don't forget/ *Important )
@@ -84,14 +86,14 @@ For Cache,
 - Reboot
 
 
-# Download
+## Download
 [twrp-3.2.0-bullhead-3.2-zawzaw.img](https://androidfilehost.com/?fid=673791459329065215)
 
 
-# SourceCode
-Google Nexus 5X Device tree: [https://github.com/zawzaww/twrp-device-bullhead](https://github.com/zawzaww/twrp-device-bullhead)
+## Source Code
+[https://github.com/zawzaww/twrp-device-bullhead](https://github.com/zawzaww/twrp-device-bullhead)
 
 
-# XDA Thread
+## XDA Thread
 [TWRP 3.2.0 with F2FS Support for Google Nexus 5X](https://forum.xda-developers.com/nexus-5x/development/recovery-twrp-3-1-1-f2fs-support-nexus-t3619850)
 
