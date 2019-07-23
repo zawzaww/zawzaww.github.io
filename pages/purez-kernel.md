@@ -11,7 +11,7 @@ permalink: /projects/purez-kernel
 PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices.
 
 
-# Features
+## Features
 **Note:** *It’s overview features of PureZ Kernel*
 - Latest Android Security Patch on the Latest Android Version
 - Easy Installation with TWRP FlashableZip
@@ -37,7 +37,7 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 - and More Features.
 
 
-# Supported Devices
+## Supported Devices
 *It’s current supported devices of PureZ Kernel.*
 - Motorola Nexus 6
 - LG Nexus 5X
@@ -46,7 +46,7 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 - Google Pixel XL
 
 
-# Installation
+## Installation
 *How to Install PureZ Kernel for supported android devices.*
 - Download PureZ Kernel FlashableZip
 - Reboot to Recovery (e.g TWRP)
@@ -55,18 +55,34 @@ PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream L
 - DONE
 
 
-# Downloads
-*PureZ Kernel FlashableZips for all supported android devices.*
+## Downloads
+*PureZ Kernel FlashableZips for supported android devices.*
 - [Motorola Nexus 6](https://androidfilehost.com/?w=files&flid=199338)
 - [LG Nexus 5X](https://androidfilehost.com/?w=files&flid=156304)
 - [Huawei Nexus 6P](https://androidfilehost.com/?w=files&flid=198764)
 - [Google Pixel / Pixel XL](https://androidfilehost.com/?w=files&flid=244770)
 
 
-# Kernel Sources
-*PureZ Kernel sources for all support android devices.*
+## Source Code
+*PureZ Kernel sources for supported android devices.*
 - [Motorola Nexus 6](https://github.com/zawzaww/shamu)
 - [LG Nexus 5X](https://github.com/zawzaww/bullhead)
 - [Huawei Nexus 6P](https://github.com/zawzaww/angler)
 - [Google Pixel / Pixel XL](https://github.com/zawzaww/marlin)
 
+## License
+PureZ Kernel projects are licensed under GNU General Public License v2.0. See the [LICENSE](https://github.com/zawzaww/marlin/blob/android-pie/COPYING) for details.
+
+```
+This software is free and you can distribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 2 of the License.
+
+This software is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+```
