@@ -14,7 +14,7 @@ permalink: /projects
 
 ---
 
-<h1><a href="https://zawzaww.github.io/projects/twrp-recovery-bullhead">TWRP Nexus 5X></a></h1>
+<h1><a href="https://zawzaww.github.io/projects/twrp-recovery-bullhead">TWRP Nexus 5X</a></h1>
 <p>TWRP Recovery 3.2.0 with F2FS File System Support for Google Nexus 5X.</p>
 <br>
 
