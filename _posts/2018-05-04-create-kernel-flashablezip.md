@@ -85,7 +85,7 @@ Note: (ဒီအဆင့္က တကယ္ေတာ့ မထည့္လည�
 
 <img src="https://cdn-images-1.medium.com/max/800/1*HS3KrXSTkWsBI-j1jUFnQQ.png" />
 
-- အဲဒါေတြ ေအာင္ျမင္ၿပီ ဆုုိုိုိုိရင္ FlashableZip တခု Create ပါမယ္။
+- အဲဒါေတြ ေအာင္ျမင္ၿပီဆိုရင္ FlashableZip တခု Create ပါမယ္။
 - AnyKernel2 folder ထဲမွာ Right Click ေထာက္ၿပီး Terminal ကုိဖြင့္လုိက္ပါ။
 - ဒီ command ေလးကုိ ႐ုိက္ေပးလုိက္ပါ။
 
