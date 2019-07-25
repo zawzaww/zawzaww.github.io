@@ -10,11 +10,11 @@ permalink: blog/how-to/build-pure-android
 ဒီတခါေတာ့ အေၾကာင္းအရာကေတာ့ AOSP (Android Open Source Project) SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ။ အခုနည္းကုိ သိသြားၿပီဆုိရင္ တျခားေသာ AOSP based ROM ေတြေရာ LineageOS based ROM ေတြေရာ build တတ္သြားပါလိမ့္မယ္၊ တခုပဲကြဲျပားသြားတာပါ Android SourceCode ယူရတဲ့ ေနရာပဲကြဲသြားတာပါ။ တခုေတာ့ သတိေပးထားပါရေစ Android ရဲ႕ SourceCode ေတြရဲ႕ filesize က 20GB နဲ႔ အထက္မွာ ႐ွိပါတယ္။ အဲဒါေၾကာင့္ Internet ေကာင္းမွပဲ အဆင္ေျပပါလိမ့္မယ္။ Build တဲ့ ေနရာမွာ Linux မွာေရာ Mac မွာေရာ build လုိ႔ရပါတယ္ ကြၽန္ေတာ္ကေတာ့ Linux နဲ႔ပဲ target ထားၿပီးေျပာသြားမွာျဖစ္ၿပီး၊ ခုေလာေလာဆယ္ေတာ့ ubuntu 17.04 ပဲ သုံးျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ ubuntu ေပၚမွာ build တာပဲ ဥပမာေပး ေျပာသြားမွာပါ၊ Build မယ့္ target Android Device က Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာျပသြားမွာ ျဖစ္ပါတယ္။
 
 # Requirements
-- GNU/Linux based Operating System
+- GNU/Linux based Operating System(ဿOS)
 - OpenJDK
 - Python 2.7+
 - Git: Version Control System
-- Google's git-repo
+- Google's git-repo (Repo)
 
 # About Google's git-repo
 Google ကေန Android အတြက္ အဓိကဦးတည္ၿပီး လုပ္ထားတဲ့ git-repo (Repo) အေၾကာင္းေျပာျပခ်င္ပါတယ္။ မ်ားေသာအားျဖင့္ Repo လု႔ိ လူသိမ်ားပါတယ္ သိၾကပါတယ္။ Repo ဆုိတာ GitHub က Project Repository မ်ဳိးကုိ ေခၚတာ မဟုတ္ပါဘူး။ Google က Git အေပၚမွာ အေျခခံၿပီး develope ထားတဲ့ Tool ရဲ႕အမည္ျဖစ္ပါတယ္။ ဘာလု႔ိ Android အတြက္ ဖန္းတီထားတာလဲဆုိေတာ့ Custom Android OS တခု Sources ကေန Build ခ်င္တယ္ပဲ ဆုိပါစု႔ိ Android OS တနည္းအားျဖင့္ AOSP မွာ Android OS ႀကီး တခုလုံးအတြက္လုိအပ္တဲ့ Repositories ေတြက အမ်ားႃကီး႐ွိပါတယ္။ အဲဒါေတြကုိ တခုခ်င္း git clone လုပ္ေနရင္ အဆင္ေျပမွာ မဟုတ္ပါဘူး။ အဲဒီအတြက္ Repo က Custom Android OS build မယ္သူေတြကုိ ကူညီႏုိင္ပါတယ္။
@@ -207,4 +207,3 @@ make -j$(nproc --all)
 Output - /out/target/product/bullhead/ ေအာက္မွာ ထြက္သြားပါလိမ့္မယ္
 ```
 ၿပီးရင္ေတာ့ Compilation process စတင္ပါမယ္၊ process time ကေတာ့ ကုိယ့္ Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
-- DONE

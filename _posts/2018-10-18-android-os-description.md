@@ -70,5 +70,4 @@ AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 
 ```platform/tools``` : အမ်ိဳးမ်ိဳးေသာ Android IDEs and Tools ေတြ ပါ၀င္ပါတယ္။ E.g — Android Studio
 
-*NOTE: တခု သိထားဖို႔ရွိပါတယ္ AOSP Google Gitက repository လမ္ေၾကာင္းအတိုင္း Local computer ထဲကို Download လုပ္တဲ့ အခါ dir path က နည္းနည္း ကြဲပါမယ္။ ဥပမာ — Google Git မွာ ‘platform/build’ ဆိုတဲ့ repository က Local path မွာ platform ဆိုတာ ပါေတာ့မွာ မဟုတ္ပဲ build ဆိုၿပီး တန္းသြားလိမ့္မယ္။
-
+*NOTE: တခု သိထားဖို႔က AOSP Google Git က repositories ကေန Local computer ထဲကို Download လုပ္ၿပီးတဲ့အခါ directory path က နည္းနည္းကြဲသြားပါမယ္။ ဒီ article ရဲ႕ Header မွာ ျပထားထဲ့ Screenshot အတိုင္းျဖစ္ပါတယ္။ ဥပမာ ။  ။  AOSP Google Git မွာ ```platform/build``` ဆိုတဲ့ Git repository က Local path မွာေတာ့ platform ဆိုတာ ပါေတာ့မွာ မဟုတ္ပဲ ကိုယ္ Download လုပ္ထားတဲ့ AOSP Source directory ေအာက္မွာ ```build``` ဆိုၿပီး ျဖစ္သြားပါလိမ့္မယ္။

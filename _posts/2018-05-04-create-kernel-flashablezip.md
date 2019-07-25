@@ -100,4 +100,3 @@ zip -r9 Your-Kernel-Name.zip * -x README Your-Kernel-Name.zip
 <img src="https://cdn-images-1.medium.com/max/800/1*9pYZldzILwgx7FvJJbGD-A.png" />
 
 - ကုိယ့္ရဲ႕ Android ဖုန္းအတြက္ Kernel FlashableZip ကုိ TWRP Recovery ကေန Install ဖု႔ိ အဆင္သင့္ျဖစ္ပါၿပီ။
-- DONE

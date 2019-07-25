@@ -11,7 +11,7 @@ permalink: blog/how-to/merge-linux-kernel-patches
 
  
 # Requirements
-- GNU/Linux based Operating System
+- GNU/Linux based Operating System(OS)
 - Git: Version Control System
 - C Programming Language
 
@@ -134,6 +134,4 @@ Example: (v3.10.74 first commit ကေန last commit ထဲ တခုခ်င�
 
 - အဲဒါေတြ ၿပီးသြားရင္ Merge တဲ့ လုပ္ငန္းေတာ့ ၿပီးသြားၿပီ။
 - အဲဒီေနာက္ ပထမက Kernel-Building Tutorial အတိုင္း ျပန္ Compile လိုက္ပါ။
-- တကယ္လို႔ Merge conflicts ေတြ ျဖစ္ခဲ့ရင္ Terminal ကေန code error ေတြ line no. အတိအက်ေျပာေပးပါလိမ့္မယ္။ (C Programmig Language ကို ရရင္ ေျဖရွင္းနိုင္ပါ လိမ့္မယ္)
-- Conflicts ေတြ ေျဖရွင္းတဲ့ နည္းလမ္းေတြ ေနာက္ထက္ သက္သက္ဆက္ေရးပါ့မယ္။
-- DONE
+- တကယ္လို႔ Merge conflicts ေတြ ျဖစ္ခဲ့ရင္ Terminal ကေန code error ေတြ line no. အတိအက်ေျပာေပးပါလိမ့္မယ္။ C Programmig Language ကို ရရင္ ေျဖရွင္းနိုင္ပါ လိမ့္မယ္။
