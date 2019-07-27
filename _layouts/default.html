@@ -25,16 +25,7 @@
     
     <title>{{ page-title | default: site.title }}</title>
 
-    {% if site.gems contains "jekyll-seo-tag" %}
-    {% else %}
-    {% include social-metatags.html %}
-    {% endif %}
-
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-
-    {% if site.gems contains "jekyll-feed" %}
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | absolute_url }}">
-    {% endif %}
 
     <link rel="icon" type="image/png" href="https://s20.postimg.cc/lie7on02l/purez.png">
     <meta name="robots" content="noarchive">
