@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Speeding Up Linux Kernel Builds"
+title: "Speeding Up Linux Kernel Builds with Ccache"
 categories: kernel
 author: "Zaw Zaw"
 featured-image: /assets/images/speedup-linux-kernel-builds.png
 permalink: blog/kernel/speedup-linux-kernel-builds
 ---
 
-Ccache (Compiler Cache) ကိုသုံးၿပီး Linux kernel compilation time ကို ပုံမွန္ထက္ျမန္ေအာင္ လုပ္တဲ့အေၾကာင္းကို ဒီ article မွာ အဓိကထားၿပီး ေျပာသြားမွာပါ။ ပုံမွန္ဆိုရင္ ကြၽန္ေတာ္ရဲ႕ CPU အနိမ့္နဲ႔ Laptop computer ေလးေပၚမွာ Linux kernel ကို Compile လုပ္ရတဲ့အခ်ိန္က 30mins / 45 mins ေလာက္ အခ်ိန္ေပးေနရပါတယ္။ အဲဒါေၾကာင့္ သိပ္ၿပီးေတာ့ အဆင္မေျပဘူး။ အဒီျပႆနာကို Ccache နဲ႔ ေျဖရွင္းႏိုင္ပါတယ္။
+Ccache (Compiler Cache) ကိုသုံးၿပီး Linux kernel compilation time ကို ပုံမွန္ထက္ျမန္ေအာင္ ဘယ္လို Setup လုပ္ၿပီး Build မလဲဆိုတာကို ဒီ article မွာ အဓိကထားၿပီး ေျပာသြားမွာျဖစ္ပါတယ္။ ပုံမွန္ဆိုရင္ ကြၽန္ေတာ္ရဲ႕ CPU အနိမ့္နဲ႔ Laptop computer ေလးေပၚမွာ Linux kernel ကို Compile လုပ္ရတဲ့အခ်ိန္က 30mins ေလာက္ အခ်ိန္ေပးေနရပါတယ္။ အဲဒါေၾကာင့္ သိပ္ၿပီးေတာ့ အဆင္မေျပဘူး။ အဒီျပႆနာကို Ccache နဲ႔ ေျဖရွင္းႏိုင္ပါတယ္။ Ccache နဲ႔ Compile လုပ္ရင္ေတာ့ 3 - 5 mins ေလာက္ထိ ျမန္သြားပါတယ္။
 
 # What is Ccache?
 Ccache (Compiler Ccache) က C, C++, Objective-C နဲ႔ Objective-C++ Code ေတြကို Compile လုပ္တဲ့ေနရမွာ Compilation time ကို Speed up  လုပ္ဖို႔ အဓိက သုံးပါတယ္။
@@ -38,11 +38,12 @@ export CXX="ccache g++"
 export CC="ccache gcc"
 ```
 
-# Building Linux kernel with Ccache
-ပထမဆုံးအေနနဲ႔ Ccache ကို အမ်ားဆုံး maximum size ဘယ္ေလာက္ထားမလဲဆိုတာ သတ္မွတ္ေပးရပါမယ္။
+Ccache ကို အမ်ားဆုံး maximum size ဘယ္ေလာက္ထားမလဲဆိုတာ သတ္မွတ္ေပးရပါမယ္။
 ```
 ccache -M 16GB
 ```
+![Screenshot](/assets/images/screenshot-2-2019-07-27.png)
+
 ccache ရဲ႕ Statistics ကို ၾကည့္ခ်င္ရင္ `ccache -s` command ကို သုံးလို႔ရပါတယ္။
 ```
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
@@ -64,7 +65,8 @@ cache size                           2.5 GB
 max cache size                      32.0 GB
 ```
 
-အဲဒါေတြၿပီးရင္ေတာ့ Linux kernel source directory ကို သြားၿပီး ပထမက Compile လုပ္ထားတဲ့ Output files ေတြ ရွိရင္ Clean လုပ္ေပးဖို႔ လိုပါတယ္။
+# Building Linux kernel with Ccache
+Linux kernel source directory ကို သြားၿပီး ပထမက Compile လုပ္ထားတဲ့ Output files ေတြ ရွိရင္ Clean လုပ္ေပးဖို႔ လိုပါတယ္။
 ```
 make clean && make mrproper
 ```
@@ -73,11 +75,13 @@ make clean && make mrproper
 ```
 make defconfig
 ```
+![Screenshot](/assets/images/screenshot-1-2019-07-27.png)
 
 Ccache နဲ႔ Linux kernel ကို Compile လုပ္မယ္ဆိုရင္ make command နဲ႔ `CC="ccache gcc"` ဆိုတာ ထည့္ေပးဖို႔လိုပါတယ္။
 ```
 make CC="ccache gcc" -j$(nproc --all)
 ```
+![Screenshot](/assets/images/screenshot-3-2019-07-27.png)
 
 တကယ္လို႔ Compilation time result ကို အတိအက် သိခ်င္ရင္ေတာ့ time ဆိုတဲ့ command ကို သုံးေပးဖို႔ လိုပါတယ္။
 ```
