@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
   <head>
     {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', '{{ site.google_analytics }}');
-      </script>
+    </script>
     {% endif %}
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#FFFFFF">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <title>{{ page-title | site.title }}</title>
+
+    {% if site.gems contains "jekyll-seo-tag" %}
+    {% else %}
+    {% include social-metatags.html %}
+    {% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    {% if site.gems contains "jekyll-feed" %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | absolute_url }}">
+    {% endif %}
 
     <link rel="icon" type="image/png" href="https://s20.postimg.cc/lie7on02l/purez.png">
     <meta name="robots" content="noarchive">
