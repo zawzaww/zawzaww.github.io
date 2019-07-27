@@ -13,21 +13,12 @@
     {% endif %}
     <meta charset="UTF-8">
 
-    {% seo %}
+{% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FFFFFF">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    {% if site.gems contains "jekyll-seo-tag" %}
-    {% else %}
-      {% include social-metatags.html %}
-    {% endif %}
-
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-
-    {% if site.gems contains "jekyll-feed" %}
-      <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-    {% endif %}
 
     <link rel="icon" type="image/png" href="https://s20.postimg.cc/lie7on02l/purez.png">
     <meta name="robots" content="noarchive">
