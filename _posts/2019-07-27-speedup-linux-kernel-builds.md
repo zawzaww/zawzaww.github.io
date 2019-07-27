@@ -40,11 +40,11 @@ export CC="ccache gcc"
 
 Ccache ကို အမ်ားဆုံး maximum size ဘယ္ေလာက္ထားမလဲဆိုတာ သတ္မွတ္ေပးရပါမယ္။
 ```
-ccache -M 16GB
+ccache -M 32
 ```
 ![Screenshot](/assets/images/screenshot-2-2019-07-27.png)
 
-ccache ရဲ႕ Statistics ကို ၾကည့္ခ်င္ရင္ `ccache -s` command ကို သုံးလို႔ရပါတယ္။
+လက္ရွိ ccache ရဲ႕ Statistics ကို ၾကည့္ခ်င္ရင္ `ccache -s` command ကို သုံးလို႔ရပါတယ္။
 ```
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
 cache directory                     /home/zawzaw/.cache
@@ -65,11 +65,12 @@ cache size                           2.5 GB
 max cache size                      32.0 GB
 ```
 
-# Building Linux kernel with Ccache
+# Building Linux Kernel with Ccache
 Linux kernel source directory ကို သြားၿပီး ပထမက Compile လုပ္ထားတဲ့ Output files ေတြ ရွိရင္ Clean လုပ္ေပးဖို႔ လိုပါတယ္။
 ```
 make clean && make mrproper
 ```
+![Screenshot](/assets/images/screenshot-5-2019-07-27.png)
 
 ေနာက္တဆင့္က Linux kernel ကို Compile မလုပ္ခင္ Kernel configuration လုပ္ေပးဖို႔ လိုပါတယ္။ ကြၽန္ေတာ္ နမူနာအေနနဲ႔ default configuration ကိုပဲ သုံးလိုက္ပါတယ္။
 ```
@@ -87,5 +88,4 @@ make CC="ccache gcc" -j$(nproc --all)
 ```
 time make CC="ccache gcc" -j$(nproc --all)
 ```
-![Screenshot](/assets/images/screenshot-4-2019-07-27.jpg)
-
+![Screenshot](/assets/images/screenshot-4-2019-07-27.png)
