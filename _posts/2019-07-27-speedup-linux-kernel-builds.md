@@ -87,4 +87,5 @@ make CC="ccache gcc" -j$(nproc --all)
 ```
 time make CC="ccache gcc" -j$(nproc --all)
 ```
+![Screenshot](/assets/images/screenshot-4-2019-07-27.jpg)
 
