@@ -18,12 +18,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     {% if page.title %}
-    {% assign page-title = page.title | site.title %}
+    {% assign page-title = page.title | Zaw Zaw %}
     {% else %}
-    {% assign page-title = site.title | site.title %}
+    {% assign page-title = site.title | Zaw Zaw %}
     {% endif %}
     
-    <title>{{ page-title | site.title }}</title>
+    <title>{{ page-title | Zaw Zaw }}</title>
 
     {% if site.gems contains "jekyll-seo-tag" %}
     {% else %}
