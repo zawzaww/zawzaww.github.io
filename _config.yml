@@ -9,6 +9,9 @@ author: Zaw Zaw
 plugins:
   - jekyll-paginate
 
+# Google Analytics
+google_analytics:
+
 # Paginate number and path
 paginate: 7
 paginate_path: /blog/page:num/
