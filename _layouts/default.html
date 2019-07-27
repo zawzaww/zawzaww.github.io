@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="theme-color" content="#FFFFFF">
+    <meta name="theme-color" content="#00695C">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     {% if page.title %}
@@ -23,7 +23,7 @@
     {% assign page-title = site.title | escape %}
     {% endif %}
     
-    <title>{{ page-title }}</title>
+    <title>{{ page-title | default: site.title }}</title>
 
     {% if site.gems contains "jekyll-seo-tag" %}
     {% else %}
