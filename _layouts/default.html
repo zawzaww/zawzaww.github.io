@@ -17,6 +17,9 @@
     <meta name="theme-color" content="#00695C">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+    {% if page.title and page.layout == 'home' %}
+     {% assign page-title = page.title | append: ' | ' | append: site.description | escape %}
+
     {% if page.title and page.layout == 'page' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
 
@@ -34,7 +37,7 @@
 
     {% else %}
      {% assign page-title = site.title | escape %}
-     
+
     {% endif %}    
 
     <title>{{ page-title }}</title>
