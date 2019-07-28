@@ -19,7 +19,7 @@
 
     {% if page.title and page.layout == 'home' %}
      {% assign page-title = site.title | append: ' | ' | append: site.description | escape %}
-    {% if page.title and page.layout == 'page' %}
+    {% elsif page.title and page.layout == 'page' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
     {% elsif page.title and page.layout == 'category' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
