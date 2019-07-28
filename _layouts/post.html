@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
 
-  {% include article-author-bio-small.html %}
+{% include article-author-bio-small.html %}
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
 
   {% if page.featured-image %}
     {% include post-featured-image.html image=page.featured-image %}
