@@ -16,15 +16,15 @@ layout: default
       <hr>
       
         <li>
+
+          <div class="post-meta-list">
+              {% include post-meta-info.html post_date=post.date post_ref=post.ref post_url=post.url post_lang=post.lang %}
+          </div>
   
           <h1>
             <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
           </h1>
 
-          <div class="post-meta-list">
-            {% include post-meta-info.html post_date=post.date post_ref=post.ref post_url=post.url %}
-          </div>
-  
           <span>{{ post.excerpt | markdownify | truncatewords: 24 }}</span>
   
         </li>
