@@ -18,27 +18,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     {% if page.title and page.layout == 'home' %}
-     {% assign page-title = page.title | append: ' | ' | append: site.description | escape %}
-
+     {% assign page-title = site.title | append: ' | ' | append: site.description | escape %}
     {% if page.title and page.layout == 'page' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
-
     {% elsif page.title and page.layout == 'category' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
-
     {% elsif page.title and page.layout == 'blog' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
-
     {% elsif page.title and page.layout == 'post' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
-
     {% elsif page.title %}
      {% assign page-title = page.title | escape %}
-
     {% else %}
      {% assign page-title = site.title | escape %}
-
-    {% endif %}    
+    {% endif %} 
 
     <title>{{ page-title }}</title>
 
