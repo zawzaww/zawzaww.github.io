@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#00695C">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    {% if page.title and page.layout == 'home' %}
+    {% if page.layout == 'home' %}
      {% assign page-title = site.title | append: ' | ' | append: site.description | escape %}
     {% elsif page.title and page.layout == 'page' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
