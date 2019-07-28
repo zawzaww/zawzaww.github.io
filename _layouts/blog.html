@@ -18,7 +18,7 @@ layout: default
         <li>
 
           {% assign date_format = site.jekyll-theme-simple-blog.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <span class="post-meta-list">{{ post.date | date: date_format }}</span>
   
           <h1>
             <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>

@@ -131,15 +131,10 @@
   }
 }
 
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
 .post-meta-list {
   font-size: $small-font-size;
   color: $grey-color;
-  padding-bottom: 10px;
+  padding-bottom: -15px;
 }
 
 .post-link {
