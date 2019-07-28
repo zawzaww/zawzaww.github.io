@@ -30,7 +30,11 @@ url: https://zawzaww.github.io
 baseurl: ""
 
 # Social
-author: "Zaw Zaw"
+author:
+  name: "Zaw Zaw"
+  short_bio: "Linux kernel and Android Engineer"
+  picture: assets/images/profile-picture.png
+
 twitter:
   username: zawzawwme
 
