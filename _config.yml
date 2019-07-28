@@ -19,6 +19,10 @@ paginate_path: /blog/page:num/
 # Jekyll Theme
 theme: # Set empty theme.
 
+# jekyll-theme-simple-blog date format
+jekyll-theme-simple-blog:
+  date_format: "%b %-d, %Y"
+
 # MAIN URL
 url: https://zawzaww.github.io
 
@@ -29,3 +33,25 @@ baseurl: ""
 author: "Zaw Zaw"
 twitter:
   username: zawzawwme
+
+# Translation
+t:
+  en:
+    months:
+      january: "Jan"
+      february: "Feb"
+      march: "Mar"
+      april: "Apr"
+      may: "May"
+      june: "Jun"
+      july: "Jul"
+      august: "Aug"
+      september: "Sep"
+      october: "Oct"
+      november: "Nov"
+      december : "Dec"
+
+defaults:
+  -
+    values:
+      lang: "en"
