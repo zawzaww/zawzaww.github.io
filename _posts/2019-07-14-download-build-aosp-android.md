@@ -4,6 +4,7 @@ title: "Downloading and Compiling PureAOSP"
 categories: how-to
 author: "Zaw Zaw"
 featured-image: /assets/images/download-build-aosp-android.png
+featured-image-alt: "GitHub Repository Screenshot by Zaw Zaw"
 permalink: blog/how-to/download-build-aosp-android
 ---
 
