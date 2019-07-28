@@ -94,7 +94,7 @@
         {% if page_author %}
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page_author }}</span></span>
         {% endif %}
-        <span class="post-meta"> • {% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>
+          • <span> {% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>
         </h2>
       {% endif %}
       <!-- End: Post tagline -->
