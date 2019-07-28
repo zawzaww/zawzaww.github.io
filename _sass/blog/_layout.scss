@@ -134,41 +134,10 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
-  padding: 35px 0px 35px 0px;
-}
-
-.post-meta-list {
-  font-size: $small-font-size;
-  color: $grey-color;
-  padding-bottom: 10px;
 }
 
 .post-link {
   display: block;
   font-size: 47px;
   font-weight: 600;
-}
-
-.author-article {
-  display: -ms-flexbox!important;
-  display: flex!important;
-  display: block;
-}
-
-.author-picture {
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.author-bio {
-    padding-left: 15px!important;
-    overflow: hidden!important;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-}
-
-.author-image {
-  border-radius: 100%;
-  width: 50ox;
-  height: 50px;
 }

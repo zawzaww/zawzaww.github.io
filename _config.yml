@@ -19,8 +19,8 @@ paginate_path: /blog/page:num/
 # Jekyll Theme
 theme: # Set empty theme.
 
-# jekyll-theme-simple-blog date format
-jekyll-theme-simple-blog:
+# jekyll-theme-cayman-blog date format
+jekyll-theme-cayman-blog:
   date_format: "%b %-d, %Y"
 
 # MAIN URL
@@ -30,11 +30,7 @@ url: https://zawzaww.github.io
 baseurl: ""
 
 # Social
-author:
-  name: "Zaw Zaw"
-  short_bio: "Linux kernel and Android Engineer"
-  picture: assets/images/profile-picture.png
-
+author: "Zaw Zaw"
 twitter:
   username: zawzawwme
 
