@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<!-- Post list. -->
+<div>
+
+    <h3 align="center">BLOG POSTS & ARTICLES</h3>
+    
+    <div>&nbsp;</div>
+  
+    <ul class="post-list">
+  
+      {% for post in paginator.posts %}
+  
+      <hr>
+      
+        <li>
+  
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+  
+          <h1>
+            <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          </h1>
+  
+          <span>{{ post.excerpt | markdownify | truncatewords: 24 }}</span>
+  
+        </li>
+
+      {% endfor %}
+    </ul>
+  </div>
+
+<!-- Pagination links. -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination" align="center">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Newer</a>
+  {% else %}
+    <span>&laquo; Newer</span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Older &raquo;</a>
+  {% else %}
+    <span>Older &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

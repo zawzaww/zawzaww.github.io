@@ -19,14 +19,22 @@
 
     {% if page.title and page.layout == 'page' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
+
     {% elsif page.title and page.layout == 'category' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
+
+    {% elsif page.title and page.layout == 'blog' %}
+     {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
+
     {% elsif page.title and page.layout == 'post' %}
      {% assign page-title = page.title | append: ' | ' | append: site.title | escape %}
+
     {% elsif page.title %}
      {% assign page-title = page.title | escape %}
+
     {% else %}
      {% assign page-title = site.title | escape %}
+     
     {% endif %}    
 
     <title>{{ page-title }}</title>
