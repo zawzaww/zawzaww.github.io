@@ -21,7 +21,7 @@ theme: # Set empty theme.
 
 # jekyll-theme-cayman-blog date format
 jekyll-theme-cayman-blog:
-  date_format: "%b %-d, %Y"
+  date_format: "%B %-d, %Y"
 
 # MAIN URL
 url: https://zawzaww.github.io
