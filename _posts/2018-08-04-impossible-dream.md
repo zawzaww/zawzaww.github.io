@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "The Impossible Dream"
-tagline: "That's impossible dream in my Country."
 categories: life
 author: "Zaw Zaw"
 featured-image: /assets/images/impossible-dream.jpg
