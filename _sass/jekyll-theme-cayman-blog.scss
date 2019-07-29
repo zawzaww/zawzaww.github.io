@@ -161,8 +161,8 @@ img-circle {
 .project-date {
   margin-bottom: 0rem;
   font-weight: normal;
-  opacity: 0.7;
-  font-style: italic;
+  opacity: 0.5;
+  text-transform: uppercase;
 
   @include large {
     font-size: 1.0rem;
