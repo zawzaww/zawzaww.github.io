@@ -3,7 +3,7 @@ layout: post
 title: "Gin Android OEMs"
 categories: news
 author: "Zaw Zaw"
-featured-image: /assets/images/gin-android-oems.jpeg
+featured-image: /assets/images/featured-images/img_gin_android_oems.jpeg
 permalink: blog/news/gin-android-oems
 ---
 

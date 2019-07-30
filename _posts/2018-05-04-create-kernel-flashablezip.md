@@ -3,7 +3,7 @@ layout: post
 title: "Creating Kernel FlashableZip for Android"
 categories: android
 author: "Zaw Zaw"
-featured-image: /assets/images/create-kernel-flashablezip.png
+featured-image: /assets/images/featured-images/img_create_kernel_flashablezip.png
 permalink: blog/android/create-kernel-flashablezip
 ---
 

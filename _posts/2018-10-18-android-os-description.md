@@ -3,7 +3,7 @@ layout: post
 title: "Description of Android OS SourceCode"
 categories: android
 author: "Zaw Zaw"
-featured-image: /assets/images/android-os-description.png
+featured-image: /assets/images/featured-images/img_androidos_description.png
 permalink: blog/android/android-os-description
 ---
 

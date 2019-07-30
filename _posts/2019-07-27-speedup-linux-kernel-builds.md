@@ -3,7 +3,7 @@ layout: post
 title: "Speeding Up Linux Kernel Builds"
 categories: linux-kernel
 author: "Zaw Zaw"
-featured-image: /assets/images/speedup-linux-kernel-builds.png
+featured-image: /assets/images/featured-images/img_speedup_linux_kernel_builds.png
 permalink: blog/linux-kernel/speedup-linux-kernel-builds
 ---
 

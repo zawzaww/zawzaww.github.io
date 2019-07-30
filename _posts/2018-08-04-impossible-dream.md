@@ -3,7 +3,7 @@ layout: post
 title: "The Impossible Dream"
 categories: thought
 author: "Zaw Zaw"
-featured-image: /assets/images/impossible-dream.jpg
+featured-image: /assets/images/featured-images/img_impossible_dream.jpg
 permalink: blog/thought/impossible-dream
 ---
 

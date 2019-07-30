@@ -3,7 +3,7 @@ layout: post
 title: "Building Kernel for Android Devices"
 categories: android
 author: "Zaw Zaw"
-featured-image: /assets/images/build-android-kernel.jpeg
+featured-image: /assets/images/featured-images/img_build_android_kernel.jpeg
 permalink: blog/android/build-android-kernel
 ---
 
