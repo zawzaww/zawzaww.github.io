@@ -16,7 +16,7 @@ AOSP ကို ႏွစ္ပိုင္းခြဲၾကည့္လို�
 # GitHub Repository
 https://github.com/zawzaww/aosp-android
 
-![aosp-android](/assets/images/download-build-aosp-android.png)
+![aosp-android](/assets/images/screenshots/img_screenshot_github_aosp_android.png)
 
 # About GitHub Repository
 ဒီ GitHub က Personal [aosp-android](https://github.com/zawzaww/aosp-android) Repository က Android Devices ေတြအတြက္ Custom Pure Android OS build ဖို႔ရန္ SourceCode ေတြ Size နည္းနည္းနဲ႔ download ဆြဲလို႔ရေအာင္ Setup လုပ္ထားတာ ျဖစ္ပါတယ္။ Personal ဆိုေပမယ့္ တျခားလိုအပ္သူေတြလည္း သုံးႏိုင္ပါတယ္။
@@ -77,4 +77,4 @@ make -j4 (OR) make -j$(nproc --all)
 make ဆိုတဲ့ command က Android OS SourceCode ကေန system.img ထြက္လာတဲ့ အထိ Compilation process ကို စတင္လုပ္ပါတယ္။
 
 ဒီ article မွာ Pure AOSP နဲ႔ GitHub repository အေၾကာင္းကိုပဲ အဓိက ေျပာတာျဖစ္ၿပီး Building လုပ္တဲ့အပိုင္းမွာေတာ့ အၾကမ္းသေဘာေလာက္ပဲ ျဖစ္ပါတယ္။ 
-ကိုယ့္ရဲ႕ Android Device အတြက္ Custom Pure Android version တခု ဘယ္လို Build မလဲဆိုတဲ့ အေသးစိတ္ကို [Building Custom Pure Android OS](https://zawzaww.github.io/blog/how-to/build-pure-android) How-To Article မွာ ဆက္လက္ ဖက္ႏိုင္ပါတယ္။
+ကိုယ့္ရဲ႕ Android Device အတြက္ Custom Pure Android version တခု ဘယ္လို Build မလဲဆိုတဲ့ အေသးစိတ္ကို [Building Custom Pure Android OS](https://zawzaww.github.io/blog/android/build-pure-android) How-To Article မွာ ဆက္လက္ ဖက္ႏိုင္ပါတယ္။

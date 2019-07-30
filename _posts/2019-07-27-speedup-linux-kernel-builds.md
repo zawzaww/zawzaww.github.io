@@ -42,9 +42,9 @@ Ccache ကို အမ်ားဆုံး maximum size ဘယ္ေလာက�
 ```
 ccache -M 32
 ```
-![Screenshot](/assets/images/screenshot-2-2019-07-27.png)
+![Screenshot](/assets/images/screenshots/img_screenshot_ccache_max_size.png)
 
-လက္ရွိ ccache ရဲ႕ Statistics ကို ၾကည့္ခ်င္ရင္ `ccache -s` command ကို သုံးလို႔ရပါတယ္။
+ကိုယ္ရဲ႕ လက္ရွိမွာရွိေနတဲ့ ccache ရဲ႕ Statistics ကို ၾကည့္ခ်င္ရင္ `ccache -s` ဆိုၿပီး command ကို ႐ိုက္ၿပီး ၾကည့္ႏိုင္ပါတယ္။
 ```
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
 cache directory                     /home/zawzaw/.cache
@@ -70,22 +70,25 @@ Linux kernel source directory ကို သြားၿပီး ပထမက Co
 ```
 make clean && make mrproper
 ```
-![Screenshot](/assets/images/screenshot-5-2019-07-27.png)
+![Screenshot](/assets/images/screenshots/img_screenshot_make_clean.png)
 
 ေနာက္တဆင့္က Linux kernel ကို Compile မလုပ္ခင္ Kernel configuration လုပ္ေပးဖို႔ လိုပါတယ္။ ကြၽန္ေတာ္ နမူနာအေနနဲ႔ default configuration ကိုပဲ သုံးလိုက္ပါတယ္။
 ```
 make defconfig
 ```
-![Screenshot](/assets/images/screenshot-1-2019-07-27.png)
+![Screenshot](/assets/images/screenshots/img_screenshot_make_defconfig.png)
 
 Ccache နဲ႔ Linux kernel ကို Compile လုပ္မယ္ဆိုရင္ make command နဲ႔ `CC="ccache gcc"` ဆိုတာ ထည့္ေပးဖို႔လိုပါတယ္။
 ```
 make CC="ccache gcc" -j$(nproc --all)
 ```
-![Screenshot](/assets/images/screenshot-3-2019-07-27.png)
 
 တကယ္လို႔ Compilation time result ကို အတိအက် သိခ်င္ရင္ေတာ့ time ဆိုတဲ့ command ကို သုံးေပးဖို႔ လိုပါတယ္။
+
 ```
 time make CC="ccache gcc" -j$(nproc --all)
 ```
-![Screenshot](/assets/images/screenshot-4-2019-07-27.png)
+
+![Screenshot](/assets/images/screenshots/img_screenshot_time_make_cc.png)
+
+![Screenshot](/assets/images/screenshots/img_screenshot_kernel_compile_time.png)
