@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Speeding Up Linux Kernel Builds"
-categories: kernel
+categories: linux-kernel
 author: "Zaw Zaw"
 featured-image: /assets/images/speedup-linux-kernel-builds.png
-permalink: blog/kernel/speedup-linux-kernel-builds
+permalink: blog/linux-kernel/speedup-linux-kernel-builds
 ---
 
 Ccache (Compiler Cache) ကိုသုံးၿပီး Linux kernel compilation time ကို ပုံမွန္ထက္ျမန္ေအာင္ ဘယ္လို Setup လုပ္ၿပီး Build မလဲဆိုတာကို ဒီ article မွာ အဓိကထားၿပီး ေျပာသြားမွာျဖစ္ပါတယ္။ ပုံမွန္ဆိုရင္ ကြၽန္ေတာ္ရဲ႕ CPU အနိမ့္နဲ႔ Laptop computer ေလးေပၚမွာ Linux kernel ကို Compile လုပ္ရတဲ့အခ်ိန္က 30mins ေလာက္ အခ်ိန္ေပးေနရပါတယ္။ အဲဒါေၾကာင့္ သိပ္ၿပီးေတာ့ အဆင္မေျပဘူး။ အဒီျပႆနာကို Ccache နဲ႔ ေျဖရွင္းႏိုင္ပါတယ္။ Ccache နဲ႔ Compile လုပ္ရင္ေတာ့ 3 - 5 mins ေလာက္ထိ ျမန္သြားပါတယ္။

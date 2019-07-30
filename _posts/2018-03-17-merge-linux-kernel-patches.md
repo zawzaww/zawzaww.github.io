@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Merging Upstream Linux Kernel patches"
-categories: how-to
+title: "Merging Upstream Linux Kernel Patches"
+categories: linux-kernel
 author: "Zaw Zaw"
 featured-image: /assets/images/merge-linux-kernel-patches.jpeg
-permalink: blog/how-to/merge-linux-kernel-patches
+permalink: blog/linux-kernel/merge-linux-kernel-patches
 ---
 
 ဒီတခါ Guide က ဘာအေၾကာင္းအရာလဲ ဆိုေတာ့ ကိုယ့္ရဲ့ Android Device အတြက္ Build လိုက္တဲ့ Android Kernel မွာ Linux Kernel version ေတြကို ဘယ္လို Update လုပ္မလဲ ဆိုတဲ့ အေၾကာင္းအရာပါ။ Linux Kernel release တဲ့ ပိုင္းမွာ (၄)မ်ိဳး ကြဲျပားပါတယ္ ( Prepatch, Mainline, Stable & Long Term ) ဆိုၿပီး ရွိပါတယ္။ အေသးစိတ္ကိုေတာ့ ဒီမွာ ေလ့လာၾကည့္ပါ https://www.kernel.org/category/releases.html ပထမ Android Kernel building tutorial မွာလည္း ကၽြန္ေတာ္ေျပာခဲ့ပါတယ္ Android မွာ သုံးတဲ့ Linux Kernel branch ေတြက Long Term Support (LTS) branch ေတြျဖစ္ပါတယ္။ Linux Kernel LTS branch ေတြအမ်ားႀကီး ရွိပါတယ္။ Android ဖုန္း အမ်ိဳးအစားေပၚ မူတည္ၿပီး သုံးတဲ့ Linux Kernel LTS branch ေတြက မတူပါဘူး။ ဥပမာ အေနနဲ႔ ေျပာျပရရင္ Nexus 5X မွာဆိုရင္ linux-3.10.y ဆိုတဲ့ LTS branch ကိုသုံးၿပီး၊ Google Pixel မွာဆိုရင္ linux-3.18.y ဆိုတဲ့ LTS branch ကို သုံးပါတယ္။ Android က အဲဒီ သက္ဆိုင္ရာ LTS Linux kernel branch ေတြကို အေျခခံၿပီး အသုံးခ်ၿပီး သူရဲ့ Android Mobile Device အတြက္ ကိုက္ညီမႈရွိေအာင္ Device driver ျပန္ျပင္ေရးၿပီး ျပန္ Modifed ခဲ့တဲ့သေဘာပါပဲ။ ဒါေၾကာင့္ ကိုယ့္ဖုန္းအတြက္ Kernel source ယူရင္ Android ဘက္က သက္ဆိုင္ရာ Mobile OEM's Engineer ေတြက ေပးတဲ့ Kernel source ေတြယူရၿပီး၊ Linux kernel version update ေတြ လုပ္ခ်င္ရင္ မူရင္း git.kernel.org ကေန Git ကိုသုံးၿပီး code ေတြ merge ၿပီး ကိုယ့္ဖုန္းအတြက္ kernel version ေတြ update လုပ္ေပးရမွာပါ။ အခု Guide မွာ Git ကိုသုံးၿပီး git.kernel.org ကေန ကိုယ့္ Android ဖုန္းအတြက္ Linux Kernel version (Code) ေတြကုိ ဘယ္လို Merge လုပ္မလဲ ဆိုတာ ဆက္ေရးပါမယ္။

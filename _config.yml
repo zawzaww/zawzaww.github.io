@@ -2,8 +2,6 @@
 title: Zaw Zaw
 # Site Description
 description: Passionate about Android and Linux Kernel
-# Author Name
-author: Zaw Zaw
 
 # Jekyll plugins
 plugins:
@@ -33,25 +31,3 @@ baseurl: ""
 author: "Zaw Zaw"
 twitter:
   username: zawzawwme
-
-# Translation
-t:
-  en:
-    months:
-      january: "Jan"
-      february: "Feb"
-      march: "Mar"
-      april: "Apr"
-      may: "May"
-      june: "Jun"
-      july: "Jul"
-      august: "Aug"
-      september: "Sep"
-      october: "Oct"
-      november: "Nov"
-      december : "Dec"
-
-defaults:
-  -
-    values:
-      lang: "en"
