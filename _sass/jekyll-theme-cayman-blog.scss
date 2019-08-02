@@ -164,6 +164,18 @@ img-circle {
   font-size: 0.75rem;
   opacity: 0.7;
   text-transform: uppercase;
+
+  @include large {
+    font-size: 0.9375rem;
+  }
+
+  @include medium {
+    font-size: 0.8125rem;
+  }
+
+  @include small {
+    font-size: 0.75rem;
+  }
 }
 
 .pagination a, .pagination span {
