@@ -9,7 +9,7 @@ permalink: blog/android/make-build-system-android
 
 Android OS-level ပိုင္းမွာ ကိုယ္ရဲ႕ Android app ကို Built-in system app တခုအေနနဲ႔ Add လုပ္ဖို႔အတြက္ Native Makefile-based build system နဲ႔အတူ Android app တခုအတြက္ Makefile configuration လုပ္တဲ့အေၾကာင္းကို ဒီ Blog post မွာ ေျပာသြားမွာ ျဖစ္ပါတယ္။ အခုခ်ိန္မွာ Android app developer တိုင္းက အဆင္သင့္ Android Studio မွာ app build ဖို႔အတြက္ Built-in Default build system တခု ျဖစ္တဲ့ Gradle ကိုေတာ့ ရင္းႏွီးၿပီးသားျဖစ္ပါတယ္။ ဒါေပမယ့္ Android OS-level မွာေတာ့ Makfile-based build system ကို သုံးပါတယ္။ ဒါေၾကာင့္ Android Studio မွာ Gradle နဲ႔ build လုပ္ထားတဲ့ Android app project source တခုကို Android OS source code ထဲကို ဒီအတိုင္း သြား Add လို႔ မရပါဘူး။ ဘာေၾကာင့္လဲဆိုေတာ့ Gradle ကို မသိဘူးဆိုတဲ့သေဘာ ျဖစ္ပါတယ္။ အဲဒီအတြက္ Android app တခု Compile လုပ္ဖို႔အတြက္ Low-level Android OS ရဲ႕ Make build system နဲ႔ ကိုက္ညီတဲ့ Makefile configuration ေတြ ေရးေပးဖို႔လိုပါတယ္။ တနည္းအားျဖင့္ AOSP မွာ Standard name အျဖစ္ သတ္မွတ္ထားတဲ့ Android.mk ကို မျဖစ္မေန ေရးေပးဖို႔ လိုအပ္ပါတယ္။ ဒါမွသာ Android system image တခုအတြက္ make command နဲ႔ Building လုပ္ခ်ိန္မွာ ကိုယ့္ App project တခုကို တခါတည္း Compile လုပ္သြားမွာျဖစ္ၿပီး /system/app (or) /system/priv-app ထဲကို system app တခုအေနနဲ႔ ေပါင္းထည့္ေပးသြားမွာျဖစ္ပါတယ္။
 
-# Writing Makefiles for Building android app
+# Writing Makefiles
 ကိုယ့္ရဲ႕ Android app ကို system app တခုအေနနဲ႔ build လုပ္ဖို႔ဆိုရင္ နည္းလမ္း ႏွစ္မ်ိဳး သုံးႏိုင္ပါတယ္။ တခုက Origin App source code ကို OS source code ထဲကို ထည့္ၿပီး build တာ ျဖစ္ၿပီး၊ ေနာက္တခုက Android Studio ကေန Prebuit apk file ထုတ္ၿပီး OS source code ထဲကို ထည့္ၿပီး system app တခုျဖစ္ေအာင္ Build လုပ္တာ ျဖစ္ပါတယ္။
 
 ## Method (1) : Building from App SourceCode
@@ -106,6 +106,12 @@ LOCAL_MIN_SDK_VERSION := 21
 LOCAL_SDK_VERSION := current
 ```
 
+App မွာ ေရးထားတဲ့ Java files (or) Kotlin files ေတြကို ေခၚေပးဖို႔ လိုအပ္ပါတယ္။ ဒီ Makefile flag ရဲ႕ သေဘာက Project root directory / java package ေအာက္က java files ေတြကို သြားေခၚမွာ ျဖစ္ပါတယ္။
+
+```mk
+LOCAL_SRC_FILES := $(call all-java-files-under, java)
+```
+
 တကယ္လို႔ ကိုယ္ရဲ႕ Android app မွာက Android NDK, C/C++ သုံးၿပီး ေရးထားတာဆိုရင္ အဲဒီ cpp dir ေအာက္က JNI libary module name ကိုလည္း Define လုပ္ေပးဖို႔ လိုအပ္ပါတယ္။ (Example: native-lib)
 
 ```mk
@@ -130,62 +136,19 @@ include $(call all-makefiles-under, $(LOCAL_PATH))
 
 My AudioWaveMaker's Android.mk
 
-```mk
-# This Android.mk is for compiling AudioWaveMaker Android app 
-# for Android Make Build System.
-# 
-LOCAL_PATH:= $(call my-dir)
-include $(CLEAR_VARS)
-
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
-    frameworks/support/design/res \
-    frameworks/support/v7/appcompat/res \
-    frameworks/support/v17/leanback/res
-
-LOCAL_SRC_FILES := $(call all-java-files-under, java)
-
-LOCAL_AAPT_FLAGS := \
-    --auto-add-overlay \
-    --extra-packages android.support.design \
-    --extra-packages android.support.v7.appcompat \
-    --extra-packages android.support.v17.leanback
-
-LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
-
-LOCAL_STATIC_ANDROID_LIBRARIES += \
-     android-support-annotations \
-     android-support-v4 \
-     android-support-design \
-     android-support-v7-appcompat \
-     android-support-v17-leanback
-
-LOCAL_JNI_SHARED_LIBRARIES := native-lib
-
-LOCAL_PACKAGE_NAME := AudioWaveMaker
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MIN_SDK_VERSION := 21
-LOCAL_SDK_VERSION := current
-
-LOCAL_USE_AAPT2 := false
-LOCAL_PROGUARD_ENABLED := disabled
-
-include $(BUILD_PACKAGE)
-include $(call all-makefiles-under,$(LOCAL_PATH))
-```
+![Screenshot](/assets/images/screenshots/img_screenshot_make_build.png)
 
 ## Method (2) : Building from Prebuilt Apk
 ဒီနည္းလမ္းကေတာ့ Origin Android app source code ကို ထည့္ၿပီး Build တာထက္ ပိုၿပီး ႐ိုးရွင္းလြယ္ကူတယ္လို႔ ေျပာႏိုင္ပါတယ္။ Android Studio ကေန Prebuilt apk ထုတ္ၿပီး /system/ ထဲကို တန္းၿပီး ထည့္လိုက္တဲ့သေဘာျဖစ္ပါတယ္။
 
-Project dir structure
+Project structure
 
 ```
-AudioWaveMaker.apk
-Android.mk
+ - AudioWaveMaker.apk
+ - Android.mk
 ```
 
-app-name.apk ကေတာ့ ကိုယ့္ထည့္ခ်င္တဲ့ Android apk file ျဖစ္ၿပီး၊ Android.mk ကေတာ့ အဲဒီ app ကို /system/ ေအာက္မွာ ထည့္ေပးဖို႔ Makefile flags ေတြနဲ႔ Define လုပ္ေပးရတာ ျဖစ္ပါတယ္။
+AudioWaveMaker.apk ကေတာ့ ကိုယ့္ထည့္ခ်င္တဲ့ Android apk file ျဖစ္ၿပီး၊ Android.mk ကေတာ့ အဲဒီ app ကို /system/ ေအာက္မွာ ထည့္ေပးဖို႔ Makefile flags ေတြနဲ႔ Define လုပ္ေပးရတာ ျဖစ္ပါတယ္။
 
 Android.mk (Example for AudioWaveMaker app)
 
@@ -209,13 +172,13 @@ include $(BUILD_PREBUILT)
 ဒီ Prebuit apk အတြက္ Android.mk ေရးတဲ့ ေနရာမွာ သတိထားရမွာေတာ့ App source code ကေန build တာ မဟုတ္ပဲ Prebuilt ကေန build လုပ္တာ အတြက္ `include $(BUILD_PREBUILT)` ဆိုၿပီး ျဖစ္သြားပါလိမ့္မယ္။
 
 # Compiling System img with Make
-အရင္ဆုံး Android System တခုလုံးကို Compile လုပ္စရာမလိုပဲ ကိုယ္ Add လိုက္တဲ့ app project တခုတည္းကိုပဲ Compile လုပ္ၾကည့္ႏိုင္ပါတယ္။ ၿပီးမွ Android system တခုလုံးကို Compile လုပ္တာ ပိုေကာင္းပါတယ္။
+အရင္ဆုံး Android System တခုလုံးကို Compile လုပ္စရာမလိုပဲ ကိုယ္ Add လိုက္တဲ့ app project တခုတည္းကိုပဲ `mma package-name` နဲ့ Compile လုပ္ၾကည့္ႏိုင္ပါတယ္။ ၿပီးမွ Android system တခုလုံးကို Compile လုပ္တာ ပိုေကာင္းပါတယ္။
 
 Example: for AudioWaveMaker app project
 
 ```
 . build/envsetup.sh
-lunch target_device_name
+lunch target_android_device
 ```
 
 ```
