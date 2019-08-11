@@ -7,7 +7,11 @@ featured-image: /assets/images/featured-images/img_make_build_android.png
 permalink: blog/android/make-build-system-android
 ---
 
-Android OS-level ပိုင္းမွာ ကိုယ္ရဲ႕ Android app ကို Built-in system app တခုအေနနဲ႔ Add လုပ္ဖို႔အတြက္ Native Makefile-based build system နဲ႔အတူ Android app တခုအတြက္ Makefile configuration လုပ္တဲ့အေၾကာင္းကို ဒီ Blog post မွာ ေျပာသြားမွာ ျဖစ္ပါတယ္။ အခုခ်ိန္မွာ Android app developer တိုင္းက အဆင္သင့္ Android Studio မွာ app build ဖို႔အတြက္ Built-in Default build system တခု ျဖစ္တဲ့ Gradle ကိုေတာ့ ရင္းႏွီးၿပီးသားျဖစ္ပါတယ္။ ဒါေပမယ့္ Android OS-level မွာေတာ့ Makfile-based build system ကို သုံးပါတယ္။ ဒါေၾကာင့္ Android Studio မွာ Gradle နဲ႔ build လုပ္ထားတဲ့ Android app project source တခုကို Android OS source code ထဲကို ဒီအတိုင္း သြား Add လို႔ မရပါဘူး။ ဘာေၾကာင့္လဲဆိုေတာ့ Gradle ကို မသိဘူးဆိုတဲ့သေဘာ ျဖစ္ပါတယ္။ အဲဒီအတြက္ Android app တခု Compile လုပ္ဖို႔အတြက္ Low-level Android OS ရဲ႕ Make build system နဲ႔ ကိုက္ညီတဲ့ Makefile configuration ေတြ ေရးေပးဖို႔လိုပါတယ္။ တနည္းအားျဖင့္ AOSP မွာ Standard name အျဖစ္ သတ္မွတ္ထားတဲ့ Android.mk ကို မျဖစ္မေန ေရးေပးဖို႔ လိုအပ္ပါတယ္။ ဒါမွသာ Android system image တခုအတြက္ make command နဲ႔ Building လုပ္ခ်ိန္မွာ ကိုယ့္ App project တခုကို တခါတည္း Compile လုပ္သြားမွာျဖစ္ၿပီး /system/app (or) /system/priv-app ထဲကို system app တခုအေနနဲ႔ ေပါင္းထည့္ေပးသြားမွာျဖစ္ပါတယ္။
+Android OS-level ပိုင္းမွာ အဓိကသုံးတဲ့ Build System က Make build system ျဖစ္ၿပီး AOSP (Android Open Source Project) မွာ Building process အားလုံးကို Make build နဲ႔ပဲ handle လုပ္ပါတယ္။ Android system တခုလုံးကို Compile လုပ္ဖို႔ေရာ Make build ကိုပဲ သုံးပါတယ္။  အခုခ်ိန္မွာ Android app developer တိုင္းက Android Studio မွာ  app build ဖို႔အတြက္ Build system တခု ျဖစ္တဲ့ Gradle ကိုေတာ့ ရင္းႏွီးၿပီးသားျဖစ္ပါတယ္။ Gradle ကေတာ့ Easy to use ပိုျဖစ္တယ္လို႔ ဆိုႏိုင္ပါတယ္။ ဒါေပမယ့္ Android OS-level မွာေတာ့ Makfile-based build system ကိုပဲ အဓိကသုံးပါတယ္။
+
+ဒါေၾကာင့္ Android Studio မွာ Gradle နဲ႔ build လုပ္ထားတဲ့ Android app project source တခုကို Android OS source code ထဲကို ထည့္ခ်င္တယ္အခါ ဒီအတိုင္း သြား Add လို႔ မရပါဘူး။ ဘာေၾကာင့္လဲဆိုေတာ့ Android OS's build system က Gradle မဟုတ္တဲ့အတြက္ေၾကာင့္ ျဖစ္ပါတယ္။ အဲဒီအတြက္ Android app တခု Compile လုပ္ဖို႔အတြက္ Low-level Android OS ရဲ႕ Make build system နဲ႔ ကိုက္ညီတဲ့ Makefile flags ေတြ ေရးေပးဖို႔လိုပါတယ္။ တနည္းအားျဖင့္ AOSP မွာ Standard အျဖစ္ သတ္မွတ္ထားတဲ့ Android.mk ကို မျဖစ္မေန ေရးေပးဖို႔ လိုအပ္ပါတယ္။ ေနာက္တခု သိထားရမွာက Go နဲ႔ ေရးထားတဲ့ Soong Build system တခုကိုလည္း Google ကေန Introduce လုပ္ထားပါတယ္။ ကြၽန္ေတာ္အထင္ေတာ့ ေနာက္ပိုင္း Old Makefile-based Build System က Deprecated ျဖစ္သြားၿပီး Soong နဲ႔ လုံး၀ အစားထိုးမယ့္ သေဘာမွာ ရွိေနပါတယ္။
+
+ဒီ Blog post မွာ Android system app တခုအတြက္ Make နဲ႔အတူ Build automation လုပ္ဖို႔ Makefile flags ေတြ ေရးတဲ့အေၾကာင္းကို ဆက္ေျပာသြားမွာျဖစ္ပါတယ္။
 
 # Writing Makefiles
 ကိုယ့္ရဲ႕ Android app ကို system app တခုအေနနဲ႔ build လုပ္ဖို႔ဆိုရင္ နည္းလမ္း ႏွစ္မ်ိဳး သုံးႏိုင္ပါတယ္။ တခုက Origin App source code ကို OS source code ထဲကို ထည့္ၿပီး build တာ ျဖစ္ၿပီး၊ ေနာက္တခုက Android Studio ကေန Prebuit apk file ထုတ္ၿပီး OS source code ထဲကို ထည့္ၿပီး system app တခုျဖစ္ေအာင္ Build လုပ္တာ ျဖစ္ပါတယ္။
@@ -17,33 +21,7 @@ AOSP (Android Open Source Project) မွာ DeskClock ဆိုတဲ့ Androi
 
 https://android.googlesource.com/platform/packages/apps/DeskClock/+/refs/tags/android-9.0.0_r47/Android.mk
 
-```mk
-LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
-LOCAL_RESOURCE_DIR := packages/apps/DeskClock/res
-LOCAL_MODULE_TAGS := optional
-LOCAL_SDK_VERSION := current
-LOCAL_PACKAGE_NAME := DeskClock
-LOCAL_OVERRIDES_PACKAGES := AlarmClock
-LOCAL_SRC_FILES := $(call all-java-files-under, src gen)
-LOCAL_STATIC_ANDROID_LIBRARIES := \
-        $(ANDROID_SUPPORT_DESIGN_TARGETS) \
-        android-support-percent \
-        android-support-transition \
-        android-support-compat \
-        android-support-core-ui \
-        android-support-media-compat \
-        android-support-v13 \
-        android-support-v14-preference \
-        android-support-v7-appcompat \
-        android-support-v7-gridlayout \
-        android-support-v7-preference \
-        android-support-v7-recyclerview
-LOCAL_USE_AAPT2 := true
-include $(BUILD_PACKAGE)
-```
-
-Android OS's app project dir structure ကေတာ့ Android Studio က app/src/min/ ေအာက္က dir structure အတိုင္းပဲ ျဖစ္ပါတယ္။ တခုပဲ Android.mk ဆိုတဲ့ file တခုေတာ့ ပိုသြားပါတယ္။ အဒီ Android.mk မွာ App project တခုအတြက္ Makefile configuration ေတြ ေရးေပးရမွာ ျဖစ္ပါတယ္။
+App project structure ကေတာ့ Android Studio က app/src/min/ ေအာက္က dir structure အတိုင္းပဲ ျဖစ္ပါတယ္။ တခုပဲ Android.mk ဆိုတဲ့ file တခုေတာ့ ပိုသြားပါတယ္။ အဒီ Android.mk မွာ App project တခုအတြက္ Makefile configuration ေတြ ေရးေပးရမွာ ျဖစ္ပါတယ္။
 
 Example: Android-OS/packages/apps/AudioWaveMaker
 
@@ -171,6 +149,16 @@ include $(BUILD_PREBUILT)
 ဒီေနရာမွာေတာ့ Makfile flags ေတြအတြက္ အက်ယ္မရွင္းျပေတာ့ပါဘူး။ Method (1) မွာလည္း ေျပာထားၿပီးသားအတြက္ေၾကာင့္ပါ။
 ဒီ Prebuit apk အတြက္ Android.mk ေရးတဲ့ ေနရာမွာ သတိထားရမွာေတာ့ App source code ကေန build တာ မဟုတ္ပဲ Prebuilt ကေန build လုပ္တာ အတြက္ `include $(BUILD_PREBUILT)` ဆိုၿပီး ျဖစ္သြားပါလိမ့္မယ္။
 
+# Adding Product Packages
+သက္ဆိုင္ရာ App အတြက္ Android.mk file ေရးၿပီးသြားၿပီ ဆိုရင္ ကိုယ္ lunch လုပ္မယ့္ device tree ရဲ႕ Makefile မွာ Android app ရဲ႕ PRODUCT_PACKAGES ကို ထည့္ေပးဖို႔လိုပါတယ္။ ဘာေၾကာင့္လဲဆိုေတာ့ အဲဒီ lunch လိုက္တဲ့ target device မွာ app ရဲ႕ PRODUCT_PACKAGES ကို add ထားမွ Build system က packages/apps/ ေအာက္က ကိုယ့္ရဲ႕ android app package ကို compile လုပ္ေပးမွာျဖစ္ပါတယ္။
+
+Example: for Nexus 5X: `Android-OS/device/lge/bullhead/bullhead.mk`
+
+```mk
+PRODUCT_PACKAGES += \
+    AudioWaveMaker
+```
+
 # Compiling System img with Make
 အရင္ဆုံး Android System တခုလုံးကို Compile လုပ္စရာမလိုပဲ ကိုယ္ Add လိုက္တဲ့ app project တခုတည္းကိုပဲ `mma package-name` နဲ့ Compile လုပ္ၾကည့္ႏိုင္ပါတယ္။ ၿပီးမွ Android system တခုလုံးကို Compile လုပ္တာ ပိုေကာင္းပါတယ္။
 
@@ -193,3 +181,6 @@ make -j$(nproc --all)
 
 Compilation time က ကိုယ့္ Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီး ၾကာႏိုင္ပါတယ္။
 
+Ref:
+[https://android.googlesource.com/platform/build]([https://android.googlesource.com/platform/build])
+[https://android.googlesource.com/platform/packages/apps](https://android.googlesource.com/platform/packages/apps)
