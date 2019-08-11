@@ -182,5 +182,5 @@ make -j$(nproc --all)
 Compilation time က ကိုယ့္ Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီး ၾကာႏိုင္ပါတယ္။
 
 Ref:
-[https://android.googlesource.com/platform/build]([https://android.googlesource.com/platform/build])
-[https://android.googlesource.com/platform/packages/apps](https://android.googlesource.com/platform/packages/apps)
+- [https://android.googlesource.com/platform/build](https://android.googlesource.com/platform/build)
+- [https://android.googlesource.com/platform/packages/apps](https://android.googlesource.com/platform/packages/apps)
