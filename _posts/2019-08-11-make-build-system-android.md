@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Make Build System in Android"
+title: "Native Make Build System in Android"
 categories: android
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_make_build_android.png
 permalink: blog/android/make-build-system-android
 ---
 
-Android OS-level ပိုင္းမွာ အဓိကသုံးတဲ့ Build System က Make build system ျဖစ္ၿပီး AOSP (Android Open Source Project) မွာ Building process အားလုံးကို Make build နဲ႔ပဲ handle လုပ္ပါတယ္။ Android system တခုလုံးကို Compile လုပ္ဖို႔ေရာ Make build ကိုပဲ သုံးပါတယ္။  အခုခ်ိန္မွာ Android app developer တိုင္းက Android Studio မွာ  app build ဖို႔အတြက္ Build system တခု ျဖစ္တဲ့ Gradle ကိုေတာ့ ရင္းႏွီးၿပီးသားျဖစ္ပါတယ္။ Gradle ကေတာ့ Easy to use ပိုျဖစ္တယ္လို႔ ဆိုႏိုင္ပါတယ္။ ဒါေပမယ့္ Android OS-level မွာေတာ့ Makfile-based build system ကိုပဲ အဓိကသုံးပါတယ္။
+Android OS-level ပိုင္းမွာ အဓိကသုံးတဲ့ Build System က [Make Build System](https://android.googlesource.com/platform/build) ျဖစ္ၿပီး [AOSP (Android Open Source Project)](https://android.googlesource.com/) မွာ Building process အားလုံးကို Make build နဲ႔ပဲ handle လုပ္ပါတယ္။ Android system တခုလုံးကို Compile လုပ္ဖို႔ေရာ Make build ကိုပဲ သုံးပါတယ္။  အခုခ်ိန္မွာ Android app developer တိုင္းက Android Studio မွာ  app build ဖို႔အတြက္ Build system တခု ျဖစ္တဲ့ Gradle ကိုေတာ့ ရင္းႏွီးၿပီးသားျဖစ္ပါတယ္။ Gradle build ကေတာ့ Easy to use ပိုျဖစ္တယ္လို႔ ဆိုႏိုင္ပါတယ္၊ Make build ကေတာ့ လုံး၀ Android ရဲ႕ OS-level မွာ သုံးတဲ့ native build system ျဖစ္ၿပီး ေရးရတာ လက္ေပါက္ကပ္တယ္လို႔ ဆိုႏိုင္ပါတယ္။ ဒါေပမယ့္ Android OS-level မွာေတာ့ Makfile-based build system ကိုပဲ အဓိကသုံးတဲ့အတြက္ ကြၽန္ေတာ့္အတြက္က မျဖစ္မေန ေလ့လာဖို႔လိုအပ္လာပါတယ္။
 
-ဒါေၾကာင့္ Android Studio မွာ Gradle နဲ႔ build လုပ္ထားတဲ့ Android app project source တခုကို Android OS source code ထဲကို ထည့္ခ်င္တယ္အခါ ဒီအတိုင္း သြား Add လို႔ မရပါဘူး။ ဘာေၾကာင့္လဲဆိုေတာ့ Android OS's build system က Gradle မဟုတ္တဲ့အတြက္ေၾကာင့္ ျဖစ္ပါတယ္။ အဲဒီအတြက္ Android app တခု Compile လုပ္ဖို႔အတြက္ Low-level Android OS ရဲ႕ Make build system နဲ႔ ကိုက္ညီတဲ့ Makefile flags ေတြ ေရးေပးဖို႔လိုပါတယ္။ တနည္းအားျဖင့္ AOSP မွာ Standard အျဖစ္ သတ္မွတ္ထားတဲ့ Android.mk ကို မျဖစ္မေန ေရးေပးဖို႔ လိုအပ္ပါတယ္။ ေနာက္တခု သိထားရမွာက Go နဲ႔ ေရးထားတဲ့ Soong Build system တခုကိုလည္း Google ကေန Introduce လုပ္ထားပါတယ္။ ကြၽန္ေတာ္အထင္ေတာ့ ေနာက္ပိုင္း Old Makefile-based Build System က Deprecated ျဖစ္သြားၿပီး Soong နဲ႔ လုံး၀ အစားထိုးမယ့္ သေဘာမွာ ရွိေနပါတယ္။
+ဒါေၾကာင့္ Android Studio မွာ Gradle နဲ႔ build လုပ္ထားတဲ့ Android app project source တခုကို Android OS source code ထဲကို ထည့္ခ်င္တယ္အခါ ဒီအတိုင္း သြား Add လို႔ မရပါဘူး။ ဘာေၾကာင့္လဲဆိုေတာ့ Android OS's build system က Gradle မဟုတ္တဲ့အတြက္ေၾကာင့္ ျဖစ္ပါတယ္။ အဲဒီအတြက္ Android app တခု Compile လုပ္ဖို႔အတြက္ Low-level Android OS ရဲ႕ Make build system နဲ႔ ကိုက္ညီတဲ့ Makefile flags ေတြ ေရးေပးဖို႔လိုပါတယ္။ တနည္းအားျဖင့္ AOSP မွာ Standard အျဖစ္ သတ္မွတ္ထားတဲ့ Android.mk ကို မျဖစ္မေန ေရးေပးဖို႔ လိုအပ္ပါတယ္။ ေနာက္တခု သိထားရမွာက Go နဲ႔ ေရးထားတဲ့ [Soong Build system](https://android.googlesource.com/platform/build/soong) ကိုလည္း Google ကေန Introduce လုပ္ထားပါတယ္။ ကြၽန္ေတာ္အထင္ေတာ့ ေနာက္ပိုင္း Old Makefile-based Build System က [Deprecation of Make](https://android.googlesource.com/platform/build/+/refs/heads/master/Deprecation.md) ျဖစ္သြားၿပီး Soong နဲ႔ လုံး၀ အစားထိုးမယ့္ သေဘာမွာ ရွိေနပါတယ္။ Soong က Android.mk (Makefile) format အစား Android.bp (Blueprint) format ကို သုံးထားပါတယ္။
 
 ဒီ Blog post မွာ Android system app တခုအတြက္ Make နဲ႔အတူ Build automation လုပ္ဖို႔ Makefile flags ေတြ ေရးတဲ့အေၾကာင္းကို ဆက္ေျပာသြားမွာျဖစ္ပါတယ္။
 
@@ -114,7 +114,7 @@ include $(call all-makefiles-under, $(LOCAL_PATH))
 
 My AudioWaveMaker's Android.mk
 
-![Screenshot](/assets/images/screenshots/img_screenshot_make_build.png)
+<script src="https://gist.github.com/zawzaww/5593df85c5d93392e2cb0345d7e3b329.js"></script>
 
 ## Method (2) : Building from Prebuilt Apk
 ဒီနည္းလမ္းကေတာ့ Origin Android app source code ကို ထည့္ၿပီး Build တာထက္ ပိုၿပီး ႐ိုးရွင္းလြယ္ကူတယ္လို႔ ေျပာႏိုင္ပါတယ္။ Android Studio ကေန Prebuilt apk ထုတ္ၿပီး /system/ ထဲကို တန္းၿပီး ထည့္လိုက္တဲ့သေဘာျဖစ္ပါတယ္။
@@ -181,6 +181,7 @@ make -j$(nproc --all)
 
 Compilation time က ကိုယ့္ Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီး ၾကာႏိုင္ပါတယ္။
 
-Ref:
+Reference Links:
 - [https://android.googlesource.com/platform/build](https://android.googlesource.com/platform/build)
+- [https://android.googlesource.com/platform/build/soong](https://android.googlesource.com/platform/build/soong)
 - [https://android.googlesource.com/platform/packages/apps](https://android.googlesource.com/platform/packages/apps)
