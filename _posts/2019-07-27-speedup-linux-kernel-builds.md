@@ -78,7 +78,8 @@ make defconfig
 ```
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_defconfig.png)
 
-Ccache နဲ႔ Linux kernel ကို Compile လုပ္မယ္ဆိုရင္ make command နဲ႔ `CC="ccache gcc"` ဆိုတာ ထည့္ေပးဖို႔လိုပါတယ္။
+Ccache နဲ႔ Linux kernel ကို Compile လုပ္မယ္ဆိုရင္ make command နဲ႔ `CC="ccache gcc"` ဆိုတဲ့ ဿoption တခုကို ထည့္ေပးဖို႔လိုပါတယ္။
+
 ```
 make CC="ccache gcc" -j$(nproc --all)
 ```
