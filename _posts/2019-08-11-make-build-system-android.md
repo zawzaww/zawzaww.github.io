@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Native Make Build System in Android"
+title: "Make Build System in Android"
 categories: android
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_make_build_android.png
@@ -14,14 +14,11 @@ Android OS-level ပိုင္းမွာ အဓိကသုံးတဲ့ B
 ဒီ Blog post မွာ Android system app တခုအတြက္ Make နဲ႔အတူ Build automation လုပ္ဖို႔ Makefile flags ေတြ ေရးတဲ့အေၾကာင္းကို ဆက္ေျပာသြားမွာျဖစ္ပါတယ္။
 
 # Writing Makefiles
-ကိုယ့္ရဲ႕ Android app ကို system app တခုအေနနဲ႔ build လုပ္ဖို႔ဆိုရင္ နည္းလမ္း ႏွစ္မ်ိဳး သုံးႏိုင္ပါတယ္။ တခုက Origin App source code ကို OS source code ထဲကို ထည့္ၿပီး build တာ ျဖစ္ၿပီး၊ ေနာက္တခုက Android Studio ကေန Prebuit apk file ထုတ္ၿပီး OS source code ထဲကို ထည့္ၿပီး system app တခုျဖစ္ေအာင္ Build လုပ္တာ ျဖစ္ပါတယ္။
-
-## Method (1) : Building from App SourceCode
-AOSP (Android Open Source Project) မွာ DeskClock ဆိုတဲ့ Android app project တခု အတြက္ Android.mk syntax ကို Example တခု အေနနဲ႔ အရင္ေလ့လာၾကည့္ႏိုင္ပါတယ္။
+AOSP မွာ DeskClock ဆိုတဲ့ Android app project တခု အတြက္ Android.mk syntax ကို Example တခု အေနနဲ႔ အရင္ေလ့လာၾကည့္ႏိုင္ပါတယ္။
 
 https://android.googlesource.com/platform/packages/apps/DeskClock/+/refs/tags/android-9.0.0_r47/Android.mk
 
-App project structure ကေတာ့ Android Studio က app/src/min/ ေအာက္က dir structure အတိုင္းပဲ ျဖစ္ပါတယ္။ တခုပဲ Android.mk ဆိုတဲ့ file တခုေတာ့ ပိုသြားပါတယ္။ အဒီ Android.mk မွာ App project တခုအတြက္ Makefile configuration ေတြ ေရးေပးရမွာ ျဖစ္ပါတယ္။
+App project structure ကေတာ့ Android Studio က app/src/min/ ေအာက္က dir structure အတိုင္းပဲ ျဖစ္ပါတယ္။ တခုပါပဲ Android.mk ဆိုတဲ့ file တခုေတာ့ ပိုသြားပါတယ္။ အဒီ Android.mk မွာ App project တခုအတြက္ Makefile configuration ေတြ ေရးေပးရမွာ ျဖစ္ပါတယ္။
 
 Example: Android-OS/packages/apps/AudioWaveMaker
 
@@ -115,39 +112,6 @@ include $(call all-makefiles-under, $(LOCAL_PATH))
 My AudioWaveMaker's Android.mk
 
 <script src="https://gist.github.com/zawzaww/5593df85c5d93392e2cb0345d7e3b329.js"></script>
-
-## Method (2) : Building from Prebuilt Apk
-ဒီနည္းလမ္းကေတာ့ Origin Android app source code ကို ထည့္ၿပီး Build တာထက္ ပိုၿပီး ႐ိုးရွင္းလြယ္ကူတယ္လို႔ ေျပာႏိုင္ပါတယ္။ Android Studio ကေန Prebuilt apk ထုတ္ၿပီး /system/ ထဲကို တန္းၿပီး ထည့္လိုက္တဲ့သေဘာျဖစ္ပါတယ္။
-
-Project structure
-
-```
- - AudioWaveMaker.apk
- - Android.mk
-```
-
-AudioWaveMaker.apk ကေတာ့ ကိုယ့္ထည့္ခ်င္တဲ့ Android apk file ျဖစ္ၿပီး၊ Android.mk ကေတာ့ အဲဒီ app ကို /system/ ေအာက္မွာ ထည့္ေပးဖို႔ Makefile flags ေတြနဲ႔ Define လုပ္ေပးရတာ ျဖစ္ပါတယ္။
-
-Android.mk (Example for AudioWaveMaker app)
-
-```mk
-LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
-
-LOCAL_MODULE := AudioWaveMaker
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_TAGS := optional
-LOCAL_DEX_PREOPT := false
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-
-include $(BUILD_PREBUILT)
-```
-
-ဒီေနရာမွာေတာ့ Makfile flags ေတြအတြက္ အက်ယ္မရွင္းျပေတာ့ပါဘူး။ Method (1) မွာလည္း ေျပာထားၿပီးသားအတြက္ေၾကာင့္ပါ။
-ဒီ Prebuit apk အတြက္ Android.mk ေရးတဲ့ ေနရာမွာ သတိထားရမွာေတာ့ App source code ကေန build တာ မဟုတ္ပဲ Prebuilt ကေန build လုပ္တာ အတြက္ `include $(BUILD_PREBUILT)` ဆိုၿပီး ျဖစ္သြားပါလိမ့္မယ္။
 
 # Adding Product Packages
 သက္ဆိုင္ရာ App အတြက္ Android.mk file ေရးၿပီးသြားၿပီ ဆိုရင္ ကိုယ္ lunch လုပ္မယ့္ device tree ရဲ႕ Makefile မွာ Android app ရဲ႕ PRODUCT_PACKAGES ကို ထည့္ေပးဖို႔လိုပါတယ္။ ဘာေၾကာင့္လဲဆိုေတာ့ အဲဒီ lunch လိုက္တဲ့ target device မွာ app ရဲ႕ PRODUCT_PACKAGES ကို add ထားမွ Build system က packages/apps/ ေအာက္က ကိုယ့္ရဲ႕ android app package ကို compile လုပ္ေပးမွာျဖစ္ပါတယ္။
