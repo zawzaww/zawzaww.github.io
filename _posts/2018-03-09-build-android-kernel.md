@@ -7,7 +7,7 @@ featured-image: /assets/images/featured-images/img_build_android_kernel.jpeg
 permalink: blog/android/build-android-kernel
 ---
 
-Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ္လို Build မလဲဆိုတဲ့ အေၾကာင္းအရာကို ဒီ How-To article မွာ အဓိက ေျပာသြားမွာျဖစ္ပါတယ္။ Android OS က Linux Kernel ကုိ Based ထားၿပီး Android ရဲ႕ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မွာသုံံံံံးထား Linux Kernel branch ေတြက Long Term Support(LTS) branch ေတြ ျဖစ္ပါတယ္။ https://www.kernel.org မွာ Long term branch ေတြၾကည့္ႏုိင္ပါတယ္။ ဥပမာ Nexus 5X, 6, 6P မွာဆုိရင္ “linux-3.10-y” ဆုိတဲ့ branch ကုိ သုံးပါတယ္ Google Pixel/Pixel XL မွာဆုိရင္ “linux-3.18-y” ဆုိတဲ့ LTS branch ေတြ သုံးၾကပါတယ္။ Android OS က Linux Kernel ေပၚမွာ အေျခခံၿပီး တည္ေဆာက္ထားတာ ျဖစ္ၿပီး Kernel ဆုိတာ OS တခုရဲ႕ အေရးႀကီးတဲ့ အစိတ္အပိုင္းတခုပါ။ CPU, Memory, Disaply စတဲ့ Hardware အစိတ္အပုိင္းေတြ နဲ႔ Software နဲ႔ၾကား ခ်ိတ္ဆက္ၿပီး အလုပ္လုပ္တဲ့ ေနရာမွာ Kernel က အေရႀကီးတဲ့ အပုိင္းမွာ ပါဝင္ပါတယ္။ Android OS Architecture ရဲ႕ Linux Kernel အပုိင္းမွာ Display Driver, Camera Driver, USB Driver, Bluetooth Driver, Audio Driver, Power Management အစ႐ွိသျဖင့္ပါဝင္ပါတယ္။ နမူနာေျပာျပရရင္ ကြၽန္ေတာ့္္ရဲ႕ Nexus 5X မွာ ပုံမွန္ built-in ပါတဲ့ Stock Kernel မွာ Double Tap to Wake/Sleep / Disaply နဲ႔ ပတ္သက္တဲ့ KCAL - Advanced Color Control / Audio driver နဲ႔ ပတ္သက္တဲ့ Sound Control with High Performance Audio စသျဖင့္ မပါ၀င္ၾကပါဘူး။ ကုိယ့္မွာ C Programming Skill ႐ွိရင္ Kernel source တခုုု ကေန အဲဒီ Kernel features ေတြ ေရးၿပီး ျပန္ Recompile လုပ္ႏုိင္ပါတယ္။ ဒီေနရာမွာ Google ရဲ့ Nexus/Pixel လုိမ်ဳိး Stock Pure Android ဖုန္းေတြ မဟုတ္တဲ့ တျခား Android OEMs ေတြျဖစ္တဲ့ (Samsung, HTC, Sony and etc…) စတဲ့ Company ေတြရဲ့ဖုန္းေတြမွာ ေတာ္ေတာ္မ်ားမွာ အဲဒီ Features အနည္းနဲ႔အမ်ား ပါဝင္ၾကပါတယ္။ ဘာလု႔ိ အဆင္သင့္ပါလဲဆုိေတာ့ သူတုိ႔ရဲ႕ Company က သက္ဆုိင္ရာ Android Engineer ေတြက Source ကေန Modified လုပ္ထားၿပီးသားျဖစ္ေနလု႔ိပါပဲ။ အဲဒီ Features ေတြ Device drivers - Audio, Display, Camera, USB and etc… / Memory / Power Management ပုိင္းေတြက Low-level ထိဆင္းၿပီး C Programming နဲ႔ေရးၾကပါတယ္။ Custom Android Kernel တခု Build ရတဲ့အေၾကာင္းက Kernel source ယူၿပီး Features ေတြ ထပ္ေပါင္းထည့္ဖို႔အတြက္ ျဖစ္ပါတယ္။
+Android Devices အတွက် Kernel Source ကနေ Kernel တခု ဘယ်လို Build မလဲဆိုတဲ့ အကြောင်းအရာကို ဒီ How-To article မှာ အဓိက ပြောသွားမှာဖြစ်ပါတယ်။ Android OS က Linux Kernel ကို Based ထားပြီး Android ရဲ့ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မှာသုံံံံံးထား Linux Kernel branch တွေက Long Term Support(LTS) branch တွေ ဖြစ်ပါတယ်။ https://www.kernel.org မှာ Long term branch တွေကြည့်နိုင်ပါတယ်။ ဥပမာ Nexus 5X, 6, 6P မှာဆိုရင် “linux-3.10-y” ဆိုတဲ့ branch ကို သုံးပါတယ် Google Pixel/Pixel XL မှာဆိုရင် “linux-3.18-y” ဆိုတဲ့ LTS branch တွေ သုံးကြပါတယ်။ Android OS က Linux Kernel ပေါ်မှာ အခြေခံပြီး တည်ဆောက်ထားတာ ဖြစ်ပြီး Kernel ဆိုတာ OS တခုရဲ့ အရေးကြီးတဲ့ အစိတ်အပိုင်းတခုပါ။ CPU, Memory, Disaply စတဲ့ Hardware အစိတ်အပိုင်းတွေ နဲ့ Software နဲ့ကြား ချိတ်ဆက်ပြီး အလုပ်လုပ်တဲ့ နေရာမှာ Kernel က အရေကြီးတဲ့ အပိုင်းမှာ ပါဝင်ပါတယ်။ Android OS Architecture ရဲ့ Linux Kernel အပိုင်းမှာ Display Driver, Camera Driver, USB Driver, Bluetooth Driver, Audio Driver, Power Management အစရှိသဖြင့်ပါဝင်ပါတယ်။ နမူနာပြောပြရရင် ကျွန်တော့််ရဲ့ Nexus 5X မှာ ပုံမှန် built-in ပါတဲ့ Stock Kernel မှာ Double Tap to Wake/Sleep / Disaply နဲ့ ပတ်သက်တဲ့ KCAL - Advanced Color Control / Audio driver နဲ့ ပတ်သက်တဲ့ Sound Control with High Performance Audio စသဖြင့် မပါဝင်ကြပါဘူး။ ကိုယ့်မှာ C Programming Skill ရှိရင် Kernel source တခု ကနေ အဲဒီ Kernel features တွေ ရေးပြီး ပြန် Recompile လုပ်နိုင်ပါတယ်။ ဒီနေရာမှာ Google ရဲ့ Nexus/Pixel လိုမျိုး Stock Pure Android ဖုန်းတွေ မဟုတ်တဲ့ တခြား Android OEMs တွေဖြစ်တဲ့ (Samsung, HTC, Sony and etc…) စတဲ့ Company တွေရဲ့ဖုန်းတွေမှာ တော်တော်များမှာ အဲဒီ Features အနည်းနဲ့အများ ပါဝင်ကြပါတယ်။ ဘာလု့ိ အဆင်သင့်ပါလဲဆိုတော့ သူတို့ရဲ့ Company က သက်ဆိုင်ရာ Android Engineer တွေက Source ကနေ Modified လုပ်ထားပြီးသားဖြစ်နေလု့ိပါပဲ။ အဲဒီ Features တွေ Device drivers - Audio, Display, Camera, USB and etc… / Memory / Power Management ပိုင်းတွေက Low-level ထိဆင်းပြီး C Programming နဲ့ရေးကြပါတယ်။ Custom Android Kernel တခု Build ရတဲ့အကြောင်းက Kernel source ယူပြီး Features တွေ ထပ်ပေါင်းထည့်ဖို့အတွက် ဖြစ်ပါတယ်။
 
 <img src="https://developer.android.com/guide/platform/images/android-stack_2x.png" />
 
@@ -20,7 +20,7 @@ Android Devices အတြက္ Kernel Source ကေန Kernel တခု ဘယ�
 
 
 # Kernel Sources
-Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ မူတည္ၿပီး download ရမယ့္ site ေတြက ကြဲျပားသြားပါလိမ့္မယ္၊ လုိအပ္တဲ့ Link ေတြ ေအာက္မွေပးထားပါမယ္။
+Kernel source တွေက ဖုန်းအမျိုးအစာပေါ် မူတည်ပြီး download ရမယ့် site တွေက ကွဲပြားသွားပါလိမ့်မယ်၊ လိုအပ်တဲ့ Link တွေ အောက်မှပေးထားပါမယ်။
 - Google Nexus/Pixel ( Qualcomm Chipset Only) : https://android.googlesource.com/kernel/msm
 - Google Nexus (For all Chipsets) : https://android.googlesource.com/kernel/
 - Sony Xperia : https://developer.sonymobile.com/downloads/xperia-open-source-archives/
@@ -30,18 +30,18 @@ Kernel source ေတြက ဖုန္းအမ်ဳိးအစာေပၚ �
 - Xiaomi : https://github.com/MiCode
 - OnePlus : https://github.com/OnePlusOSS
 - Motorola : https://github.com/MotorolaMobilityLLC
-- ေနာက္တခုက အမ်ဳိးမ်ဳိးေသာ Android Device ေတြရဲ႕ Kernel source ေတြ တေနရာတည္းမွာ ရႏုိင္တဲ့ ေနရကေတာ့ LineageOS ROM Community ႀကီးပဲျဖစ္ပါတယ္။ (ဒါေပမယ့္ တခုေတာ့႐ွိတယ္ အဲဒီ LineageOS Source ကေန Build လုုိုိုိက္တဲ့ Kernel တခုဟာ သူ႔ရဲ႕ ROM နဲ႔ AOSP based ROM ေတြမွာပဲ အလုပ္လုပ္ပါလိိမ့္မယ္၊ ဥပမာ Xiaomi Device ေတြ အေနနဲေျပာရရင္ သူ႔ရဲ႕ StockROM (MIUI) မွာ LineageOS source ကေန build ထားတဲ့ Kernel ကုိ သုံးလုိ႔ရမွာ မဟုတ္ပါဘူး အလုပ္လုပ္မွာ မဟုတ္ပါဘူး၊ ဖုန္းက LineageOS တင္ ထားဖုိ႔လုိပါယ္။
+- နောက်တခုက အမျိုးမျိုးသော Android Device တွေရဲ့ Kernel source တွေ တနေရာတည်းမှာ ရနိုင်တဲ့ နေရကတော့ LineageOS ROM Community ကြီးပဲဖြစ်ပါတယ်။ (ဒါပေမယ့် တခုတော့ရှိတယ် အဲဒီ LineageOS Source ကနေ Build လိိုုက်တဲ့ Kernel တခုဟာ သူ့ရဲ့ ROM နဲ့ AOSP based ROM တွေမှာပဲ အလုပ်လုပ်ပါလိမ့်မယ်၊ ဥပမာ Xiaomi Device တွေ အနေနဲပြောရရင် သူ့ရဲ့ StockROM (MIUI) မှာ LineageOS source ကနေ build ထားတဲ့ Kernel ကို သုံးလို့ရမှာ မဟုတ်ပါဘူး အလုပ်လုပ်မှာ မဟုတ်ပါဘူး၊ ဖုန်းက LineageOS တင် ထားဖို့လိုပါယ်။
 - https://github.com/LineageOS
 
 # Toolchains
-Kernel Source ကေန compile ဖုိ႔အတြက္ဆုိရင္ Toolchains တခုလုိအပ္ပါတယ္၊ Toolchains မွာ ကုိယ့္ဖုန္ ရဲ႕ CPU arch ေပၚ မူတည္ၿပီ ARM နဲ႔ ARM64 ဆုိၿပီး ၂မ်ဳိး ႐ွိပါတယ္။ လုိအပ္တဲ့ Link ေတြ ေအာက္မွာ ေပးထားပါတယ္။
+Kernel Source ကနေ compile ဖို့အတွက်ဆိုရင် Toolchains တခုလိုအပ်ပါတယ်၊ Toolchains မှာ ကိုယ့်ဖုန် ရဲ့ CPU arch ပေါ် မူတည်ပြီ ARM နဲ့ ARM64 ဆိုပြီး ၂မျိုး ရှိပါတယ်။ လိုအပ်တဲ့ Link တွေ အောက်မှာ ပေးထားပါတယ်။
 - arm : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/
 - arm64 : https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
 
 
 # Downloading
-ဒီ TUT ကုုိ ကြၽန္ေတာ္မွာ႐ွိတဲ့ Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာသြားမွာပါ။ က်န္တဲ့ဖုန္းေတြ အတြက္ကလည္း သေဘာတရာက တူတူပါပဲ၊ Kernel Source download တဲ့ ေနရာပဲ ကြာသြားမွွွွွာပါ။
-- အရင္ဆုံး Terminal ကုိဖြင့္ၿပီး ဒီ command ေလး႐ုိက္လုိက္ပါ။ (Dir တခုေဆာက္ပါမယ္)
+ဒီ TUT ကို ကျွန်တော်မှာရှိတဲ့ Nexus 5X နဲ့ ဥပမာပေးပြီး ပြောသွားမှာပါ။ ကျန်တဲ့ဖုန်းတွေ အတွက်ကလည်း သဘောတရာက တူတူပါပဲ၊ Kernel Source download တဲ့ နေရာပဲ ကွာသွားမှာပါ။
+- အရင်ဆုံး Terminal ကိုဖွင့်ပြီး ဒီ command လေးရိုက်လိုက်ပါ။ (Dir တခုဆောက်ပါမယ်)
 ```
 mkdir KernelName
 ```
@@ -49,22 +49,22 @@ mkdir KernelName
 cd KernelName
 ```
 
-- Nexus 5X အတြက္ Kernel source download ဖုိ႔ အတြက္ ဒီ command ေလး ႐ုိက္လုိက္ပါ။
-- အရင္ဆုံး ကုိယ့္ Computer ထဲမွာ git install ထားဖုိ႔ လုိပါတယ္။
+- Nexus 5X အတွက် Kernel source download ဖို့ အတွက် ဒီ command လေး ရိုက်လိုက်ပါ။
+- အရင်ဆုံး ကိုယ့် Computer ထဲမှာ git install ထားဖို့ လိုပါတယ်။
 ```
 git clone -b android-msm-bullhead-3.10-oreo-r4 --depth=1 https://android.googlesource.com/kernel/msm
 ```
 
-- ၿပီးရင္ Kernel compile ဖုိ႔အတြက္ Toolchains download ရပါမယ္။ (ဒီေနရာမွာ တခု သတိထားဖုိ႔လုိပါတယ္ ကုိယ္ရဲ႕ဖုန္း CPU arch က arm64 ဆုိ arm64 toolchains ကုိ download ပါ၊ မဟုတ္ဘူး arm ဆုိရင္ arm toolchains ကုိ download ပါ)
+- ပြီးရင် Kernel compile ဖို့အတွက် Toolchains download ရပါမယ်။ (ဒီနေရာမှာ တခု သတိထားဖို့လိုပါတယ် ကိုယ်ရဲ့ဖုန်း CPU arch က arm64 ဆို arm64 toolchains ကို download ပါ၊ မဟုတ်ဘူး arm ဆိုရင် arm toolchains ကို download ပါ)
 ```
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 ```
-- အဲဒါေတြအကုန္ၿပီးသြာၿပီ ဆုိရင္ Kernel build ဆုိ အဆင္သင့္ ျဖစ္ပါၿပီ။
+- အဲဒါတွေအကုန်ပြီးသွာပြီ ဆိုရင် Kernel build ဆို အဆင်သင့် ဖြစ်ပါပြီ။
 
 
 # How To Build Kernel
-- အရင္ဆုံး Kernel source နဲ႔ toochains ကုိ ပထမက ေဆာက္ထားတဲ့ KernelName (PuerZ-Kernel-N5X) ဆုိတဲ့ Dir ထဲမွာ ႏွစ္ခုလုံး အဆင္သင့္ ႐ွိေနရပါမယ္။
-- Toolchain Name ကုိ AOSP-Toolchains လုိ႔ အမည္ေပးလုိက္ၿပီး၊ Nexus 5X Kernel Source Name ကုိ bullhead လုိ႔ အမည္ ေပးလုိက္ပါမယ္။ (အဆင္ေျပသလုိ Rename လုိက္ပါ ျပႆ နာ မ႐ွိပါဘူး၊ တခုပဲ Toolchains Location ျပန္ ေပးတဲ့ ေနရာမွာ အဲဒီ Name ေတြအတုိင္း အတိအက်သိ ဖုိ႔ လုိပါတယ္)
+- အရင်ဆုံး Kernel source နဲ့ toochains ကို ပထမက ဆောက်ထားတဲ့ KernelName (PuerZ-Kernel-N5X) ဆိုတဲ့ Dir ထဲမှာ နှစ်ခုလုံး အဆင်သင့် ရှိနေရပါမယ်။
+- Toolchain Name ကို AOSP-Toolchains လို့ အမည်ပေးလိုက်ပြီး၊ Nexus 5X Kernel Source Name ကို bullhead လို့ အမည် ပေးလိုက်ပါမယ်။ (အဆင်ပြေသလို Rename လိုက်ပါ ပြဿ နာ မရှိပါဘူး၊ တခုပဲ Toolchains Location ပြန် ပေးတဲ့ နေရာမှာ အဲဒီ Name တွေအတိုင်း အတိအကျသိ ဖို့ လိုပါတယ်)
 - e.g : Toolchains location
 ```
 /home/zawzaw/PureZ-Kernel-N5X/AOSP-Toolchains
@@ -75,50 +75,50 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 ```
 <img src="https://s20.postimg.cc/c06g0zj8t/Screenshot_from_2017-10-16_11-42-11.png" />
 
-- ၿပီးရင္ ကုိယ့္ဖုန္းအတြက္ download ထားတဲ့ Kernel source Folder ထဲ ဝင္လုိက္ပါ။
-- Right Click ေထာက္ၿပီး Terminal ေလးကုိ ဖြင့္လုိက္ပါ။
-- ပထမဦးဆုံး လုပ္ရမွာ Kernel source ကေန compile ဖုိိိိ႔အတြက္ export ဆုိတဲ့ command ကုိ သုံးၿပီး toolchains ကုိ Set new environment variable သြားလုပ္ရပါမယ္။ (export - Set a New Environmetn Variable)
-- Type this command (အဲဒီမွာ bin/ေနာက္ကေကာင္ကုိ toochains prefix လုိ႔ေခၚပါတယ္ အခု Google က ေပးထားတဲ့ Toochain ေတြ ရဲ႕ prefix ေတြကုိ ေျပာျပပါမယ္၊ ARM အတြက္ဆုိရင္ "arm-eabi-" ၊ ARM64 အတြက္ဆုိရင္ "aarch64-linux-android-" ျဖစ္ပါတယ္)
+- ပြီးရင် ကိုယ့်ဖုန်းအတွက် download ထားတဲ့ Kernel source Folder ထဲ ဝင်လိုက်ပါ။
+- Right Click ထောက်ပြီး Terminal လေးကို ဖွင့်လိုက်ပါ။
+- ပထမဦးဆုံး လုပ်ရမှာ Kernel source ကနေ compile ဖို့အတွက် export ဆိုတဲ့ command ကို သုံးပြီး toolchains ကို Set new environment variable သွားလုပ်ရပါမယ်။ (export - Set a New Environmetn Variable)
+- Type this command (အဲဒီမှာ bin/နောက်ကကောင်ကို toochains prefix လို့ခေါ်ပါတယ် အခု Google က ပေးထားတဲ့ Toochain တွေ ရဲ့ prefix တွေကို ပြောပြပါမယ်၊ ARM အတွက်ဆိုရင် "arm-eabi-" ၊ ARM64 အတွက်ဆိုရင် "aarch64-linux-android-" ဖြစ်ပါတယ်)
 ```
 export CROSS_COMPILE=${HOME}/PureZ-Kernel-N5X/AOSP-Toolchains/bin/aarch64-linux-android-
 ```
 
-- ကုိယ့္ဖုန္းရဲ႕ CPU arch က arm လား arm64 လား သိထားဖုိ႔ အရင္လုိပါတယ္
-- အရင္ဆုံး ကုိယ့္ဖုန္းရဲ႕ arch ကုိ ေျပာေပးဖုိိိ့ လုိပါတယ္။
-- Nexus 5X က arm64 ျဖစ္တဲ့အတြက္ ဒီ command ေလး ဆက္႐ုိက္လုိက္ပါ။ (တကယ္လုိ႔ ကုိယ့္ဖုန္းက arm ဆုိရင္ arm64 ေနရာမွာ armလုိ႔ ေျပာင္း ႐ုိက္လုိက္ပါ။
+- ကိုယ့်ဖုန်းရဲ့ CPU arch က arm လား arm64 လား သိထားဖို့ အရင်လိုပါတယ်
+- အရင်ဆုံး ကိုယ့်ဖုန်းရဲ့ arch ကို ပြောပေးဖို့ လိုပါတယ်။
+- Nexus 5X က arm64 ဖြစ်တဲ့အတွက် ဒီ command လေး ဆက်ရိုက်လိုက်ပါ။ (တကယ်လို့ ကိုယ့်ဖုန်းက arm ဆိုရင် arm64 နေရာမှာ armလို့ ပြောင်း ရိုက်လိုက်ပါ။
 ```
 export ARCH=arm64 && export SUBARCH=arm64
 ```
 
-- ေနာက္တခုက Kernel source ထဲမွာ Compile ထား output file ေတြ ႐ွိရင္ ႐ွင္း ေပးဖုိ႔ လုိပါတယ္။
+- နောက်တခုက Kernel source ထဲမှာ Compile ထား output file တွေ ရှိရင် ရှင်း ပေးဖို့ လိုပါတယ်။
 ```
 make clean && make mrproper
 ```
 <img src="https://s20.postimg.cc/ljg4uhorh/Screenshot_from_2017-10-16_10-55-41.png" />
 
-- ေနာက္ထက္တခု သိဖုိ႔ကေတာ့ ကုိယ့္ build မယ့္ Kernel ရဲ႕ build kernel configuration ပါ။
-- ARM device ဆုိရင္ kernelsource/arch/arm/configs/ ေအာက္မွာ ႐ွိပါတယ္။
-- ARM64 device ဆုိရင္ kernelsource/arch/arm64/configs/ ေအာက္မွာ ႐ွိပါတယ္။
-- Nexus 5X အတြက္ဆုိရင္ bullhead/arch/arm64/configs/bullhead_defconfig (bullhead_defconfig ဆိုတာ Nexus 5X အတြက္ build မယ့္ kernel configuration အပုိင္းပါပဲ)
-- ကုိယ့္ဖုန္းအတြက္ kernel defconfig ကုိ သိခ်င္ရင္ KernelSource/build.config file ေလးကုိ ဖြင့္ၾကည္ႏုိင္ပါတယ္။
-- အရင္ဆုံး Kernel compile မလုပ္ခင္ build configuration လုပ္ေပးဖုိ႔ လုိပါတယ္။
+- နောက်ထက်တခု သိဖို့ကတော့ ကိုယ့် build မယ့် Kernel ရဲ့ build kernel configuration ပါ။
+- ARM device ဆိုရင် kernelsource/arch/arm/configs/ အောက်မှာ ရှိပါတယ်။
+- ARM64 device ဆိုရင် kernelsource/arch/arm64/configs/ အောက်မှာ ရှိပါတယ်။
+- Nexus 5X အတွက်ဆိုရင် bullhead/arch/arm64/configs/bullhead_defconfig (bullhead_defconfig ဆိုတာ Nexus 5X အတွက် build မယ့် kernel configuration အပိုင်းပါပဲ)
+- ကိုယ့်ဖုန်းအတွက် kernel defconfig ကို သိချင်ရင် KernelSource/build.config file လေးကို ဖွင့်ကြည်နိုင်ပါတယ်။
+- အရင်ဆုံး Kernel compile မလုပ်ခင် build configuration လုပ်ပေးဖို့ လိုပါတယ်။
 ```
 make bullhead_defconfig
 ```
 <img src="https://s20.postimg.cc//708zt6b31/Screenshot_from_2017-10-16_11-27-13.png" />
 
-- ၿပီးရင္ Kernel compile ပါေတာ့မယ္၊ compile ဖုိ႔အတြက္ ေအာက္က command ေလး႐ုိက္လုိက္ပါ။
+- ပြီးရင် Kernel compile ပါတော့မယ်၊ compile ဖို့အတွက် အောက်က command လေးရိုက်လိုက်ပါ။
 ```
 make -j$(nproc --all)
 ```
 <img src="https://s20.postimg.cc/6aq7gqi8d/Screenshot_from_2017-10-16_10-56-47.png" />
 
-- Compilation process time က ကုိယ့္ Computer ရဲ႕ CPU core ေပၚမူတည္ၿပီးၾကာႏုိင္ပါတယ္။
-- အဲဒါေတြၿပီးသြားရင္ Compiler ကေန Compile လုပ္သြားပါလိမ့္မယ္။
+- Compilation process time က ကိုယ့် Computer ရဲ့ CPU core ပေါ်မူတည်ပြီးကြာနိုင်ပါတယ်။
+- အဲဒါတွေပြီးသွားရင် Compiler ကနေ Compile လုပ်သွားပါလိမ့်မယ်။
 <img src="https://s20.postimg.cc/w69xzzwxp/Screenshot_from_2017-10-16_11-25-22.png" />
 
 
-- Build လုိက္တဲ့ Kernel zImage ေတြက ARM ဆုိရင္ - kernelsource/arch/arm/boot/ေအာက္မွာ ထြက္ပါတယ္၊ ARM64 ဆုိရင္ - kernelsource/arch/arm64/boot/ေအာက္မွာ ထြက္သြားလိမ့္မယ္။
+- Build လိုက်တဲ့ Kernel zImage တွေက ARM ဆိုရင် - kernelsource/arch/arm/boot/အောက်မှာ ထွက်ပါတယ်၊ ARM64 ဆိုရင် - kernelsource/arch/arm64/boot/အောက်မှာ ထွက်သွားလိမ့်မယ်။
 <img src="https://s20.postimg.cc/963ank47x/Screenshot_from_2017-10-16_11-42-53.png" />
 
-- အဲဒါ ေတြ ေအာင္ျမင္သြာၿပီး ဆုိရင္ ကုိယ္ဖုန္းအတြက္ Kernel Install ဖု႔ိ FlashableZip ဘယ္လုိလုပ္မလဲ ဆုိိိတာ ဆက္ေရးပါမယ္။
+- အဲဒါ တွေ အောင်မြင်သွာပြီး ဆိုရင် ကိုယ်ဖုန်းအတွက် Kernel Install ဖု့ိ FlashableZip ဘယ်လိုလုပ်မလဲ ဆိုတာ ဆက်ရေးပါမယ်။

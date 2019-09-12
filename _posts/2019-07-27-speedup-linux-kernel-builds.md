@@ -7,30 +7,30 @@ featured-image: /assets/images/featured-images/img_speedup_linux_kernel_builds.p
 permalink: blog/linux-kernel/speedup-linux-kernel-builds
 ---
 
-Ccache (Compiler Cache) ကိုသုံးၿပီး Linux kernel compilation time ကို ပုံမွန္ထက္ျမန္ေအာင္ ဘယ္လို Setup လုပ္ၿပီး Build မလဲဆိုတာကို ဒီ article မွာ အဓိကထားၿပီး ေျပာသြားမွာျဖစ္ပါတယ္။ ပုံမွန္ဆိုရင္ ကြၽန္ေတာ္ရဲ႕ CPU အနိမ့္နဲ႔ Laptop computer ေလးေပၚမွာ Linux kernel ကို Compile လုပ္ရတဲ့အခ်ိန္က 30mins ေလာက္ အခ်ိန္ေပးေနရပါတယ္။ အဲဒါေၾကာင့္ သိပ္ၿပီးေတာ့ အဆင္မေျပဘူး။ အဒီျပႆနာကို Ccache နဲ႔ ေျဖရွင္းႏိုင္ပါတယ္။ Ccache နဲ႔ Compile လုပ္ရင္ေတာ့ 3 - 5 mins ေလာက္ထိ ျမန္သြားပါတယ္။
+Ccache (Compiler Cache) ကိုသုံးပြီး Linux kernel compilation time ကို ပုံမှန်ထက်မြန်အောင် ဘယ်လို Setup လုပ်ပြီး Build မလဲဆိုတာကို ဒီ article မှာ အဓိကထားပြီး ပြောသွားမှာဖြစ်ပါတယ်။ ပုံမှန်ဆိုရင် ကျွန်တော်ရဲ့ CPU အနိမ့်နဲ့ Laptop computer လေးပေါ်မှာ Linux kernel ကို Compile လုပ်ရတဲ့အချိန်က 30mins လောက် အချိန်ပေးနေရပါတယ်။ အဲဒါကြောင့် သိပ်ပြီးတော့ အဆင်မပြေဘူး။ အဒီပြဿနာကို Ccache နဲ့ ဖြေရှင်းနိုင်ပါတယ်။ Ccache နဲ့ Compile လုပ်ရင်တော့ 3 - 5 mins လောက်ထိ မြန်သွားပါတယ်။
 
 # What is Ccache?
-[Ccache (Compiler Cache)](https://ccache.dev/) က C, C++, Objective-C နဲ႔ Objective-C++ Code ေတြကို Compile လုပ္တဲ့ေနရမွာ Compilation time ကို Speed up  လုပ္ဖို႔ အဓိက သုံးပါတယ္။
+[Ccache (Compiler Cache)](https://ccache.dev/) က C, C++, Objective-C နဲ့ Objective-C++ Code တွေကို Compile လုပ်တဲ့နေရမှာ Compilation time ကို Speed up  လုပ်ဖို့ အဓိက သုံးပါတယ်။
 
 # Installation and Setup Ccache
-ပထမဆုံးအေနနဲ႔ ကိုယ့္ရဲ႕ GNU/Linux machine ထဲမွာ Ccache package Install လုပ္ထားဖို႔လိုပါတယ္။
-ကိုယ္ Install လုပ္ထားတဲ့ Ccache version ကို check ခ်င္ရင္ေတာ့
+ပထမဆုံးအနေနဲ့ ကိုယ့်ရဲ့ GNU/Linux machine ထဲမှာ Ccache package Install လုပ်ထားဖို့လိုပါတယ်။
+ကိုယ် Install လုပ်ထားတဲ့ Ccache version ကို check ချင်ရင်တော့
 
 ```
 ccache --version
 ```
 
-ဆိုၿပီး check ႏိုင္ပါတယ္။
-တကယ္လို႔ Install မလုပ္ရေသးဘူးဆိုရင္ေတာ့
+ဆိုပြီး check နိုင်ပါတယ်။
+တကယ်လို့ Install မလုပ်ရသေးဘူးဆိုရင်တော့
 
 ```
 sudo apt install ccache
 ```
 
-ဆိုၿပီး Ubunt Linux မွာ Install လုပ္ႏိုင္ပါတယ္။
+ဆိုပြီး Ubunt Linux မှာ Install လုပ်နိုင်ပါတယ်။
 
-ေနာက္တခုက .bashrc file ကို ဖြင့္ၿပီး Setup လုပ္ဖို႔ လိုပါေသးတယ္။
-ccache ရဲ႕ dir path ကို export လုပ္ေပးလိုက္ရင္ ရပါၿပီ။ အဒီ ေအာက္က သုံးေၾကာင္း .bashrc file မွာ Add ေပးလိုက္ရင္ ရပါၿပီ။
+နောက်တခုက .bashrc file ကို ဖွင့်ပြီး Setup လုပ်ဖို့ လိုပါသေးတယ်။
+ccache ရဲ့ dir path ကို export လုပ်ပေးလိုက်ရင် ရပါပြီ။ အဒီ အောက်က သုံးကြောင်း .bashrc file မှာ Add ပေးလိုက်ရင် ရပါပြီ။
 
 ```
 export CCACHE_DIR="/home/zawzaw/.cache"
@@ -38,13 +38,13 @@ export CXX="ccache g++"
 export CC="ccache gcc"
 ```
 
-Ccache ကို အမ်ားဆုံး maximum size ဘယ္ေလာက္ထားမလဲဆိုတာ သတ္မွတ္ေပးရပါမယ္။
+Ccache ကို အများဆုံး maximum size ဘယ်လောက်ထားမလဲဆိုတာ သတ်မှတ်ပေးရပါမယ်။
 ```
 ccache -M 32
 ```
 ![Screenshot](/assets/images/screenshots/img_screenshot_ccache_max_size.png)
 
-ကိုယ္ရဲ႕ လက္ရွိမွာရွိေနတဲ့ ccache ရဲ႕ Statistics ကို ၾကည့္ခ်င္ရင္ `ccache -s` ဆိုၿပီး command ကို ႐ိုက္ၿပီး ၾကည့္ႏိုင္ပါတယ္။
+ကိုယ်ရဲ့ လက်ရှိမှာရှိနေတဲ့ ccache ရဲ့ Statistics ကို ကြည့်ချင်ရင် `ccache -s` ဆိုပြီး command ကို ရိုက်ပြီး ကြည့်နိုင်ပါတယ်။
 ```
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
 cache directory                     /home/zawzaw/.cache
@@ -66,25 +66,25 @@ max cache size                      32.0 GB
 ```
 
 # Building Linux Kernel with Ccache
-Linux kernel source directory ကို သြားၿပီး ပထမက Compile လုပ္ထားတဲ့ Output files ေတြ ရွိရင္ Clean လုပ္ေပးဖို႔ လိုပါတယ္။
+Linux kernel source directory ကို သွားပြီး ပထမက Compile လုပ်ထားတဲ့ Output files တွေ ရှိရင် Clean လုပ်ပေးဖို့ လိုပါတယ်။
 ```
 make clean && make mrproper
 ```
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_clean.png)
 
-ေနာက္တဆင့္က Linux kernel ကို Compile မလုပ္ခင္ Kernel configuration လုပ္ေပးဖို႔ လိုပါတယ္။ ကြၽန္ေတာ္ နမူနာအေနနဲ႔ default configuration ကိုပဲ သုံးလိုက္ပါတယ္။
+နောက်တဆင့်က Linux kernel ကို Compile မလုပ်ခင် Kernel configuration လုပ်ပေးဖို့ လိုပါတယ်။ ကျွန်တော် နမူနာအနေနဲ့ default configuration ကိုပဲ သုံးလိုက်ပါတယ်။
 ```
 make defconfig
 ```
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_defconfig.png)
 
-Ccache နဲ႔ Linux kernel ကို Compile လုပ္မယ္ဆိုရင္ make command နဲ႔ `CC="ccache gcc"` ဆိုတဲ့ ဿoption တခုကို ထည့္ေပးဖို႔လိုပါတယ္။
+Ccache နဲ့ Linux kernel ကို Compile လုပ်မယ်ဆိုရင် make command နဲ့ `CC="ccache gcc"` ဆိုတဲ့ ူoption တခုကို ထည့်ပေးဖို့လိုပါတယ်။
 
 ```
 make CC="ccache gcc" -j$(nproc --all)
 ```
 
-တကယ္လို႔ Compilation time result ကို အတိအက် သိခ်င္ရင္ေတာ့ time ဆိုတဲ့ command ကို သုံးေပးဖို႔ လိုပါတယ္။
+တကယ်လို့ Compilation time result ကို အတိအကျ သိချင်ရင်တော့ time ဆိုတဲ့ command ကို သုံးပေးဖို့ လိုပါတယ်။
 
 ```
 time make CC="ccache gcc" -j$(nproc --all)

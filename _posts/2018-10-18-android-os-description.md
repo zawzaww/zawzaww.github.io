@@ -7,67 +7,67 @@ featured-image: /assets/images/featured-images/img_androidos_description.png
 permalink: blog/android/android-os-description
 ---
 
-Android က free and Open-source Project တခု ျဖစ္ၿပီး Android OS SourceCode ေတြကို AOSP (Android Open Source Project) ကေန ရယူႏိုင္ပါတယ္။ Android OS SourceCode ထဲမွာ သက္ဆိုင္ရာ dir ေတြ အမ်ားႀကီး ရွိပါတယ္ တနည္းအားျဖင့္ အဲဒါေတြက git repostories ျဖစ္ပါတယ္။ အဲဒီ SourceCode အတြင္းပိုင္း directories ေတြမွာ ဘယ္ dir က ဘာအတြက္ ဆိုတာ ဒီ Article မွာ ရွင္းျပသြားမွာ ျဖစ္ပါတယ္။
+Android က free and Open-source Project တခု ဖြစ်ပြီး Android OS SourceCode တွေကို AOSP (Android Open Source Project) ကနေ ရယူနိုင်ပါတယ်။ Android OS SourceCode ထဲမှာ သက်ဆိုင်ရာ dir တွေ အများကြီး ရှိပါတယ် တနည်းအားဖြင့် အဲဒါတွေက git repostories ဖြစ်ပါတယ်။ အဲဒီ SourceCode အတွင်းပိုင်း directories တွေမှာ ဘယ် dir က ဘာအတွက် ဆိုတာ ဒီ Article မှာ ရှင်းပြသွားမှာ ဖြစ်ပါတယ်။
 
-ပထမဆုံးအေနနဲ႔ ကြၽန္ေတာ္တို႔ AOSP Git repositories: https://android.googlesource.com ကို ၀င္ၾကည့္လိုက္ရင္ repositories ေတြ အမ်ားရွိတာ ေတြ႕ရမ်ာ ျဖစ္ပါတယ္။ အရွင္းဆုံးအေနနဲ႔ ကြၽန္ေတာ္ Local computer ထဲမွာ Download လုပ္ထားတဲ့ SourceCode and dirs ကို အေပၚဆုံးက Screenshot မွာ အရွင္းဆုံးၾကည့္ႏိုင္ပါတယ္။ အဲဒီ dirs ေတြက ဘယ္ေကာင္က ဘာအတြက္ဆိုတာ ေျပာျပေပးမွာ ျဖစ္ပါတယ္။ ဒီေနရာမွာ အေရးႀကီးတဲ့ အသုံးမ်ားတဲ့ အပိုင္းေတြပဲ ေျပာသြားမွာ ျဖစ္ပါတယ္။
+ပထမဆုံးအနေနဲ့ ကျွန်တော်တို့ AOSP Git repositories: https://android.googlesource.com ကို ဝင်ကြည့်လိုက်ရင် repositories တွေ အများရှိတာ တွေ့ရမျာ ဖြစ်ပါတယ်။ အရှင်းဆုံးအနေနဲ့ ကျွန်တော် Local computer ထဲမှာ Download လုပ်ထားတဲ့ SourceCode and dirs ကို အပေါ်ဆုံးက Screenshot မှာ အရှင်းဆုံးကြည့်နိုင်ပါတယ်။ အဲဒီ dirs တွေက ဘယ်ကောင်က ဘာအတွက်ဆိုတာ ပြောပြပေးမှာ ဖြစ်ပါတယ်။ ဒီနေရာမှာ အရေးကြီးတဲ့ အသုံးများတဲ့ အပိုင်းတွေပဲ ပြောသွားမှာ ဖြစ်ပါတယ်။
 
 <img src="https://cdn-images-1.medium.com/max/800/1*z-gCsPmfT5n_8eTsIIviuQ.png" height="100%" width="100%;" />
 
 <img src="https://cdn-images-1.medium.com/max/800/1*SiJvQaRedTfLqSjqyNDyFA.png" height="100%" width="100%;" />
 
-ေနာက္တခုက Google Git နဲ႔ မရင္းႏွီးတဲ့သူေတြက မ်က္စိေနာက္တယ္ထင္ရင္ mirror အေနနဲ႔ GitHub မွာလည္း AOSP repositories ေတြကို သူတို႔ လုပ္ေပးထားတယ္ အဲဒီမွာ ၀င္ၾကည့္ႏိုင္တယ္။ ဒါေပမယ့္ အကုန္ေတာ့ အစုံ Push လုပ္မထားဘူး အေရးႀကီးတာေလာက္ပဲ ထားတဲ့ သေဘာပါပဲ။
+နောက်တခုက Google Git နဲ့ မရင်းနှီးတဲ့သူတွေက မျက်စိနောက်တယ်ထင်ရင် mirror အနေနဲ့ GitHub မှာလည်း AOSP repositories တွေကို သူတို့ လုပ်ပေးထားတယ် အဲဒီမှာ ဝင်ကြည့်နိုင်တယ်။ ဒါပေမယ့် အကုန်တော့ အစုံ Push လုပ်မထားဘူး အရေးကြီးတာလောက်ပဲ ထားတဲ့ သဘောပါပဲ။
 
 AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 
 <img src="https://cdn-images-1.medium.com/max/800/1*QMzezVbdArmYMUFzK3hNrQ.png" height="100%" width="100%;" />
 
-```/device``` : Android Custom Firmware/ROM တခု Build တဲ့အခါ ကိုယ္ Build ခ်င္တဲ့ Device အတြက္ Device tree လို႔ေခၚတဲ့ hardware and device-specific configuration ေတြကို define လုပ္ေပးတဲ့ ေနရာ ျဖစ္ပါတယ္။
+```/device``` : Android Custom Firmware/ROM တခု Build တဲ့အခါ ကိုယ် Build ချင်တဲ့ Device အတွက် Device tree လို့ခေါ်တဲ့ hardware and device-specific configuration တွေကို define လုပ်ပေးတဲ့ နေရာ ဖြစ်ပါတယ်။
 
-```/kernel``` : ဒါက ကို Build မယ့္ Device အတြက္ Kernel source ေတြ ရွိတဲ့ ေနရာ ျဖစ္ပါတယ္။
+```/kernel``` : ဒါက ကို Build မယ့် Device အတွက် Kernel source တွေ ရှိတဲ့ နေရာ ဖြစ်ပါတယ်။
 
-```/platform``` : platform ေအာက္မွာေတာ့ repository အခြဲေတြ အမ်ားႀကီး ရွိပါတယ္။ `/bootable/recovery`, `/build`, `/bionic`, `/dalvik`, `/art`, `/docs`, `/external`, `/frameworks`, `/hardware`, `/manifest`, `/packages`, `/prebuilts`, `/system`, `/sdk`, `/ndk`, `/tools` စသျဖင့္ အမ်ားႀကီး ရွိပါတယ္။ ေအာက္မွာ အေသးစိတ္ ဆက္ေရးသြားပါမယ္။
+```/platform``` : platform အောက်မှာတော့ repository အခွဲတွေ အများကြီး ရှိပါတယ်။ `/bootable/recovery`, `/build`, `/bionic`, `/dalvik`, `/art`, `/docs`, `/external`, `/frameworks`, `/hardware`, `/manifest`, `/packages`, `/prebuilts`, `/system`, `/sdk`, `/ndk`, `/tools` စသဖြင့် အများကြီး ရှိပါတယ်။ အောက်မှာ အသေးစိတ် ဆက်ရေးသွားပါမယ်။
 
-```platform/bootable``` : Bootloader and Android bootable recovery SourceCode ေတြ ပါဝင္ပါတယ္။ Android မွာ အဲဒီ AOSP bootable recovery SourceCode ေတြကေန Custom Recovery တခု ျပန္ Build ႏိုင္ပါတယ္။
+```platform/bootable``` : Bootloader and Android bootable recovery SourceCode တွေ ပါဝင်ပါတယ်။ Android မှာ အဲဒီ AOSP bootable recovery SourceCode တွေကနေ Custom Recovery တခု ပြန် Build နိုင်ပါတယ်။
 
-```/platform/dalvik``` : Dalvik Virtual Machine နဲ႔ Core libraries ေတြ ရွိတဲ့ ေနရာ ျဖစ္ပါတယ္။ Android အတြက္ သီသန္႔ Google ကေန Design ျပန္လုပ္ထားတဲ့ VM တမ်ိဳး ျဖစ္ပါတယ္။ Android 4.4 နဲ႔ အေစာပိုင္းမွာ သုံးပါတယ္။
+```/platform/dalvik``` : Dalvik Virtual Machine နဲ့ Core libraries တွေ ရှိတဲ့ နေရာ ဖြစ်ပါတယ်။ Android အတွက် သီသန့် Google ကနေ Design ပြန်လုပ်ထားတဲ့ VM တမျိုး ဖြစ်ပါတယ်။ Android 4.4 နဲ့ အစောပိုင်းမှာ သုံးပါတယ်။
 
-```/platform/art``` : ART က Dalvik VM ေနရာမွာ Replace လုပ္လိုက္တဲ့ Runtime environment တခု ျဖစ္ပါတယ္။ Android 5.0 မွာ စၿပီး Google ကေန Introduce လုပ္ခဲ့ပါတယ္။
+```/platform/art``` : ART က Dalvik VM နေရာမှာ Replace လုပ်လိုက်တဲ့ Runtime environment တခု ဖြစ်ပါတယ်။ Android 5.0 မှာ စပြီး Google ကနေ Introduce လုပ်ခဲ့ပါတယ်။
 
-```platform/bionic``` : Google ကေန Android OS အတြက္ သီသန္႔ Develop လုပ္ထားတဲ့ Standard C library တခုျဖစ္ပါတယ္။
+```platform/bionic``` : Google ကနေ Android OS အတွက် သီသန့် Develop လုပ်ထားတဲ့ Standard C library တခုဖြစ်ပါတယ်။
 
-```platform/build``` : Makefile နဲ႔ ေရးထားတဲ့ Android Build System တခုပါ။ သေဘာက AOSP SourceCode ကေန Android Custom Firmware/ROM ေတြ make command ေတြနဲ႔ Port / Build လုပ္ဖို႔ ေရးထားတဲ့ Android Build System တခုပါပဲ။
+```platform/build``` : Makefile နဲ့ ရေးထားတဲ့ Android Build System တခုပါ။ သဘောက AOSP SourceCode ကနေ Android Custom Firmware/ROM တွေ make command တွေနဲ့ Port / Build လုပ်ဖို့ ရေးထားတဲ့ Android Build System တခုပါပဲ။
 
-```/platform/build/soong``` : Makefile based Android Build System အစား Google က Replace လုပ္လိုက္တဲ့ Android Build System အသစ္တခု ျဖစ္ပါတယ္။
+```/platform/build/soong``` : Makefile based Android Build System အစား Google က Replace လုပ်လိုက်တဲ့ Android Build System အသစ်တခု ဖြစ်ပါတယ်။
 
-```platform/development``` : Development tools နဲ႔ Sample Code ေတြ ျဖစ္ပါတယ္။
+```platform/development``` : Development tools နဲ့ Sample Code တွေ ဖြစ်ပါတယ်။
 
-```/platform/docs/source.android.com``` : Official AOSP Docs Website (https://source.android.com) ရဲ႕ SourceCode ျဖစ္ပါတယ္။
+```/platform/docs/source.android.com``` : Official AOSP Docs Website (https://source.android.com) ရဲ့ SourceCode ဖြစ်ပါတယ်။
 
-```/platform/external``` : AOSP ထဲကို အမ်ိဳးမ်ိဳးေသာ external projects ေတြ Imported လုပ္ထားတာ ျဖစ္ပါတယ္။ E.g — f2fs tools, ext4, lz4, fonts, llvm and etc..
+```/platform/external``` : AOSP ထဲကို အမျိုးမျိုးသော external projects တွေ Imported လုပ်ထားတာ ဖြစ်ပါတယ်။ E.g — f2fs tools, ext4, lz4, fonts, llvm and etc..
 
-```/platform/frameworks``` : Android ရဲ႕ Android Core framework Components ေတြနဲ႔ Services ေတြ ျဖစ္ပါတယ္။
+```/platform/frameworks``` : Android ရဲ့ Android Core framework Components တွေနဲ့ Services တွေ ဖြစ်ပါတယ်။
 
-```/platform/frameworks/base``` : Android Core framework နဲ႔ System service ေတြ ပါ၀င္ပါတယ္။
+```/platform/frameworks/base``` : Android Core framework နဲ့ System service တွေ ပါဝင်ပါတယ်။
 
-```platform/frameworks/native``` : Android framework ရဲ႕ Native libraries ေတြနဲ႔ Services ေတြ ပါ၀င္ပါတယ္။
+```platform/frameworks/native``` : Android framework ရဲ့ Native libraries တွေနဲ့ Services တွေ ပါဝင်ပါတယ်။
 
-```/platform/frameworks/support``` : ဒါကေတာ့ Android App developer ေတြ အသုံးမ်ားဆုံး Android Support library ေတြ ျဖစ္ပါတယ္။ E.g — drawerlayout, fragment, gridlayout, recyclerview, room, swiperefreshlayout, slices, viewpager2 and etc..
-အခု Google I/O 2018 မွာ Android Jetpack နဲ႔အတူ AndroidX လို႔ ေခၚပါတယ္။ လက္ရွိမွာ AndroidX stable version 1.0.0 ထြက္ထားပါတယ္။
+```/platform/frameworks/support``` : ဒါကတော့ Android App developer တွေ အသုံးများဆုံး Android Support library တွေ ဖြစ်ပါတယ်။ E.g — drawerlayout, fragment, gridlayout, recyclerview, room, swiperefreshlayout, slices, viewpager2 and etc..
+အခု Google I/O 2018 မှာ Android Jetpack နဲ့အတူ AndroidX လို့ ခေါ်ပါတယ်။ လက်ရှိမှာ AndroidX stable version 1.0.0 ထွက်ထားပါတယ်။
 
-```/platform/hardware``` : Hardware Abstraction Layer (HAL) နဲ႔ Hardware support library ေတြ အမ်ားဆုံး ပါ၀င္ပါတယ္။
+```/platform/hardware``` : Hardware Abstraction Layer (HAL) နဲ့ Hardware support library တွေ အများဆုံး ပါဝင်ပါတယ်။
 
-```/platform/manifest``` : Android OS SourceCode repositories ေတြ အားလုံးကို Google ရဲ႕ git-repo tool နဲ႔ Download လုပ္ဖို႔ Setup လုပ္ထားတဲ့ Manifest repository ျဖစ္ပါတယ္။
+```/platform/manifest``` : Android OS SourceCode repositories တွေ အားလုံးကို Google ရဲ့ git-repo tool နဲ့ Download လုပ်ဖို့ Setup လုပ်ထားတဲ့ Manifest repository ဖြစ်ပါတယ်။
 
-```platform/ndk``` : Android Native Development Kit (NDK) ပါ Android app developer ေတြ Native code ေတြနဲ႔ C/C++ နဲ႔ Android Apps ေတြ ေရးႏိုင္ပါတယ္။
+```platform/ndk``` : Android Native Development Kit (NDK) ပါ Android app developer တွေ Native code တွေနဲ့ C/C++ နဲ့ Android Apps တွေ ရေးနိုင်ပါတယ်။
 
-```/platform/packages/apps``` : Built-in Android System apps ေတြ ပါ၀င္ပါတယ္။ E.g — Calculator, Camera2, Calendar, Dialer, FMRadio, Gallery2, Launcher3, Music, Settings and etc..
+```/platform/packages/apps``` : Built-in Android System apps တွေ ပါဝင်ပါတယ်။ E.g — Calculator, Camera2, Calendar, Dialer, FMRadio, Gallery2, Launcher3, Music, Settings and etc..
 
-```platform/prebuilts``` : Linux, Mac လိုမ်ိဳး Host Computer OS ေတြမွာ Android SourceCode ကေန သက္ဆိုင္ရာ Android Devices ေတြ အတြက္ Kernel နဲ႔ Android Custom Firmware/ROM ေတြ Compile လုပ္ဖို႔ Toochains/Compilers ေတြ ပါဝင္ပါတယ္။ E.g — GCC, LLVM/Clang
+```platform/prebuilts``` : Linux, Mac လိုမျိုး Host Computer OS တွေမှာ Android SourceCode ကနေ သက်ဆိုင်ရာ Android Devices တွေ အတွက် Kernel နဲ့ Android Custom Firmware/ROM တွေ Compile လုပ်ဖို့ Toochains/Compilers တွေ ပါဝင်ပါတယ်။ E.g — GCC, LLVM/Clang
 
-```platform/sdk``` : Android Software Development Kit (SDK) ကေတာ့ ေတာ္ေတာ္မ်ားမ်ား သိၾကပါတယ္ Android app ေတြ ေရးဖို႔ မရွိမျဖစ္ပါပဲ။
+```platform/sdk``` : Android Software Development Kit (SDK) ကတော့ တော်တော်များများ သိကြပါတယ် Android app တွေ ရေးဖို့ မရှိမဖြစ်ပါပဲ။
 
-```platform/system``` , ```platform/system/core``` : Android ရဲ႕ အေရးႀကီးဆုံး အပိုင္း အသည္းႏွလုံးလို႔ေတာင္ ေျပာႏိုင္ပါတယ္ Minimal Linux system တခုျဖစ္ၿပီး Android ကို Boot လုပ္ႏိုင္ဖို႔အတြက္ အဓိက သုံးပါတယ္။
+```platform/system``` , ```platform/system/core``` : Android ရဲ့ အရေးကြီးဆုံး အပိုင်း အသည်းနှလုံးလို့တောင် ပြောနိုင်ပါတယ် Minimal Linux system တခုဖြစ်ပြီး Android ကို Boot လုပ်နိုင်ဖို့အတွက် အဓိက သုံးပါတယ်။
 
-```platform/tools``` : အမ်ိဳးမ်ိဳးေသာ Android IDEs and Tools ေတြ ပါ၀င္ပါတယ္။ E.g — Android Studio
+```platform/tools``` : အမျိုးမျိုးသော Android IDEs and Tools တွေ ပါဝင်ပါတယ်။ E.g — Android Studio
 
-*NOTE: တခု သိထားဖို႔က AOSP Google Git က repositories ကေန Local computer ထဲကို Download လုပ္ၿပီးတဲ့အခါ directory path က နည္းနည္းကြဲသြားပါမယ္။ ဒီ article ရဲ႕ Header မွာ ျပထားထဲ့ Screenshot အတိုင္းျဖစ္ပါတယ္။ ဥပမာ ။  ။  AOSP Google Git မွာ ```platform/build``` ဆိုတဲ့ Git repository က Local path မွာေတာ့ platform ဆိုတာ ပါေတာ့မွာ မဟုတ္ပဲ ကိုယ္ Download လုပ္ထားတဲ့ AOSP Source directory ေအာက္မွာ ```build``` ဆိုၿပီး ျဖစ္သြားပါလိမ့္မယ္။
+*NOTE: တခု သိထားဖို့က AOSP Google Git က repositories ကနေ Local computer ထဲကို Download လုပ်ပြီးတဲ့အခါ directory path က နည်းနည်းကွဲသွားပါမယ်။ ဒီ article ရဲ့ Header မှာ ပြထားထဲ့ Screenshot အတိုင်းဖြစ်ပါတယ်။ ဥပမာ ။  ။  AOSP Google Git မှာ ```platform/build``` ဆိုတဲ့ Git repository က Local path မှာတော့ platform ဆိုတာ ပါတော့မှာ မဟုတ်ပဲ ကိုယ် Download လုပ်ထားတဲ့ AOSP Source directory အောက်မှာ ```build``` ဆိုပြီး ဖြစ်သွားပါလိမ့်မယ်။

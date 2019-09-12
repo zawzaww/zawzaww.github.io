@@ -7,42 +7,42 @@ featured-image: /assets/images/featured-images/img_build_pure_android.jpeg
 permalink: blog/android/build-pure-android
 ---
 
-ဒီတခါေတာ့ အေၾကာင္းအရာကေတာ့ AOSP (Android Open Source Project) SourceCode ကေန ကုိယ့္ရဲ႕ Android Device အတြက္ Pure Android OS တခု ဘယ္လုိ Build မလဲဆုိတဲ့ အေၾကာင္းအရာပါ။ အခုနည္းကုိ သိသြားၿပီဆုိရင္ တျခားေသာ AOSP based ROM ေတြေရာ LineageOS based ROM ေတြေရာ build တတ္သြားပါလိမ့္မယ္၊ တခုပဲကြဲျပားသြားတာပါ Android SourceCode ယူရတဲ့ ေနရာပဲကြဲသြားတာပါ။ တခုေတာ့ သတိေပးထားပါရေစ Android ရဲ႕ SourceCode ေတြရဲ႕ filesize က 20GB နဲ႔ အထက္မွာ ႐ွိပါတယ္။ အဲဒါေၾကာင့္ Internet ေကာင္းမွပဲ အဆင္ေျပပါလိမ့္မယ္။ Build တဲ့ ေနရာမွာ Linux မွာေရာ Mac မွာေရာ build လုိ႔ရပါတယ္ ကြၽန္ေတာ္ကေတာ့ Linux နဲ႔ပဲ target ထားၿပီးေျပာသြားမွာျဖစ္ၿပီး၊ ခုေလာေလာဆယ္ေတာ့ ubuntu 17.04 ပဲ သုံးျဖစ္ပါတယ္၊ အဲဒါေၾကာင့္ ubuntu ေပၚမွာ build တာပဲ ဥပမာေပး ေျပာသြားမွာပါ၊ Build မယ့္ target Android Device က Nexus 5X နဲ႔ ဥပမာေပးၿပီး ေျပာျပသြားမွာ ျဖစ္ပါတယ္။
+ဒီတခါတော့ အကြောင်းအရာကတော့ AOSP (Android Open Source Project) SourceCode ကနေ ကိုယ့်ရဲ့ Android Device အတွက် Pure Android OS တခု ဘယ်လို Build မလဲဆိုတဲ့ အကြောင်းအရာပါ။ အခုနည်းကို သိသွားပြီဆိုရင် တခြားသော AOSP based ROM တွေရော LineageOS based ROM တွေရော build တတ်သွားပါလိမ့်မယ်၊ တခုပဲကွဲပြားသွားတာပါ Android SourceCode ယူရတဲ့ နေရာပဲကွဲသွားတာပါ။ တခုတော့ သတိပေးထားပါရစေ Android ရဲ့ SourceCode တွေရဲ့ filesize က 20GB နဲ့ အထက်မှာ ရှိပါတယ်။ အဲဒါကြောင့် Internet ကောင်းမှပဲ အဆင်ပြေပါလိမ့်မယ်။ Build တဲ့ နေရာမှာ Linux မှာရော Mac မှာရော build လို့ရပါတယ် ကျွန်တော်ကတော့ Linux နဲ့ပဲ target ထားပြီးပြောသွားမှာဖြစ်ပြီး၊ ခုလောလောဆယ်တော့ ubuntu 17.04 ပဲ သုံးဖြစ်ပါတယ်၊ အဲဒါကြောင့် ubuntu ပေါ်မှာ build တာပဲ ဥပမာပေး ပြောသွားမှာပါ၊ Build မယ့် target Android Device က Nexus 5X နဲ့ ဥပမာပေးပြီး ပြောပြသွားမှာ ဖြစ်ပါတယ်။
 
 # Requirements
-- GNU/Linux based Operating System(ဿOS)
+- GNU/Linux based Operating System
 - OpenJDK
 - Python 2.7+
 - Git: Version Control System
 - Google's git-repo (Repo)
 
 # About Google's git-repo
-Google ကေန Android အတြက္ အဓိကဦးတည္ၿပီး လုပ္ထားတဲ့ git-repo (Repo) အေၾကာင္းေျပာျပခ်င္ပါတယ္။ မ်ားေသာအားျဖင့္ Repo လု႔ိ လူသိမ်ားပါတယ္ သိၾကပါတယ္။ Repo ဆုိတာ GitHub က Project Repository မ်ဳိးကုိ ေခၚတာ မဟုတ္ပါဘူး။ Google က Git အေပၚမွာ အေျခခံၿပီး develope ထားတဲ့ Tool ရဲ႕အမည္ျဖစ္ပါတယ္။ ဘာလု႔ိ Android အတြက္ ဖန္းတီထားတာလဲဆုိေတာ့ Custom Android OS တခု Sources ကေန Build ခ်င္တယ္ပဲ ဆုိပါစု႔ိ Android OS တနည္းအားျဖင့္ AOSP မွာ Android OS ႀကီး တခုလုံးအတြက္လုိအပ္တဲ့ Repositories ေတြက အမ်ားႃကီး႐ွိပါတယ္။ အဲဒါေတြကုိ တခုခ်င္း git clone လုပ္ေနရင္ အဆင္ေျပမွာ မဟုတ္ပါဘူး။ အဲဒီအတြက္ Repo က Custom Android OS build မယ္သူေတြကုိ ကူညီႏုိင္ပါတယ္။
-git-repo အေၾကာင္းကုိ ဒီမွာဝင္ဖက္ႏုိင္ပါတယ္...
+Google ကနေ Android အတွက် အဓိကဦးတည်ပြီး လုပ်ထားတဲ့ git-repo (Repo) အကြောင်းပြောပြချင်ပါတယ်။ များသောအားဖြင့် Repo လု့ိ လူသိများပါတယ် သိကြပါတယ်။ Repo ဆိုတာ GitHub က Project Repository မျိုးကို ခေါ်တာ မဟုတ်ပါဘူး။ Google က Git အပေါ်မှာ အခြေခံပြီး develope ထားတဲ့ Tool ရဲ့အမည်ဖြစ်ပါတယ်။ ဘာလု့ိ Android အတွက် ဖန်းတီထားတာလဲဆိုတော့ Custom Android OS တခု Sources ကနေ Build ချင်တယ်ပဲ ဆိုပါစု့ိ Android OS တနည်းအားဖြင့် AOSP မှာ Android OS ကြီး တခုလုံးအတွက်လိုအပ်တဲ့ Repositories တွေက အများကြီးရှိပါတယ်။ အဲဒါတွေကို တခုချင်း git clone လုပ်နေရင် အဆင်ပြေမှာ မဟုတ်ပါဘူး။ အဲဒီအတွက် Repo က Custom Android OS build မယ်သူတွေကို ကူညီနိုင်ပါတယ်။
+git-repo အကြောင်းကို ဒီမှာဝင်ဖက်နိုင်ပါတယ်...
 https://code.google.com/archive/p/git-repo/
-ၿပီးသြားရင္ git-repo command ေတြကုိ ဒီမွာ ေလ့လာၾကည့္ပါ... https://source.android.com/source/using-repo
-သူက Android ROM Development မွာ အရမ္းအသုံးဝင္ပါတယ္။ [ git-repo - Multiple Repository Tool ] လုိ႔ေခၚပါတယ္။ သူ႔ရဲ႕ အသုံးဝင္ပုံက GitHub မွွွာ Repo တခုေဆာက္ၿပီး အဲဒီထဲမွာ XML file ေလးတခုေဆာက္ၿပီး ကုိယ္လုိခ်င္တဲ့ ကုိယ္ remote လုပ္ခ်င္တဲ့ repo ေတြကုိအမ်ာႀကီးကုိ link ခ်ိတ္ေပးထာၿပီး repo sync ဆုိတဲ့ command ကုိသုံးၿပီး၊ ကုိယ့္ရဲ႕ Local machine ထဲကုိ တေနရာတည္းမွာပဲ Repository ေတြအမ်ာႀကီးကုိ download ဆြဲလုိ႔ရပါတယ္၊ သေဘာက Custom ROM တခု build ဖုိ႔ လုိအပ္တဲ့ Android SourceCode Repository ေတြက အမ်ားႀကီးပါ အဲဒါကုိ တခုခ်င္းလုိက္ git clone မေနပဲ XML file ေလးကေန Repository အမ်ားႀကီးစုၿပီး Local ထဲကုိ download ဆြဲလုိက္တဲ့ သေဘာပါပဲ။ တနည္းအားျဖင့္ ဒါဟာ Android တခုတည္းအတြက္္္္တင္ မဟုတ္ပါဘူူူး သြယ္ဝုိက္ႃပီးသုံးႏုိင္ပါတယ္။ တကယ္လုုုု႔ိ ကုုိယ္က Git Repository အမ်ားႀကီး download ဆြဲဲဲဲဲခ်င္တဲ့အခါ ဒီနည္းက တကယ္မုိက္ပါတယ္။
-အဲဒီအတြက္ XML file တခုေရးနည္းက မခက္ပါဘူး တကယ္လြယ္ပါတယ္။ ကြၽန္ေတာ္ရဲ႕ "aosp-android" repository မွာ ေလ့လာႏုိင္ပါတယ္။
+ပြီးသွားရင် git-repo command တွေကို ဒီမှာ လေ့လာကြည့်ပါ... https://source.android.com/source/using-repo
+သူက Android ROM Development မှာ အရမ်းအသုံးဝင်ပါတယ်။ [ git-repo - Multiple Repository Tool ] လို့ခေါ်ပါတယ်။ သူ့ရဲ့ အသုံးဝင်ပုံက GitHub မှာ Repo တခုဆောက်ပြီး အဲဒီထဲမှာ XML file လေးတခုဆောက်ပြီး ကိုယ်လိုချင်တဲ့ ကိုယ် remote လုပ်ချင်တဲ့ repo တွေကိုအမျာကြီးကို link ချိတ်ပေးထာပြီး repo sync ဆိုတဲ့ command ကိုသုံးပြီး၊ ကိုယ့်ရဲ့ Local machine ထဲကို တနေရာတည်းမှာပဲ Repository တွေအမျာကြီးကို download ဆွဲလို့ရပါတယ်၊ သဘောက Custom ROM တခု build ဖို့ လိုအပ်တဲ့ Android SourceCode Repository တွေက အများကြီးပါ အဲဒါကို တခုချင်းလိုက် git clone မနေပဲ XML file လေးကနေ Repository အများကြီးစုပြီး Local ထဲကို download ဆွဲလိုက်တဲ့ သဘောပါပဲ။ တနည်းအားဖြင့် ဒါဟာ Android တခုတည်းအတွက်တင် မဟုတ်ပါဘူူူး သွယ်ဝိုက်ပြီးသုံးနိုင်ပါတယ်။ တကယ်လု့ိ ကိုယ်က Git Repository အများကြီး download ဆွဲဲဲချင်တဲ့အခါ ဒီနည်းက တကယ်မိုက်ပါတယ်။
+အဲဒီအတွက် XML file တခုရေးနည်းက မခက်ပါဘူး တကယ်လွယ်ပါတယ်။ ကျွန်တော်ရဲ့ "aosp-android" repository မှာ လေ့လာနိုင်ပါတယ်။
 https://github.com/zawzaww/aosp-android/blob/android-8.1.0/default.xml
 
 
 # Setup Environment
 ## Step 1: Installation OpenJDK
-- ပထမဦးဆုံး OpenJDK ကုိ ကုိယ့္ရဲ့ Computer မွာ Install ထားဖုိ့ လုိပါတယ္၊ Terminal ကုိဖြင့္ၿပီး ေအာက္ပါ command ေလးေတြ ႐ုိက္ေပးပါ။
+- ပထမဦးဆုံး OpenJDK ကို ကိုယ့်ရဲ့ Computer မှာ Install ထားဖို့ လိုပါတယ်၊ Terminal ကိုဖွင့်ပြီး အောက်ပါ command လေးတွေ ရိုက်ပေးပါ။
 ```
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
 sudo apt-get install openjdk-8-jre
 ```
 
-OpenJDK Install တဲ့ ေနရာမွာ နည္းနည္းေျပာျပပါမယ္၊ ကုိယ့္ Build မယ့္ Android Version ေပၚ မူတည္ၿပီး Install ရမယ့္ OpenJDK version ေတြ ကြဲသြားပါလိမ့္မယ္။
-- Android Nougat ကေန Android Oreo ဆုိ ( OpenJDK 8 ကုိ Install ေပးပါ )
-- Android Lollipop ကေန Android Marshmallow ဆုိ ( OpenJDK 7 ကုိ Install ေပးပါ )
-- Android Gingerbread ကေန Android KitKat ဆုိ ( OpenJDK 6 ကုိ Install ေပးပါ )
-( သူ႔ရဲ႕ ေအာက္က Android version အတြက္ေတာ့ မေျပာေတာ့ပါဘူး ဘယ္သူမွလည္း Build မွာ မဟုတ္ေတာ့ပါဘူး )
+OpenJDK Install တဲ့ နေရာမှာ နည်းနည်းပြောပြပါမယ်၊ ကိုယ့် Build မယ့် Android Version ပေါ် မူတည်ပြီး Install ရမယ့် OpenJDK version တွေ ကွဲသွားပါလိမ့်မယ်။
+- Android Nougat ကနေ Android Oreo ဆို ( OpenJDK 8 ကို Install ပေးပါ )
+- Android Lollipop ကနေ Android Marshmallow ဆို ( OpenJDK 7 ကို Install ပေးပါ )
+- Android Gingerbread ကနေ Android KitKat ဆို ( OpenJDK 6 ကို Install ပေးပါ )
+( သူ့ရဲ့ အောက်က Android version အတွက်တော့ မပြောတော့ပါဘူး ဘယ်သူမှလည်း Build မှာ မဟုတ်တော့ပါဘူး )
 
 ## Step 2: Installation Python
-- ေနာက္တဆင့္ကေတာ့ Python install ေပးဖု႔ိ လုိပါတယ္၊ Python 2.7 ေလာက္ဆုိ အဆင္ေျပပါၿပီ။ ( Python 3+ ဆုိ git-repo အတြက္ သိပ္အဆင္မေျပပါဘူး အဲဒါေၾကာင့္ 2.7 ပဲ Install ေပးပါ ) ဒီေနရာမွာ Ubuntu သုံးေနတာဆုိရင္ တခါတည္း Install လုပ္ၿပီးသားဆုိရင္ မလုိအပ္ပါဘူး။
+- နောက်တဆင့်ကတော့ Python install ပေးဖု့ိ လိုပါတယ်၊ Python 2.7 လောက်ဆို အဆင်ပြေပါပြီ။ ( Python 3+ ဆို git-repo အတွက် သိပ်အဆင်မပြေပါဘူး အဲဒါကြောင့် 2.7 ပဲ Install ပေးပါ ) ဒီနေရာမှာ Ubuntu သုံးနေတာဆိုရင် တခါတည်း Install လုပ်ပြီးသားဆိုရင် မလိုအပ်ပါဘူး။
 ```
 sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get update
@@ -50,13 +50,13 @@ sudo apt-get install python2.7
 ```
 
 ## Step 3: Installation Build-Tools
-- လုိအပ္တဲ့ build tools ေတြ install ဖုိ႔ ေအာက္ပါ command ေလးကုိ terminal မွာ ႐ုိက္ေပးပါ။
+- လိုအပ်တဲ့ build tools တွေ install ဖို့ အောက်ပါ command လေးကို terminal မှာ ရိုက်ပေးပါ။
 ```
 sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
 ```
 
 ## Step 4: Installation Git and Repo (git-repo)
-- အရင္ဆုံး Git install မလုပ္ရေသးဘူးဆုိရင္ လုပ္ေပးပါ။ ( Install ထားၿပီးသားဆုိရင္ ဒီအဆင့္ကုိ ထပ္လုပ္စရာမလုိပါဘူး )
+- အရင်ဆုံး Git install မလုပ်ရသေးဘူးဆိုရင် လုပ်ပေးပါ။ ( Install ထားပြီးသားဆိုရင် ဒီအဆင့်ကို ထပ်လုပ်စရာမလိုပါဘူး )
 ```
 sudo apt-get install git-core
 ```
@@ -72,22 +72,22 @@ git config --global user.name "zawzaw"
 git config --global user.email "zawzaw@gmail.com"
 ```
 
-- Google ရဲ႕ git-repo ကုိ install လုပ္ေပးရပါမယ္။ ( အသုံးဝင္ပုံကုိ အေပၚမွာ ႐ွင္းျပထားၿပီးျဖစ္လု႔ိ ထပ္မေျပာေတာ့ပါဘူး )
+- Google ရဲ့ git-repo ကို install လုပ်ပေးရပါမယ်။ ( အသုံးဝင်ပုံကို အပေါ်မှာ ရှင်းပြထားပြီးဖြစ်လု့ိ ထပ်မပြောတော့ပါဘူး )
 ```
 mkdir ~/bin
 PATH=~/bin:$PATH
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 ```
-အဲဒါေတြ အကုန္ၿပီးသြားၿပီ ဆုိရင္ေတာ့ ROM တခု build ဖုိ႔အတြက္ Setup Environment ပုိင္းက ျပည့္စုံသြားပါၿပီ။
+အဲဒါတွေ အကုန်ပြီးသွားပြီ ဆိုရင်တော့ ROM တခု build ဖို့အတွက် Setup Environment ပိုင်းက ပြည့်စုံသွားပါပြီ။
 
 # Downloading the Sources
-Sources ေတြ download တဲ့ ေနရာမ်ာ လုိအပ္တဲ့အရာေတြကုိ ေျပာျပစရာ႐ွိပါတယ္။ ( CustomROM တခု build ဖု႔ိအတြက္ အဲဒါေတြက မ႐ွိမျဖစ္ လုိအပ္တာေတြပါ )
-- Android OS ႀကီးတခုလုံး အတြက္ လုိအပ္ Repository ေတြပါတဲ့ Android Plaform Manifest ( ဘာေတြပါလဲဆုိေတာ့ Android OS အတြက္ လုိအပ္တဲ့ framework ေတြ၊ lib ေတြ၊ system apps package ေတြ၊ device tree ေတြ kernel tree ေတြ၊ build tools ေတြ toochains GCC compiler ေတြ အကုန္ပါပါတယ္ filesize က 20GB နဲ႔ အထက္မွာ႐ွိပါတယ္ )
-- Google ရဲ႕ Device ေတြ ျဖစ္တဲ့ Nexus နဲ႔ Pixel မဟုတ္ရင္ တျခား Android Device ေတြအတြက္ဆုိရင္ Device tree နဲ႔ Kernel source ေတြ ႐ွာထားဖုိ႔ လုိပါတယ္၊ Google ရဲ႕ devices ေတြအတြက္က AOSP repo ထဲမွာ device tree ေတြက တခါတည္းပါၿပီးသားပါ။ ( ခုမွ စလုပ္တဲ့သူအေနနဲ႔ အေကာင္းဆုံး အၾကံေပးခ်င္တာေတာ့ အႀကီးဆုံး ROM Community ႀကီး ျဖစ္တဲ့ LineageOS ေအာက္မွာ သြား႐ွာတာ အေကာင္းဆုံးပါ https://github.com/LineageOS ကုိယ္တုိင္ ထုတ္လုိ႔ရပါတယ္ ကုိယ့္ဖုန္းရဲ႕ hardware arch ေပၚမူတည္ၿပီး Device tree ထုတ္နည္းကုိ ေနာက္မွသက္သက္ေရးေပးပါမယ္ )
-- ၿပီးရင္ Android device ေတြ အတြက္ proprietary vendor file ေတြ ပါလုိအပ္ပါတယ္။ ( တနည္းအားျဖင္ အဲဒီေကာင္က Non-opensource file ေတြပါ၊ ကုိယ့္ဖုန္း ရဲ႕ firmware ထဲကေန ျပန္ထုတ္ရတာပါ Example for Nexus 5X...https://github.com/PureNexusProject/proprietary_vendor_lge ဥပမာအေနနဲ႔ အဲဒီ Repo ထဲမွာ ဝင္ၾကည့္ပါ )
+Sources တွေ download တဲ့ နေရာမျာ လိုအပ်တဲ့အရာတွေကို ပြောပြစရာရှိပါတယ်။ ( CustomROM တခု build ဖု့ိအတွက် အဲဒါတွေက မရှိမဖြစ် လိုအပ်တာတွေပါ )
+- Android OS ကြီးတခုလုံး အတွက် လိုအပ် Repository တွေပါတဲ့ Android Plaform Manifest ( ဘာတွေပါလဲဆိုတော့ Android OS အတွက် လိုအပ်တဲ့ framework တွေ၊ lib တွေ၊ system apps package တွေ၊ device tree တွေ kernel tree တွေ၊ build tools တွေ toochains GCC compiler တွေ အကုန်ပါပါတယ် filesize က 20GB နဲ့ အထက်မှာရှိပါတယ် )
+- Google ရဲ့ Device တွေ ဖြစ်တဲ့ Nexus နဲ့ Pixel မဟုတ်ရင် တခြား Android Device တွေအတွက်ဆိုရင် Device tree နဲ့ Kernel source တွေ ရှာထားဖို့ လိုပါတယ်၊ Google ရဲ့ devices တွေအတွက်က AOSP repo ထဲမှာ device tree တွေက တခါတည်းပါပြီးသားပါ။ ( ခုမှ စလုပ်တဲ့သူအနေနဲ့ အကောင်းဆုံး အကြံပေးချင်တာတော့ အကြီးဆုံး ROM Community ကြီး ဖြစ်တဲ့ LineageOS အောက်မှာ သွားရှာတာ အကောင်းဆုံးပါ https://github.com/LineageOS ကိုယ်တိုင် ထုတ်လို့ရပါတယ် ကိုယ့်ဖုန်းရဲ့ hardware arch ပေါ်မူတည်ပြီး Device tree ထုတ်နည်းကို နောက်မှသက်သက်ရေးပေးပါမယ် )
+- ပြီးရင် Android device တွေ အတွက် proprietary vendor file တွေ ပါလိုအပ်ပါတယ်။ ( တနည်းအားဖြင် အဲဒီကောင်က Non-opensource file တွေပါ၊ ကိုယ့်ဖုန်း ရဲ့ firmware ထဲကနေ ပြန်ထုတ်ရတာပါ Example for Nexus 5X...https://github.com/PureNexusProject/proprietary_vendor_lge ဥပမာအနေနဲ့ အဲဒီ Repo ထဲမှာ ဝင်ကြည့်ပါ )
 
-- ပထမဆုံး လုပ္ရမွာက Sources ေတြ download ဖုိ႔ Directory တခုေဆာက္ပါမယ္
+- ပထမဆုံး လုပ်ရမှာက Sources တွေ download ဖို့ Directory တခုဆောက်ပါမယ်
 ```
 mkdir AOSP-ROM-Project
 ```
@@ -95,10 +95,10 @@ mkdir AOSP-ROM-Project
 cd AOSP-ROM-Project
 ```
 
-- Android SourceCode ေတြ download လုပ္ပါေတာ့မယ္။ ( ဒီေနရာမွာ ေျပာစ႐ွိပါတယ္ Google Git က AOSP Repo ကေန download လုပ္ရင္ Size အရမ္းမ်ားပါတယ္၊ အဲဒါေၾကာင့္ ကြၽန္ေတာ့ GitHub မွာေဆာက္ထားတဲ့ Personal AOSP Repo ကေန down ရင္ ပုိသက္သာပါလိမ့္မယ္၊ ဘာလုိ႔လဲဆုိေတာ့ ကြၽန္ေတာ့္ရဲ႕ GitHub AOSP Repo ထဲမွာ မလုိအပ္တဲ့ project path ေတြ ေလ်ာ့ထားတာပါ၊ သေဘာပါပဲ ႏွစ္သက္တဲ့ Repo ကေန download ဆြဲပါ။ )
-- ပထမဦးဆုံး AOSP SourceCode ေတြ ႐ွိတဲ့ေနရာကုိ သိရပါမယ္...https://android.googlesource.com/platform/manifest
-- -b ေနာက္က ကုိယ့္ Build မယ့္ branch ပါ။ ( တနည္းအားျဖင့္ ကုိယ္ Build ခ်င္တဲ့ Android version ပါ r (r_23) ဆုိတာ Release ကုိ ဆုိလုိတာပါ )
-- ဒီေနရာမွာ သုံးတဲ့ command ေတြက git-repo command ေတြပါ https://source.android.com/source/using-repo သုံးမယ့္ Repository ကလည္း git-repo အတြက္ ရည္ရြယ္ၿပီး ေရးထားတဲ့ Repository တခုျဖစ္ပါတယ္ xml နဲ႔ေရးပါတယ္၊ ေရးနည္းက ႐ုိး႐ွင္းပါယ္ ဒီမွာေလ့လာၾကည့္ပါ https://github.com/zawzaww/aosp-android/blob/android-8.1.0/default.xml
+- Android SourceCode တွေ download လုပ်ပါတော့မယ်။ ( ဒီနေရာမှာ ပြောစရှိပါတယ် Google Git က AOSP Repo ကနေ download လုပ်ရင် Size အရမ်းများပါတယ်၊ အဲဒါကြောင့် ကျွန်တော့ GitHub မှာဆောက်ထားတဲ့ Personal AOSP Repo ကနေ down ရင် ပိုသက်သာပါလိမ့်မယ်၊ ဘာလို့လဲဆိုတော့ ကျွန်တော့်ရဲ့ GitHub AOSP Repo ထဲမှာ မလိုအပ်တဲ့ project path တွေ လျော့ထားတာပါ၊ သဘောပါပဲ နှစ်သက်တဲ့ Repo ကနေ download ဆွဲပါ။ )
+- ပထမဦးဆုံး AOSP SourceCode တွေ ရှိတဲ့နေရာကို သိရပါမယ်...https://android.googlesource.com/platform/manifest
+- -b နောက်က ကိုယ့် Build မယ့် branch ပါ။ ( တနည်းအားဖြင့် ကိုယ် Build ချင်တဲ့ Android version ပါ r (r_23) ဆိုတာ Release ကို ဆိုလိုတာပါ )
+- ဒီနေရာမှာ သုံးတဲ့ command တွေက git-repo command တွေပါ https://source.android.com/source/using-repo သုံးမယ့် Repository ကလည်း git-repo အတွက် ရည်ရွယ်ပြီး ရေးထားတဲ့ Repository တခုဖြစ်ပါတယ် xml နဲ့ရေးပါတယ်၊ ရေးနည်းက ရိုးရှင်းပါယ် ဒီမှာလေ့လာကြည့်ပါ https://github.com/zawzaww/aosp-android/blob/android-8.1.0/default.xml
 ```
 repo init -u https://android.googlesource.com/platform/manifest.git -b android-8.1.0_r2
 ```
@@ -107,17 +107,17 @@ repo init -u https://android.googlesource.com/platform/manifest.git -b android-8
 repo init -u https://github.com/zawzaww/aosp-android.git -b android-8.1.0
 ```
 
-- Sources ေတြ download ဖုိ႔ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
+- Sources တွေ download ဖို့ အောက်က command လေး ရိုက်ပေးပါ။
 ```
 repo sync
 ```
-အဲဒီေနာက္မွာေတာ့ Sources ေတြ Downloading လုပ္ေနတဲ့ အပုိင္းပါ၊
-SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connection ေပၚမွာ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
+အဲဒီနောက်မှာတော့ Sources တွေ Downloading လုပ်နေတဲ့ အပိုင်းပါ၊
+SourceCode တွေ Download တဲ့ process ကတော့ Internet connection ပေါ်မှာ မူတည်ပြီးကြာပါလိမ့်မယ်။
 
 # Building Pure Android OS
-- အရင္ဆုံး Source ကေန Compilation မလုပ္ခင္ ၾကဳိတင္ျပင္ဆင္ရမယ့္ အရာေတြကုိ ေျပာျပေပးပါမယ္။
-- ပထမဆုံး လုိအပ္တာက ကုိယ့္ဖုန္းရဲ႕ Device tree ပါ
-- Location က ဘယ္မွာ သြားထည့္ရမလဲဆုိရင္ Download ထားတဲ့ Source dir ေအာက္က /device ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
+- အရင်ဆုံး Source ကနေ Compilation မလုပ်ခင် ကြိုတင်ပြင်ဆင်ရမယ့် အရာတွေကို ပြောပြပေးပါမယ်။
+- ပထမဆုံး လိုအပ်တာက ကိုယ့်ဖုန်းရဲ့ Device tree ပါ
+- Location က ဘယ်မှာ သွားထည့်ရမလဲဆိုရင် Download ထားတဲ့ Source dir အောက်က /device အောက်မှာ သွားထည့်ပေးရမှာပါ။
 - Format:
 ```
 /device/manufacturer/device_name
@@ -128,8 +128,8 @@ SourceCode ေတြ Download တဲ့ process ကေတာ့ Internet connect
 ```
 <img src="https://s20.postimg.cc/4hn5zcmx9/Screenshot_from_2017-11-03_21-54-22.png" />
 
-- ROM build တဲ့ေနရာမွာ Kernel ပုိင္းက ႏွစ္မ်ဳိးကြဲပါမယ္၊ Kernel source ကေန build တာရယ္ အဆင္သင့္ build ထားၿပီးသား prebuilt kernel ကေန ROM ထဲထည့္ၿပီး Build တာဆုိၿပီး ႐ွိပါတယ္၊ kernel source ကေန build တာပဲ အၾကံေပးတယ္။
-- ၿပီးတဲ့ေနာက္ Kernel source ကေန build မယ္ဆုိရင္ Device tree ထဲက ျပင္ဆင္စရာ႐ွိပါတယ္၊ Nexus 5X အေနနဲ႔ ေျပာပါမယ္ /device/lge/bullhead/BoardConfig.mk ကုိ TextEditor တခုနဲ႔ ဖြင့္ၿပီး ေအာက္က code ေလးေတြ ထပ္ျဖည့္လုိက္ပါ။
+- ROM build တဲ့နေရာမှာ Kernel ပိုင်းက နှစ်မျိုးကွဲပါမယ်၊ Kernel source ကနေ build တာရယ် အဆင်သင့် build ထားပြီးသား prebuilt kernel ကနေ ROM ထဲထည့်ပြီး Build တာဆိုပြီး ရှိပါတယ်၊ kernel source ကနေ build တာပဲ အကြံပေးတယ်။
+- ပြီးတဲ့နောက် Kernel source ကနေ build မယ်ဆိုရင် Device tree ထဲက ပြင်ဆင်စရာရှိပါတယ်၊ Nexus 5X အနေနဲ့ ပြောပါမယ် /device/lge/bullhead/BoardConfig.mk ကို TextEditor တခုနဲ့ ဖွင့်ပြီး အောက်က code လေးတွေ ထပ်ဖြည့်လိုက်ပါ။
 ```mk
 # Inline PureZ Kernel Build
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
@@ -140,27 +140,27 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 ```
 Explanation:
 ```
-ဒီအဆင့္က ကြၽန္ေတာ္ ပထမဆုံး ေရးထားခဲ့တဲ့ Building-Kernel ဆုိတဲ့ Tutorial ကုိ ဖက္ၿပီးမွ အဆင္ေျပပါလိမ့္မယ္။
-Line 1 - Kernel ကုိ Compile မယ့္ Toolchain location ကုိ ေပးတာပါ
-Line 2 - ကုိယ္သုံးမယ့္ Toolchain ရဲ႕ Kernel toolchain prefix လုိ႔ေခၚပါတယ္ ( သိပ္နားမလည္ဘူးဆုိရင္ Kernel Compilation Tutorial မွာ ေလ့လာၾကည့္ပါ )
-Line 3 - ဒါကေတာ့ ကုိယ္ Build မယ့္ kernel source location ပါ
-Line 4 - Kernel build ဖုိ႔အတြက္ kernel configuration လုပ္ေပးရပါတယ္၊ အဲဒီအေၾကာင္းက Kernel config အပုိင္းပါ
-Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မယ့္ Kernel image name ကုိ အတိအက်ေရးေပးရပါမယ္
+ဒီအဆင့်က ကျွန်တော် ပထမဆုံး ရေးထားခဲ့တဲ့ Building-Kernel ဆိုတဲ့ Tutorial ကို ဖက်ပြီးမှ အဆင်ပြေပါလိမ့်မယ်။
+Line 1 - Kernel ကို Compile မယ့် Toolchain location ကို ပေးတာပါ
+Line 2 - ကိုယ်သုံးမယ့် Toolchain ရဲ့ Kernel toolchain prefix လို့ခေါ်ပါတယ် ( သိပ်နားမလည်ဘူးဆိုရင် Kernel Compilation Tutorial မှာ လေ့လာကြည့်ပါ )
+Line 3 - ဒါကတော့ ကိုယ် Build မယ့် kernel source location ပါ
+Line 4 - Kernel build ဖို့အတွက် kernel configuration လုပ်ပေးရပါတယ်၊ အဲဒီအကြောင်းက Kernel config အပိုင်းပါ
+Line 5 - ကိုယ့်ဖုန်းအတွက် output ထွက်မယ့် Kernel image name ကို အတိအကျရေးပေးရပါမယ်
 ```
 <img src="https://s20.postimg.cc/thf0h4mjh/Screenshot_from_2017-11-03_21-58-30.png" />
 
-- ေနာက္တဆင့္က Kernel source အပုိင္းပါ သြားထည့္ေပးရမယ့္ Location က Source dir ေအာက္က /kernel ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
+- နောက်တဆင့်က Kernel source အပိုင်းပါ သွားထည့်ပေးရမယ့် Location က Source dir အောက်က /kernel အောက်မှာ သွားထည့်ပေးရမှာပါ။
 - Format:
 ```
 /kernel/manufacturer/device_name
 ```
-- Example: for Nexus 5X ( ဒီ Location က Device tree ထဲမွာ Kernel source path လမ္းေၾကာင္း ျပန္ေပးရမွာပါ )
+- Example: for Nexus 5X ( ဒီ Location က Device tree ထဲမှာ Kernel source path လမ်းကြောင်း ပြန်ပေးရမှာပါ )
 ```
 /kernel/lge/bullhead
 ```
 <img src="https://s20.postimg.cc/852x5n81p/Screenshot_from_2017-11-03_21-54-57.png" />
 
-- vendor အပုိင္းပါ အဲဒီေကာင္က Source dir ေအာက္က /vendor ေအာက္မွာ သြားထည့္ေပးရမွာပါ။
+- vendor အပိုင်းပါ အဲဒီကောင်က Source dir အောက်က /vendor အောက်မှာ သွားထည့်ပေးရမှာပါ။
 - Format:
 ```
 /vendor/manufacturer/device_name
@@ -171,13 +171,13 @@ Line 5 - ကုိယ့္ဖုန္းအတြက္ output ထြက္မ
 ```
 <img src="https://s20.postimg.cc/yesl2cjel/Screenshot_from_2017-11-03_21-56-37.png" />
 
-ဒါေတြျပည့္စုံသြားရင္ေတာ့ AOSP ROM တခု Build ဖုိ႔ အဆင္သင့္ ျဖစ္ပါၿပီ။
+ဒါတွေပြည့်စုံသွားရင်တော့ AOSP ROM တခု Build ဖို့ အဆင်သင့် ဖြစ်ပါပြီ။
 
-- ဒါကေတာ့ ေနာက္ဆုံးအဆင့္ေရာက္ပါၿပီ၊ Download ထားတဲ့ Source Dir ထဲ ဝင္လုိက္ၿပီး Terminal ကုိ ဖြင့္လုိက္ပါ၊ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
+- ဒါကတော့ နောက်ဆုံးအဆင့်ရောက်ပါပြီ၊ Download ထားတဲ့ Source Dir ထဲ ဝင်လိုက်ပြီး Terminal ကို ဖွင့်လိုက်ပါ၊ အောက်က command လေး ရိုက်ပေးပါ။
 ```
 . build/envsetup.sh
 ```
-ၿပီးသြာရင္ ကုိယ္ build မယ့္ device ကုိ lunch လုပ္ေပးရပါမယ္။
+ပြီးသွာရင် ကိုယ် build မယ့် device ကို lunch လုပ်ပေးရပါမယ်။
 - Format
 ```
 lunch <device_name> (OR) lunch
@@ -188,14 +188,14 @@ lunch aosp_bullhead-userdebug
 ```
 <img src="https://s20.postimg.cc/htkymict9/Screenshot_from_2017-11-03_21-59-06.png" />
 
-- အေကာင္းဆုံးက lunch လုိ႔ ႐ုိက္လုိက္ရင္ ကုိယ္ build မယ့္ device name ေတြ က်လာၿပီး build ခ်င္တဲ့ device no. ကုိ ဆက္႐ုိက္ေပးပါ။
+- အကောင်းဆုံးက lunch လို့ ရိုက်လိုက်ရင် ကိုယ် build မယ့် device name တွေ ကျလာပြီး build ချင်တဲ့ device no. ကို ဆက်ရိုက်ပေးပါ။
 ```
 lunch
 ```
 ```
 Enter 1 or 2 or 3 etc...
 ```
-- ၿပီးရင္ Build ဖုိ႔အတြက္ ေအာက္က command ေလး ႐ုိက္ေပးပါ။
+- ပြီးရင် Build ဖို့အတွက် အောက်က command လေး ရိုက်ပေးပါ။
 ```
 make -j4
 ```
@@ -204,6 +204,6 @@ make -j4
 make -j$(nproc --all)
 ```
 ```
-Output - /out/target/product/bullhead/ ေအာက္မွာ ထြက္သြားပါလိမ့္မယ္
+Output - /out/target/product/bullhead/ အောက်မှာ ထွက်သွားပါလိမ့်မယ်
 ```
-ၿပီးရင္ေတာ့ Compilation process စတင္ပါမယ္၊ process time ကေတာ့ ကုိယ့္ Computer ရဲ႕ CPU core ေပၚ မူတည္ၿပီးၾကာပါလိမ့္မယ္။
+ပြီးရင်တော့ Compilation process စတင်ပါမယ်၊ process time ကတော့ ကိုယ့် Computer ရဲ့ CPU core ပေါ် မူတည်ပြီးကြာပါလိမ့်မယ်။
