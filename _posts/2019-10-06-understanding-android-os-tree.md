@@ -4,7 +4,7 @@ title: "Understanding Android OS Source tree"
 categories: android
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_understand_android_os.png
-permalink: blog/android/understanding-android-os
+permalink: blog/android/understanding-android-os-tree
 ---
 
 Android OS က free and Open-source Project တခု ဖြစ်ပြီး Android OS SourceCode တွေကို AOSP (Android Open Source Project) ကနေ ရယူနိုင်ပါတယ်။ Android OS SourceCode ထဲမှာ သက်ဆိုင်ရာ directories တွေ အများကြီး ရှိပါတယ်။ တနည်းအားဖြင့် အဲဒီ Android OS Main source code ရဲ့ အောက်မှာရှိတဲ့ directory တခုချင်းဆီက git repostories တွေ ဖြစ်ပါတယ်။ AOSP မှာ အဲဒီ Git repositories အများကြီးကို "repo" ဆိုတဲ့ tool နဲ့ အပေါ်ကနေ maintain လုပ်ပါတယ်။ repo ကို Google က develop လုပ်ခဲ့တာ ဖြစ်ပြီး docs ကို https://source.android.com/setup/develop#repo မှာ ဖက်ကြည့်နိုင်ပါတယ်။ repo ရဲ့ သဘောက Android OS မှာဆိုရင် git repositories တွေ အများကြီးရှိတယ် အဲဒီအများကြီးကို download လုပ်ချင်တယ်ဆိုပါတော့ တခုချင်းဆီကို git clone နေမယ်ဆိုရင် ပြီးတော့မှာ မဟုတ်ပါဘူး ဒါကြောင့် repo tool နဲ့ manifest xml file တခုနဲ့ setup လုပ်ပြီး remote git repositories တွေ အားလုံးကို တခါတည်း ```repo sync``` ဆိုတဲ့ command ကို သုံးပြီး Android OS source code ကို download လုပ်နိုင်နေတာ ဖြစ်ပါတယ်။ ဒါက မြင်သာအောင် ဥပမာတခု ပြောပြတာဖြစ်ပါတယ်။ repo command တွေကို https://source.android.com/setup/develop/repo မှာ အသေးစိတ် ဖက်ကြည့်နိုင်ပါတယ်။ ဒါကြောင့် Android OS source code ကို download လုပ်တော့မယ်ဆိုရင် Google's repo ကို မဖြစ်မနေသိထားရပါမယ်။ ဒီ Blog post မှာ တော့ Androdi OS source tree ရဲ့ သက်ဆိုင်ရာ directories တွေရဲ့ description ကို အဓိကထားပြီး ပြောမှာဖြစ်ပါတယ်။
@@ -21,7 +21,6 @@ AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 
 <img src="https://cdn-images-1.medium.com/max/800/1*QMzezVbdArmYMUFzK3hNrQ.png" height="100%" width="100%;" />
 
-<img src="https://cdn-images-1.medium.com/max/800/1*QMzezVbdArmYMUFzK3hNrQ.png" height="100%" width="100%;" />
 
 ```android-platform/art``` : ART ကို Android မှာ [Android Runtime](https://source.android.com/devices/tech/dalvik) လို့ခေါ်ပြီး ART က Dalvik နေရာမှာ Replace လုပ်လိုက်တဲ့ Runtime environment တခု ဖြစ်ပါတယ်။ Android 5.0 မှာ စပြီး Replace လုပ်ပြီး သုံးခဲ့တာဖြစ်ပါတယ်။
 
