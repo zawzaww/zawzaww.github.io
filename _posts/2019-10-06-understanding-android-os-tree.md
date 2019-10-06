@@ -22,39 +22,31 @@ AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 <img src="https://cdn-images-1.medium.com/max/800/1*QMzezVbdArmYMUFzK3hNrQ.png" height="100%" width="100%;" />
 
 
-```android-platform/art``` : ART ကို Android မှာ [Android Runtime](https://source.android.com/devices/tech/dalvik) လို့ခေါ်ပြီး ART က Dalvik နေရာမှာ Replace လုပ်လိုက်တဲ့ Runtime environment တခု ဖြစ်ပါတယ်။ Android 5.0 မှာ စပြီး Replace လုပ်ပြီး သုံးခဲ့တာဖြစ်ပါတယ်။
+```android-platform/art``` : ART [(Android Runtime)](https://source.android.com/devices/tech/dalvik) လို့ခေါ်ပြီး ART က Dalvik နေရာမှာ Replace လုပ်လိုက်တဲ့ Application Runtime environment တခု ဖြစ်ပါတယ်။ Android 5.0 မှာ စပြီး Replace လုပ်ပြီး သုံးခဲ့တာဖြစ်ပါတယ်။ ART က app ရဲ့ bytecode ကနေ Native instructions ကို translation လုပ်ပေးတဲ့အလုပ်ကို အဓိကလုပ်ပေးပါတယ်။
 
-```android-platform/bionic``` : Google ကနေ Android OS အတွက် သီသန့် Develop လုပ်ထားတဲ့ Standard C library တခုဖြစ်ပါတယ်။ bionic ရဲ့ Original goal က GNU C Library (glibc) ရဲ့ License ပြဿနာကြောင့်ရယ်၊ bionic က glibc ထက် ပိုသေးငယ်ပြီး ပိုပြီး Speed ကောင်ပြီး Android mobile device တွေအတွက် သီသန့်သဘောမျိူးဖြစ်ပါတယ်။
+```android-platform/bionic``` : Google ကနေ Android OS အတွက် သီသန့် Develop လုပ်ထားတဲ့ Standard C library တခုဖြစ်ပါတယ်။ bionic ရဲ့ Original goal က GNU C Library (glibc) ရဲ့ License ပြဿနာကြောင့်ရယ် bionic က glibc ထက် ပိုသေးငယ်ပြီး ပိုပြီး Speed ကောင်ပြီး Android mobile device တွေအတွက် သီသန့်သဘောမျိူးဖြစ်ပါတယ်။
 
 ```android-platform/bootable``` : Bootloader and Android bootable recovery SourceCode တွေ ပါဝင်ပါတယ်။ Android မှာ အဲဒီ AOSP bootable recovery SourceCode တွေကနေ Custom Recovery တခု ပြန် Build နိုင်ပါတယ်။
 
-```android-platform/build``` : Android OS ရဲ့ Build System အဓိက ရှိတဲ့နေရာ ဖြစ်ပါတယ်။ သဘောက SourceCode ကနေ Android Custom Firmware/ROM တွေ command တွေနဲ့ Port / Build လုပ်ဖို့အတွက် အဓိကသုံးပါတယ်။
-
-```android-platform/dalvik``` : Dalvik Virtual Machine နဲ့ Core libraries တွေ ရှိတဲ့ နေရာ ဖြစ်ပါတယ်။ Android အတွက် သီသန့် Google ကနေ Design ပြန်လုပ်ထားတဲ့ VM တမျိုး ဖြစ်ပါတယ်။ Android 4.4 နဲ့ အစောပိုင်းမှာ သုံးပါတယ်။
+```android-platform/build``` : Android OS ရဲ့ Build System အဓိက ရှိတဲ့နေရာ ဖြစ်ပါတယ်။ SourceCode ကနေ Android Custom firmware တွေ Android system image တွေ Build  လုပ်ဖို့အတွက် အဓိကသုံးပါတယ်။
 
 ```android-platform/developers``` : Developers တွေ အတွက် Android နဲ့ ပတ်သက်ပြီး docs တွေ demos တွေ samples တွေ ပါ၀င်ပါတယ်။
 
 ```android-platform/development``` : Android Development နဲ့ ပတ်သက်ပြီး Platform Development tools နဲ့ Sample Code တွေ ပါ၀င်ပါတယ်။
 
-```android-platform/device``` : Android Custom Firmware/ROM တခု Build တဲ့အခါ ကိုယ် Build ချင်တဲ့ Device အတွက် Device tree လို့ခေါ်တဲ့ hardware and device-specific configuration တွေကို define လုပ်ပေးတဲ့ နေရာ ဖြစ်ပါတယ်။
+```android-platform/device``` : Android Custom firmware တခု Build တဲ့အခါ ကိုယ် Build ချင်တဲ့ Device အတွက် Device tree လို့ခေါ်တဲ့ hardware and device-specific configuration တွေကို define လုပ်ပေးတဲ့ နေရာ ဖြစ်ပါတယ်။
 
 ```android-platform/external``` : AOSP ထဲကို အမျိုးမျိုးသော တခြားအပြင်က projects တွေ Imported လုပ်ထားတာ ဖြစ်ပါတယ်။ E.g — f2fs tools, ext4, lz4, fonts, llvm and etc..
 
-```android-platform/frameworks``` : Android ရဲ့ Android Core framework Components တွေနဲ့ Services တွေ Java Android application API framwork တွေ အများဆုံး ပါ၀င်ပါတယ်။
+```android-platform/frameworks``` : Android ရဲ့ Android Core framework Components တွေနဲ့ Services တွေ Java Android application API framwork တွေ အများဆုံး ပါ၀င်ပါတယ်။ frameworks/support မှာဆိုရင် Android software developer တွေအတွက် အသုံးများတဲ့ Android ရဲ့ Built-in ပါတဲ့ Android support libraries တွေ ပါ၀င်ပါတယ်။
 
-```android-platform/frameworks/base``` : Android Core framework နဲ့ System service တွေ ပါဝင်ပါတယ်။
-
-```android-platform/frameworks/native``` : Android framework ရဲ့ Native libraries တွေနဲ့ Services တွေ ပါဝင်ပါတယ်။
-
-```android-platform/frameworks/support``` : ဒါကတော့ Android App developer တွေ အသုံးများဆုံး Android Support library တွေ ဖြစ်ပါတယ်။ E.g — drawerlayout, fragment, gridlayout, recyclerview, room, swiperefreshlayout, slices, viewpager2 and etc..
-
-```android-platform/hardware``` : Hardware Abstraction Layer (HAL) နဲ့ Hardware support library တွေ အများဆုံး ပါဝင်ပါတယ်။
+```android-platform/hardware``` : Hardware Abstraction Layer (HAL) နဲ့ Hardware support library တွေ အများဆုံး ပါဝင်ပါတယ်။ Camera / Audio / Graphics နဲ့ ပတ်သက်တဲ့ Hardware modules တွေ ပါ၀င်ပါတယ်။
 
 ```android-platform/kernel``` : ဒါက ကို Build မယ့် Android Devices အတွက် Kernel source တွေ ရှိတဲ့ နေရာ ဖြစ်ပါတယ်။ Kernel source code ကိုလည်း သုံးနိုင်သလို Prebuilt kernel img တွေလည်း သုံးနိုင်ပါတယ်။
 
-```android-platform/ndk``` : Android Native Development Kit (NDK) ပါ Android app developer တွေ Native code တွေနဲ့ C/C++ နဲ့ Android Apps တွေ ရေးနိုင်ပါတယ်။
+```android-platform/ndk``` : Android Native Development Kit (NDK) ကို သုံးပြီး Android app developer တွေ Native code C/C++ နဲ့ Android Apps တွေ ရေးနိုင်ပါတယ်။
 
-```android-platform/packages/apps``` : Built-in Android System apps တွေ ပါဝင်ပါတယ်။ E.g — Calculator, Camera2, Calendar, Dialer, FMRadio, Gallery2, Launcher3, Music, Settings and etc..
+```android-platform/packages``` : Built-in Android System apps တွေ ပါဝင်ပါတယ်။ E.g — Calculator, Camera2, Calendar, Dialer, FMRadio, Gallery2, Launcher3, Music, Settings and etc..
 
 ```android-platform/prebuilts``` : Linux, Mac လိုမျိုး Host Computer OS တွေမှာ Android SourceCode ကနေ သက်ဆိုင်ရာ Android Devices တွေ အတွက် Kernel နဲ့ Android Custom Firmware/ROM တွေ Compile လုပ်ဖို့ Toochains/Compilers တွေ ပါဝင်ပါတယ်။ E.g — GCC, LLVM/Clang
 
@@ -64,4 +56,4 @@ AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 
 ```android-platform/tools``` : အမျိုးမျိုးသော Android IDEs and Tools တွေ ပါဝင်ပါတယ်။ E.g — Android Studio
 
-ဒီနေရာမှာ တကယ်အရေးကြီးတဲ့အရာတွေပဲ အဓိကထားပြီး ပြောပေးသွားတာဖြစ်ပါတယ်။
+ဒီနေရာမှာ Android OS source tree မှာ directory အစဥ်လိုက် ရှင်းပြပေးတာဖြစ်ပြီး Overview ပြောပြပေးတာဖြစ်ပါတယ်။
