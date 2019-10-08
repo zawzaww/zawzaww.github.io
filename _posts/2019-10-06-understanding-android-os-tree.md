@@ -11,15 +11,13 @@ Android OS က free and Open-source Project တခု ဖြစ်ပြီး A
 
 ပထမဆုံးအနေနဲ့ ကျွန်တော်တို့ Android OS source code ကို AOSP Git repositories: https://android.googlesource.com မှာ ၀င်လေ့လာကြည့်နိုင်ပါတယ်။ Android OS source code ကြီး တခုလုံးကို ဘယ်လို download လုပ်မလဲဆိုတဲ့အကြောင်းကို [Downloading and Compiling PureAOSP](https://zawzaww.github.io/blog/android/download-build-aosp-android) Blog post မှာ ဖက်ကြည့်နိုင်ပါတယ်။
 
-<img src="https://cdn-images-1.medium.com/max/800/1*z-gCsPmfT5n_8eTsIIviuQ.png" height="100%" width="100%;" />
+![Screenshot](/assets/images/screenshots/img_screenshot_aosp_googlegit.png)
 
-<img src="https://cdn-images-1.medium.com/max/800/1*SiJvQaRedTfLqSjqyNDyFA.png" height="100%" width="100%;" />
-
-နောက်တခုက Google Git နဲ့ မရင်းနှီးတဲ့သူတွေက မျက်စိနောက်တယ်ထင်ရင် mirror အနေနဲ့ GitHub မှာလည်း AOSP repositories တွေကို သူတို့ လုပ်ပေးထားတယ် အဲဒီမှာ ဝင်ကြည့်နိုင်တယ်။
+နောက်တခုက Google Git နဲ့ မရင်းနှီးတဲ့သူတွေက မျက်စိရှုပ်တယ်ထင်ရင် mirror အနေနဲ့ GitHub မှာလည်း AOSP repositories တွေကို သူတို့ လုပ်ပေးထားတယ် အဲဒီမှာ ဝင်ကြည့်နိုင်တယ်။
 
 AOSP mirror repositories on GitHub: https://github.com/aosp-mirror
 
-<img src="https://cdn-images-1.medium.com/max/800/1*QMzezVbdArmYMUFzK3hNrQ.png" height="100%" width="100%;" />
+![Screenshot](/assets/images/screenshots/img_screenshot_aosp_mirror_github.png)
 
 
 ```android-platform/art``` : ART [(Android Runtime)](https://source.android.com/devices/tech/dalvik) လို့ခေါ်ပြီး ART က Dalvik နေရာမှာ Replace လုပ်လိုက်တဲ့ Application Runtime environment တခု ဖြစ်ပါတယ်။ Android 5.0 မှာ စပြီး Replace လုပ်ပြီး သုံးခဲ့တာဖြစ်ပါတယ်။ ART က app ရဲ့ bytecode ကနေ Native instructions ကို translation လုပ်ပေးတဲ့အလုပ်ကို အဓိကလုပ်ပေးပါတယ်။
