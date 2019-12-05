@@ -14,14 +14,13 @@ permalink: blog/learn/ccpp-favorite-sites-books
 ## Courses
 - [Program: C Programming with Linux - edX](https://www.edx.org/professional-certificate/dartmouth-imtx-c-programming-with-linux)
 
-  ### Specific Course List from C Programming with Linux Program
-- [C Programming: Getting Started](https://www.edx.org/course/c-programming-getting-started)
-- [C Programming: Language Foundations](https://www.edx.org/course/c-programming-language-foundations)
-- [C Programming: Modular Programming and Memory Management](https://www.edx.org/course/c-programming-modular-programming-and-memory-manag)
-- [C Programming: Pointers and Memory Management](https://www.edx.org/course/c-programming-pointers-and-memory-management)
-- [C Programming: Advanced Data Types](https://www.edx.org/course/c-programming-advanced-data-types)
-- [Linux Basics: The Command Line Interface](https://www.edx.org/course/linux-basics-the-command-line-interface)
-- [C Programming: Using Linux Tools and Libraries](https://www.edx.org/course/c-programming-using-linux-tools-and-libraries)
+  - [C Programming: Getting Started](https://www.edx.org/course/c-programming-getting-started)
+  - [C Programming: Language Foundations](https://www.edx.org/course/c-programming-language-foundations)
+  - [C Programming: Modular Programming and Memory Management](https://www.edx.org/course/c-programming-modular-programming-and-memory-manag)
+  - [C Programming: Pointers and Memory Management](https://www.edx.org/course/c-programming-pointers-and-memory-management)
+  - [C Programming: Advanced Data Types](https://www.edx.org/course/c-programming-advanced-data-types)
+  - [Linux Basics: The Command Line Interface](https://www.edx.org/course/linux-basics-the-command-line-interface)
+  - [C Programming: Using Linux Tools and Libraries](https://www.edx.org/course/c-programming-using-linux-tools-and-libraries)
 
 ## Books
 - [The C Programming Language - Second Edition](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628)
