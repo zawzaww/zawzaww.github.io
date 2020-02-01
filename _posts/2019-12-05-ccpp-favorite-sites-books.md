@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Favorite Courses and Books to Learn C/C++"
+title: "My Favorite Courses and Books to Learn C/C++"
 categories: learn
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_c_cpp_programming.png
 permalink: blog/learn/ccpp-favorite-sites-books
 ---
 
-အခု Blog post မှာတော့ C/C++ ကို လေ့လာလို့ရမယ့် ကျွန်တော်ကြိုက်တဲ့ကောင်းမယ်ထင်တဲ့ Websites တွေ Courses တွေနဲ့ Books တွေကို Collection သဘောမျိုး စုပေးထားတာဖြစ်ပါတယ်။ C/C++ ကို တခြားလေ့လာသူတွေအတွက်လည်း အသုံး၀င်လိမ့်မယ်လို့ထင်ပါတယ်။ ဒါကတော့ ကျွန်တော်ကြိုက်တဲ့ကောင်းမယ့်ထင်တဲ့ Resources တွေကို Collect လုပ်ပေးတာဖြစ်ပါတယ်။
+အခု Blog post မှာတော့ C/C++ ကို လေ့လာလို့ရမယ့် ကျွန်တော်ကြိုက်တဲ့ကောင်းမယ်ထင်တဲ့ Websites တွေ Courses တွေနဲ့ Books တွေကို Collection သဘောမျိုး စုပေးထားတာဖြစ်ပါတယ်။ C/C++ ကို တခြားလေ့လာသူတွေအတွက်လည်း အသုံး၀င်လိမ့်မယ်လို့ထင်ပါတယ်။ ဒါကတော့ ကျွန်တော်ကြိုက်တဲ့ကောင်းမယ့်ထင်တဲ့ Resources တွေကို Collect လုပ်ပေးတာဖြစ်ပြီး တခြားကောင်းတဲ့ Websites တွေနဲ့ Books တွေရှိရင်လည်း Recommend ပေးနိုင်ပါတယ်။
 
 ## C Programming Language
 
@@ -29,6 +29,7 @@ permalink: blog/learn/ccpp-favorite-sites-books
 
 ### Websites
 - [https://www.cprogramming.com](https://www.cprogramming.com/tutorial/c-tutorial.html)
+- [https://codeforwin.org](https://codeforwin.org/2017/08/introduction-c-programming.html)
 - [https://www.learn-c.org](https://www.learn-c.org)
 - [https://guide.freecodecamp.org](https://guide.freecodecamp.org/c)
 - [https://www.geeksforgeeks.org](https://www.geeksforgeeks.org/c-programming-language)
@@ -52,5 +53,3 @@ permalink: blog/learn/ccpp-favorite-sites-books
 - [https://www.learn-cpp.org/](https://www.learn-cpp.org)
 - [https://guide.freecodecamp.org](https://guide.freecodecamp.org/cplusplus)
 - [https://www.geeksforgeeks.org](https://www.geeksforgeeks.org/c-plus-plus)
-
-တခြားကောင်းတဲ့ Websites တွေနဲ့ Books တွေရှိရင်လည်း Recommend ပေးနိုင်ပါတယ်။ အခု List မှာ ထည့်ပေးလို့ရပါတယ်။
