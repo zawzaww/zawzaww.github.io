@@ -157,11 +157,11 @@
 
 .post-link {
   display: block;
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 54px;
+  font-weight: normal;
 
   @include large {	
-    font-size: 50px;	
+    font-size: 54px;	
   }	
 
    @include medium {	

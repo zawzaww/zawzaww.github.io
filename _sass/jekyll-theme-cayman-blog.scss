@@ -41,7 +41,7 @@ a {
 }
 
 a:hover, a:focus {
-  color:#EF6C00;
+  color:#212121;
 }
 
 hr {
@@ -123,12 +123,12 @@ img-circle {
 .project-name {
   margin-top: 0;
   font-family: "Notosan Myanmar", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:  50px;
-  font-weight: bold;
+  font-size:  54px;
+  font-weight: normal;
   margin-bottom: 0.1rem;
 
   @include large {	
-    font-size: 50px;	
+    font-size: 54px;	
   }	
 
    @include medium {	
