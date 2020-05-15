@@ -92,7 +92,7 @@ make CC=clang -j$(nproc --all)
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_diff.png)
 
 ## Git commit
-ကိုယ် Change လိုက်တဲ့ Code တွေကို `git commit` လုပ်ပါမယ်။ ဒီနေရာမှာ ပြီးပြီရောပုံစံမျိုး commit လုပ်လို့မရပါဘူး တခြားသူတွေလည်း ဖက်လိုရင် နားလည်အောင် သေချာရေးပေးဖို့လိုပါတယ်။
+ကိုယ် Change လိုက်တဲ့ Code တွေကို `git commit` လုပ်ပါမယ်။ ဒီနေရာမှာ ပြီးပြီရောပုံစံမျိုး commit လုပ်လို့မရပါဘူး တခြားသူတွေလည်း ဖက်လိုက်ရင် နားလည်အောင် သေချာရေးပေးဖို့လိုပါတယ်။
 
 ```
 git commit -a
