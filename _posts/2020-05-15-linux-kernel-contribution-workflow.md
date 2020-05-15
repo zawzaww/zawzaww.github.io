@@ -20,7 +20,7 @@ Contributing to Linux kernel လုပ်တဲ့အပိုင်းမှာ
 - Get Kenel Maintainers
 - Git send-email
 
-# Setup Eamil
+# Setup Email Client
 ပထမဆုံးအနေနဲ့ gitconfig မှာ Email Client ကို Setup လုပ်ပေးဖို့ လိုအပ်ပါတယ်။
 
 Text Editor တခုခုကို သုံးပြီး ".gitconfig" မှာ ကိုသုံးမယ့် Email Client ကို Setup လုပ်ပါမယ်။
