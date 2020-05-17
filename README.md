@@ -6,7 +6,7 @@ Personal blog and website: https://zawzaww.github.io
 This Repository is licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/zawzaww.github.io/blob/master/LICENSE) for details.
 
 ```
-Copyright (C) 2019, Zaw Zaw.
+Copyright (C) 2020, Zaw Zaw.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
