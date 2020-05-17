@@ -18,7 +18,7 @@ Linux kernel ကို Contribute လုပ်တဲ့အပိုင်းမ�
 - Git format-patch
 - Check Kernel Patch
 - Get Kernel Maintainers
-- Git send-email
+- Git send-mail
 
 ## Setup Email Client
 ပထမဆုံးအနေနဲ့ gitconfig မှာ Email Client ကို Setup လုပ်ပေးဖို့ လိုအပ်ပါတယ်။
@@ -155,4 +155,9 @@ Linux kernel tree မှာ `get_maintainer.pl` ကို Run ပေးဖို
 git send-mail --to mingo@redhat.com --cc hpa@zytor.com --cc jesse.brandeburg@intel.com --cc linux-kernel@vger.kernel.org --cc clang-built-linux@googlegroups.com 0001-arch-x86-asm-Fix-arch-x86-kernel-build-error-in-clan.patch
 ```
 
-Kernel maintainers ဆီကို Patch ကို `git send-mail` နဲ့ ပို့လိုက်မှာ ဖြစ်ပါတယ်။ အဲဒီနောက် Eamil ကနေ ကိုယ့်ရဲ့ Patch ကို Review လုပ်မှာ ဖြစ်ပါတယ်။ အပြန်အလှန် Feedback လုပ်ဖို့ ဆွေးနွေးဖို့အတွက် Email client software တခုခုကို သုံးနိုင်ပါတယ်။ Mutt သို့မဟုတ် တခြားတခုခု သုံးနိုင်ပါတယ်။ အားလုံးပြီးသွားရင် ကိုယ့်ရဲ့ Patch က Review လုပ်ပြီးသွားရင် လက်ခံရရှိတဲ့ Maintainer က `git am` ကို သုံးပြီး Mailbox ကနေ ၀င်လာတဲ့ Patch ကို Apply လုပ်ပေးမှာဖြစ်ပါတယ်။ အဲဒီလိုနည်းလမ်းနဲ့ Linux kernel ကို Contribute လုပ်နိုင်မှာဖြစ်ပါတယ်။
+Kernel patch ကို `git send-mail` နဲ့ ပို့တဲ့နေရာမှာ `--to` က ကိုယ်ပို့မယ့် Kernel subsystem ရဲ့ အဓိက Maintainer ဖြစ်ရပါမယ်။ `--cc`ခံတဲ့နေရာမှာတော့ Reviewers တွေနဲ့ Open List တွေ ဖြစ်သင့်ပါတယ်။ Open List ဆိုတာက Kernel subsystem တခုချင်းစီမှာ Mailing List တွေ ရှိပါတယ်။ 
+ဥပမာ။ ။ `linux-kernel@vger.kernel.org` သည် အဓိက Linux Kernel Mailing List (LKML) ဖြစ်ပြီး၊ `clang-built-linux@googlegroups.com` သည် Linux kernel အတွက် Clang compiler သုံးပြီး build လုပ်တာနဲ့ပတ်သက် submit လုပ်နိုင်တဲ့ Mailing List ဖြစ်ပါတယ်။ Mailing List အားလုံးရဲ့ email address တွေကို [http://vger.kernel.org/vger-lists.html](http://vger.kernel.org/vger-lists.html) ၀င်ရောက်ကြည့်နိုင်ပါတယ်။ ပြီးရင် စိတ်၀င်စားတဲ့ Kernel subsystems ရဲ့ Mailing List ကို Subscribe လုပ်ထားနိုင်ပါတယ်။
+
+Kernel maintainers ဆီကို Generate လုပ်ထားတဲ့ Kernel Patch ကို `git send-mail` နဲ့ ပို့လိုက်မှာ ဖြစ်ပါတယ်။ အဲဒီနောက် Eamil ကနေ ကိုယ့်ရဲ့ Patch ကို Review လုပ်မှာ ဖြစ်ပါတယ်။ အပြန်အလှန် Feedback လုပ်ဖို့ Kernel Maintainers တွေ CC ခံထားတဲ့ Reviewers တွေနဲ့ ဆွေးနွေးဖို့အတွက် Email client software တခုခုကို သုံးနိုင်ပါတယ်။ [Mutt](http://www.mutt.org/) သို့မဟုတ် တခြားတခုခု သုံးနိုင်ပါတယ်။ အားလုံးပြီးသွားရင် ကိုယ့်ရဲ့ Patch က Review လုပ်ပြီးသွားရင် လက်ခံရရှိတဲ့ Maintainer က `git am` ကို သုံးပြီး Mailbox ကနေ ၀င်လာတဲ့ Patch ကို Apply လုပ်ပေးမှာဖြစ်ပါတယ်။ အဲဒီလိုနည်းလမ်းနဲ့ Linux kernel ကို Contribute လုပ်နိုင်မှာဖြစ်ပါတယ်။
+
+Video Tutorial နဲ့ လေ့လာချင်ရင် FOSDEM, 2010 မှာ Greg Kroah-Hartman (Linux kernel stable tree maintainer) ပြောပြထားတဲ့ [Write and Submit your First Linux Kernel Patch](https://www.youtube.com/watch?v=LLBrBBImJt4&t=1079s) ကနေ လေ့လာကြည့်နိုင်ပါတယ်။
