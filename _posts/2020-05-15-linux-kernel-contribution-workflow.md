@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Linux Kernel Contribution Workflow
+categories: linux
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_linux_kernel_contribution.png
-permalink: blog/linux-kernel-contribution-workflow
+permalink: blog/linux/linux-kernel-contribution-workflow
 ---
 
 Linux kernel ကို Contribute လုပ်တဲ့အပိုင်းမှာ လုပ်ငန်းစဥ်အသွားအလာ Workflow ကို အခု article မှာ အဓိကထား ပြောသွားမှာဖြစ်ပါတယ်။ Linux kernel က ကြီးမားတဲ့ open-source project တခုဖြစ်ပြီး မည်သူမဆို စိတ်ပါ၀င်စားသူတိုင်း Contribute လုပ်နိုင်ပါတယ်။ Linux kernel ကို Contribute လုပ်တဲ့ Workflow က တခြား Open-Source Project တွေနဲ့ တူမှာ မဟုတ်ပါဘူး။ GitHub သို့မဟုတ် GitLab တို့ကို သုံးပြီး Code တွေကို Contribute လုပ်လို့မရပါဘူး။ အဓိက Linux kernel မှာ Linux Kernel Mailing List (LKML) ကို သုံးပြီး Git နဲ့ Email ကနေ တဆင့် Kernel Patches (Fixed Code) တွေကို Submit လုပ်ပြီး Kernel Maintainers တွေက Review လုပ်ပြီး နောက်ပိုင်း Code တွေကို Merge လုပ်တဲ့နည်းနဲ့ Linux kernel မှာ Contribute လုပ်ရတာဖြစ်ပါတယ်။
