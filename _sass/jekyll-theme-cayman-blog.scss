@@ -123,20 +123,20 @@ img-circle {
 .project-name {
   margin-top: 0;
   font-family: "Notosan Myanmar", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:  54px;
+  font-size:  50px;
   font-weight: normal;
   margin-bottom: 0.1rem;
 
   @include large {	
-    font-size: 54px;	
+    font-size: 50px;	
   }	
 
    @include medium {	
-    font-size: 40px;	
+    font-size: 35px;	
   }	
 
    @include small {	
-    font-size: 35px;	
+    font-size: 32px;	
   }
 }
 
