@@ -113,8 +113,6 @@ img-circle {
 
   @include medium {
     padding: 3rem 4rem;
-  }
-
   @include small {
     padding: 2rem 1rem;
   }
@@ -123,20 +121,20 @@ img-circle {
 .project-name {
   margin-top: 0;
   font-family: "Red Hat Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:  50px;
-  font-weight: 500;
+  font-size:  54px;
+  font-weight: bold;
   margin-bottom: 0.1rem;
 
   @include large {	
-    font-size: 50px;	
+    font-size: 54px;	
   }	
 
    @include medium {	
-    font-size: 35px;	
+    font-size: 40px;	
   }	
 
    @include small {	
-    font-size: 32px;	
+    font-size: 35px;	
   }
 }
 
