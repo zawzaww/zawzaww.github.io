@@ -28,7 +28,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Notosan Myanmar", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Red Hat Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.8;
@@ -122,9 +122,9 @@ img-circle {
 
 .project-name {
   margin-top: 0;
-  font-family: "Notosan Myanmar", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Red Hat Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:  50px;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 0.1rem;
 
   @include large {	
