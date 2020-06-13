@@ -7,7 +7,7 @@ featured-image: /assets/images/featured-images/img_monolithic_microkernel.png
 permalink: blog/kernel/monolithic-and-microkernel
 ---
 
-ဒီနေ့မှ MINIX Operating System Discussion Group (comp.os.minix) မှာ ဖြစ်ခဲ့ Tanenbaum-Torvalds debate ရဲ့ Origin Thread ကို ဖက်ကြည့်ရင်း အခု article ရေးဖြစ်သွားတာပါ။ အခု article မှာ Monolithic kernel design နဲ့ Microkernel design ရဲ့ ကွာခြားချက်တွေကို အဓိကပြောသွားမှာ ဖြစ်ပါတယ်။ အရင်ဆုံး Tanenbaum-Torvalds debate အကြောင်းကို သိရအောင် အတိုချုပ်ပြောပါမယ်။ ပြီးရင်တော့ Monolithic kernel နဲ့ Microkernel ရဲ့ အချက်လက်တွေကို တခုချင်း ပြောပေးသွားမှာ ဖြစ်ပါတယ်။
+မနေ့တုန်းက Tanenbaum-Torvalds debate ရဲ့ Origin Thread ကို ဖက်ကြည့်ရင်းကနေ အခု Blog post ရေးဖြစ်သွားတာပါ။ အခု Blog post မှာ Monolithic kernel design နဲ့ Microkernel design ရဲ့ ကွာခြားချက်တွေကို အဓိကပြောသွားမှာ ဖြစ်ပါတယ်။ အရင်ဆုံး Tanenbaum-Torvalds debate အကြောင်းကို သိရအောင် အတိုချုပ်ပြောပါမယ်။ ပြီးရင်တော့ Monolithic kernel နဲ့ Microkernel ရဲ့ ကွာခြားတဲ့ မတူညီတဲ့ အချက်လက်တွေကို တခုချင်း ပြောပေးသွားမှာ ဖြစ်ပါတယ်။
 
 # Tanenbaum-Torvalds Debate
 Tanenbaum-Torvalds Debate ကို ဟိုတခါ ကိုသက်ခိုင် ရေးထားတာတွေ့လို့ Wikipedia မှာ ဖက်ကြည့်ရင်း သိခဲ့တာတော့ ကြာပါပြီ။ ဒါပေမယ့် MINIX Operating System Discussion Group မှာ တကယ်အပြန်အလှန် Debate လုပ်ခဲ့တဲ့ မူရင်း Thread ကို ခုမှ ဖက်ကြည့်ဖြစ်ပါတယ်။ အဲဒီ Debate ကို 1992 မှာ MINIX Operating System ရဲ့ Author ဆရာကြီး Tanenbaum (also known as ast) က [LINUX is obsolete](https://groups.google.com/g/comp.os.minix/c/wlhw16QWltI) ဆိုတဲ့ subject နဲ့ စတင်ခဲ့တယ်။ အတိုချုပ်ပြောပြရရင် Kernel Design ပိုင်း ဖြစ်တဲ့ Monolithic kernel နဲ့ Microkernel ကို Debate လုပ်ကြတာပါ။ တနည်းအားဖြင့် MINIX vs LINUX ကို Professor ဆရာကြီးနဲ့ Torvalds နှင့် သူရဲ့ Linux kernel developers တွေ ပညာသားပါပါနဲ့ MINIX Operating System Discussion Group (comp.os.minix) မှာ Flame war ဖြစ်ခဲ့ကြတာပါ။ စိတ်ဝင်စားရင်တော့ Google Groups က မူးရင် Thread မှာ ဆက်ဖက်ကြည့်နိုင်ပါတယ်။
@@ -29,7 +29,7 @@ Monolithic kernel နဲ့ Microkernel design နှစ်ခုလုံးမ
 - Monolithic kernel တွေက Loadable Kernel Module (LKM) Support လုပ်တယ်။ Device Drivers တွေကို Modules များ‌အဖြစ် ရေးနိုင်တယ်။ Kernel Runtime မှာ Kernel Modules တွေ လိုအပ်သလို Dynamically Loaded/Unloaded လုပ်နိုင်တယ်။ ဒါကြောင့် "Linux is modular." လို့ ပြောတာတွေ တွေ့ဖူးပါလိမ့်မယ်။
 
 - Linux (monilithic kernel) မှာဆိုရင် Portability ဖြစ်တယ်။ ဆိုလိုတဲ့သဘောက OS kernel သည် Intel x86 architecture ကိုလည်း Support လုပ်နိုင်တယ်။ နောက်ထပ် architecture တခု ဖြစ်တဲ့ ARM arm64 အတွက်လည်း Support လုပ်တယ်။ နောက်ထပ် architecture တွေ ဖြစ်တဲ့ mips, powerpc, m68k, m68k, alpha, arm, hexagon အစရှိသဖြင့် OS kernel တခုသည် computer architectures တွေကို wide range support လုပ်တယ်ဆိုရင် Portability ဖြစ်တယ်လို့ ပြောကြပါတယ်။ Computer system architecture တခုကနေ နောက်ထပ် architecutre တခုအတွက် Portable C code တွေကို Implement လုပ်ထားတဲ့အတွက်ကြောင့် အလွယ်တကူရွေ့လို့ရတယ် Porting လုပ်နိုင်တယ်ဆိုရင် Portability ဖြစ်တဲ့ OS kernel လို့ Operating Systems World မှာ ခေါ်ကြပါတယ်။
-Linux မှာဆိုရင် ဆိုရင် Support လုပ်တဲ့ architecture တွေကို linux/arch ၀င်ကြည့်နိုင်ပါတယ်။
+Linux မှာဆိုရင် ဆိုရင် Supported Linux architectures တွေကို Linux kernel source tree ရဲ့ `/linux/arch` directory အောက်မှာ ၀င်ကြည့်နိုင်ပါတယ်။
 
 ```
 zawzaw@ubuntu-linux:~/Linux-Kernel/linux/arch$ ls -l
@@ -100,5 +100,4 @@ drwxr-xr-x 11 zawzaw zawzaw  4096 May 18 13:28 xtensa
 
 - Microkernel တွေက Performance ပိုင်းမှာ သိပ်မကောင်းနိုင်ပါဘူး။ Monolithic kernel တွေထက် Microkernel တွေက Performance ပိုင်းမှာ 50% လောက် နှေးကွေးနိုင်ပါတယ်။ ဘာကြောင့်လဲဆိုရင် Server တခုချင်းသည် သီခြားစီဖြစ်နေပါတယ်။ အဲဒီ Server တခုက Service ဒါမှမဟုတ် funtion တခုကို တခြား Server ကနေ Invoke လုပ်မယ်ဆိုရင် Kernel ရဲ့ Permission လိုအပ်တဲ့အတွက် အချိန်စောင့်ရတဲ့အတွက် Execution time ပိုကြာပါတယ်။ Monolithic kernel လိုမျိုး funtion တခုကို တိုက်ရိုက် Invoke လုပ်မရတဲ့အတွက် Performance ပိုင်းမှာ ကျပါတယ်။ Monolithic kernel လောက် မကောင်းနိုင်ပါဘူး။
 
-# Monolithic and Microkernel based Operating Systems
-နမူနာပြောပြရရင် Kernel Design ပိုင်းမှာ Origin UNIX နဲ့ Linux က Monolithic kernel type ဖြစ်ပြီး၊ Minix က Microkernel type ဖြစ်ပါတယ်။ Android OS က Linux kernel based Mobile OS ဖြစ်တဲ့အတွက် monolithic kernel type ထဲမှာ ပါ၀င်ပါတယ်။ နောက်လာမယ့် Google ရဲ့ Mobile OS အသစ် Fuchsia OS က Zircon ဆိုတဲ့ microkernel ပေါ်မှာ အခြေခံပြီး Development လုပ်နေပါတယ်။
+လက်ရှိမှာ Monolithic kernel နဲ့ Microkernel ကို အခြေခံပြီး တည်ဆောက်ထားတဲ့ Operating Systems တွေကို မြင်သာအောင် ဥပမာအနေနဲ့ ပြောပြရရင် Traditional UNIX နဲ့ Linux က Monolithic kernel type ဖြစ်တယ်။ Minix ကတော့ Microkernel type ဖြစ်ပါတယ်။ Android OS က Linux kernel based Mobile OS ဖြစ်တဲ့အတွက် monolithic kernel type ထဲမှာ ပါ၀င်ပါတယ်။ နောက်လာမယ့် Google ရဲ့ Mobile OS အသစ် Fuchsia OS က Zircon ဆိုတဲ့ microkernel ပေါ်မှာ အခြေခံပြီး Development လုပ်နေပါတယ်။
