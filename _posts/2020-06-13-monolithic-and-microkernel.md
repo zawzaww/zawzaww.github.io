@@ -6,7 +6,6 @@ author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_monolithic_microkernel.png
 permalink: blog/kernel/monolithic-and-microkernel
 ---
-<p align="center"><sub><sub>Feature Image by: Wikipedia</sub></sub></p>
 
 မနေ့တုန်းက Tanenbaum-Torvalds debate ရဲ့ Origin Thread ကို ဖက်ကြည့်ရင်းကနေ အခု Blog post ရေးဖြစ်သွားတာပါ။ အခု Blog post မှာ Monolithic kernel design နဲ့ Microkernel design ရဲ့ ကွာခြားချက်တွေကို အဓိကပြောသွားမှာ ဖြစ်ပါတယ်။ အရင်ဆုံး Tanenbaum-Torvalds debate အကြောင်းကို သိရအောင် အတိုချုပ်ပြောပါမယ်။ ပြီးရင်တော့ Monolithic kernel နဲ့ Microkernel ရဲ့ ကွာခြားတဲ့ မတူညီတဲ့ အချက်လက်တွေကို တခုချင်း ပြောပေးသွားမှာ ဖြစ်ပါတယ်။
 
