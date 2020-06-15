@@ -1,5 +1,6 @@
 @import "normalize";
 @import "rouge-github";
+@import "dark-mode";
 @import "variables";
 @import "blog";
 
@@ -31,8 +32,11 @@ body {
   font-family: "Red Hat Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  line-height: 1.8;
   color: $body-text-color;
+  background: $body-bg-color;
+  background-attachment: fixed !important;
+  background: linear-gradient(#2a2a29, #1c1c1c);
+  line-height: 1.8;
 }
 
 a {
