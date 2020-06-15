@@ -3,15 +3,14 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers colors.
-$header-heading-color: #eeeeee !default;
+$header-heading-color: #fff !default;
 $header-bg-color: #212121 !default;
 $header-bg-color-secondary: #212121 !default;
 
 // Text colors.
-$section-headings-color: #eeeeee !default;
-$body-text-color: #eeeeee !default;
-$body-bg-color: #2e2e2e !default;
-$body-link-color: #1565c0 !default;
+$section-headings-color: #212121 !default;
+$body-text-color: #212121 !default;
+$body-link-color: #00695C !default;
 $blockquote-text-color: #819198 !default;
 
 // CodeBlock colors.
@@ -19,6 +18,6 @@ $code-bg-color: #272c34 !default;
 $code-text-color: #e0e0e0 !default;
 
 // Borders colors.
-$border-color: #424242  !default;
-$table-border-color: #424242 !default;
+$border-color: #ffffff  !default;
+$table-border-color: #ffffff !default;
 $hr-border-color: #e0e0e0 !default;
