@@ -28,13 +28,13 @@ Linux kernel ကို Contribute လုပ်တဲ့အပိုင်းမ�
 
 Text Editor တခုခုကို သုံးပြီး `.gitconfig` မှာ ကိုသုံးမယ့် Email Client ကို Setup လုပ်ပါမယ်။
 
-```
+```console
 zawzaw@ubuntu-linux:~$ vim ~/.gitconfig
 ```
 
 For example: Gmail
 
-```
+```console
 [user]
         name = Your Name
         email = youremailaddr@mail.com
@@ -61,11 +61,11 @@ Linux kernel source tree ကို [https://git.kernel.org/pub/scm/linux/kernel/
 
 မူးရင်း `master` branch ကနေ `dev/zawzaw` branch အသစ်တခု Local မှာ create လုပ်လိုက်ပါမယ်။
 
-```
+```console
 git branch dev/zawzaw
 ```
 
-```
+```console
 git checkout dev/zawzaw
 ```
 
@@ -78,13 +78,13 @@ Fixed kernel code: `linux/arch/x86/include/asm/bitops.h`
 
 Kernel source tree ကို သွားပြီး Kernel configuration လုပ်ပြီး Compile လုပ်ပါမယ်။ Compiler က Default compiler ဖြစ်တဲ့ GCC ကို မသုံးဘဲ Clang ကို ကျွန်တော်က သုံးတာဖြစ်တာကြောင့် `CC=clang` ဆိုပြီး ထည့်ပေးတာဖြစ်ပါတယ်။ နောက်ပိုင်း Clang Compiler နဲ့ Linux kernel ကို Compile လုပ်တဲ့အကြောင်းကို ရေးဖို့ရှိပါတယ်။
 
-```
+```console
 make CC=clang defconfig
 ```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_recompile_kernel.png)
 
-```
+```console
 make CC=clang -j$(nproc --all)
 ```
 
@@ -98,7 +98,7 @@ make CC=clang -j$(nproc --all)
 # Git commit
 ကိုယ် Change လိုက်တဲ့ Code တွေကို `git commit` လုပ်ပါမယ်။ ဒီနေရာမှာ ပြီးပြီရောပုံစံမျိုး commit လုပ်လို့မရပါဘူး တခြားသူတွေလည်း ဖက်လိုက်ရင် နားလည်အောင် သေချာရေးပေးဖို့လိုပါတယ်။
 
-```
+```console
 git commit -a
 ```
 
@@ -114,7 +114,7 @@ git commit -a
 
 ကိုယ့်ရဲ့ Local branch တွေကို `git branch` နဲ့ အရင်ကြည့်ပါမယ်။
 
-```
+```console
 zawzaw@ubuntu-linux:~/Linux-kernel/linux$ git branch
 * dev/zawzaw
   master
@@ -122,7 +122,7 @@ zawzaw@ubuntu-linux:~/Linux-kernel/linux$ git branch
 
 Patch Generate လုပ်ပါမယ်။
 
-```
+```console
 git format-patch master..dev/zawzaw
 ```
 
@@ -135,7 +135,7 @@ Linux kernel source tree မှာ အသုံး၀င်တဲ့ Tools တ�
 
 Linux kernel source tree မှာ `checkpatch.pl` ကို Run ပေးဖို့လိုပါတယ်။
 
-```
+```console
 ./scripts/checkpatch.pl 0001-arch-x86-asm-Fix-arch-x86-kernel-build-error-in-clan.patch
 ```
 
@@ -146,7 +146,7 @@ Kernel Patch ကို ဘယ် Kernel maintainers ဆီကို ပို့
 
 Linux kernel tree မှာ `get_maintainer.pl` ကို Run ပေးဖို့ လိုပါတယ်။
 
-```
+```console
 ./scripts/get_maintainer.pl 0001-arch-x86-asm-Fix-arch-x86-kernel-build-error-in-clan.patch
 ```
 
@@ -155,7 +155,7 @@ Linux kernel tree မှာ `get_maintainer.pl` ကို Run ပေးဖို
 # Git send-mail
 အပေါ်ကအဆင့်တွေ ပြီးသွားရင် Patch ကို `git send-mail` နဲ့ သက်ဆိုင်ရာ Maintainers တွေဆီ ပို့ပေးမှာဖြစ်ပါတယ်။
 
-```
+```console
 git send-mail --to mingo@redhat.com --cc hpa@zytor.com --cc jesse.brandeburg@intel.com --cc linux-kernel@vger.kernel.org --cc clang-built-linux@googlegroups.com 0001-arch-x86-asm-Fix-arch-x86-kernel-build-error-in-clan.patch
 ```
 

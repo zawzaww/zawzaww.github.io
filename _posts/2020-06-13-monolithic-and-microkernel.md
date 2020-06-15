@@ -32,7 +32,7 @@ Monolithic kernel နဲ့ Microkernel design နှစ်ခုလုံးမ
 - Linux (monilithic kernel) မှာဆိုရင် Portability ဖြစ်တယ်။ ဆိုလိုတဲ့သဘောက OS kernel သည် Intel x86 architecture ကိုလည်း Support လုပ်နိုင်တယ်။ နောက်ထပ် architecture တခု ဖြစ်တဲ့ ARM arm64 အတွက်လည်း Support လုပ်တယ်။ နောက်ထပ် architecture တွေ ဖြစ်တဲ့ mips, powerpc, m68k, m68k, alpha, arm, hexagon အစရှိသဖြင့် OS kernel တခုသည် computer architectures တွေကို wide range support လုပ်တယ်ဆိုရင် Portability ဖြစ်တယ်လို့ ပြောကြပါတယ်။ Computer system architecture တခုကနေ နောက်ထပ် architecutre တခုအတွက် Portable C code တွေကို Implement လုပ်ထားတဲ့အတွက်ကြောင့် အလွယ်တကူရွေ့လို့ရတယ် Porting လုပ်နိုင်တယ်ဆိုရင် Portability ဖြစ်တဲ့ OS kernel လို့ Operating Systems World မှာ ခေါ်ကြပါတယ်။
 Linux မှာဆိုရင် ဆိုရင် Supported Linux architectures တွေကို Linux kernel source tree ရဲ့ `/linux/arch` directory အောက်မှာ ၀င်ကြည့်နိုင်ပါတယ်။
 
-```
+```console
 zawzaw@ubuntu-linux:~/Linux-Kernel/linux/arch$ ls -l
 total 132
 drwxr-xr-x 10 zawzaw zawzaw  4096 Feb  8 15:17 alpha
