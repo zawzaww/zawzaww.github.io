@@ -16,14 +16,14 @@ Ccache (Compiler Cache) ကိုသုံးပြီး Linux kernel compilati
 ပထမဆုံးအနေနဲ့ ကိုယ့်ရဲ့ GNU/Linux machine ထဲမှာ Ccache package Install လုပ်ထားဖို့လိုပါတယ်။
 ကိုယ် Install လုပ်ထားတဲ့ Ccache version ကို check ချင်ရင်တော့
 
-```
+```bash
 ccache --version
 ```
 
 ဆိုပြီး check နိုင်ပါတယ်။
 တကယ်လို့ Install မလုပ်ရသေးဘူးဆိုရင်တော့
 
-```
+```bash
 sudo apt install ccache
 ```
 
@@ -32,20 +32,23 @@ sudo apt install ccache
 နောက်တခုက .bashrc file ကို ဖွင့်ပြီး Setup လုပ်ဖို့ လိုပါသေးတယ်။
 ccache ရဲ့ dir path ကို export လုပ်ပေးလိုက်ရင် ရပါပြီ။ အဒီ အောက်က သုံးကြောင်း .bashrc file မှာ Add ပေးလိုက်ရင် ရပါပြီ။
 
-```
+```bash
 export CCACHE_DIR="/home/zawzaw/.cache"
 export CXX="ccache g++"
 export CC="ccache gcc"
 ```
 
 Ccache ကို အများဆုံး maximum size ဘယ်လောက်ထားမလဲဆိုတာ သတ်မှတ်ပေးရပါမယ်။
-```
+
+```bash
 ccache -M 32
 ```
+
 ![Screenshot](/assets/images/screenshots/img_screenshot_ccache_max_size.png)
 
 ကိုယ်ရဲ့ လက်ရှိမှာရှိနေတဲ့ ccache ရဲ့ Statistics ကို ကြည့်ချင်ရင် `ccache -s` ဆိုပြီး command ကို ရိုက်ပြီး ကြည့်နိုင်ပါတယ်။
-```
+
+```bash
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
 cache directory                     /home/zawzaw/.cache
 primary config                      /home/zawzaw/.cache/ccache.conf
@@ -67,26 +70,30 @@ max cache size                      32.0 GB
 
 # Building Linux Kernel with Ccache
 Linux kernel source directory ကို သွားပြီး ပထမက Compile လုပ်ထားတဲ့ Output files တွေ ရှိရင် Clean လုပ်ပေးဖို့ လိုပါတယ်။
-```
+
+```bash
 make clean && make mrproper
 ```
+
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_clean.png)
 
 နောက်တဆင့်က Linux kernel ကို Compile မလုပ်ခင် Kernel configuration လုပ်ပေးဖို့ လိုပါတယ်။ ကျွန်တော် နမူနာအနေနဲ့ default configuration ကိုပဲ သုံးလိုက်ပါတယ်။
-```
+
+```bash
 make defconfig
 ```
+
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_defconfig.png)
 
 Ccache နဲ့ Linux kernel ကို Compile လုပ်မယ်ဆိုရင် make command နဲ့ `CC="ccache gcc"` ဆိုတဲ့ Option တခုကို ထည့်ပေးဖို့လိုပါတယ်။
 
-```
+```bash
 make CC="ccache gcc" -j$(nproc --all)
 ```
 
 တကယ်လို့ Compilation time result ကို အတိအကျ သိချင်ရင်တော့ time ဆိုတဲ့ command ကို သုံးပေးဖို့ လိုပါတယ်။
 
-```
+```bash
 time make CC="ccache gcc" -j$(nproc --all)
 ```
 
