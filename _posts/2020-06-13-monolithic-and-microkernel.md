@@ -4,6 +4,7 @@ title: "Kernel Design: Monolithic Versus Microkernel"
 categories: kernel
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_monolithic_microkernel.png
+image-description: "OS Structure Image by: Wikipedia"
 permalink: blog/kernel/monolithic-and-microkernel
 ---
 

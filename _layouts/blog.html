@@ -25,10 +25,6 @@ layout: default
             <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
           </h1>
 
-          {% if page.featured-image %}
-            {% include post-featured-image.html image=page.featured-image alt=page.featured-image-alt %}
-          {% endif %}
-
           <span>{{ post.excerpt | markdownify | truncatewords: 25 }}</span>
   
         </li>

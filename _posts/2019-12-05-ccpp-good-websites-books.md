@@ -4,7 +4,7 @@ title: "Good Courses and Books to Learn C/C++"
 categories: learn
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_c_cpp_programming.png
-featured-image-alt: "Photo by ByteXL"
+image-description: "C and C++ Logo Image by: ByteXL"
 permalink: blog/learn/ccpp-good-websites-books
 ---
 
