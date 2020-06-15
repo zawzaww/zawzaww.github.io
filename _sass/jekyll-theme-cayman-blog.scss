@@ -35,7 +35,6 @@ body {
   color: $body-text-color;
   background: $body-bg-color;
   background-attachment: fixed !important;
-  background: linear-gradient(#2a2a29, #1c1c1c);
   line-height: 1.8;
 }
 
@@ -45,7 +44,7 @@ a {
 }
 
 a:hover, a:focus {
-  color:#212121;
+  color:#eeeeee;
 }
 
 hr {
