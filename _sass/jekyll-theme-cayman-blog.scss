@@ -35,6 +35,11 @@ body {
   color: $body-text-color;
 }
 
+html, body {
+  text-size-adjust: 100%;
+  font-size: 100%;
+}
+
 a {
   color: $body-link-color;
   text-decoration: none;
