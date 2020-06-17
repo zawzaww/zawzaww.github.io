@@ -35,16 +35,6 @@ body {
   color: $body-text-color;
 }
 
-body {
-  height: 100vh;
-  width: 100vh;
-}
-
-body {
-  min-height: 100vh;
-  min-width: 100vh;
-}
-
 a {
   color: $body-link-color;
   text-decoration: none;
