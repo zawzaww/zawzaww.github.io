@@ -36,7 +36,13 @@ body {
 }
 
 body {
-  font-size: 100%;
+  height: 100vh;
+  width: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 a {
@@ -128,7 +134,7 @@ img-circle {
   margin-top: 0;
   font-family: "Red Hat Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:  54px;
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 0.1rem;
 
   @include large {	
