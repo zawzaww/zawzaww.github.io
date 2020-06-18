@@ -72,7 +72,7 @@ Linux Kernel Device Drivers ရေးတာနဲ့ ပတ်သက်ပြီ
 
 အခု Blog post မှာ ကျွန်တော်က LLVM/Clang Compiler version 9 နဲ့ Linux kernel build လုပ်တဲ့အခါ build error ကို Fix လုပ်ထားတာလေးကို နမူနာအနေနဲ့ ပြောသွားမှာဖြစ်ပါတယ်။
 
-မူးရင်း `master` branch ကနေ `dev/zawzaw` branch အသစ်တခု Local မှာ create လုပ်လိုက်ပါမယ်။
+မူရင်း `master` branch ကနေ `dev/zawzaw` branch အသစ်တခု Local မှာ create လုပ်လိုက်ပါမယ်။
 
 ```bash
 git branch dev/zawzaw
@@ -85,6 +85,7 @@ git checkout dev/zawzaw
 Fixed kernel build error in LLVM/Clang compiler version 9: `linux/arch/x86/include/asm/bitops.h`
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_fixes.png)
+<p align="center"><sub><sup>Architecture specific x86_64 bit operations: linux/arch/86/include/asm/bitops.h</sup></sub></p>
 
 # Build Kernel Code
 ဒီနေရာမှာတော့ ကိုယ်ပြင်လိုက်တဲ့ Kernel Code က ဘယ်လို Build error တွေ ရှိလား၊ မရှိဘူးလား ဆိုတာကို ပြန် Compile လုပ်ပြီး Testing လုပ်တဲ့အပိုင်းဖြစ်ပါတယ်။
