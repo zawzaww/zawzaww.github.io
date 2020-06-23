@@ -4,7 +4,7 @@ title: "Contributing to the Linux Kernel"
 categories: kernel
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_linux_kernel_contribution.png
-image-description: "Linux kernel source tree screeshot"
+image-description: "Linux kernel source tree screenshot"
 permalink: blog/kernel/contribute-linux-kernel
 ---
 
