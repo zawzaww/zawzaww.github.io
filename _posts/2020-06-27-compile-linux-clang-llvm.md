@@ -10,7 +10,7 @@ permalink: blog/kernel/compile-linux-clang-llvm
 
 ဟိုအရင်တည်းကနဲ့ အခုလောလောဆယ်မှာ Linux kernel မှာ သုံးတဲ့ Traditional Default C Compiler က GCC ပဲ ဖြစ်ပါတယ်။ အခုအခါမှာ Linux kernel ကို Modern C-family Compiler တခု ဖြစ်တဲ့ [Clang/LLVM](http://clang.llvm.org/) နဲ့ပါ အလွယ်တကူ Compile လုပ်လို့ရနေ ပါပြီ။ အဲဒီလို အလွယ်တကူ Compile လုပ်လို့ရအောင် Google က Software Engineer တယောက်ဖြစ်တဲ့ [Nick Desaulniers](http://nickdesaulniers.github.io/about/) က ဦးဆောင်ပြီး [Linux Kernel Build System (kbuild)](https://patchwork.kernel.org/project/linux-kbuild/list/) အတွက် Kernel Patches တွေ Submit လုပ်ပြီး Contribute လုပ်နေတာ ဖြစ်ပါတယ်။ အခုဆိုရင် Linux kernel ရဲ့ [Official Documentation](https://www.kernel.org/doc/html/latest/kbuild/llvm.html) မှာလည်း Clang နဲ့ Linux kernel ကို ဘယ်လို Compile လုပ်မလဲဆိုတာ အပြည့်စုံရှိနေပြီ ဖြစ်ပါတယ်။ ပြီးတော့ GitHub မှာ Nick တို့ လုပ်ထားတဲ့ [ClangBuiltLinux](https://github.com/ClangBuiltLinux) GitHub Orgnaization လည်း ရှိပါတယ်။ တကယ်လို့ Compiler Bugs တွေနဲ့ Kernel Build erros တွေ ရှိရင်လည်း အဲဒီမှာ Report လုပ်လို့ရပါတယ်။ အခု Article မှာ Linux kernel ကို Clang Compiler နဲ့ လုပ်တဲ့အဆင့်တွေကို တဆင့်ချင်း ရေးသွားမှာဖြစ်ပါတယ်။
 
-ClangBuiltLinux: [https://github.com/ClangBuiltLinux](https://github.com/ClangBuiltLinux)
+ClangBuiltLinux Wiki: [https://github.com/ClangBuiltLinux/linux/wiki](https://github.com/ClangBuiltLinux/linux/wiki)
 
 # Installation Packages
 Ubuntu Linux မှာတော့ Clang compiler က Built-in ပါလာပြီးသာပါ။ တကယ်လို့ မရှိရင်လည်း ကိုယ်တိုင် Install လုပ်လို့ရပါတယ်။ Linux distributions မှာ သုံးတဲ့ Package Manager တွေ ပေါ်မှာ မူတည်ပြီး ဒီနေရာ ကွဲပြားနိုင်ပါတယ်။ ကျွန်တော့်အနေနဲ့တော့ Ubuntu Linux နဲ့ပဲ နမူနာအနေနဲ့ ပြောပြသွားမှာပါ။
