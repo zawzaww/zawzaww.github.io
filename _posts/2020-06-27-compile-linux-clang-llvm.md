@@ -34,14 +34,14 @@ sudo apt install gcc-aarch64-linux-gnu
 ```
 
 # Compiling Kernel with Clang/LLVM
-## Host System
+## Compiling for Host System
 
-ကိုယ်သုံးနေတဲ့ Host Linux Systems အတွက် Linux kernel ကို Clang နဲ့ Compile လုပ်မယ်ဆိုရင် အရမ်းခက်ခက်ခဲခဲကြီးတော့ မဟုတ်ပါဘူး `CC=clang` ဆိုတဲ့ Command line parameter ထည့်ပြီး Compile လိုက်ရုံပါပဲ။
+ကိုယ်သုံးနေတဲ့ Host Linux Systems အတွက် Linux kernel ကို Clang/LLVM နဲ့ Compile လုပ်မယ်ဆိုရင် အရမ်းခက်ခက်ခဲခဲကြီးတော့ မဟုတ်ပါဘူး `CC=clang` ဆိုတဲ့ Command line parameter ထည့်ပြီး Compile လိုက်ရုံပါပဲ။
 
-အရင်ဆုံး Compile မလုပ်ခင်မှာ Kernel Configuration မဖြစ်မနေ လုပ်ပေးဖို့ လိုအပ်ပါတယ်။ Default configuration ပဲ သုံးလိုက်ပါမယ် အဲဒီ Kernel Configs တွေက Linux kernel source tree ရဲ့ `arch/<arch>/configs/` အောက်မှာ ရှိနေတာ ဖြစ်ပါတယ်၊
+အရင်ဆုံး Compile မလုပ်ခင်မှာ Kernel Configuration မဖြစ်မနေ လုပ်ပေးဖို့ လိုအပ်ပါတယ်။ Default configuration ပဲ သုံးလိုက်ပါမယ်။ အဲဒီ Kernel Configs တွေက Linux kernel source tree ရဲ့ `arch/<arch>/configs/` အောက်မှာ ရှိနေတာ ဖြစ်ပါတယ်။
 
 ```bash
-make CC=clang HOSTCC=clang defconfig
+make CC=clang defconfig
 ```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_make_defconfig.png)
@@ -50,18 +50,22 @@ make နဲ့ Kernel configuration လုပ်ပြီးသွားရင�
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_kernel_configs.png)
 
-ပြီးရင်တော့ Kernel Compile လုပ်ပါမယ်။
+ပြီးသွားရင်တော့ Kernel Compile လုပ်ပါမယ်။ ဒီနေရာမှာ `CC=clang` Command line parameter ထည့်ပေးဖို့ လိုအပ်ပါတယ်။
+
+ဒီနေရာမှာ `-j$(nproc --all)` Option သည် မဖြစ်မနေ ထည့်ပေးဖို့တော့ မလိုအပ်ပါဘူး။ ထည့်ပေးဖို့တော့ Recommend လုပ်ပါတယ်။ သူသည် GNU Make `make` က `-jN` argument နဲ့ Parallel tasks လုပ်လို့ရပါတယ်။ ပိုမိုမြန်မြန်ဆန်ဆန် Build လုပ်နိုင်ဖို ကူညီပေးပါတယ်။ `N` သည် Number of Parallel tasks ကို ဆိုလိုခြင်းဖြစ်ပါတယ်။ သူသည် ကိုယ့်သုံးနေတဲ့ Computer ရဲ့ CPU Cores တွေပေါ်မှာ တွက်ယူပြီး Build တာ ဖြစ်တဲ့အတွက် `j4` `j8` `j16` စသဖြင့် Manually Define မလုပ်တော့ပဲ Unix/Linux ရဲ့ `nproc` utility command ကို ခေါ်သုံးပြီး CPU Processor Cores အရေတွက်ကို အလိုလျောက်တွက်ယူပြီး Build လုပ်လိုက်တာဖြစ်ပါတယ်။
 
 ```bash
-make CC=clang HOSTCC=clang -j$(nproc --all)
+make CC=clang -j$(nproc --all)
 ```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_make_build.png)
 
+ကိုယ် Build လိုက်တဲ့ Kernel img ကို Linux kernel source tree ရဲ့ `/arch/x86/boot/bzImage` မှာ Generate လုပ်ပေးသွားမှာ ဖြစ်ပါတယ်။
+
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_kernel_img.png)
 
 
-## Cross Compile for ARM arm64
+## Cross Compiling for ARM arm64
 ဒီအပိုင်းမှာတော့ Host System အတွက် မဟုတ်တော့ပဲ ARM arm64 architecutre အတွက် Cross Compiling လုပ်မှာ ဖြစ်ပါတယ်။ ARM arm64 architecture အတွက် Compile လုပ်မှာ ဖြစ်တဲ့အတွက် ```ARCH=arm64``` နဲ့ ```CROSS_COMPILE=aarch64-linux-gnu-``` Command line parameter နှစ်ခုကို ထည်ပေးဖို့ လိုအပ်ပါတယ်။ ကျန်တဲ့ Kernel Compile လုပ်တဲ့ Process ကတော့ Host System နဲ့ အတူတူပဲ ဖြစ်ပါတယ်။
 
 ARM arm64 architecture အတွက် Kernel Configuration လုပ်ပါမယ်။ Kernel Compile မလုပ်ခင်မှာ ဒီအဆင့်က မဖြစ်မနေ လုပ်ပေးဖို့ လိုအပ်ပါတယ်။
@@ -77,7 +81,7 @@ Create လုပ်လိုက်တဲ့ Kernel Configuration တွေကိ
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_kernel_configs.png)
 
-Configuration လုပ်ပြီးရင်တော့ Kernel Compile လုပ်လို့ရပါပြီ။ ဒီနေရာမှာ `nproc` ဆိုတဲ့ command သည် ကိုယ့် Computer ရဲ့ CPU core ပေါ်မှာ မူတည်ပြီး အလိုလျောက်တွက်ပြီး Build လုပ်တာ ဖြစ်ပါတယ်။ ကိုယ်တိုင် Manual တွက်ပြီး သတ်မှတ်ပေးလို့လည်း ရပါတယ်။ ဥပမာ `-j4` / `j8` / `j16` /  `j32` စသဖြင့် ကိုယ်ရဲ့ CPU core ပေါ်မှာ မူတည်ပြီ တွက်ချက်သတ်မှတ်ပေးလို့ရပါတယ်။
+Configuration လုပ်ပြီးရင်တော့ Kernel Compile လုပ်လို့ရပါပြီ။
 
 ```bash
 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang -j$(nproc --all)
@@ -85,3 +89,8 @@ ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang -j$(nproc --all)
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_make_build.png)
 
+ကိုယ် Build လိုက်တဲ့ Kernel img ကို Linux kernel source tree ရဲ့ `/arch/arm64/boot/Image.gz` မှာ Kernel Build System က Generate လုပ်ပေးသွားမှာ ဖြစ်ပါတယ်။
+
+![Screenshot](/assets/images/screenshots/img_screenshot_arm64_kernel_img.png)
+
+အခုဆိုရင် Linux Kernel Code တွေကို Modern C-family Compiler တခုဖြစ်တဲ့ Clang/LLVM နဲ့ ပြောပြပေးတာဖြစ်ပါတယ်။ Linux Kernel ကို Compile လုပ်တဲ့ Steps တွေက ဟိုအရင်အစောပိုင်း Kernel versions တွေလောက် မရှုပ်ထွေးတော့ပါဘူး အခုခါမှာ ပိုပြီးရိုးရှင်းလာပါတယ်။
