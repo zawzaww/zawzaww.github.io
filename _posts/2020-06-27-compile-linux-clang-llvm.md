@@ -33,9 +33,7 @@ sudo apt install binutils-aarch64-linux-gnu
 sudo apt install gcc-aarch64-linux-gnu
 ```
 
-# Compiling Kernel with Clang/LLVM
-## Compiling for Host System
-
+# Compiling for Host System
 ကိုယ်သုံးနေတဲ့ Host Linux Systems အတွက် Linux kernel ကို Clang/LLVM နဲ့ Compile လုပ်မယ်ဆိုရင် အရမ်းခက်ခက်ခဲခဲကြီးတော့ မဟုတ်ပါဘူး `CC=clang` ဆိုတဲ့ Command line parameter ထည့်ပြီး Compile လိုက်ရုံပါပဲ။
 
 အရင်ဆုံး Compile မလုပ်ခင်မှာ Kernel Configuration မဖြစ်မနေ လုပ်ပေးဖို့ လိုအပ်ပါတယ်။ Default configuration ပဲ သုံးလိုက်ပါမယ်။ အဲဒီ Kernel Configs တွေက Linux kernel source tree ရဲ့ `arch/<arch>/configs/` အောက်မှာ ရှိနေတာ ဖြစ်ပါတယ်။
@@ -79,7 +77,7 @@ make CC=clang -j$(nproc --all)
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_kernel_img.png)
 
 
-## Cross Compiling for ARM arm64
+# Cross Compiling for ARM arm64
 ဒီအပိုင်းမှာတော့ Host System အတွက် မဟုတ်တော့ပဲ ARM arm64 architecutre အတွက် Cross Compiling လုပ်မှာ ဖြစ်ပါတယ်။ ARM arm64 architecture အတွက် Compile လုပ်မှာ ဖြစ်တဲ့အတွက် ```ARCH=arm64``` နဲ့ ```CROSS_COMPILE=aarch64-linux-gnu-``` Command line parameter နှစ်ခုကို ထည်ပေးဖို့ လိုအပ်ပါတယ်။ ကျန်တဲ့ Kernel Compile လုပ်တဲ့ Process ကတော့ Host System နဲ့ အတူတူပဲ ဖြစ်ပါတယ်။
 
 ARM arm64 architecture အတွက် Kernel Configuration လုပ်ပါမယ်။ Kernel Compile မလုပ်ခင်မှာ ဒီအဆင့်က မဖြစ်မနေ လုပ်ပေးဖို့ လိုအပ်ပါတယ်။
