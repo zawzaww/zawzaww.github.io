@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Contributing to the LINUX Kernel"
+title: "Contributing to the LINUX kernel"
 categories: kernel
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_linux_kernel_contribution.png
