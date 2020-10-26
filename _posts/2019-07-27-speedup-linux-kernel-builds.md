@@ -27,7 +27,7 @@ ccache --version
 sudo apt install ccache
 ```
 
-ဆိုပြီး Ubunt Linux မှာ Install လုပ်နိုင်ပါတယ်။
+ဆိုပြီး Ubuntu Linux မှာ Install လုပ်နိုင်ပါတယ်။
 
 နောက်တခုက .bashrc file ကို ဖွင့်ပြီး Setup လုပ်ဖို့ လိုပါသေးတယ်။
 ccache ရဲ့ dir path ကို export လုပ်ပေးလိုက်ရင် ရပါပြီ။ အဒီ အောက်က သုံးကြောင်း .bashrc file မှာ Add ပေးလိုက်ရင် ရပါပြီ။
