@@ -235,7 +235,7 @@ img-circle {
 
   code {
     padding: 2px 4px;
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-family: 'Source Code Pro', Terminal, monospace;
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;
@@ -246,7 +246,7 @@ img-circle {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font: 1rem Monaco, 'Source Code Pro', Terminal, monospace;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
