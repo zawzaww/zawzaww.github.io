@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Completely Moving to Twitter"
+title: "Moving to Twitter"
 categories: social
 author: "Zaw Zaw"
 permalink: blog/social/move-to-twitter
