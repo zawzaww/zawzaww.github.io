@@ -4,7 +4,6 @@ title: "Gin Android OEMs"
 categories: news
 author: "Zaw Zaw"
 featured-image: /assets/images/featured-images/img_gin_android_oems.jpeg
-permalink: blog/news/gin-android-oems
 ---
 
 ပြီးခဲ့တဲ့ 2018 April လ လောက်မှာ Tech site တော်တော်များများမှာ သတင်းတခုထွက်ခဲ့တယ်။ သတင်းက Android ဖုန်း ထုတ်လုပ်သူ Company တချို့ Android Security Patch Level ကို Users တွေကို လိမ်ခဲ့တယ် ဆိုတဲ့ကိစ္စပါ။ ဘယ်လိုသိခဲ့တာလဲဆိုရင် တကယ်တော်တဲ့ Security Researcher တွေ ရှာတွေ့ခဲလု့ိ Report တင်ခဲ့တဲ့အတွက်ကြောင့်ပါ။ ဘယ်လိုလိမ်ခဲ့တာလဲဆိုရင် သင်ဆိုင်ရာ Android Security Patches တကယ်တမ်း Merge/Install လုပ်ခဲ့မဟုတ်ပဲ အလွယ်နားလည်အောင်ပြောရရင် Settings>About Phone ထဲ Android Security Patch Level ဆိုတဲ့နေရာက Date လေးပဲ Change လိုက်တဲ့ သဘောပါ။

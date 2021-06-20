@@ -2,10 +2,11 @@
 layout: post
 title: "Contributing to the Linux kernel"
 categories: kernel
+tag: [linux, kernel]
+pin: true
 author: "Zaw Zaw"
-featured-image: /assets/images/featured-images/img_linux_kernel_contribution.png
-image-description: "Linux kernel source tree screenshot"
-permalink: blog/kernel/contribute-linux-kernel
+image:
+  src: /assets/images/featured-images/img_linux_kernel_contribution.png
 ---
 
 Linux kernel ကို Contribute လုပ်တဲ့အပိုင်းမှာ ဘယ်လို Contribute လုပ်မလဲဆိုတဲ့ Workflow ကို အခု article မှာ အဓိကထား ပြောသွားမှာဖြစ်ပါတယ်။ Linux kernel က free and open-source software project တခုဖြစ်ပြီး မည်သူမဆို စိတ်ပါ၀င်စားသူတိုင်း Contribute လုပ်နိုင်ပါတယ်။ Linux kernel ကို Contribute လုပ်တဲ့ Workflow က တခြား open-source projects တွေနဲ့ တူမှာ မဟုတ်ပါဘူး။ GitHub သို့မဟုတ် GitLab တို့ကို သုံးပြီး Code တွေကို Contribute လုပ်လို့မရပါဘူး။ Linux kernel မှာ Linux Kernel Mailing List (LKML) ကို သုံးပြီး Git နဲ့ Email ကနေ တဆင့် Kernel Patches တွေကို Submit လုပ်မယ်၊ Kernel Maintainers တွေက Review လုပ်ပေးမယ်။ ပြီးတဲ့နောက် Submit လုပ်လိုက်တဲ့ Kernel Patches နဲ့ ပတ်သက်ပြီး Maintainers တွေ၊ Reviewers တွေနဲ့ Email ကနေ တဆင့် အပြန်အလှန် Discuss လုပ်ပြီး Code တွေကို Merge လုပ်တဲ့နည်းနဲ့ Linux kernel source tree မှာ Contribute လုပ်ရမှာဖြစ်ပါတယ်။

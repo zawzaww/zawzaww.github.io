@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Moving to Twitter"
+title: Moving to Twitter
 categories: social
+tags: [social, twitter]
 author: "Zaw Zaw"
-permalink: blog/social/move-to-twitter
+date: 2021-05-16
 ---
 
 I've decided to move completely to Twitter. Now, I'm going to delete my Facebook account permanently. After 30 days, my Facebook account will be delete. I will start doing it tomorrow.

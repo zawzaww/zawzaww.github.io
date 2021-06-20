@@ -3,9 +3,8 @@ layout: post
 title: "Kernel Design: Monolithic Versus Microkernel"
 categories: kernel
 author: "Zaw Zaw"
-featured-image: /assets/images/featured-images/img_monolithic_microkernel.png
-image-description: "OS Structure Image by: Wikipedia"
-permalink: blog/kernel/monolithic-and-microkernel
+image:
+  src: /assets/images/featured-images/img_monolithic_microkernel.png
 ---
 
 လွန်ခဲ့သော 1992 မှာ ဖြစ်ပွားခဲ့တဲ့ Tanenbaum-Torvalds debate ရဲ့ Origin Thread ကို ဖက်ကြည့်ရင်းကနေ အခု Article ကို ရေးဖြစ်သွားတာပါ။ အခု Article က Tanenbaum-Torvalds debate အပေါ်မှာ အခြေခံထားတယ်လို့ ပြောလို့ရပါတယ်။ Kernel Design ပိုင်းမှာ အသုံးများတဲ့ Monolithic kernel design နဲ့ Microkernel design ရဲ့ ကွာခြားချက်တွေကို အဓိကပြောသွားမှာ ဖြစ်ပါတယ်။ အရင်ဆုံး Tanenbaum-Torvalds debate အကြောင်းကို အတိုချုပ်ပြောပါမယ်။ ပြီးတဲ့နောက်မှာတော့ Monolithic kernel နဲ့ Microkernel ရဲ့ ကွာခြားတဲ့ မတူညီတဲ့ အချက်လက်တွေကို တခုချင်း ပြောပေးသွားမှာ ဖြစ်ပါတယ်။
