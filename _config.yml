@@ -2,7 +2,7 @@
 # The Site Configurations
 #
 
-theme: # Set empty theme
+theme: jekyll-theme-chirpy
 
 baseurl: ''
 
