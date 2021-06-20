@@ -20,7 +20,8 @@ description: >-
 plugins:
   - jekyll-paginate
 
-url: ''
+# MAIN URL
+url: https://zawzaww.github.io
 
 github:
   username: zawzaww
