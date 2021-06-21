@@ -13,8 +13,7 @@ title: Zaw Zaw
 tagline: Systems Programmer/SRE Engineer
 
 description: >-
-  ZAW's personal blog about Systems programming, 
-  Operating systems, Linux kernel and containers.
+  ZAW's Personal Blog
 
 # Jekyll plugins
 plugins:
@@ -51,7 +50,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark
+theme_mode: #[light, dark]
 
 img_cdn: ''
 
@@ -63,7 +62,7 @@ disqus:
   comments: true
   shortname: 'Zaw Zaw'
 
-paginate: 8
+paginate: 6
 
 # ------------ The following options are not recommended to be modified ------------------
 

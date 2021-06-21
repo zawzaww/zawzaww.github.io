@@ -21,10 +21,12 @@
   {% seo title=false %}
 
   <title>
+  {% if page.layout == 'home' %}
+    {{ site.title | append: " | " | append: site.description }}
+  {% endif %}
   {%- unless page.layout == "home" -%}
-    {{ page.title | append: " | "}}
+    {{ page.title | append: " | " | append: site.title}}
   {%- endunless -%}
-    {{ site.title }}
   </title>
 
   {% include favicons.html %}
