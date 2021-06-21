@@ -59,7 +59,7 @@ h1 {
   @extend %heading;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 500;
 }
 
@@ -69,7 +69,7 @@ h2 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 500;
 }
 
@@ -79,7 +79,7 @@ h3 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -89,17 +89,7 @@ h4 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-h5 {
-  @extend %heading;
-  @extend %section;
-  @extend %anchor;
-
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 500;
 }
 
