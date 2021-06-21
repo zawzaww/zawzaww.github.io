@@ -1,4 +1,4 @@
-name: 'Automatic build'
+name: 'GitHub Actions CI'
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ on:
       - LICENSE
 
 jobs:
-  continuous-delivery:
+  continuous-deployment:
 
     runs-on: ubuntu-latest
 
@@ -25,7 +25,7 @@ jobs:
           ruby-version: 2.7
           bundler-cache: true
 
-      - name: Check baseurl
+      - name: Check BaseURL
         run: |
           baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
           if [[ -n $baseurl ]]; then
@@ -38,7 +38,7 @@ jobs:
         run: |
           bundle exec jekyll b -d "_site$BASE_URL"
 
-      - name: Deploy
+      - name: Deploy Site
         run: |
           if [[ -n $BASE_URL ]]; then
             mv _site$BASE_URL _site-rename
