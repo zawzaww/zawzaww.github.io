@@ -46,11 +46,11 @@ html[mode=dark] {
 }
 
 body {
+  font-family: 'Red Hat Display', sans-serif;
   line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Red Hat Display', sans-serif;
 }
 
 /* --- Typography --- */
@@ -59,7 +59,7 @@ h1 {
   @extend %heading;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 500;
 }
 
@@ -69,7 +69,7 @@ h2 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 35px;
+  font-size: 42px;
   font-weight: 500;
 }
 
@@ -79,7 +79,7 @@ h3 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -89,7 +89,7 @@ h4 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -202,8 +202,8 @@ footer {
     padding: 0.3rem 0.5rem;
     margin: 0 0.35rem 0.5rem 0;
     &:hover {
-      background-color: #2a408e;
-      border-color: #2a408e;
+      background-color: #008080;
+      border-color: #008080;
       color: #fff;
       transition: none;
     }
