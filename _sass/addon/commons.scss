@@ -696,12 +696,12 @@ $sidebar-display: "sidebar-display";
     height: $tab-height;
     &:hover {
       .nav-link {
-        color: #326ce5;
+        color: #008080;
       }
     }
     &.active {
       .nav-link {
-        color: #326ce5;
+        color: #008080;
       }
     }
   }
@@ -810,7 +810,7 @@ $sidebar-display: "sidebar-display";
 
     a:hover,
     #mode-toggle-wrapper i:hover {
-      color: #326ce5;
+      color: #008080;
     }
 
   } // .sidebar-bottom

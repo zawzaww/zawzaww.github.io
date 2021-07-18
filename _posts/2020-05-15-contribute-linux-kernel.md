@@ -3,7 +3,6 @@ layout: post
 title: "Contributing to the Linux kernel"
 categories: kernel
 tag: [linux, kernel]
-pin: true
 author: "Zaw Zaw"
 image:
   src: /assets/images/featured-images/img_linux_kernel_contribution.png
