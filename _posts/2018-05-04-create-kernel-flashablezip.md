@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Creating Kernel FlashableZip for Android"
+title: Creating Kernel FlashableZip For Android
 categories: android
-author: "Zaw Zaw"
+author: Zaw Zaw
 featured-image: /assets/images/featured-images/img_create_kernel_flashablezip.png
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Good Courses and Books to Learn C/C++"
 categories: learn
-author: "Zaw Zaw"
+author: Zaw Zaw
 featured-image: /assets/images/featured-images/img_c_cpp_programming.png
 image-description: "C and C++ Logo Image by: ByteXL"
 ---

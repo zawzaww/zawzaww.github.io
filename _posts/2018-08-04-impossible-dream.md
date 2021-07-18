@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The Impossible Dream"
-categories: thought
-author: "Zaw Zaw"
+title: The Impossible Dream
+categories: [random, thoughts]
+author: Zaw Zaw
 featured-image: /assets/images/featured-images/img_impossible_dream.jpg
 ---
 

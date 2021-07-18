@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Completely Moved to Twitter Platform
-categories: social
-tags: [social, twitter]
-author: "Zaw Zaw"
+categories: twitter
+author: Zaw Zaw
 ---
 
 I've decided to move completely to Twitter. Now, I'm going to delete my Facebook account permanently. After 30 days, my Facebook account will be delete. I will start doing it tomorrow.

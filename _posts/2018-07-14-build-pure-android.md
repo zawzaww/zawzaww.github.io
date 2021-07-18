@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Building Custom Pure Android OS"
+title: Building Custom Pure Android OS
 categories: android
-author: "Zaw Zaw"
+author: Zaw Zaw
 featured-image: /assets/images/featured-images/img_build_pure_android.jpeg
 ---
 
