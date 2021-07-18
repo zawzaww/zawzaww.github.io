@@ -2,7 +2,7 @@
 title: PHOTOGRAPHY
 layout: page
 icon: fas fa-image
-order: 4
+order: 5
 ---
 
 ![Photography](https://s20.postimg.cc/5h3fp57ot/mobilephotography-zatt.png){: width=100% height=100%}
