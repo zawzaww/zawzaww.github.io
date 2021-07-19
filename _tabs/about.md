@@ -2,7 +2,7 @@
 title: ABOUT ME
 layout: page
 icon: fas fa-info
-order: 6
+order: 7
 ---
 
 ![About Me](https://i.postimg.cc/0NwLpgtN/zawzaw-img.png){: width="200" height="200" style="max-width: 100%" .normal}
