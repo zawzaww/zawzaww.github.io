@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Completely Moved to Twitter Platform
+title: "Completely Moved to Twitter"
 categories: twitter
 author: Zaw Zaw
 ---
