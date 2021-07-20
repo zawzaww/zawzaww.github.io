@@ -10,16 +10,13 @@ lang: en-US
 
 title: Zaw Zaw
 
-tagline: Systems Programmer / SRE Engineer
+tagline: "Keep it minimal, Keep it simple."
 
-description: >-
-  ZAW's Personal Blog
+description: ZAW's Personal Blog
 
-# Jekyll plugins
 plugins:
   - jekyll-paginate
 
-# MAIN URL
 url: https://zawzaww.github.io
 
 github:
@@ -43,13 +40,6 @@ google_analytics:
     proxy_endpoint:
     cache_path:
 
-# Prefer color scheme setting.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
 theme_mode: light
 
 img_cdn: ''
@@ -62,15 +52,12 @@ disqus:
   comments: true
   shortname: 'Zaw Zaw'
 
-paginate: 8
-
-# ------------ The following options are not recommended to be modified ------------------
+paginate: 6
 
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    # default_lang: console
     span:
       line_numbers: false
     block:
@@ -86,28 +73,26 @@ collections:
 defaults:
   -
     scope:
-      path: ''          # An empty string here means all files in the project
+      path: ''
       type: posts
     values:
       layout: post
-      comments: true    # Enable comments in posts.
-      toc: true         # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /posts/:title/
   -
     scope:
       path: _drafts
     values:
-      comments: false
+      comments: true
   -
     scope:
       path: ''
-      type: tabs             # see `site.collections`
+      type: tabs
     values:
       layout: page
       permalink: /:title/
-      dynamic_title: true    # Hide title in mobile screens.
+      dynamic_title: true
 
 sass:
   style: compressed
