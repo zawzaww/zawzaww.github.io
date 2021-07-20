@@ -52,7 +52,7 @@ disqus:
   comments: true
   shortname: 'Zaw Zaw'
 
-paginate: 6
+paginate: 8
 
 kramdown:
   syntax_highlighter: rouge
