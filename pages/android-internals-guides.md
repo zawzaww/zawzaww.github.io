@@ -35,8 +35,6 @@ Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=758161
 ## Source Code
 [https://github.com/zawzaww/androidoss-guides](https://github.com/zawzaww/androidoss-guides)
 
-![Screenshot](/assets/images/screenshots/img_screenshot_host_make_defconfig.png)
-
 ---
 
 ## License
