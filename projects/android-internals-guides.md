@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Android OSS Guides
+layout: project
+title: Android Internals Guides
 permalink: /projects/android-internals-guides
 ---
 

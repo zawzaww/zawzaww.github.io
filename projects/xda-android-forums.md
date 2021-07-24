@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Projects on XDA-Developers Forums
 permalink: /projects/xda-android-forums
 ---

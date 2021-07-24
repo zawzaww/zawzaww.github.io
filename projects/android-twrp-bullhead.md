@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Android TWRP Build for Google Nexus 5X
 permalink: /projects/android-twrp-bullhead
 ---

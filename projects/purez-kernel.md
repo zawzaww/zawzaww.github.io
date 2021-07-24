@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: PureZ Kernel For Android Devices
 permalink: /projects/purez-kernel
 ---
