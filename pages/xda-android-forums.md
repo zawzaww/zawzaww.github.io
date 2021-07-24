@@ -1,14 +1,11 @@
 ---
-layout: project
+layout: page
 title: Projects on XDA-Developers Forums
+dynamic_title: true
 permalink: /projects/xda-android-forums
 ---
 
-# Projects on XDA-Developers Forums
-
----
-
-![Image](https://i.postimg.cc/3xyrL0SD/xda-icon.png){: width="200" height="200" }
+![Image](https://i.postimg.cc/3xyrL0SD/xda-icon.png){: width="200" height="200" style="max-width: 100%" .normal}
 
 Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA-Developers Forums.
 

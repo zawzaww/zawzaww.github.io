@@ -1,14 +1,11 @@
 ---
-layout: project
+layout: page
 title: Android TWRP Build for Google Nexus 5X
+dynamic_title: true
 permalink: /projects/android-twrp-bullhead
 ---
 
-# Android TWRP Build for Google Nexus 5X
-
----
-
-![Image](https://play-lh.googleusercontent.com/2HtVAF5zfNMlmKhF0QYqCSr1rsstB1btNfdKl7WvGTcZkOSKCYNxdXwsSizx9VhiPg){: width="200" height="200" }
+![Image](https://play-lh.googleusercontent.com/2HtVAF5zfNMlmKhF0QYqCSr1rsstB1btNfdKl7WvGTcZkOSKCYNxdXwsSizx9VhiPg){: width="200" height="200" style="max-width: 100%" .normal}
 
 TWRP Recovery 3.2.0 with F2FS File System Support for Google Nexus 5X.
 

@@ -1,14 +1,10 @@
 ---
-layout: project
+layout: page
 title: Android Internals Guides
+dynamic_title: true
 permalink: /projects/android-internals-guides
 ---
 
-# Android Internals Guides
-
----
-
-<br>
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Android_robot_head.svg/1200px-Android_robot_head.svg.png){: width="300" height="160" style="max-width: 100%" .normal}
 
 Android OS/Kernel-Based Guides, How-To Articles and Android Internals Guides.
@@ -38,6 +34,8 @@ Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=758161
 
 ## Source Code
 [https://github.com/zawzaww/androidoss-guides](https://github.com/zawzaww/androidoss-guides)
+
+![Screenshot](/assets/images/screenshots/img_screenshot_host_make_defconfig.png)
 
 ---
 
