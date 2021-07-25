@@ -7,11 +7,11 @@ order: 7
 
 ![About Me](https://i.postimg.cc/0NwLpgtN/zawzaw-img.png){: width="200" height="200" style="max-width: 100%" .normal}
 
-<p>Systems Programmer/SRE Engineer focused on Linux</p>
+Systems Programmer / SRE Engineer focused on LINUX systems
 
-<p>A SRE engineer at Frontiir, working on RnD/DevSA, systems automation team. I'm a former Recognized Developer and Contributor at XDA-Developers Android Forums. I've contributed to Android kernel and AOSP-based firmware projects on XDA Forums.</p>
+A Linux/SRE engineer at Frontiir, working on RnD/DevSA, systems automation team. And, Former Recognized developer/contributor at XDA Forums. I've contributed to Android, Linux kernel and  Android Open Source Project, AOSP based Android custom firmware projects on XDA Forums.
 
-<p>I always love to build systems software and command-line tools on Linux to communicate with hardware devices. Currently, I'm working on Linux, Cloud native, CI/CD automation and Docker containers. I have always had a keen interest in Computer hardware/software, Systems programming, Cloud computing, Linux kernel and Containers. And, also interested in photography.</p>
+I've always loved working with Low-level systems software and command-line tools on Linux. Currently, I'm working on Linux, Cloud native and Containers. I've always had a keen interest in Computer hardware/software, Systems programming, Linux kernel hacking, Cloud native and Containers. And, also love to take photograph and interested in nature photography.
 <br>
 
 ---
