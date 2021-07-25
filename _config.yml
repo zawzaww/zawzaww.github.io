@@ -80,7 +80,7 @@ defaults:
       comments: true
       toc: true
       permalink: /posts/:title/
-      dynamic_title: true
+      dynamic_title: false
   -
     scope:
       path: _drafts
