@@ -14,9 +14,6 @@ tagline: "Keep it minimal, Keep it simple."
 
 description: ZAW's Personal Blog
 
-plugins:
-  - jekyll-paginate
-
 url: https://zawzaww.github.io
 
 github:
@@ -49,8 +46,8 @@ avatar: https://i.postimg.cc/9XwV2NZV/zawzaw.png
 toc: true
 
 disqus:
-  comments: true
-  shortname: 'Zaw Zaw'
+  comments: false  # boolean type, the global switch for posts comments.
+  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 paginate: 8
 
