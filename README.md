@@ -1,5 +1,7 @@
 # My Personal Blog and Website
 
+![github-pages-ci](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/github-pages-ci.yml/badge.svg)
+
 Personal blog and website: https://zawzaww.github.io
 
 ## License
