@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Building Kernel For Android Devices"
-author: Zaw Zaw
+author: "Zaw Zaw"
+categories: [Kernel]
+tags: [android, kernel]
 image:
   src: /assets/images/featured-images/img_build_android_kernel.jpeg
 ---

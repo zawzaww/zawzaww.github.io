@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Understanding the Android OS Source tree"
-author: Zaw Zaw
+author: "Zaw Zaw"
+categories: [Operating Systems]
+tags: [aosp, android]
 image:
   src: /assets/images/featured-images/img_understand_android_os.png
 ---

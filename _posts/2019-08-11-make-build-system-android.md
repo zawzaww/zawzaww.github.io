@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Make Build System in Android OS"
-author: Zaw Zaw
+author: "Zaw Zaw"
+categories: [Operating Systems]
+tags: [make, android]
 image:
   src: /assets/images/featured-images/img_make_build_android.png
 ---

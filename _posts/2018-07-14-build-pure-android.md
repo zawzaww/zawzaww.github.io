@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Building the Pure Android from Source Code"
-author: Zaw Zaw
+author: "Zaw Zaw"
+categories: [Operating Systems]
+tags: [aosp, android]
 image:
   src: /assets/images/featured-images/img_build_pure_android.jpeg
 ---

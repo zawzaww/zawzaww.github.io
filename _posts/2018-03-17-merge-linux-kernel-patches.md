@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Merging Upstream Linux Kernel Patches For Android"
-author: Zaw Zaw
+author: "Zaw Zaw"
+categories: [Kernel]
+tags: [android, linux, kernel]
 image:
   src: /assets/images/featured-images/img_merge_linux_kernel_patches.jpeg
 ---
