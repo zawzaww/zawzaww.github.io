@@ -23,7 +23,8 @@ Linux kernel ကို Contribute လုပ်တဲ့အပိုင်းမ�
 
 ဆိုပြီး ရှိမှာဖြစ်ပါတယ်။ အောက်မှာ တခုချင်းစီအတွက် တဆင့်ချင်း အသေးစိတ်ပြောပြသွားမှာဖြစ်ပါတယ်။
 
-# Setup Email Client
+## Setup Email Client
+
 ပထမဆုံးအနေနဲ့ gitconfig မှာ Email Client ကို Setup လုပ်ပေးဖို့ လိုအပ်ပါတယ်။
 
 Text Editor တခုခုကို သုံးပြီး `.gitconfig` မှာ ကိုသုံးမယ့် Email Client ကို Setup လုပ်ပါမယ်။
@@ -54,7 +55,8 @@ For example: Gmail
         ui = auto
 ```
 
-# Make Fixes
+## Make Fixes
+
 Linux kernel main source tree ကို [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git) ကနေ တဆင့် source code ကို ရယူနိုင်ပါတယ်။ ဘာတွေ Fix လုပ်မလဲ ဘယ်အပိုင်းတွေကို Fix ပြီး Contribute လုပ်မလဲဆိုတာတော့ ပြောရခက်ပါတယ်။ တခြား Software project တွေလိုမျိုး လုပ်နေရင်းနဲ့ သိလာတာမျိုးပါပဲ။ Kernel Hacking ပိုင်း စိတ်၀င်စားရင်တော့ [Linux Kernel Newbies](https://kernelnewbies.org/KernelHacking) မှာ လေ့လာနိုင်ပါတယ်။ ကိုယ်ရဲ့ စိတ်၀င်စားမှုပေါ်မှာ မူတည်ပါတယ်။ ပထမ အစပိုင်းမှာ Linux kernel တခုလုံးရဲ့ Subsystem အကုန်လုံးကို လိုက်လုပ်စရာ မလိုပါဘူး။ Linux kernel subsystems တွေကို Category ခွဲကြည့်လိုက်ရင် File Systems: `/linux/fs`, Kernel Device Drivers/Modules: `/linux/drivers`, Networking: `/linux/net`, Kernel Security (e.g SELinux, Kernel lockdown and etc..): `/linux/security` စသဖြင့် Kernel Subsystems တွေက အများကြီး ရှိနေပါတယ်။ တခုခုကို အစပိုင်း Specialize လုပ်ပြီး လေ့လာသင့်ပါတယ်။ တခြား Kernel Subsystem နဲ့စာရင် တကယ့် Embedded Linux World မှာ Embedded Hardware Devices အတွက် Kernel Device Drivers/Modules တွေ ရေးတာက ပိုပြီး Popular ဖြစ်ပြီး လေ့လာလိုက်စားသူ များပါတယ်။ ကျွန်တော့်အနေနဲ့လည်း တခြား Kernel Subsystems တွေကို အများကြီး မလုပ်ဖူးသေးပါဘူး။ Kernel Device Drivers အပိုင်းမှာပဲ Specialize လုပ်ပြီး အဓိကထားပြီး လေ့လာနေတဲ့သူတယောက်ပါပဲ။
 
 Linux Kernel Device Drivers ရေးတာနဲ့ ပတ်သက်ပြီ: Recommend ပေးချင်တဲ့ စာအုပ်တအုပ်ရှိပါတယ်။ [Linux Device Drivers, Third Edition](https://www.oreilly.com/library/view/linux-device-drivers/0596005903/) စာအုပ်သည် Linux Kernel Device Drivers ကို လေ့လာဖို့အတွက် ကောင်းတဲ့စာအုပ်တအုပ်ပဲ ဖြစ်ပါတယ်။ အခုအခါ O'Reilly Open Books Project မှာ Creative Commons Attribution-ShareAlike 2.0 license အောက်ကနေ free book အနေနဲ့ ရယူနိုင်ပါတယ်။
@@ -83,7 +85,7 @@ Fixed kernel build error in LLVM/Clang compiler version 9: `linux/arch/x86/inclu
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_fixes.png)
 <p align="center"><sub><sup>Architecture specific x86_64 bit operations: linux/arch/86/include/asm/bitops.h</sup></sub></p>
 
-# Build Kernel Code
+## Build Kernel Code
 ဒီနေရာမှာတော့ ကိုယ်ပြင်လိုက်တဲ့ Kernel Code က ဘယ်လို Build error တွေ ရှိလား၊ မရှိဘူးလား ဆိုတာကို ပြန် Compile လုပ်ပြီး Testing လုပ်တဲ့အပိုင်းဖြစ်ပါတယ်။
 
 Kernel source tree ကို သွားပြီး Kernel configuration လုပ်ပြီး Compile လုပ်ပါမယ်။ Compiler က Default compiler ဖြစ်တဲ့ GCC ကို မသုံးဘဲ Clang/LLVM ကို ကျွန်တော်က သုံးတာဖြစ်တာကြောင့် `CC=clang` ဆိုပြီး ထည့်ပေးတာဖြစ်ပါတယ်။ Clang/LLVM Compiler နဲ့ Linux Kernel Build လုပ်တဲ့အကြောင်းကို [Compiling Linux Kernel with Clang/LLVM Compiler](https://zawzaww.github.io/blog/kernel/compile-linux-clang-llvm) article မှာ ရေးထားပါတယ်။
@@ -100,12 +102,14 @@ make CC=clang -j$(nproc --all)
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_recompile_kernel_complete.png)
 
-# Git diff
+## Git diff
+
 ကိုယ်ပြင်ထားတာကို `git diff` လုပ်ပြီး Changes တွေကို အရင် ကြည့်ကြည့်ပါမယ်။
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_diff.png)
 
-# Git commit
+## Git commit
+
 ကိုယ် Change လိုက်တဲ့ Code တွေကို `git commit` လုပ်ပါမယ်။ ဒီနေရာမှာ ပြီးပြီရောပုံစံမျိုး commit လုပ်လို့မရပါဘူး တခြားသူတွေလည်း ဖက်လိုက်ရင် နားလည်အောင် သေချာရေးပေးဖို့လိုပါတယ်။
 
 ```bash
@@ -114,12 +118,14 @@ git commit -a
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_commit.png)
 
-# Git show
+## Git show
+
 ကိုယ် commit လုပ်လိုက်တဲ့ commite messages တွေနဲ့ changes တွေကို `git show` နဲ့ ပြန်ကြည့်နိုင်ပါတယ်။
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_show.png)
 
-# Git format-patch
+## Git format-patch
+
 ဒီနေရာမှာ ကိုယ်လုပ်လိုက်တဲ့ Fixes တွေကို patch အဖြစ် Generate လုပ်မှာ ဖြစ်ပါတယ်။ နောက်တဆင့်မှာ Generate လုပ်လိုက်တဲ့ Kernel Patches တွေကို Email ကနေ Submit လုပ်မှာ ဖြစ်ပါတယ်။
 
 ကိုယ့်ရဲ့ Local branch တွေကို `git branch` နဲ့ အရင်ကြည့်ပါမယ်။
@@ -140,7 +146,8 @@ Generate လုပ်လိုက်တဲ့ patch file ကို Text Editor �
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_format_patch.png)
 
-# Check Kernel Patch
+## Check Kernel Patch
+
 Linux kernel source tree မှာ အသုံး၀င်တဲ့ Tools တွေ Scripts တွေ အများကြီးရှိနေပါတယ်။ ကိုယ်ရဲ့ Kernel Patch ကို Email ကနေ Submit မလုပ်ခင် ဘယ်လို  Errors တွေ၊ ဘယ်လို Warnings တွေ ရှိလဲ ဆိုတာကို `checkpatch.pl` နဲ့ Check လုပ်နိုင်ပါတယ်။
 
 Linux kernel source tree မှာ `checkpatch.pl` ကို Run ပေးဖို့လိုပါတယ်။
@@ -151,7 +158,8 @@ Linux kernel source tree မှာ `checkpatch.pl` ကို Run ပေးဖိ
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_checkpatch.png)
 
-# Get Kernel Maintainers
+## Get Kernel Maintainers
+
 Kernel Patch ကို ဘယ် Kernel maintainers ဆီကို ပို့ရမလဲဆိုတာ ခေါင်းစားစရာ မလိုပါဘူး။ ကိုယ့်ရဲ့ Patch ကို Email ကနေ Submit မလုပ်ခင်မှာ ဘယ် Maintainer ဆီကို ပို့မလဲဆိုတာကို `get_maintainer.pl` နဲ့ ကြည့်နိုင်ပါတယ်။ Linux kernel subsystem တခုချင်းစီအလိုက် maintainers တွေ အသီးသီးရှိပါတယ်။ Patch ကို မပို့ခင်မှာ ဘယ် Maintainer ဆီကို ကိုယ့်ရဲ့ Patch ကို ပို့ရမလဲဆိုတာ သိထားဖို့လိုပါတယ်။
 
 Linux kernel tree မှာ `get_maintainer.pl` ကို Run ပေးဖို့ လိုပါတယ်။
@@ -162,7 +170,8 @@ Linux kernel tree မှာ `get_maintainer.pl` ကို Run ပေးဖို
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_get_maintainers.png)
 
-# Git send-mail
+## Git send-mail
+
 အပေါ်ကအဆင့်တွေ ပြီးသွားရင် Patch ကို `git send-mail` နဲ့ သက်ဆိုင်ရာ Maintainers တွေဆီ ပို့ပေးမှာဖြစ်ပါတယ်။
 
 ```bash

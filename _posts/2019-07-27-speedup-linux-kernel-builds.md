@@ -9,10 +9,12 @@ image:
 
 Ccache (Compiler Cache) ကိုသုံးပြီး Linux kernel compilation time ကို ပုံမှန်ထက်မြန်အောင် ဘယ်လို Setup လုပ်ပြီး Build မလဲဆိုတာကို ဒီ article မှာ အဓိကထားပြီး ပြောသွားမှာဖြစ်ပါတယ်။ ပုံမှန်ဆိုရင် ကျွန်တော်ရဲ့ CPU အနိမ့်နဲ့ Laptop computer လေးပေါ်မှာ Linux kernel ကို Compile လုပ်ရတဲ့အချိန်က 30mins လောက် အချိန်ပေးနေရပါတယ်။ အဲဒါကြောင့် သိပ်ပြီးတော့ အဆင်မပြေဘူး။ အဒီပြဿနာကို Ccache နဲ့ ဖြေရှင်းနိုင်ပါတယ်။ Ccache နဲ့ Compile လုပ်ရင်တော့ 3 - 5 mins လောက်ထိ မြန်သွားပါတယ်။
 
-# What is Ccache?
+## What is Ccache?
+
 [Ccache (Compiler Cache)](https://ccache.dev/) က C, C++, Objective-C နဲ့ Objective-C++ Code တွေကို Compile လုပ်တဲ့နေရမှာ Compilation time ကို Speed up  လုပ်ဖို့ အဓိက သုံးပါတယ်။
 
-# Installation and Setup Ccache
+## Installation and Setup Ccache
+
 ပထမဆုံးအနေနဲ့ ကိုယ့်ရဲ့ GNU/Linux machine ထဲမှာ Ccache package Install လုပ်ထားဖို့လိုပါတယ်။
 ကိုယ် Install လုပ်ထားတဲ့ Ccache version ကို check ချင်ရင်တော့
 
@@ -68,7 +70,8 @@ cache size                           2.5 GB
 max cache size                      32.0 GB
 ```
 
-# Building Linux Kernel with Ccache
+## Building Linux Kernel with Ccache
+
 Linux kernel source directory ကို သွားပြီး ပထမက Compile လုပ်ထားတဲ့ Output files တွေ ရှိရင် Clean လုပ်ပေးဖို့ လိုပါတယ်။
 
 ```bash

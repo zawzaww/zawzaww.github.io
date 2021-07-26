@@ -12,7 +12,8 @@ Android OS-level ပိုင်းမှာ အဓိကသုံးတဲ့ B
 
 ဒီ Blog post မှာ Android system app တခုအတွက် Make နဲ့အတူ Build automation လုပ်ဖို့ Makefile flags တွေ ရေးတဲ့အကြောင်းကို ဆက်ပြောသွားမှာဖြစ်ပါတယ်။
 
-# Writing Makefiles
+## Writing Makefiles
+
 AOSP မှာ DeskClock ဆိုတဲ့ Android app project တခု အတွက် Android.mk syntax ကို Example တခု အနေနဲ့ အရင်လေ့လာကြည့်နိုင်ပါတယ်။
 
 https://android.googlesource.com/platform/packages/apps/DeskClock/+/refs/tags/android-9.0.0_r47/Android.mk
@@ -108,11 +109,12 @@ include $(call all-makefiles-under, $(LOCAL_PATH))
 
 ဆိုပြီး ထည့်ပေးရပါမယ်။
 
-My AudioWaveMaker's Android.mk
+AudioWaveMaker Android app's Android.mk
 
 <script src="https://gist.github.com/zawzaww/5593df85c5d93392e2cb0345d7e3b329.js"></script>
 
-# Adding Product Packages
+## Adding Product Packages
+
 သက်ဆိုင်ရာ App အတွက် Android.mk file ရေးပြီးသွားပြီ ဆိုရင် ကိုယ် lunch လုပ်မယ့် device tree ရဲ့ Makefile မှာ Android app ရဲ့ PRODUCT_PACKAGES ကို ထည့်ပေးဖို့လိုပါတယ်။ ဘာကြောင့်လဲဆိုတော့ အဲဒီ lunch လိုက်တဲ့ target device မှာ app ရဲ့ PRODUCT_PACKAGES ကို add ထားမှ Build system က packages/apps/ အောက်က ကိုယ့်ရဲ့ android app package ကို compile လုပ်ပေးမှာဖြစ်ပါတယ်။
 
 Example: for Nexus 5X: `Android-OS/device/lge/bullhead/bullhead.mk`
@@ -122,23 +124,24 @@ PRODUCT_PACKAGES += \
     AudioWaveMaker
 ```
 
-# Compiling System img with Make
+## Compiling System img with Make
+
 အရင်ဆုံး Android System တခုလုံးကို Compile လုပ်စရာမလိုပဲ ကိုယ် Add လိုက်တဲ့ app project တခုတည်းကိုပဲ `mma package-name` နဲ့ Compile လုပ်ကြည့်နိုင်ပါတယ်။ ပြီးမှ Android system တခုလုံးကို Compile လုပ်တာ ပိုကောင်းပါတယ်။
 
 Example: for AudioWaveMaker app project
 
-```
+```sh
 . build/envsetup.sh
 lunch target_android_device
 ```
 
-```
+```sh
 mma AudioWaveMaker -j$(nproc --all)
 ```
 
 အဲဒီအဆင့် အောင်မြင်သွားပြီဆိုရင်တော့ Android System တခုလုံးကို ပြန်ပြီး Recompile လုပ်နိုင်ပါပြီ။
 
-```
+```sh
 make -j$(nproc --all)
 ```
 
