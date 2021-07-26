@@ -2,52 +2,86 @@
 # The Site Configurations
 #
 
+# Import the jekyll theme.
 theme: jekyll-theme-chirpy
 
+# Only if your site type is GitHub Project sites and doesn't have a custom domain,
+# change below value to '/projectname'.
 baseurl: ''
 
+# The language of the site layout › http://www.lingoes.net/en/translator/langcode.htm
+# Go to folder '_data/locales' to check the available language options
 lang: en-US
 
+# The main site title.
 title: Zaw Zaw
 
+ # It will display as the sub-title name.
 tagline: "Keep it minimal, Keep it simple."
 
+# Used by seo meta and the atom feed.
 description: ZAW's Personal Blog
 
+# The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaww.github.io
 
+# GitHub username.
 github:
   username: zawzaww
 
+# Twitter username.
 twitter:
-  username: zawzaw_me
+  username: zawzawce
 
+# Change to your full name.
+# It will be displayed as the default author of the posts and the copyright owner in the footer.
 social:
   name: Zaw Zaw
   email: zawzthein@outlook.com
   links:
-    - https://twitter.com/zawzaw_me
+    - https://twitter.com/zawzawce
     - https://github.com/zawzaww
 
+# change to your verification string
 google_site_verification: google_meta_tag_verification
 
+# Set Google analytics.
 google_analytics:
   id: ''
   pv:
     proxy_endpoint:
     cache_path:
 
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
 theme_mode: light
 
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
 img_cdn: ''
 
+# The avatar on sidebar, support local or CORS resources.
 avatar: https://i.postimg.cc/9XwV2NZV/zawzaw.png
 
+# Boolean type, the global switch for ToC in posts.
 toc: true
 
+# Boolean type, the global switch for posts comments.
 disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: true
+  shortname: 'zawzaw'
 
 paginate: 8
 
