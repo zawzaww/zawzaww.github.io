@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Building Linux Kernel with Clang/LLVM"
-categories: [linux, kernel]
-author: Zaw Zaw
+categories: [Kernel]
+tags: [linux, clang, compiler]
+author: "Zaw Zaw"
 image:
   src: /assets/images/featured-images/img_clang_llvm_linux.png
 ---

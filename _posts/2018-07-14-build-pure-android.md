@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Building Custom Pure Android OS"
-categories: android
 author: Zaw Zaw
 image:
   src: /assets/images/featured-images/img_build_pure_android.jpeg

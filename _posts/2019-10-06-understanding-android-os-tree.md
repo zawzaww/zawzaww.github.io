@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Understanding the Android OS Source tree"
-categories: android
 author: Zaw Zaw
 image:
   src: /assets/images/featured-images/img_understand_android_os.png

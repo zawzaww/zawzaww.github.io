@@ -3,10 +3,10 @@
 panel:
   lastmod: Recent Update
   trending_tags: Trending Tags
-  toc: Contents
+  toc: Table of Contents
 
 post:
-  relate_posts: Further Reading
+  relate_posts: Related Blog Posts
   share: Share
   button:
     next: Newer

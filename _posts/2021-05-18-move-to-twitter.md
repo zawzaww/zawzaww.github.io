@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Completely Moved to Twitter"
-categories: twitter
 author: Zaw Zaw
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Compiling Pure AOSP From Source Code"
-categories: android
 author: Zaw Zaw
 image:
   src: /assets/images/featured-images/img_download_build_aosp_android.png
