@@ -1,8 +1,9 @@
 ---
 layout: page
-title: PureZ Kernel
+title: PureZ Android Kernel
 dynamic_title: true
-permalink: /projects/purez-kernel
+toc: true
+permalink: /projects/purez-android-kernel
 ---
 
 ![Image](https://i.postimg.cc/4Nyky72N/purez.png){: width="200" height="200" style="max-width: 100%" .normal}

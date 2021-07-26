@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Android TWRP Build for Google Nexus 5X
+title: TWRP Build for Google Nexus 5X
 dynamic_title: true
+toc: true
 permalink: /projects/android-twrp-bullhead
 ---
 

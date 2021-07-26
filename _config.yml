@@ -111,7 +111,7 @@ defaults:
       comments: true
       toc: true
       permalink: /posts/:title/
-      dynamic_title: false
+      dynamic_title: true
   -
     scope:
       path: _drafts

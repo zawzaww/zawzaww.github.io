@@ -2,6 +2,7 @@
 layout: post
 title: "Speeding Up Linux Kernel Builds with Compiler Cache"
 author: Zaw Zaw
+pin: true
 image:
   src: /assets/images/featured-images/img_speedup_linux_kernel_builds.png
 ---

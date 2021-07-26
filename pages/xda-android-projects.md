@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Projects on XDA-Developers Forums
+title: XDA Android Projects
 dynamic_title: true
-permalink: /projects/xda-android-forums
+toc: true
+permalink: /projects/xda-android-projects
 ---
 
 ![Image](https://i.postimg.cc/3xyrL0SD/xda-icon.png){: width="200" height="200" style="max-width: 100%" .normal}

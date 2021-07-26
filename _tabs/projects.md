@@ -9,7 +9,7 @@ order: 4
 
 ---
 
-<h3><a href="https://zawzaww.github.io/projects/purez-kernel">github/purez-kernel</a></h3>
+<h3><a href="https://zawzaww.github.io/projects/purez-android-kernel">github/purez-android-kernel</a></h3>
 <p>PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices.</p>
 <br>
 
@@ -33,5 +33,5 @@ order: 4
 
 ---
 
-<h3><a href="https://zawzaww.github.io/projects/xda-android-forums">github/xda-android-forums</a></h3>
+<h3><a href="https://zawzaww.github.io/projects/xda-android-projects">github/xda-android-projects</a></h3>
 <p>Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA-Developers Forums.</p>

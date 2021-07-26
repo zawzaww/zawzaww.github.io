@@ -2,6 +2,7 @@
 layout: page
 title: Android Internals Guides
 dynamic_title: true
+toc: true
 permalink: /projects/android-internals-guides
 ---
 
