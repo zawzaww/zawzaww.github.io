@@ -3,16 +3,17 @@ layout: page
 title: Android Internals Guides
 dynamic_title: true
 toc: true
-permalink: /projects/android-internals-guides
+permalink: /android-internals-guides
 ---
+
+#### Android OS-based Guides, How-To Articles and Android Internals Guides
 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Android_robot_head.svg/1200px-Android_robot_head.svg.png){: width="300" height="160" style="max-width: 100%" .normal}
 
-Android OS/Kernel-Based Guides, How-To Articles and Android Internals Guides.
-
 ---
 
-## Content
+## Contents
+
 - [How To Build Custom Android OS (Pure Android)](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Custom-Android-OS.md)
 - [How To Build Android Kernel](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Building-Android-Kernel.md)
 - [How To Create Kernel FlashableZip](https://github.com/zawzaww/androidoss-guides/blob/android/guides/Creating-Kernel-FlashableZip.md)
@@ -24,21 +25,19 @@ Android OS/Kernel-Based Guides, How-To Articles and Android Internals Guides.
 ---
 
 ## Blog Posts
-You can also read How-To articles and Guides on my [Personal Blog.](https://zawzaww.github.io/blog)
 
----
-
-## Author
-Zaw Zaw : [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611), [@GitHub](https://github.com/zawzaww), [@Twitter](https://twitter.com/zawzawwme) and [@Telegram](https://t.me/zawzaww)
+You can also read How-To articles and Guides on my [Personal Blog.](https://zawzaww.github.io/tags/android/)
 
 ---
 
 ## Source Code
+
 [https://github.com/zawzaww/androidoss-guides](https://github.com/zawzaww/androidoss-guides)
 
 ---
 
 ## License
+
 [Android OSS Guides](https://github.com/zawzaww/androidoss-guides) are licensed under MIT License. See the [LICENSE](https://github.com/zawzaww/androidoss-guides/blob/android/LICENSE) for details.
 
 ```md

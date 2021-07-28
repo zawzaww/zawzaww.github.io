@@ -3,12 +3,12 @@ layout: page
 title: PureZ Android Kernel
 dynamic_title: true
 toc: true
-permalink: /projects/purez-android-kernel
+permalink: /purez-android-kernel
 ---
 
-![Image](https://i.postimg.cc/4Nyky72N/purez.png){: width="200" height="200" style="max-width: 100%" .normal}
+#### PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features
 
-PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices.
+![Image](https://i.postimg.cc/4Nyky72N/purez.png){: width="200" height="200" style="max-width: 100%" .normal}
 
 ---
 

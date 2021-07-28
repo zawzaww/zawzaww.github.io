@@ -31,7 +31,7 @@ github:
 
 # Twitter username.
 twitter:
-  username: zawzawce
+  username: zawzaw_mem
 
 # Change to your full name.
 # It will be displayed as the default author of the posts and the copyright owner in the footer.
@@ -39,7 +39,7 @@ social:
   name: Zaw Zaw
   email: zawzthein@outlook.com
   links:
-    - https://twitter.com/zawzawce
+    - https://twitter.com/zawzaw_mem
     - https://github.com/zawzaww
 
 # change to your verification string
@@ -83,7 +83,7 @@ disqus:
   comments: true
   shortname: 'zawzaw'
 
-paginate: 8
+paginate: 6
 
 kramdown:
   syntax_highlighter: rouge
