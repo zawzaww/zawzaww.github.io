@@ -7,11 +7,12 @@ order: 7
 
 ![About Me](https://i.postimg.cc/0NwLpgtN/zawzaw-img.png){: width="200" height="200" style="max-width: 100%" .normal}
 
-Systems Programmer / SRE Engineer focused on LINUX systems
+Linux Kernel Hacker/SRE Engineer Focused on Linux KVM and Containers
 
-A Linux/SRE engineer at Frontiir, working on RnD/DevSA, systems automation team. And, Former Recognized developer/contributor at XDA Forums. I've contributed to Android, Linux kernel and  Android Open Source Project, AOSP based Android custom firmware projects on XDA Forums.
+Linux/SRE engineer at [@FRONTIIR](http://www.frontiir.com/), working on RnD/DevSA, systems automation team. Former Recognized Developer/Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums. I've contributed to Android, Linux kernel and  Android open source project, AOSP based Android custom firmware projects on XDA Forums.
 
-I've always loved working with Low-level systems software and command-line tools on Linux. Currently, I'm working on Linux, Cloud native and Containers. I've always had a keen interest in Computer hardware/software, Systems programming, Linux kernel hacking, Cloud native and Containers. And, also love to take photograph and interested in nature photography.
+I've always loved working with Low-level software and command-line tools on Linux to communicate with hardware. Currently, I'm working on Linux, Cloud native, CI/CD Automation and Containers. I've always had a keen interest in Computer hardware/software, Systems programming, Linux kernel hacking, Containers, Cloud computing, Linux virtualization and containerization. And, I also love to take photograph and interested in nature photography.
+
 <br>
 
 ---
