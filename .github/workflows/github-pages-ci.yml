@@ -9,7 +9,7 @@ on:
       - LICENSE
 
 jobs:
-  build-github-pages:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
         run: |
           bundle exec jekyll b -d "_site$BASE_URL"
 
-  deploy-github-pages:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
