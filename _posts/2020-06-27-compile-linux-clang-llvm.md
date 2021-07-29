@@ -109,5 +109,7 @@ ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang -j$(nproc --all)
 အခုဆိုရင် Linux Kernel Code တွေကို Modern C-family Compiler တခုဖြစ်တဲ့ Clang/LLVM Compiler နဲ့ Compile လုပ်တဲ့အကြောင်းကို ပြောပြပေးတာဖြစ်ပါတယ်။ Linux Kernel ကို Compile လုပ်တဲ့ Steps တွေက ဟိုအရင်အစောပိုင်း Kernel versions တွေလောက် မရှုပ်ထွေးတော့ပါဘူး အခုခါမှာ ပိုပြီးရိုးရှင်းလာပါတယ်။
 
 REF Links:
+
 [https://www.kernel.org/doc/html/latest/kbuild/llvm.html](https://www.kernel.org/doc/html/latest/kbuild/llvm.html)
+
 [https://github.com/ClangBuiltLinux/linux/wiki](https://github.com/ClangBuiltLinux/linux/wiki)
