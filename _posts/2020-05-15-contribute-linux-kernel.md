@@ -67,8 +67,8 @@ Linux Kernel Device Drivers ရေးတာနဲ့ ပတ်သက်ပြီ
 
 [LWN.net: Linux Device Drivers Book, Third Edition.](https://lwn.net/Kernel/LDD3/)
 
-<img src="https://mhatsu.to/content/images/2020/06/linux-device-drivers-book.jpg" />
-<p align="center"><sub><sup>Book Cover Photo by: O'Reilly Open Books Project</sup></sub></p>
+![book-cover-image](https://mhatsu.to/content/images/2020/06/linux-device-drivers-book.jpg)
+_Book Cover Photo by: O'Reilly Open Books Project_
 
 အခု Blog post မှာ ကျွန်တော်က LLVM/Clang Compiler version 9 နဲ့ Linux kernel build လုပ်တဲ့အခါ build error ကို Fix လုပ်ထားတာလေးကို နမူနာအနေနဲ့ ပြောသွားမှာဖြစ်ပါတယ်။
 

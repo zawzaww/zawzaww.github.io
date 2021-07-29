@@ -6,6 +6,7 @@ tags: [linux, kernel, compiler, clang]
 author: "Zaw Zaw"
 image:
   src: /assets/images/featured-images/img_clang_llvm_linux.png
+  description: "Photo: Clang/LLVM Compiler Logo by LLVM Project"
 ---
 
 ဟိုအရင်တည်းကနဲ့ အခုလောလောဆယ်မှာ Linux kernel မှာ သုံးတဲ့ Traditional Default C Compiler က GCC ပဲ ဖြစ်ပါတယ်။ အခုအခါမှာ Linux kernel ကို Modern C-family Compiler တခု ဖြစ်တဲ့ [Clang/LLVM](http://clang.llvm.org/) နဲ့ပါ အလွယ်တကူ Compile လုပ်လို့ ရနေပါပြီ။ အဲဒီလို အလွယ်တကူ Compile လုပ်လို့ရအောင် Google က Software Engineer တယောက်ဖြစ်တဲ့ [Nick Desaulniers](http://nickdesaulniers.github.io/about/) က ဦးဆောင်ပြီး [Linux Kernel Build System (kbuild)](https://patchwork.kernel.org/project/linux-kbuild/list/) အတွက် Kernel Patches တွေ Submit လုပ်ပြီး Contribute လုပ်နေတာ ဖြစ်ပါတယ်။ အခုဆိုရင် Linux kernel ရဲ့ [Official Documentation](https://www.kernel.org/doc/html/latest/kbuild/llvm.html) မှာလည်း Clang နဲ့ Linux kernel ကို ဘယ်လို Compile လုပ်မလဲဆိုတာ အပြည့်စုံရှိနေပြီ ဖြစ်ပါတယ်။ ပြီးတော့ GitHub မှာ Nick တို့ လုပ်ထားတဲ့ [ClangBuiltLinux](https://github.com/ClangBuiltLinux) GitHub Orgnaization လည်း ရှိပါတယ်။ တကယ်လို့ Compiler Bugs တွေနဲ့ Kernel Build errors တွေ ရှိရင်လည်း အဲဒီမှာ Report လုပ်လို့ရပါတယ်။ အခု Article မှာ Linux kernel ကို Clang/LLVM Compiler နဲ့ Compile လုပ်တဲ့အကြောင်းကို တဆင့်ချင်း ရေးသွားမှာဖြစ်ပါတယ်။

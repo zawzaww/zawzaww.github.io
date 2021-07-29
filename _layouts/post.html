@@ -45,6 +45,7 @@ layout: default
 
         {% if page.image.src %}
           <img src="{{ page.image.src }}" class="preview-img" alt="{{ page.image.alt | default: "Preview Image" }}">
+          {% include image-description.html description=page.image.description %}
         {% endif %}
 
         {{ content }}
