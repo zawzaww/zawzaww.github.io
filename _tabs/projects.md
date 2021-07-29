@@ -5,33 +5,37 @@ icon: fas fa-code
 order: 4
 ---
 
-<h4>FREE & OPEN SOURCE PROJECTS</h4>
+##### FREE & OPEN SOURCE PROJECTS
 
----
+<hr style="border-top:3px solid gainsboro;"/>
 
-<h3><a href="https://zawzaww.github.io/purez-android-kernel">github/purez-android-kernel</a></h3>
-<p>PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features for Android Devices.</p>
-<br>
+### [purez-android-kernel](https://zawzaww.github.io/purez-android-kernel)
 
----
+PureZ Kernel is a free and Open-source Android Custom Kernel Based on Upstream Linux Kernel with Customized Features\
+&nbsp;
 
-<h3><a href="https://zawzaww.github.io/android-twrp-bullhead">github/android-twrp-bullhead</a></h3>
-<p>Android TWRP Recovery 3.2.0 Build with F2FS Filesystem Support for Google Nexus 5X Device.</p>
-<br>
+----
 
----
+### [android-twrp-bullhead](https://zawzaww.github.io/android-twrp-bullhead)
 
-<h3><a href="https://github.com/zawzaww/aosp-android">github/aosp-android</a></h3>
-<p>Android Platform Manifest for Building and Compiling Pure Android System image.</p>
-<br>
+Android TWRP Recovery 3.2.0 Build with F2FS Filesystem Support for Google Nexus 5X Device\
+&nbsp;
 
----
+----
 
-<h3><a href="https://zawzaww.github.io/android-internals-guides">github/android-internals-guides</a></h3>
-<p>Android OS-Based Guides, How-To Articles and Android Internals Guides.</p>
-<br>
+### [aosp-android](https://github.com/zawzaww/aosp-android)
 
----
+Android Platform Manifest for Building and Compiling Pure Android System image\
+&nbsp;
 
-<h3><a href="https://zawzaww.github.io/xda-android-projects">github/xda-android-projects</a></h3>
-<p>Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA-Developers Forums.</p>
+----
+
+### [android-internals-guides](https://zawzaww.github.io/android-internals-guides)
+
+Android OS and Kernel-Based Guides, How-To Articles and Android Internals Guides\
+&nbsp;
+
+----
+
+### [xda-android-projects](https://zawzaww.github.io/xda-android-projects)
+<p>Android Kernels, Android Custom Firmwares/ROMs, Guides and Themes on XDA-Developers Forums</p>

@@ -2,7 +2,7 @@
 layout: post
 title: "Building Linux Kernel with Clang/LLVM"
 categories: [Kernel]
-tags: [linux, kernel, clang]
+tags: [linux, kernel, compiler, clang]
 author: "Zaw Zaw"
 image:
   src: /assets/images/featured-images/img_clang_llvm_linux.png
@@ -90,7 +90,6 @@ ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang defconfig
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_make_defconfig.png)
 
-
 Create လုပ်လိုက်တဲ့ Kernel Configuration တွေကို Linux kernel source tree ရဲ့ Root Directory အောက်က `.config` မှာ ၀င်ကြည့်လို့ရပါတယ်။
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_kernel_configs.png)
@@ -109,6 +108,6 @@ ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang -j$(nproc --all)
 
 အခုဆိုရင် Linux Kernel Code တွေကို Modern C-family Compiler တခုဖြစ်တဲ့ Clang/LLVM Compiler နဲ့ Compile လုပ်တဲ့အကြောင်းကို ပြောပြပေးတာဖြစ်ပါတယ်။ Linux Kernel ကို Compile လုပ်တဲ့ Steps တွေက ဟိုအရင်အစောပိုင်း Kernel versions တွေလောက် မရှုပ်ထွေးတော့ပါဘူး အခုခါမှာ ပိုပြီးရိုးရှင်းလာပါတယ်။
 
-REF:
-- https://www.kernel.org/doc/html/latest/kbuild/llvm.html
-- https://github.com/ClangBuiltLinux/linux/wiki
+REF Links:
+[https://www.kernel.org/doc/html/latest/kbuild/llvm.html](https://www.kernel.org/doc/html/latest/kbuild/llvm.html)
+[https://github.com/ClangBuiltLinux/linux/wiki](https://github.com/ClangBuiltLinux/linux/wiki)
