@@ -83,7 +83,7 @@ disqus:
   comments: true
   shortname: 'zawzaw'
 
-paginate: 6
+paginate: 8
 
 kramdown:
   syntax_highlighter: rouge
