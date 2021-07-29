@@ -9,13 +9,13 @@ image:
   description: "Photo: Clang/LLVM Compiler Logo by LLVM Project"
 ---
 
-ဟိုအရင်တည်းကနဲ့ အခုလောလောဆယ်မှာ Linux kernel မှာ သုံးတဲ့ Traditional Default C Compiler က GCC ပဲ ဖြစ်ပါတယ်။ အခုအခါမှာ Linux kernel ကို Modern C-family Compiler တခု ဖြစ်တဲ့ [Clang/LLVM](http://clang.llvm.org/) နဲ့ပါ အလွယ်တကူ Compile လုပ်လို့ ရနေပါပြီ။ အဲဒီလို အလွယ်တကူ Compile လုပ်လို့ရအောင် Google က Software Engineer တယောက်ဖြစ်တဲ့ [Nick Desaulniers](http://nickdesaulniers.github.io/about/) က ဦးဆောင်ပြီး [Linux Kernel Build System (kbuild)](https://patchwork.kernel.org/project/linux-kbuild/list/) အတွက် Kernel Patches တွေ Submit လုပ်ပြီး Contribute လုပ်နေတာ ဖြစ်ပါတယ်။ အခုဆိုရင် Linux kernel ရဲ့ [Official Documentation](https://www.kernel.org/doc/html/latest/kbuild/llvm.html) မှာလည်း Clang နဲ့ Linux kernel ကို ဘယ်လို Compile လုပ်မလဲဆိုတာ အပြည့်စုံရှိနေပြီ ဖြစ်ပါတယ်။ ပြီးတော့ GitHub မှာ Nick တို့ လုပ်ထားတဲ့ [ClangBuiltLinux](https://github.com/ClangBuiltLinux) GitHub Orgnaization လည်း ရှိပါတယ်။ တကယ်လို့ Compiler Bugs တွေနဲ့ Kernel Build errors တွေ ရှိရင်လည်း အဲဒီမှာ Report လုပ်လို့ရပါတယ်။ အခု Article မှာ Linux kernel ကို Clang/LLVM Compiler နဲ့ Compile လုပ်တဲ့အကြောင်းကို တဆင့်ချင်း ရေးသွားမှာဖြစ်ပါတယ်။
+GCC is the Traditional Default C Compiler used in the Linux kernel back then and now. Now you can easily compile the Linux kernel with [Clang/LLVM](http://clang.llvm.org/) , a modern C-family compiler. [Nick Desaulniers](http://nickdesaulniers.github.io/about/) , a software engineer at Google, is contributing to the [Linux kernel build system (kbuild)](https://patchwork.kernel.org/project/linux-kbuild/list/) by submitting and contributing kernel patches. The [official documentation](https://www.kernel.org/doc/html/latest/kbuild/llvm.html) for the Linux kernel now covers how to compile Clang and the Linux kernel. And [ClangBuiltLinux](https://github.com/ClangBuiltLinux) GitHub organization created by Nick and Contributors on GitHub. You can also report Clang/LLVM compiler bugs and kernel build errors on GitHub. This article will show you how to compile a Linux kernel with the Clang/LLVM compiler.
 
 ClangBuiltLinux Wiki: [https://github.com/ClangBuiltLinux/linux/wiki](https://github.com/ClangBuiltLinux/linux/wiki)
 
 ## Installation Packages
 
-Ubuntu Linux မှာတော့ Clang/LLVM compiler က Built-in ပါလာပြီးသာပါ။ တကယ်လို့ Install မလုပ်ရသေးရင်လည်း ကိုယ်တိုင် Install လုပ်လို့ရပါတယ်။ Linux distributions မှာ သုံးတဲ့ Package Manager တွေ ပေါ်မှာ မူတည်ပြီး ဒီနေရာ ကွဲပြားနိုင်ပါတယ်။ ကျွန်တော့်အနေနဲ့တော့ Ubuntu Linux နဲ့ပဲ နမူနာအနေနဲ့ ပြောပြသွားမှာပါ။
+On Ubuntu Linux, the Clang/LLVM compiler is built-in. If you have not already done so, you can install it yourself. This may vary depending on the package manager used in Linux distributions. Let me give you an example with Ubuntu Linux.
 
 Clang/LLVM Compiler Package:
 
@@ -23,7 +23,7 @@ Clang/LLVM Compiler Package:
 sudo apt install clang
 ```
 
-Cross Compiling လုပ်ဖို့အတွက် GNU GCC Prebuilt aarch64 packages ကို Install လုပ်ဖို့အတွက် လိုအပ်ပါတယ်။
+You need to install the GNU GCC Prebuilt aarch64 packages for cross compiling.
 
 Cross Compile for Linux aarch64 architecture packages:
 
@@ -37,9 +37,9 @@ sudo apt install gcc-aarch64-linux-gnu
 
 ## Compiling for Host System
 
-ကိုယ်သုံးနေတဲ့ Host Linux Systems အတွက် Linux kernel ကို Clang/LLVM နဲ့ Compile လုပ်မယ်ဆိုရင် အရမ်းခက်ခက်ခဲခဲကြီးတော့ မဟုတ်ပါဘူး `CC=clang` ဆိုတဲ့ Command line parameter ထည့်ပြီး Compile လိုက်ရုံပါပဲ။
+Compiling the Linux kernel for your Host Linux Systems with Clang/LLVM is not very difficult, just compile it with  `CC=clang` command line parameter.
 
-အရင်ဆုံး Compile မလုပ်ခင်မှာ Kernel Configuration မဖြစ်မနေ လုပ်ပေးဖို့ လိုအပ်ပါတယ်။ Default configuration ပဲ သုံးလိုက်ပါမယ်။ အဲဒီ Kernel Configs တွေက Linux kernel source tree ရဲ့ `arch/<arch>/configs/` အောက်မှာ ရှိနေတာ ဖြစ်ပါတယ်။
+You must first configure the kernel before compiling. Use the default configuration. These kernel configs are located under `arch/<arch>/configs` in the Linux kernel source tree.
 
 For example: x86 architecture
 
@@ -53,7 +53,7 @@ total 24
 
 ```
 
-Default Kernel Configuration ကို သုံးပြီး Kernel Configuration လုပ်လိုက်ပါမယ်။ Clang/LLVM အတွက် `CC=clang` Command Line Parameter မဖြစ်မနေ ထည့်ပေးဖို့လိုအပ်ပါတယ်။
+Let's do a kernel configuration using the Default Kernel Configuration. For Clang/LLVM it is necessary to add `CC=clang` command line parameter.
 
 ```bash
 make CC=clang defconfig
@@ -61,29 +61,29 @@ make CC=clang defconfig
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_make_defconfig.png)
 
-make နဲ့ Kernel configuration လုပ်ပြီးသွားရင် ကိုယ် Create လုပ်လိုက်တဲ့ Kernel configuration တွေကို Kernel Compile မလုပ်ခင် Linux kernel source tree ရဲ့ Root directory အောက်က `.config` မှာ ၀င်ကြည့်နိုင်ပါတယ်။
+Once you have configured kernel with make, you can access the kernel configuration you created in the ".config" directory under the root directory of the Linux kernel source tree before compiling the kernel.
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_kernel_configs.png)
 
-ပြီးသွားရင်တော့ Kernel Compile လုပ်ပါမယ်။ ဒီနေရာမှာ `CC=clang` Command line parameter ထည့်ပေးဖို့ လိုအပ်ပါတယ်။
+When done, compile the kernel. Here you need to add the `CC=clang` command line parameter.
 
-ဒီနေရာမှာ `-j$(nproc --all)` Option သည် မဖြစ်မနေ ထည့်ပေးဖို့တော့ မလိုအပ်ပါဘူး။ ထည့်ပေးဖို့တော့ Recommend လုပ်ပါတယ်။ သူသည် GNU Make `make` က `-jN` argument နဲ့ Parallel tasks လုပ်လို့ရပါတယ်။ ပိုမိုမြန်မြန်ဆန်ဆန် Build လုပ်နိုင်ဖို ကူညီပေးပါတယ်။ `N` သည် Number of Parallel tasks ကို ဆိုလိုခြင်းဖြစ်ပါတယ်။ သူသည် ကိုယ့်သုံးနေတဲ့ Computer ရဲ့ CPU Cores တွေပေါ်မှာ တွက်ယူပြီး Build တာ ဖြစ်တဲ့အတွက် `j4` `j8` `j16` စသဖြင့် Manually Define မလုပ်တော့ပဲ Unix/Linux ရဲ့ `nproc` utility command ကို ခေါ်သုံးပြီး CPU Processor Cores အရေတွက်ကို အလိုလျောက်တွက်ယူပြီး Build လုပ်လိုက်တာဖြစ်ပါတယ်။
+The `-j $(nproc --all)` option is not required here. It is recommended to add. It can perform parallel tasks with GNU Make `make` argument `-jN` argument. Helps to build faster. "N" stands for Number of Parallel tasks. Since it is calculated and built based on the CPU cores of your computer, it does not need to be manually defaced as `j4` `j8` `j16` etc., so it automatically builds the CPU Processor Cores using `nproc` utility.
 
 ```bash
-make CC=clang -j$(nproc --all)
+make CC=clang -j $(nproc --all)
 ```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_make_build.png)
 
-ကိုယ် Build လိုက်တဲ့ Kernel img ကို Linux kernel source tree ရဲ့ `/arch/x86/boot/bzImage` မှာ Generate လုပ်ပေးသွားမှာ ဖြစ်ပါတယ်။
+The kernel img you created will be generated in `arch/x86/boot/bzImage` of the Linux kernel source tree.
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_host_kernel_img.png)
 
 ## Cross Compiling for ARM arm64
 
-ဒီအပိုင်းမှာတော့ Host System အတွက် မဟုတ်တော့ပဲ ARM arm64 architecutre အတွက် Cross Compiling လုပ်မှာ ဖြစ်ပါတယ်။ ARM arm64 architecture အတွက် Compile လုပ်မှာ ဖြစ်တဲ့အတွက် ```ARCH=arm64``` နဲ့ ```CROSS_COMPILE=aarch64-linux-gnu-``` Command line parameter နှစ်ခုကို ထည်ပေးဖို့ လိုအပ်ပါတယ်။ ကျန်တဲ့ Kernel Compile လုပ်တဲ့ Process ကတော့ Host System နဲ့ အတူတူပဲ ဖြစ်ပါတယ်။
+In this section, Cross Compiling will be done for the ARM arm64 architecutre, not for the host system. To compile the ARM arm64 architecture, you need to add two command line parameters: `ARCH=arm64` and `CROSS_COMPILE=aarch64-linux-gnu-`. The rest of the kernel compilation process is the same as the host system.
 
-ARM arm64 architecture အတွက် Kernel Configuration လုပ်ပါမယ်။ Kernel Compile မလုပ်ခင်မှာ ဒီအဆင့်က မဖြစ်မနေ လုပ်ပေးဖို့ လိုအပ်ပါတယ်။
+Kernel configuration for ARM arm64 architecture. This step is required before compiling the kernel.
 
 ```bash
 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang defconfig
@@ -91,11 +91,11 @@ ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang defconfig
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_make_defconfig.png)
 
-Create လုပ်လိုက်တဲ့ Kernel Configuration တွေကို Linux kernel source tree ရဲ့ Root Directory အောက်က `.config` မှာ ၀င်ကြည့်လို့ရပါတယ်။
+The created kernel configuration can be found in `.config` under the Root Directory of the Linux kernel source tree.
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_kernel_configs.png)
 
-Configuration လုပ်ပြီးရင်တော့ Kernel Compile လုပ်လို့ရပါပြီ။
+Once configured, you can now compile the kernel.
 
 ```bash
 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang -j$(nproc --all)
@@ -103,11 +103,11 @@ ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make CC=clang -j$(nproc --all)
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_make_build.png)
 
-ကိုယ် Build လိုက်တဲ့ Kernel img ကို Linux kernel source tree ရဲ့ `/arch/arm64/boot/Image.gz` မှာ Kernel Build System က Generate လုပ်ပေးသွားမှာ ဖြစ်ပါတယ်။
+The kernel img will be generated by the Kernel Build System in `arch/arm64/boot/Image.gz` of the Linux kernel source tree.
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_arm64_kernel_img.png)
 
-အခုဆိုရင် Linux Kernel Code တွေကို Modern C-family Compiler တခုဖြစ်တဲ့ Clang/LLVM Compiler နဲ့ Compile လုပ်တဲ့အကြောင်းကို ပြောပြပေးတာဖြစ်ပါတယ်။ Linux Kernel ကို Compile လုပ်တဲ့ Steps တွေက ဟိုအရင်အစောပိုင်း Kernel versions တွေလောက် မရှုပ်ထွေးတော့ပါဘူး အခုခါမှာ ပိုပြီးရိုးရှင်းလာပါတယ်။
+Here's how to compile Linux kernel code with the Clang/LLVM Compiler, a modern C-family compiler. Steps compiling the Linux kernel are no longer as complicated as earlier kernel versions, but are now simpler.
 
 REF Links:
 

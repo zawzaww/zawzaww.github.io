@@ -9,32 +9,31 @@ image:
   src: /assets/images/featured-images/img_speedup_linux_kernel_builds.png
 ---
 
-Ccache (Compiler Cache) ကိုသုံးပြီး Linux kernel compilation time ကို ပုံမှန်ထက်မြန်အောင် ဘယ်လို Setup လုပ်ပြီး Build မလဲဆိုတာကို ဒီ article မှာ အဓိကထားပြီး ပြောသွားမှာဖြစ်ပါတယ်။ ပုံမှန်ဆိုရင် ကျွန်တော်ရဲ့ CPU အနိမ့်နဲ့ Laptop computer လေးပေါ်မှာ Linux kernel ကို Compile လုပ်ရတဲ့အချိန်က 30mins လောက် အချိန်ပေးနေရပါတယ်။ အဲဒါကြောင့် သိပ်ပြီးတော့ အဆင်မပြေဘူး။ အဒီပြဿနာကို Ccache နဲ့ ဖြေရှင်းနိုင်ပါတယ်။ Ccache နဲ့ Compile လုပ်ရင်တော့ 3 - 5 mins လောက်ထိ မြန်သွားပါတယ်။
+This article will focus on how to set up and build Linux kernel compilation time faster than usual using Cache (Compiler Cache). Normally, it takes about 30mins to compile the Linux kernel on my laptop with a low CPU. That makes it very inconvenient. This problem can be solved with Ccache. Compiling with Ccache speeds up to 3-5 mins.
 
 ## What is Ccache?
 
-[Ccache (Compiler Cache)](https://ccache.dev/) က C, C++, Objective-C နဲ့ Objective-C++ Code တွေကို Compile လုပ်တဲ့နေရမှာ Compilation time ကို Speed up  လုပ်ဖို့ အဓိက သုံးပါတယ်။
+[Ccache (Compiler Cache)](https://ccache.dev/) is used to speed up compilation time when compiling C, C ++, Objective-C and Objective-C ++ code.
 
 ## Installation and Setup Ccache
 
-ပထမဆုံးအနေနဲ့ ကိုယ့်ရဲ့ GNU/Linux machine ထဲမှာ Ccache package Install လုပ်ထားဖို့လိုပါတယ်။
-ကိုယ် Install လုပ်ထားတဲ့ Ccache version ကို check ချင်ရင်တော့
+First of all, you need to have the Ccache package installed on your GNU/Linux machine.
+If you want to check the Ccache version you have installed
 
 ```bash
 ccache --version
 ```
 
-ဆိုပြီး check နိုင်ပါတယ်။
-တကယ်လို့ Install မလုပ်ရသေးဘူးဆိုရင်တော့
+You can check if not already installed.
 
 ```bash
 sudo apt install ccache
 ```
 
-ဆိုပြီး Ubuntu Linux မှာ Install လုပ်နိုင်ပါတယ်။
+You can install it on Ubuntu Linux.
 
-နောက်တခုက .bashrc file ကို ဖွင့်ပြီး Setup လုပ်ဖို့ လိုပါသေးတယ်။
-ccache ရဲ့ dir path ကို export လုပ်ပေးလိုက်ရင် ရပါပြီ။ အဒီ အောက်က သုံးကြောင်း .bashrc file မှာ Add ပေးလိုက်ရင် ရပါပြီ။
+Next you need to open the .bashrc file and set it up.
+Export the dache path to ccache. Add it to the following .bashrc file.
 
 ```bash
 export CCACHE_DIR="/home/zawzaw/.cache"
@@ -42,7 +41,7 @@ export CXX="ccache g++"
 export CC="ccache gcc"
 ```
 
-Ccache ကို အများဆုံး maximum size ဘယ်လောက်ထားမလဲဆိုတာ သတ်မှတ်ပေးရပါမယ်။
+Specify the maximum size of the cache cache.
 
 ```bash
 ccache -M 32
@@ -50,7 +49,7 @@ ccache -M 32
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_ccache_max_size.png)
 
-ကိုယ်ရဲ့ လက်ရှိမှာရှိနေတဲ့ ccache ရဲ့ Statistics ကို ကြည့်ချင်ရင် `ccache -s` ဆိုပြီး command ကို ရိုက်ပြီး ကြည့်နိုင်ပါတယ်။
+To view your current ccache statistics, type the command 'ccache -s'.
 
 ```bash
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
@@ -74,7 +73,7 @@ max cache size                      32.0 GB
 
 ## Building Linux Kernel with Ccache
 
-Linux kernel source directory ကို သွားပြီး ပထမက Compile လုပ်ထားတဲ့ Output files တွေ ရှိရင် Clean လုပ်ပေးဖို့ လိုပါတယ်။
+Navigate to the Linux kernel source directory and clean the output files first.
 
 ```bash
 make clean && make mrproper
@@ -82,7 +81,7 @@ make clean && make mrproper
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_clean.png)
 
-နောက်တဆင့်က Linux kernel ကို Compile မလုပ်ခင် Kernel configuration လုပ်ပေးဖို့ လိုပါတယ်။ ကျွန်တော် နမူနာအနေနဲ့ default configuration ကိုပဲ သုံးလိုက်ပါတယ်။
+The next step is to configure the kernel before compiling the Linux kernel. I used the default configuration as an example.
 
 ```bash
 make defconfig
@@ -90,18 +89,26 @@ make defconfig
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_make_defconfig.png)
 
-Ccache နဲ့ Linux kernel ကို Compile လုပ်မယ်ဆိုရင် make command နဲ့ `CC="ccache gcc"` ဆိုတဲ့ Option တခုကို ထည့်ပေးဖို့လိုပါတယ်။
+To compile the Linux kernel with Ccache, you will need to add the `CC="ccache gcc"` option with the make command.
 
 ```bash
 make CC="ccache gcc" -j$(nproc --all)
 ```
 
-တကယ်လို့ Compilation time result ကို အတိအကျ သိချင်ရင်တော့ time ဆိုတဲ့ command ကို သုံးပေးဖို့ လိုပါတယ်။
+If you want to know the exact compilation time result, you need to use the time command.
 
 ```bash
 time make CC="ccache gcc" -j$(nproc --all)
 ```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_time_make_cc.png)
+
+Final compilation time:
+
+```
+real     4m18.145s
+user     5m20.449s
+sys      3m50.917s
+```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_kernel_compile_time.png)
