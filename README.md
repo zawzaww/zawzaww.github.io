@@ -1,6 +1,6 @@
 # My Personal Blog and Website
 
-![github-pages-ci](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/github-pages-ci.yml/badge.svg)
+[![build-status](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/github-pages-ci.yml/badge.svg)](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/github-pages-ci.yml?query=workflow%3A%22GitHub+Pages+CI%22++)
 
 Personal blog and website: https://zawzaww.github.io
 
