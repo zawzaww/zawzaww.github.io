@@ -12,4 +12,4 @@ I will support spring revolution and tweet about news on Twitter. And, I support
 
 I will find and follow you (friends from Facebook) on Twitter. Please, follow me on Twitter. I will follow back.
 
-Twitter: [twitter.com/@zawzaw_mem](https://twitter.com/zawzaw_mem)
+Twitter: [twitter.com/@zawzaw_thn](https://twitter.com/zawzaw_thn)
