@@ -2,8 +2,8 @@
 layout: post
 title: "Contributing to the Linux kernel"
 author: "Zaw Zaw"
-categories: [Kernel]
-tags: [linux, kernel]
+categories: [Linux]
+tags: [linux, kernel, contribute]
 image:
   src: /assets/images/featured-images/img_linux_kernel_contribution.png
 ---

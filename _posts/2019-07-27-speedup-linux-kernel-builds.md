@@ -2,7 +2,7 @@
 layout: post
 title: "Speeding Up Linux Kernel Builds with Compiler Cache"
 author: "Zaw Zaw"
-categories: [Kernel]
+categories: [Linux]
 tags: [linux, kernel, ccache]
 pin: true
 image:

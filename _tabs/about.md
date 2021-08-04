@@ -7,11 +7,11 @@ order: 7
 
 ![About Me](https://i.postimg.cc/0NwLpgtN/zawzaw-img.png){: width="200" height="200" style="max-width: 100%" .normal}
 
-Systems Programmer, SRE Engineer focused on Linux and Containers
+Systems Programmer/SRE Engineer, focusing on Linux and Containers
 
-Currently, I'm a SRE Engineer at [@Frontiir](http://www.frontiir.com/), working on RnD/DevSA, systems automation team. Formerly, Recognized Developer/Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums. I've contributed to Android, Linux kernel and  Android open source project, AOSP based Android custom firmware projects on XDA Forums.
+Currently, I'm a SRE engineer at [@Frontiir](http://www.frontiir.com/), working on RnD/DevSA, systems automation team. Formerly, Recognized Developer/Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums. I've contributed to Android, Linux kernel and  Android open source project, AOSP based Android custom firmware projects on XDA Forums.
 
-I've always loved working with Low-level software and command-line tools on Linux to communicate with hardware. Currently, I'm working on Linux, CI/CD, Kubernetes and Docker containers. I've always had a keen interest in Computer hardware/software, Linux kernel hacking, Containers and Linux virtualization. And, I also love to take photograph and interested in nature photography.
+I've always loved working with Low-level software and command-line tools on Linux to communicate and interact with hardware. Currently, I'm working on Linux, CI/CD, Kubernetes and Docker containers. I've always had a keen interest in Computer hardware/software, Unix/Linux systems programming, Linux kernel hacking, Cloud computing and containers. And, I also love to take photograph and interested in nature photography.
 
 <br>
 
@@ -27,7 +27,7 @@ I've always loved working with Low-level software and command-line tools on Linu
 
 ## SKILLS
 
-<p>C, C++, Java, Shell script, Android, Linux kernel, Operating systems, Linux kernel programming, Git, Open-source software, GitLab CI, ArgoCD, Helm, Docker, Linux KVM, QEMU, Linux virtualization and containerization.</p>
+<p>C, C++, Java, Shell Scripting, Programming, Virtualization, Continuous Integration, Operating Systems, Linux, Android, Bash, Open-source Software, Git, Docker, Helm, Linux Kernel, Kernel Device Drivers, Linux KVM and Containerization.</p>
 <br>
 
 ---
@@ -42,4 +42,4 @@ I've always loved working with Low-level software and command-line tools on Linu
 
 ## INTERESTS
 
-<p>Computer engineering, Systems programming, Kernel hacking, Cloud computing, Unix-like operating systems, Linux kernel, Linux virtualization, KVM, Kernel security, Containers, Technology, Music, Alternative Rock, Pop Rock, Photography, Sharing and Writing.</p>
+<p>Computer Engineering, Unix/Linux Systems Programming, Linux Kernel Hacking, Cloud Computing, Unix-like Operating Systems, File Systems, Virtualization, Containerization, Music, Alternative Rock, Pop Rock, Nature Photography, Sharing, Reading and Writing.</p>

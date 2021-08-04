@@ -2,8 +2,8 @@
 layout: post
 title: "Good Courses and Books to Learn C/C++"
 author: "Zaw Zaw"
-categories: [Programming]
-tags: [resources, c, cpp]
+categories: [Resources]
+tags: [resources, programming, c, cpp]
 image:
   src: /assets/images/featured-images/img_c_cpp_programming.png
 ---
