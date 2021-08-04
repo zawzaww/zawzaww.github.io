@@ -60,7 +60,7 @@ h1 {
 
   font-family: 'Red Hat Display', sans-serif;
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 h2 {
@@ -70,7 +70,7 @@ h2 {
 
   font-family: 'Red Hat Display', sans-serif;
   font-size: 42px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
@@ -79,8 +79,8 @@ h3 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 h4 {
@@ -90,13 +90,13 @@ h4 {
 
   font-family: 'Red Hat Display', sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h5 {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 ol,

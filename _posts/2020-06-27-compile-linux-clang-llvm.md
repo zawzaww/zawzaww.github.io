@@ -6,21 +6,21 @@ tags: [linux, kernel, compiler, clang]
 author: "Zaw Zaw"
 image:
   src: /assets/images/featured-images/img_clang_llvm_linux.png
-  description: "Photo: Clang/LLVM Compiler Logo by LLVM Project"
+  description: "Photo: Clang Logo by LLVM Project"
 ---
 
 GCC is the Traditional Default C Compiler used in the Linux kernel back then and now. Now you can easily compile the Linux kernel with [Clang/LLVM](http://clang.llvm.org/) , a modern C-family compiler. [Nick Desaulniers](http://nickdesaulniers.github.io/about/) , a software engineer at Google, is contributing to the [Linux kernel build system (kbuild)](https://patchwork.kernel.org/project/linux-kbuild/list/) by submitting and contributing kernel patches. The [official documentation](https://www.kernel.org/doc/html/latest/kbuild/llvm.html) for the Linux kernel now covers how to compile Clang and the Linux kernel. And [ClangBuiltLinux](https://github.com/ClangBuiltLinux) GitHub organization created by Nick and Contributors on GitHub. You can also report Clang/LLVM compiler bugs and kernel build errors on GitHub. This article will show you how to compile a Linux kernel with the Clang/LLVM compiler.
 
 ClangBuiltLinux Wiki: [https://github.com/ClangBuiltLinux/linux/wiki](https://github.com/ClangBuiltLinux/linux/wiki)
 
-## Installation Packages
+## Installation Toolchains
 
-On Ubuntu Linux, the Clang/LLVM compiler is built-in. If you have not already done so, you can install it yourself. This may vary depending on the package manager used in Linux distributions. Let me give you an example with Ubuntu Linux.
+On Ubuntu Linux, the Clang/LLVM toolchain is built-in. If you have not already done so, you can install it yourself. This may vary depending on the package manager used in Linux distributions. Let me give you an example with Ubuntu Linux.
 
 Clang/LLVM Compiler Package:
 
 ```bash
-sudo apt install clang
+sudo apt install llvm clang clang-tools
 ```
 
 You need to install the GNU GCC Prebuilt aarch64 packages for cross compiling.

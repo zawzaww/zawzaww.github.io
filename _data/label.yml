@@ -6,7 +6,7 @@ panel:
   toc: Table of Contents
 
 post:
-  relate_posts: Related Blog Posts
+  relate_posts: Related Posts
   share: Share
   button:
     next: Newer
