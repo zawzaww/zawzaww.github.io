@@ -1,7 +1,7 @@
 /*
   The common styles
 */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -42,11 +42,11 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 body {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
@@ -58,9 +58,9 @@ body {
 h1 {
   @extend %heading;
 
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 48px;
-  font-weight: 600;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 52px;
+  font-weight: bold;
 }
 
 h2 {
@@ -68,8 +68,8 @@ h2 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 42px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 45px;
   font-weight: 600;
 }
 
@@ -78,7 +78,7 @@ h3 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 28px;
   font-weight: 600;
 }
@@ -88,14 +88,8 @@ h4 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 20px;
-  font-weight: 600;
-}
-
-h5 {
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 15px;
   font-weight: 600;
 }
 
