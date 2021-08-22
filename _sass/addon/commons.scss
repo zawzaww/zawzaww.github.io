@@ -43,11 +43,11 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 1.04rem;
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: 'Red Hat Display', 'Microsoft Yahei', sans-serif;
   line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
@@ -71,7 +71,7 @@ h2 {
 
   font-family: 'Red Hat Display', sans-serif;
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h3 {
@@ -81,7 +81,7 @@ h3 {
 
   font-family: 'Red Hat Display', sans-serif;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h4 {
@@ -91,7 +91,7 @@ h4 {
 
   font-family: 'Red Hat Display', sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 ol,

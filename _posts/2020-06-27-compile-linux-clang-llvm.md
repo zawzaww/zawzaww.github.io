@@ -17,7 +17,7 @@ ClangBuiltLinux Wiki: [https://github.com/ClangBuiltLinux/linux/wiki](https://gi
 
 On Ubuntu Linux, the Clang/LLVM toolchain is built-in. If you have not already done so, you can install it yourself. This may vary depending on the package manager used in Linux distributions. Let me give you an example with Ubuntu Linux.
 
-Clang/LLVM Compiler Package:
+Clang/LLVM toolchain packages:
 
 ```bash
 sudo apt install llvm clang clang-tools

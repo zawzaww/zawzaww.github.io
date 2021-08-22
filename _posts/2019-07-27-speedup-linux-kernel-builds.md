@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Speeding Up Linux Kernel Builds with Compiler Cache"
+title: "Speeding Up Linux Kernel Builds with Ccache"
 author: "Zaw Zaw"
 categories: [Linux]
 tags: [linux, kernel, ccache]
