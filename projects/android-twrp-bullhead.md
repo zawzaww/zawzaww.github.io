@@ -6,7 +6,7 @@ toc: true
 permalink: /android-twrp-bullhead
 ---
 
-#### TWRP 3.2.0 Build with F2FS Filesystem Support for Google Nexus 5X Device
+#### TWRP 3.2.0 Build with F2FS Filesystem Support for Google Nexus 5X
 
 ![Image](https://play-lh.googleusercontent.com/2HtVAF5zfNMlmKhF0QYqCSr1rsstB1btNfdKl7WvGTcZkOSKCYNxdXwsSizx9VhiPg){: width="200" height="200" style="max-width: 100%" .normal}
 
