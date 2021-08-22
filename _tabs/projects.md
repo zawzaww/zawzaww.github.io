@@ -5,7 +5,7 @@ icon: fas fa-code
 order: 4
 ---
 
-#### FREE & OPEN SOURCE PROJECTS
+##### FREE & OPEN SOURCE PROJECTS
 
 <hr style="border-top:2px solid gainsboro;"/>
 

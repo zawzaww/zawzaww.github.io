@@ -10,9 +10,7 @@ permalink: /android-twrp-bullhead
 
 ![Image](https://play-lh.googleusercontent.com/2HtVAF5zfNMlmKhF0QYqCSr1rsstB1btNfdKl7WvGTcZkOSKCYNxdXwsSizx9VhiPg){: width="200" height="200" style="max-width: 100%" .normal}
 
----
-
-This project is my TWRP android custom recovery build for Google Nexus 5X, included the abaility to convert your /data and /cache partitions to F2FS Filesystem. Supported F2FS File System by TWRP's inline Kernel, PureZ Kernel and TWRP 3.2.0 with added any features.
+This project is TWRP Android custom recovery build for Google Nexus 5X, included the abaility to convert your /data and /cache partitions to F2FS Filesystem. Supported F2FS File System by TWRP's inline Kernel, PureZ Kernel and TWRP 3.2.0 with added any features.
 
 ---
 

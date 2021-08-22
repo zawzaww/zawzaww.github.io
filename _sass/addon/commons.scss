@@ -47,7 +47,7 @@ html[mode=dark] {
 }
 
 body {
-  font-family: 'Red Hat Display', 'Microsoft Yahei', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
@@ -60,7 +60,7 @@ h1 {
   @extend %heading;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: bold;
 }
 
@@ -70,7 +70,7 @@ h2 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 500;
 }
 
@@ -80,11 +80,21 @@ h3 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 500;
 }
 
 h4 {
+  @extend %heading;
+  @extend %section;
+  @extend %anchor;
+
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h5 {
   @extend %heading;
   @extend %section;
   @extend %anchor;
