@@ -213,8 +213,8 @@ footer {
     padding: 0.3rem 0.5rem;
     margin: 0 0.35rem 0.5rem 0;
     &:hover {
-      background-color: #0073cf;
-      border-color: #0073cf;
+      background-color: #008080;
+      border-color: #008080;
       color: #fff;
       transition: none;
     }
@@ -707,12 +707,12 @@ $sidebar-display: "sidebar-display";
     height: $tab-height;
     &:hover {
       .nav-link {
-        color: #0073cf;
+        color: #008080;
       }
     }
     &.active {
       .nav-link {
-        color: #0073cf;
+        color: #008080;
       }
     }
   }
@@ -821,7 +821,7 @@ $sidebar-display: "sidebar-display";
 
     a:hover,
     #mode-toggle-wrapper i:hover {
-      color: #0073cf;
+      color: #008080;
     }
 
   } // .sidebar-bottom
