@@ -8,9 +8,9 @@ image:
   src: /assets/images/featured-images/img_linux_kernel_contribution.png
 ---
 
-Linux kernel ကို Contribute လုပ်တဲ့အပိုင်းမှာ ဘယ်လို Contribute လုပ်မလဲဆိုတဲ့ Workflow ကို အခု article မှာ အဓိကထား ပြောသွားမှာဖြစ်ပါတယ်။ Linux kernel က free and open-source software project တခုဖြစ်ပြီး မည်သူမဆို စိတ်ပါ၀င်စားသူတိုင်း Contribute လုပ်နိုင်ပါတယ်။ Linux kernel ကို Contribute လုပ်တဲ့ Workflow က တခြား open-source projects တွေနဲ့ တူမှာ မဟုတ်ပါဘူး။ GitHub သို့မဟုတ် GitLab တို့ကို သုံးပြီး Code တွေကို Contribute လုပ်လို့မရပါဘူး။ Linux kernel မှာ Linux Kernel Mailing List (LKML) ကို သုံးပြီး Git နဲ့ Email ကနေ တဆင့် Kernel Patches တွေကို Submit လုပ်မယ်၊ Kernel Maintainers တွေက Review လုပ်ပေးမယ်။ ပြီးတဲ့နောက် Submit လုပ်လိုက်တဲ့ Kernel Patches နဲ့ ပတ်သက်ပြီး Maintainers တွေ၊ Reviewers တွေနဲ့ Email ကနေ တဆင့် အပြန်အလှန် Discuss လုပ်ပြီး Code တွေကို Merge လုပ်တဲ့နည်းနဲ့ Linux kernel source tree မှာ Contribute လုပ်ရမှာဖြစ်ပါတယ်။
+This article will focus on how to contribute to the Linux kernel contribution workflow. The Linux kernel is a free and open-source software project that anyone can contribute. Workflow, which contributes to the Linux kernel, is unlike any other open-source project. You can not contribute code using GitHub or GitLab. Submit kernel patches via Git and Email using the Linux Kernel Mailing List (LKML) on the Linux kernel. Kernel Maintainers will review via email and merge the code to Linux kernel source tree after discuss.
 
-အတိုချုပ်အနေနဲ့ List လုပ်လိုက်ရင်
+In short, make a list
 
 - Setup Email Client
 - Make Fixes
@@ -23,13 +23,13 @@ Linux kernel ကို Contribute လုပ်တဲ့အပိုင်းမ�
 - Get Kernel Maintainers
 - Git send-mail
 
-ဆိုပြီး ရှိမှာဖြစ်ပါတယ်။ အောက်မှာ တခုချင်းစီအတွက် တဆင့်ချင်း အသေးစိတ်ပြောပြသွားမှာဖြစ်ပါတယ်။
+There will be Below is a step-by-step guide for each.
 
 ## Setup Email Client
 
-ပထမဆုံးအနေနဲ့ gitconfig မှာ Email Client ကို Setup လုပ်ပေးဖို့ လိုအပ်ပါတယ်။
+Firstly you need to set up the Email Client in gitconfig.
 
-Text Editor တခုခုကို သုံးပြီး `.gitconfig` မှာ ကိုသုံးမယ့် Email Client ကို Setup လုပ်ပါမယ်။
+Set up an Email Client to use `~/.gitconfig` using a Text Editor.
 
 ```bash
 zawzaw@ubuntu-linux:~$ vim ~/.gitconfig
@@ -59,9 +59,9 @@ For example: Gmail
 
 ## Make Fixes
 
-Linux kernel main source tree ကို [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git) ကနေ တဆင့် source code ကို ရယူနိုင်ပါတယ်။ ဘာတွေ Fix လုပ်မလဲ ဘယ်အပိုင်းတွေကို Fix ပြီး Contribute လုပ်မလဲဆိုတာတော့ ပြောရခက်ပါတယ်။ တခြား Software project တွေလိုမျိုး လုပ်နေရင်းနဲ့ သိလာတာမျိုးပါပဲ။ Kernel Hacking ပိုင်း စိတ်၀င်စားရင်တော့ [Linux Kernel Newbies](https://kernelnewbies.org/KernelHacking) မှာ လေ့လာနိုင်ပါတယ်။ ကိုယ်ရဲ့ စိတ်၀င်စားမှုပေါ်မှာ မူတည်ပါတယ်။ ပထမ အစပိုင်းမှာ Linux kernel တခုလုံးရဲ့ Subsystem အကုန်လုံးကို လိုက်လုပ်စရာ မလိုပါဘူး။ Linux kernel subsystems တွေကို Category ခွဲကြည့်လိုက်ရင် File Systems: `/linux/fs`, Kernel Device Drivers/Modules: `/linux/drivers`, Networking: `/linux/net`, Kernel Security (e.g SELinux, Kernel lockdown and etc..): `/linux/security` စသဖြင့် Kernel Subsystems တွေက အများကြီး ရှိနေပါတယ်။ တခုခုကို အစပိုင်း Specialize လုပ်ပြီး လေ့လာသင့်ပါတယ်။ တခြား Kernel Subsystem နဲ့စာရင် တကယ့် Embedded Linux World မှာ Embedded Hardware Devices အတွက် Kernel Device Drivers/Modules တွေ ရေးတာက ပိုပြီး Popular ဖြစ်ပြီး လေ့လာလိုက်စားသူ များပါတယ်။ ကျွန်တော့်အနေနဲ့လည်း တခြား Kernel Subsystems တွေကို အများကြီး မလုပ်ဖူးသေးပါဘူး။ Kernel Device Drivers အပိုင်းမှာပဲ Specialize လုပ်ပြီး အဓိကထားပြီး လေ့လာနေတဲ့သူတယောက်ပါပဲ။
+You can get the source code Linux kernel main source tree via [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git). It's hard to say what to fix and what parts to fix and contribute. Like any other software project, you learn something. If you are interested in kernel hacking, you can learn more at [Linux Kernel Newbies](https://kernelnewbies.org/KernelHacking). It depends on your interests. Initially, you do not have to follow the entire subsystem of the entire Linux kernel. Linux kernel subsystems are categorized as File Systems: `/linux/fs`, Kernel Device Drivers / Modules:`/linux/drivers`, Networking: `/linux/net`, Kernel Security (eg SELinux, Kernel lockdown and etc .. There are many kernel subsystems, such as `/linux/security`. You should specialize in something from the beginning. Writing kernel device drivers / modules for embedded hardware devices is more popular in the real Embedded Linux World than any other kernel subsystem.
 
-Linux Kernel Device Drivers ရေးတာနဲ့ ပတ်သက်ပြီ: Recommend ပေးချင်တဲ့ စာအုပ်တအုပ်ရှိပါတယ်။ [Linux Device Drivers, Third Edition](https://www.oreilly.com/library/view/linux-device-drivers/0596005903/) စာအုပ်သည် Linux Kernel Device Drivers ကို လေ့လာဖို့အတွက် ကောင်းတဲ့စာအုပ်တအုပ်ပဲ ဖြစ်ပါတယ်။ အခုအခါ O'Reilly Open Books Project မှာ Creative Commons Attribution-ShareAlike 2.0 license အောက်ကနေ free book အနေနဲ့ ရယူနိုင်ပါတယ်။
+About Linux Kernel Device Drivers: There is a book I would recommend. [Linux Device Drivers, Third Edition](https://www.oreilly.com/library/view/linux-device-drivers/0596005903/) is a great book to learn about Linux Kernel Device Drivers. The O'Reilly Open Books Project is now available as a free book under the Creative Commons Attribution-ShareAlike 2.0 license.
 
 [O'Reilly Open Book: Linux Device Drivers Book, Third Edition.](https://www.oreilly.com/openbook/linuxdrive3/book/)
 
@@ -70,9 +70,9 @@ Linux Kernel Device Drivers ရေးတာနဲ့ ပတ်သက်ပြီ
 ![book-cover-image](https://mhatsu.to/content/images/2020/06/linux-device-drivers-book.jpg)
 _Book Cover Photo by: O'Reilly Open Books Project_
 
-အခု Blog post မှာ ကျွန်တော်က LLVM/Clang Compiler version 9 နဲ့ Linux kernel build လုပ်တဲ့အခါ build error ကို Fix လုပ်ထားတာလေးကို နမူနာအနေနဲ့ ပြောသွားမှာဖြစ်ပါတယ်။
+In this blog post, I will give an example of a build error that was fixed when building Linux kernel with LLVM / Clang Compiler version 9.
 
-မူရင်း `master` branch ကနေ `dev/zawzaw` branch အသစ်တခု Local မှာ create လုပ်လိုက်ပါမယ်။
+Create a new `dev/zawzaw` branch from the original `master` branch locally.
 
 ```bash
 git branch dev/zawzaw
@@ -82,15 +82,12 @@ git branch dev/zawzaw
 git checkout dev/zawzaw
 ```
 
-Fixed kernel build error in LLVM/Clang compiler version 9: `linux/arch/x86/include/asm/bitops.h`
-
-![Screenshot](/assets/images/screenshots/img_screenshot_make_fixes.png)
-<p align="center"><sub><sup>Architecture specific x86_64 bit operations: linux/arch/86/include/asm/bitops.h</sup></sub></p>
+Fixed kernel build error in LLVM / Clang compiler version 9: `linux/arch/x86/include/asm/bitops.h`
 
 ## Build Kernel Code
-ဒီနေရာမှာတော့ ကိုယ်ပြင်လိုက်တဲ့ Kernel Code က ဘယ်လို Build error တွေ ရှိလား၊ မရှိဘူးလား ဆိုတာကို ပြန် Compile လုပ်ပြီး Testing လုပ်တဲ့အပိုင်းဖြစ်ပါတယ်။
+This is the part that compiles and tests whether it exists or not.
 
-Kernel source tree ကို သွားပြီး Kernel configuration လုပ်ပြီး Compile လုပ်ပါမယ်။ Compiler က Default compiler ဖြစ်တဲ့ GCC ကို မသုံးဘဲ Clang/LLVM ကို ကျွန်တော်က သုံးတာဖြစ်တာကြောင့် `CC=clang` ဆိုပြီး ထည့်ပေးတာဖြစ်ပါတယ်။ Clang/LLVM Compiler နဲ့ Linux Kernel Build လုပ်တဲ့အကြောင်းကို [Compiling Linux Kernel with Clang/LLVM Compiler](https://zawzaww.github.io/blog/kernel/compile-linux-clang-llvm) article မှာ ရေးထားပါတယ်။
+Go to the Kernel source tree and configure the kernel and compile it. I use Clang/LLVM, so I added `CC=clang` to compile kernel. I wrote [Compiling Linux Kernel with Clang/LLVM](https://zawzaww.github.io/posts/compile-linux-clang-llvm) article on how to build Linux Kernel with Clang/LLVM toolchain.
 
 ```bash
 make CC=clang defconfig
@@ -106,13 +103,13 @@ make CC=clang -j$(nproc --all)
 
 ## Git diff
 
-ကိုယ်ပြင်ထားတာကို `git diff` လုပ်ပြီး Changes တွေကို အရင် ကြည့်ကြည့်ပါမယ်။
+Let's do `git diff` and look at the changes first.
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_diff.png)
 
 ## Git commit
 
-ကိုယ် Change လိုက်တဲ့ Code တွေကို `git commit` လုပ်ပါမယ်။ ဒီနေရာမှာ ပြီးပြီရောပုံစံမျိုး commit လုပ်လို့မရပါဘူး တခြားသူတွေလည်း ဖက်လိုက်ရင် နားလည်အောင် သေချာရေးပေးဖို့လိုပါတယ်။
+You need to write meaningful commit message.
 
 ```bash
 git commit -a
@@ -122,15 +119,15 @@ git commit -a
 
 ## Git show
 
-ကိုယ် commit လုပ်လိုက်တဲ့ commite messages တွေနဲ့ changes တွေကို `git show` နဲ့ ပြန်ကြည့်နိုင်ပါတယ်။
+You can view the commit messages and changes you made with `git show`
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_show.png)
 
 ## Git format-patch
 
-ဒီနေရာမှာ ကိုယ်လုပ်လိုက်တဲ့ Fixes တွေကို patch အဖြစ် Generate လုပ်မှာ ဖြစ်ပါတယ်။ နောက်တဆင့်မှာ Generate လုပ်လိုက်တဲ့ Kernel Patches တွေကို Email ကနေ Submit လုပ်မှာ ဖြစ်ပါတယ်။
+Here you will generate a patch for the fixes you made. The next step is to submit the generated kernel patches via email.
 
-ကိုယ့်ရဲ့ Local branch တွေကို `git branch` နဲ့ အရင်ကြည့်ပါမယ်။
+Let's look at your local branch first with `git branch`.
 
 ```bash
 zawzaw@ubuntu-linux:~/Linux-kernel/linux$ git branch
@@ -138,21 +135,21 @@ zawzaw@ubuntu-linux:~/Linux-kernel/linux$ git branch
   master
 ```
 
-Patch Generate လုပ်ပါမယ်။
+Generate a patch.
 
 ```bash
 git format-patch master..dev/zawzaw
 ```
 
-Generate လုပ်လိုက်တဲ့ patch file ကို Text Editor တခုခုနဲ့ ဖွင့်လိုက်ရင် အခုလိုမျိုး မြင်တွေ့ရမှာဖြစ်ပါတယ်။ တနည်းအားဖြင့် အဲဒီကောင်ကို `git send-mail` ပို့မှာ ဖြစ်ပါတယ်။
+If you open the generated patch file with a text editor, you will see something like this: In other words, it will be sent `git send-mail`.
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_git_format_patch.png)
 
 ## Check Kernel Patch
 
-Linux kernel source tree မှာ အသုံး၀င်တဲ့ Tools တွေ Scripts တွေ အများကြီးရှိနေပါတယ်။ ကိုယ်ရဲ့ Kernel Patch ကို Email ကနေ Submit မလုပ်ခင် ဘယ်လို  Errors တွေ၊ ဘယ်လို Warnings တွေ ရှိလဲ ဆိုတာကို `checkpatch.pl` နဲ့ Check လုပ်နိုင်ပါတယ်။
+The Linux kernel source tree has many useful tools and scripts. What are the errors before submitting your Kernel Patch via Email? You can check what Warnings are with `checkpatch.pl`.
 
-Linux kernel source tree မှာ `checkpatch.pl` ကို Run ပေးဖို့လိုပါတယ်။
+You need to run `checkpatch.pl` in the Linux kernel source tree.
 
 ```bash
 ./scripts/checkpatch.pl 0001-arch-x86-asm-Fix-arch-x86-kernel-build-error-in-clan.patch
@@ -162,9 +159,9 @@ Linux kernel source tree မှာ `checkpatch.pl` ကို Run ပေးဖိ
 
 ## Get Kernel Maintainers
 
-Kernel Patch ကို ဘယ် Kernel maintainers ဆီကို ပို့ရမလဲဆိုတာ ခေါင်းစားစရာ မလိုပါဘူး။ ကိုယ့်ရဲ့ Patch ကို Email ကနေ Submit မလုပ်ခင်မှာ ဘယ် Maintainer ဆီကို ပို့မလဲဆိုတာကို `get_maintainer.pl` နဲ့ ကြည့်နိုင်ပါတယ်။ Linux kernel subsystem တခုချင်းစီအလိုက် maintainers တွေ အသီးသီးရှိပါတယ်။ Patch ကို မပို့ခင်မှာ ဘယ် Maintainer ဆီကို ကိုယ့်ရဲ့ Patch ကို ပို့ရမလဲဆိုတာ သိထားဖို့လိုပါတယ်။
+You do not have to worry about which kernel patch to send the kernel patch to. Before you submit your patch via email, you can see which maintainer it will send to with 'get_maintainer.pl'. Each Linux kernel subsystem has its own maintainers. Before sending the patch, you need to know which maintainer to send your patch to.
 
-Linux kernel tree မှာ `get_maintainer.pl` ကို Run ပေးဖို့ လိုပါတယ်။
+You need to run `get_maintainer.pl` in the Linux kernel tree.
 
 ```bash
 ./scripts/get_maintainer.pl 0001-arch-x86-asm-Fix-arch-x86-kernel-build-error-in-clan.patch
@@ -174,16 +171,14 @@ Linux kernel tree မှာ `get_maintainer.pl` ကို Run ပေးဖို
 
 ## Git send-mail
 
-အပေါ်ကအဆင့်တွေ ပြီးသွားရင် Patch ကို `git send-mail` နဲ့ သက်ဆိုင်ရာ Maintainers တွေဆီ ပို့ပေးမှာဖြစ်ပါတယ်။
+After completing the above steps, the patch will be sent to the relevant maintainers with `git send-mail`.
 
 ```bash
 git send-mail --to mingo@redhat.com --cc hpa@zytor.com --cc jesse.brandeburg@intel.com --cc linux-kernel@vger.kernel.org --cc clang-built-linux@googlegroups.com 0001-arch-x86-asm-Fix-arch-x86-kernel-build-error-in-clan.patch
 ```
 
-Kernel patch ကို ```git send-mail``` နဲ့ ပို့တဲ့နေရာမှာ ```--to``` က ကိုယ်ပို့မယ့် Kernel subsystem ရဲ့ အဓိက Maintainer ဖြစ်ရပါမယ်။ ```--cc``` ခံတဲ့နေရာမှာတော့ Reviewers တွေနဲ့ Open Public Mailing Lists တွေ ဖြစ်သင့်ပါတယ်။ Open List ဆိုတာက Kernel subsystem တခုချင်းစီမှာ Mailing List တွေ ရှိပါတယ်။
+When sending a kernel patch with `git send-mail`, `--to` must be the main maintainer of the kernel subsystem to which you want to send it. `--cc` should be Reviewers and Open Public Mailing Lists. An Open List is a mailing list for each kernel subsystem.
 
-ဥပမာ။ ။ ```linux-kernel@vger.kernel.org``` သည် အဓိက Linux Kernel Mailing List (LKML) ဖြစ်ပြီး၊ ```clang-built-linux@googlegroups.com``` သည် Linux kernel အတွက် Clang compiler သုံးပြီး build လုပ်တာနဲ့ပတ်သက် submit လုပ်နိုင်တဲ့ Mailing List ဖြစ်ပါတယ်။ Mailing List အားလုံးရဲ့ email address တွေကို [http://vger.kernel.org/vger-lists.html](http://vger.kernel.org/vger-lists.html) ၀င်ရောက်ကြည့်နိုင်ပါတယ်။ ပြီးရင် စိတ်၀င်စားတဲ့ Kernel subsystems ရဲ့ Mailing List ကို ကိုယ်သုံးမယ့် email နဲ့ Subscribe လုပ်ထားနိုင်ပါတယ်။
+For example : `linux-kernel@vger.kernel.org` is the main Linux Kernel Mailing List (LKML). `clang-built-linux @ googlegroups.com` is a mailing list for submission of builds using the Clang compiler for the Linux kernel. Email addresses of all mailing lists can be accessed at [http://vger.kernel.org/vger-lists.html](http://vger.kernel.org/vger-lists.html). You can then subscribe to the mailing list of your favorite kernel subsystems with the email you want to use.
 
-Kernel maintainers ဆီကို Generate လုပ်ထားတဲ့ Kernel Patch ကို ```git send-mail``` နဲ့ ပို့လိုက်မှာ ဖြစ်ပါတယ်။ အဲဒီနောက် Eamil ကနေ ကိုယ့်ရဲ့ Patch ကို Review လုပ်မှာ ဖြစ်ပါတယ်။ အပြန်အလှန် Feedback လုပ်ဖို့ Kernel Maintainers တွေ Cc ခံထားတဲ့ Reviewers တွေနဲ့ ဆွေးနွေးဖို့အတွက် Email client software တခုခုကို သုံးနိုင်ပါတယ်။ Email Client Software အတွက် [Mutt](http://www.mutt.org/) သုံးလည်း ရပါတယ် သို့မဟုတ် Official Linux kernel documentation ရဲ့ [Email Clients for Linux](https://www.kernel.org/doc/html/latest/process/email-clients.html) မှာ Recommended ပေးထားတဲ့ Email Client Software တွေကို သုံးရင်လည်း ရပါတယ်။ အားလုံးပြီးသွားရင် ကိုယ့်ရဲ့ Patch ကို Kernel Maintainers တွေက Email ကနေ တဆင့် Review လုပ်ပြီးလို့ Approve လုပ်တယ်ဆိုရင်တော့ လက်ခံရရှိတဲ့ Maintainer က ```git am``` ကို သုံးပြီး Mailbox ကနေ ၀င်လာတဲ့ ကိုယ်ရဲ့ Patch ကို Apply လုပ်ပေးမှာဖြစ်ပါတယ်။ အဲဒီလိုနည်းလမ်းနဲ့ Linux kernel ကို Contribute လုပ်နိုင်မှာဖြစ်ပါတယ်။
-
-Video Tutorial နဲ့ လေ့လာချင်ရင် FOSDEM, 2010 မှာ Linux kernel stable tree maintainer and Lead developer ဖြစ်တဲ့ Greg Kroah-Hartman ပြောပြထားတဲ့ [Write and Submit your First Linux Kernel Patch](https://www.youtube.com/watch?v=LLBrBBImJt4&t=1079s) ကနေ လေ့လာကြည့်နိုင်ပါတယ်။
+The generated kernel patch will be sent to kernel maintainers via `git send-mail`. Eamil will then review your patch. Email Feedback software can be used to communicate with Kernel Maintainers and CCed Reviewers for feedback. You can also use [Mutt] (http://www.mutt.org/) for Email Client Software or see [Email Clients for Linux](https://www.kernel.org/doc/html/latest/). When all is said and done, the Kernel Maintainers will review your patch via email and approve it. That way you can contribute to the Linux kernel.
