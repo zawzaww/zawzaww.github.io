@@ -8,7 +8,7 @@ image:
   src: /assets/images/featured-images/img_c_cpp_programming.png
 ---
 
-အခု Blog post မှာတော့ C/C++ ကို လေ့လာလို့ရမယ့် ကျွန်တော်ကြိုက်တဲ့ကောင်းမယ်ထင်တဲ့ Websites တွေ Courses တွေနဲ့ Books တွေကို Collection သဘောမျိုး စုပေးထားတာဖြစ်ပါတယ်။ C/C++ ကို တခြားလေ့လာသူတွေအတွက်လည်း အသုံး၀င်လိမ့်မယ်လို့ထင်ပါတယ်။ ဒါကတော့ ကျွန်တော်ကြိုက်တဲ့ကောင်းမယ့်ထင်တဲ့ Resources တွေကို Collect လုပ်ပေးတာဖြစ်ပြီး တခြားကောင်းတဲ့ Websites တွေနဲ့ Books တွေရှိရင်လည်း Recommend ပေးနိုင်ပါတယ်။
+In this blog post, I have put together a collection of my favorite websites, courses and books for learning C/C++. I think C/C++ will be useful for other learners as well. This is a collection of great resources that I like, and I would recommend other great websites and books.
 
 ## C Programming Language
 
