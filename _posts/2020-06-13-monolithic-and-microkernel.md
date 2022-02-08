@@ -8,7 +8,7 @@ image:
   src: /assets/images/featured-images/img_monolithic_microkernel.png
 ---
 
-This article is based on the Origin Thread of the 1992 Tanenbaum-Torvalds debate. This article is based on the Tanenbaum-Torvalds debate. We will focus on the differences between the monolithic kernel design and the microkernel design commonly used in kernel design. Let me first briefly talk about the Tanenbaum-Torvalds debate. After that, we will talk about the differences between the Monolithic kernel and the microkernel, one by one.
+This article is based on the Origin Thread of the 1992 Tanenbaum-Torvalds debate. We will focus on the differences between the monolithic kernel design and the microkernel design commonly used in kernel design. Let me first briefly talk about the Tanenbaum-Torvalds debate. After that, we will talk about the differences between the Monolithic kernel and the microkernel, one by one.
 
 ## Tanenbaum-Torvalds Debate
 
