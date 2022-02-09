@@ -111,11 +111,11 @@ AudioWaveMaker Android app's Android.mk
 
 <script src="https://gist.github.com/zawzaww/5593df85c5d93392e2cb0345d7e3b329.js"></script>
 
-## Add Product Packages
+## Add Product Packages in Device tree
 
-Once you have written the Android.mk file for the app, you need to add the PRODUCT_PACKAGES of the Android app to the Makefile of the device tree where you are going to have lunch. This is because if you add the app PRODUCT_PACKAGES to that lunch target device, the Build system will be able to compile your android app package under `packages/apps/`.
+Once you have written the Android.mk file for the app, you need to add the `PRODUCT_PACKAGES` of the Android app to the Makefile of the device tree where you are going to have lunch. This is because if you add the app `PRODUCT_PACKAGES` to that lunch target device, the Build system will be able to compile your android app package under `packages/apps/`.
 
-Example: for Nexus 5X: `Android-OS/device/lge/bullhead/bullhead.mk`
+Example: for Nexus 5X: `AOSP/device/lge/bullhead/bullhead.mk`
 
 ```mk
 PRODUCT_PACKAGES += \
@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
 
 ## Compile Android sytstem img with Make
 
-Once you have written the Android.mk file for build the app, you need to add the `PRODUCT_PACKAGES` of the Android app to the Makefile of the device tree where you are going to have lunch. This is because if you add the app `PRODUCT_PACKAGES` to that lunch target device, the Make Build system will be able to compile your android app package under `packages/apps/`.
+First, you can compile the entire app system with just `mma package-name` without having to compile the entire Android system. Then it is better to compile the whole Android system.
 
 Example: for build AudioWaveMaker app project
 
