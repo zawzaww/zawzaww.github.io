@@ -8,21 +8,21 @@ image:
   src: /assets/images/featured-images/img_make_build_android.png
 ---
 
-Android OS-level ပိုင်းမှာ အဓိကသုံးတဲ့ Build System က [Make Build System](https://android.googlesource.com/platform/build) ဖြစ်ပြီး [AOSP (Android Open Source Project)](https://android.googlesource.com/) မှာ Building process အားလုံးကို Make build နဲ့ပဲ handle လုပ်ပါတယ်။ Android system တခုလုံးကို Compile လုပ်ဖို့ရော Make build ကိုပဲ သုံးပါတယ်။  အခုချိန်မှာ Android app developer တိုင်းက Android Studio မှာ  app build ဖို့အတွက် Build system တခု ဖြစ်တဲ့ Gradle ကိုတော့ ရင်းနှီးပြီးသားဖြစ်ပါတယ်။ Gradle build ကတော့ Easy to use ပိုဖြစ်တယ်လို့ ဆိုနိုင်ပါတယ်၊ Make build ကတော့ လုံး၀ Android ရဲ့ OS-level မှာ သုံးတဲ့ native build system ဖြစ်ပြီး ရေးရတာ လက်ပေါက်ကပ်တယ်လို့ ဆိုနိုင်ပါတယ်။ ဒါပေမယ့် Android OS-level မှာတော့ Makfile-based build system ကိုပဲ အဓိကသုံးတဲ့အတွက် ကျွန်တော့်အတွက်က မဖြစ်မနေ လေ့လာဖို့လိုအပ်လာပါတယ်။
+The main build system used in Android OS-level is [Make Build System](https://android.googlesource.com/platform/build) and [AOSP (Android Open Source Project)](https://android.googlesource.com) handles all building processes with Make build. Android uses Make build system to compile the entire Android system. By now, every Android app developer is familiar with Gradle, a build system for building apps in Android Studio. Gradle build is easier to use. Make build is a native build system used on Android OS-level, and writing can be very tricky. But on Android OS-level, mainly use Makfile-based build system, so I have to learn.
 
-ဒါကြောင့် Android Studio မှာ Gradle နဲ့ build လုပ်ထားတဲ့ Android app project source တခုကို Android OS source code ထဲကို ထည့်ချင်တယ်အခါ ဒီအတိုင်း သွား Add လို့ မရပါဘူး။ ဘာကြောင့်လဲဆိုတော့ Android OS's build system က Gradle မဟုတ်တဲ့အတွက်ကြောင့် ဖြစ်ပါတယ်။ အဲဒီအတွက် Android app တခု Compile လုပ်ဖို့အတွက် Low-level Android OS ရဲ့ Make build system နဲ့ ကိုက်ညီတဲ့ Makefile flags တွေ ရေးပေးဖို့လိုပါတယ်။ တနည်းအားဖြင့် AOSP မှာ Standard အဖြစ် သတ်မှတ်ထားတဲ့ Android.mk ကို မဖြစ်မနေ ရေးပေးဖို့ လိုအပ်ပါတယ်။ နောက်တခု သိထားရမှာက Go နဲ့ ရေးထားတဲ့ [Soong Build system](https://android.googlesource.com/platform/build/soong) ကိုလည်း Google ကနေ Introduce လုပ်ထားပါတယ်။ ကျွန်တော်အထင်တော့ နောက်ပိုင်း Old Makefile-based Build System က [Deprecation of Make](https://android.googlesource.com/platform/build/+/refs/heads/master/Deprecation.md) ဖြစ်သွားပြီး Soong နဲ့ လုံး၀ အစားထိုးမယ့် သဘောမှာ ရှိနေပါတယ်။ Soong က Android.mk (Makefile) format အစား Android.bp (Blueprint) format ကို သုံးထားပါတယ်။
+Therefore, if you want to add an Android app project source built with Gradle in Android Studio into the Android OS source code, you can not do so. This is because Android OS's build system is not Gradle. To compile an Android app, you need to write Makefile flags that match the Make build system of a low-level Android OS. In other words, you need to write Android.mk, which is standard in AOSP. Google also introduced the [Soong Build system] (https://android.googlesource.com/platform/build/soong) written by Go in Google. I think the later Old Makefile-based Build System [Deprecation of Make] (https://android.googlesource.com/platform/build/+/refs/heads/master/Deprecation.md) was supposed to be completely replaced by Soong. Soong uses the Android.bp (Blueprint) format instead of the Android.mk (Makefile) format.
 
-ဒီ Blog post မှာ Android system app တခုအတွက် Make နဲ့အတူ Build automation လုပ်ဖို့ Makefile flags တွေ ရေးတဲ့အကြောင်းကို ဆက်ပြောသွားမှာဖြစ်ပါတယ်။
+In this blog post I will talk about writing Makefile flags for Build automation with Make for an Android system app.
 
 ## Writing Makefiles
 
-AOSP မှာ DeskClock ဆိုတဲ့ Android app project တခု အတွက် Android.mk syntax ကို Example တခု အနေနဲ့ အရင်လေ့လာကြည့်နိုင်ပါတယ်။
+For example, for an Android app project called DeskClock in AOSP, you can first look at the Android.mk syntax as an example.
 
 https://android.googlesource.com/platform/packages/apps/DeskClock/+/refs/tags/android-9.0.0_r47/Android.mk
 
-App project structure ကတော့ Android Studio က app/src/min/ အောက်က dir structure အတိုင်းပဲ ဖြစ်ပါတယ်။ တခုပါပဲ Android.mk ဆိုတဲ့ file တခုတော့ ပိုသွားပါတယ်။ အဒီ Android.mk မှာ App project တခုအတွက် Makefile configuration တွေ ရေးပေးရမှာ ဖြစ်ပါတယ်။
+The app project structure is the same as the dir structure below `app/src/main` in Android Studio. There is one more file called Android.mk. In Android.mk you need to write Makefile configuration for an app project.
 
-Example: Android-OS/packages/apps/AudioWaveMaker
+Example: `AOSP/packages/apps/AudioWaveMaker`
 
 ```
  - cpp
@@ -32,7 +32,7 @@ Example: Android-OS/packages/apps/AudioWaveMaker
  - Android.mk
 ```
 
-ပထမဆုံး အနေနဲ့ ကိုယ့် Android app project က ဘယ် Android support libraries တွေနဲ့ တခြား Android libraries တွေ သုံးထားတယ်ဆိုတာ သိရပါတယ်။ ကိုယ့်သုံးထားတဲ့ libraries တွေကို Android.mk မှာ Configure လုပ်ပေးဖို့ လိုပါတယ်။ Example အနေနဲ့ ကျွန်တော့်ရဲ့ AudioWaveMaker ဆိုတဲ့ Android app မှာ အောက်ပါ Android support libraries တွေသုံးထားပါတယ်ဆိုပြီး Define လုပ်ထားပါတယ်။
+First of all, find out which Android support libraries and other Android libraries your Android app project uses. You need to configure your libraries in Android.mk. As an example, my AudioWaveMaker Android app defines the following Android support libraries:
 
 ```mk
 LOCAL_STATIC_ANDROID_LIBRARIES += \
@@ -43,7 +43,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES += \
      android-support-v17-leanback
 ```
 
-နောက်တခုကတော့ ကိုယ့် Android app project မှာ သုံးထားတဲ့ resource dirs တွေကို Link လုပ်ပေးဖို့လိုပါတယ်။
+Next, you need to link the resource dirs used in your Android app project.
 
 ```mk
 LOCAL_PATH:= $(call my-dir)
@@ -58,66 +58,62 @@ LOCAL_RESOURCE_DIR += \
     frameworks/support/v17/leanback/res
 ```
 
-ကိုယ့် App ရဲ့ Package Name ကို Define လုပ်ပေးရပါမယ်။ ဒီ Package Name က /system/ အောက်မှာ Add မယ့် Package Name ကိုဆိုလိုတာ ဖြစ်ပါတယ်။ မြင်သာအောင်ပြောရရင် Android system img တခု Compile လုပ်ပြီးသွားပြီဆိုရင် /system/priv-app/AudioWaveMaker ဆိုပြီး ကိုယ့်ရဲ့ app package ကို မြင်တွေ့ရမှာ ဖြစ်ပါတယ်။
+Define the package name of your app. This Package Name refers to the Package Name to be added under `/system`. To be clear, once you have compiled an Android system img, you will see your app package as `/system/priv-app/AudioWaveMaker`.
 
 ```mk
 LOCAL_PACKAGE_NAME := AudioWaveMaker
 ```
 
-တကယ်လို့ ကိုယ့်ရဲ့ Android app ကို /system/priv-app/ အောက်မှာ ထည့်ချင်တယ်ဆိုရင် ဒီ Makefile flag ကို သုံးပေးဖို့ လိုပါတယ်။
+If you want to put your Android app under `/system/priv-app/` you need to use this Makefile flag.
 
 ```mk
 LOCAL_PRIVILEGED_MODULE := true
 ```
 
-နောက်အရေးကြီးတဲ့ Makefile flag တခုက ကိုယ့်ရဲ့ Android app က Platform certificate ဖြစ်ကြောင်း Define လုပ်ပေးရပါမယ်။ ဒါမှသာ System-level app တခုအနေနဲ့ မြင်တွေ့ရမှာ ဖြစ်ပါတယ်။
+Another important Makefile flag is to specify that your Android app is a Platform certificate. Only then will it be seen as a system-level app.
 
 ```mk
 LOCAL_CERTIFICATE := platform
 ```
 
-ပြီးတဲ့နောက် SDK version တွေ Minimal SDK version တွေလည်း Gradle မှာလိုပဲ Define လုပ်ပေးနိုင်ပါတယ်။
+You can also configure SDK version and Minimal SDK version just like in Gradle.
 
 ```mk
 LOCAL_MIN_SDK_VERSION := 21
 LOCAL_SDK_VERSION := current
 ```
 
-App မှာ ရေးထားတဲ့ Java files (or) Kotlin files တွေကို ခေါ်ပေးဖို့ လိုအပ်ပါတယ်။ ဒီ Makefile flag ရဲ့ သဘောက Project root directory / java package အောက်က java files တွေကို သွားခေါ်မှာ ဖြစ်ပါတယ်။
+You need to retrieve the Java files (or) Kotlin files written in the app. The meaning of this Makefile flag is to fetch the java files under the Project root directory / java package.
 
 ```mk
 LOCAL_SRC_FILES := $(call all-java-files-under, java)
 ```
 
-တကယ်လို့ ကိုယ်ရဲ့ Android app မှာက Android NDK, C/C++ သုံးပြီး ရေးထားတာဆိုရင် အဲဒီ cpp dir အောက်က JNI libary module name ကိုလည်း Define လုပ်ပေးဖို့ လိုအပ်ပါတယ်။ (Example: native-lib)
+If your Android app is running Android NDK, C/C ++, you also need to define the JNI libary module name under that cpp dir. (Example: native-lib)
 
 ```mk
 LOCAL_JNI_SHARED_LIBRARIES := native-lib
 ```
 
-နောက်ဆုံးအနေနဲ့ကတော့ အဲဒီအပေါ်က မဖြစ်မနေလုပ်ရမယ့် Makfile flags တွေ Define လုပ်ပြီးရင်တော့ App က Source code ကနေ Build လုပ်ရမှာ ဖြစ်တဲ့အတွက် အောက်ဆုံးမှာ
+Finally, after defining the required Makfile flags above, the app must be built from the source code, so add `include $(BUILD_PACKAGE)` at the bottom.
 
 ```mk
 include $(BUILD_PACKAGE)
 ```
 
-ဆိုပြီး ထည့်ပေးရပါမယ်။
-
-တကယ်လို့ ကိုယ့်ရဲ့ Local path အောက်မှာ တခြား Makefiles တွေ ရှိနေသေးရင် ခေါ်ဖို့အတွက် အောက်ဆုံးမှာ
+If there are other Makefiles under your Local path, you must add `include $(call all-makefiles-under, $(LOCAL_PATH))` at the bottom to invoke them.
 
 ```mk
 include $(call all-makefiles-under, $(LOCAL_PATH))
 ```
 
-ဆိုပြီး ထည့်ပေးရပါမယ်။
-
 AudioWaveMaker Android app's Android.mk
 
 <script src="https://gist.github.com/zawzaww/5593df85c5d93392e2cb0345d7e3b329.js"></script>
 
-## Adding Product Packages
+## Add Product Packages
 
-သက်ဆိုင်ရာ App အတွက် Android.mk file ရေးပြီးသွားပြီ ဆိုရင် ကိုယ် lunch လုပ်မယ့် device tree ရဲ့ Makefile မှာ Android app ရဲ့ PRODUCT_PACKAGES ကို ထည့်ပေးဖို့လိုပါတယ်။ ဘာကြောင့်လဲဆိုတော့ အဲဒီ lunch လိုက်တဲ့ target device မှာ app ရဲ့ PRODUCT_PACKAGES ကို add ထားမှ Build system က packages/apps/ အောက်က ကိုယ့်ရဲ့ android app package ကို compile လုပ်ပေးမှာဖြစ်ပါတယ်။
+Once you have written the Android.mk file for the app, you need to add the PRODUCT_PACKAGES of the Android app to the Makefile of the device tree where you are going to have lunch. This is because if you add the app PRODUCT_PACKAGES to that lunch target device, the Build system will be able to compile your android app package under `packages/apps/`.
 
 Example: for Nexus 5X: `Android-OS/device/lge/bullhead/bullhead.mk`
 
@@ -126,11 +122,11 @@ PRODUCT_PACKAGES += \
     AudioWaveMaker
 ```
 
-## Compiling System img with Make
+## Compile Android sytstem img with Make
 
-အရင်ဆုံး Android System တခုလုံးကို Compile လုပ်စရာမလိုပဲ ကိုယ် Add လိုက်တဲ့ app project တခုတည်းကိုပဲ `mma package-name` နဲ့ Compile လုပ်ကြည့်နိုင်ပါတယ်။ ပြီးမှ Android system တခုလုံးကို Compile လုပ်တာ ပိုကောင်းပါတယ်။
+Once you have written the Android.mk file for build the app, you need to add the `PRODUCT_PACKAGES` of the Android app to the Makefile of the device tree where you are going to have lunch. This is because if you add the app `PRODUCT_PACKAGES` to that lunch target device, the Make Build system will be able to compile your android app package under `packages/apps/`.
 
-Example: for AudioWaveMaker app project
+Example: for build AudioWaveMaker app project
 
 ```sh
 . build/envsetup.sh
@@ -141,13 +137,13 @@ lunch target_android_device
 mma AudioWaveMaker -j$(nproc --all)
 ```
 
-အဲဒီအဆင့် အောင်မြင်သွားပြီဆိုရင်တော့ Android System တခုလုံးကို ပြန်ပြီး Recompile လုပ်နိုင်ပါပြီ။
+Once that step is complete, you can recompile the entire Android system with Make build system.
 
 ```sh
 make -j$(nproc --all)
 ```
 
-Compilation time က ကိုယ့် Computer ရဲ့ CPU core ပေါ် မူတည်ပြီး ကြာနိုင်ပါတယ်။
+Compilation time depends on the CPU core of your computer.
 
 Reference Links:
 - [https://android.googlesource.com/platform/build](https://android.googlesource.com/platform/build)
