@@ -22,17 +22,20 @@ This problem can be solved with Ccache. Compiling with Ccache speeds up to 3-5 m
 First of all, you need to have the Ccache package installed on your GNU/Linux machine.
 
 If you want to check the Ccache version you have installed:
+
 ```sh
 ccache --version
 ```
 
 You can install on Debian-based Linux system if not already installed Ccache:
+
 ```sh
 sudo apt install ccache
 ```
 Specify the maximum size of the cache cache.
 
 For example:
+
 ```sh
 ccache -M 32
 ```
@@ -41,7 +44,7 @@ ccache -M 32
 
 To view your current ccache statistics, type the `ccache -s` command.
 
-```bash
+```sh
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
 cache directory                     /home/zawzaw/.cache
 primary config                      /home/zawzaw/.cache/ccache.conf
@@ -65,7 +68,7 @@ max cache size                      32.0 GB
 
 Navigate to the Linux kernel source directory and clean the output files first.
 
-```bash
+```sh
 make clean && make mrproper
 ```
 
@@ -73,7 +76,7 @@ make clean && make mrproper
 
 The next step is to configure the kernel before compiling the Linux kernel. I used the default configuration as an example.
 
-```bash
+```sh
 make defconfig
 ```
 
@@ -81,17 +84,18 @@ make defconfig
 
 To compile the Linux kernel with Ccache, you will need to add the `CC="ccache gcc"` option with the make command.
 
-```bash
+```sh
 make CC="ccache gcc" -j$(nproc --all)
 ```
 
 If you want to know the exact compilation time result, you need to use the time command.
 
-```bash
+```sh
 time make CC="ccache gcc" -j$(nproc --all)
 ```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_time_make_cc.png)
+![Screenshot](/assets/images/screenshots/img_screenshot_kernel_compile_time.png)
 
 Final compilation time:
 ```sh
@@ -100,4 +104,3 @@ user     5m20.449s
 sys      3m50.917s
 ```
 
-![Screenshot](/assets/images/screenshots/img_screenshot_kernel_compile_time.png)
