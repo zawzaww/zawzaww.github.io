@@ -9,7 +9,9 @@ image:
   src: /assets/images/featured-images/img_speedup_linux_kernel_builds.png
 ---
 
-This article will focus on how to set up and build Linux kernel compilation time faster than usual using Cache (Compiler Cache). Normally, it takes about 30mins to compile the Linux kernel on my laptop with a low CPU. That makes it very inconvenient. This problem can be solved with Ccache. Compiling with Ccache speeds up to 3-5 mins.
+This article will focus on how to set up and build Linux kernel compilation time faster than usual using Cache (Compiler Cache).
+Normally, it takes about 30mins to compile the Linux kernel on my laptop with a low CPU. That makes it very inconvenient.
+This problem can be solved with Ccache. Compiling with Ccache speeds up to 3-5 mins.
 
 ## What is Ccache?
 
@@ -18,38 +20,26 @@ This article will focus on how to set up and build Linux kernel compilation time
 ## Installation and Setup Ccache
 
 First of all, you need to have the Ccache package installed on your GNU/Linux machine.
-If you want to check the Ccache version you have installed
 
-```bash
+If you want to check the Ccache version you have installed:
+```sh
 ccache --version
 ```
 
-You can check if not already installed.
-
-```bash
+You can install on Debian-based Linux system if not already installed Ccache:
+```sh
 sudo apt install ccache
 ```
-
-You can install it on Ubuntu Linux.
-
-Next you need to open the .bashrc file and set it up.
-Export the dache path to ccache. Add it to the following .bashrc file.
-
-```bash
-export CCACHE_DIR="/home/zawzaw/.cache"
-export CXX="ccache g++"
-export CC="ccache gcc"
-```
-
 Specify the maximum size of the cache cache.
 
-```bash
+For example:
+```sh
 ccache -M 32
 ```
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_ccache_max_size.png)
 
-To view your current ccache statistics, type the command 'ccache -s'.
+To view your current ccache statistics, type the `ccache -s` command.
 
 ```bash
 zawzaw@ubuntu-linux:~/Linux-kernel/linux-stable$ ccache -s
@@ -104,8 +94,7 @@ time make CC="ccache gcc" -j$(nproc --all)
 ![Screenshot](/assets/images/screenshots/img_screenshot_time_make_cc.png)
 
 Final compilation time:
-
-```
+```sh
 real     4m18.145s
 user     5m20.449s
 sys      3m50.917s
