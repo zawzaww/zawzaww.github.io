@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Started Using Twitter Platform and Moved On
+title: Started Using Twitter and Moved On
 author: Zaw Zaw
 ---
 

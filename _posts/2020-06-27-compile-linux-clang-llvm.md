@@ -13,7 +13,7 @@ GCC is the Traditional Default C Compiler used in the Linux kernel back then and
 
 ClangBuiltLinux Wiki: [https://github.com/ClangBuiltLinux/linux/wiki](https://github.com/ClangBuiltLinux/linux/wiki)
 
-## Installation
+## Installation Clang/LLVM toolchains
 
 On Ubuntu Linux, the Clang/LLVM toolchain is built-in. If you have not already done so, you can install it yourself. This may vary depending on the package manager used in Linux distributions. Let me give you an example with Ubuntu Linux.
 

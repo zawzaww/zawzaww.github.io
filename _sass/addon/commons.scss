@@ -44,7 +44,7 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 15.4px;
+  font-size: 15.5px;
 }
 
 body {
@@ -72,8 +72,8 @@ h2 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 38px;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 h3 {
@@ -83,7 +83,7 @@ h3 {
 
   font-family: 'Red Hat Display', sans-serif;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h4 {
