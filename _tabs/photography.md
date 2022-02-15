@@ -9,4 +9,4 @@ order: 5
 <p >You can see photos on <a href="https://photos.app.goo.gl/SJ9NYCk8so8oJRQz7">@Google Photos</a> | <a href="https://www.instagram.com/zawzaw.cen">@Instagram</a>
 </p>
 
-![Photography](https://s20.postimg.cc/5h3fp57ot/mobilephotography-zatt.png){: width=100% height=100%}
+![Photography](/assets/images/featured-images/img_mobilephotography.png){: width=100% height=100%}
