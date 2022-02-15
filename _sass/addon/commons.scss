@@ -44,7 +44,7 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 15.5px;
+  font-size: 15.2px;
 }
 
 body {
@@ -62,7 +62,7 @@ h1 {
   @extend %heading;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: bold;
 }
 
@@ -72,7 +72,7 @@ h2 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 38px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ h3 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -92,7 +92,7 @@ h4 {
   @extend %anchor;
 
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
