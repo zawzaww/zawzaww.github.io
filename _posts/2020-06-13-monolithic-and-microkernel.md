@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kernel Design: Monolithic Versus Microkernel"
+title: "Kernel Design: Monolithic Vs Microkernel"
 author: "Zaw Zaw"
 categories: [Linux]
 tags: [kernel, monolithic, microkernel]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Helm Series: Writing a Kubernetes Helm Chart"
+title: "Writing a Simple Kubernetes Helm Chart"
 categories: [Kubernetes]
 tags: [kubernetes, helm, chart]
 author: "Zaw Zaw"
@@ -9,10 +9,10 @@ image:
   description: Helm Official Logo by Helm Community
 ---
 
-In **Helm Series** articles, I will share about writing **Kubernetes Helm chart**, deep dive into YAML-based **Helm template
+In [Helm](https://zawzaww.github.io/tags/helm) series of articles, I will share about writing **Kubernetes Helm chart**, deep dive into YAML-based **Helm template
 language** syntax, **Helm chart development** tips and tricks. In this article, I will focus on how to write a simple Helm Chart
 to deploy web application on Kubernetes. I will demostrate with simple containerized Python Flask application
-to write Helm Chart and deploy on Kubernetes cluster.
+to write Helm Chart and deploy it on Kubernetes cluster.
 
 ## Prerequisites
  - Kubernetes Cluster, You can use [minikube](https://minikube.sigs.k8s.io/docs) (or) any other tools for setup local Kubernetes cluser.
@@ -285,11 +285,12 @@ Basically, Helm Charts have main three categories:
    - Define Helm chart name, description, chart revision and so on.
 
  - `templates`
-   - Helm templates are general and programming style configurations written in YAML-based Helm template language.
-It means that we can pass variables from values.yaml file into templates files when we install Helm chart with `helm install` or install time.
+   - Helm templates are general and programming-styled configurations written in YAML-based Helm template language.
+It means that we can pass variables from values.yaml file into templates files when runtime (or) we deploy Helm chart.
 
  - `values.yaml`
-   - Define varibales to be passed into templates. So, when we run `helm install`, Helm sets this variables into Helm templates files.
+   - Declare variables to be passed into Helm templates. So, when we run `helm install` to deploy Helm charts,
+   Helm sets this variables into Helm templates files based on you configured templates and values.
 
 In the other words, Helm charts are pre-configured configurations and packages as one unit to deploy applications esaily on Kubernetes cluster.
 
