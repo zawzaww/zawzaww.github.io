@@ -310,6 +310,11 @@ image:
 
 - In `templates/deployment.yaml` file, we can set variables from values.yaml with `.Values.image.repository`, `.Values.image.pullPolicay` and `.Values.image.tag`.
 It's YAML-based Helm template language syntax. You can learn on [The Chart Template Developer's Guide](https://helm.sh/docs/chart_template_guide).
+  - Get Docker image repository: `.Values.image.repository`
+  - Get Docker image pull policy: `.Values.image.pullPolicy`
+  - Get Docker image tag: `.Values.image.tag`
+
+So, when need to get variables form `values.yaml` file, we can use `.Values` in Helm templates like this:
 
 <script src="https://gist.github.com/zawzaww/8d93e97bda1ec2d104e55751a7f29cb2.js"></script>
 
@@ -325,6 +330,9 @@ service:
 ```
 
 - In `templates/service.yaml` file, we can set service varibales from values.yaml file like this:
+  - Get service type: `.Values.service.type`
+  - Get service port: `.Values.service.port`
+  - Get service target port: `.Values.service.targetPort`
 
 <script src="https://gist.github.com/zawzaww/89d71e4598a4df41fbb5987877f299d0.js"></script>
 
@@ -338,6 +346,7 @@ deployment:
 ```
 
 - In `templates/deployment.yaml` file, set target Docker container port variable from values.yaml file:
+  - Get target container port: `.Values.deployment.containerPort`
 
 <script src="https://gist.github.com/zawzaww/faa848e10951ca369c119340721af6c3.js"></script>
 
@@ -366,8 +375,8 @@ deployment:
           fieldPath: status.podIP
 ```
 
-- In `templates/deployment.yaml` Helm template, set environment variables dynamically from values.yaml file.
-So, when you need to pass the array and whole config block into Helm templates, you can use `- with` and `- toYaml`.
+- In `templates/deployment.yaml`, set environment variables dynamically from values.yaml file.
+  - So, when you need to pass the array and whole config block into Helm templates, you can use `- with` and `- toYaml`.
 
 <script src="https://gist.github.com/zawzaww/bf27728a556b04e8f91f86c4b87e9323.js"></script>
 
@@ -524,6 +533,17 @@ spec:
 We can now deploy pod-info application with Helm chart on our minikube Kubernetes cluster.
 
 Deploy pod-info application simply like this:
+
+Format:
+
+```sh
+$ helm install <chart_name> <dir_path> \
+ --values <values_file_path> \
+ --create-namespace \
+ --namespace <namespace>
+```
+
+For example:
 
 ```sh
 $ helm install pod-info-dev pod-info \
