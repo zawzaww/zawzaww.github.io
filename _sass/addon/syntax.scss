@@ -39,8 +39,8 @@ html[mode=dark] {
   padding: 1.5rem;
 }
 
-$code-font-size: 14.2px !default;
-$code-font-family: 'Source Code Pro', Consolas, 'Courier New', monospace;
+$code-font-size: 0.9rem;
+$code-font-family: 'Roboto Mono', monospace;
 
 div > pre {
   @extend %code-snippet-bg;
