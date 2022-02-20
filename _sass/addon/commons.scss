@@ -2,7 +2,8 @@
   The common styles
 */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -43,13 +44,13 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 0.990rem;
+  font-size: 0.963rem;
 }
 
 body {
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: normal;
-  line-height: 1.0;
+  line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
