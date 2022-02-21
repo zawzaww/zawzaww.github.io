@@ -9,8 +9,8 @@ image:
   description: Helm Official Logo by Helm Community
 ---
 
-In [Helm](https://zawzaww.github.io/tags/helm) series of articles, I will share about writing **Kubernetes Helm chart**, deep dive into YAML-based **Helm template
-language** syntax, **Helm chart development** tips and tricks. In this article, I will focus on how to write a simple Helm Chart
+In [Helm](https://zawzaww.github.io/tags/helm) series of articles, I will share about writig Kubernetes Helm chart, deep dive into YAML-based Helm template
+language, Helm chart development tips and tricks. In this article, I will focus on how to write a simple Helm Chart
 to deploy web application on Kubernetes. I will demostrate with simple containerized Python Flask application
 to write Helm Chart and deploy it on Kubernetes cluster.
 
@@ -18,7 +18,7 @@ to write Helm Chart and deploy it on Kubernetes cluster.
  - Kubernetes Cluster, You can use [minikube](https://minikube.sigs.k8s.io/docs) (or) any other tools for setup local Kubernetes cluser.
  - Helm CLI Tool, You need to install [Helm](https://helm.sh) Kubernetes package manager tool.
  - Kubernetes, You need to understand basic [Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects) 
- and [Workloads resources](https://kubernetes.io/docs/concepts/workloads).
+ and [Workloads resources](https://kubernetes.io/docs/concepts/workloads). If you are not fimiliar with Kubernetes, you can learn on [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) interactive tutorial.
 
 ## Introduction to Helm
 Basically, [Helm](https://helm.sh) is a Kubernetes package manager that manages and deploys Helm charts.
@@ -80,7 +80,7 @@ You can install Helm via package manager tools:
  - [https://helm.sh/docs/intro/install/#from-apt-debianubuntu](https://download.lineageos.org)
  - [https://helm.sh/docs/intro/install/#from-snap](https://helm.sh/docs/intro/install/#from-snap)
 
-## Containerize application
+## Containerize app
 Before we write Kubernetes Helm chart, we need to containerize for your web application.
 
 In this article, I will use open sourced pod-info-app: [https://gitlab.com/gitops-argocd-demo/webapp](https://gitlab.com/gitops-argocd-demo/webapp)
@@ -92,8 +92,8 @@ Download `pod-info-app` Git repository:
 $ git clone https://gitlab.com/gitops-argocd-demo/webapp.git pod-info-app
 ```
 
-This application's author has already written `Dockerfile` but we can update and customize `Dockerfile`
-to update Python version and run gunicorn server with specific user.
+This app application author has already written `Dockerfile` but we can update and customize `Dockerfile`
+to update Python version and run gunicorn server with specific app user, instead of running container as root user.
 
 Update port number in `PROJECT_ROOT/gunicorn-cfg.py` file like this:
 
@@ -106,7 +106,7 @@ loglevel = 'debug'
 capture_output = True
 ```
 
-Update and customize `PROJECT_ROOT/Dockefile` file like this:
+Update and customize `PROJECT_ROOT/Dockefile` file to run container with specific app user:
 
 ```Dockerfile
 FROM python:3.8-slim
@@ -134,7 +134,10 @@ EXPOSE ${APP_PORT}
 
 ENTRYPOINT ["gunicorn", "--config", "gunicorn-cfg.py", "run:app"]
 ```
-Dockerfile is very simple. Install required Python packages with pip and serve Python Flask app with gunicorn server.
+
+Dockerfile is very simple:
+ - Install required Python packages with pip.
+ - Serve Python Flask app with gunicorn server.
 
 Build Docker container image locally:
 
@@ -199,9 +202,9 @@ latest: digest: sha256:2f584b970b2bb5d9db9ece9d36cf8426ad7b9c4fc0dc1e059c6d1c028
 Before we write a Helm chart for our application,
 we firstly need to understand how our application has designed, how our application works and so on.
 
-Our [pod-info-app](https://gitlab.com/gitops-argocd-demo/webapp) is a very simple web application written in Python with Flask.
+This [pod-info](https://gitlab.com/gitops-argocd-demo/webapp) is a very simple web application written in Python with Flask.
 
-In our application, we will display the following information data in UI:
+In pod-info application, we will display the following information in Web UI:
  - Namespace
  - Node Name
  - Pod Name
@@ -211,8 +214,13 @@ For Example:
 
 ![Screenshot](/assets/images/screenshots/img_screenshot_pod_info_data.png){: .normal }
 
-Basically, our application gets this data from Kubernetes environment variables.
-So, we need to set this `ENV` variables in Kubernetes deployment like this:
+Basically, pod-info application gets information dynamically through the Kubernetes environment variables.
+So, we need to expose pod information to container through the environment variables in Kubernetes.
+Then, app uses this environment variables to get information dynamically.
+
+Ref: [Expose Pod Information to Containers Through Environment Variables](https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information)
+
+For example, we can set this `ENV` variables with key/value form in Kubernetes deployment like this:
 
 ```yaml
 env:
@@ -233,8 +241,6 @@ env:
       fieldRef:
         fieldPath: status.podIP
 ```
-
-Ref: [Expose Pod Information to Containers Through Environment Variables](https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information)
 
 It's like key value form:
  - `NODE_NAME`=`spec.nodeName`
@@ -286,8 +292,8 @@ Basically, Helm Charts have main three categories:
  - `templates/`
    - Helm templates are general and dynamic configurations that locate Kubernetes resources
    written in YAML-based [Helm template language](https://helm.sh/docs/chart_template_guide).
-   It means that we can pass variables from values.yaml file into templates files when deployment time (or) we deploy Helm chart.
-   So, variables from values file can change dynamically based on you configured Helm templates when deployment time.
+   It means that we can pass variables from `values.yaml` file into templates files when we deploy Helm chart.
+   So, values can be changed dynamically based on you configured Helm templates at deployment time.
 
  - `values.yaml`
    - Declare variables to be passed into Helm templates. So, when we run `helm install` to deploy Helm charts,
