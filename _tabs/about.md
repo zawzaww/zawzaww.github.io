@@ -5,7 +5,7 @@ icon: fas fa-info
 order: 7
 ---
 
-![About Me](/assets/images/featured-images/img_profile_picture.png){: width="250" height="250" .normal}
+![About Me](/assets/images/featured-images/img_profile_picture.png){: width="200" height="200" .normal}
 
 Systems Programmer/SRE Engineer, focusing on Linux, Containers and Kubernetes
 
