@@ -4,6 +4,7 @@
 
 @import "colors/light-syntax";
 @import "colors/dark-syntax";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 html:not([mode]),
 html[mode=light] {
@@ -39,8 +40,8 @@ html[mode=dark] {
   padding: 1.5rem;
 }
 
-$code-font-size: 0.913rem;
-$code-font-family: 'Source Code Pro', monospace;
+$code-font-size: 0.894rem;
+$code-font-family: 'Roboto Mono', monospace;
 
 div > pre {
   @extend %code-snippet-bg;
@@ -110,6 +111,8 @@ code {
   &.highlighter-rouge {
     font-size: $code-font-size;
     font-family: $code-font-family;
+    font-weight: 400;
+    font-style: normal;
     padding: 3px 5px;
     border-radius: 4px;
     background-color: var(--inline-code-bg);
