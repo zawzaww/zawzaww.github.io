@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Helm: Writing a Kubernetes Helm Chart"
+title: "Writing a Kubernetes Helm Chart"
 categories: [Kubernetes]
 tags: [kubernetes, helm, chart]
 author: "Zaw Zaw"
@@ -9,16 +9,17 @@ image:
   description: Helm Official Logo by Helm Community
 ---
 
-In [Helm](https://zawzaww.github.io/tags/helm) series of articles, I will share about writig Kubernetes Helm chart, deep dive into YAML-based Helm template
-language, Helm chart development tips and tricks. In this article, I will focus on how to write a simple Helm Chart
-to deploy web application on Kubernetes. I will demostrate with simple containerized Python Flask application
-to write Helm Chart and deploy it on Kubernetes cluster.
+In this blog post, I will share about writig Kubernetes Helm chart, YAML-based Helm template
+language, Helm chart development tips and focus on how to write a simple Helm Chart
+for an application to deploy on Kubernetes and how to debug Helm templates locally.
+I will also demostrate with simple containerized Python Flask application to write Helm Chart and deploy it on Kubernetes cluster.
 
 ## Prerequisites
- - Kubernetes Cluster, You can use [minikube](https://minikube.sigs.k8s.io/docs) (or) any other tools for setup local Kubernetes cluser.
- - Helm CLI Tool, You need to install [Helm](https://helm.sh) Kubernetes package manager tool.
- - Kubernetes, You need to understand basic [Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects) 
- and [Workloads resources](https://kubernetes.io/docs/concepts/workloads). If you are not fimiliar with Kubernetes, you can learn on [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) interactive tutorial.
+ - [Kubernetes](https://kubernetes.io) cluster
+ - [Helm](https://helm.sh) Kubernetes package manager tool
+ - Kubernetes Basics
+  > You need to understand basic [Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects)
+ and [Workloads resources](https://kubernetes.io/docs/concepts/workloads). If you are not fimiliar with Kubernetes, you can learn basics with [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) interactive tutorial.
 
 ## Introduction to Helm
 Basically, [Helm](https://helm.sh) is a Kubernetes package manager that manages and deploys Helm charts.
