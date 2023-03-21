@@ -37,6 +37,7 @@ In this blog post, I have put together a collection of my favorite websites, cou
 - [https://www.learn-c.org](https://www.learn-c.org)
 - [https://guide.freecodecamp.org](https://guide.freecodecamp.org/c)
 - [https://www.geeksforgeeks.org](https://www.geeksforgeeks.org/c-programming-language)
+- [https://www.scaler.com](https://www.scaler.com/topics/c/)
 
 ## C++ Programming Language
 
@@ -59,3 +60,4 @@ In this blog post, I have put together a collection of my favorite websites, cou
 - [https://www.learn-cpp.org/](https://www.learn-cpp.org)
 - [https://guide.freecodecamp.org](https://guide.freecodecamp.org/cplusplus)
 - [https://www.geeksforgeeks.org](https://www.geeksforgeeks.org/c-plus-plus)
+- [https://www.scaler.com](https://www.scaler.com/topics/cpp)
