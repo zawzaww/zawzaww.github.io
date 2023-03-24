@@ -1,0 +1,15 @@
+#
+# Docker compose
+# for serve Jekyll site for local environment.
+#
+version: "3.3"
+
+services:
+   jekyll-site:
+      image: jekyll/jekyll:stable
+      command: jekyll serve
+      volumes:
+         - ".:/srv/jekyll"
+      ports:
+         - "4000:4000"
+
