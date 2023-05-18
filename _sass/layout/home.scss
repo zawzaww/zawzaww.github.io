@@ -4,7 +4,7 @@
 
 .pagination {
   color: var(--btn-patinator-text-color);
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Inter', sans-serif;
 
   a:hover {
     text-decoration: none;
@@ -64,9 +64,9 @@
     }
 
     h1 {
-      font-family: 'Red Hat Display', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 35px;
-      font-weight: bold;
+      font-weight: 500;
       margin: 0;
     }
 

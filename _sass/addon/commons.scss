@@ -1,8 +1,7 @@
 /*
   The common styles
 */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -43,13 +42,13 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 0.969rem;
+  font-size: 0.959rem;
 }
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: normal;
-  line-height: 1.75rem;
+  line-height: 1.0;
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
@@ -60,9 +59,9 @@ body {
 h1 {
   @extend %heading;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h2 {
@@ -70,9 +69,9 @@ h2 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h3 {
@@ -80,9 +79,9 @@ h3 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h4 {
@@ -90,9 +89,9 @@ h4 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h5 {
@@ -100,9 +99,9 @@ h5 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 ol,
