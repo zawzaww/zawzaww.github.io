@@ -3,9 +3,6 @@ layout: page
 # The Home page layout
 ---
 
-<h5 align="center">BLOG POSTS & ARTICLES</h4>
-<hr style="border-top: 2px solid gainsboro;"/>
-
 {% assign pinned = site.posts | where_exp: "item", "item.pin == true"  %}
 {% assign default = site.posts | where_exp: "item", "item.pin != true"  %}
 {% assign posts = "" | split: "" %}

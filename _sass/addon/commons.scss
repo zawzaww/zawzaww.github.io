@@ -1,6 +1,7 @@
 /*
   The common styles
 */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
@@ -59,9 +60,9 @@ body {
 h1 {
   @extend %heading;
 
-  font-family: 'Inter', sans-serif;
-  font-size: 42px;
-  font-weight: 500;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
 }
 
 h2 {
@@ -69,8 +70,8 @@ h2 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Inter', sans-serif;
-  font-size: 36px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 32px;
   font-weight: 500;
 }
 
@@ -79,8 +80,8 @@ h3 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Inter', sans-serif;
-  font-size: 26px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -89,17 +90,7 @@ h4 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-h5 {
-  @extend %heading;
-  @extend %section;
-  @extend %anchor;
-
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -300,6 +291,7 @@ footer {
   h1 {
     margin-top: 3rem;
     margin-bottom: 1rem;
+    font-size: 35px;
   }
   em { /* MarkDown italic */
     padding-right: 0.2rem;
