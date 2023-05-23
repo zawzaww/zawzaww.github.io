@@ -1,7 +1,7 @@
 /*
   The common styles
 */
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
@@ -43,7 +43,7 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 0.959rem;
+  font-size: 0.969rem;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
 h1 {
   @extend %heading;
 
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 38px;
   font-weight: 600;
 }
@@ -70,9 +70,9 @@ h2 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
@@ -80,9 +80,9 @@ h3 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h4 {
@@ -90,9 +90,9 @@ h4 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 ol,

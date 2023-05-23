@@ -9,7 +9,7 @@ image:
   description: Helm Official Logo by Helm Community
 ---
 
-In this blog post, I will share about writig Kubernetes Helm chart, YAML-based Helm template
+In this blog post, I will share about writing Kubernetes Helm chart, YAML-based Helm template
 language, Helm chart development tips and focus on how to write a simple Helm Chart
 for an application to deploy on Kubernetes and how to debug Helm templates locally.
 I will also demostrate with simple containerized Python Flask application to write Helm Chart and deploy it on Kubernetes cluster.
@@ -56,7 +56,7 @@ $ minikube start --container-runtime=containerd
 Check minikube status:
 
 ```sh
-[zawzaw@redhat-linux:~]$ minikube status 
+[zawzaw@redhat-linux:~]$ minikube status
 minikube
 type: Control Plane
 host: Running
@@ -183,17 +183,17 @@ $ docker push zawzaww/pod-info-app:latest
 
 ```sh
 The push refers to repository [docker.io/zawzaww/pod-info-app]
-687ccfae7d0e: Pushed 
-779e7681e9a7: Pushed 
-f57ce0722888: Pushed 
-34decbbd20d2: Pushed 
-314e501bfdc5: Pushed 
-9c81064245d9: Pushed 
-87ea2744abf2: Mounted from library/python 
-51f094ff7b94: Mounted from library/python 
-1a40cb2669f8: Mounted from library/python 
-32034715e5d4: Mounted from library/python 
-7d0ebbe3f5d2: Mounted from library/python 
+687ccfae7d0e: Pushed
+779e7681e9a7: Pushed
+f57ce0722888: Pushed
+34decbbd20d2: Pushed
+314e501bfdc5: Pushed
+9c81064245d9: Pushed
+87ea2744abf2: Mounted from library/python
+51f094ff7b94: Mounted from library/python
+1a40cb2669f8: Mounted from library/python
+32034715e5d4: Mounted from library/python
+7d0ebbe3f5d2: Mounted from library/python
 latest: digest: sha256:2f584b970b2bb5d9db9ece9d36cf8426ad7b9c4fc0dc1e059c6d1c02805c2395 size: 2629
 ```
 
@@ -265,7 +265,7 @@ Creating pod-info
 Then, Helm automatically generates required Helm templates and values like this:
 
 ```sh
-[zawzaw@redhat-linux:~/helm/helm-charts/pod-info]$ tree 
+[zawzaw@redhat-linux:~/helm/helm-charts/pod-info]$ tree
 .
 ├── Chart.yaml
 ├── templates
