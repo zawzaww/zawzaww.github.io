@@ -7,11 +7,9 @@ order: 7
 
 ![About Me](/assets/images/featured-images/img_profile_picture.png){: width="200" height="200" .normal}
 
-Systems Programmer/SRE Engineer, focusing on Linux, Containers and Kubernetes
+I'm Zaw Zaw, I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay) also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra). I'm a SRE engineer at [@FRONTIIR](http://www.frontiir.com/), currently working on RnD/Integration team. Formerly, I've worked on RnD/DevSA team. Former Recognized Developer and Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums and I've contributed to Android, Linux kernel and  Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums.
 
-I'm Zaw Zaw, I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay) also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra). Currently, I'm a SRE engineer at [@Frontiir](http://www.frontiir.com/), working on RnD/DevSA, systems automation team. Formerly, Recognized Developer and Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums. I've contributed to Android, Linux kernel and  Android open source project, AOSP based Android custom firmware projects on XDA Android Forums.
-
-I've always loved working with Low-level software and command-line tools to interact with hardware. Currently, I'm working on Linux, CI/CD, Docker containers and Kubernetes. I've always had a keen interest in Computer hardware/software, Operating systems, Unix/Linux systems programming, Linux kernel hacking, Cloud computing and containers. And, I also love to take photograph and interested in nature photography.
+I've loved working with Low level software and command-line tools to interact with hardware. I'm currently working on Linux, Continuous Integration (CI), Continuous Deployment and Delivery (CD), Containerization and Kubernetes. I've always had a keen interest in Computer engineering, Systems programming, Operating systems, Linux kernel hacking, Cloud computing, Containers, Automation and Infrastructure. And, I also love to take photograph and interested in Landscape photography.
 <br>
 
 ---
@@ -32,7 +30,7 @@ I've always loved working with Low-level software and command-line tools to inte
   - Operating Systems, Kernel, Systems Programming, Linux System Administration, GitOps, Virtualization, Containerization, Continuous Integration, Continuous Delivery
 
 - **Technologies and Tools**
-  - Linux kernel, embedded Android, Git, Open Source Software, Bash, Docker, GitLab CI, ArgoCD, Helm, Kubernetes
+  - Linux kernel, embedded Android, Git, Open Source Software, Bash, Ansible, Docker, GitLab CI, ArgoCD, Helm, Kubernetes
 <br>
 
 ---
@@ -40,7 +38,11 @@ I've always loved working with Low-level software and command-line tools to inte
 ## WORK EXPERIENCE
 
 ### [FRONTIIR](https://www.linkedin.com/company/frontiir)
-   - **Senior Associate SRE Engineer (Nov 2021 – Present)**
+
+   - **SRE Engineer (May 2023 - Present)**
+     - Setup Infra tools, maintain infrastructure and also build CI and CD pipelines for automated apps deployment on Kubernetes. Integrate Frontiir's internal software systems. Maintain Kubernetes clusters, build Ansible playbooks, monitor servers with Prometheus and Grafana. Mentor new team members and also research on Kubernetes platform.
+
+   - **Senior Associate SRE Engineer (Nov 2021 – Apr 2023)**
      - Working on Linux, Docker containers, CI/CD and automated Kubernetes deployment. Build SRE-related CLI tools and write Helm Charts to deploy internal applications on Kubernetes.
 
    - **Associate SRE Engineer (Sep 2020 – Oct 2021)**
