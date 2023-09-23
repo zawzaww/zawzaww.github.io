@@ -2,5 +2,5 @@
 
 [![GitHub Pages CI](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/github-pages-ci.yml/badge.svg?branch=master)](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/github-pages-ci.yml)
 
-Personal blog and website: https://zawzaww.github.io
+Personal blog and website: [https://zawzaww.github.io](https://zawzaww.github.io)
 
