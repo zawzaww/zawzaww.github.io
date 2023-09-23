@@ -3,7 +3,6 @@ layout: post
 title: "Writing a Kubernetes Helm Chart"
 categories: [Kubernetes]
 tags: [kubernetes, helm, chart]
-author: "Zaw Zaw"
 image:
   src: /assets/images/featured-images/img_helm_kubernetes.png
   description: Helm Official Logo by Helm Community

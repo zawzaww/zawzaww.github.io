@@ -5,11 +5,20 @@
 version: "3.3"
 
 services:
-   jekyll-site:
-      image: jekyll/jekyll:stable
-      command: jekyll serve
-      volumes:
-         - ".:/srv/jekyll"
-      ports:
-         - "4000:4000"
+  jekyll-site:
+    image: jekyll-site:local
+    container_name: jekyll-site
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: >
+      jekyll serve
+        --watch
+        --drafts
+        --livereload
+    volumes:
+      - ".:/srv/jekyll"
+    ports:
+      - "4000:4000"
+      - "35729:35729"
 

@@ -3,7 +3,6 @@ layout: post
 title: "Polar Night and Midnight Sun: Why do they occur?"
 categories: [Science]
 tags: [solarsystem, sun, earth]
-author: "Zaw Zaw"
 image:
   src: /assets/images/featured-images/img_earth_seasons.jpg
   description: Earth orbits the Sun Photo by Wikipedia

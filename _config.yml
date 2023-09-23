@@ -17,10 +17,10 @@ lang: en-US
 title: Zaw Zaw
 
 # It will display as the sub-title name.
-tagline: ZAW's Personal Blog and Website
+tagline: SRE / Platform Engineer
 
 # Used by seo meta and the atom feed.
-description: Personal Blog and Website
+description: ZAW's Personal Blog
 
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaww.github.io
@@ -29,17 +29,12 @@ url: https://zawzaww.github.io
 github:
   username: zawzaww
 
-# Twitter username.
-twitter:
-  username: zawzaw_me
-
 # Change to your full name.
 # It will be displayed as the default author of the posts and the copyright owner in the footer.
 social:
   name: Zaw Zaw
   email: zawzthein@outlook.com
   links:
-    - https://twitter.com/zawzaw_me
     - https://github.com/zawzaww
 
 # change to your verification string
