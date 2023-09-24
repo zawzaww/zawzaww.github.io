@@ -95,6 +95,16 @@ h4 {
   font-weight: 600;
 }
 
+h5 {
+  @extend %heading;
+  @extend %section;
+  @extend %anchor;
+
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 ol,
 ul {
   ol,

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fascinating Facts about Norge or Norway
+title: Fascinating Facts about Norway
 categories: [Countries]
 tags: [europe, norge, norway]
 ---
