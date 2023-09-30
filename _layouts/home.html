@@ -1,10 +1,7 @@
 ---
-layout: page
 # The Home page layout
+layout: blog
 ---
-
-<h4 align="center" style="color: #424242;">BLOG POSTS & ARTICLES</h4>
-<hr style="height:6px; border-top: 1px solid gainsboro; border-bottom: 1px solid gainsboro;"/>
 
 {% assign pinned = site.posts | where_exp: "item", "item.pin == true"  %}
 {% assign default = site.posts | where_exp: "item", "item.pin != true"  %}
