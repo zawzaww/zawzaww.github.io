@@ -7,7 +7,7 @@ order: 7
 
 ![About Me](/assets/images/featured-images/img_profile_picture.png){: width="200" height="200" .normal}
 
-##### SRE Engineer / Hobbyist Photographer
+##### SRE Engineer / Amateur Photographer
 
 I'm Zaw Zaw, I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay) also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra). I'm a SRE engineer and, currently working at [@FRONTiiR](http://www.frontiir.com/) on RnD/Integration team. Formerly, I've worked on RnD/DevSA team. Former Recognized Developer and Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums and I've contributed to Android, Linux kernel and  Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums.
 

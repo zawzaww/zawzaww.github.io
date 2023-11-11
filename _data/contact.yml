@@ -23,11 +23,11 @@
   icon: 'fab fa-linkedin'
   url: https://www.linkedin.com/in/zawzaww
 
+- type: twitter
+  icon: 'fab fa-twitter'
+  url: https://twitter.com/zawzaw_me
+
 - type: email
   icon: 'fas fa-envelope'
-  noblank: true
-
-- type: rss
-  icon: 'fas fa-rss'
   noblank: true
 
