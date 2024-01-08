@@ -80,7 +80,7 @@ You can install Helm via package manager tools:
  - [https://helm.sh/docs/intro/install/#from-apt-debianubuntu](https://download.lineageos.org)
  - [https://helm.sh/docs/intro/install/#from-snap](https://helm.sh/docs/intro/install/#from-snap)
 
-## Containerize app
+## Containerize an application
 Before we write Kubernetes Helm chart, we need to containerize for your web application.
 
 In this article, I will use open sourced pod-info-app: [https://gitlab.com/gitops-argocd-demo/webapp](https://gitlab.com/gitops-argocd-demo/webapp)

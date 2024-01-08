@@ -37,11 +37,11 @@ html[mode=dark] {
 }
 
 %code-snippet-padding {
-  padding: 1.5rem;
+  padding: 1.4rem;
 }
 
-$code-font-size: 0.875rem;
 $code-font-family: 'Roboto Mono', monospace;
+$code-font-size: 0.88rem !default;
 
 div > pre {
   @extend %code-snippet-bg;
@@ -85,6 +85,7 @@ div > pre {
     margin-bottom: 0;
     font-size: $code-font-size;
     font-family: $code-font-family;
+    font-weight: normal;
     line-height: 1.4rem;
     word-wrap: normal; /* Fixed Safari overflow-x */
   }
