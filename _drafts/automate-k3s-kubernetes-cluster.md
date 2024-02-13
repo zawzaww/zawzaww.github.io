@@ -8,13 +8,16 @@ image:
   description: "Combined official K3s and Kubernetes logo by Author"
 ---
 
-In this blog post, I will share how to setup and bootstrap K3s cluster, and how to configure
+In this blog post, I will share how to setup and bootstrap K3s cluster and how to configure
 automated upgrading for K3s Kubernetes cluster.
 
+This article covers both how to setup multi-node K3s Kubernetes cluster and how to upgrade K3s
+automatically using system upgrade controller.
+
 Normally, we manually download K3s binary file from GitHub release page
-and, install and upgrade it in K3s Server and Agent Kubernetes node. Instead, we can manage and configure
+and, install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure
 automated cluster upgrading for K3s using Rancher's [system upgrade controller](https://github.com/rancher/system-upgrade-controller)
-and **Plan** CRD, custom resource definition.
+and **Plan** CRD, Custom Resource Definition.
 
 ## Objectives
 
@@ -24,7 +27,81 @@ and **Plan** CRD, custom resource definition.
  - Configure `Plan` CRD for automate K3s cluster upgrade
  - Monitor K3s System Upgrade `Plan` configuration and jobs status
 
-## Introduction to System Upgrade Controller
+## Prerequisites
+
+ - Linux VMs (or) Physical machines
+ - Basic understanding of Kubernetes
+ - Familiar with `kubectl` command line tool
+
+## Setup K3s Kubernetes Cluster
+
+Firstly, we need to setup and bootstrap the K3s cluster with installation script.
+It's simple to setup Server and Agent. In this article, I will use AWS EC2 instances to setup K3s cluster.
+
+We have two AWS EC2 instances:
+
+ - *k3s-dev-master (K3s Server)*
+ - *k3s-dev-worker (K3s Agent)*
+
+### K3s Server (ControlPlane/Master Node)
+
+On `k3s-dev-master` instance,
+
+run the following installation script to bootstrap K3s Server also known as Kubernetes ControlPlane/Master Node.
+
+```sh
+$ curl -sfL https://get.k3s.io | sh -s - server \
+    --write-kubeconfig-mode 644 \
+    --node-taint "CriticalAddonsOnly=true:NoExecute"
+```
+
+If you want to make your K3s server as ControlPlane/Master only,
+make sure you add `CriticalAddonsOnly=true:NoExecute` Node taint when bootstraps K3s server.
+
+OR
+
+Alternatively, you can also add Node taints with `kubectl` command line tool.
+
+```sh
+$ kubectl taint node k3s-dev-master CriticalAddonsOnly=true:NoExecute
+$ kubectl taint node k3s-dev-master node-role.kubernetes.io/master=true:NoSchedule
+$ kubectl taint node k3s-dev-master node-role.kubernetes.io/control-plane=true:NoSchedule
+```
+
+### K3s Agent (Worker Node)
+
+On `k3s-dev-worker` instance,
+
+run the following installation script to bootstrap K3s Agent also known as Kubernetes Worker Node to join the ControlPlane/Master Node.
+
+```sh
+$ curl -sfL https://get.k3s.io | sh -s - agent \
+    --server https://<172.16.x.x>:6443 \
+    --token K10d47c3a1abbbc24647fc37f9531ee6d9145d485408dc19f0bf4964c82beeaf175::server:91d5e063491d81783cab2bf1e728e4f1
+```
+
+`--server`: Set your K3s Server's URL that includes IP address and port number.
+
+`--token`: Set your K3s Server's token. You can find that token in your K3s Server's file path `/var/lib/rancher/k3s/server/node-token` or
+`/var/lib/rancher/k3s/server/token`.
+
+To get K3s Server's token,
+
+```sh
+$ cat /var/lib/rancher/k3s/server/node-token
+
+K10d47c3a1abbbc24647fc37f9531ee6d9145d485408dc19f0bf4964c82beeaf175::server:91d5e063491d81783cab2bf1e728e4f1
+```
+
+Add label to mark Kubernetes Worker Node as Worker role.
+
+```sh
+kubectl label node k3s-dev-worker node-role.kubernetes.io/worker=true
+```
+
+Official K3s documentation: [https://docs.k3s.io](https://docs.k3s.io)
+
+## System Upgrade Controller
 
 System Upgrade Controller aims to provide a general-purpose, Kubernetes-native upgrade controller
 for Nodes. It introduces a new Custom Resource Definition Plan for defining
@@ -32,32 +109,7 @@ all of your upgrade requirements and a controller that schedules upgrades based 
 
 GitHub Repository: [https://github.com/rancher/system-upgrade-controller](https://github.com/rancher/system-upgrade-controller)
 
-## Setup K3s Kubernetes Cluster
-
-Firstly, we need to setup and bootstrap the K3s cluster with installation script.
-It's pretty simple to setup Server and Agent.
-
-Setup K3s Server (also known as) Kubernetes ControlPlane/Master Node.
-
-```sh
-curl -sfL https://get.k3s.io | \
-  INSTALL_K3S_CHANNEL=stable \
-  INSTALL_K3S_EXEC='server --disable traefik servicelb --write-kubeconfig-mode 644'  sh -
-```
-
-Setup K3s Agent (also known as) Kubernetes Worker Node to join ControlPlane/Master Node.
-
-```sh
-curl -sfL https://get.k3s.io | \
-  K3S_URL=https://172.x.x.x:6443 \
-  K3S_TOKEN=K10d22154c1ce98c27127147dfa6ec466b5ad2aad7e24334f3cd6e277d5fca8c750::server:64a5b2d9165d6af58aed25e306e6896a sh -
-```
-
-**NOTE**: Please, replace your K3s Server IP address and token in `K3S_URL` and `K3S_TOKEN` enviornment variable.
-
-Learn more about K3s
- - [https://docs.k3s.io](https://docs.k3s.io)
- - [https://docs.k3s.io/quick-start](https://docs.k3s.io/quick-start)
+![image](https://raw.githubusercontent.com/rancher/system-upgrade-controller/master/doc/architecture.png)
 
 ## Install System Upgrade Controller
 

@@ -2,7 +2,7 @@
 # Docker compose
 # for serve Jekyll site for local environment.
 #
-version: "3.3"
+version: '3'
 
 services:
   jekyll-site:
