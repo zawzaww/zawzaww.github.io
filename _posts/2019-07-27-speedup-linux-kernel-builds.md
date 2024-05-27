@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Speeding Up Linux Kernel Builds with Compiler Cache (Ccache)
-author: Zaw Zaw
-categories: [Linux]
-tags: [linux, kernel, ccache]
-image:
-  src: /assets/images/featured-images/img_speedup_linux_kernel_builds.png
+author: zawzaw
+categories: [ Linux ]
+toc: true
+image: assets/images/featured-images/img_speedup_linux_kernel_builds.png
 ---
 
 This article will focus on how to set up and build Linux kernel compilation time faster than usual using Cache (Compiler Cache).

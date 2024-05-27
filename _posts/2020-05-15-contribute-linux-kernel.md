@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "Contributing to the Linux kernel"
-author: "Zaw Zaw"
+author: zawzaw
 categories: [Linux]
-tags: [linux, kernel, contribute]
-image:
-  src: /assets/images/featured-images/img_linux_kernel_contribution.png
+toc: true
+image: assets/images/featured-images/img_linux_kernel_contribution.png
 ---
 
 This article will focus on how to contribute to the Linux kernel contribution workflow. The Linux kernel is a free and open-source software project that anyone can contribute. Workflow, which contributes to the Linux kernel, is unlike any other open-source project. You can not contribute code using GitHub or GitLab. Submit kernel patches via Git and Email using the Linux Kernel Mailing List (LKML) on the Linux kernel. Kernel Maintainers will review via email and merge the code to Linux kernel source tree after discuss.

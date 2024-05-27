@@ -1,155 +1,70 @@
-#
-# The Site Configurations
-#
+# Site
+name: "Zaw Zaw"
+title: "ZAW's Personal Blog"
+description: "ZAW's Personal Blog"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ""
+google_analytics: 'UA-xxxxxxxx-1'
+disqus: 'zawzaw'
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
+email: wowthemesnet@gmail.com
 
-# Import the jekyll theme.
-theme: jekyll-theme-chirpy
+# Authors
+authors:
+  zawzaw:
+    name: Zaw Zaw
+    display_name: Zaw Zaw
+    avatar: 'assets/images/avatar.png'
+    email: zawzthein@outlook.com
+    web: https://zawzaww.github.io
+    twitter: https://twitter.com/zawzaw_me
+    description: "SRE | Platform Engineer | Amateur Photographer"
 
-# Only if your site type is GitHub Project sites and doesn't have a custom domain,
-# change below value to '/projectname'.
-baseurl: ''
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
 
-# The language of the site layout › http://www.lingoes.net/en/translator/langcode.htm
-# Go to folder '_data/locales' to check the available language options
-lang: en-US
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
 
-# The main site title.
-title: Zaw Zaw
+# Pagination
+paginate: 9
+paginate_path: /page:num/
 
-# It will display as the sub-title name.
-tagline: Blog about General & Tech Stuffs
-
-# Used by seo meta and the atom feed.
-description: ZAW's Personal Blog
-
-# The protocol & hostname for your site, e.g., 'https://username.github.io'.
-url: https://zawzaww.github.io
-
-# GitHub username.
-github:
-  username: zawzaww
-
-# Change to your full name.
-# It will be displayed as the default author of the posts and the copyright owner in the footer.
-social:
-  name: Zaw Zaw
-  email: zawzthein@outlook.com
-  links:
-    - https://github.com/zawzaww
-
-# change to your verification string
-google_site_verification: google_meta_tag_verification
-
-# Set Google analytics.
-google_analytics:
-  id: ''
-  pv:
-    proxy_endpoint:
-    cache_path:
-
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode: light
-
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-img_cdn: ''
-
-# The avatar on sidebar, support local or CORS resources.
-avatar: https://i.postimg.cc/9XwV2NZV/zawzaw.png
-
-# Boolean type, the global switch for ToC in posts.
-toc: true
-
-# Boolean type, the global switch for posts comments.
-disqus:
-  comments: true
-  shortname: 'zawzaw'
-
-paginate: 8
-
+# Other
+highlighter: none
+markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
   syntax_highlighter_opts:
-    css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+    disable : false
 
-collections:
-  tabs:
-    output: true
-    sort_by: order
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
 
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: posts
-    values:
-      layout: post
-      comments: true
-      toc: true
-      permalink: /posts/:title/
-      dynamic_title: true
-  -
-    scope:
-      path: _drafts
-    values:
-      comments: true
-  -
-    scope:
-      path: ''
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-      dynamic_title: true
+# Post Author Box ("enabled" or "disabled")
+authorbox: "enabled"
 
+# Sass
 sass:
+  sass_dir: _sass
   style: compressed
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
-
-exclude:
-  - '*.gem'
-  - '*.gemspec'
-  - tools
-  - docs
-  - README.md
-  - LICENSE
-  - gulpfile.js
-  - node_modules
-  - '*.json'
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
