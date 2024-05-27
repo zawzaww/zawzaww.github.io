@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "Building Kernel For Android Devices"
-author: "Zaw Zaw"
-categories: [Android]
-tags: [android, linux, kernel]
-image:
-  src: /assets/images/featured-images/img_build_android_kernel.jpeg
+author: zawzaw
+categories: [ Android ]
+toc: true
+image: assets/images/featured-images/img_build_android_kernel.jpeg
 ---
 
 Android Devices အတွက် Kernel Source ကနေ Kernel တခု ဘယ်လို Build မလဲဆိုတဲ့ အကြောင်းအရာကို ဒီ How-To article မှာ အဓိက ပြောသွားမှာဖြစ်ပါတယ်။ Android OS က Linux Kernel ကို Based ထားပြီး Android ရဲ့ Kernel က Modified ထားတဲ့ Linux Kernel တခုပါ။ Android မှာသုံံံံံးထား Linux Kernel branch တွေက Long Term Support(LTS) branch တွေ ဖြစ်ပါတယ်။ https://www.kernel.org မှာ Long term branch တွေကြည့်နိုင်ပါတယ်။ ဥပမာ Nexus 5X, 6, 6P မှာဆိုရင် “linux-3.10-y” ဆိုတဲ့ branch ကို သုံးပါတယ် Google Pixel/Pixel XL မှာဆိုရင် “linux-3.18-y” ဆိုတဲ့ LTS branch တွေ သုံးကြပါတယ်။ Android OS က Linux Kernel ပေါ်မှာ အခြေခံပြီး တည်ဆောက်ထားတာ ဖြစ်ပြီး Kernel ဆိုတာ OS တခုရဲ့ အရေးကြီးတဲ့ အစိတ်အပိုင်းတခုပါ။ CPU, Memory, Disaply စတဲ့ Hardware အစိတ်အပိုင်းတွေ နဲ့ Software နဲ့ကြား ချိတ်ဆက်ပြီး အလုပ်လုပ်တဲ့ နေရာမှာ Kernel က အရေကြီးတဲ့ အပိုင်းမှာ ပါဝင်ပါတယ်။ Android OS Architecture ရဲ့ Linux Kernel အပိုင်းမှာ Display Driver, Camera Driver, USB Driver, Bluetooth Driver, Audio Driver, Power Management အစရှိသဖြင့်ပါဝင်ပါတယ်။ နမူနာပြောပြရရင် ကျွန်တော့််ရဲ့ Nexus 5X မှာ ပုံမှန် built-in ပါတဲ့ Stock Kernel မှာ Double Tap to Wake/Sleep / Disaply နဲ့ ပတ်သက်တဲ့ KCAL - Advanced Color Control / Audio driver နဲ့ ပတ်သက်တဲ့ Sound Control with High Performance Audio စသဖြင့် မပါဝင်ကြပါဘူး။ ကိုယ့်မှာ C Programming Skill ရှိရင် Kernel source တခု ကနေ အဲဒီ Kernel features တွေ ရေးပြီး ပြန် Recompile လုပ်နိုင်ပါတယ်။ ဒီနေရာမှာ Google ရဲ့ Nexus/Pixel လိုမျိုး Stock Pure Android ဖုန်းတွေ မဟုတ်တဲ့ တခြား Android OEMs တွေဖြစ်တဲ့ (Samsung, HTC, Sony and etc…) စတဲ့ Company တွေရဲ့ဖုန်းတွေမှာ တော်တော်များမှာ အဲဒီ Features အနည်းနဲ့အများ ပါဝင်ကြပါတယ်။ ဘာလု့ိ အဆင်သင့်ပါလဲဆိုတော့ သူတို့ရဲ့ Company က သက်ဆိုင်ရာ Android Engineer တွေက Source ကနေ Modified လုပ်ထားပြီးသားဖြစ်နေလု့ိပါပဲ။ အဲဒီ Features တွေ Device drivers - Audio, Display, Camera, USB and etc… / Memory / Power Management ပိုင်းတွေက Low-level ထိဆင်းပြီး C Programming နဲ့ရေးကြပါတယ်။ Custom Android Kernel တခု Build ရတဲ့အကြောင်းက Kernel source ယူပြီး Features တွေ ထပ်ပေါင်းထည့်ဖို့အတွက် ဖြစ်ပါတယ်။

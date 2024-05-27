@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "Make Build System in Android OS"
-author: "Zaw Zaw"
+author: zawzaw
 categories: [Android]
-tags: [android, make, build]
-image:
-  src: /assets/images/featured-images/img_make_build_android.png
+toc: true
+image: assets/images/featured-images/img_make_build_android.png
 ---
 
 The main build system used in Android OS-level is [Make Build System](https://android.googlesource.com/platform/build) and [AOSP (Android Open Source Project)](https://android.googlesource.com) handles all building processes with Make build. Android uses Make build system to compile the entire Android system. By now, every Android app developer is familiar with Gradle, a build system for building apps in Android Studio. Gradle build is easier to use. Make build is a native build system used on Android OS-level, and writing can be very tricky. But on Android OS-level, mainly use Makfile-based build system, so I have to learn.

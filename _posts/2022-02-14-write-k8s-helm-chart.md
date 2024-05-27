@@ -1,22 +1,20 @@
 ---
 layout: post
 title: "Writing a Kubernetes Helm Chart"
+author: zawzaw
 categories: [Kubernetes]
-tags: [kubernetes, helm, chart]
-image:
-  src: /assets/images/featured-images/img_helm_kubernetes.png
-  description: Helm Official Logo by Helm Community
+toc: true
+image: assets/images/featured-images/img_helm_kubernetes.png
+image_description: "Helm Official Logo by Helm Community"
 ---
 
-In this blog post, I will share about writing Kubernetes Helm chart, YAML-based Helm template
-language, Helm chart development tips and focus on how to write a simple Helm Chart
-for an application to deploy on Kubernetes and how to debug Helm templates locally.
-I will also demostrate with simple containerized Python Flask application to write Helm Chart and deploy it on Kubernetes cluster.
+In this blog post, I will share about writing Kubernetes Helm chart, YAML-based Helm template language, Helm chart development tips and focus on how to write a simple Helm Chart for an application to deploy on Kubernetes and how to debug Helm templates locally. I will also demostrate with simple containerized Python Flask application to write Helm Chart and deploy it on Kubernetes cluster.
 
 ## Prerequisites
  - [Kubernetes](https://kubernetes.io) cluster
  - [Helm](https://helm.sh) Kubernetes package manager tool
  - Kubernetes Basics
+
   > You need to understand basic [Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects)
  and [Workloads resources](https://kubernetes.io/docs/concepts/workloads). If you are not fimiliar with Kubernetes, you can learn basics with [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) interactive tutorial.
 

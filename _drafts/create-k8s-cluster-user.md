@@ -2,7 +2,6 @@
 layout: post
 title: "Creating a User with RBAC Bindings for access Kubernetes Cluster"
 categories: [Kubernetes]
-tags: [kubernetes, cluster, auth, rbac]
 ---
 
 This blog focuses on how to setup and create a Kubernetes Cluster user with Cluster Role and Role Bindings
