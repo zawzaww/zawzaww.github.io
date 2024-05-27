@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - migrate-gh-pages-theme
     paths-ignore:
       - .gitignore
       - README.md
