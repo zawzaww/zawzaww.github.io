@@ -4,8 +4,7 @@ WORKDIR /srv/jekyll
 
 COPY . .
 
-# RUN jekyll build
-RUN bundle install
+RUN jekyll build
 
 ENTRYPOINT [ "bundle", "exec" ]
 CMD [ "jekyll", "serve", "--livereload" ]

@@ -1,21 +1,21 @@
 ---
-title: "Tags"
-layout: default
-permalink: "/tags.html"
+# All the Tags of posts.
+layout: page
 ---
 
-{% for tag in site.tags %}
-<h4 class="mt-5 mb-neg-30" id="{{ tag[0] | replace: " ","-" }}"><span class="text-capitalize text-small badge badge-primary">{{ tag[0] }}</span></h4>
-<div class="blog-grid-container">
-{% assign pages_list = tag[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-{% include postbox.html %}
-{% endif %}
-{% endif %}
-{% endfor %}
-{% assign pages_list = nil %}
-{% assign group = nil %}
+<div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
+
+  {% assign tags = "" | split: "" %}
+  {% for t in site.tags %}
+    {% assign tags = tags | push: t[0] %}
+  {% endfor %}
+
+  {% assign sorted_tags = tags | sort_natural %}
+
+  {% for t in sorted_tags %}
+    <div>
+      <a class="tag" href="{{ site.baseurl }}/tags/{{ t | slugify | url_encode }}/">{{ t }}<span class="text-muted">{{ site.tags[t].size }}</span></a>
+    </div>
+  {% endfor %}
+
 </div>
-{% endfor %}

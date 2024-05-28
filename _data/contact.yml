@@ -1,0 +1,33 @@
+# The contact options.
+# Uncomment and complete the url below to enable more contact options
+# -
+#   type: mastodon
+#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
+#   url:  ''                  # Fill with your mastodon account page
+# -
+#   type: linkedin
+#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+#   url:  ''                  # Fill with your Linkedin homepage
+# -
+#   type: stack-overflow
+#   icon: 'fab fa-stack-overflow'
+#   url:  ''                  # Fill with your stackoverflow homepage
+- type: github
+  icon: 'fab fa-github'
+
+- type: instagram
+  icon: 'fab fa-instagram'
+  url: https://www.instagram.com/zawzaw.me
+
+- type: linkedin
+  icon: 'fab fa-linkedin'
+  url: https://www.linkedin.com/in/zawzaww
+
+- type: twitter
+  icon: 'fab fa-twitter'
+  url: https://twitter.com/zawzaw_me
+
+- type: email
+  icon: 'fas fa-envelope'
+  noblank: true
+

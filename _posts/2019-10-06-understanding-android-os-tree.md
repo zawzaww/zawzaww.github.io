@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Understanding the Android OS Source tree"
-author: zawzaw
+author: "Zaw Zaw"
 categories: [Android]
-toc: true
-image: assets/images/featured-images/img_understand_android_os.png
+tags: [android, aosp]
+image:
+  src: /assets/images/featured-images/img_understand_android_os.png
 ---
 
 Android OS is a free and open-source project, and you can get Android OS Source Code from AOSP (Android Open Source Project). Android OS Source Code has many related directories. In other words, git repostories from each directory under that Android OS Main source code. In AOSP, many of these Git repositories are maintained from above with a tool called "repo". The repo was developed by Google and can be found at https://source.android.com/setup/develop#repo. The concept of repo means that there are many git repositories in Android OS, so if you want to download a lot of them, you will not be able to gone clone each one. You can download the code. This is just an example. You can read more about repo commands at https://source.android.com/setup/develop/repo So if you are going to download the Android OS source code, you must know Google's repo. This blog post will focus on the description of the relevant directories of the Androdi OS source tree.

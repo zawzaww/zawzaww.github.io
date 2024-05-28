@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Polar Night and Midnight Sun: Why do they occur?"
-author: zawzaw
 categories: [Science]
-image: assets/images/featured-images/img_earth_seasons.jpg
-image_description: "Earth orbits the Sun Photo by Wikipedia"
+tags: [solarsystem, sun, earth]
+image:
+  src: /assets/images/featured-images/img_earth_seasons.jpg
+  description: Earth orbits the Sun Photo by Wikipedia
 ---
 
 In this blog post, I will share how Earth orbits the Sun and interesting facts about Sun and Earth.

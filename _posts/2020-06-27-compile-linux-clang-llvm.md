@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Building Linux Kernel with Clang/LLVM"
-categories: [ Linux ]
-author: zawzaw
-image: assets/images/featured-images/img_clang_llvm_linux.png
-image_description: LLVM Clang Official Logo
+categories: [Linux]
+tags: [linux, kernel, clang, llvm]
+author: "Zaw Zaw"
+image:
+  src: /assets/images/featured-images/img_clang_llvm_linux.png
+  description: "Photo: Clang Logo by LLVM Project"
 ---
 
 GCC is the Traditional Default C Compiler used in the Linux kernel back then and now. Now you can easily compile the Linux kernel with [Clang/LLVM](http://clang.llvm.org/) , a modern C-family compiler. [Nick Desaulniers](http://nickdesaulniers.github.io/about/) , a software engineer at Google, is contributing to the [Linux kernel build system (kbuild)](https://patchwork.kernel.org/project/linux-kbuild/list/) by submitting and contributing kernel patches. The [official documentation](https://www.kernel.org/doc/html/latest/kbuild/llvm.html) for the Linux kernel now covers how to compile Clang and the Linux kernel. And [ClangBuiltLinux](https://github.com/ClangBuiltLinux) GitHub organization created by Nick and Contributors on GitHub. You can also report Clang/LLVM compiler bugs and kernel build errors on GitHub. This article will show you how to compile a Linux kernel with the Clang/LLVM compiler.

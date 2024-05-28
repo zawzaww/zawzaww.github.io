@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Automating K3s Kubernetes Cluster Upgrades"
-author: zawzaw
 categories: [Kubernetes]
-toc: true
-image: assets/images/featured-images/img_k3s_kubernetes.png
-image_description: "Combined official K3s and Kubernetes logo by Author"
+tags: [kubernetes, k3s, automate, upgrade]
+image:
+  src: /assets/images/featured-images/img_k3s_kubernetes.png
+  description: "Combined official K3s and Kubernetes logo by Author"
 ---
 
 This article focuses on how to setup and bootstrap K3s cluster and how to configure
@@ -96,7 +96,7 @@ K10d47c3a1abbbc24647fc37f9531ee6d9145d485408dc19f0bf4964c82beeaf175::server:91d5
 Add label to mark Kubernetes Worker Node as Worker role.
 
 ```sh
-$ kubectl label node k3s-dev-worker node-role.kubernetes.io/worker=true
+kubectl label node k3s-dev-worker node-role.kubernetes.io/worker=true
 ```
 
 Finally, we can get nodes with `kubectl` command line tool
@@ -118,7 +118,7 @@ all of your upgrade requirements and a controller that schedules upgrades based 
 GitHub Repository: [https://github.com/rancher/system-upgrade-controller](https://github.com/rancher/system-upgrade-controller)
 
 ![image](https://raw.githubusercontent.com/rancher/system-upgrade-controller/master/doc/architecture.png)
-<center><sub>System Upgrade Controller Architecture Diagram by Rancher</sub></center>
+_System Upgrade Controller Architecture Photo by Rancher_
 
 Before we configure `Plan` CRD for automated upgrades for K3s Kubernetes cluster,
 make sure you install *system-upgrade-controller* on your cluster.
@@ -126,7 +126,7 @@ make sure you install *system-upgrade-controller* on your cluster.
 To install the **system-upgrade-controller** with kubectl,
 
 ```sh
-$ kubectl apply -f https://github.com/rancher/system-upgrade-controller/releases/latest/download/system-upgrade-controller.yaml
+kubectl apply -f https://github.com/rancher/system-upgrade-controller/releases/latest/download/system-upgrade-controller.yaml
 ```
 
 This installs *system-upgrade-controller* Deployment and required ServiceAccount, ClusterRoleBinding and ConfigMap into *system-upgrade* namespace.

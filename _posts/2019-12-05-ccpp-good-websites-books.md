@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Good Courses and Books to Learn C/C++"
-author: zawzaw
+author: "Zaw Zaw"
 categories: [Programming]
-toc: true
-image: assets/images/featured-images/img_c_cpp_programming.png
+tags: [resources, programming, c, cpp]
+image:
+  src: /assets/images/featured-images/img_c_cpp_programming.png
 ---
 
 In this blog post, I have put together a collection of my favorite websites, courses and books for learning C/C++. I think C/C++ will be useful for other learners as well. This is a collection of great resources that I like, and I would recommend other great websites and books.
