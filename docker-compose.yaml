@@ -1,9 +1,8 @@
+---
 #
 # Docker compose
 # for serve Jekyll site for local environment.
 #
-version: '3'
-
 services:
   jekyll-site:
     image: jekyll-site:local
@@ -24,4 +23,3 @@ services:
     ports:
       - "4000:4000"
       - "35729:35729"
-

@@ -1,8 +1,7 @@
 /*
   The common styles
 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -43,11 +42,11 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: normal;
   line-height: 1.4;
   background: var(--body-bg);
@@ -60,9 +59,9 @@ body {
 h1 {
   @extend %heading;
 
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h2 {
@@ -70,9 +69,9 @@ h2 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Manrope', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 h3 {
@@ -80,9 +79,9 @@ h3 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Manrope', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 h4 {
@@ -90,9 +89,9 @@ h4 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h5 {
@@ -100,9 +99,9 @@ h5 {
   @extend %section;
   @extend %anchor;
 
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 ol,
