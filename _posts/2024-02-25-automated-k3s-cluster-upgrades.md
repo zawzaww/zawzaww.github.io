@@ -8,46 +8,39 @@ image:
   description: "Combined official K3s and Kubernetes logo by Author"
 ---
 
-This article focuses on how to setup and bootstrap K3s cluster and how to configure
-automated upgrading for K3s Kubernetes cluster. This covers both how to setup multi-node K3s Kubernetes cluster and how to upgrade K3s
-automatically using system upgrade controller.
+This article focuses on how to setup and bootstrap the K3s cluster and how to configure
+automated upgrading of the K3 Kubernetes cluster. This covers both how to setup a multi-node K3s Kubernetes cluster and how to upgrade K3s
+automatically using the system upgrade controller.
 
-Normally, we manually download K3s binary file from GitHub release page
-and, install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure
+Normally, we manually download the K3s binary file from the GitHub release page,
+install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure.
 automated cluster upgrading for K3s using Rancher's [system upgrade controller](https://github.com/rancher/system-upgrade-controller)
 and **Plan** CRD, Custom Resource Definition.
 
 ## Objectives
 
- - Setup Multi-node K3s Kubernetes cluster
- - Explore System Upgrade Controller and how it works
- - Install System Upgrade Controller on Kubernetes
- - Configure `Plan` CRD for automate K3s cluster upgrade
- - Monitor K3s System Upgrade `Plan` configuration and jobs status
-
-## Prerequisites
-
- - Linux VMs (or) Physical machines
- - Basic understanding of Kubernetes
- - Familiar with `kubectl` command line tool
+ - Setup a Multi-node K3s Kubernetes cluster.
+ - Explore the System Upgrade Controller and how it works.
+ - Install the System Upgrade Controller on Kubernetes.
+ - Configure `Plan` CRD to automate K3s cluster upgrade.
+ - Monitor K3s System Upgrade `Plan` configuration and job status.
 
 ## Setup K3s Kubernetes Cluster
 
-Firstly, we need to setup and bootstrap the K3s cluster with installation script.
-It's simple to setup Server and Agent. In this article, I will use AWS EC2 instances to setup K3s cluster.
+Firstly, we need to setup and bootstrap the K3s cluster with the installation script.
+It's simple to set up a Server and an Agent. In this article, I will use AWS EC2 instances to setup the K3s cluster.
 
 We have two AWS EC2 instances:
 
  - *k3s-dev-master (K3s Server)*
  - *k3s-dev-worker (K3s Agent)*
 
-Official K3s documentation: [https://docs.k3s.io](https://docs.k3s.io)
+Official K3s Documentation: [https://docs.k3s.io](https://docs.k3s.io)
 
 ### K3s Server (ControlPlane/Master Node)
 
-On `k3s-dev-master` instance,
-
-run the following installation script to bootstrap K3s Server also known as Kubernetes ControlPlane/Master Node.
+On the `k3s-dev-master` instance,
+run the following installation script to bootstrap the K3s server, also known as Kubernetes ControlPlane/Master Node.
 
 ```sh
 $ curl -sfL https://get.k3s.io | sh -s - server \
@@ -55,12 +48,10 @@ $ curl -sfL https://get.k3s.io | sh -s - server \
     --node-taint "CriticalAddonsOnly=true:NoExecute"
 ```
 
-If you want to make your K3s server as ControlPlane/Master only,
-make sure you add `CriticalAddonsOnly=true:NoExecute` Node taint when bootstraps K3s server.
+If you want to make your K3s server as a ControlPlane/Master only,
+Make sure you add `CriticalAddonsOnly=true:NoExecute` Node taint when bootstrapping the K3s server.
 
-OR
-
-Alternatively, you can also add Node taints with `kubectl` command line tool.
+Or, alternatively, you can also add Node taints with the `kubectl` command-line tool.
 
 ```sh
 $ kubectl taint node k3s-dev-master CriticalAddonsOnly=true:NoExecute
