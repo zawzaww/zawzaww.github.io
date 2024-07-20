@@ -32,7 +32,7 @@ I've loved working with Low level software and command-line tools to interact wi
   - Operating Systems, Kernel, Systems Programming, Linux System Administration, GitOps, Virtualization, Containerization, Continuous Integration, Continuous Delivery
 
 - **Technologies and Tools**
-  - Linux kernel, embedded Android, Git, Open Source Software, Bash, Ansible, Docker, GitLab CI, ArgoCD, Helm, Kubernetes
+  - Linux kernel, embedded Android, Git, Open Source Software, Bash, Ansible, Docker, GitLab CI, Argo CD, Helm, Kubernetes
 <br>
 
 ---

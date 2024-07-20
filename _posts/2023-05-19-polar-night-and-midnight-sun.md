@@ -3,9 +3,6 @@ layout: post
 title: "Exploring the Polar Night and Midnight Sun (Polar Day)"
 categories: [Science]
 tags: [solarsystem, sun, earth]
-image:
-  src: /assets/images/featured-images/img_earth_seasons.jpg
-  description: Earth orbits the Sun Photo by Wikipedia
 ---
 
 In this blog post, I will share how Earth orbits the Sun and interesting facts about Sun and Earth.
