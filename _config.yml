@@ -17,10 +17,10 @@ lang: en-US
 title: Zaw Zaw
 
 # It will display as the sub-title name.
-tagline: ZAW's Tech Stuff & Logs
+tagline: ZAW's Tech Stuff and Logs
 
 # Used by seo meta and the atom feed.
-description: ZAW's Personal Blog
+description: ZAW's Personal Blog and Website
 
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaww.github.io

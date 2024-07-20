@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building Linux Kernel with Clang"
+title: "Building Linux Kernel with Clang/LLVM"
 categories: [Linux]
 tags: [linux, kernel, clang, llvm]
 author: "Zaw Zaw"
