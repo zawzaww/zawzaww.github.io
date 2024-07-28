@@ -1,4 +1,3 @@
----
 #
 # Docker compose
 # for serve Jekyll site for local environment.
@@ -19,7 +18,8 @@ services:
         --drafts
         --livereload
     volumes:
-      - ".:/srv/jekyll"
+      - ".:/src/jekyll"
     ports:
       - "4000:4000"
       - "35729:35729"
+

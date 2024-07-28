@@ -1,11 +1,16 @@
-FROM jekyll/jekyll:stable
+FROM ruby:3.2.0-alpine
 
-WORKDIR /srv/jekyll
+RUN apk update && \
+    apk add --no-cache build-base gcc cmake git
+
+RUN gem install bundler jekyll
+
+WORKDIR /src/jekyll
 
 COPY . .
 
-RUN jekyll build
+RUN bundle install
 
 ENTRYPOINT [ "bundle", "exec" ]
-CMD [ "jekyll", "serve", "--livereload" ]
+CMD [ "jekyll", "serve", "--watch" ]
 
