@@ -8,7 +8,7 @@ image:
   description: "Photo: In front of Jaro Metropolitan Cathedral, Iloilo City, by Zaw Zaw"
 ---
 
-In this blog post, I will share all about the Philippines, my travel experience to Iloilo City, my favourite things, and photographs of Iloilo City. I've decided to go to the Philippines for remote work due to my home country's political situation. On April 24, 2024, I arrived in Iloilo City, Philippines. I just visited the famous places in Iloilo City, and currently, I'm working remotely from the Philippines.
+In this blog post, I will share all about the Philippines, my travel experience to Iloilo City, my favourite things, and photographs of Iloilo City. I've decided to go to the Philippines for remote work due to my home country's political situation. On April 27, 2024, I arrived in Iloilo City, Philippines. I just visited the famous places in Iloilo City, and currently, I'm working remotely from the Philippines.
 
 ## Introduction to the Philippines
 
