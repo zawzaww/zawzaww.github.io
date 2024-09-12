@@ -115,6 +115,90 @@ Then, go to the home page and search for your destination, for example, **Iloilo
 
 Then, you can book, make an online payment using a Credit or Visa card, and then contact and communicate with your host via message on the Airbnb website.
 
+## SIM Card Registration
+
+[https://smart.com.ph](https://smart.com.ph)
+
+![img-smart-esim](/assets/images/featured-images/img_smart_esim.png)
+
+I've decided to buy the Smart prepaid eSIM because it's easy to buy and my Google Pixel 4a phone has supported eSIM feature and currently, I'm using it. Basically, Smart prepaid eSIM is a digital version of a physical SIM embedded inside an eSIM-capable phone. Simply scan the eSIM QR sent to your email and register at [https://simreg.smart.com.ph](https://simreg.smart.com.ph) to activate.
+
+### How to Get Smart eSIM
+
+Buy Smart Prepaid eSIM at [https://store1.smart.com.ph/view/2661](https://store1.smart.com.ph/view/2661).
+
+Firstly, I've bought this Smart prepaid eSIM via the official website with AYA Visa card that costs only **PHP ₱99**, and then I've received the eSIM QR code via email from Smart.
+
+Secondly, I scanned this Smart eSIM QR code and downloaded it on my Android phone, Google Pixel 4a. It worked properly.
+
+**NOTE:** It depends on Android device manufacturers and Android version.
+
+For example, on the Google Pixel 4a Android phone,
+
+**Settings --> Network & internet --> SIMs --> Add eSIM --> Scan the QR code --> Download the Smart eSIM**
+
+Then, you will see the downloaded Smart eSIM in SIMs settings.
+
+![img-android-sim](/assets/images/screenshots/img_screenshot_sim.png){: width="350" .normal }
+![img-android-esim-smart](/assets/images/screenshots/img_screenshot_esim_smart.png){: width="350" .normal }
+
+### Register SIM in Simple 3 Steps
+
+Then, I've registered the Smart eSIM via the Smart SIM registration website [https://simreg.smart.com.ph](https://simreg.smart.com.ph) and followed the instructions to register the Smart eSIM in simple 3 steps.
+
+![img-smart-sim-registration](/assets/images/featured-images/img_smart_sim_registration.png)
+_The official website of Smart SIM registration: [https://simreg.smart.com.ph](https://simreg.smart.com.ph)_
+
+Steps that are described on the Smart SIM registration official website:
+
+**Step (1): Get Your PIN** --> Have your phone ready. You will receive an OTP when you enter your mobile phone number.
+
+**Step (2): Input Your Information** --> Complete your profile. Enter your OTP and information, and attach a copy of your valid government ID.
+
+**Step (3): Wait for SMS Confirmation** --> Don't forget to save your Control Number. We may need to further validate your details or notify you of your successful registration via SMS or call.
+
+Then, I've received a confirmation message via SMS from Smart.
+
+![screenshot-smart-sms-reg](/assets/images/screenshots/img_screenshot_smart_sms_reg.png){: width="350" .normal }
+![screenshot-smart-sms-activated](/assets/images/screenshots/img_screenshot_smart_sms_activated.png){: width="350" .normal }
+
+### Load and Subscribe Plans
+
+Unlike traditional mobile operators, Smart has supported online payment options such as Maya, GCash and Credit or Debit cards to load or top up using the Smart mobile app. Usually, I use my Visa card to load or subscribe to an internet data package.
+
+![screenshot-smart-load](/assets/images/screenshots/img_screenshot_smart_load.png){: width="350" .normal }
+![screenshot-smart-payment-option](/assets/images/screenshots/img_screenshot_smart_payment_option.png){: width="350" .normal }
+
+Generally, Smart has many internet data, and call & text plans. But, I usually use the following main two internet plans:
+
+ - **All Data**: Data all sites as long as 90 days.
+ - **Magic Data**: Data that never expires as big as 60 GB.
+
+![screenshot-smart-alldata](/assets/images/screenshots/img_screenshot_smart_all_data.png){: width="350" .normal }
+![screenshot-smart-magicdata](/assets/images/screenshots/img_screenshot_smart_magic_data.png){: width="350" .normal }
+
+**All Data Packages**
+
+| Internal Data Package | Price (PHP) |
+|-----------------------|-------------|
+| 2GB (3 Days)          | = ₱50       |
+| 6GB (7 Days)          | = ₱99       |
+| 24GB (30 Days)        | = ₱299      |
+| 36GB (30 Days)        | = ₱399      |
+| 48GB (60 Days)        | = ₱499      |
+| 72GB (90 Days)        | = ₱599      |
+
+**Magic Data Packages**
+
+| Internal Data Package | Price (PHP) |
+|-----------------------|-------------|
+| 2GB                   | = ₱99       |
+| 6GB                   | = ₱199      |
+| 24GB                  | = ₱399      |
+| 36GB                  | = ₱499      |
+| 48GB                  | = ₱599      |
+| 60GB                  | = ₱699      |
+
 ## Official Currency
 ### The Philippine Peso (PHP)
 
@@ -149,7 +233,8 @@ Please, also note that this MMK exchange rate as of **August 25, 2024** and this
 | MMK Exchange Rate | PHP ₱1 | = MMK 62 |
 
 ## Using an AYA Visa Prepaid Card
-#### [https://www.ayabank.com/digital-services/card-services/prepaid-card](https://www.ayabank.com/digital-services/card-services/prepaid-card)
+
+[https://www.ayabank.com/digital-services/card-services/prepaid-card](https://www.ayabank.com/digital-services/card-services/prepaid-card)
 
 ![img-aya-visa-prepaid-card](/assets/images/featured-images/img_aya_visa_prepaid_card.png)
 
@@ -187,48 +272,22 @@ To check the balance of an AYA Visa prepaid card, you can use the AYA mobile ban
 
 ![img-paypal-philippines](/assets/images/featured-images/img_paypal_ph.png)
 
-PayPal service is officially available in the Philippines. I'm now using it as a payment option. But, currently, the **Add Money from a Bank account and Debit or Credit card** service is not available in the Philippines.
+PayPal Service is another payment service or option. It is officially available in the Philippines. I'm now using it as a payment option. But, currently the **Add Money from a Bank account and Debit or Credit card** service is not available in the Philippines.
 
-I tried to link my AYA and YOMA bank accounts in PayPal. It did not work. But, I linked my AYA Visa Prepaid card and sending payments with this Visa card worked properly.
+I tried to link my AYA and YOMA bank accounts in PayPal. It did not work. It only worked with Philippine Banks and U.S. Banks. But, I linked my AYA Visa Prepaid card and sending payments with this Visa card worked properly.
 
 Here is PayPal's service fee based on my experience. I sent money of PHP ₱3,000.00 to my host via PayPal using the Visa card payment option and the service fee is around PHP ₱117.00.
 
 ![img-paypal-service-fee](/assets/images/featured-images/img_paypal_service_fee.png)
-
-## SIM Card Registration
-#### [https://smart.com.ph](https://smart.com.ph)
-
-![img-smart-esim](/assets/images/featured-images/img_smart_esim.png)
-
-I've decided to buy the Smart prepaid eSIM because it's easy to buy and my Google Pixel 4a phone has supported eSIM feature and currently, I'm using it. Basically, Smart prepaid eSIM is a digital version of a physical SIM embedded inside an eSIM-capable phone. Simply scan the eSIM QR sent to your email and register at [https://simreg.smart.com.ph](https://simreg.smart.com.ph) to activate.
-
-Buy Smart Prepaid eSIM at [https://store1.smart.com.ph/view/2661](https://store1.smart.com.ph/view/2661).
-
-Firstly, I've bought this Smart prepaid eSIM via the official website with AYA Visa card that costs only **PHP ₱99**, and then I've received the eSIM QR code via email from Smart. Then, I scanned this Smart eSIM QR code and downloaded it on my Android phone, Google Pixel 4a. It worked properly.
-
-**NOTE:** It depends on Android device manufacturers and Android version.
-
-For example, on the Google Pixel 4a Android phone,
-
-**Settings --> Network & internet --> SIMs --> Add eSIM --> Scan the QR code --> Download the Smart eSIM**
-
-Then, you will see the downloaded Smart eSIM in SIMs settings.
-
-![img-android-sim](/assets/images/screenshots/img_screenshot_sim.png){: width="350" .normal }
-![img-android-esim-smart](/assets/images/screenshots/img_screenshot_esim_smart.png){: width="350" .normal }
-
-Then, I've registered the Smart eSIM via the Smart SIM registration website [https://simreg.smart.com.ph](https://simreg.smart.com.ph) and followed the instructions to register the Smart eSIM in simple 3 steps.
-
-![img-smart-sim-registration](/assets/images/featured-images/img_smart_sim_registration.png)
 
 ## Official Languages
 
 ![img-official-languages](/assets/images/featured-images/img_languages_ph.png)
 _Photo Credit to: Wikipedia_
 
-In the Philippines, both Filipino and English are official languages. Actually, the Philippines has 135 to 195 spoken languages. But, it depends on regions and islands. Please, see the above photo. But, as main languages, people of the Philippines speak Filipino or Tagalog, and English.
+In the Philippines, both Filipino and English are official languages. Actually, the Philippines has 135 to 195 spoken languages. But, it depends on regions and islands. For example, In Cebu and the southern Philippines, most people speak the [Cebuano](https://en.wikipedia.org/wiki/Cebuano_language) language. Please, see the above photo. But, as main languages, people of the Philippines speak Filipino or Tagalog, and English.
 
-In Iloilo City, most of the people speak Filipino, a national language, and a standardized variety of Tagalog and English as a second language. I met most Filipinos in Iloilo City. Based on my experience, 90% of Filipinos speak English. But, mostly, locals speak Tagalog or Filipino to communicate with each other.
+In Iloilo City, most of the people speak Filipino, a national language, and a standardized variety of Tagalog and English as a second language. I met most Filipinos in Iloilo City. Based on my experience, 90% of Filipinos speak English. But, mostly locals speak Tagalog or Filipino to communicate with each other.
 
 Filipino: [https://en.wikipedia.org/wiki/Filipino_language](https://en.wikipedia.org/wiki/Filipino_language)
 
@@ -240,6 +299,9 @@ Tagalog: [https://en.wikipedia.org/wiki/Tagalog_language](https://en.wikipedia.o
 _Photo: A Jeepney by Zaw Zaw_
 
 In Iloilo City, Philippines, Jeepneys and Minibuses are mainly used as public transportation. But, as I mentioned in the "Fascinating facts about the Philippines" section, Jeepneys are popular and the usual public transportation. It's colorful, a symbol of Filipino culture and a unique public transportation system in the Philippines.
+
+![img-minibuses-jeepneys](/assets/images/featured-images/img_jaro_philippines.jpg)
+_Photo: In front of Jaro Metropolitan Cathedral by Zaw Zaw_
 
 Another popular mode of public transportation in the Philippines is motorized tricycles, especially common in small urban and rural areas.
 
