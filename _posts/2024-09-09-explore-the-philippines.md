@@ -8,7 +8,7 @@ image:
   description: "Photo: In front of Jaro Metropolitan Cathedral, Iloilo City, by Zaw Zaw"
 ---
 
-In this blog post, I will share all about the Philippines, my travel experience to Iloilo City, my favourite things, and photographs of Iloilo City. I've decided to go to the Philippines for remote work due to my home country's political situation. On April 27, 2024, I arrived in Iloilo City, Philippines. I just visited the famous places in Iloilo City, and currently, I'm working remotely from the Philippines.
+In this blog post, based on my experience, I will share all about the Philippines, interesting facts about the country, visa information, Filipino culture and general knowledge, official currency, official spoken languages, public transportation, photographs of famous places in Iloilo City I've taken, and so on. I've decided to go to the Philippines for remote work due to my home country's political situation. On April 27, 2024, I arrived in Iloilo City, Philippines. I just visited the famous places in Iloilo City, and currently, I'm working remotely from the Philippines.
 
 ## Introduction to the Philippines
 
@@ -31,7 +31,7 @@ These interesting facts are based on both my experience and articles on the inte
 
   - The Philippines is an archipelago that comprises 7,641 islands.
 
-  - The Philippines is one of the largest archipelago countries in the world.
+  - The Philippines is the fifth-largest archipelago countries in the world.
 
   - Jeepneys are the usual public transportation. It's colorful, a symbol of Filipino culture and a unique public transportation system in the Philippines.
 
