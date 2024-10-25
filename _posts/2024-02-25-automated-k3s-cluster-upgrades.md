@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automating K3s Kubernetes Cluster Upgrades"
+title: "Setup a Multi-Node K3s Cluster and Configuring Automated Upgrades"
 categories: [Kubernetes]
 tags: [kubernetes, k3s, automate, upgrade]
 image:
@@ -8,14 +8,9 @@ image:
   description: "Combined official K3s and Kubernetes logo by Author"
 ---
 
-This article focuses on how to setup and bootstrap the K3s cluster and how to configure
-automated upgrading of the K3 Kubernetes cluster. This covers both how to setup a multi-node K3s Kubernetes cluster and how to upgrade K3s
-automatically using the system upgrade controller.
+This article focuses on how to setup and bootstrap the K3s cluster and how to configure automated upgrading of the K3 Kubernetes cluster. This covers both how to setup a multi-node K3s Kubernetes cluster and how to upgrade K3s automatically using the system upgrade controller.
 
-Normally, we manually download the K3s binary file from the GitHub release page,
-install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure.
-automated cluster upgrading for K3s using Rancher's [system upgrade controller](https://github.com/rancher/system-upgrade-controller)
-and **Plan** CRD, Custom Resource Definition.
+Normally, we manually download the K3s binary file from the GitHub release page, install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure automated cluster upgrading for K3s using Rancher's [system upgrade controller](https://github.com/rancher/system-upgrade-controller) and **Plan** CRD, Custom Resource Definition.
 
 ## Objectives
 
