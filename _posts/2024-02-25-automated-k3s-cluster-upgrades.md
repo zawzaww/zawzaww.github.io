@@ -8,7 +8,7 @@ image:
   description: "Combined official K3s and Kubernetes logo by Author"
 ---
 
-This article focuses on how to setup and bootstrap the K3s cluster and how to configure automated upgrading of the K3 Kubernetes cluster. This covers both how to setup a multi-node K3s Kubernetes cluster and how to upgrade K3s automatically using the system upgrade controller.
+This article focuses on how to setup and bootstrap the K3s cluster and how to configure automated upgrading of the K3s Kubernetes cluster. This covers both how to setup a multi-node K3s Kubernetes cluster and how to upgrade K3s automatically using the system upgrade controller.
 
 Normally, we manually download the K3s binary file from the GitHub release page, install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure automated cluster upgrading for K3s using Rancher's [system upgrade controller](https://github.com/rancher/system-upgrade-controller) and **Plan** CRD, Custom Resource Definition.
 
@@ -34,7 +34,7 @@ Official K3s Documentation: [https://docs.k3s.io](https://docs.k3s.io)
 
 ### K3s Server (ControlPlane/Master Node)
 
-On the `k3s-dev-master` instance,
+On the **k3s-dev-master** instance,
 run the following installation script to bootstrap the K3s server, also known as Kubernetes ControlPlane/Master Node.
 
 ```sh
@@ -56,8 +56,7 @@ $ kubectl taint node k3s-dev-master node-role.kubernetes.io/control-plane=true:N
 
 ### K3s Agent (Worker Node)
 
-On `k3s-dev-worker` instance,
-
+On the **k3s-dev-worker** instance,
 run the following installation script to bootstrap K3s Agent also known as Kubernetes Worker Node to join the ControlPlane/Master Node.
 
 ```sh
@@ -66,16 +65,21 @@ $ curl -sfL https://get.k3s.io | sh -s - agent \
     --token K10d47c3a1abbbc24647fc37f9531ee6d9145d485408dc19f0bf4964c82beeaf175::server:91d5e063491d81783cab2bf1e728e4f1
 ```
 
-`--server` Set your K3s Server's URL that includes IP address and port number.
+Explanation:
 
-`--token` Set your K3s Server's token. You can find that token in your K3s Server's file path `/var/lib/rancher/k3s/server/node-token` or
-`/var/lib/rancher/k3s/server/token`.
+- `--server`
+  - *Set your K3s Server's URL that includes IP address and port number.*
 
-To get K3s Server's token,
+- `--token`
+  - *Set your K3s Server's token. You can find that token in your K3s Server's file path `/var/lib/rancher/k3s/server/node-token` or
+`/var/lib/rancher/k3s/server/token`.*
+
+To get K3s Server's token, go to the K3s Server, **k3s-dev-master** instance and get the node token by running the `cat` command tool. The node token filepath is `/var/lib/rancher/k3s/server/node-token` (or) `/var/lib/rancher/k3s/server/token`.
+
+For example,
 
 ```sh
 $ cat /var/lib/rancher/k3s/server/node-token
-
 K10d47c3a1abbbc24647fc37f9531ee6d9145d485408dc19f0bf4964c82beeaf175::server:91d5e063491d81783cab2bf1e728e4f1
 ```
 

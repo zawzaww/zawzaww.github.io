@@ -14,8 +14,7 @@ In this blog post, I will share about writing Kubernetes Helm chart, YAML-based 
  - [Kubernetes](https://kubernetes.io) cluster
  - [Helm](https://helm.sh) Kubernetes package manager tool
  - Kubernetes Basics
-  > You need to understand basic [Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects)
- and [Workloads resources](https://kubernetes.io/docs/concepts/workloads). If you are not fimiliar with Kubernetes, you can learn basics with [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) interactive tutorial.
+   > You need to understand basic [Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects) and [Workloads resources](https://kubernetes.io/docs/concepts/workloads). If you are not fimiliar with Kubernetes, you can learn basics with [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) interactive tutorial.
 
 ## Introduction to Helm
 Basically, [Helm](https://helm.sh) is a Kubernetes package manager that manages and deploys Helm charts.
