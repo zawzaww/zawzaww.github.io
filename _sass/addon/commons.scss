@@ -2,7 +2,7 @@
   The common styles
 */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
@@ -43,11 +43,11 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 1.03rem;
+  font-size: 1.04rem;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Geist", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;

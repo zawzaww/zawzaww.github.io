@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setup a Multi-Node K3s Cluster and Configuring Automated Upgrades"
+title: "Setup a K3s Cluster and Configuring Automated Upgrades"
 categories: [Kubernetes]
 tags: [kubernetes, k3s, automate, upgrade]
 image:

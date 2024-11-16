@@ -127,13 +127,9 @@ I've decided to buy the Smart prepaid eSIM because it's easy to buy and my Googl
 
 Buy Smart Prepaid eSIM at [https://store1.smart.com.ph/view/2661](https://store1.smart.com.ph/view/2661).
 
-Firstly, I've bought this Smart prepaid eSIM via the official website with AYA Visa card that costs only **PHP ₱99**, and then I've received the eSIM QR code via email from Smart.
+Firstly, I've bought this Smart prepaid eSIM via the official website with AYA Visa card that costs only PHP ₱99, and then I've received the eSIM QR code via email from Smart. Secondly, I scanned this Smart eSIM QR code and downloaded it on my Android phone, Google Pixel 4a. It worked properly.
 
-Secondly, I scanned this Smart eSIM QR code and downloaded it on my Android phone, Google Pixel 4a. It worked properly.
-
-**NOTE:** It depends on Android device manufacturers and Android version.
-
-For example, on the Google Pixel 4a Android phone,
+Please note that it depends on Android device manufacturers and Android version. For example, on the Google Pixel 4a Android phone,
 
 **Settings --> Network & internet --> SIMs --> Add eSIM --> Scan the QR code --> Download the Smart eSIM**
 
