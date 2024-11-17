@@ -4,9 +4,9 @@
 
 @mixin light-scheme {
   /* Common */
-  --body-bg: #faf7f4;
-  --mask-bg: #faf7f4;
-  --main-wrapper-bg: #faf7f4;
+  --body-bg: #f7f1eb;
+  --mask-bg: #f7f1eb;
+  --main-wrapper-bg: #f7f1eb;
   --main-border-color: #e0e0e0;
   --btn-border-color: #e9ecef;
   --text-color: #050505;
@@ -25,11 +25,11 @@
   --checkbox-checked-color: #008080;
 
   /* Sidebar */
-  --sidebar-bg: #f6f0ec;
+  --sidebar-bg: #f3eae2;
   --nav-cursor-color: #008080;
 
   /* Topbar */
-  --topbar-wrapper-bg: #faf7f4;
+  --topbar-wrapper-bg: #f7f1eb;
   --topbar-text-color: rgb(78, 78, 78);
   --search-wrapper-bg: #f5f5f5;
   --search-tag-bg: #f8f9fa;
@@ -65,9 +65,13 @@
   --timeline-color: rgba(0, 0, 0, 0.075);
   --timeline-node-bg: #c2c6cc;
   --timeline-year-dot-color: #ffffff;
+  --archive-bg: #f4ece4;
+
+  /* Categories */
+  --category-bg: #f4ece4;
 
   /* Footer */
-  --footer-bg-color: #faf7f4;
+  --footer-bg-color: #f7f1eb;
   --footnote-target-bg: lightcyan;
   --footer-link: #424242;
 } // light-scheme
