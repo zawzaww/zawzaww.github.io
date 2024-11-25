@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Setup a K3s Cluster and Configuring Automated Upgrades"
+title: "Bootstrapping a Multi-Node K3s Cluster and Configuring its Automated Upgrades"
 categories: [Kubernetes]
 tags: [kubernetes, k3s, automate, upgrade]
 image:
   src: /assets/images/featured-images/img_k3s_kubernetes.png
-  description: "Combined official K3s and Kubernetes logo by Author"
+  description: "Combined official K3s and Kubernetes logo by Zaw Zaw"
 ---
 
-This article focuses on how to setup and bootstrap the K3s cluster and how to configure automated upgrading of the K3s Kubernetes cluster. This covers both how to setup a multi-node K3s Kubernetes cluster and how to upgrade K3s automatically using the system upgrade controller.
+This article focuses on how to setup and bootstrap the multi-node K3s cluster and how to configure automated upgrading of the K3s Kubernetes cluster. This covers both how to setup a multi-node K3s Kubernetes cluster and how to upgrade K3s automatically using the system upgrade controller.
 
-Normally, we manually download the K3s binary file from the GitHub release page, install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure automated cluster upgrading for K3s using Rancher's [system upgrade controller](https://github.com/rancher/system-upgrade-controller) and **Plan** CRD, Custom Resource Definition.
+Usually, we manually download the K3s binary file from the GitHub release page, install and upgrade it in K3s Server and Agent Kubernetes nodes. Instead, we can manage and configure automated cluster upgrading for K3s using Rancher's [system upgrade controller](https://github.com/rancher/system-upgrade-controller) and **Plan** CRD, Custom Resource Definition.
 
 ## Objectives
 
@@ -186,22 +186,30 @@ spec:
 
 There are important things to understand configuring the K3s Plans
 
- - `spec.concurrency` Set *concurrency* if you want to run System Upgrade jobs concurrently.
+ - `spec.concurrency`
+   - Set *concurrency* if you want to run System Upgrade jobs concurrently.
 
- - `spec.cordon` Set *cordon* to true if you want to enable cordon also known as mark Node as unschedulable.
+ - `spec.cordon`
+   - Set *cordon* to true if you want to enable cordon also known as mark Node as unschedulable.
 
- - `spec.tolerations` Set *tolerations* if your ControlPlane/Master Node has taints because *Plan* job needs to run in Master or K3s server node. Please, see [https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration)
+ - `spec.tolerations`
+   - Set *tolerations* if your ControlPlane/Master Node has taints because *Plan* job needs to run in Master or K3s server node. Please, see [https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration)
 
- - `spec.nodeSelector` Set *nodeSelector* with key/value Node labels.
+ - `spec.nodeSelector`
+   - Set *nodeSelector* with key/value Node labels.
  Make sure you set node selector correctly to run *Plan* jobs on both ControlPlane/Master and Worker nodes.
 
- - `spec.serviceAccountName` Set *serviceAccountName*. Defaults to *system-upgrade* service account.
+ - `spec.serviceAccountName`
+   - Set *serviceAccountName*. Defaults to *system-upgrade* service account.
 
- - `spec.upgrade.image` Set K3s upgrade image. Defaults to `rancher/k3s-upgrade` Container image.
+ - `spec.upgrade.image`
+   - Set K3s upgrade image. Defaults to `rancher/k3s-upgrade` Container image.
 
- - `spec.channel` Set K3s upgrade channel [https://update.k3s.io/v1-release/channels/stable](https://update.k3s.io/v1-release/channels/stable).
+ - `spec.channel`
+   - Set K3s upgrade channel [https://update.k3s.io/v1-release/channels/stable](https://update.k3s.io/v1-release/channels/stable).
 
- - `spec.version` Set specific K3s version to upgrade. For example, current latest stable version is v1.28.6+k3s2.
+ - `spec.version`
+   - Set specific K3s version to upgrade. For example, current latest stable version is v1.28.6+k3s2.
 
 We can also set `spec.channel` to `stable` or `latest` to upgrade automatically K3s to current latest version
 based on you specified K3s upgrade channel.

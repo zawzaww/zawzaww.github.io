@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploring the Philippines: Travel Experience to Iloilo City"
+title: "Exploring the Philippines: My Travel Experience to Iloilo City"
 categories: [Travel]
 tags: [travel, asia, philippines]
 image:

@@ -1,50 +1,40 @@
 ---
 layout: post
-title: "Creating a User with RBAC Bindings for access Kubernetes Cluster"
+title: "Configuring RBAC Bindings for a User on Kubernetes"
 categories: [Kubernetes]
 tags: [kubernetes, cluster, auth, rbac]
 ---
 
-This blog focuses on how to setup and create a Kubernetes Cluster user with Cluster Role and Role Bindings
-using Kubernetes built in RBAC Authorization features and then, configure `kubeconfig` with `ServiceAccount` user token and give access it to user.
+This article focuses on how to setup and create a user with Cluster Roles and Role Bindings using Kubernetes built-in RBAC authorization features. Then, generate a ServiceAccount token and then configure the kubeconfig file with the token and give access to the user. Then, a user or developer can login and access the Kubernetes cluster with the token or kubeconfig file using the [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) (or) the [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux) command-line tool.
 
-## Prerequisites
+## Use Case
 
-Before we begin, make sure you setup Kubernetes Cluster and following tools.
+> If you are working with the team and want to give access to a user or developer with specific permissions on the Kubernetes cluster.
 
- - [Kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig)
- - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux) client tool (or) [Kubernetes dashboard](https://github.com/kubernetes/dashboard)
+## Before We Begin
 
-## Create a User with RBAC Authorization
+Make sure you have installed the following tools.
 
-Firstly, we need to create a `ServiceAccount`, `ClusterRole` and `ClusterRoleBinding` resource and install it on Kubernetes.
+ - Kubernetes Cluster
+ - The [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux) command-line tool (or) [Kubernetes Dashboard](https://github.com/kubernetes/dashboard)
 
-In this documentation,
-we will demonstrate to create a normal cluster user with `engineer` role that has read only permissions to access Kubernetes Cluster.
+## Create a User with RBAC Bindings
 
-### Understanding the RBAC Configuration
+In this article, we will demonstrate how to create a service account, *charlie* with **engineer** role that has read-only permissions to access all resources on the Kubernetes cluster, except from Secrets resources.
 
-`ServiceAccount` creates a user that we'll use in kubeconfig later.
-
-`ClusterRole` defines rules that represents a set of permissions.
-
- - `verbs` define permissions to access Kubernetes resources. For example, `get`, `list`, `watch`, `patch` and etc..
- - `apiGroups` define Kubernetes API groups. Fro example, `ingress` is included in `networking.k8s.io` API group.
- - `resources` define which Kubernetes resources to access to user. For example, `daemonsets`, `services` and etc..
-
-`ClusterRoleBinding` grants the permissions defined in `developer` ClusterRole to `k8s-dev` user.
+Create a YAML file named `k8s-user-charlie.yaml` that includes and configures *ServiceAccount*, *ClusterRole*, and *ClusterRoleBinding* resources.
 
 ```yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: k8s-dev
+  name: charlie
   namespace: kube-system
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: developer
+  name: engineer
 rules:
   - verbs:
       - get
@@ -162,44 +152,139 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: k8s-dev
+  name: rolebinding-charlie
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: developer
+  name: engineer
 subjects:
   - kind: ServiceAccount
-    name: k8s-dev
+    name: charlie
     namespace: kube-system
 ```
 
+In the above RBAC configuration, the *engineer* `ClusterRole` specifies a set of permissions to access all resources of Kubernetes, except from Secrets resources, and then the `ClusterRoleBinding` assigned a `ServiceAccount` user *charlie* to the *engineer* role.
+
+Learn more about the detailed information on the RBAC configuration in the following section.
+
+### Understanding the RBAC Configuration
+
+`ServiceAccount` Creates a user for login and access the Kubernetes cluster.
+
+`ClusterRole` Specifies rules that represent a set of permissions.
+
+  - `verbs` Specifies permissions to access Kubernetes resources. For example, *get*, *list*, *watch*, *patch* and etc..
+
+    - `get` - Read individual resources or objects, like viewing pod details.
+
+    - `list` - List multiple resources of a certain type, like listing all pods in a namespace.
+
+    - `watch` - Observe resources for real-time updates, often used by controllers to track changes. For example, *kubectl get configmap --watch.*
+
+    - `create` - Create a new resource or object, like creating a new pod or deployment or service. For example, *kubectl apply -f deployment.yaml.*
+
+    - `delete` - Remove individual resources, like deleting a specific pod.
+
+    - `update` - Update the entire object. An update operation replaces the entire resource specification. It overwrites the existing object with the new specification. For example, *kubectl apply -f deployment.yaml.*
+
+    - `patch` - Apply a partial update to a resource. A patch operation modifies specific fields selectively without affecting the rest of the object.
+
+      For example, `kubectl patch deployment nginx-server -p '{"spec": {"template": {"spec": {"containers": [{"name": "nginx", "image": "nginx:v2"}]}}}}')`
+
+  - `apiGroups` Specifies Kubernetes API groups. For example, *Deployment* is included in the *apps* API group.
+
+    To get Kubernetes API groups, run the `kubectl api-resources` command. Check the `APIVERSION` column and format is `<api-group/version>`.
+
+    ```sh
+     $ kubectl api-resources
+     NAME                              SHORTNAMES                  APIVERSION                        NAMESPACED   KIND
+     configmaps                        cm                          v1                                true         ConfigMap
+     namespaces                        ns                          v1                                false        Namespace
+     pods                              po                          v1                                true         Pod
+     secrets                                                       v1                                true         Secret
+     services                          svc                         v1                                true         Service
+     daemonsets                        ds                          apps/v1                           true         DaemonSet
+     deployments                       deploy                      apps/v1                           true         Deployment
+     replicasets                       rs                          apps/v1                           true         ReplicaSet
+     statefulsets                      sts                         apps/v1                           true         StatefulSet
+    ```
+
+  - `resources` Specifies which Kubernetes resources to access to the user. Same as above api groups, run the `kubectl api-resources` command and check the resource name in the `NAME` column. For example, *deployment*, *services* and so on.
+
+`ClusterRoleBinding` Grants the permissions defined in the ClusterRole and assigned to the ServiceAccount user.
+
+  - `roleRef.apiGroup`
+    - Set the API group of the cluster role (rbac.authorization.k8s.io).
+
+  - `roleRef.kind`
+    - Set the resource name of the cluster role (ClusterRole).
+
+  - `roleRef.name`
+    - Set the name of the cluster role you configured. In this article, I created an *engineer* role.
+
+  - `subjects.kind`
+    - Set the resource name of service account. (ServiceAccount)
+
+  - `subjects.name`
+    - Set the ServiceAccount name you created. In this article, it's *charlie*.
+
+  - `subjects.namespace`
+    - Set the namespace of your installed ServiceAccount resource. In this article, *kube-system* namespace.
+
 ### Deploy RBAC Resources on Kubernetes
 
-Then, install resources on Kubernetes Cluster.
+After configuring RBAC bindings in the `k8s-user-charlie.yaml` YAML file, deploy it with the `kubectl` command-line tool on the Kubernetes cluster.
 
 ```sh
-$ kubect apply -f k8s-dev-user.yaml --namespace kube-system
+$ kubect apply -f k8s-user-charlie.yaml
 ```
 
-Ref: [https://kubernetes.io/docs/reference/access-authn-authz/rbac](https://kubernetes.io/docs/reference/access-authn-authz/rbac)
+Output:
+```sh
+serviceaccount/charlie created
+clusterrole.rbac.authorization.k8s.io/engineer created
+clusterrolebinding.rbac.authorization.k8s.io/rolebinding-charlie created
+```
 
-## Create ServiceAccount Token
+Reference: [https://kubernetes.io/docs/reference/access-authn-authz/rbac](https://kubernetes.io/docs/reference/access-authn-authz/rbac)
 
-Previously, we've created a `ServiceAccount` also known as `k8s-dev` User.
-Next, we need to create ServiceAccount token that we will use in kubeconfig file to access Kubernetes cluster.
+## Create a ServiceAccount Token
 
-Create a ServiceAccount token for `k8s-dev` user.
+Previously, we have created a service account `charlie` user in the *kube-system* namespace. Next, we will create a service account token that we need to login and access the Kubernetes cluster and also need to use it in the *kubeconfig* file.
+
+Get the service account name you deployed previously.
 
 ```sh
-$ kubectl create token k8s-dev --duration=8760h --output yaml --namespace kube-system
+$ kubectl get serviceaccounts --namespace kube-system
 ```
+
+Output:
+
+```sh
+NAME                                     SECRETS   AGE
+...
+default                                  0         18d
+svclb                                    0         18d
+k8s-admin                                0         18d
+kubernetes-dashboard-metrics-server      0         18d
+kubernetes-dashboard                     0         18d
+charlie                                  0         21m
+```
+
+Create a service account token for the `charlie` user.
+
+```sh
+$ kubectl create token charlie --duration=8760h --output yaml --namespace kube-system
+```
+
+Output:
 
 ```yaml
 apiVersion: authentication.k8s.io/v1
 kind: TokenRequest
 metadata:
-  creationTimestamp: "2024-01-10T03:58:19Z"
-  name: k8s-dev
+  creationTimestamp: "2024-11-25T04:13:16Z"
+  name: charlie
   namespace: kube-system
 spec:
   audiences:
@@ -208,11 +293,13 @@ spec:
   boundObjectRef: null
   expirationSeconds: 31536000
 status:
-  expirationTimestamp: "2025-01-10T03:58:19Z"
-  token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ii04blM..
+  expirationTimestamp: "2025-11-25T04:13:16Z"
+  token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ii04blMtX1BpVHBQUUNxbXMxSEI3bkxRU1ZfNkVIR09UZGNiazlaWEoyaHMifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiLCJrM3MiXSwiZXhwIjoxNzY0MDQzOTk2LCJpYXQiOjE3MzI1MDc5OTYsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJjaGFybGllIiwidWlkIjoiMDAxOTYyNDUtNzhiNy00NzFkLThjODAtYWFhYWMyM2I2NjJjIn19LCJuYmYiOjE3MzI1MDc5OTYsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpjaGFybGllIn0.PokSrN-g4vz-9cl9d7_KuVl3UGh5q2Slww0G68uE4hrocSvrFizmCch4VkKCrzZ7anp9P3nWBvk8WVizo4nN5U_Wn3p-h7_nsvyTrJ7_FflNYS6w8fbfFVKl0vD31MVrpmj40DApkbIepnDKzKfvvNsf00zFoNyi2iB7iIgsrkpUDJyc-o-juHYSIdHwVdhlWSOxmvvq0kf0VITR5wPs5aw02GSUDt2FPxaw-wPFu-3_UrVWTJI0ZgI9D2zzuVDDTvipFn_huRTzPqJN6Q8uHT1dgfaQh86WS8ZqbHuL_oMAxhXLdRwtc07nAm-1lyV3ISjeIicqfli8PZ8IOUWDNQ
 ```
 
-Make sure you configure `duration` when you create ServiceAccount tokens.
+Make sure you configure `duration` when you create the service account token.
+
+That means the token will expire based on the duration you configured. For example, I've set the duration to `8760h` (365 days) and created the service account token on November 25, 2024. That token will expire on November 25, 2025.
 
 ## Configure Kubeconfig with ServiceAccount Token
 

@@ -304,12 +304,12 @@ For pod-info Helm chart, we need to configure the following steps.
 
 - In `values.yaml` file, define variables for Docker container image that we've built and pushed into Docker registry.
 
-```yaml
-image:
-  repository: zawzaww/pod-info-app
-  pullPolicy: IfNotPresent
-  tag: "latest"
-```
+  ```yaml
+  image:
+    repository: zawzaww/pod-info-app
+    pullPolicy: IfNotPresent
+    tag: "latest"
+  ```
 
 - In `templates/deployment.yaml` file, we can set variables from values.yaml with `.Values.image.repository`, `.Values.image.pullPolicay` and `.Values.image.tag`.
 It's YAML-based Helm template language syntax. You can learn on [The Chart Template Developer's Guide](https://helm.sh/docs/chart_template_guide).
@@ -322,9 +322,9 @@ So, when need to get variables form `values.yaml` file, we can use `.Values` in 
 {% raw %}
 ```yaml
 containers:
- - name: {{ .Chart.Name }}
-   image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-   imagePullPolicy: {{ .Values.image.pullPolicy }}
+  - name: {{ .Chart.Name }}
+    image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+    imagePullPolicy: {{ .Values.image.pullPolicy }}
 ```
 {% endraw %}
 
@@ -332,12 +332,12 @@ containers:
 
 - In `values.yaml` file, define variables for sevice type, port and targetPort.
 
-```yaml
-service:
-  type: NodePort
-  port: 80
-  targetPort: http
-```
+  ```yaml
+  service:
+    type: NodePort
+    port: 80
+    targetPort: http
+  ```
 
 - In `templates/service.yaml` file, we can set service varibales from values.yaml file like this:
   - Get service type: `.Values.service.type`
