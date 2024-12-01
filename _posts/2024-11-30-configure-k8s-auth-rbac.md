@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Configuring RBAC Bindings for a User on Kubernetes"
+title: "Configuring RBAC Role Bindings for a User on Kubernetes"
 categories: [Kubernetes]
 tags: [kubernetes, cluster, auth, rbac]
 image:
@@ -8,21 +8,24 @@ image:
   description: "Official Kubernetes Logo by Kubernetes Community"
 ---
 
-This article focuses on how to create a user using the service account with cluster roles and role bindings using Kubernetes built-in RBAC authorization features. In Kubernetes, we can use service account as a user, but it is like a non-human user. Generate a service account token and then configure the kubeconfig file with the token and give access to the user.
+This article focuses on how to create a user and configure cluster roles and role bindings for that user using Kubernetes built-in RBAC authorization features. Basically, in Kubernetes, we can use the service account as a user, but it is like a non-human user.
 
-Then, a user or developer can login and access the Kubernetes cluster with the token or kubeconfig file using the [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) (or) the [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux) command-line tool.
+Generally, every Kubernetes cluster has the default admin *kubeconfig* file. We usually use this admin *kubeconfig* file to log in to, access, and manage the Kubernetes cluster. We can generate a service account token and assign this service account or user to a specific cluster role, and then configure the *kubeconfig* file with its token and give access to the user.
+
+Then, a user or developer can log in to and access the Kubernetes cluster with the token or kubeconfig file using the [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) (or) the [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux) command-line tool.
 
 ## Use Case
 
-> If you are working with the team and want to give access to a user or developer with specific permissions on the Kubernetes cluster.
+> Working with the team and want to give access to a user or developer with specific permissions on the Kubernetes cluster.
+
+> For example, if you want to give access to a user with read-only access permissions.
 
 ## Objectives
 
- - Explore built-in RBAC authorization features.
- - How to configure ServiceAccount, ClusterRole, and ClusterRoleBinding.
- - Learn a deep dive into ClusterRole and ClusterRoleBinding configuration.
- - How to grant permissions to a user using RBAC role bindings.
- - How to generate a ServiceAccount token and use it in the kubeconfig file for a user to access the Kubernetes cluster.
+ - Explore built-in RBAC authorization features on Kubernetes.
+ - How to configure a service account, cluster roles and role bindings.
+ - Learn a deep dive into RBAC verbs and how to grant permissions to a user.
+ - How to generate a service account token for the user and use it in the *kubeconfig* file to access the Kubernetes cluster.
 
 ## Before We Begin
 
