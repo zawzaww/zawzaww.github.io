@@ -22,6 +22,11 @@ tagline: ZAW's Stuff & Personal Blog
 # Used by seo meta and the atom feed.
 description: ZAW's Personal Blog and Website
 
+about:
+  brief_info: >
+    Welcome to ZAW's blog.
+    This is a place where I share about Linux, Software stuff, Platform/SRE engineering, Photography, Travel, and things I've loved.
+
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaww.github.io
 
@@ -78,7 +83,7 @@ disqus:
   comments: true
   shortname: 'zawzaw'
 
-paginate: 8
+paginate: 10
 
 kramdown:
   input: GFM

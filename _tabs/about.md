@@ -1,15 +1,17 @@
 ---
-title: ABOUT ME
+title: ABOUT
 layout: page
 icon: fas fa-info
 order: 7
 ---
 
-![About Me](/assets/images/featured-images/img_profile_picture.png){: width="200" height="200" .normal}
+![About Me](https://i.postimg.cc/GtmcpymP/zawzaw-round-img.png){: width="200" height="200" .normal}
 
-##### SRE Engineer / Amateur Photographer
+#### Welcome to ZAW's blog
 
-I'm Zaw Zaw, I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay) also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra). I'm a SRE engineer and, currently working at [@FRONTiiR](http://www.frontiir.com/) on RnD/Integration team. Formerly, I've worked on RnD/DevSA team. Former Recognized Developer and Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums and I've contributed to Android, Linux kernel and  Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums.
+This is a place where I share about Linux, Software stuff, Platform/SRE engineering, Photography, Travel and things I've loved.
+
+I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay) also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra). I'm a SRE engineer and, currently working at [@FRONTiiR](http://www.frontiir.com/) on RnD/Integration team. Formerly, I've worked on RnD/DevSA team. Former Recognized Developer and Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums and I've contributed to Android, Linux kernel and  Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums.
 
 I've loved working with Low level software and command-line tools to interact with hardware. I'm currently working on Linux, Continuous Integration (CI), Continuous Deployment and Delivery (CD), Containerization and Kubernetes. I've always had a keen interest in Computer engineering, Systems programming, Operating systems, Linux kernel hacking, Cloud computing, Containers, Automation and Infrastructure. And, I also love to take photograph and interested in Landscape photography. You can see photos in my [Google Photos](https://photos.app.goo.gl/SJ9NYCk8so8oJRQz7) album.
 <br>
