@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bootstrapping a Multi-Node K3s Cluster and Configuring its Automated Upgrades"
+title: "Bootstrapping a K3s Cluster and Configuring its Automated Upgrades"
 categories: [Kubernetes]
 tags: [kubernetes, k3s, automate, upgrade]
 image:

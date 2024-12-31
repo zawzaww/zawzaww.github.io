@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Beginner-friendly Guide to Building Helm Charts"
+title: "Building a Kubernetes Helm Chart from Scratch"
 categories: [Kubernetes]
 tags: [kubernetes, helm, chart]
 image:

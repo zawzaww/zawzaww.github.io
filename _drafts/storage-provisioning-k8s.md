@@ -1,12 +1,54 @@
 ---
 layout: post
-title: "Setting up NFS Storage Provisioner on Kubernetes"
+title: Dynamic Storage Provisioning on Kubernetes
 categories: [Kubernetes]
-tags: [kubernetes, storage, k8s]
+tags: [kubernetes, storage, provisioning]
 ---
 
-This blog post focuses on how to setup NFS, Network Filesystem Server and deploy persistent volume claims, PVCs
-with NFS storage dynamic provisioner on Kubernetes cluster.
+In this article, I will share how dynamic storage provisioning on Kubernetes works and how to setup and configure it. We typically create *Persistent Volumes* manually using the [local volume](https://kubernetes.io/docs/concepts/storage/volumes/#local) on Kubernetes. But we can create and manage storage volumes dynamically using any storage provisioner. Basically, dynamic storage provisioning enables to create storage volumes on-demand (or) dynamically.
+
+I will mainly focus on managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes, in this article and also demonstrate how to configure the **local-path** and **NFS** storage provisioners and how to deploy *Persistent Volumes* dynamically using them on the Kubernetes cluster.
+
+## Before We Begin
+
+- [Kubernetes](https://kubernetes.io) Cluster
+
+ - [kubectl](https://kubernetes.io/docs/reference/kubectl), a client CLI tool to communicate with the cluster
+
+ - [Helm](https://helm.sh) package manager tool
+
+ - Kubernetes Basics
+
+   > Make sure you understand how to use basic Kubernetes objects and resources, and deploy them on the Kubernetes cluster. If you are not familiar with Kubernetes, you can learn [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) tutorial that provides a hands-on practical guide on the basics of Kubernetes, container orchestration system.
+
+## Introduction
+
+### How Kubernetes manages Persistent Storage (Volumes)
+
+First of all, we need to understand basic concepts on Kubernetes persistent storage and how Kubernetes creates and manages persistent volumes. So, we will explore the basics before we explore dynamic storage provisioning on Kubernetes.
+
+Basically, Kubernetes has the following two API resources to manage persistent storage.
+
+ - *PersistentVolume (PV)*
+ - *PersistentVolumeClaim (PVC)*
+
+
+
+Dynamic storage provisioning enables and allows to create Persistent Volumes on-demand or dynamically on the Kubernetes cluster based on the *StorageClass* API object. Basically, the *StorageClass* defines which storage provisioner should be used when creating persistent volumes on Kubernetes.
+
+For example, Rancher's local-path provisioner
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-path
+parameters: {}
+provisioner: rancher.io/local-path
+reclaimPolicy: Delete
+volumeBindingMode: WaitForFirstConsumer
+```
+
 
 ## Setup NFS Server
 Install NFS server package. It depends on your Linux distribution. We will install it on Ubuntu Linux.

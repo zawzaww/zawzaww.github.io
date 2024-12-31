@@ -7,9 +7,8 @@ order: 7
 
 ![About Me](https://i.postimg.cc/GtmcpymP/zawzaw-round-img.png){: width="200" height="200" .normal}
 
-#### Welcome to ZAW's blog
-
-This is a place where I share about Linux, Software stuff, Platform/SRE engineering, Photography, Travel and things I've loved.
+*Welcome to ZAW's blog*.
+I'm Zaw Zaw from Pyay, Myanmar. Mostly I share about Linux, software stuff, Platform/SRE engineering, photography, travel and things I've loved here.
 
 I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay) also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra). I'm a SRE engineer and, currently working at [@FRONTiiR](http://www.frontiir.com/) on RnD/Integration team. Formerly, I've worked on RnD/DevSA team. Former Recognized Developer and Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums and I've contributed to Android, Linux kernel and  Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums.
 

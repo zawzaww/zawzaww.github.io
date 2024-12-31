@@ -24,8 +24,7 @@ description: ZAW's Personal Blog and Website
 
 about:
   brief_info: >
-    Welcome to ZAW's blog.
-    This is a place where I share about Linux, Software stuff, Platform/SRE engineering, Photography, Travel, and things I've loved.
+    Mostly I share about Linux, software stuff, Platform/SRE engineering, photography, travel, and things I've loved here.
 
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaww.github.io
