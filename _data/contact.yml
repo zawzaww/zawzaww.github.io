@@ -15,17 +15,16 @@
 - type: github
   icon: 'fab fa-github'
 
-- type: instagram
-  icon: 'fab fa-instagram'
-  url: https://www.instagram.com/zawzaw.me
+- type: twitter
+  icon: 'fab fa-x-twitter'
 
 - type: linkedin
   icon: 'fab fa-linkedin'
   url: https://www.linkedin.com/in/zawzaww
 
-- type: twitter
-  icon: 'fab fa-twitter'
-  url: https://twitter.com/zawzaw_me
+- type: instagram
+  icon: 'fab fa-instagram'
+  url: https://www.instagram.com/zawzaw.me
 
 - type: email
   icon: 'fas fa-envelope'

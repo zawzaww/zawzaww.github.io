@@ -32,6 +32,9 @@ url: https://zawzaww.github.io
 # GitHub username.
 github:
   username: zawzaww
+# X (Twitter) username.
+twitter:
+  username: zawzaw_me
 
 # Change to your full name.
 # It will be displayed as the default author of the posts and the copyright owner in the footer.
