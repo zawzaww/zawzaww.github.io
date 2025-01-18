@@ -67,8 +67,8 @@
       }
 
       &:nth-child(odd) {
-        background-color: var(--archive-bg);
-        background-image: var(--main-wrapper-bg);
+        background-color: var(--main-wrapper-bg, #fff);
+        background-image: linear-gradient(to left, #fff, #fbfbfb, #fbfbfb, #fbfbfb, #fff);
       }
 
       &::after {

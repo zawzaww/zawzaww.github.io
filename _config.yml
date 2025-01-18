@@ -17,14 +17,14 @@ lang: en-US
 title: Zaw Zaw
 
 # It will display as the sub-title name.
-tagline: ZAW's Stuff & Personal Blog
+tagline: ZAW's Tech Stuff and Blog
 
 # Used by seo meta and the atom feed.
-description: ZAW's Personal Blog and Website
+description: ZAW's Tech Stuff and Blog
 
 about:
   brief_info: >
-    Mostly I share about Linux, software stuff, Platform/SRE engineering, photography, travel, and things I've loved here.
+    I publish articles that focus on Linux, Software Stuff, Containerization, Cloud-native Tools and much more.
 
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaww.github.io
@@ -82,7 +82,7 @@ toc: true
 
 # Boolean type, the global switch for posts comments.
 disqus:
-  comments: true
+  comments: false
   shortname: 'zawzaw'
 
 paginate: 10

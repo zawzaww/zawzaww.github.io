@@ -1,54 +1,175 @@
 ---
 layout: post
-title: Dynamic Storage Provisioning on Kubernetes
+title: A Hands-on Practical Guide to K8s Persistent Storage
 categories: [Kubernetes]
 tags: [kubernetes, storage, provisioning]
 ---
 
-In this article, I will share how dynamic storage provisioning on Kubernetes works and how to setup and configure it. We typically create *Persistent Volumes* manually using the [local volume](https://kubernetes.io/docs/concepts/storage/volumes/#local) on Kubernetes. But we can create and manage storage volumes dynamically using any storage provisioner. Basically, dynamic storage provisioning enables to create storage volumes on-demand (or) dynamically.
+In Kubernetes, we typically need to create and use *Persistent Volumes* for stateful apps such as database engines, cache store servers and so on. I will share how storage provisioning on Kubernetes works and how to configure *Persistent Volumes* for statefulset apps.
 
-I will mainly focus on managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes, in this article and also demonstrate how to configure the **local-path** and **NFS** storage provisioners and how to deploy *Persistent Volumes* dynamically using them on the Kubernetes cluster.
+I will mainly focus on managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes in this article, and also demonstrate how to configure the **local-path** and **NFS** storage provisioners and how to deploy *Persistent Volumes* dynamically using them on the Kubernetes cluster.
 
 ## Before We Begin
 
-- [Kubernetes](https://kubernetes.io) Cluster
+ - [Kubernetes](https://kubernetes.io) Cluster
 
- - [kubectl](https://kubernetes.io/docs/reference/kubectl), a client CLI tool to communicate with the cluster
+ - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux), a client CLI tool to communicate with the cluster
 
  - [Helm](https://helm.sh) package manager tool
 
  - Kubernetes Basics
 
-   > Make sure you understand how to use basic Kubernetes objects and resources, and deploy them on the Kubernetes cluster. If you are not familiar with Kubernetes, you can learn [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) tutorial that provides a hands-on practical guide on the basics of Kubernetes, container orchestration system.
+   > Make sure you are familiar with basic Kubernetes objects and resources. If you are a Kubernetes newcomer, you can learn [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) tutorial that provides a hands-on practical guide on the basics of Kubernetes, container orchestration system.
 
-## Introduction
+## Background
+### Introduction to Kubernetes Persistent Volumes
 
-### How Kubernetes manages Persistent Storage (Volumes)
+Firstly, we need to understand basic concepts on Kubernetes persistent volume and how Kubernetes creates and manages persistent volumes. So, we will learn the basics before we setup and configure storage provisioning on the Kubernetes platform.
 
-First of all, we need to understand basic concepts on Kubernetes persistent storage and how Kubernetes creates and manages persistent volumes. So, we will explore the basics before we explore dynamic storage provisioning on Kubernetes.
-
-Basically, Kubernetes has the following two API resources to manage persistent storage.
+Basically, Kubernetes has the following main two API resources to manage persistent storage.
 
  - *PersistentVolume (PV)*
  - *PersistentVolumeClaim (PVC)*
 
+**PersistentVolume (PV)** represents a piece of storage in the Kubernetes cluster. PVs can be provisioned manually by a cluster administrator or dynamically provisioned using PersistentVolumeClaim (PVC) with a storage class, and PVs can be filesystems (physical disks) and cloud storage services such as Amazon EBS and Azure disk.
 
+**PersistentVolumeClaim (PVC)** represents a request for storage, such as the storage size, access mode, and storage class. Persistent Volumes can be provisioned dynamically using PVC and storage class with any storage provisioner.
 
-Dynamic storage provisioning enables and allows to create Persistent Volumes on-demand or dynamically on the Kubernetes cluster based on the *StorageClass* API object. Basically, the *StorageClass* defines which storage provisioner should be used when creating persistent volumes on Kubernetes.
+It's a simple introduction. I will explain more details on persistent volumes with examples and demonstrate how to use them in the next sections.
 
-For example, Rancher's local-path provisioner
+## Storage Provisioning on Kubernetes
 
+Basically, Kubernetes has two ways of provisioning persistent volumes.
+
+ - *Static*
+ - *Dynamic*
+
+### Static Storage Provisioning
+
+Static storage provisioning creates persistent volumes manually for apps that require data persistence. In this approach, a cluster administrator needs to create PVs manually on the Kubernetes cluster.
+
+For example,
+create PV and PVC manually for data persistence of the MySQL database server.
+
+PersistentVolume:
 ```yaml
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
+apiVersion: v1
+kind: PersistentVolume
 metadata:
-  name: local-path
-parameters: {}
-provisioner: rancher.io/local-path
-reclaimPolicy: Delete
-volumeBindingMode: WaitForFirstConsumer
+  name: pv-mysql-example
+spec:
+  storageClassName: manual # Set storageclass name to "manual" or empty.
+  capacity:
+    storage: 8Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: "/data/mysql"
 ```
 
+PersistentVolumeClaim:
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-mysql-example
+  namespace: sandbox
+spec:
+  storageClassName: manual # Set storageclass name to "manual" or empty.
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi
+```
+
+MySQL Pod:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-example
+  namespace: sandbox
+spec:
+  containers:
+    - name: mysql-example
+      image: mysql:latest
+      ports:
+        - name: mysql-tcp
+          protocol: TCP
+          containerPort: 3306
+      volumeMounts:
+        - mountPath: "/data/mysql"
+          name: vol-mysql-data
+  volumes:
+    - name: vol-mysql-data
+      persistentVolumeClaim:
+        claimName: pvc-mysql-example
+...
+```
+
+You can use the default `manual` class name that does not require any storage provisioner. It can be used to create PersistentVolume, PVs manually. See tutorial, [https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
+
+Kubernetes supports `hostPath` persistent volume for development and local testing.
+In this approach, you need to create PV and PVC manually, and create volume mounts using PVC `pvc-mysql-example` in the MySQL Pod. And then MySQL data will be stored in the `/data/mysql` path on the local Kubernetes node.
+
+### Dynamic Storage Provisioning
+
+Dynamic storage provisioning enables and allows to create persistent volumes on-demand or dynamically on the Kubernetes cluster based on the *StorageClass* API object. Basically, *StorageClass* defines which storage provisioner should be used when creating persistent volumes on Kubernetes.
+
+> But, please note that you need to deploy the provisioner on the Kubernetes cluster and we will explore how to setup in the next section.
+
+In this approach, you can use any StorageClass when you configure PersistentVolumeClaim (PVC), and then it will automatically create PersistentVolume (PV) on the Kubernetes cluster.
+
+For example,
+
+PersistentVolumeClaim (PVC) with local-path storageclass:
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-mysql-example
+  namespace: sandbox
+spec:
+  storageClassName: local-path
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi
+```
+
+MySQL Pod:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-example
+  namespace: sandbox
+spec:
+  containers:
+    - name: mysql-example
+      image: mysql:latest
+      ports:
+        - name: mysql-tcp
+          protocol: TCP
+          containerPort: 3306
+      volumeMounts:
+        - mountPath: "/data/mysql"
+          name: vol-mysql-data
+  volumes:
+    - name: vol-mysql-data
+      persistentVolumeClaim:
+        claimName: pvc-mysql-example
+...
+```
+
+In the above example, it creates volume mounts using PVC `pvc-mysql-example` in the MySQL Pod. And then MySQL data will be stored in the path specified by the provisioner on the Kubernetes node.
+
+It depends on the provisioner you deployed and the provisioner's mount path configuration. For example, the default path of Rancher's local-path provisioner on the Kubernetes node is `/var/lib/rancher/k3s/storage/`.
+
+In the next section, we will learn how to setup the *local-path* and *NFS* provisioners on the Kubernetes cluster.
 
 ## Setup NFS Server
 Install NFS server package. It depends on your Linux distribution. We will install it on Ubuntu Linux.
