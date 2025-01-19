@@ -1,5 +1,5 @@
 ---
-title: CONTACT
+title: Contact
 layout: page
 icon: fas fa-phone
 order: 6

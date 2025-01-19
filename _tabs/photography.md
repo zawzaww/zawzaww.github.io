@@ -1,5 +1,5 @@
 ---
-title: PHOTOGRAPHY
+title: Photography
 layout: page
 icon: fas fa-image
 order: 5

@@ -24,7 +24,7 @@ I will mainly focus on managing persistent storage on the Kubernetes On-premises
 ## Background
 ### Introduction to Kubernetes Persistent Volumes
 
-Firstly, we need to understand basic concepts on Kubernetes persistent volume and how Kubernetes creates and manages persistent volumes. So, we will learn the basics before we setup and configure storage provisioning on the Kubernetes platform.
+Firstly, we need to understand basic concepts on Kubernetes *Persistent Volumes* and how Kubernetes creates and manages persistent volumes. So, we will learn the basics before we setup and configure storage provisioning on the Kubernetes platform.
 
 Basically, Kubernetes has the following main two API resources to manage persistent storage.
 
@@ -171,7 +171,122 @@ It depends on the provisioner you deployed and the provisioner's mount path conf
 
 In the next section, we will learn how to setup the *local-path* and *NFS* provisioners on the Kubernetes cluster.
 
-## Setup NFS Server
+## Setting Up Local Path Provisioner
+
+Local Path Provisioner provides the ability to create the local persistent storage on-demand or dynamically in each Kubernetes node. Basically, it uses [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath) or [local](https://kubernetes.io/docs/concepts/storage/volumes/#local) to create and deploy local persistent volumes on the Kubernetes node automatically. It's simpler to provision local persistent volumes. Documentation is available at [https://github.com/rancher/local-path-provisioner/blob/master/README.md](https://github.com/rancher/local-path-provisioner/blob/master/README.md)
+
+### Installation
+
+In this article, we will use Rancher's local-path provisioner on a self-managed Kubernetes cluster.
+
+Local Path Provisioner: [https://github.com/rancher/local-path-provisioner](https://github.com/rancher/local-path-provisioner)
+
+Install with kubectl,
+
+```sh
+$ kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.30/deploy/local-path-storage.yaml
+```
+
+The provisioner will be installed in the `local-path-storage` namespace by default. After installation, check the provisioner pod and storageclass.
+
+```sh
+$ kubectl get pods --namespace local-path-storage
+NAME                                                  READY   STATUS      RESTARTS         AGE
+local-path-provisioner-5cffd47f7-42nbw                1/1     Running     0                5d20h
+```
+
+> The StorageClass resource is a cluster-wide resource and has no namespace scope. You just need to run the `kubectl get storageclass` command.
+
+```sh
+$ kubectl get storageclass
+NAME                   PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+local-path             rancher.io/local-path          Delete          WaitForFirstConsumer   false                  5d20h
+```
+
+### Using Local Path Provisioner
+
+In this section, we will test creating a *PersistentVolume* for a *Pod* automatically using PVC with the *local-path* storageclass. I will demonstrate it with the Busybox container image.
+
+Create a YAML named `local-storage-busybox.yaml`.
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-local-example
+  namespace: sandbox
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 8Gi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: local-storage-example
+  namespace: sandbox
+spec:
+  containers:
+    - name: busybox
+      image: busybox:latest
+      imagePullPolicy: IfNotPresent
+      command:
+        - sh
+        - '-c'
+        - 'while true; do echo "`date` [`hostname`] Hello from Local Persistent Volume." >> /data/local/greet.txt; sleep $(($RANDOM % 5 + 300)); done'
+      volumeMounts:
+        - name: vol-pvc-local
+          mountPath: /data/local
+  volumes:
+    - name: vol-pvc-local
+      persistentVolumeClaim:
+        claimName: pvc-local-example
+```
+
+Then, install with the kubectl command-line tool like this:
+
+```sh
+$ kubectl apply -f local-storage-busybox.yaml
+```
+
+### How it Works
+
+In the **PersistentVolumeClaim**, configured volume claim using the *local-path* storageclass, access mode is set *ReadWriteOnce* and 8Gi storage is requested. But, please note that *local* or *hostPath* only supports *ReadWriteOnce* access mode. Please, see [https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+
+Then, it will be provisioned a PV (PersistentVolume) automatically because we've installed the StorageClass with *Local Path Provisioner* and configured PVC (PersistentVolumeClaim) using the *local-path* storage class. That's called dynamic storage provisioning. We only need to configure PVC (PersistentVolumeClaim).
+
+Check PV with the kubectl command-line tool like this:
+```sh
+$ kubectl get pv
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                        STORAGECLASS       VOLUMEATTRIBUTESCLASS   REASON   AGE
+pvc-7e22e4b8-09d8-4553-88fc-1aefeb7c1ac3   8Gi        RWO            Delete           Bound    sandbox/pvc-local-example    local-path         <unset>                          54m
+```
+
+In the **Pod**, created a volume mount, `/data/local` with the PersistentVolumeClaim (PVC) named *pvc-local-example* using the Busybox container image. Basically, Pod's command or script creates a file named *greet.txt*, writes date and hostname data to this file every 5min.
+
+You can check data by executing into the Pod shell.
+
+```sh
+$ kubectl exec -it local-storage-example --namespace sandbox -- sh
+```
+
+```sh
+$ cd /data/local/
+$ cat greet.txt
+Sun Jan 19 05:31:11 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+Sun Jan 19 05:36:14 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+Sun Jan 19 05:41:16 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+Sun Jan 19 05:46:16 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+Sun Jan 19 05:51:18 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+```
+
+
+## Setting up NFS Provisioner
+
+### Setup NFS Server
 Install NFS server package. It depends on your Linux distribution. We will install it on Ubuntu Linux.
 
 ```sh
@@ -207,7 +322,7 @@ For example,
 /data/nfs          172.16.x.3(rw,sync,no_subtree_check,no_root_squash)
 ```
 
-## Install NFS Client on Worker Nodes
+### Install NFS Client on Worker Nodes
 
 Before setup NFS storage provisioner, make sure you install NFS client tool.
 
@@ -223,7 +338,7 @@ On RHEL-based Linux systems, for example: Fedora Linux,
 sudo dnf install -y nfs-utils
 ```
 
-## Install NFS Dynamic Provisioner
+### Install NFS Provisioner
 
 Add Helm repository and install NFS storage dynamic provisioner.
 
@@ -249,7 +364,7 @@ NAME                        PROVISIONER                                         
 nfs-client                  cluster.local/nfs-provisioner-nfs-subdir-external-provisioner   Delete          Immediate              true                   3d10h
 ```
 
-## Deploy an App with NFS Storage
+### Deploy an App with NFS Storage
 
 Create PVC and Pod resources.
 
