@@ -5,7 +5,7 @@ categories: [Kubernetes]
 tags: [kubernetes, storage, provisioning]
 ---
 
-In Kubernetes, we typically need to create and use *Persistent Volumes* for stateful apps such as database engines, cache store servers and so on. I will share how storage provisioning on Kubernetes works and how to configure *Persistent Volumes* for statefulset apps.
+In Kubernetes, we typically need to create and use *Persistent Volumes* for stateful applications such as database engines, cache store servers, and so on. In this article, I will share how storage provisioning on Kubernetes works and how to provision persistent storage on Kubernetes.
 
 I will mainly focus on managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes in this article, and also demonstrate how to configure the **local-path** and **NFS** storage provisioners and how to deploy *Persistent Volumes* dynamically using them on the Kubernetes cluster.
 
@@ -24,7 +24,7 @@ I will mainly focus on managing persistent storage on the Kubernetes On-premises
 ## Background
 ### Introduction to Kubernetes Persistent Volumes
 
-Firstly, we need to understand basic concepts on Kubernetes *Persistent Volumes* and how Kubernetes creates and manages persistent volumes. So, we will learn the basics before we setup and configure storage provisioning on the Kubernetes platform.
+Firstly, we need to understand basic concepts on Kubernetes *Persistent Volumes* and how Kubernetes creates and manages persistent volumes. So, we will learn the basics before we setup and configure storage provisioners on the Kubernetes platform.
 
 Basically, Kubernetes has the following main two API resources to manage persistent storage.
 
@@ -52,6 +52,7 @@ For example,
 create PV and PVC manually for data persistence of the MySQL database server.
 
 PersistentVolume:
+
 ```yaml
 apiVersion: v1
 kind: PersistentVolume
@@ -173,7 +174,9 @@ In the next section, we will learn how to setup the *local-path* and *NFS* provi
 
 ## Setting Up Local Path Provisioner
 
-Local Path Provisioner provides the ability to create the local persistent storage on-demand or dynamically in each Kubernetes node. Basically, it uses [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath) or [local](https://kubernetes.io/docs/concepts/storage/volumes/#local) to create and deploy local persistent volumes on the Kubernetes node automatically. It's simpler to provision local persistent volumes. Documentation is available at [https://github.com/rancher/local-path-provisioner/blob/master/README.md](https://github.com/rancher/local-path-provisioner/blob/master/README.md)
+Local Path Provisioner provides the ability to create the local persistent storage on-demand or dynamically in each Kubernetes node. Basically, it uses [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath) or [local](https://kubernetes.io/docs/concepts/storage/volumes/#local) to create and deploy local persistent volumes on the Kubernetes node automatically. It's simpler to provision local persistent volumes.
+
+Documentation is available at [https://github.com/rancher/local-path-provisioner/blob/master/README.md](https://github.com/rancher/local-path-provisioner/blob/master/README.md)
 
 ### Installation
 
@@ -205,7 +208,7 @@ local-path             rancher.io/local-path          Delete          WaitForFir
 
 ### Using Local Path Provisioner
 
-In this section, we will test creating a *PersistentVolume* for a *Pod* automatically using PVC with the *local-path* storageclass. I will demonstrate it with the Busybox container image.
+In this section, we will test creating a *PersistentVolume* for a *Pod* automatically using PVC with the *local-path* storageclass. I will demonstrate it using the Busybox container image.
 
 Create a YAML named `local-storage-busybox.yaml`.
 
@@ -236,7 +239,11 @@ spec:
       command:
         - sh
         - '-c'
-        - 'while true; do echo "`date` [`hostname`] Hello from Local Persistent Volume." >> /data/local/greet.txt; sleep $(($RANDOM % 5 + 300)); done'
+        - >-
+          while true; do
+            echo "$(date) [$(hostname)] Hello from Local Persistent Volume." >> /data/local/greet.txt
+            sleep $((RANDOM % 5 + 300))
+          done
       volumeMounts:
         - name: vol-pvc-local
           mountPath: /data/local
@@ -254,28 +261,43 @@ $ kubectl apply -f local-storage-busybox.yaml
 
 ### How it Works
 
-In the **PersistentVolumeClaim**, configured volume claim using the *local-path* storageclass, access mode is set *ReadWriteOnce* and 8Gi storage is requested. But, please note that *local* or *hostPath* only supports *ReadWriteOnce* access mode. Please, see [https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+#### PersistentVolumeClaim (PVC)
 
-Then, it will be provisioned a PV (PersistentVolume) automatically because we've installed the StorageClass with *Local Path Provisioner* and configured PVC (PersistentVolumeClaim) using the *local-path* storage class. That's called dynamic storage provisioning. We only need to configure PVC (PersistentVolumeClaim).
+In the **PersistentVolumeClaim**,
+configured using the *local-path* storageclass, access mode is set to *ReadWriteOnce* and 8Gi storage is requested. But, please NOTE that *local* or *hostPath* only supports *ReadWriteOnce* access mode.
 
-Check PV with the kubectl command-line tool like this:
+For the detailed information about **Access Modes**, please see the [Access Modes in NFS storage section](#explanation-how-it-works-1).
+
+Then, it will be provisioned a PV (PersistentVolume) automatically by **Local Path Provisioner** via *StorageClass* because we've installed it and configured PVC (PersistentVolumeClaim) using the *local-path* storage class. So, it's called dynamic storage provisioning and we only need to configure PVC (PersistentVolumeClaim) with storage class.
+
+> The PV resource is a cluster-wide resource and has no namespace scope. You just need to run the kubectl get storageclass command.
+
+Check PV with the kubectl command-line tool like this,
+
 ```sh
 $ kubectl get pv
 NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                        STORAGECLASS       VOLUMEATTRIBUTESCLASS   REASON   AGE
 pvc-7e22e4b8-09d8-4553-88fc-1aefeb7c1ac3   8Gi        RWO            Delete           Bound    sandbox/pvc-local-example    local-path         <unset>                          54m
+...
 ```
 
-In the **Pod**, created a volume mount, `/data/local` with the PersistentVolumeClaim (PVC) named *pvc-local-example* using the Busybox container image. Basically, Pod's command or script creates a file named *greet.txt*, writes date and hostname data to this file every 5min.
+---
 
-You can check data by executing into the Pod shell.
+#### Busybox Pod (Workload)
+
+In the **Pod**, created a volume mount path, `/data/local` using the PersistentVolumeClaim (PVC) named *pvc-local-example* with the Busybox container image. Basically, Pod's command or script creates a file named *greet.txt*, writes date and hostname data to this file every 5m.
+
+You can check the data by executing into the Pod shell.
 
 ```sh
 $ kubectl exec -it local-storage-example --namespace sandbox -- sh
-```
-
-```sh
 $ cd /data/local/
 $ cat greet.txt
+```
+
+Output:
+
+```sh
 Sun Jan 19 05:31:11 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
 Sun Jan 19 05:36:14 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
 Sun Jan 19 05:41:16 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
@@ -283,20 +305,28 @@ Sun Jan 19 05:46:16 UTC 2025 [local-storage-example] Hello from Local Persistent
 Sun Jan 19 05:51:18 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
 ```
 
-
 ## Setting up NFS Provisioner
 
+NFS (Network File System) is a distributed file system protocol that allows you to store and mount data on the remote server, also known as the NFS server. That means a client user can access data over a network and server-client way to manage data storage.
+
+In Kubernetes, we will use [NFS Subdir External Provisioner](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner) for provisioning persistent volumes on the NFS server. Basically, *NFS subdir external provisioner*, is a dynamic provisioner that uses the already configured NFS server to provision and create Kubernetes persistent volumes automatically on its NFS server using the PVC (PersistentVolumeClaim) and storage class.
+
+Documentation at available at [https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner/blob/master/README.md](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner/blob/master/README.md)
+
+Before you deploy the NFS provisioner on Kubernetes, make sure you install both the NFS server and client tool.
+
 ### Setup NFS Server
-Install NFS server package. It depends on your Linux distribution. We will install it on Ubuntu Linux.
+
+Install the NFS server package. It depends on your Linux distribution. In this article, we will install it on Ubuntu Linux.
 
 ```sh
 sudo apt update
 sudo apt install -y nfs-server
 ```
 
-Configure NFS server `/etc/exports` configuration to access control list for filesystems which may be exported to NFS clients.
+Configure the NFS server `/etc/exports` configuration for access control list for filesystems that may be exported to NFS clients.
 
-Note that IP addr or hostname is your NFS clients IP addresses.
+ > NOTE: IPv4 address or hostname is your NFS clients IP addresses.
 
 Format,
 
@@ -324,7 +354,7 @@ For example,
 
 ### Install NFS Client on Worker Nodes
 
-Before setup NFS storage provisioner, make sure you install NFS client tool.
+Before you setup NFS storage provisioner, make sure you install the NFS client tool on the Kubernetes Worker nodes.
 
 On Debian-based Linux systems,
 
@@ -338,15 +368,22 @@ On RHEL-based Linux systems, for example: Fedora Linux,
 sudo dnf install -y nfs-utils
 ```
 
-### Install NFS Provisioner
+### Install NFS Subdir External Provisioner
 
-Add Helm repository and install NFS storage dynamic provisioner.
+In this section,
+we will install the *NFS subdir external provisioner* with the Helm package manager.
 
-[https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner)
+Helm Repo URL: [https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner](https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner)
+
+Add a Helm repository,
 
 ```sh
 $ helm repo add nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner
 ```
+
+Install the *NFS subdir external provisioner* with Helm like this,
+
+Format:
 
 ```sh
 helm install nfs-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
@@ -356,27 +393,52 @@ helm install nfs-provisioner nfs-subdir-external-provisioner/nfs-subdir-external
     --set nfs.path=/exported/path
 ```
 
-Check StorageClass with kubectl.
+Example:
 
+```sh
+helm install nfs-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
+    --create-namespace \
+    --namespace nfs-provisioner \
+    --set nfs.server=127.0.0.1 \
+    --set nfs.path=/data/nfs
 ```
-[zawzaw@fedora-linux:~]$ kubectl get storageclass
+
+`nfs.server=127.0.0.1` Replace the IP address with your NFS IP address.
+
+`nfs.path=/data/nfs` Replace the mount path with your exported path or mount path on the NFS server.
+
+The *NFS subdir external provisioner* will be installed in the *nfs-provisioner* namespace. After installation, check the NFS provisioner's workload (Pods) and StorageClass with the kubectl command-line tool.
+
+```sh
+$ kubectl get pods --namespace nfs-provisioner
+NAME                                                              READY   STATUS    RESTARTS       AGE
+nfs-provisioner-infra-nfs-subdir-external-provisioner-665fhd2wn   1/1     Running   0              5d20h
+```
+
+> 📝 The StorageClass resource is a cluster-wide resource and has no namespace scope. You just need to run the `kubectl get storageclass` command.
+
+```sh
+$ kubectl get storageclass
 NAME                        PROVISIONER                                                     RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-nfs-client                  cluster.local/nfs-provisioner-nfs-subdir-external-provisioner   Delete          Immediate              true                   3d10h
+nfs-client                  cluster.local/nfs-provisioner-nfs-subdir-external-provisioner   Delete          Immediate              true                   5d20h
 ```
 
-### Deploy an App with NFS Storage
+### Using the NFS Subdir External Provisioner
 
-Create PVC and Pod resources.
+In this section, we will test creating and provisioning a *PersistentVolume (PV)* for a *Pod* automatically using *PersistentVolumeClaim (PVC)* with the `nfs-client` storage class. I will demonstrate it using the Busybox container image.
+
+Create a YAML file named `nfs-storage-busybox.yaml` that includes PersistentVolumeClaim (PVC) and Pod resources.
 
 ```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-nfs
+  name: pvc-nfs-example
+  namespace: sandbox
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: "nfs-client"
+  storageClassName: nfs-client
   resources:
     requests:
       storage: 8Gi
@@ -384,9 +446,8 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: busybox-nfs
-  annotations:
-    nfs.io/storage-path: "/data/nfs"
+  name: nfs-storage-example
+  namespace: sandbox
 spec:
   containers:
     - name: busybox
@@ -395,40 +456,94 @@ spec:
       command:
         - sh
         - -c
-        - 'date >> /data/nfs/date.txt; hostname >> /data/nfs/hostname.txt; sync; sleep 5; sync; tail -f /dev/null;'
+        - >-
+          while true; do
+            echo "$(date) [$(hostname)] Hello from NFS Persistent Volume." >> /app/data/greet.txt
+            sleep $((RANDOM % 5 + 300))
+          done
       volumeMounts:
-        - name: nfs-vol
-          mountPath: /data/nfs
+        - name: vol-pvc-nfs
+          mountPath: /app/data
   volumes:
-    - name: nfs-vol
+    - name: vol-pvc-nfs
       persistentVolumeClaim:
-        claimName: pvc-nfs
+        claimName: pvc-nfs-example
 ```
 
-Check persistence volume claim and persistence volume.
+Then, install with the `kubectl` command-line tool like this,
 
 ```sh
-[zawzaw@fedora-linux:~]$ kubectl get pvc --namespace debug
-NAME                                                         STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-pvc-nfs                                                      Bound    pvc-2b3a13c2-5647-4b03-a2dc-2e14e8379076   8Gi        RWX            nfs-client     3d21h
+$ kubectl apply -f nfs-storage-busybox.yaml
 ```
 
+### How it Works
+
+#### PersistentVolumeClaim (PVC)
+
+In the **PersistentVolumeClaim**,
+configured using the `nfs-client` storage class, access mode is set to *ReadWriteMany* and 8Gi storage is requested.
+
+`spec.accessModes` Set accessModes to `ReadWriteMany`. Basically, an access mode defines how a PV (PersistentVolume) can be accessed by Pods. That specifies *Who* can mount the volume (one or multi Kubernetes nodes) and *How* the volume can be accessed (read-only or read-write).
+
+Documentation is also available at [https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+
+The available access modes are *ReadWriteOnce*, *ReadOnlyMany*, *ReadWriteMany* and *ReadWriteOncePod*. *But it depends on storage providers, and we need to check which access mode is supported.*
+
+ - **ReadWriteOnce (RWO)**: The persistent volume can be mounted as read-write by a single node at a time.
+
+ - **ReadOnlyMany (ROX)**: The persistent volume can be mounted as read-only by multi nodes simultaneously.
+
+ - **ReadWriteMany (RWX)**: The persistent volume can be mounted as read-write by multi nodes at the same time.
+
+ - **ReadWriteOncePod (RWOP) - Kubernetes v1.22+**: The persistent volume can be mounted by only one *Pod* at a time.
+
+| Access Mode             | Multi Nodes          | Read-Write     | Common Storage Types                                        |
+|-------------------------|----------------------|----------------|-------------------------------------------------------------|
+| ReadWriteOnce (RWO)     | ❌ No                | ✅ Yes         | e.g; Rancher local-path, AWS EBS                            |
+| ReadOnlyMany (ROX)      | ✅ Yes               | ❌ No          | e.g; NFS, CephFS                                            |
+| ReadWriteMany (RWX)     | ✅ Yes               | ✅ Yes         | e.g; Azure Files, CephFS, NFS, Longhorn, OpenEBS and etc... |
+| ReadWriteOncePod (RWOP) | ❌ No (Only one Pod) | ✅ Yes         | e.g; Block storage like RWO but single Pod restriction      |
+
+>
+> 📝 The *ReadWriteOncePod* access mode is only supported for CSI volumes and Kubernetes version 1.22 and up.
+>
+
+`spec.storageClassName` Set storageClassName to *nfs-client*. It depends on what storage class you want to use.
+
+`spec.resources.requests.storage` Set storage size that PVC (PersistentVolumeClaim) requests storage from a PV (PersistentVolume).
+
+After deploying the above PVC (PersistentVolumeClaim) named `pvc-nfs-example`, it will be provisioned a PV (PersistentVolume) by the *NFS subdir external provisioner* using the `nfs-client` storage class.
+
+Then, check PV (PersistentVolume) resource with the kubectl command-line tool,
+
 ```sh
-[zawzaw@fedora-linux:~]$ kubectl get pv
-NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                                                              STORAGECLASS      REASON   AGE
-pvc-2b3a13c2-5647-4b03-a2dc-2e14e8379076   8Gi        RWX            Delete           Bound    debug/pvc-nfs                                                      nfs-client                 3d21h
+$ kubectl get pv
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                     STORAGECLASS       VOLUMEATTRIBUTESCLASS   REASON   AGE
+pvc-edf39de5-42e2-453a-a23f-c4f5f58cf69a   8Gi        RWX            Delete           Bound    sandbox/pvc-nfs-example   nfs-client         <unset>                          6h46m
 ```
 
-Check mounted and created files.
+---
+
+#### Busybox Pod (Workload)
+
+In the **Pod**,
+created a volume mount path, `/app/data` using the PersistentVolumeClaim (PVC) named *pvc-nfs-example* with the Busybox container image. Basically, Pod’s command or script creates a file named *greet.txt*, writes *date and hostname* data to this file every 5m.
+
+Then, you can check the data by executing into the Pod shell.
+
 ```sh
-kubectl exec -it busybox-nfs --namespace debug -- sh
+$ kubectl exec -it nfs-storage-example --namespace sandbox -- sh
+$ cd /app/data
+$ cat greet.txt
 ```
 
-```sh
-/ # cat /data/nfs/date.txt
-Thu May  5 05:19:17 UTC 2022
-
-/ # cat /data/nfs/hostname.txt
-busybox-nfs
+Output:
+```
+Tue Jan 28 23:10:38 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+Tue Jan 28 23:15:42 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+Tue Jan 28 23:20:44 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+Tue Jan 28 23:25:47 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+Tue Jan 28 23:30:48 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+...
 ```
 
