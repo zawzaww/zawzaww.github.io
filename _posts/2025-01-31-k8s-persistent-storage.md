@@ -3,11 +3,28 @@ layout: post
 title: A Hands-on Practical Guide to K8s Persistent Storage
 categories: [Kubernetes]
 tags: [kubernetes, storage, provisioning]
+image:
+  src: /assets/images/featured-images/img_kubernetes_storage.png
+  description: "Kubernetes Storage Featured Image by Zaw Zaw"
 ---
 
-In Kubernetes, we typically need to create and use *Persistent Volumes* for stateful applications such as database engines, cache store servers, and so on. In this article, I will share how storage provisioning on Kubernetes works and how to provision persistent storage on Kubernetes.
+In Kubernetes, we typically need to create and use *Persistent Volumes* for stateful applications such as database engines, cache store servers, and so on. In this article, I will share how storage provisioning on Kubernetes works and how to deploy *Persistent Volumes* dynamically using storage provisioners on the Kubernetes cluster.
 
-I will mainly focus on managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes in this article, and also demonstrate how to configure the **local-path** and **NFS** storage provisioners and how to deploy *Persistent Volumes* dynamically using them on the Kubernetes cluster.
+In this article. I will mainly focus on configuring the **Local-Path** and **NFS** storage provisioners and managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes.
+
+## Summary: Key Points
+
+You will learn the following in this article:
+
+ - Basic concepts of Kubernetes persistent storage.
+
+ - Difference between *Static* storage provisioning and *Dynamic* storage provisioning.
+
+ - How storage provisioning on Kubernetes works.
+
+ - How to setup **Local-Path** and **NFS** storage provisioners on Kubernetes.
+
+ - How to create and provision *Persistent Volumes* on-demand or dynamically on Kubernetes.
 
 ## Before We Begin
 
@@ -119,7 +136,9 @@ In this approach, you need to create PV and PVC manually, and create volume moun
 
 Dynamic storage provisioning enables and allows to create persistent volumes on-demand or dynamically on the Kubernetes cluster based on the *StorageClass* API object. Basically, *StorageClass* defines which storage provisioner should be used when creating persistent volumes on Kubernetes.
 
-> But, please note that you need to deploy the provisioner on the Kubernetes cluster and we will explore how to setup in the next section.
+>
+> 📝 But, please note that you need to deploy the provisioner on the Kubernetes cluster and we will explore how to setup in the next section.
+>
 
 In this approach, you can use any StorageClass when you configure PersistentVolumeClaim (PVC), and then it will automatically create PersistentVolume (PV) on the Kubernetes cluster.
 
@@ -198,7 +217,9 @@ NAME                                                  READY   STATUS      RESTAR
 local-path-provisioner-5cffd47f7-42nbw                1/1     Running     0                5d20h
 ```
 
-> The StorageClass resource is a cluster-wide resource and has no namespace scope. You just need to run the `kubectl get storageclass` command.
+>
+> 📝 The StorageClass resource is a cluster-wide resource and has no namespace scope. You just need to run the `kubectl get storageclass` command.
+>
 
 ```sh
 $ kubectl get storageclass
@@ -261,16 +282,20 @@ $ kubectl apply -f local-storage-busybox.yaml
 
 ### How it Works
 
+![k8s-local-path-storage](/assets/images/featured-images/img_k8s_storage_local.png)
+
 #### PersistentVolumeClaim (PVC)
 
 In the **PersistentVolumeClaim**,
-configured using the *local-path* storageclass, access mode is set to *ReadWriteOnce* and 8Gi storage is requested. But, please NOTE that *local* or *hostPath* only supports *ReadWriteOnce* access mode.
+configured with the *local-path* storageclass, access mode is set to *ReadWriteOnce* and 8Gi storage is requested. But, please NOTE that *local* or *hostPath* only supports *ReadWriteOnce* access mode.
 
-For the detailed information about **Access Modes**, please see the [Access Modes in NFS storage section](#explanation-how-it-works-1).
+For the detailed information about **Access Modes**, please see the [Access Modes in NFS storage section](#how-it-works-1).
 
 Then, it will be provisioned a PV (PersistentVolume) automatically by **Local Path Provisioner** via *StorageClass* because we've installed it and configured PVC (PersistentVolumeClaim) using the *local-path* storage class. So, it's called dynamic storage provisioning and we only need to configure PVC (PersistentVolumeClaim) with storage class.
 
-> The PV resource is a cluster-wide resource and has no namespace scope. You just need to run the kubectl get storageclass command.
+>
+> 📝 The PV resource is a cluster-wide resource and has no namespace scope. You just need to run the `kubectl get pv` command.
+>
 
 Check PV with the kubectl command-line tool like this,
 
@@ -278,7 +303,6 @@ Check PV with the kubectl command-line tool like this,
 $ kubectl get pv
 NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                        STORAGECLASS       VOLUMEATTRIBUTESCLASS   REASON   AGE
 pvc-7e22e4b8-09d8-4553-88fc-1aefeb7c1ac3   8Gi        RWO            Delete           Bound    sandbox/pvc-local-example    local-path         <unset>                          54m
-...
 ```
 
 ---
@@ -305,6 +329,43 @@ Sun Jan 19 05:46:16 UTC 2025 [local-storage-example] Hello from Local Persistent
 Sun Jan 19 05:51:18 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
 ```
 
+#### Worker Node
+
+The actual data *greet.txt* file will be stored on the worker node's local-path provisioner mount path and the mount path on the worker node depends on the provisioner. For example, Rancher's local-path provisioner mount path is `/var/lib/rancher/k3s/storage/` by default.
+
+Then, check if the data *greet.txt* file is stored on the worker node correctly or not.
+
+ - Log in to the worker node with SSH.
+
+ - Then, go to the `/var/lib/rancher/k3s/storage/` path and check the data by running the following commands.
+
+   ```sh
+   root@k8s-worker:/var/lib/rancher# cd /var/lib/rancher/k3s/storage
+   root@k8s-worker:/var/lib/rancher/k3s/storage# ls -l pvc-7e22e4b8-09d8-4553-88fc-1aefeb7c1ac3_sandbox_pvc-local-example
+   total 52
+   -rw-r--r-- 1 root root 45657 Jan 21 00:28 greet.txt
+   ```
+
+   ```sh
+   $ cd pvc-7e22e4b8-09d8-4553-88fc-1aefeb7c1ac3_sandbox_pvc-local-example
+   $ cat greet.txt
+   Sun Jan 19 05:31:11 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+   Sun Jan 19 05:36:14 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+   Sun Jan 19 05:41:16 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+   Sun Jan 19 05:46:16 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+   Sun Jan 19 05:51:18 UTC 2025 [local-storage-example] Hello from Local Persistent Volume.
+   ```
+
+The data directory name or persistent volume data on the worker node is provisioned in the following format.
+
+```
+{pv_name}-{namespace}{pvc_name}
+```
+
+```
+pvc-7e22e4b8-09d8-4553-88fc-1aefeb7c1ac3_sandbox_pvc-local-example
+```
+
 ## Setting up NFS Provisioner
 
 NFS (Network File System) is a distributed file system protocol that allows you to store and mount data on the remote server, also known as the NFS server. That means a client user can access data over a network and server-client way to manage data storage.
@@ -326,7 +387,9 @@ sudo apt install -y nfs-server
 
 Configure the NFS server `/etc/exports` configuration for access control list for filesystems that may be exported to NFS clients.
 
- > NOTE: IPv4 address or hostname is your NFS clients IP addresses.
+>
+> 📝 IPv4 address or hostname is your NFS clients IP addresses.
+>
 
 Format,
 
@@ -478,10 +541,12 @@ $ kubectl apply -f nfs-storage-busybox.yaml
 
 ### How it Works
 
+![k8s-nfs-storage](/assets/images/featured-images/img_k8s_storage_nfs.png)
+
 #### PersistentVolumeClaim (PVC)
 
 In the **PersistentVolumeClaim**,
-configured using the `nfs-client` storage class, access mode is set to *ReadWriteMany* and 8Gi storage is requested.
+configured with the `nfs-client` storage class, access mode is set to *ReadWriteMany* and 8Gi storage is requested.
 
 `spec.accessModes` Set accessModes to `ReadWriteMany`. Basically, an access mode defines how a PV (PersistentVolume) can be accessed by Pods. That specifies *Who* can mount the volume (one or multi Kubernetes nodes) and *How* the volume can be accessed (read-only or read-write).
 
@@ -499,7 +564,7 @@ The available access modes are *ReadWriteOnce*, *ReadOnlyMany*, *ReadWriteMany* 
 
 | Access Mode             | Multi Nodes          | Read-Write     | Common Storage Types                                        |
 |-------------------------|----------------------|----------------|-------------------------------------------------------------|
-| ReadWriteOnce (RWO)     | ❌ No                | ✅ Yes         | e.g; Rancher local-path, AWS EBS                            |
+| ReadWriteOnce (RWO)     | ❌ No                | ✅ Yes         | e.g; Rancher's local-path, AWS EBS                            |
 | ReadOnlyMany (ROX)      | ✅ Yes               | ❌ No          | e.g; NFS, CephFS                                            |
 | ReadWriteMany (RWX)     | ✅ Yes               | ✅ Yes         | e.g; Azure Files, CephFS, NFS, Longhorn, OpenEBS and etc... |
 | ReadWriteOncePod (RWOP) | ❌ No (Only one Pod) | ✅ Yes         | e.g; Block storage like RWO but single Pod restriction      |
@@ -544,6 +609,44 @@ Tue Jan 28 23:15:42 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Vol
 Tue Jan 28 23:20:44 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
 Tue Jan 28 23:25:47 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
 Tue Jan 28 23:30:48 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
-...
+```
+
+---
+
+#### NFS Server
+
+The actual data *greet.txt* file will be stored on the NFS server's mount path, `/data/nfs/` and the mount path is specified when you set up the NFS server and the NFS subdir external provisioner.
+
+Then, check if the data *greet.txt* file is stored on the NFS server correctly or not.
+
+ - Log in to the NFS server with SSH.
+
+ - Then, go to the NFS mount path `/data/nfs/` and check the data by running the `ls` and `cat` commands.
+
+   ```sh
+   zawzaw@nfs-dev-server:~$ cd /data/nfs/
+   zawzaw@nfs-dev-server:/data/nfs$ ls -l sandbox-pvc-nfs-example-pvc-edf39de5-42e2-453a-a23f-c4f5f58cf69a/
+   total 12
+   -rw-r--r-- 1 root root 10795 Jan 29 16:14 greet.txt
+   ```
+
+   ```sh
+   $ cd sandbox-pvc-nfs-example-pvc-edf39de5-42e2-453a-a23f-c4f5f58cf69a
+   $ cat greet.txt
+   Tue Jan 28 23:10:38 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+   Tue Jan 28 23:15:42 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+   Tue Jan 28 23:20:44 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+   Tue Jan 28 23:25:47 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+   Tue Jan 28 23:30:48 UTC 2025 [nfs-storage-example] Hello from NFS Persistent Volume.
+   ```
+
+The data directory or persistent volume data on the NFS server is provisioned as the following format.
+
+```
+{namespace}-{pvc_name}-{pv_name}
+```
+
+```
+sandbox-pvc-nfs-example-pvc-edf39de5-42e2-453a-a23f-c4f5f58cf69a
 ```
 
