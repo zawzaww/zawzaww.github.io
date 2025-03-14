@@ -8,13 +8,13 @@ image:
   description: "Kubernetes Storage Featured Image by Zaw Zaw"
 ---
 
-In Kubernetes, we typically need to create and use *Persistent Volumes* for stateful applications such as database engines, cache store servers, and so on. In this article, I will share how storage provisioning on Kubernetes works and how to deploy *Persistent Volumes* dynamically using storage provisioners on the Kubernetes cluster.
+In Kubernetes, we typically need to create and use *Persistent Volumes* for stateful applications such as database servers, cache store servers, and so on. In this article, I will share how storage provisioning on Kubernetes works and how to deploy *Persistent Volumes* dynamically using storage provisioners on the Kubernetes cluster.
 
 In this article. I will mainly focus on configuring the **Local-Path** and **NFS** storage provisioners and managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes.
 
-## Summary: Key Points
+## Key Points: What You'll Learn
 
-You will learn the following in this article:
+You will learn the following things in this article:
 
  - Basic concepts of Kubernetes persistent storage.
 
@@ -26,7 +26,7 @@ You will learn the following in this article:
 
  - How to create and provision *Persistent Volumes* on-demand or dynamically on Kubernetes.
 
-## Before We Begin
+## Prerequisites
 
  - [Kubernetes](https://kubernetes.io) Cluster
 
@@ -35,7 +35,6 @@ You will learn the following in this article:
  - [Helm](https://helm.sh) package manager tool
 
  - Kubernetes Basics
-
    > Make sure you are familiar with basic Kubernetes objects and resources. If you are a Kubernetes newcomer, you can learn [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics) tutorial that provides a hands-on practical guide on the basics of Kubernetes, container orchestration system.
 
 ## Background
