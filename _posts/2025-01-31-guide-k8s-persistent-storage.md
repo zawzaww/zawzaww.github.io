@@ -12,9 +12,8 @@ In Kubernetes, we typically need to create and use *Persistent Volumes* for stat
 
 In this article. I will mainly focus on configuring the **Local-Path** and **NFS** storage provisioners and managing persistent storage on the Kubernetes On-premises cluster, also known as self-managed Kubernetes.
 
-## Key Points: What You'll Learn
-
-You will learn the following things in this article:
+## Objectives
+#### What You'll Learn in This Article
 
  - Basic concepts of Kubernetes persistent storage.
 
