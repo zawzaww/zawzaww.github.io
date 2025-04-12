@@ -1,19 +1,28 @@
-FROM ruby:3.2-alpine
+FROM ruby:3.2-slim
 
-RUN apk update && \
-    apk upgrade && \
-    apk add --no-cache build-base gcc cmake git
+ENV APP_WORKDIR=/src/jekyll
+ENV APP_USER=jekyll
+ENV APP_GROUP=jekyll
+ENV APP_PORT=4000
+
+RUN apt update -y && \
+    apt install -y gcc git build-essential zlib1g-dev
 
 RUN gem install bundler jekyll
 
-WORKDIR /src/jekyll
+WORKDIR ${APP_WORKDIR}
 
 COPY . .
 
-RUN git config --global --add safe.directory /src/jekyll
+RUN bundle install
 
-RUN bundle install && \
-    bundle exec jekyll build
+RUN useradd -m -U ${APP_USER} && \
+    usermod -aG sudo ${APP_USER} && \
+    chown ${APP_USER}:${APP_GROUP} -R ${APP_WORKDIR}
+
+USER ${APP_USER}
+
+EXPOSE ${APP_PORT}
 
 ENTRYPOINT [ "bundle", "exec" ]
 CMD [ "jekyll", "serve", "--watch" ]
