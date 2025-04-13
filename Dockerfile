@@ -26,9 +26,9 @@ USER ${APP_USER}
 
 RUN gem install bundler jekyll
 
-RUN bundle install
+RUN bundle install && bundle cache
 
 EXPOSE ${APP_PORT}
 
-ENTRYPOINT [ " bundle", "exec", "jekyll", "serve" ]
+CMD [ "bundle", "exec", "jekyll", "serve" ]
 

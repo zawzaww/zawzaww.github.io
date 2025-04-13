@@ -9,18 +9,12 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    entrypoint: >-
-      jekyll serve
-        --host 0.0.0.0
-        --port 4000
-        --watch
-        --drafts
-        --livereload
-        --disable-disk-cache
-        --incremental
     user: "jekyll:jekyll"
+    command: >
+      ./tools/server.sh
     volumes:
-      - ".:/src/jekyll"
+      - "/src/jekyll/vendor"
+      - "${PWD}:/src/jekyll"
     ports:
       - "4000:4000"
       - "35729:35729"
