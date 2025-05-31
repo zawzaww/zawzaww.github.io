@@ -1,0 +1,21 @@
+#
+# Docker compose
+# for serve Jekyll site for local environment.
+#
+services:
+  jekyll-site:
+    image: jekyll-site:local
+    container_name: jekyll-site
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    user: "jekyll:jekyll"
+    command: >
+      ./tools/server.sh
+    volumes:
+      - "/src/jekyll/vendor"
+      - "${PWD}:/src/jekyll"
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+
