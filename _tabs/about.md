@@ -1,19 +1,45 @@
 ---
-title: About
+title: ABOUT ME
 layout: page
 icon: fas fa-info
 order: 7
 ---
 
-![About Me](https://i.postimg.cc/GtmcpymP/zawzaw-round-img.png){: width="200" height="200" .normal}
+![About Me](https://i.postimg.cc/GtmcpymP/zawzaw-round-img.png){: width="250" height="250" .normal}
 
-*Welcome to ZAW's blog*.
-I'm Zaw Zaw from Pyay, Myanmar. I publish articles that focus on Linux, Software Stuff, Containerization, Cloud-native Tools and much more.
+I'm Zaw Zaw from [Pyay, Myanmar](https://en.wikipedia.org/wiki/Pyay). Full name is Zaw Zaw Thein. I'm publishing articles that focus on Linux, Containerization, CI/CD tools, Cloud-native technologies, Kubernetes, and much more on the blog. I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay), also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra).
 
-I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay) also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra). I'm a SRE engineer and, currently working at [@FRONTiiR](http://www.frontiir.com/) on RnD/Integration team. Formerly, I've worked on RnD/DevSA team. Former Recognized Developer and Contributor at [@XDA-Developers](https://forum.xda-developers.com/) Forums and I've contributed to Android, Linux kernel and  Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums.
+I'm an SRE Engineer and Former Recognized Developer (RD) at [@XDA-Developers Forums](https://forum.xda-developers.com). I've previously contributed to the Android operating system, Linux kernel, and Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums. I've loved working with Low-level software and Systems programming. Currently, I'm working on Site Reliability Engineering (SRE), Linux, Continuous Integration (CI), Continuous Deployment and Delivery (CD) tools, Containerization, and the Kubernetes platform.
 
-I've loved working with Low level software and command-line tools to interact with hardware. I'm currently working on Linux, Continuous Integration (CI), Continuous Deployment and Delivery (CD), Containerization and Kubernetes. I've always had a keen interest in Computer engineering, Systems programming, Operating systems, Linux kernel hacking, Cloud computing, Containers, Automation and Infrastructure. And, I also love to take photograph and interested in Landscape photography. You can see photos in my [Google Photos](https://photos.app.goo.gl/SJ9NYCk8so8oJRQz7) album.
-<br>
+I've always had a keen interest in Computer engineering, Systems programming, Operating systems, Linux kernel, Cloud computing, Containerization, Cloud-native technologies and Kubernetes. And I also love to take photographs and am interested in photography.
+
+You can contact me via the following platforms:
+
+<div style="display: flex; gap: 11px;">
+<a href="mailto:zawzthein@outlook.com">
+  <img src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Email-256.png" alt="Email Icon" style="width: 44px; height: 44px;">
+</a>
+
+<a href="https://github.com/zawzaww">
+  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png" alt="GitHub Icon" style="width: 44px; height: 44px;">
+</a>
+
+<a href="https://www.linkedin.com/in/zawzaww">
+  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-256.png" alt="LinkedIn Icon" style="width: 44px; height: 44px;">
+</a>
+
+<a href="https://x.com/zawzaw_me">
+  <img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-256.png" alt="X (Twitter) Icon" style="width: 44px; height: 44px;">
+</a>
+
+<a href="https://www.facebook.com/zawzaww.me">
+  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png" alt="Facebook Icon" style="width: 44px; height: 44px;">
+</a>
+
+<a href="https://www.instagram.com/zawzaw.me">
+  <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png" alt="Instagram Icon" style="width: 44px; height: 44px;">
+</a>
+</div>
 
 ---
 
@@ -21,7 +47,6 @@ I've loved working with Low level software and command-line tools to interact wi
 
 - Studied [Computer Engineering](https://en.wikipedia.org/wiki/Computer_engineering) at [Pyay Technological University (P.T.U)](https://en.wikipedia.org/wiki/Pyay_Technological_University)
 - Graduated from Basic Education High School (Sinmizwe)
-<br>
 
 ---
 
@@ -34,7 +59,6 @@ I've loved working with Low level software and command-line tools to interact wi
 
 - **Technologies and Tools**
   - Linux kernel, embedded Android, Git, Open Source Software, Bash, Ansible, Docker, GitLab CI, Argo CD, Helm, Kubernetes
-<br>
 
 ---
 
@@ -60,10 +84,4 @@ I've loved working with Low level software and command-line tools to interact wi
 
   - **Senior Member (2016-2017)**
     - Contributed to some Android firmware and MOD projects as Senior Member on XDA Community Forums.
-<br>
 
----
-
-## INTERESTS
-
-Computer Engineering, Unix/Linux Systems Programming, Linux Kernel Hacking, Cloud Computing, Unix-like Operating Systems, File Systems, Virtualization, Containerization, Music, Alternative Rock, Pop Rock, Nature Photography, Sharing, Reading and Writing.
