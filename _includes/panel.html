@@ -6,17 +6,6 @@
 
   <div class="access">
 
-  <div>
-    <span style="font-size: large;">
-      {{- site.data.label.panel.about | default: 'About' -}}
-    </span>
-    <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
-      <panel>
-      {{ site.about.brief_info }}
-      </panel>
-    </div>
-  </div>
-
   {% include update-list.html %}
 
   {% if update_list.size > 0 %}

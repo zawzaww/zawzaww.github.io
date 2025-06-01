@@ -10,9 +10,9 @@ image:
 
 This article focused on a deep dive into Container networking; how to run Containers and configure Container Networking from scratch using the tools, such as *Linux Namespaces*, *chroot*, *unshare* and *ip*. This article also provides a hands-on practical guide on how to run and configure from scratch using these tools. You'll mainly learn how Container Networking works at the underlying layer (or low level), and then you'll clearly understand how Docker Container Networking works.
 
-## Objectives: Summary
+## Summary: Objectives
 
-What you'll learn in this article:
+*What you'll learn in this article:*
 
  - Basic Concepts of Containerization.
 

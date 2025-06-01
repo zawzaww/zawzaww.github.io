@@ -17,17 +17,13 @@ lang: en-US
 title: Zaw Zaw
 
 # It will display as the sub-title name.
-tagline: ZAW's Tech Stuff and Blog
+tagline: SRE Engineer / Amateur Photographer
 
 # Used by seo meta and the atom feed.
-description: ZAW's Tech Stuff and Blog
-
-about:
-  brief_info: >
-    I publish articles that focus on Linux, Software Stuff, Containerization, Kubernetes Tools and others.
+description: ZAW's Personal Website & Blog
 
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
-url: https://zawzaww.github.io
+url: https://zawzaw.blog
 
 # GitHub username.
 github:

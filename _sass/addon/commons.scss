@@ -43,7 +43,7 @@ html[mode=dark] {
 }
 
 :root {
-  font-size: 16.2px;
+  font-size: 16.5px;
 }
 
 body {
@@ -55,12 +55,6 @@ body {
   color: var(--text-color);
   -font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
-}
-
-panel {
-  font-size: 0.92rem;
-  font-weight: normal;
-  font-style: italic;
 }
 
 /* --- Typography --- */
