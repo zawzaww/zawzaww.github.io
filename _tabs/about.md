@@ -5,7 +5,7 @@ icon: fas fa-info
 order: 7
 ---
 
-![About Me](https://i.postimg.cc/GtmcpymP/zawzaw-round-img.png){: width="250" height="250" .normal}
+![About Me](https://i.postimg.cc/GtmcpymP/zawzaw-round-img.png){: width="210" height="210" .normal}
 
 I'm Zaw Zaw from [Pyay, Myanmar](https://en.wikipedia.org/wiki/Pyay). Full name is Zaw Zaw Thein. I'm publishing articles that focus on Linux, Containerization, CI/CD tools, Cloud-native technologies, Kubernetes, and much more on the blog. I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay), also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra).
 
@@ -51,37 +51,86 @@ You can contact me via the following platforms:
 ---
 
 ## SKILLS
-- **Programming Languages**
-  - C, C++, Java, Shell Script
+
+- **Programming & Scripting Languages**
+    - C, C++
+    - Java
+    - Bash Shell
 
 - **Industry Knowledge**
-  - Operating Systems, Kernel, Systems Programming, Linux System Administration, GitOps, Virtualization, Containerization, Continuous Integration, Continuous Delivery
+    - Operating Systems
+    - Systems Programming
+    - Linux System Administration
+    - Shell Scripting
+    - GitOps
+    - Virtualization
+    - Containerization
+    - Continuous Integration (CI)
+    - Continuous Delivery (CD)
 
 - **Technologies and Tools**
-  - Linux kernel, embedded Android, Git, Open Source Software, Bash, Ansible, Docker, GitLab CI, Argo CD, Helm, Kubernetes
+    - Linux kernel
+    - Embedded Android
+    - Git
+    - Bash Shell
+    - Ansible
+    - GitLab CI
+    - GitHub Actions
+    - Argo CD
+    - Docker, Helm, and Kubernetes
 
 ---
 
 ## WORK EXPERIENCE
 
-### [FRONTIIR](https://www.linkedin.com/company/frontiir)
+### [Frontiir](https://www.linkedin.com/company/frontiir)
+   - **Lead Platform Engineer** ‣ *Apr 2024 - Apr 2025*
+      - Led the Platform Engineering team.
+      - Led the building and migrating of GitOps ArgoCD pipelines for automating app deployments for both development and production environments on Kubernetes.
+      - Maintained self-managed internal K3s Kubernetes Clusters.
+      - Migrated legacy apps to Kubernetes and Cloud-native environments.
+      - Mentored Junior Platform engineers in GitLab CI, GitOps ArgoCD, and Kubernetes, focused on team building and researched new tools.
 
-   - **SRE Engineer (May 2023 - Present)**
-     - Setup Infra tools, maintain infrastructure and also build CI and CD pipelines for automated apps deployment on Kubernetes. Integrate Frontiir's internal software systems. Maintain Kubernetes clusters, build Ansible playbooks, monitor servers with Prometheus and Grafana. Mentor new team members and also research on Kubernetes platform.
+   - **Platform Engineer** ‣ *May 2023 - Mar 2024*
+      - Designed and created multi-node K3s Kubernetes Clusters.
+      - Integrated APISIX API Gateway and Keycloak for the microservices project on Kubernetes.
+      - Configured GitLab Runners on Kubernetes for internal OSS and BSS projects and maintained them.
+      - Developed Ansible Playbooks to bootstrap the Kubernetes Nodes.
+      - Configured and deployed Prometheus and Grafana for monitoring database servers and Kubernetes clusters.
 
-   - **Senior Associate SRE Engineer (Nov 2021 – Apr 2023)**
-     - Working on Linux, Docker containers, CI/CD and automated Kubernetes deployment. Build SRE-related CLI tools and write Helm Charts to deploy internal applications on Kubernetes.
+   - **Senior Associate SRE Engineer** ‣ *Nov 2021 – Apr 2023*
+      - Containerized OSS Software systems and built Helm charts to deploy them on Kubernetes.
+      - Configured GitOps ArgoCD Pipelines for automating OSS microservices app deployments on Kubernetes.
+      - Migrated and configured the Istio Service Mesh for the OSS microservices project.
+      - Built an operator for automating updating app container images on Kubernetes.
 
-   - **Associate SRE Engineer (Sep 2020 – Oct 2021)**
-     - Worked on Linux, Docker containers, CI/CD and Automated application deployment on Kubernetes.
+   - **Associate SRE Engineer** ‣ *Sep 2020 – Oct 2021*
+      - Moved to the SRE team.
+      - Containerized apps and developed GitLab CI pipelines.
 
-   - **Associate System Engineer, Kernel (Jan 2019 – Aug 2020)**
-     - Worked on building, porting and customizing the Linux kernel and embedded Android operating system (OS) for AMLogic SoC-based Android TV hardware devices.
+   - **Associate System Engineer** ‣ *Jan 2019 - Aug 2020*
+      - Worked on building, porting and customizing the Linux kernel and embedded Android operating system (OS) for AMLogic SoC-based Android TV hardware devices.
 
 ### [XDA-Developers](https://www.linkedin.com/company/xda-developers)
-  - **Recognized Developer (2017 - 2019)**
-    - Contributed to Android, Linux kernel and Android open-source project, AOSP-based Android firmware projects as Recognized Developer and Contributor on XDA Community Forums.
+  - **Recognized Developer** ‣ *2017 - 2019*
+      - Contributed to Android, Linux kernel and Android open-source project, AOSP-based Android firmware projects as Recognized Developer and Contributor on XDA Community Forums.
 
-  - **Senior Member (2016-2017)**
-    - Contributed to some Android firmware and MOD projects as Senior Member on XDA Community Forums.
+  - **Senior Member** ‣ *2016 - 2017*
+      - Contributed to some Android firmware and MOD projects as Senior Member on XDA Community Forums.
+
+---
+
+## INTERESTS
+
+ - Computer Engineering
+ - Linux kernel
+ - Systems Programming
+ - Operating Systems
+ - SRE (Site Reliability Engineering)
+ - Cloud Computing
+ - Cloud-native Technologies
+ - Virtualization
+ - Containerization
+ - Photography
+ - Sharing, Reading and Writing
 
