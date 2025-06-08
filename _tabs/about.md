@@ -5,41 +5,15 @@ icon: fas fa-info
 order: 7
 ---
 
-![About Me](https://i.postimg.cc/GtmcpymP/zawzaw-round-img.png){: width="210" height="210" .normal}
+![About Me](/assets/images/profile-picture/zawzaw_round_photo.png){: width="210" height="210" .normal}
+
+#### An SRE Engineer / Amateur Photographer
 
 I'm Zaw Zaw from [Pyay, Myanmar](https://en.wikipedia.org/wiki/Pyay). Full name is Zaw Zaw Thein. I'm publishing articles that focus on Linux, Containerization, CI/CD tools, Cloud-native technologies, Kubernetes, and much more on the blog. I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay), also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra).
 
 I'm an SRE Engineer and Former Recognized Developer (RD) at [@XDA-Developers Forums](https://forum.xda-developers.com). I've previously contributed to the Android operating system, Linux kernel, and Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums. I've loved working with Low-level software and Systems programming. Currently, I'm working on Site Reliability Engineering (SRE), Linux, Continuous Integration (CI), Continuous Deployment and Delivery (CD) tools, Containerization, and the Kubernetes platform.
 
 I've always had a keen interest in Computer engineering, Systems programming, Operating systems, Linux kernel, Cloud computing, Containerization, Cloud-native technologies and Kubernetes. And I also love to take photographs and am interested in photography.
-
-You can contact me via the following platforms:
-
-<div style="display: flex; gap: 11px;">
-<a href="mailto:zawzthein@outlook.com">
-  <img src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Email-256.png" alt="Email Icon" style="width: 44px; height: 44px;">
-</a>
-
-<a href="https://github.com/zawzaww">
-  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png" alt="GitHub Icon" style="width: 44px; height: 44px;">
-</a>
-
-<a href="https://www.linkedin.com/in/zawzaww">
-  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-256.png" alt="LinkedIn Icon" style="width: 44px; height: 44px;">
-</a>
-
-<a href="https://x.com/zawzaw_me">
-  <img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-256.png" alt="X (Twitter) Icon" style="width: 44px; height: 44px;">
-</a>
-
-<a href="https://www.facebook.com/zawzaww.me">
-  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png" alt="Facebook Icon" style="width: 44px; height: 44px;">
-</a>
-
-<a href="https://www.instagram.com/zawzaw.me">
-  <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png" alt="Instagram Icon" style="width: 44px; height: 44px;">
-</a>
-</div>
 
 ---
 
@@ -52,32 +26,18 @@ You can contact me via the following platforms:
 
 ## SKILLS
 
-- **Programming & Scripting Languages**
-    - C, C++
-    - Java
-    - Bash Shell
-
-- **Industry Knowledge**
-    - Operating Systems
-    - Systems Programming
-    - Linux System Administration
-    - Shell Scripting
-    - GitOps
-    - Virtualization
-    - Containerization
-    - Continuous Integration (CI)
-    - Continuous Delivery (CD)
-
-- **Technologies and Tools**
-    - Linux kernel
-    - Embedded Android
-    - Git
-    - Bash Shell
-    - Ansible
-    - GitLab CI
-    - GitHub Actions
-    - Argo CD
-    - Docker, Helm, and Kubernetes
+ - **Programming & Scripting:** C/C++, Java, Bash Shell
+ - **Leadership:** Team Management, Mentorship, SRE Practices
+ - **Operating Systems:** Linux (Debian, Ubuntu, Fedora, RHEL)
+ - **Cloud Platforms:** AWS (EC2, EKS, S3)
+ - **Version Control System:** Git
+ - **Continuous Integration (CI):** GitLab CI, GitHub Actions
+ - **Continuous Delivery (CD):** Argo CD, Flux CD
+ - **Networking:** TCP/IP, DNS, Load Balancing, Linux Virtual Networking, Ingress NGINX, Istio Service Mesh
+ - **Databases:** MongoDB, MySQL, PostgreSQL
+ - **Containerization & Orchestration:** Docker, Podman, Kubernetes
+ - **IaC & Configuration Management:** Terraform (Basic), Ansible, Kustomize, Helm
+ - **Monitoring and Observability:** Prometheus, Grafana, Loki, Jaeger, ELK Stack (ElasticSearch, Logstash, Kibana)
 
 ---
 

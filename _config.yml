@@ -17,10 +17,10 @@ lang: en-US
 title: Zaw Zaw
 
 # It will display as the sub-title name.
-tagline: SRE Engineer / Amateur Photographer
+tagline: ZAW's Library & Personal Blog
 
 # Used by seo meta and the atom feed.
-description: ZAW's Personal Website & Blog
+description: ZAW's Personal Blog & Website
 
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaw.blog
@@ -71,7 +71,7 @@ theme_mode: light
 img_cdn: ''
 
 # The avatar on sidebar, support local or CORS resources.
-avatar: https://i.postimg.cc/9XwV2NZV/zawzaw.png
+avatar: /assets/images/favicons/favicon-16x16.png
 
 # Boolean type, the global switch for ToC in posts.
 toc: true
