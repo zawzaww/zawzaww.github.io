@@ -128,9 +128,9 @@ Then, clean up the `alpine-minirootfs-3.21.3-x86_64.tar.gz` tar file.
 $ rm alpine-minirootfs-3.20.2-x86_64.tar.gz
 ```
 
-## chroot: Basic Concept of Containers
+## Running Containers from Scratch
 
-### Introduction to chroot
+### Chroot: Basic Concept of Containers
 
 ```sh
 / (Host Root Filesystem)
@@ -371,9 +371,7 @@ In that time, you will notice that we will see all processes and network interfa
 
 In **the next section**, we will learn how [Linux namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html) work and how to use the [unshare](https://man7.org/linux/man-pages/man1/unshare.1.html) user-space client tool to interact with *Linux namespaces* to start a process in a namespace that isolates the process ID (PID), mount, IPC, network, and so on.
 
-## Linux Kernel Namespaces
-
-### Introduction to Namespaces
+### Linux Namespaces
 
 [Namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html) are a feature of the Linux kernel that isolates and virtualizes system resources for a collection of processes. Namespaces have been released in the Linux kernel version 2.4.19 since 2002.
 
@@ -456,7 +454,7 @@ $ cd containers/alpine-linux
 Then, we will create a process, *the Alpine Linux* container, in PID (Process ID), Mount and Network namespaces using the `unshare` and `chroot` CLI tools.
 
 ```sh
-$ sudo unshare --pid --mount --net -f chroot alpine-linux /bin/sh
+$ sudo unshare --pid --mount --net -f chroot ./ /bin/sh
 ```
 ```sh
 / # ls -l
@@ -503,9 +501,44 @@ PID   USER     TIME  COMMAND
 
 Now, you will see the Alpine Linux container with an isolated environment (**PID** and **Network**). That's fully isolated from the Host machine.
 
-## Container Networking from Scratch
+## Single-Host Container Networking from Scratch
 
 ![container-networking](/assets/images/featured-images/img_container_networking_diagram.png)
+
+TLDR;
+
+```sh
+#!/usr/bin/env sh
+
+#
+# CONTAINER (A): Alpine Linux Container
+#
+ip link add veth0 type veth peer name veth1
+ip link set veth1 netns "${ALPINE_CONTAINER_PID}"
+ip link set dev veth0 up
+ip addr add dev veth1 172.19.35.2/24
+ip link set lo up
+ip link set veth1 up
+
+#
+# CONTAINER (B): Tiny Linux Container
+#
+ip link add veth2 type veth peer name veth3
+ip link set veth3 netns "${TINY_CONTAINER_PID}"
+ip link set dev veth2 up
+ip addr add dev veth3 172.19.35.3/24
+ip link set lo up
+ip link set veth3 up
+
+#
+# Create a bridge network and bring it up.
+#
+ip link add br0 type bridge
+ip link set veth0 master br0
+ip link set veth2 master br0
+ip addr add dev br0 172.19.35.1/24
+ip link set br0 up
+```
 
 In this section, we will configure Container networking from scratch, and learn how its networking works and how Containers communicate at the networking layer.
 
@@ -541,7 +574,7 @@ _Photo Credit: Bridge Networking by Red Hat Developers_
 
 Reference [https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking](https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking)
 
-### (A) Alpine Linux Container: Setting up VETH Network
+### Container A (Alpine Linux): Setting up VETH Network
 
 In this section, we will setup the VETH network on the Alpine Linux container.
 
@@ -579,9 +612,9 @@ $ export ALPINE_CONTAINER_PID=25473
 On the **Host Linux machine**, setup a veth network pair, `veth0`, `veth1` with the `ip` command-line tool.
 
 ```sh
+[zawzaw@fedora-linux:~]$ sudo ip link add veth0 type veth peer name veth1
 [zawzaw@fedora-linux:~]$ sudo ip link set veth1 netns "${ALPINE_CONTAINER_PID}"
 [zawzaw@fedora-linux:~]$ sudo ip link set dev veth0 up
-[zawzaw@fedora-linux:~]$ ip addr show veth0
 ```
 
 On the **Alpine Linux container** and set an IP address `172.19.35.3` to the `veth1` network device and bring up.
@@ -624,7 +657,7 @@ On the **Alpine Linux container**, check the Network interfaces and IP addresses
 
 Now, you will see the VETH interfaces, `veth0`, `veth1` are up and set its IP address to `172.19.35.3`.
 
-### (B) Tiny Linux Container: Setting up VETH Network
+### Container B (Tiny Linux): Setting up VETH Network
 
 For Container (B), we will use the *Tiny Linux* root filesystem image that I've compiled from the Linux kernel source code with busybox. Read more on [Building a minimal Linux system from Scratch and Booting in QEMU Emulator](https://gist.github.com/zawzaww/cfedae575c7f9fc83ea3a02105dc263e).
 
