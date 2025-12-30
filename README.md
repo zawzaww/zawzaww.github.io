@@ -1,3 +1,6 @@
-# Zaw's Old Personal Website and Blog
+# ZawZaw.blog
 
-[![GitHub Pages CI](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/gh-pages-ci.yml/badge.svg)](https://github.com/zawzaww/zawzaww.github.io/actions/workflows/gh-pages-ci.yml)
+A blog and website that publishes in-depth and practical guides about Container technologies, networking, and Kubernetes.
+
+Read more at [https://www.zawzaw.blog](https://www.zawzaw.blog)
+

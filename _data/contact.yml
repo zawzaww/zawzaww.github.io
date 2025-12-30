@@ -12,21 +12,22 @@
 #   type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
-- type: github
-  icon: 'fab fa-github'
-
-- type: twitter
-  icon: 'fab fa-x-twitter'
-
-- type: linkedin
-  icon: 'fab fa-linkedin'
-  url: https://www.linkedin.com/in/zawzaww
-
-- type: instagram
-  icon: 'fab fa-instagram'
-  url: https://www.instagram.com/zawzaw.me
-
 - type: email
   icon: 'fas fa-envelope'
   noblank: true
+
+- type: github
+  icon: 'fab fa-github'
+
+- type: linkedin
+  icon: 'fab fa-linkedin'
+  url: https://www.linkedin.com/in/thezawzaw
+
+- type: facebook
+  icon: 'fab fa-facebook'
+  url: https://www.facebook.com/thezawzaww
+
+- type: instagram
+  icon: 'fab fa-instagram'
+  url: https://www.instagram.com/thezawzaw
 

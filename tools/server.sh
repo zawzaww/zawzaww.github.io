@@ -9,5 +9,4 @@ bundle exec jekyll serve \
   --watch \
   --drafts \
   --livereload \
-  --disable-disk-cache
 

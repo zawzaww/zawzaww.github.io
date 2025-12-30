@@ -9,17 +9,15 @@ order: 5
 
 I am also interested in photography and I love to take photographs as an Amateur Photographer. Most photos are about Macro, City, Nature, and Landscape photography, and are taken with the Google Nexus and Pixel devices.
 
-You can see the photos on the following Google Photos album and Instagram page.
+You can see the photos on the following **Instagram** and **Google Photos** Album.
 
-<div style="display: flex; gap: 18px;">
+<div style="display: flex; gap: 21px;">
+<a href="https://www.instagram.com/thezawzaw">
+<img src="https://www.svgrepo.com/show/157806/instagram.svg" alt="Instagram" style="width: 60px; height: 60px;">
+</a>
 
 <a href="https://photos.app.goo.gl/SJ9NYCk8so8oJRQz7">
-<img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/192/google-photos-logo-512.png" alt="Google Photos Icon" style="width: 65px; height: 65px;">
+<img src="https://www.svgrepo.com/show/353826/google-photos.svg" alt="Google Photos Album" style="width: 60px; height: 60px;">
 </a>
-
-<a href="https://www.instagram.com/zawzaw.me">
-<img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/62-instagram-512.png" alt="Instagram Icon" style="width: 65px; height: 65px;">
-</a>
-
 </div>
 

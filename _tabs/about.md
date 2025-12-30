@@ -7,41 +7,37 @@ order: 7
 
 ![About Me](/assets/images/profile-picture/zawzaw_round_photo.png){: width="210" height="210" .normal}
 
-#### An SRE Engineer / Amateur Photographer
-
-I'm Zaw Zaw from [Pyay, Myanmar](https://en.wikipedia.org/wiki/Pyay). Full name is Zaw Zaw Thein. I'm publishing articles that focus on Linux, Containerization, CI/CD tools, Cloud-native technologies, Kubernetes, and much more on the blog. I was born and grew up in [Pyay](https://en.wikipedia.org/wiki/Pyay), also known as [Pyu Ancient City, Sri Ksetra](https://en.wikipedia.org/wiki/Pyu_city-states#Sri_Ksetra).
-
-I'm an SRE Engineer and Former Recognized Developer (RD) at [@XDA-Developers Forums](https://forum.xda-developers.com). I've previously contributed to the Android operating system, Linux kernel, and Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums. I've loved working with Low-level software and Systems programming. Currently, I'm working on Site Reliability Engineering (SRE), Linux, Continuous Integration (CI), Continuous Deployment and Delivery (CD) tools, Containerization, and the Kubernetes platform.
-
-I've always had a keen interest in Computer engineering, Systems programming, Operating systems, Linux kernel, Cloud computing, Containerization, Cloud-native technologies and Kubernetes. And I also love to take photographs and am interested in photography.
-
-You can contact me via the following:
-
 <div style="display: flex; gap: 11px;">
 <a href="mailto:zawzthein@outlook.com">
-  <img src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Email-256.png" alt="Email Icon" style="width: 44px; height: 44px;">
+  <img src="https://www.svgrepo.com/show/416621/email-ui-mail.svg" alt="Email" style="width: 48px; height: 48px;">
 </a>
 
-<a href="https://github.com/zawzaww">
-  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png" alt="GitHub Icon" style="width: 44px; height: 44px;">
+<a href="https://github.com/thezawzaw">
+  <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" style="width: 48px; height: 48px;">
 </a>
 
-<a href="https://www.linkedin.com/in/zawzaww">
-  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-256.png" alt="LinkedIn Icon" style="width: 44px; height: 44px;">
+<a href="https://www.linkedin.com/in/thezawzaw">
+  <img src="https://www.svgrepo.com/show/95015/linkedin-logo.svg" alt="LinkedIn" style="width: 48px; height: 48px;">
 </a>
 
-<a href="https://x.com/zawzaw_me">
-  <img src="https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-256.png" alt="X (Twitter) Icon" style="width: 44px; height: 44px;">
+<a href="https://www.facebook.com/thezawzaww">
+  <img src="https://www.svgrepo.com/show/88935/facebook-logo.svg" alt="Facebook" style="width: 48px; height: 48px;">
 </a>
 
-<a href="https://www.facebook.com/zawzaww.me">
-  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png" alt="Facebook Icon" style="width: 44px; height: 44px;">
-</a>
-
-<a href="https://www.instagram.com/zawzaw.me">
-  <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png" alt="Instagram Icon" style="width: 44px; height: 44px;">
+<a href="https://www.instagram.com/thezawzaw">
+  <img src="https://www.svgrepo.com/show/494277/instagram-round.svg" alt="Instagram" style="width: 48px; height: 48px;">
 </a>
 </div>
+
+<br>
+
+_**Welcome to ZawZaw.blog.**_
+
+I'm Zaw Zaw from [Pyay, Myanmar](https://en.wikipedia.org/wiki/Pyay) and an SRE/Platform Engineer. Full name is Zaw Zaw Thein. I’m publishing articles that focus on Linux, containerization, Container networking, Kubernetes, and Cloud-native technologies, and also writing about simple living, personal development & growth, and experience on the blog.
+
+I'm a Former Recognized Developer (RD) at [@XDA-Developers Forums](https://forum.xda-developers.com). I’ve previously contributed to the Android operating system, Linux kernel, and Android Open Source Project (AOSP) based Android custom firmware projects on XDA Android Forums. I’ve loved working with Low-level software and systems programming.
+
+Currently, I’m working on Site Reliability Engineering (SRE), Linux, CI/CD tools, Containerization, and Kubernetes. I’ve always had a keen interest in Computer engineering, Systems programming, Linux kernel, Cloud computing, Containerization, Cloud-native technologies and Kubernetes. And I also love to take photographs and am interested in photography.
 
 ---
 

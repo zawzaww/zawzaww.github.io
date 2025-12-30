@@ -14,23 +14,20 @@ baseurl: ''
 lang: en-US
 
 # The main site title.
-title: Zaw Zaw
+title: ZawZaw.blog
 
 # It will display as the sub-title name.
-tagline: ZAW's Stuff & Personal Blog
+tagline: Writes about Container technologies and networking.
 
 # Used by seo meta and the atom feed.
-description: ZAW's Personal Blog & Website
+description: Writes about Container technologies and networking.
 
 # The protocol & hostname for your site, e.g., 'https://username.github.io'.
 url: https://zawzaw.blog
 
 # GitHub username.
 github:
-  username: zawzaww
-# X (Twitter) username.
-twitter:
-  username: zawzaw_me
+  username: thezawzaw
 
 # Change to your full name.
 # It will be displayed as the default author of the posts and the copyright owner in the footer.
@@ -38,7 +35,7 @@ social:
   name: Zaw Zaw
   email: zawzthein@outlook.com
   links:
-    - https://github.com/zawzaww
+    - https://github.com/thezawzaw
 
 # change to your verification string
 google_site_verification: google_meta_tag_verification

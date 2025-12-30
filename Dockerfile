@@ -24,11 +24,10 @@ RUN useradd -m -U ${APP_USER} -s /bin/bash && \
 
 USER ${APP_USER}
 
-RUN gem install bundler jekyll
-
-RUN bundle install && bundle cache
+RUN gem install bundler jekyll && \
+    bundle install
 
 EXPOSE ${APP_PORT}
 
-CMD [ "bundle", "exec", "jekyll", "serve" ]
+CMD [ "bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0" ]
 
