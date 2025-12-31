@@ -5,27 +5,27 @@ icon: fas fa-info
 order: 7
 ---
 
-![About Me](/assets/images/profile-picture/zawzaw_round_photo.png){: width="210" height="210" .normal}
+![About Me](/assets/images/profile-picture/zawzaw_round_photo.png){: width="220" height="220" .normal}
 
 <div style="display: flex; gap: 11px;">
 <a href="mailto:zawzthein@outlook.com">
-  <img src="https://www.svgrepo.com/show/416621/email-ui-mail.svg" alt="Email" style="width: 48px; height: 48px;">
+  <img src="https://www.svgrepo.com/show/416621/email-ui-mail.svg" alt="Email" style="width: 45px; height: 45px;">
 </a>
 
 <a href="https://github.com/thezawzaw">
-  <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" style="width: 48px; height: 48px;">
+  <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" style="width: 45px; height: 45px;">
 </a>
 
 <a href="https://www.linkedin.com/in/thezawzaw">
-  <img src="https://www.svgrepo.com/show/95015/linkedin-logo.svg" alt="LinkedIn" style="width: 48px; height: 48px;">
+  <img src="https://www.svgrepo.com/show/95015/linkedin-logo.svg" alt="LinkedIn" style="width: 45px; height: 45px;">
 </a>
 
 <a href="https://www.facebook.com/thezawzaww">
-  <img src="https://www.svgrepo.com/show/88935/facebook-logo.svg" alt="Facebook" style="width: 48px; height: 48px;">
+  <img src="https://www.svgrepo.com/show/88935/facebook-logo.svg" alt="Facebook" style="width: 45px; height: 45px;">
 </a>
 
 <a href="https://www.instagram.com/thezawzaw">
-  <img src="https://www.svgrepo.com/show/494277/instagram-round.svg" alt="Instagram" style="width: 48px; height: 48px;">
+  <img src="https://www.svgrepo.com/show/494277/instagram-round.svg" alt="Instagram" style="width: 45px; height: 45px;">
 </a>
 </div>
 
